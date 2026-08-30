@@ -1,0 +1,237 @@
+{
+  "lessons": [
+    {
+      "id": "k2-letter-s",
+      "title": "Letter S · /s/",
+      "words": 6,
+      "group": "字母 Letters",
+      "badge": "S",
+      "seq": 101
+    },
+    {
+      "id": "k2-letter-t",
+      "title": "Letter T · /t/",
+      "words": 14,
+      "group": "字母 Letters",
+      "badge": "T",
+      "seq": 102
+    },
+    {
+      "id": "k2-letter-m",
+      "title": "Letter M · /m/",
+      "words": 10,
+      "group": "字母 Letters",
+      "badge": "M",
+      "seq": 103
+    },
+    {
+      "id": "k2-letter-a",
+      "title": "Letter A · /æ/",
+      "words": 14,
+      "group": "字母 Letters",
+      "badge": "A",
+      "seq": 104
+    },
+    {
+      "id": "k2-letter-n",
+      "title": "Letter N · /n/",
+      "words": 13,
+      "group": "字母 Letters",
+      "badge": "N",
+      "seq": 105
+    },
+    {
+      "id": "k2-letter-o",
+      "title": "Letter O · /ɑ/",
+      "words": 8,
+      "group": "字母 Letters",
+      "badge": "O",
+      "seq": 106
+    },
+    {
+      "id": "k2-letter-f",
+      "title": "Letter F · /f/",
+      "words": 14,
+      "group": "字母 Letters",
+      "badge": "F",
+      "seq": 107
+    },
+    {
+      "id": "k2-letter-i",
+      "title": "Letter I · /ɪ/",
+      "words": 8,
+      "group": "字母 Letters",
+      "badge": "I",
+      "seq": 108
+    },
+    {
+      "id": "k2-letter-r",
+      "title": "Letter R · /r/",
+      "words": 10,
+      "group": "字母 Letters",
+      "badge": "R",
+      "seq": 109
+    },
+    {
+      "id": "k2-letter-b",
+      "title": "Letter B · /b/",
+      "words": 6,
+      "group": "字母 Letters",
+      "badge": "B",
+      "seq": 110
+    },
+    {
+      "id": "k2-letter-d",
+      "title": "Letter D · /d/",
+      "words": 5,
+      "group": "字母 Letters",
+      "badge": "D",
+      "seq": 111
+    },
+    {
+      "id": "k2-wf-an",
+      "title": "Word Family · -an 词族",
+      "words": 8,
+      "group": "词族 Word Family",
+      "badge": "-an",
+      "seq": 201
+    },
+    {
+      "id": "k2-wf-at",
+      "title": "Word Family · -at 词族",
+      "words": 5,
+      "group": "词族 Word Family",
+      "badge": "-at",
+      "seq": 202
+    },
+    {
+      "id": "k2-wf-mixed",
+      "title": "Word Family · it / at / ot / ad / id",
+      "words": 16,
+      "group": "词族 Word Family",
+      "badge": "-it",
+      "seq": 203
+    },
+    {
+      "id": "k2-cvc-a",
+      "title": "Short a · 短元音 a 拼读",
+      "words": 5,
+      "group": "拼读 Phonics",
+      "badge": "a",
+      "seq": 301
+    },
+    {
+      "id": "k2-cvc-i",
+      "title": "Short i · 短元音 i 拼读",
+      "words": 6,
+      "group": "拼读 Phonics",
+      "badge": "i",
+      "seq": 302
+    },
+    {
+      "id": "k2-cvc-o",
+      "title": "Short o · 短元音 o 拼读",
+      "words": 7,
+      "group": "拼读 Phonics",
+      "badge": "o",
+      "seq": 303
+    },
+    {
+      "id": "k2-cvc-eu",
+      "title": "Short e & u · 短元音 e 和 u",
+      "words": 5,
+      "group": "拼读 Phonics",
+      "badge": "eu",
+      "seq": 304
+    },
+    {
+      "id": "k2-cvc-magic-e",
+      "title": "Magic e · 魔法 e 长元音",
+      "words": 4,
+      "group": "拼读 Phonics",
+      "badge": "a_e",
+      "seq": 305
+    },
+    {
+      "id": "k2-sw-my-like-i-too",
+      "title": "Sight Words · my / like / I / too",
+      "words": 4,
+      "group": "常见词 Sight Words",
+      "badge": "my",
+      "seq": 401
+    },
+    {
+      "id": "k2-sw-on-the-go",
+      "title": "Sight Words · go / by / on / the",
+      "words": 10,
+      "group": "常见词 Sight Words",
+      "badge": "go",
+      "seq": 402
+    },
+    {
+      "id": "k2-sw-here-is-to-and-all",
+      "title": "Sight Words · here / is / to / and / all",
+      "words": 16,
+      "group": "常见词 Sight Words",
+      "badge": "here",
+      "seq": 403
+    },
+    {
+      "id": "k2-sw-from-have",
+      "title": "Sight Words · from / have",
+      "words": 6,
+      "group": "常见词 Sight Words",
+      "badge": "from",
+      "seq": 404
+    },
+    {
+      "id": "k2-zoo",
+      "title": "At the Zoo · 动物园",
+      "words": 7,
+      "group": "主题 Topics",
+      "badge": "🦁",
+      "seq": 501
+    },
+    {
+      "id": "k2-signs",
+      "title": "Signs · 生活中的标识",
+      "words": 4,
+      "group": "主题 Topics",
+      "badge": "🚏",
+      "seq": 502
+    },
+    {
+      "id": "k2-math-1-5",
+      "title": "Numbers · One to Five",
+      "words": 10,
+      "group": "数学 Math",
+      "badge": "1-5",
+      "seq": 601
+    },
+    {
+      "id": "k2-math-6-10",
+      "title": "Numbers · Six to Ten",
+      "words": 7,
+      "group": "数学 Math",
+      "badge": "6-10",
+      "seq": 602
+    },
+    {
+      "id": "20-one-fewer-than-and-zero",
+      "title": "Subtraction · 比…少一和零",
+      "words": 16,
+      "group": "数学 Math",
+      "badge": "−1",
+      "badge_sub": "减法",
+      "seq": 603
+    },
+    {
+      "id": "k2-recycling",
+      "title": "Recycling · 垃圾分类回收",
+      "words": 15,
+      "group": "科学 Science",
+      "badge": "♻️",
+      "seq": 701
+    }
+  ]
+}

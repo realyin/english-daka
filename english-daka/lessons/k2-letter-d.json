@@ -1,0 +1,224 @@
+{
+  "seq": 111,
+  "group": "字母 Letters",
+  "badge": "D",
+  "title": "Letter D · /d/",
+  "cards": [
+    {
+      "word": "letter D",
+      "cn": "字母 D",
+      "tag": "letter",
+      "image": "images/d-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 D。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-it-s-letter-d-9f52e9.mp3"
+          ]
+        },
+        {
+          "q": "What sound does letter D make?",
+          "a": [
+            "D makes the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "字母 D 发什么音？",
+          "a_cn": [
+            "D 发 /d/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-sound-does-letter-d-make-0664ab.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-d-makes-the-sound-d-519324.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-d/q-which-one-is-letter-d-400dc3.mp3"
+    },
+    {
+      "word": "dolphin",
+      "cn": "海豚",
+      "tag": "word",
+      "image": "images/a-words-1-dolphin.webp",
+      "dialog": [
+        {
+          "q": "Which letter does dolphin begin with?",
+          "a": [
+            "Dolphin begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dolphin 以哪个字母开头？",
+          "a_cn": [
+            "dolphin 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-which-letter-does-dolphin-begin-with-b81239.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-dolphin-begins-with-letter-d-4281e1.mp3"
+          ]
+        },
+        {
+          "q": "What sound does dolphin begin with?",
+          "a": [
+            "Dolphin begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dolphin 以什么音开头？",
+          "a_cn": [
+            "dolphin 以 /d/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-sound-does-dolphin-begin-with-9f3495.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-dolphin-begins-with-the-sound-d-94e3de.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-d/q-which-one-is-dolphin-1ef608.mp3"
+    },
+    {
+      "word": "bed",
+      "cn": "床",
+      "tag": "word",
+      "image": "images/d-ends-bed.webp",
+      "dialog": [
+        {
+          "q": "Which letter does bed end with?",
+          "a": [
+            "Bed ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "bed 以哪个字母结尾？",
+          "a_cn": [
+            "bed 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-which-letter-does-bed-end-with-218b7f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-bed-ends-with-letter-d-9c8e95.mp3"
+          ]
+        },
+        {
+          "q": "What sound does bed end with?",
+          "a": [
+            "Bed ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "bed 以什么音结尾？",
+          "a_cn": [
+            "bed 以 /d/ 音结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-sound-does-bed-end-with-3ab6bd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-bed-ends-with-the-sound-d-b87fc7.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-d/q-which-one-is-bed-3dff5d.mp3"
+    },
+    {
+      "word": "dog",
+      "cn": "狗",
+      "tag": "word",
+      "image": "images/d-ends-dog.webp",
+      "dialog": [
+        {
+          "q": "What sound does dog begin with?",
+          "a": [
+            "Dog begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dog 以什么音开头？",
+          "a_cn": [
+            "dog 以 /d/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-sound-does-dog-begin-with-3dea14.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-dog-begins-with-the-sound-d-0ffdf4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-d/q-which-one-is-dog-987611.mp3"
+    },
+    {
+      "word": "dinosaur",
+      "cn": "恐龙",
+      "tag": "word",
+      "image": "images/d-ends-dinosaur.webp",
+      "dialog": [
+        {
+          "q": "What sound does dinosaur begin with?",
+          "a": [
+            "Dinosaur begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dinosaur 以什么音开头？",
+          "a_cn": [
+            "dinosaur（恐龙）以 /d/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-d/q-what-sound-does-dinosaur-begin-with-f2f054.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-d/a-dinosaur-begins-with-the-sound-d-946f38.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-d/q-which-one-is-dinosaur-2e21ab.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "bed": "audio/words/bed.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "d": "audio/words/d.mp3",
+    "dinosaur": "audio/words/dinosaur.mp3",
+    "does": "audio/words/does.mp3",
+    "dog": "audio/words/dog.mp3",
+    "dolphin": "audio/words/dolphin.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter d": "audio/words/letter-d.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3"
+  }
+}

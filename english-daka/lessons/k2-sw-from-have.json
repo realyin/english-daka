@@ -1,0 +1,191 @@
+{
+  "seq": 404,
+  "group": "常见词 Sight Words",
+  "badge": "from",
+  "title": "Sight Words · from / have",
+  "cards": [
+    {
+      "word": "from",
+      "cn": "从……来",
+      "tag": "sight word",
+      "image": "images/sw-from.webp",
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word from."
+          ],
+          "key": [
+            "from"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 from。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-sight-word-from-b53695.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-from-8991d1.mp3",
+      "quiz": false
+    },
+    {
+      "word": "have",
+      "cn": "有",
+      "tag": "sight word",
+      "image": "images/sw-have.webp",
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word have."
+          ],
+          "key": [
+            "have"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 have。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-sight-word-have-f64bcb.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-have-a87dce.mp3",
+      "quiz": false
+    },
+    {
+      "word": "egg",
+      "cn": "蛋",
+      "tag": "word",
+      "image": "images/sw-egg-hatch-egg.webp",
+      "dialog": [
+        {
+          "q": "What's this key word?",
+          "a": [
+            "It's key word egg."
+          ],
+          "key": [
+            "egg"
+          ],
+          "q_cn": "这是什么关键词？",
+          "a_cn": [
+            "是关键词 egg（蛋）。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-key-word-egg-240e18.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-egg-17947c.mp3"
+    },
+    {
+      "word": "hatch",
+      "cn": "孵化",
+      "tag": "word",
+      "image": "images/sw-egg-hatch-hatch.webp",
+      "dialog": [
+        {
+          "q": "What's this key word?",
+          "a": [
+            "It's key word hatch."
+          ],
+          "key": [
+            "hatch"
+          ],
+          "q_cn": "这是什么关键词？",
+          "a_cn": [
+            "是关键词 hatch（孵化）。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-key-word-hatch-c0525b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-hatch-e6883c.mp3"
+    },
+    {
+      "word": "plant",
+      "cn": "植物",
+      "tag": "word",
+      "image": "images/sw-egg-hatch-plant.webp",
+      "dialog": [
+        {
+          "q": "What's this key word?",
+          "a": [
+            "It's key word plant."
+          ],
+          "key": [
+            "plant"
+          ],
+          "q_cn": "这是什么关键词？",
+          "a_cn": [
+            "是关键词 plant（植物）。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-key-word-plant-b9ec57.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-plant-54cd71.mp3"
+    },
+    {
+      "word": "sun",
+      "cn": "太阳",
+      "tag": "word",
+      "image": "images/sw-egg-hatch-sun.webp",
+      "dialog": [
+        {
+          "q": "What's this key word?",
+          "a": [
+            "It's key word sun."
+          ],
+          "key": [
+            "sun"
+          ],
+          "q_cn": "这是什么关键词？",
+          "a_cn": [
+            "是关键词 sun（太阳）。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-from-have/a-it-s-key-word-sun-dadbe1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-from-have/q-which-one-is-sun-46bf64.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "egg": "audio/words/egg.mp3",
+    "from": "audio/words/from.mp3",
+    "hatch": "audio/words/hatch.mp3",
+    "have": "audio/words/have.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "key": "audio/words/key.mp3",
+    "plant": "audio/words/plant.mp3",
+    "sight": "audio/words/sight.mp3",
+    "sun": "audio/words/sun.mp3",
+    "this": "audio/words/this.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "word": "audio/words/word.mp3"
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "seq": 701,
+  "group": "科学 Science",
+  "badge": "♻️",
+  "title": "Recycling · 垃圾分类回收",
+  "cards": [
+    {
+      "word": "paper bin",
+      "cn": "纸回收箱",
+      "tag": "science",
+      "image": "images/recycling-bin-paper.webp",
+      "dialog": [
+        {
+          "q": "What's this recycling bin?",
+          "a": [
+            "This is the paper recycling bin."
+          ],
+          "key": [
+            "paper"
+          ],
+          "q_cn": "这是什么回收箱？",
+          "a_cn": [
+            "这是纸质回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-recycling-bin-9c3849.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-paper-recycling-bin-b85aad.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-paper-bin-7fb94c.mp3"
+    },
+    {
+      "word": "metal bin",
+      "cn": "金属回收箱",
+      "tag": "science",
+      "image": "images/recycling-bin-metal.webp",
+      "dialog": [
+        {
+          "q": "What's this recycling bin?",
+          "a": [
+            "This is the metal recycling bin."
+          ],
+          "key": [
+            "metal"
+          ],
+          "q_cn": "这是什么回收箱？",
+          "a_cn": [
+            "这是金属回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-recycling-bin-9c3849.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-metal-recycling-bin-33480d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-metal-bin-b7cb3c.mp3"
+    },
+    {
+      "word": "plastic bin",
+      "cn": "塑料回收箱",
+      "tag": "science",
+      "image": "images/recycling-bin-plastic.webp",
+      "dialog": [
+        {
+          "q": "What's this recycling bin?",
+          "a": [
+            "This is the plastic recycling bin."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "这是什么回收箱？",
+          "a_cn": [
+            "这是塑料回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-recycling-bin-9c3849.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-plastic-recycling-bin-f3c3cb.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-bin-29b4be.mp3"
+    },
+    {
+      "word": "glass bin",
+      "cn": "玻璃回收箱",
+      "tag": "science",
+      "image": "images/recycling-bin-glass.webp",
+      "dialog": [
+        {
+          "q": "What's this recycling bin?",
+          "a": [
+            "This is the glass recycling bin."
+          ],
+          "key": [
+            "glass"
+          ],
+          "q_cn": "这是什么回收箱？",
+          "a_cn": [
+            "这是玻璃回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-recycling-bin-9c3849.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-glass-recycling-bin-1d8cc4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-glass-bin-f1ce01.mp3"
+    },
+    {
+      "word": "compost",
+      "cn": "堆肥",
+      "tag": "science",
+      "image": "images/recycling-compost.webp",
+      "dialog": [
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the compost pile."
+          ],
+          "key": [
+            "compost"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是有机堆肥。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-compost-pile-35161b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-compost-eeafb3.mp3"
+    },
+    {
+      "word": "paper",
+      "cn": "纸",
+      "tag": "science",
+      "image": "images/recycling-item-paper.webp",
+      "dialog": [
+        {
+          "q": "Where should the paper item go?",
+          "a": [
+            "The paper item should go to the paper recycling bin."
+          ],
+          "key": [
+            "paper"
+          ],
+          "q_cn": "纸质材料应该放进哪里？",
+          "a_cn": [
+            "纸质材料应该放进纸质回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-paper-item-go-d10626.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-paper-item-should-go-to-the-pape-bb65e1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-paper-a18070.mp3"
+    },
+    {
+      "word": "metal",
+      "cn": "金属",
+      "tag": "science",
+      "image": "images/recycling-item-metal.webp",
+      "dialog": [
+        {
+          "q": "Where should the metal item go?",
+          "a": [
+            "The metal item should go to the metal recycling bin."
+          ],
+          "key": [
+            "metal"
+          ],
+          "q_cn": "金属材料应该放进哪里？",
+          "a_cn": [
+            "金属材料应该放进金属回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-metal-item-go-fdca71.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-metal-15c61a.mp3"
+    },
+    {
+      "word": "plastic",
+      "cn": "塑料",
+      "tag": "science",
+      "image": "images/recycling-item-plastic.webp",
+      "dialog": [
+        {
+          "q": "Where should the plastic item go?",
+          "a": [
+            "The plastic item should go to the plastic recycling bin."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "塑料材料应该放进哪里？",
+          "a_cn": [
+            "塑料材料应该放进塑料回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-plastic-item-go-7ffbd4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-56173b.mp3"
+    },
+    {
+      "word": "glass",
+      "cn": "玻璃",
+      "tag": "science",
+      "image": "images/recycling-item-glass.webp",
+      "dialog": [
+        {
+          "q": "Where should the glass item go?",
+          "a": [
+            "The glass item should go to the glass recycling bin."
+          ],
+          "key": [
+            "glass"
+          ],
+          "q_cn": "玻璃材料应该放进哪里？",
+          "a_cn": [
+            "玻璃材料应该放进玻璃回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-glass-item-go-80fb2a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-glass-3e4a40.mp3"
+    },
+    {
+      "word": "apple core",
+      "cn": "苹果核",
+      "tag": "science",
+      "image": "images/recycling-apple-core.webp",
+      "dialog": [
+        {
+          "q": "Where should the apple core go?",
+          "a": [
+            "The apple core should go to the compost pile."
+          ],
+          "key": [
+            "compost"
+          ],
+          "q_cn": "苹果核应该放进哪里？",
+          "a_cn": [
+            "苹果核应该放进堆肥箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-apple-core-go-ae57d4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-apple-core-should-go-to-the-comp-7c5ca2.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-apple-core-334ad7.mp3"
+    },
+    {
+      "word": "sort it out",
+      "cn": "分一分",
+      "tag": "science",
+      "image": "images/recycling-sort.webp",
+      "dialog": [
+        {
+          "q": "Where should the glass bottle go?",
+          "a": [
+            "The glass bottle should go to the glass recycling bin."
+          ],
+          "key": [
+            "glass"
+          ],
+          "q_cn": "玻璃瓶应该放进哪里？",
+          "a_cn": [
+            "玻璃瓶应该放进玻璃回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-glass-bottle-go-dce9b3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-glass-bottle-should-go-to-the-gl-15967d.mp3"
+          ],
+          "image": "images/recycling-sort-glass.webp"
+        }
+      ],
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-sort-it-out-2e2d6c.mp3"
+    },
+    {
+      "word": "newspaper",
+      "cn": "报纸",
+      "tag": "science",
+      "image": "images/recycling-sort-paper.webp",
+      "dialog": [
+        {
+          "q": "Where should the newspaper go?",
+          "a": [
+            "The newspaper should go to the paper recycling bin."
+          ],
+          "key": [
+            "paper"
+          ],
+          "q_cn": "报纸应该放进哪里？",
+          "a_cn": [
+            "报纸应该放进纸质回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-newspaper-go-6e0fec.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-newspaper-should-go-to-the-paper-61729d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-newspaper-a7dfc7.mp3"
+    },
+    {
+      "word": "soda can",
+      "cn": "汽水罐",
+      "tag": "science",
+      "image": "images/recycling-sort-metal.webp",
+      "dialog": [
+        {
+          "q": "Where should the soda can go?",
+          "a": [
+            "The soda can should go to the metal recycling bin."
+          ],
+          "key": [
+            "metal"
+          ],
+          "q_cn": "汽水罐应该放进哪里？",
+          "a_cn": [
+            "汽水罐应该放进金属回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-soda-can-go-4bf603.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-soda-can-fc7c16.mp3"
+    },
+    {
+      "word": "plastic bottle",
+      "cn": "塑料瓶",
+      "tag": "science",
+      "image": "images/recycling-sort-plastic.webp",
+      "dialog": [
+        {
+          "q": "Where should the plastic bottle go?",
+          "a": [
+            "The plastic bottle should go to the plastic recycling bin."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "塑料瓶应该放进哪里？",
+          "a_cn": [
+            "塑料瓶应该放进塑料回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-plastic-bottle-go-dbcb2e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-plastic-bottle-should-go-to-the--1a6bba.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-bottle-d41733.mp3"
+    },
+    {
+      "word": "banana peel",
+      "cn": "香蕉皮",
+      "tag": "science",
+      "image": "images/recycling-sort-compost.webp",
+      "dialog": [
+        {
+          "q": "Where should the banana peel go?",
+          "a": [
+            "The banana peel should go to the compost pile."
+          ],
+          "key": [
+            "compost"
+          ],
+          "q_cn": "香蕉皮应该放进哪里？",
+          "a_cn": [
+            "香蕉皮应该放进堆肥箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-banana-peel-go-a7b281.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-banana-peel-should-go-to-the-com-d8928b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-banana-peel-3e8130.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "apple": "audio/words/apple.mp3",
+    "apple core": "audio/words/apple-core.mp3",
+    "banana": "audio/words/banana.mp3",
+    "banana peel": "audio/words/banana-peel.mp3",
+    "bin": "audio/words/bin.mp3",
+    "bottle": "audio/words/bottle.mp3",
+    "can": "audio/words/can.mp3",
+    "compost": "audio/words/compost.mp3",
+    "core": "audio/words/core.mp3",
+    "glass": "audio/words/glass.mp3",
+    "glass bin": "audio/words/glass-bin.mp3",
+    "go": "audio/words/go.mp3",
+    "is": "audio/words/is.mp3",
+    "item": "audio/words/item.mp3",
+    "metal": "audio/words/metal.mp3",
+    "metal bin": "audio/words/metal-bin.mp3",
+    "newspaper": "audio/words/newspaper.mp3",
+    "paper": "audio/words/paper.mp3",
+    "paper bin": "audio/words/paper-bin.mp3",
+    "peel": "audio/words/peel.mp3",
+    "pile": "audio/words/pile.mp3",
+    "plastic": "audio/words/plastic.mp3",
+    "plastic bin": "audio/words/plastic-bin.mp3",
+    "plastic bottle": "audio/words/plastic-bottle.mp3",
+    "recycling": "audio/words/recycling.mp3",
+    "should": "audio/words/should.mp3",
+    "soda": "audio/words/soda.mp3",
+    "soda can": "audio/words/soda-can.mp3",
+    "sort it out": "audio/words/sort-it-out.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3"
+  }
+}

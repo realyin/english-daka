@@ -1,0 +1,316 @@
+{
+  "seq": 304,
+  "group": "拼读 Phonics",
+  "badge": "eu",
+  "title": "Short e & u · 短元音 e 和 u",
+  "cards": [
+    {
+      "word": "fed",
+      "cn": "喂过（feed 的过去式）",
+      "tag": "CVC",
+      "emoji": "🐥",
+      "phonics": {
+        "group": "短音 e /ɛ/",
+        "ipa": "/fɛd/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": "eh",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "ed",
+          "sound": "ed"
+        },
+        "blend_audio": "audio/phonics/blend-fed.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's fed."
+          ],
+          "key": [
+            "fed"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 fed。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-fed.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-eu/q-which-one-is-fed-99e0f8.mp3"
+    },
+    {
+      "word": "beg",
+      "cn": "乞求",
+      "tag": "CVC",
+      "emoji": "🙏",
+      "phonics": {
+        "group": "短音 e /ɛ/",
+        "ipa": "/bɛɡ/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": "eh",
+            "kind": "vowel"
+          },
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "eg",
+          "sound": "eg"
+        },
+        "blend_audio": "audio/phonics/blend-beg.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's beg."
+          ],
+          "key": [
+            "beg"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 beg。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-beg.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-eu/q-which-one-is-beg-cfcc76.mp3"
+    },
+    {
+      "word": "vet",
+      "cn": "兽医",
+      "tag": "CVC",
+      "emoji": "🩺",
+      "phonics": {
+        "group": "短音 e /ɛ/",
+        "ipa": "/vɛt/",
+        "parts": [
+          {
+            "text": "v",
+            "sound": "v",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": "eh",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "v",
+          "sound": "v"
+        },
+        "rime": {
+          "text": "et",
+          "sound": "et"
+        },
+        "blend_audio": "audio/phonics/blend-vet.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's vet."
+          ],
+          "key": [
+            "vet"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 vet。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-vet.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-eu/q-which-one-is-vet-0065ab.mp3"
+    },
+    {
+      "word": "tub",
+      "cn": "浴缸",
+      "tag": "CVC",
+      "emoji": "🛁",
+      "phonics": {
+        "group": "短音 u /ʌ/",
+        "ipa": "/tʌb/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "u",
+            "sound": "ah",
+            "kind": "vowel"
+          },
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "ub",
+          "sound": "ub"
+        },
+        "blend_audio": "audio/phonics/blend-tub.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's tub."
+          ],
+          "key": [
+            "tub"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 tub。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-tub.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-eu/q-which-one-is-tub-b62794.mp3"
+    },
+    {
+      "word": "gum",
+      "cn": "口香糖",
+      "tag": "CVC",
+      "emoji": "🍬",
+      "phonics": {
+        "group": "短音 u /ʌ/",
+        "ipa": "/ɡʌm/",
+        "parts": [
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          },
+          {
+            "text": "u",
+            "sound": "ah",
+            "kind": "vowel"
+          },
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "g",
+          "sound": "g"
+        },
+        "rime": {
+          "text": "um",
+          "sound": "um"
+        },
+        "blend_audio": "audio/phonics/blend-gum.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's gum."
+          ],
+          "key": [
+            "gum"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 gum。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-gum.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-eu/q-which-one-is-gum-857674.mp3"
+    }
+  ],
+  "word_audio": {
+    "beg": "audio/words/beg.mp3",
+    "fed": "audio/words/fed.mp3",
+    "gum": "audio/words/gum.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "this": "audio/words/this.mp3",
+    "tub": "audio/words/tub.mp3",
+    "vet": "audio/words/vet.mp3",
+    "what": "audio/words/what.mp3",
+    "word": "audio/words/word.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

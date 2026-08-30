@@ -1,0 +1,386 @@
+{
+  "_comment": "拼读音素公共库,由 gen_phonics.py 生成/维护。课程卡片的 phonics.parts[].sound 直接用这里的 key。",
+  "sounds": {
+    "b": {
+      "ipa": "/b/",
+      "cue": "b：双唇轻碰后弹开，不加“呃”音",
+      "audio": "audio/phonics/b.mp3"
+    },
+    "t": {
+      "ipa": "/t/",
+      "cue": "t：舌尖轻弹，只留短促气流，不加“呃”音",
+      "audio": "audio/phonics/t.mp3"
+    },
+    "p": {
+      "ipa": "/p/",
+      "cue": "p：双唇送气后立刻收住，不加“呃”音",
+      "audio": "audio/phonics/p.mp3"
+    },
+    "d": {
+      "ipa": "/d/",
+      "cue": "d：舌尖轻碰后立刻收住，不加“呃”音",
+      "audio": "audio/phonics/d.mp3"
+    },
+    "g": {
+      "ipa": "/ɡ/",
+      "cue": "g：喉咙带声，短促收住，不加“呃”音",
+      "audio": "audio/phonics/g.mp3"
+    },
+    "k": {
+      "ipa": "/k/",
+      "cue": "c/k：只留短促送气声 /k/，不加“呃”音",
+      "audio": "audio/phonics/k.mp3"
+    },
+    "j": {
+      "ipa": "/dʒ/",
+      "cue": "j：短促发 /dʒ/，马上收住，不加“呃”音",
+      "audio": "audio/phonics/j.mp3"
+    },
+    "h": {
+      "ipa": "/h/",
+      "cue": "h：轻轻哈气",
+      "audio": "audio/phonics/h.mp3"
+    },
+    "l": {
+      "ipa": "/l/",
+      "cue": "l：舌尖顶上齿后方，只发 /l/，不加“呃”音",
+      "audio": "audio/phonics/l.mp3"
+    },
+    "m": {
+      "ipa": "/m/",
+      "cue": "m：双唇闭合，连续发 /m/，不加“呃”音",
+      "audio": "audio/phonics/m.mp3"
+    },
+    "n": {
+      "ipa": "/n/",
+      "cue": "n：舌尖顶住，连续发 /n/，不加“呃”音",
+      "audio": "audio/phonics/n.mp3"
+    },
+    "s": {
+      "ipa": "/s/",
+      "cue": "s：像小蛇一样“丝—”",
+      "audio": "audio/phonics/s.mp3"
+    },
+    "f": {
+      "ipa": "/f/",
+      "cue": "f：上齿轻碰下唇，只留摩擦声 /f/",
+      "audio": "audio/phonics/f.mp3"
+    },
+    "v": {
+      "ipa": "/v/",
+      "cue": "v：上齿轻碰下唇，带声摩擦",
+      "audio": "audio/phonics/v.mp3"
+    },
+    "z": {
+      "ipa": "/z/",
+      "cue": "z：像小蜜蜂一样“兹—”",
+      "audio": "audio/phonics/z.mp3"
+    },
+    "r": {
+      "ipa": "/r/",
+      "cue": "r：舌头卷起不碰上颚，不加“呃”音",
+      "audio": "audio/phonics/r.mp3"
+    },
+    "w": {
+      "ipa": "/w/",
+      "cue": "w：嘴唇收圆再展开",
+      "audio": "audio/phonics/w.mp3"
+    },
+    "y": {
+      "ipa": "/j/",
+      "cue": "y：像快速说“呀”的开头",
+      "audio": "audio/phonics/y.mp3"
+    },
+    "x": {
+      "ipa": "/ks/",
+      "cue": "x：先 /k/ 后 /s/，快速连成 /ks/",
+      "audio": "audio/phonics/x.mp3"
+    },
+    "qu": {
+      "ipa": "/kw/",
+      "cue": "qu：/k/ 和 /w/ 快速连读",
+      "audio": "audio/phonics/qu.mp3"
+    },
+    "ch": {
+      "ipa": "/tʃ/",
+      "cue": "ch：像小火车“嚓”，短促收住",
+      "audio": "audio/phonics/ch.mp3"
+    },
+    "sh": {
+      "ipa": "/ʃ/",
+      "cue": "sh：食指放嘴边“嘘—”",
+      "audio": "audio/phonics/sh.mp3"
+    },
+    "th": {
+      "ipa": "/θ/",
+      "cue": "th：舌尖轻咬在上下齿之间吹气",
+      "audio": "audio/phonics/th.mp3"
+    },
+    "ae": {
+      "ipa": "/æ/",
+      "cue": "a：嘴巴张开，短促 /æ/",
+      "audio": "audio/phonics/ae.mp3"
+    },
+    "eh": {
+      "ipa": "/ɛ/",
+      "cue": "e：短促 /ɛ/，像“诶”但更短",
+      "audio": "audio/phonics/eh.mp3"
+    },
+    "ih": {
+      "ipa": "/ɪ/",
+      "cue": "i：短促 /ɪ/，嘴角放松",
+      "audio": "audio/phonics/ih.mp3"
+    },
+    "aa": {
+      "ipa": "/ɑ/",
+      "cue": "o：美音短 /ɑ/，嘴巴张圆",
+      "audio": "audio/phonics/aa.mp3"
+    },
+    "ah": {
+      "ipa": "/ʌ/",
+      "cue": "u：短促 /ʌ/，像轻短的“啊”",
+      "audio": "audio/phonics/ah.mp3"
+    },
+    "ay": {
+      "ipa": "/eɪ/",
+      "cue": "a_e：a 说字母名 /eɪ/",
+      "audio": "audio/phonics/ay.mp3"
+    },
+    "eye": {
+      "ipa": "/aɪ/",
+      "cue": "i_e：i 说字母名 /aɪ/",
+      "audio": "audio/phonics/eye.mp3"
+    },
+    "oh": {
+      "ipa": "/oʊ/",
+      "cue": "o_e：o 说字母名 /oʊ/",
+      "audio": "audio/phonics/oh.mp3"
+    },
+    "yoo": {
+      "ipa": "/juː/",
+      "cue": "u_e：u 说 /juː/",
+      "audio": "audio/phonics/yoo.mp3"
+    },
+    "ee": {
+      "ipa": "/iː/",
+      "cue": "ee：e 说字母名 /iː/，嘴角咧开",
+      "audio": "audio/phonics/ee.mp3"
+    },
+    "ab": {
+      "ipa": "/æb/",
+      "audio": "audio/phonics/ab.mp3"
+    },
+    "ad": {
+      "ipa": "/æd/",
+      "audio": "audio/phonics/ad.mp3"
+    },
+    "ag": {
+      "ipa": "/æɡ/",
+      "audio": "audio/phonics/ag.mp3"
+    },
+    "am": {
+      "ipa": "/æm/",
+      "audio": "audio/phonics/am.mp3"
+    },
+    "an": {
+      "ipa": "/æn/",
+      "audio": "audio/phonics/an.mp3"
+    },
+    "ap": {
+      "ipa": "/æp/",
+      "audio": "audio/phonics/ap.mp3"
+    },
+    "at": {
+      "ipa": "/æt/",
+      "audio": "audio/phonics/at.mp3"
+    },
+    "ax": {
+      "ipa": "/æks/",
+      "audio": "audio/phonics/ax.mp3"
+    },
+    "eb": {
+      "ipa": "/ɛb/",
+      "audio": "audio/phonics/eb.mp3"
+    },
+    "ed": {
+      "ipa": "/ɛd/",
+      "audio": "audio/phonics/ed.mp3"
+    },
+    "eg": {
+      "ipa": "/ɛɡ/",
+      "audio": "audio/phonics/eg.mp3"
+    },
+    "em": {
+      "ipa": "/ɛm/",
+      "audio": "audio/phonics/em.mp3"
+    },
+    "en": {
+      "ipa": "/ɛn/",
+      "audio": "audio/phonics/en.mp3"
+    },
+    "ep": {
+      "ipa": "/ɛp/",
+      "audio": "audio/phonics/ep.mp3"
+    },
+    "et": {
+      "ipa": "/ɛt/",
+      "audio": "audio/phonics/et.mp3"
+    },
+    "ex": {
+      "ipa": "/ɛks/",
+      "audio": "audio/phonics/ex.mp3"
+    },
+    "ib": {
+      "ipa": "/ɪb/",
+      "audio": "audio/phonics/ib.mp3"
+    },
+    "id": {
+      "ipa": "/ɪd/",
+      "audio": "audio/phonics/id.mp3"
+    },
+    "ig": {
+      "ipa": "/ɪɡ/",
+      "audio": "audio/phonics/ig.mp3"
+    },
+    "im": {
+      "ipa": "/ɪm/",
+      "audio": "audio/phonics/im.mp3"
+    },
+    "in": {
+      "ipa": "/ɪn/",
+      "audio": "audio/phonics/in.mp3"
+    },
+    "ip": {
+      "ipa": "/ɪp/",
+      "audio": "audio/phonics/ip.mp3"
+    },
+    "it": {
+      "ipa": "/ɪt/",
+      "audio": "audio/phonics/it.mp3"
+    },
+    "ix": {
+      "ipa": "/ɪks/",
+      "audio": "audio/phonics/ix.mp3"
+    },
+    "ob": {
+      "ipa": "/ɑb/",
+      "audio": "audio/phonics/ob.mp3"
+    },
+    "od": {
+      "ipa": "/ɑd/",
+      "audio": "audio/phonics/od.mp3"
+    },
+    "og": {
+      "ipa": "/ɑɡ/",
+      "audio": "audio/phonics/og.mp3"
+    },
+    "om": {
+      "ipa": "/ɑm/",
+      "audio": "audio/phonics/om.mp3"
+    },
+    "on": {
+      "ipa": "/ɑn/",
+      "audio": "audio/phonics/on.mp3"
+    },
+    "op": {
+      "ipa": "/ɑp/",
+      "audio": "audio/phonics/op.mp3"
+    },
+    "ot": {
+      "ipa": "/ɑt/",
+      "audio": "audio/phonics/ot.mp3"
+    },
+    "ox": {
+      "ipa": "/ɑks/",
+      "audio": "audio/phonics/ox.mp3"
+    },
+    "ub": {
+      "ipa": "/ʌb/",
+      "audio": "audio/phonics/ub.mp3"
+    },
+    "ud": {
+      "ipa": "/ʌd/",
+      "audio": "audio/phonics/ud.mp3"
+    },
+    "ug": {
+      "ipa": "/ʌɡ/",
+      "audio": "audio/phonics/ug.mp3"
+    },
+    "um": {
+      "ipa": "/ʌm/",
+      "audio": "audio/phonics/um.mp3"
+    },
+    "un": {
+      "ipa": "/ʌn/",
+      "audio": "audio/phonics/un.mp3"
+    },
+    "up": {
+      "ipa": "/ʌp/",
+      "audio": "audio/phonics/up.mp3"
+    },
+    "us": {
+      "ipa": "/ʌs/",
+      "audio": "audio/phonics/us.mp3"
+    },
+    "ut": {
+      "ipa": "/ʌt/",
+      "audio": "audio/phonics/ut.mp3"
+    },
+    "ake": {
+      "ipa": "/eɪk/",
+      "audio": "audio/phonics/ake.mp3"
+    },
+    "ame": {
+      "ipa": "/eɪm/",
+      "audio": "audio/phonics/ame.mp3"
+    },
+    "ate": {
+      "ipa": "/eɪt/",
+      "audio": "audio/phonics/ate.mp3"
+    },
+    "ide": {
+      "ipa": "/aɪd/",
+      "audio": "audio/phonics/ide.mp3"
+    },
+    "ike": {
+      "ipa": "/aɪk/",
+      "audio": "audio/phonics/ike.mp3"
+    },
+    "ime": {
+      "ipa": "/aɪm/",
+      "audio": "audio/phonics/ime.mp3"
+    },
+    "ine": {
+      "ipa": "/aɪn/",
+      "audio": "audio/phonics/ine.mp3"
+    },
+    "ite": {
+      "ipa": "/aɪt/",
+      "audio": "audio/phonics/ite.mp3"
+    },
+    "ode": {
+      "ipa": "/oʊd/",
+      "audio": "audio/phonics/ode.mp3"
+    },
+    "oke": {
+      "ipa": "/oʊk/",
+      "audio": "audio/phonics/oke.mp3"
+    },
+    "one": {
+      "ipa": "/oʊn/",
+      "audio": "audio/phonics/one.mp3"
+    },
+    "ope": {
+      "ipa": "/oʊp/",
+      "audio": "audio/phonics/ope.mp3"
+    },
+    "ude": {
+      "ipa": "/uːd/",
+      "audio": "audio/phonics/ude.mp3"
+    },
+    "ute": {
+      "ipa": "/juːt/",
+      "audio": "audio/phonics/ute.mp3"
+    }
+  }
+}

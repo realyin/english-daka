@@ -1,0 +1,432 @@
+{
+  "seq": 303,
+  "group": "拼读 Phonics",
+  "badge": "o",
+  "title": "Short o · 短元音 o 拼读",
+  "cards": [
+    {
+      "word": "top",
+      "cn": "顶部；最上面",
+      "tag": "CVC",
+      "emoji": "🔝",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/tɑp/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "p",
+            "sound": "p",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "op",
+          "sound": "op"
+        },
+        "blend_audio": "audio/phonics/blend-top.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's top."
+          ],
+          "key": [
+            "top"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 top。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-top.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-top-7750ef.mp3"
+    },
+    {
+      "word": "dot",
+      "cn": "点",
+      "tag": "CVC",
+      "emoji": "⚫",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/dɑt/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-dot.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's dot."
+          ],
+          "key": [
+            "dot"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 dot。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-dot.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-dot-dc07ac.mp3"
+    },
+    {
+      "word": "got",
+      "cn": "得到（get 的过去式）",
+      "tag": "CVC",
+      "emoji": "🎁",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/ɡɑt/",
+        "parts": [
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "g",
+          "sound": "g"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-got.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's got."
+          ],
+          "key": [
+            "got"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 got。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-got.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-got-2aad36.mp3"
+    },
+    {
+      "word": "hot",
+      "cn": "热的",
+      "tag": "CVC",
+      "emoji": "☕",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/hɑt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-hot.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's hot."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 hot。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-hot.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-hot-c419d5.mp3"
+    },
+    {
+      "word": "log",
+      "cn": "原木",
+      "tag": "CVC",
+      "emoji": "🪵",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/lɑɡ/",
+        "parts": [
+          {
+            "text": "l",
+            "sound": "l",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "l",
+          "sound": "l"
+        },
+        "rime": {
+          "text": "og",
+          "sound": "og"
+        },
+        "blend_audio": "audio/phonics/blend-log.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's log."
+          ],
+          "key": [
+            "log"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 log。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-log.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-log-7d72ab.mp3"
+    },
+    {
+      "word": "job",
+      "cn": "工作",
+      "tag": "CVC",
+      "emoji": "💼",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/dʒɑb/",
+        "parts": [
+          {
+            "text": "j",
+            "sound": "j",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "j",
+          "sound": "j"
+        },
+        "rime": {
+          "text": "ob",
+          "sound": "ob"
+        },
+        "blend_audio": "audio/phonics/blend-job.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's job."
+          ],
+          "key": [
+            "job"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 job。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-job.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-job-c34444.mp3"
+    },
+    {
+      "word": "dog",
+      "cn": "狗",
+      "tag": "CVC",
+      "emoji": "🐶",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot / -og 词族",
+        "ipa": "/dɑɡ/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "og",
+          "sound": "og"
+        },
+        "blend_audio": "audio/phonics/blend-dog.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's dog."
+          ],
+          "key": [
+            "dog"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 dog。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-it-s-dog-c6655e.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-dog.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-o/q-which-one-is-dog-987611.mp3"
+    }
+  ],
+  "word_audio": {
+    "dog": "audio/words/dog.mp3",
+    "dot": "audio/words/dot.mp3",
+    "got": "audio/words/got.mp3",
+    "hot": "audio/words/hot.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "job": "audio/words/job.mp3",
+    "log": "audio/words/log.mp3",
+    "this": "audio/words/this.mp3",
+    "top": "audio/words/top.mp3",
+    "what": "audio/words/what.mp3",
+    "word": "audio/words/word.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

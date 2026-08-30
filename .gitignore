@@ -1,0 +1,35 @@
+# ── 系统 / 编辑器 ───────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── 体积巨大且可再生 / 不宜公开的素材 ──────────────────────────
+
+# 配图原始 PNG（366M）：已全部经 add_image.py / ingest_images.py
+# 归一化成 english-daka/lessons/images/*.webp 入库，仓库里留 webp 就够了
+english-daka/generated-images/
+
+# 线下课原始课件（168M，第三方教材扫描件）：建课的唯一来源，
+# 本地不能删，但有版权且体积过大，不进公开仓库
+english-daka/lessons_original/
+
+# 拆卡前的历史快照，纯本地回滚用
+backup-before-split/
+
+# TTS 音色试听样本，`python3 try_voices.py` 随时重生成
+voice_samples/
+
+# ── 说明 ──────────────────────────────────────────────────────
+# lessons/audio/ 与 lessons/images/ 是有意提交的（共约 45M）：
+# 音频要 edge-tts 联网合成、配图要重新出图，克隆下来没有它们应用直接哑掉。

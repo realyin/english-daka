@@ -1,0 +1,278 @@
+{
+  "seq": 305,
+  "group": "拼读 Phonics",
+  "badge": "a_e",
+  "title": "Magic e · 魔法 e 长元音",
+  "cards": [
+    {
+      "word": "code",
+      "cn": "密码；代码",
+      "tag": "CVCe",
+      "emoji": "🔐",
+      "phonics": {
+        "group": "Magic e · 长元音对比",
+        "ipa": "/koʊd/",
+        "parts": [
+          {
+            "text": "c",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "oh",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": null,
+            "kind": "silent"
+          }
+        ],
+        "onset": {
+          "text": "c",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "ode",
+          "sound": "ode"
+        },
+        "blend_audio": "audio/phonics/blend-code.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's code."
+          ],
+          "key": [
+            "code"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 code。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-it-s-code-af6826.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-code.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-magic-e/q-which-one-is-code-73a932.mp3"
+    },
+    {
+      "word": "cute",
+      "cn": "可爱的",
+      "tag": "CVCe",
+      "emoji": "🐶",
+      "phonics": {
+        "group": "Magic e · 长元音对比",
+        "ipa": "/kjuːt/",
+        "parts": [
+          {
+            "text": "c",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "u",
+            "sound": "yoo",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": null,
+            "kind": "silent"
+          }
+        ],
+        "onset": {
+          "text": "c",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "ute",
+          "sound": "ute"
+        },
+        "blend_audio": "audio/phonics/blend-cute.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's cute."
+          ],
+          "key": [
+            "cute"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 cute。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-it-s-cute-f86ac1.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-cute.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-magic-e/q-which-one-is-cute-c34ec0.mp3"
+    },
+    {
+      "word": "date",
+      "cn": "日期",
+      "tag": "CVCe",
+      "emoji": "📅",
+      "phonics": {
+        "group": "Magic e · 长元音对比",
+        "ipa": "/deɪt/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ay",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": null,
+            "kind": "silent"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ate",
+          "sound": "ate"
+        },
+        "blend_audio": "audio/phonics/blend-date.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's date."
+          ],
+          "key": [
+            "date"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 date。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-it-s-date-2ac0eb.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-date.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-magic-e/q-which-one-is-date-898424.mp3"
+    },
+    {
+      "word": "kite",
+      "cn": "风筝",
+      "tag": "CVCe",
+      "emoji": "🪁",
+      "phonics": {
+        "group": "Magic e · 长元音对比",
+        "ipa": "/kaɪt/",
+        "parts": [
+          {
+            "text": "k",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "eye",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "e",
+            "sound": null,
+            "kind": "silent"
+          }
+        ],
+        "onset": {
+          "text": "k",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "ite",
+          "sound": "ite"
+        },
+        "blend_audio": "audio/phonics/blend-kite.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's kite."
+          ],
+          "key": [
+            "kite"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 kite。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-it-s-kite-393325.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-kite.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-magic-e/q-which-one-is-kite-4f29b7.mp3"
+    }
+  ],
+  "word_audio": {
+    "code": "audio/words/code.mp3",
+    "cute": "audio/words/cute.mp3",
+    "date": "audio/words/date.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "kite": "audio/words/kite.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "word": "audio/words/word.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

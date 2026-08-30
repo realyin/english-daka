@@ -1,0 +1,479 @@
+{
+  "seq": 104,
+  "group": "字母 Letters",
+  "badge": "A",
+  "title": "Letter A · /æ/",
+  "cards": [
+    {
+      "word": "letter A",
+      "cn": "字母 A",
+      "tag": "letter",
+      "image": "images/a-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-it-s-letter-a-3ee564.mp3"
+          ]
+        },
+        {
+          "q": "What sound does letter A make?",
+          "a": [
+            "A makes the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "字母 A 发什么音？",
+          "a_cn": [
+            "A 发 /æ/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-letter-a-make-a759d7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-a-makes-the-sound-a-0b1822.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-letter-a-39a3dc.mp3"
+    },
+    {
+      "word": "apple",
+      "cn": "苹果",
+      "tag": "word",
+      "image": "images/a-words-1-apple.webp",
+      "dialog": [
+        {
+          "q": "What sound does apple begin with?",
+          "a": [
+            "Apple begins with the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "apple 以什么音开头？",
+          "a_cn": [
+            "apple 以 /æ/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-apple-begin-with-1931d9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-apple-begins-with-the-sound-a-4dba7e.mp3"
+          ]
+        },
+        {
+          "q": "Which letter does apple begin with?",
+          "a": [
+            "Apple begins with letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "apple 以哪个字母开头？",
+          "a_cn": [
+            "apple 以字母 A 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-apple-begin-with-f73e78.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-apple-b0e24e.mp3"
+    },
+    {
+      "word": "apple",
+      "cn": "苹果",
+      "tag": "word",
+      "image": "images/a-words-1-apple.webp",
+      "dialog": [
+        {
+          "q": "What color is the apple?",
+          "a": [
+            "The apple is red."
+          ],
+          "key": [
+            "red"
+          ],
+          "q_cn": "苹果是什么颜色的？",
+          "a_cn": [
+            "苹果是红色的。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-the-apple-b2a099.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-the-apple-is-red-2e8276.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-apple-b0e24e.mp3"
+    },
+    {
+      "word": "dolphin",
+      "cn": "海豚",
+      "tag": "review",
+      "image": "images/a-words-1-dolphin.webp",
+      "dialog": [
+        {
+          "q": "What's your favorite animal?",
+          "a": [
+            "My favorite animal is a dolphin."
+          ],
+          "key": [
+            "dolphin"
+          ],
+          "q_cn": "你最喜欢的动物是什么？",
+          "a_cn": [
+            "我最喜欢的动物是海豚。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-your-favorite-animal-5de038.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-my-favorite-animal-is-a-dolphin-96958b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-dolphin-1ef608.mp3"
+    },
+    {
+      "word": "alligator",
+      "cn": "短吻鳄",
+      "tag": "word",
+      "image": "images/a-words-1-alligator.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's an alligator."
+          ],
+          "key": [
+            "alligator"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是短吻鳄。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-it-s-an-alligator-700c75.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-alligator-4fc1b5.mp3"
+    },
+    {
+      "word": "astronaut",
+      "cn": "宇航员",
+      "tag": "word",
+      "image": "images/a-words-1-astronaut.webp",
+      "dialog": [
+        {
+          "q": "Who is this?",
+          "a": [
+            "This is an astronaut."
+          ],
+          "key": [
+            "astronaut"
+          ],
+          "q_cn": "这是谁？",
+          "a_cn": [
+            "这是宇航员。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-who-is-this-3fe6b5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-this-is-an-astronaut-40f59b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-astronaut-734a86.mp3"
+    },
+    {
+      "word": "bat",
+      "cn": "蝙蝠",
+      "tag": "word",
+      "image": "images/a-words-2-bat.webp",
+      "dialog": [
+        {
+          "q": "Can the bat fly?",
+          "a": [
+            "Yes, the bat can fly."
+          ],
+          "key": [
+            "fly"
+          ],
+          "q_cn": "蝙蝠会飞吗？",
+          "a_cn": [
+            "会，蝙蝠会飞。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-can-the-bat-fly-21c15f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-yes-the-bat-can-fly-0e131b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-bat-b308c0.mp3"
+    },
+    {
+      "word": "dad",
+      "cn": "爸爸",
+      "tag": "word",
+      "image": "images/a-words-2-dad.webp",
+      "dialog": [
+        {
+          "q": "Who is the man?",
+          "a": [
+            "The man is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "这个男人是谁？",
+          "a_cn": [
+            "这个男人是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-who-is-the-man-825365.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-the-man-is-my-dad-02d9c6.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-dad-78b10b.mp3"
+    },
+    {
+      "word": "hat",
+      "cn": "帽子",
+      "tag": "word",
+      "image": "images/a-words-2-hat.webp",
+      "dialog": [
+        {
+          "q": "What color is your hat?",
+          "a": [
+            "I have a pink hat."
+          ],
+          "key": [
+            "pink"
+          ],
+          "q_cn": "你的帽子是什么颜色？",
+          "a_cn": [
+            "我有一顶粉色的帽子。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-your-hat-ce3bd8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-have-a-pink-hat-2a16b5.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-hat-a558d9.mp3"
+    },
+    {
+      "word": "fan",
+      "cn": "风扇",
+      "tag": "review",
+      "image": "images/a-words-2-fans.webp",
+      "dialog": [
+        {
+          "q": "How many fans are there?",
+          "a": [
+            "There are four fans."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "有几台风扇？",
+          "a_cn": [
+            "有四台风扇。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-how-many-fans-are-there-74de1f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-there-are-four-fans-f09e2e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-fan-146707.mp3"
+    },
+    {
+      "word": "hand",
+      "cn": "手",
+      "tag": "review",
+      "image": "images/a-words-3-hands.webp",
+      "dialog": [
+        {
+          "q": "How many hands do you have?",
+          "a": [
+            "I have two hands."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几只手？",
+          "a_cn": [
+            "我有两只手。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-how-many-hands-do-you-have-73098c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-have-two-hands-5ccb94.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-hand-cdaf2e.mp3"
+    },
+    {
+      "word": "hair",
+      "cn": "头发",
+      "tag": "word",
+      "image": "images/a-words-3-hair.webp",
+      "dialog": [
+        {
+          "q": "What color is your hair?",
+          "a": [
+            "I have black hair."
+          ],
+          "key": [
+            "black"
+          ],
+          "q_cn": "你的头发是什么颜色？",
+          "a_cn": [
+            "我的头发是黑色的。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-your-hair-17d8bf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-have-black-hair-509a03.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-hair-b8bcdc.mp3"
+    },
+    {
+      "word": "policeman",
+      "cn": "警察",
+      "tag": "word",
+      "image": "images/a-words-3-policeman.webp",
+      "dialog": [
+        {
+          "q": "What can policemen do?",
+          "a": [
+            "Policemen can catch bad people."
+          ],
+          "key": [
+            "catch"
+          ],
+          "q_cn": "警察能做什么？",
+          "a_cn": [
+            "警察能抓坏人。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-can-policemen-do-25f163.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-policemen-can-catch-bad-people-89ef30.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-policeman-ee980f.mp3"
+    },
+    {
+      "word": "cat",
+      "cn": "猫",
+      "tag": "word",
+      "image": "images/a-words-3-cat.webp",
+      "dialog": [
+        {
+          "q": "Do you have a fat cat?",
+          "a": [
+            "Yes, I have a fat cat."
+          ],
+          "key": [
+            "fat"
+          ],
+          "q_cn": "你有一只胖猫吗？",
+          "a_cn": [
+            "是的，我有一只胖猫。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-do-you-have-a-fat-cat-4c979f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-yes-i-have-a-fat-cat-50ed8f.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-cat-e4be72.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "alligator": "audio/words/alligator.mp3",
+    "an": "audio/words/an.mp3",
+    "animal": "audio/words/animal.mp3",
+    "apple": "audio/words/apple.mp3",
+    "are": "audio/words/are.mp3",
+    "astronaut": "audio/words/astronaut.mp3",
+    "bad": "audio/words/bad.mp3",
+    "bat": "audio/words/bat.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "black": "audio/words/black.mp3",
+    "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
+    "catch": "audio/words/catch.mp3",
+    "color": "audio/words/color.mp3",
+    "dad": "audio/words/dad.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "dolphin": "audio/words/dolphin.mp3",
+    "fan": "audio/words/fan.mp3",
+    "fans": "audio/words/fans.mp3",
+    "fat": "audio/words/fat.mp3",
+    "favorite": "audio/words/favorite.mp3",
+    "fly": "audio/words/fly.mp3",
+    "four": "audio/words/four.mp3",
+    "hair": "audio/words/hair.mp3",
+    "hand": "audio/words/hand.mp3",
+    "hands": "audio/words/hands.mp3",
+    "hat": "audio/words/hat.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter a": "audio/words/letter-a.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "man": "audio/words/man.mp3",
+    "many": "audio/words/many.mp3",
+    "my": "audio/words/my.mp3",
+    "people": "audio/words/people.mp3",
+    "pink": "audio/words/pink.mp3",
+    "policeman": "audio/words/policeman.mp3",
+    "policemen": "audio/words/policemen.mp3",
+    "red": "audio/words/red.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "there": "audio/words/there.mp3",
+    "this": "audio/words/this.mp3",
+    "two": "audio/words/two.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "who": "audio/words/who.mp3",
+    "with": "audio/words/with.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  }
+}

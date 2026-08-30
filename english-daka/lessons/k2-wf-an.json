@@ -1,0 +1,294 @@
+{
+  "seq": 201,
+  "group": "词族 Word Family",
+  "badge": "-an",
+  "title": "Word Family · -an 词族",
+  "cards": [
+    {
+      "word": "-an family",
+      "cn": "-an 词族",
+      "tag": "CVC",
+      "image": "images/wf-an-1.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -an make?",
+          "a": [
+            "An makes the sound /an/."
+          ],
+          "key": [
+            "/an/"
+          ],
+          "q_cn": "-an 发什么音？",
+          "a_cn": [
+            "-an 发 /æn/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-an-make-0d14ae.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-an-makes-the-sound-an-8ed09c.mp3"
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -an family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -an 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-it-s-an-family-f1bc7a.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-an-family-0a5387.mp3"
+    },
+    {
+      "word": "man",
+      "cn": "男人",
+      "tag": "word",
+      "image": "images/wf-an-1-man.webp",
+      "dialog": [
+        {
+          "q": "How do you read: m — an?",
+          "a": [
+            "/m/ /an/, man.",
+            "This is a man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "m 加 an 怎么读？",
+          "a_cn": [
+            "/m/ /æn/，man。",
+            "这是一个男人。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3",
+            "audio/sentences/k2-wf-an/a-this-is-a-man-0ac957.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-m-an-d41730.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
+    },
+    {
+      "word": "fan",
+      "cn": "风扇",
+      "tag": "word",
+      "image": "images/wf-an-1-fan.webp",
+      "dialog": [
+        {
+          "q": "How do you read: f — an?",
+          "a": [
+            "/f/ /an/, fan.",
+            "It's a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "f 加 an 怎么读？",
+          "a_cn": [
+            "/f/ /æn/，fan。",
+            "这是风扇。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3",
+            "audio/sentences/k2-wf-an/a-it-s-a-fan-85775b.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-f-an-503659.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
+    },
+    {
+      "word": "tan",
+      "cn": "浅棕色",
+      "tag": "word",
+      "image": "images/wf-an-1-tan.webp",
+      "dialog": [
+        {
+          "q": "How do you read: t — an?",
+          "a": [
+            "/t/ /an/, tan.",
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "t 加 an 怎么读？",
+          "a_cn": [
+            "/t/ /æn/，tan。",
+            "这只狗是浅棕色的。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3",
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
+    },
+    {
+      "word": "man",
+      "cn": "男人",
+      "tag": "CVC",
+      "image": "images/wf-an-2-man.webp",
+      "dialog": [
+        {
+          "q": "Who is the man?",
+          "a": [
+            "The man is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "这个男人是谁？",
+          "a_cn": [
+            "这个男人是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-who-is-the-man-825365.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
+    },
+    {
+      "word": "tan",
+      "cn": "浅棕色",
+      "tag": "CVC",
+      "image": "images/wf-an-2-tan.webp",
+      "dialog": [
+        {
+          "q": "What color is the dog?",
+          "a": [
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "这只狗是什么颜色的？",
+          "a_cn": [
+            "这只狗是浅棕色的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-color-is-the-dog-0a389b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
+    },
+    {
+      "word": "fan",
+      "cn": "风扇",
+      "tag": "CVC",
+      "image": "images/wf-an-2-fan.webp",
+      "dialog": [
+        {
+          "q": "What do you need when you feel hot?",
+          "a": [
+            "I need a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "你觉得热的时候需要什么？",
+          "a_cn": [
+            "我需要风扇。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
+    },
+    {
+      "word": "birds",
+      "cn": "鸟",
+      "tag": "CVC",
+      "image": "images/sw-all-birds-wings.webp",
+      "dialog": [
+        {
+          "q": "Can birds fly?",
+          "a": [
+            "Yes, birds can fly."
+          ],
+          "key": [
+            "fly"
+          ],
+          "q_cn": "鸟会飞吗？",
+          "a_cn": [
+            "会，鸟会飞。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-can-birds-fly-346972.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-birds-be030e.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "-an family": "audio/words/an-family.mp3",
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "birds": "audio/words/birds.mp3",
+    "can": "audio/words/can.mp3",
+    "color": "audio/words/color.mp3",
+    "dad": "audio/words/dad.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "dog": "audio/words/dog.mp3",
+    "f": "audio/words/f.mp3",
+    "family": "audio/words/family.mp3",
+    "fan": "audio/words/fan.mp3",
+    "feel": "audio/words/feel.mp3",
+    "fly": "audio/words/fly.mp3",
+    "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "m": "audio/words/m.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "man": "audio/words/man.mp3",
+    "my": "audio/words/my.mp3",
+    "need": "audio/words/need.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "tan": "audio/words/tan.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "when": "audio/words/when.mp3",
+    "who": "audio/words/who.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3"
+  }
+}

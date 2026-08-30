@@ -1,0 +1,23 @@
+/* ============================================================
+   主题模板 · index.html 与 app.html 共用
+   想换字体/配色,只改这个文件
+   ============================================================ */
+:root{
+  /* 配色 */
+  --bg:#F0F7FF; --ink:#2B3A55; --muted:#7A879E;
+  --pink:#FF6FA5; --yellow:#FFC53D; --green:#4CC26E;
+  --blue:#3E8BFF; --purple:#9B6DFF; --orange:#FF9A3D;
+
+  /* 线条与阴影:浅色细边 + 柔投影(替代旧的墨色粗描边硬阴影) */
+  --line:#DCE5F2;
+  --shadow:0 3px 10px rgba(43,58,85,.10);
+  --shadow-sm:0 1px 4px rgba(43,58,85,.14);
+
+  /* 字体:英文优先用圆体(SF Rounded / Arial Rounded,亲和易读,
+     a/g 是儿童识字的单层字形),中文回落到苹方/雅黑 */
+  --font-main: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold",
+               "Comic Sans MS", "Trebuchet MS",
+               "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+body{ font-family: var(--font-main); }

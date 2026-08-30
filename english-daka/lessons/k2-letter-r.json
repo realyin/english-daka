@@ -1,0 +1,358 @@
+{
+  "seq": 109,
+  "group": "字母 Letters",
+  "badge": "R",
+  "title": "Letter R · /r/",
+  "cards": [
+    {
+      "word": "letter R",
+      "cn": "字母 R",
+      "tag": "letter",
+      "image": "images/r-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 R。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-letter-r-804942.mp3"
+          ]
+        },
+        {
+          "q": "What sound does letter R make?",
+          "a": [
+            "R makes the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "字母 R 发什么音？",
+          "a_cn": [
+            "R 发 /r/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-letter-r-make-4c97fa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-r-makes-the-sound-r-4a6872.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-letter-r-028feb.mp3"
+    },
+    {
+      "word": "raccoon",
+      "cn": "浣熊",
+      "tag": "word",
+      "image": "images/r-letter-raccoon.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a raccoon."
+          ],
+          "key": [
+            "raccoon"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是浣熊。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+          ]
+        },
+        {
+          "q": "What sound does raccoon begin with?",
+          "a": [
+            "Raccoon begins with the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "raccoon 以什么音开头？",
+          "a_cn": [
+            "raccoon 以 /r/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-raccoon-begin-with-2c5086.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-r-c970f8.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-raccoon-b3011b.mp3"
+    },
+    {
+      "word": "sleep",
+      "cn": "睡觉",
+      "tag": "sight word",
+      "image": "images/r-sleep-can-sleep.webp",
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word sleep.",
+            "I sleep at night."
+          ],
+          "key": [
+            "sleep"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 sleep。",
+            "我在晚上睡觉。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-sight-word-sleep-0313cc.mp3",
+            "audio/sentences/k2-letter-r/a-i-sleep-at-night-1a4a60.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-sleep-2be01b.mp3"
+    },
+    {
+      "word": "sing",
+      "cn": "唱歌",
+      "tag": "sight word",
+      "image": "images/r-sleep-can-sing.webp",
+      "dialog": [
+        {
+          "q": "Can you sing a song?",
+          "a": [
+            "Yes, I can sing a song."
+          ],
+          "key": [
+            "can"
+          ],
+          "q_cn": "你会唱歌吗？",
+          "a_cn": [
+            "会，我会唱歌。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-can-you-sing-a-song-44e08a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-yes-i-can-sing-a-song-1dcebd.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-sing-a2d751.mp3"
+    },
+    {
+      "word": "crayfish",
+      "cn": "小龙虾",
+      "tag": "sight word",
+      "image": "images/r-sleep-can-crayfish.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a crayfish."
+          ],
+          "key": [
+            "crayfish"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是小龙虾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-crayfish-c36b7a.mp3"
+    },
+    {
+      "word": "river",
+      "cn": "河流",
+      "tag": "sight word",
+      "image": "images/r-sleep-can-river.webp",
+      "dialog": [
+        {
+          "q": "Where does the crayfish live?",
+          "a": [
+            "The crayfish lives in the river."
+          ],
+          "key": [
+            "river"
+          ],
+          "q_cn": "小龙虾住在哪里？",
+          "a_cn": [
+            "小龙虾住在河里。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-where-does-the-crayfish-live-a555c3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-the-crayfish-lives-in-the-river-3adc92.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-river-25fc55.mp3"
+    },
+    {
+      "word": "tree",
+      "cn": "树",
+      "tag": "word",
+      "image": "images/r-rat-ring-tree.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a hollow tree."
+          ],
+          "key": [
+            "tree"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是空心树。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-hollow-tree-417469.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-tree-60e7a8.mp3"
+    },
+    {
+      "word": "city",
+      "cn": "城市",
+      "tag": "review",
+      "image": "images/r-rat-ring-city.webp",
+      "dialog": [
+        {
+          "q": "What's this word?",
+          "a": [
+            "It's a city."
+          ],
+          "key": [
+            "city"
+          ],
+          "q_cn": "这是什么词？",
+          "a_cn": [
+            "这是城市。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-word-1d82d4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-city-ae5312.mp3"
+    },
+    {
+      "word": "rat",
+      "cn": "老鼠",
+      "tag": "word",
+      "image": "images/r-rat-ring-rat.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a rat."
+          ],
+          "key": [
+            "rat"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是老鼠。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-rat-317ce8.mp3"
+    },
+    {
+      "word": "ring",
+      "cn": "戒指",
+      "tag": "word",
+      "image": "images/r-rat-ring-ring.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a ring."
+          ],
+          "key": [
+            "ring"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是戒指。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-r/q-which-one-is-ring-f7e53e.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "animal": "audio/words/animal.mp3",
+    "at": "audio/words/at.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "can": "audio/words/can.mp3",
+    "city": "audio/words/city.mp3",
+    "crayfish": "audio/words/crayfish.mp3",
+    "does": "audio/words/does.mp3",
+    "hollow": "audio/words/hollow.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter r": "audio/words/letter-r.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "night": "audio/words/night.mp3",
+    "r": "audio/words/r.mp3",
+    "raccoon": "audio/words/raccoon.mp3",
+    "rat": "audio/words/rat.mp3",
+    "ring": "audio/words/ring.mp3",
+    "river": "audio/words/river.mp3",
+    "sight": "audio/words/sight.mp3",
+    "sing": "audio/words/sing.mp3",
+    "sleep": "audio/words/sleep.mp3",
+    "song": "audio/words/song.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "tree": "audio/words/tree.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3"
+  }
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语打卡 · 课程目录</title>
+<style>
+  :root{
+    --bg:#F0F7FF; --ink:#2B3A55;
+    --pink:#FF6FA5; --yellow:#FFC53D; --green:#4CC26E; --blue:#3E8BFF;
+    /* 封面色:比主题色深一档,保证巨大白字的对比度达标 */
+    --c1:#E85C93; --c2:#2F7BEF; --c3:#37A85B; --c4:#8557EA; --c5:#EE8420;
+    /* 封面尺寸随屏幕走:手机上占到六成屏宽,大屏封顶 */
+    --cw:clamp(212px, 64vw, 268px); --ch:calc(var(--cw) * 1.28);
+  }
+  *{
+    box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;
+    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  }
+  /* 必须写在 html 上,只写 body 是没用的(原来就只写了 body,实测页面照样能横滚
+     290px):body 的 overflow-x:hidden 配 overflow-y:visible 会让 body 自己变成
+     滚动容器,就不再往视口传递了;视口的溢出行为取的是 html 的值。
+     不封住的后果:折叠到最外侧的卡片被 translateX 甩出 .stage(它是 overflow:visible),
+     整页因此横向可滚 —— 平板上 414px 宽能滚 290px。手指在封面流上横划时,
+     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。 */
+  html{ overflow-x:hidden; }
+  body{
+    font-family:"PingFang SC","Arial Rounded MT Bold",-apple-system,sans-serif;
+    background:var(--bg); color:var(--ink); min-height:100vh; padding-bottom:44px;
+    overflow-x:hidden;
+  }
+  header{text-align:center;padding:24px 16px 10px;}
+  header h1{font-size:26px;letter-spacing:2px;}
+  header p{font-size:13px;color:#7A879E;margin-top:6px;font-weight:600;}
+
+  /* ===== 专辑架 ===== */
+  .shelf{max-width:720px;margin:0 auto;padding:0 16px;}
+  .shelf-head{
+    display:flex;align-items:center;gap:10px;
+    margin:26px 2px 6px;font-size:15px;font-weight:900;color:var(--ink);
+  }
+  .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
+  .shelf-head .count{font-size:12px;font-weight:700;color:#7A879E;}
+
+  /* 通栏:侧边卡片会画到内容宽度之外,手势区必须跟着铺满,
+     否则去拨那张侧卡是没反应的(最自然的拨动位置反而失灵) */
+  .stage{
+    position:relative;height:calc(var(--ch) + 34px);perspective:1200px;
+    width:100vw;margin-left:calc(50% - 50vw);
+    touch-action:pan-y;cursor:grab;
+  }
+  .stage.grabbing{cursor:grabbing;}
+  /* rack 自己不能接点击:它在 z=0 平面且铺满整个 stage,而折叠的卡都被
+     translateZ(-88px) 推到它后面 —— 3D 上下文里排序看深度,rack 就挡在所有
+     折叠卡前面,「点侧卡转到中间」实际上一直是坏的(最外侧那张整片点不到,
+     第二张只剩 30px 能点)。改成 none 之后各卡的可点区间才和画出来的位置对上。 */
+  .rack{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none;}
+
+  .cover{
+    position:absolute;left:50%;top:50%;width:var(--cw);height:var(--ch);
+    margin:calc(var(--ch) / -2) 0 0 calc(var(--cw) / -2);
+    display:flex;flex-direction:column;text-decoration:none;color:var(--ink);
+    background:#fff;border-radius:20px;overflow:hidden;
+    box-shadow:0 8px 22px rgba(43,58,85,.16);
+    will-change:transform,opacity;
+    pointer-events:auto;                       /* 父级 .rack 是 none,卡片要自己收回来 */
+  }
+  /* 位置/阴影/文字全部由 rAF 弹簧逐帧驱动,不用 CSS 过渡 ——
+     混用会让阴影和文字比卡片慢半拍,滑动时看着就是"颜色闪一下" */
+  .cover::after{
+    content:"";position:absolute;inset:0;pointer-events:none;border-radius:20px;
+    background:linear-gradient(var(--g,90deg), rgba(20,30,50,.42), rgba(20,30,50,0) 72%);
+    opacity:var(--shade,0);
+  }
+  .cover .art{
+    flex:1;display:flex;align-items:center;justify-content:center;
+    background:var(--c);
+  }
+  .cover .glyph{
+    font-size:calc(var(--cw) * 0.42);font-weight:900;color:#fff;line-height:1;
+    text-shadow:0 3px 0 rgba(0,0,0,.13);
+  }
+  .cover .glyph.long{font-size:calc(var(--cw) * 0.25);letter-spacing:-1px;}
+  /* 折叠后文字既读不了又会被邻卡切断,淡出只留封面画面 */
+  .cover .label{padding:13px 15px 15px;background:#fff;}
+  .cover .label > *{opacity:var(--lab,1);}
+  .cover .en{font-size:17px;font-weight:900;line-height:1.2;}
+  .cover .cn{font-size:13px;color:#7A879E;font-weight:700;margin-top:3px;
+             white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .cover .n{font-size:12px;color:#9AA6BC;font-weight:700;margin-top:5px;}
+  .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
+  /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
+     而且每次进去内容都不一样,当成"课"会误导 */
+  .review-btn{
+    display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;
+    background:var(--green);color:#fff;font-weight:900;font-size:15px;
+    text-decoration:none;box-shadow:0 3px 0 rgba(0,0,0,.12);
+  }
+  .review-btn:active{transform:translateY(2px);box-shadow:none;}
+  .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
+  /* 单手时点圆点比滑动省力,所以点击区做到 30px,视觉上仍是小圆点 */
+  .dots{display:flex;gap:2px;justify-content:center;margin-top:2px;flex-wrap:wrap;}
+  .dot{
+    width:30px;height:30px;border:none;padding:0;background:none;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+  }
+  .dot::before{
+    content:"";width:9px;height:9px;border-radius:50%;background:#CFDCEE;
+    transition:all .3s ease;
+  }
+  .dot.on::before{background:var(--blue);width:24px;border-radius:5px;}
+  .dot:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:8px;}
+
+  .note{
+    max-width:520px;margin:20px auto 0;padding:14px 16px;
+    font-size:13px;color:#7A879E;text-align:center;line-height:1.7;
+  }
+  /* 卡片动画由 rAF 驱动,减弱动效时脚本会直接跳到位;这里只关掉圆点的过渡 */
+  @media (prefers-reduced-motion: reduce){
+    .dot::before{transition:none;}
+  }
+</style>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<header>
+  <h1>🌟 我的英语打卡 🌟</h1>
+  <p>左右滑动挑一张，点中间那张开始</p>
+  <a class="review-btn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+</header>
+<div id="shelves"></div>
+<div class="note" id="note"></div>
+
+<!-- 白屏兜底:页面内容全是 JS 渲染的,JS 一旦解析失败(老浏览器不认新语法)
+     或初始化抛错,就会留下一片空白,看不出任何线索。这段单独成块、且只用 ES5 写,
+     老浏览器也能跑,负责把错误显示在页面上。加新语法前先想想这里的兜底还在不在。 -->
+<script>
+window.onerror = function (msg, src, line) {
+  var d = document.getElementById("fatalErr");
+  if (!d) {
+    d = document.createElement("div");
+    d.id = "fatalErr";
+    d.style.cssText = "margin:16px;padding:14px;border:2px solid #FF6FA5;border-radius:12px;"
+      + "background:#FFF3F6;color:#333;font:14px/1.6 -apple-system,system-ui,sans-serif;"
+      + "white-space:pre-wrap;word-break:break-word;";
+    (document.body || document.documentElement).appendChild(d);
+  }
+  d.textContent = "\u9875\u9762\u6ca1\u80fd\u52a0\u8f7d \u2014\u2014 \u6d4f\u89c8\u5668\u7248\u672c\u53ef\u80fd\u592a\u65e7\u3002\n\u628a\u4e0b\u9762\u8fd9\u6bb5\u622a\u56fe\u53d1\u7ed9\u5f00\u53d1\u8005\uff1a\n\n"
+    + msg + "\n" + (src || "") + "  \u7b2c " + line + " \u884c\n\n" + navigator.userAgent;
+  return false;
+};
+</script>
+<script>
+const COVER_COLORS = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)"];
+
+/* 卡片在架子上的位置 —— off 是它离中心的距离(可为小数,拖动时连续变化) */
+function placeCover(el, off){
+  const a = Math.abs(off), sign = off < 0 ? -1 : 1;
+  if(a > 2.6){                                   // 太远的收起来,不参与布局
+    if(el.dataset.parked === "1") return;        // 已收起就别再写样式(逐帧调用,省开销)
+    el.dataset.parked = "1";
+    el.style.opacity = 0;
+    el.style.transform = `translateX(${sign*160}%) scale(.5)`;
+    el.style.zIndex = 0;
+    // opacity:0 只是看不见,照样能点中 —— 而且收起来的卡全叠在 translateX(±160%)
+    // 同一个点上,那正好是最外侧那张折叠卡画着的位置。少了这行,点那片"空白"
+    // 命中的是收起来的最后一张,画面直接跳到最后一课(实测最外侧那张整片点不到)。
+    // 注意光靠 zIndex 压不住:.rack 是 transform-style:preserve-3d,3D 上下文里
+    // 排序看的是深度 —— 折叠卡都被 translateZ(-88px) 推远了,收起来的卡 z 是 0,
+    // 反而离观众最近,稳稳压在前面。
+    el.style.pointerEvents = "none";
+    el.setAttribute("tabindex", "-1");
+    return;
+  }
+  el.dataset.parked = "0";
+  el.style.pointerEvents = "auto";
+  const cl   = Math.max(-2.4, Math.min(2.4, off));
+  const near = Math.min(a, 1);                   // 第一格就折到位,再远只微调
+  const far  = Math.max(0, Math.min(a, 2.4) - 1);
+  const rot  = -sign * (near * 44 + far * 7);    // 折叠角度
+  // 横向偏移:侧卡转 44° 后投影只剩约 6 成宽,偏移要够大才不会盖住彼此的标题
+  const x    = cl * 76;
+  const sc   = 1 - Math.min(a, 2.4) * 0.15;
+  const z    = -Math.min(a, 2.4) * 44;
+  el.style.transform =
+    `translateX(${x}%) translateZ(${z}px) rotateY(${rot}deg) scale(${sc})`;
+  el.style.opacity  = a > 2 ? Math.max(0, (2.6 - a) / 0.6) : 1;
+  el.style.zIndex   = 100 - Math.round(a * 10);
+  el.style.setProperty("--shade", Math.min(a, 1.6) / 1.6 * 0.9);
+  // 暗的是转离观众的那条边:右侧卡右缘后仰,左侧卡左缘后仰
+  el.style.setProperty("--g", off < 0 ? "90deg" : "270deg");
+  el.style.setProperty("--lab", String(1 - Math.min(a, 0.85) / 0.85));
+  el.setAttribute("tabindex", a < 0.5 ? "0" : "-1");
+}
+
+function buildShelf(group, lessons){
+  const wrap = document.createElement("section");
+  wrap.className = "shelf";
+  wrap.innerHTML =
+    `<div class="shelf-head"><span>${group}</span>` +
+    `<span class="count">${lessons.length} 节</span><span class="rule"></span></div>` +
+    `<div class="stage"><div class="rack"></div></div><div class="dots"></div>`;
+  const stage = wrap.querySelector(".stage");
+  const rack  = wrap.querySelector(".rack");
+  const dots  = wrap.querySelector(".dots");
+
+  lessons.forEach((l, i) => {
+    const [en, cn] = String(l.title).split(" · ");
+    // 不用 ?? ——它是 ES2020 语法,iOS 13.4 以下的 Safari 解析不了整个 <script>,
+    // 页面会一节课都不显示。下面这写法语义等价(只在 null/undefined 时回落)
+    const glyph = l.badge != null ? l.badge : (l.num != null ? l.num : "•");
+    const a = document.createElement("a");
+    a.className = "cover";
+    a.href = `app.html?lesson=${l.id}`;
+    a.draggable = false;
+    a.style.setProperty("--c", COVER_COLORS[i % COVER_COLORS.length]);
+    a.innerHTML =
+      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span></div>` +
+      `<div class="label"><div class="en">${en}</div>` +
+      `<div class="cn">${cn || l.badge_sub || ""}</div>` +
+      `<div class="n">${l.words} 张卡片</div></div>`;
+    rack.appendChild(a);
+
+    const d = document.createElement("button");
+    d.className = "dot"; d.type = "button";
+    d.setAttribute("aria-label", `第 ${i+1} 张：${en}`);
+    d.onclick = () => go(i);
+    dots.appendChild(d);
+  });
+
+  const covers = [...rack.children];
+  const LAST = covers.length - 1;
+  // 走 window. 而不是裸 matchMedia:全局不存在时裸标识符会抛 ReferenceError,
+  // 而这是顶层代码,一抛错整个 <script> 就停,页面白屏(同 app.html 的 TTS 探测)
+  const SLOW = !!(window.matchMedia &&
+                  window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+  // 卡片行程是卡宽的 76%,但手指只需走它的一半就翻一张 ——
+  // 单手拇指的舒适行程只有 60~100px,1:1 跟手对鼠标合适,对拇指就是"滑不动"
+  // 同上,不用可选链 ?.(ES2020 语法)
+  const TRAVEL = () => ((covers[0] && covers[0].offsetWidth) || 212) * 0.76;
+  const STEP   = () => TRAVEL() * 0.5;
+
+  /* pos 是连续的位置(2.4 表示停在第 2、3 张之间),弹簧把它推向 target。
+     位置/折叠/阴影/文字全部由 pos 逐帧算出,所以永远同步,不会有谁慢半拍。*/
+  let pos = 0, vel = 0, target = 0, raf = 0;
+  let dragging = false, moved = false, armed = false, ptr = null,
+      startX = 0, startPos = 0,
+      lastX = 0, lastT = 0, track = 0,           // track: 速度(张/毫秒)
+      downCard = null;                           // 按下时手指/鼠标压住的那张卡
+
+  /* 手指按住不动时,触摸屏上报的接触点质心会在相邻两个估计值之间反复跳(指腹越大越明显)。
+     卡片行程是手指行程的 2 倍(见 STEP),8px 的原始跳变会被放大成 17px 的卡片哆嗦。
+     实测:孩子按住一张卡犹豫两秒,整行就跟着抖两秒 —— 逐帧量过是干净的双稳态方波,
+     在两个位置之间来回跳、没有中间值,所以不是手在抖,是 pos 直接吃了未经处理的 clientX。
+     两道防线:DEAD 死区挡住"按住不动",LOWPASS 滤掉真拖动时残余的指腹抖。 */
+  const DEAD    = 10;                            // 手指越过这么多像素才算真的在拖
+  const LOWPASS = 0.35;                          // pos 向目标追的比例,滞后 1~2 帧,察觉不到
+
+  const clamp = n => Math.max(0, Math.min(LAST, n));
+  const idx   = () => clamp(Math.round(pos));
+
+  function paint(){
+    covers.forEach((c, i) => placeCover(c, i - pos));
+    const a = idx();
+    [...dots.children].forEach((d, i) => d.classList.toggle("on", i === a));
+  }
+  function tick(){
+    // 刚度/阻尼实测过:0.20/0.75 大力甩会过冲 70%(弹过头一张多),
+    // 0.10/0.66 过冲收到 4~8%,只留一点点回弹,而且落定更快(约 0.42s)
+    vel += (target - pos) * 0.10;                // 弹簧刚度
+    vel *= 0.66;                                 // 阻尼
+    pos += vel;
+    if(Math.abs(target - pos) < 0.004 && Math.abs(vel) < 0.004){
+      pos = target; vel = 0; raf = 0; paint(); return;
+    }
+    paint();
+    raf = requestAnimationFrame(tick);
+  }
+  function spring(){ if(!raf) raf = requestAnimationFrame(tick); }
+  function go(n){
+    target = clamp(n);
+    if(SLOW){ pos = target; vel = 0; paint(); return; }
+    spring();
+  }
+
+  stage.addEventListener("pointerdown", e => {
+    // 只让主指针开新的拖动:第二根手指(握平板的虎口最常见)按下来不该抢走这一次手势。
+    // 写 === false 而不是 !e.isPrimary —— 万一某个浏览器没这个属性,不能把拖动整个废掉
+    if(e.isPrimary === false) return;
+    if(raf){ cancelAnimationFrame(raf); raf = 0; }
+    dragging = true; moved = false; armed = false; vel = 0; track = 0;
+    ptr = e.pointerId;
+    downCard = e.target.closest(".cover");
+    startX = lastX = e.clientX; startPos = pos; lastT = performance.now();
+    stage.classList.add("grabbing");
+    stage.setPointerCapture(e.pointerId);
+  });
+  stage.addEventListener("pointermove", e => {
+    // 认准按下时那根手指。少了这句,第二个指针的 move 也会进来,
+    // 而 startX 是别人的 —— 两个指针交替刷新 pos,画面在两张卡之间来回跳
+    if(!dragging || e.pointerId !== ptr) return;
+    const dx = e.clientX - startX;
+    if(!armed){
+      if(Math.abs(dx) < DEAD) return;            // 还在死区里:一帧都不画,按住不动就是不动
+      // 过线这一刻把原点搬到当前位置(dx 归零),否则卡片会"啪"地跳 DEAD/STEP 那么远。
+      // 计时/测速也一起重置,免得死区里干等的那段时间被算进甩动惯性
+      armed = moved = true;                      // moved:区分点按和拖动,阈值同 DEAD
+      startX = lastX = e.clientX; lastT = performance.now(); track = 0;
+      return;
+    }
+    let p = startPos - dx / STEP();
+    if(p < 0) p *= 0.35;                         // 到头了给点橡皮筋阻尼
+    else if(p > LAST) p = LAST + (p - LAST) * 0.35;
+    pos += (p - pos) * LOWPASS;                  // 一阶低通:跟手,但不跟指腹的抖
+    const now = performance.now(), dt = Math.max(1, now - lastT);
+    track = track * 0.7 + ((lastX - e.clientX) / STEP() / dt) * 0.3;
+    lastX = e.clientX; lastT = now;
+    paint();
+  });
+  const release = (flick) => {
+    if(!dragging) return;
+    dragging = false; ptr = null;
+    stage.classList.remove("grabbing");
+    if(!flick){ vel = 0; go(Math.round(pos)); return; }  // 手势被打断:就近稳住,别再甩
+    // 没拖动 = 一次点按。跳转由这里接管:指针捕获会把 click 重定向到 stage,
+    // 那个 <a> 收不到 click,靠默认行为进不去课程(桌面鼠标必现)
+    if(!moved && downCard){
+      const i = covers.indexOf(downCard);
+      if(i === idx()) { location.href = downCard.href; return; }   // 点中间那张 → 进课程
+      go(i); return;                                               // 点侧边那张 → 转到中间
+    }
+    vel = track * 16.7;                          // 张/毫秒 → 张/帧,带走手指的惯性
+    go(clamp(Math.round(pos + vel * 8)));        // 甩得越快,冲得越远(SLOW 时直接到位)
+  };
+  // 同样只认那根手指:别的手指抬起来不该结束这一次拖动
+  stage.addEventListener("pointerup", e => { if(e.pointerId === ptr) release(true); });
+  // 系统把手势判成上下滑会发 pointercancel —— 此时不带惯性,就近落位
+  stage.addEventListener("pointercancel", e => { if(e.pointerId === ptr) release(false); });
+
+  // 跳转已由 release() 接管,这里一律拦掉 <a> 的默认行为,避免重复跳转
+  rack.addEventListener("click", e => { if(e.target.closest(".cover")) e.preventDefault(); });
+
+  stage.tabIndex = 0;
+  stage.setAttribute("aria-label", `${group}，左右方向键切换课程`);
+  stage.addEventListener("keydown", e => {
+    if(e.key === "ArrowLeft"){ go(idx() - 1); e.preventDefault(); }
+    if(e.key === "ArrowRight"){ go(idx() + 1); e.preventDefault(); }
+    if(e.key === "Enter" && covers[idx()]) location.href = covers[idx()].href;
+  });
+
+  paint();
+  return wrap;
+}
+
+(async function(){
+  try{
+    const r = await fetch("lessons/index.json", {cache:"no-store"});
+    if(!r.ok) throw new Error();
+    const data = await r.json();
+    const shelves = document.getElementById("shelves");
+    const order = [], byGroup = new Map();
+    data.lessons.forEach(l => {
+      const g = l.group || "其他 Others";
+      if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
+      byGroup.get(g).push(l);
+    });
+    order.forEach(g => shelves.appendChild(buildShelf(g, byGroup.get(g))));
+  }catch(e){
+    document.getElementById("note").innerHTML =
+      "课程清单需要通过本地服务器访问：<br>在项目目录运行 <b>python3 -m http.server</b>，<br>然后浏览器打开 <b>http://localhost:8000</b>";
+  }
+})();
+</script>
+</body>
+</html>

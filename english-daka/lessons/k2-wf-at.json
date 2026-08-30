@@ -1,0 +1,255 @@
+{
+  "seq": 202,
+  "group": "词族 Word Family",
+  "badge": "-at",
+  "title": "Word Family · -at 词族",
+  "cards": [
+    {
+      "word": "-at family",
+      "cn": "-at 词族",
+      "tag": "CVC",
+      "image": "images/wf-at-1.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -at make?",
+          "a": [
+            "At makes the sound /at/."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "-at 发什么音？",
+          "a_cn": [
+            "-at 发 /æt/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-at-make-2fc81f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-at-makes-the-sound-at-1992c7.mp3"
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -at family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-it-s-at-family-0c7574.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-at-family-dd2b6b.mp3"
+    },
+    {
+      "word": "sat",
+      "cn": "坐",
+      "tag": "word",
+      "image": "images/wf-at-1-sat.webp",
+      "dialog": [
+        {
+          "q": "How do you read: s — at?",
+          "a": [
+            "/s/ /at/, sat.",
+            "The cat sat on the mat."
+          ],
+          "key": [
+            "sat"
+          ],
+          "q_cn": "s 加 at 怎么读？",
+          "a_cn": [
+            "/s/ /æt/，sat。",
+            "猫坐在垫子上。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-s-at-sat-b1d773.mp3",
+            "audio/sentences/k2-wf-at/a-the-cat-sat-on-the-mat-eb46e8.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-s-at-2d30e5.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-sat-78bec1.mp3"
+    },
+    {
+      "word": "fat",
+      "cn": "胖的",
+      "tag": "word",
+      "image": "images/wf-at-1-fat.webp",
+      "dialog": [
+        {
+          "q": "How do you read: f — at?",
+          "a": [
+            "/f/ /at/, fat.",
+            "The cat is fat."
+          ],
+          "key": [
+            "fat"
+          ],
+          "q_cn": "f 加 at 怎么读？",
+          "a_cn": [
+            "/f/ /æt/，fat。",
+            "这只猫胖胖的。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-f-at-fat-d33946.mp3",
+            "audio/sentences/k2-wf-at/a-the-cat-is-fat-e55670.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-f-at-08c7df.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-fat-d39bef.mp3"
+    },
+    {
+      "word": "mat",
+      "cn": "垫子",
+      "tag": "word",
+      "image": "images/wf-at-1-mat.webp",
+      "dialog": [
+        {
+          "q": "How do you read: m — at?",
+          "a": [
+            "/m/ /at/, mat.",
+            "This is a mat."
+          ],
+          "key": [
+            "mat"
+          ],
+          "q_cn": "m 加 at 怎么读？",
+          "a_cn": [
+            "/m/ /æt/，mat。",
+            "这是垫子。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-m-at-mat-9c64da.mp3",
+            "audio/sentences/k2-wf-at/a-this-is-a-mat-0c4374.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-m-at-93a5cb.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-mat-a683af.mp3"
+    },
+    {
+      "word": "cat bat hat",
+      "cn": "-at 词族单词",
+      "tag": "CVC",
+      "image": "images/wf-at-2.webp",
+      "dialog": [
+        {
+          "q": "How do you read: c — at?",
+          "a": [
+            "/k/ /at/, cat.",
+            "I have a fat cat."
+          ],
+          "key": [
+            "cat"
+          ],
+          "q_cn": "c 加 at 怎么读？",
+          "a_cn": [
+            "/k/ /æt/，cat。",
+            "我有一只胖猫。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-k-at-cat-53c689.mp3",
+            "audio/sentences/k2-wf-at/a-i-have-a-fat-cat-04495b.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-c-at-cf41d8.mp3"
+        },
+        {
+          "q": "Can the bat fly?",
+          "a": [
+            "Yes, the bat can fly."
+          ],
+          "key": [
+            "bat"
+          ],
+          "q_cn": "蝙蝠会飞吗？",
+          "a_cn": [
+            "会，蝙蝠会飞。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-can-the-bat-fly-21c15f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-yes-the-bat-can-fly-0e131b.mp3"
+          ]
+        },
+        {
+          "q": "What color is your hat?",
+          "a": [
+            "I have a pink hat."
+          ],
+          "key": [
+            "hat"
+          ],
+          "q_cn": "你的帽子是什么颜色？",
+          "a_cn": [
+            "我有一顶粉色的帽子。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-color-is-your-hat-ce3bd8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-i-have-a-pink-hat-2a16b5.mp3"
+          ]
+        }
+      ],
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-cat-bat-hat-1522e6.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "-at family": "audio/words/at-family.mp3",
+    "a": "audio/words/a.mp3",
+    "at": "audio/words/at.mp3",
+    "bat": "audio/words/bat.mp3",
+    "c": "audio/words/c.mp3",
+    "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
+    "cat bat hat": "audio/words/cat-bat-hat.mp3",
+    "color": "audio/words/color.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "f": "audio/words/f.mp3",
+    "family": "audio/words/family.mp3",
+    "fat": "audio/words/fat.mp3",
+    "fly": "audio/words/fly.mp3",
+    "hat": "audio/words/hat.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "k": "audio/words/k.mp3",
+    "m": "audio/words/m.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "mat": "audio/words/mat.mp3",
+    "on": "audio/words/on.mp3",
+    "pink": "audio/words/pink.mp3",
+    "read": "audio/words/read.mp3",
+    "s": "audio/words/s.mp3",
+    "sat": "audio/words/sat.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  }
+}

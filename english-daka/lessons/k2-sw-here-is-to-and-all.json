@@ -1,0 +1,542 @@
+{
+  "seq": 403,
+  "group": "常见词 Sight Words",
+  "badge": "here",
+  "title": "Sight Words · here / is / to / and / all",
+  "cards": [
+    {
+      "word": "here",
+      "cn": "这里",
+      "tag": "sight word",
+      "image": "images/sw-here.webp",
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word here."
+          ],
+          "key": [
+            "here"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 here。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-it-s-sight-word-here-522a28.mp3"
+          ]
+        },
+        {
+          "q": "Where is the fox?",
+          "a": [
+            "Here is a fox."
+          ],
+          "key": [
+            "here"
+          ],
+          "q_cn": "狐狸在哪里？",
+          "a_cn": [
+            "狐狸在这里。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-where-is-the-fox-cef8d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-here-is-a-fox-08b888.mp3"
+          ]
+        },
+        {
+          "q": "Can you come here?",
+          "a": [
+            "Yes, I come here."
+          ],
+          "key": [
+            "come"
+          ],
+          "q_cn": "你能过来吗？",
+          "a_cn": [
+            "能，我过来了。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-can-you-come-here-5dfcaf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-yes-i-come-here-f39e03.mp3"
+          ],
+          "image": "images/sw-here-come.webp"
+        }
+      ],
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-here-57aad8.mp3"
+    },
+    {
+      "word": "pilot",
+      "cn": "飞行员",
+      "tag": "sight word",
+      "image": "images/sw-is-pilot.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a pilot."
+          ],
+          "key": [
+            "pilot"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是飞行员。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-this-is-a-pilot-693a93.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-pilot-7dcb4b.mp3"
+    },
+    {
+      "word": "circle",
+      "cn": "圆形",
+      "tag": "sight word",
+      "image": "images/sw-is-circle.webp",
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It is a circle."
+          ],
+          "key": [
+            "circle"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是圆形。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-it-is-a-circle-124171.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-circle-690d3b.mp3"
+    },
+    {
+      "word": "summer",
+      "cn": "夏天",
+      "tag": "sight word",
+      "image": "images/sw-is-summer.webp",
+      "dialog": [
+        {
+          "q": "What season is it?",
+          "a": [
+            "It's summer."
+          ],
+          "key": [
+            "summer"
+          ],
+          "q_cn": "现在是什么季节？",
+          "a_cn": [
+            "现在是夏天。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-season-is-it-c04642.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-it-s-summer-723917.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-summer-c4108a.mp3"
+    },
+    {
+      "word": "sing",
+      "cn": "唱歌",
+      "tag": "sight word",
+      "image": "images/sw-to-sing.webp",
+      "dialog": [
+        {
+          "q": "What do you like to do?",
+          "a": [
+            "I like to sing a song."
+          ],
+          "key": [
+            "sing"
+          ],
+          "q_cn": "你喜欢做什么？",
+          "a_cn": [
+            "我喜欢唱歌。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-do-you-like-to-do-8b4356.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-i-like-to-sing-a-song-97d81b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-sing-a2d751.mp3"
+    },
+    {
+      "word": "drums",
+      "cn": "架子鼓",
+      "tag": "sight word",
+      "image": "images/sw-to-drums.webp",
+      "dialog": [
+        {
+          "q": "Do you like to play the drums?",
+          "a": [
+            "Yes, I like to play the drums."
+          ],
+          "key": [
+            "drums"
+          ],
+          "q_cn": "你喜欢打鼓吗？",
+          "a_cn": [
+            "喜欢，我喜欢打鼓。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-do-you-like-to-play-the-drums-cd7d74.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-yes-i-like-to-play-the-drums-0a96bd.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-drums-02e43a.mp3"
+    },
+    {
+      "word": "teacher",
+      "cn": "老师",
+      "tag": "sight word",
+      "image": "images/sw-to-teacher.webp",
+      "dialog": [
+        {
+          "q": "What do you want to be?",
+          "a": [
+            "I want to be a teacher."
+          ],
+          "key": [
+            "teacher"
+          ],
+          "q_cn": "你想成为什么？",
+          "a_cn": [
+            "我想当老师。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-do-you-want-to-be-222838.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-i-want-to-be-a-teacher-23ae80.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-teacher-de59e1.mp3"
+    },
+    {
+      "word": "piano",
+      "cn": "钢琴",
+      "tag": "sight word",
+      "image": "images/sw-and-piano.webp",
+      "dialog": [
+        {
+          "q": "What color is a piano?",
+          "a": [
+            "A piano is black and white."
+          ],
+          "key": [
+            "black"
+          ],
+          "q_cn": "钢琴是什么颜色的？",
+          "a_cn": [
+            "钢琴是黑白相间的。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-color-is-a-piano-6b3c10.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-a-piano-is-black-and-white-848cb1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-piano-f3fa19.mp3"
+    },
+    {
+      "word": "market",
+      "cn": "市场",
+      "tag": "sight word",
+      "image": "images/market.webp",
+      "dialog": [
+        {
+          "q": "Where can we buy apples and bananas?",
+          "a": [
+            "We can buy apples and bananas in the market."
+          ],
+          "key": [
+            "market"
+          ],
+          "q_cn": "我们可以在哪里买苹果和香蕉？",
+          "a_cn": [
+            "我们可以在市场买苹果和香蕉。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-market-82bcf9.mp3"
+    },
+    {
+      "word": "birds",
+      "cn": "鸟",
+      "tag": "sight word",
+      "image": "images/sw-all-birds-wings.webp",
+      "dialog": [
+        {
+          "q": "Do all the birds have wings?",
+          "a": [
+            "Yes, all the birds have wings."
+          ],
+          "key": [
+            "wings"
+          ],
+          "q_cn": "所有的鸟都有翅膀吗？",
+          "a_cn": [
+            "是的，所有的鸟都有翅膀。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-do-all-the-birds-have-wings-1bac92.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-birds-be030e.mp3"
+    },
+    {
+      "word": "play",
+      "cn": "玩",
+      "tag": "sight word",
+      "image": "images/sw-all-play.webp",
+      "dialog": [
+        {
+          "q": "What do Dan and Cam do?",
+          "a": [
+            "Dan and Cam play all day."
+          ],
+          "key": [
+            "play"
+          ],
+          "q_cn": "丹和卡姆做什么？",
+          "a_cn": [
+            "丹和卡姆玩了一整天。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-do-dan-and-cam-do-7a6478.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-dan-and-cam-play-all-day-778ca8.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-play-6eb441.mp3"
+    },
+    {
+      "word": "questions",
+      "cn": "提问",
+      "tag": "sight word",
+      "image": "images/sw-all-questions.webp",
+      "dialog": [
+        {
+          "q": "What's your hobby?",
+          "a": [
+            "My hobby is asking questions."
+          ],
+          "key": [
+            "questions"
+          ],
+          "q_cn": "你的爱好是什么？",
+          "a_cn": [
+            "我的爱好是提问题。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-what-s-your-hobby-e5908a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-my-hobby-is-asking-questions-c75d3b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-questions-9ed691.mp3"
+    },
+    {
+      "word": "man",
+      "cn": "男人",
+      "tag": "CVC",
+      "image": "images/sw-cvc-dan-man.webp",
+      "dialog": [
+        {
+          "q": "Who is Dan?",
+          "a": [
+            "Dan is a man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "丹是谁？",
+          "a_cn": [
+            "丹是一个男人。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-who-is-dan-c8522a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-dan-is-a-man-a61cc6.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-man-0afdad.mp3"
+    },
+    {
+      "word": "cat",
+      "cn": "猫",
+      "tag": "CVC",
+      "image": "images/sw-cvc-pat-cat.webp",
+      "dialog": [
+        {
+          "q": "Can you pat the cat?",
+          "a": [
+            "I can pat the tan cat."
+          ],
+          "key": [
+            "pat"
+          ],
+          "q_cn": "你能拍拍这只猫吗？",
+          "a_cn": [
+            "我能拍拍这只棕色的猫。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-can-you-pat-the-cat-04537b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-i-can-pat-the-tan-cat-b541a0.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-cat-e4be72.mp3"
+    },
+    {
+      "word": "mat",
+      "cn": "垫子",
+      "tag": "CVC",
+      "image": "images/sw-cvc-rat-mat.webp",
+      "dialog": [
+        {
+          "q": "Where did the rat sit?",
+          "a": [
+            "The rat sat on the mat."
+          ],
+          "key": [
+            "mat"
+          ],
+          "q_cn": "老鼠坐在哪里？",
+          "a_cn": [
+            "老鼠坐在垫子上。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-where-did-the-rat-sit-0c3a80.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-the-rat-sat-on-the-mat-857562.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-mat-a683af.mp3"
+    },
+    {
+      "word": "skip",
+      "cn": "跳",
+      "tag": "CVC",
+      "image": "images/sw-cvc-skip.webp",
+      "dialog": [
+        {
+          "q": "Can you skip?",
+          "a": [
+            "Yes, I can skip."
+          ],
+          "key": [
+            "skip"
+          ],
+          "q_cn": "你会跳绳吗？",
+          "a_cn": [
+            "会，我会跳绳。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-can-you-skip-3ab62f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is-to-and-all/a-yes-i-can-skip-e29bc2.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is-to-and-all/q-which-one-is-skip-a92071.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "all": "audio/words/all.mp3",
+    "and": "audio/words/and.mp3",
+    "apples": "audio/words/apples.mp3",
+    "asking": "audio/words/asking.mp3",
+    "bananas": "audio/words/bananas.mp3",
+    "be": "audio/words/be.mp3",
+    "birds": "audio/words/birds.mp3",
+    "black": "audio/words/black.mp3",
+    "buy": "audio/words/buy.mp3",
+    "cam": "audio/words/cam.mp3",
+    "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
+    "circle": "audio/words/circle.mp3",
+    "color": "audio/words/color.mp3",
+    "come": "audio/words/come.mp3",
+    "dan": "audio/words/dan.mp3",
+    "day": "audio/words/day.mp3",
+    "did": "audio/words/did.mp3",
+    "do": "audio/words/do.mp3",
+    "drums": "audio/words/drums.mp3",
+    "fox": "audio/words/fox.mp3",
+    "have": "audio/words/have.mp3",
+    "here": "audio/words/here.mp3",
+    "hobby": "audio/words/hobby.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "job": "audio/words/job.mp3",
+    "like": "audio/words/like.mp3",
+    "man": "audio/words/man.mp3",
+    "market": "audio/words/market.mp3",
+    "mat": "audio/words/mat.mp3",
+    "my": "audio/words/my.mp3",
+    "on": "audio/words/on.mp3",
+    "pat": "audio/words/pat.mp3",
+    "piano": "audio/words/piano.mp3",
+    "pilot": "audio/words/pilot.mp3",
+    "play": "audio/words/play.mp3",
+    "questions": "audio/words/questions.mp3",
+    "rat": "audio/words/rat.mp3",
+    "sat": "audio/words/sat.mp3",
+    "season": "audio/words/season.mp3",
+    "shape": "audio/words/shape.mp3",
+    "sight": "audio/words/sight.mp3",
+    "sing": "audio/words/sing.mp3",
+    "sit": "audio/words/sit.mp3",
+    "skip": "audio/words/skip.mp3",
+    "song": "audio/words/song.mp3",
+    "summer": "audio/words/summer.mp3",
+    "tan": "audio/words/tan.mp3",
+    "teacher": "audio/words/teacher.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "want": "audio/words/want.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "white": "audio/words/white.mp3",
+    "who": "audio/words/who.mp3",
+    "wings": "audio/words/wings.mp3",
+    "word": "audio/words/word.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  }
+}

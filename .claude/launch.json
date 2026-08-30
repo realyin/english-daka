@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "english-daka",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-u", "-m", "http.server", "-d", "english-daka", "8123"],
+      "port": 8123
+    }
+  ]
+}

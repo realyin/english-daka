@@ -1,0 +1,537 @@
+{
+  "seq": 203,
+  "group": "词族 Word Family",
+  "badge": "-it",
+  "title": "Word Family · it / at / ot / ad / id",
+  "cards": [
+    {
+      "word": "-it family",
+      "cn": "-it 词族",
+      "tag": "CVC",
+      "image": "images/wf-it.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "Which family do hit, bit and lit belong to?",
+          "a": [
+            "Hit, bit and lit belong to -it family."
+          ],
+          "key": [
+            "it"
+          ],
+          "q_cn": "hit、bit、lit 属于哪个词族？",
+          "a_cn": [
+            "它们属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-which-family-do-hit-bit-and-lit-belo-292877.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-hit-bit-and-lit-belong-to-it-family-a1c6b2.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-it-family-c9ed81.mp3"
+    },
+    {
+      "word": "hit",
+      "cn": "打",
+      "tag": "word",
+      "image": "images/wf-it-hit.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, i, t?",
+          "a": [
+            "/h/ /i/ /t/, hit.",
+            "I can hit the ball."
+          ],
+          "key": [
+            "hit"
+          ],
+          "q_cn": "h-i-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɪ/ /t/，hit。",
+            "我能击球。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-h-i-t-6282d2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-h-i-t-hit-8af643.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-can-hit-the-ball-20ba50.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-hit-1b9f2a.mp3"
+    },
+    {
+      "word": "bit",
+      "cn": "一小块",
+      "tag": "word",
+      "image": "images/wf-it-bit.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, i, t?",
+          "a": [
+            "/b/ /i/ /t/, bit.",
+            "I want a bit of cake."
+          ],
+          "key": [
+            "bit"
+          ],
+          "q_cn": "b-i-t 怎么拼读？",
+          "a_cn": [
+            "/b/ /ɪ/ /t/，bit。",
+            "我想要一小块蛋糕。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-b-i-t-1176fd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-b-i-t-bit-c3a588.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-want-a-bit-of-cake-5e5277.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-bit-406516.mp3"
+    },
+    {
+      "word": "lit",
+      "cn": "点亮的",
+      "tag": "word",
+      "image": "images/wf-it-lit.webp",
+      "dialog": [
+        {
+          "q": "How do you read l, i, t?",
+          "a": [
+            "/l/ /i/ /t/, lit.",
+            "The lamp is lit."
+          ],
+          "key": [
+            "lit"
+          ],
+          "q_cn": "l-i-t 怎么拼读？",
+          "a_cn": [
+            "/l/ /ɪ/ /t/，lit。",
+            "台灯亮了。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-l-i-t-67bd81.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-l-i-t-lit-952c03.mp3",
+            "audio/sentences/k2-wf-mixed/a-the-lamp-is-lit-39f71d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-lit-8e2d9b.mp3"
+    },
+    {
+      "word": "bat",
+      "cn": "蝙蝠",
+      "tag": "word",
+      "image": "images/wf-at-bat.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, a, t?",
+          "a": [
+            "/b/ /a/ /t/, bat.",
+            "I see a bat."
+          ],
+          "key": [
+            "bat"
+          ],
+          "q_cn": "b-a-t 怎么拼读？",
+          "a_cn": [
+            "/b/ /æ/ /t/，bat。",
+            "我看到一只蝙蝠。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-b-a-t-c10ad5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-b-a-t-bat-fadebf.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-see-a-bat-bb6a08.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-bat-b308c0.mp3"
+    },
+    {
+      "word": "rat",
+      "cn": "老鼠",
+      "tag": "word",
+      "image": "images/wf-at-rat.webp",
+      "dialog": [
+        {
+          "q": "How do you read r, a, t?",
+          "a": [
+            "/r/ /a/ /t/, rat.",
+            "The rat can run."
+          ],
+          "key": [
+            "rat"
+          ],
+          "q_cn": "r-a-t 怎么拼读？",
+          "a_cn": [
+            "/r/ /æ/ /t/，rat。",
+            "老鼠会跑。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-r-a-t-11fc54.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-r-a-t-rat-5787c1.mp3",
+            "audio/sentences/k2-wf-mixed/a-the-rat-can-run-dffec1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-rat-317ce8.mp3"
+    },
+    {
+      "word": "hat",
+      "cn": "帽子",
+      "tag": "word",
+      "image": "images/wf-at-hat.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, a, t?",
+          "a": [
+            "/h/ /a/ /t/, hat.",
+            "I have a hat."
+          ],
+          "key": [
+            "hat"
+          ],
+          "q_cn": "h-a-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /æ/ /t/，hat。",
+            "我有一顶帽子。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-h-a-t-0c49ca.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-h-a-t-hat-53885c.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-have-a-hat-7f28db.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-hat-a558d9.mp3"
+    },
+    {
+      "word": "tot",
+      "cn": "小娃娃",
+      "tag": "word",
+      "image": "images/wf-ot-tot.webp",
+      "dialog": [
+        {
+          "q": "How do you read t, o, t?",
+          "a": [
+            "/t/ /o/ /t/, tot.",
+            "The tot can hop."
+          ],
+          "key": [
+            "tot"
+          ],
+          "q_cn": "t-o-t 怎么拼读？",
+          "a_cn": [
+            "/t/ /ɑ/ /t/，tot。",
+            "小娃娃会蹦跳。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-t-o-t-bbfbb2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-t-o-t-tot-cb2f74.mp3",
+            "audio/sentences/k2-wf-mixed/a-the-tot-can-hop-8a5db4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-tot-5adaf9.mp3"
+    },
+    {
+      "word": "hot",
+      "cn": "热的",
+      "tag": "word",
+      "image": "images/wf-ot-hot.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, o, t?",
+          "a": [
+            "/h/ /o/ /t/, hot.",
+            "It is hot."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "h-o-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɑ/ /t/，hot。",
+            "天气很热。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-h-o-t-1bb60c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-h-o-t-hot-4cad64.mp3",
+            "audio/sentences/k2-wf-mixed/a-it-is-hot-1a733d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-hot-c419d5.mp3"
+    },
+    {
+      "word": "dot",
+      "cn": "点",
+      "tag": "word",
+      "image": "images/wf-ot-dot.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, o, t?",
+          "a": [
+            "/d/ /o/ /t/, dot.",
+            "I see a dot."
+          ],
+          "key": [
+            "dot"
+          ],
+          "q_cn": "d-o-t 怎么拼读？",
+          "a_cn": [
+            "/d/ /ɑ/ /t/，dot。",
+            "我看到一个圆点。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-d-o-t-deb5b0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-d-o-t-dot-03283a.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-see-a-dot-268e59.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-dot-dc07ac.mp3"
+    },
+    {
+      "word": "dad",
+      "cn": "爸爸",
+      "tag": "word",
+      "image": "images/wf-ad-dad.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, a, d?",
+          "a": [
+            "/d/ /a/ /d/, dad.",
+            "This is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "d-a-d 怎么拼读？",
+          "a_cn": [
+            "/d/ /æ/ /d/，dad。",
+            "这是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-d-a-d-d6714d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-d-a-d-dad-8311e1.mp3",
+            "audio/sentences/k2-wf-mixed/a-this-is-my-dad-b8089e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-dad-78b10b.mp3"
+    },
+    {
+      "word": "sad",
+      "cn": "伤心的",
+      "tag": "word",
+      "image": "images/wf-ad-sad.webp",
+      "dialog": [
+        {
+          "q": "How do you read s, a, d?",
+          "a": [
+            "/s/ /a/ /d/, sad.",
+            "I am sad."
+          ],
+          "key": [
+            "sad"
+          ],
+          "q_cn": "s-a-d 怎么拼读？",
+          "a_cn": [
+            "/s/ /æ/ /d/，sad。",
+            "我很难过。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-s-a-d-8aacfb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-s-a-d-sad-cb7140.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-am-sad-394a59.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-sad-ec83f0.mp3"
+    },
+    {
+      "word": "bad",
+      "cn": "坏的",
+      "tag": "word",
+      "image": "images/wf-ad-bad.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, a, d?",
+          "a": [
+            "/b/ /a/ /d/, bad.",
+            "It is bad."
+          ],
+          "key": [
+            "bad"
+          ],
+          "q_cn": "b-a-d 怎么拼读？",
+          "a_cn": [
+            "/b/ /æ/ /d/，bad。",
+            "这是不好的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-b-a-d-69fb8c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-b-a-d-bad-26f6c4.mp3",
+            "audio/sentences/k2-wf-mixed/a-it-is-bad-541d0a.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-bad-bcae35.mp3"
+    },
+    {
+      "word": "did",
+      "cn": "做",
+      "tag": "word",
+      "image": "images/wf-id-did.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, i, d?",
+          "a": [
+            "/d/ /i/ /d/, did.",
+            "I did it."
+          ],
+          "key": [
+            "did"
+          ],
+          "q_cn": "d-i-d 怎么拼读？",
+          "a_cn": [
+            "/d/ /ɪ/ /d/，did。",
+            "我做到了。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-d-i-d-fbaff8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-d-i-d-did-af807c.mp3",
+            "audio/sentences/k2-wf-mixed/a-i-did-it-8ebe73.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-did-f26a53.mp3"
+    },
+    {
+      "word": "hid",
+      "cn": "躲藏",
+      "tag": "word",
+      "image": "images/wf-id-hid.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, i, d?",
+          "a": [
+            "/h/ /i/ /d/, hid.",
+            "The cat hid."
+          ],
+          "key": [
+            "hid"
+          ],
+          "q_cn": "h-i-d 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɪ/ /d/，hid。",
+            "猫藏起来了。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-h-i-d-18112e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-h-i-d-hid-67ac3f.mp3",
+            "audio/sentences/k2-wf-mixed/a-the-cat-hid-0960c3.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-hid-3db63c.mp3"
+    },
+    {
+      "word": "lid",
+      "cn": "盖子",
+      "tag": "word",
+      "image": "images/wf-id-lid.webp",
+      "dialog": [
+        {
+          "q": "How do you read l, i, d?",
+          "a": [
+            "/l/ /i/ /d/, lid.",
+            "Put on the lid."
+          ],
+          "key": [
+            "lid"
+          ],
+          "q_cn": "l-i-d 怎么拼读？",
+          "a_cn": [
+            "/l/ /ɪ/ /d/，lid。",
+            "盖上盖子。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-mixed/q-how-do-you-read-l-i-d-321de5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-mixed/a-l-i-d-lid-6be09b.mp3",
+            "audio/sentences/k2-wf-mixed/a-put-on-the-lid-806727.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-mixed/q-which-one-is-lid-db3cfa.mp3"
+    }
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  },
+  "word_audio": {
+    "-it family": "audio/words/it-family.mp3",
+    "a": "audio/words/a.mp3",
+    "am": "audio/words/am.mp3",
+    "and": "audio/words/and.mp3",
+    "b": "audio/words/b.mp3",
+    "bad": "audio/words/bad.mp3",
+    "ball": "audio/words/ball.mp3",
+    "bat": "audio/words/bat.mp3",
+    "belong": "audio/words/belong.mp3",
+    "bit": "audio/words/bit.mp3",
+    "cake": "audio/words/cake.mp3",
+    "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
+    "d": "audio/words/d.mp3",
+    "dad": "audio/words/dad.mp3",
+    "did": "audio/words/did.mp3",
+    "do": "audio/words/do.mp3",
+    "dot": "audio/words/dot.mp3",
+    "family": "audio/words/family.mp3",
+    "h": "audio/words/h.mp3",
+    "hat": "audio/words/hat.mp3",
+    "have": "audio/words/have.mp3",
+    "hid": "audio/words/hid.mp3",
+    "hit": "audio/words/hit.mp3",
+    "hop": "audio/words/hop.mp3",
+    "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "l": "audio/words/l.mp3",
+    "lamp": "audio/words/lamp.mp3",
+    "lid": "audio/words/lid.mp3",
+    "lit": "audio/words/lit.mp3",
+    "my": "audio/words/my.mp3",
+    "o": "audio/words/o.mp3",
+    "of": "audio/words/of.mp3",
+    "on": "audio/words/on.mp3",
+    "put": "audio/words/put.mp3",
+    "r": "audio/words/r.mp3",
+    "rat": "audio/words/rat.mp3",
+    "read": "audio/words/read.mp3",
+    "run": "audio/words/run.mp3",
+    "s": "audio/words/s.mp3",
+    "sad": "audio/words/sad.mp3",
+    "see": "audio/words/see.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "tot": "audio/words/tot.mp3",
+    "want": "audio/words/want.mp3",
+    "which": "audio/words/which.mp3",
+    "you": "audio/words/you.mp3"
+  }
+}

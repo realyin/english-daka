@@ -1,0 +1,374 @@
+{
+  "seq": 302,
+  "group": "拼读 Phonics",
+  "badge": "i",
+  "title": "Short i · 短元音 i 拼读",
+  "cards": [
+    {
+      "word": "fit",
+      "cn": "健康的；合身",
+      "tag": "CVC",
+      "emoji": "🏃",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/fɪt/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-fit.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's fit."
+          ],
+          "key": [
+            "fit"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 fit。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-fit.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-fit-016819.mp3"
+    },
+    {
+      "word": "big",
+      "cn": "大的",
+      "tag": "CVC",
+      "emoji": "🐋",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/bɪɡ/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "ig",
+          "sound": "ig"
+        },
+        "blend_audio": "audio/phonics/blend-big.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's big."
+          ],
+          "key": [
+            "big"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 big。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-big.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-big-0d2e1c.mp3"
+    },
+    {
+      "word": "bin",
+      "cn": "垃圾桶",
+      "tag": "CVC",
+      "emoji": "🗑️",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/bɪn/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "in",
+          "sound": "in"
+        },
+        "blend_audio": "audio/phonics/blend-bin.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's bin."
+          ],
+          "key": [
+            "bin"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 bin。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-bin.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-bin-461894.mp3"
+    },
+    {
+      "word": "dig",
+      "cn": "挖",
+      "tag": "CVC",
+      "emoji": "⛏️",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/dɪɡ/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "g",
+            "sound": "g",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ig",
+          "sound": "ig"
+        },
+        "blend_audio": "audio/phonics/blend-dig.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's dig."
+          ],
+          "key": [
+            "dig"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 dig。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-dig.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-dig-f9b80f.mp3"
+    },
+    {
+      "word": "six",
+      "cn": "六",
+      "tag": "CVCC",
+      "emoji": "6️⃣",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/sɪks/",
+        "parts": [
+          {
+            "text": "s",
+            "sound": "s",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "x",
+            "sound": "x",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "s",
+          "sound": "s"
+        },
+        "rime": {
+          "text": "ix",
+          "sound": "ix"
+        },
+        "blend_audio": "audio/phonics/blend-six.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's six."
+          ],
+          "key": [
+            "six"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 six。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-six.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-six-b2c869.mp3"
+    },
+    {
+      "word": "kid",
+      "cn": "小孩",
+      "tag": "CVC",
+      "emoji": "🧒",
+      "phonics": {
+        "group": "短音 i /ɪ/",
+        "ipa": "/kɪd/",
+        "parts": [
+          {
+            "text": "k",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "k",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "id",
+          "sound": "id"
+        },
+        "blend_audio": "audio/phonics/blend-kid.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's kid."
+          ],
+          "key": [
+            "kid"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 kid。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+          ]
+        }
+      ],
+      "image": "images/cvc-kid.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-i/q-which-one-is-kid-b0419a.mp3"
+    }
+  ],
+  "word_audio": {
+    "big": "audio/words/big.mp3",
+    "bin": "audio/words/bin.mp3",
+    "dig": "audio/words/dig.mp3",
+    "fit": "audio/words/fit.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "kid": "audio/words/kid.mp3",
+    "six": "audio/words/six.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "word": "audio/words/word.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}
