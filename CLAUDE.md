@@ -40,13 +40,63 @@ python3 -m http.server 8123 -d english-daka
   字体栈英文圆体优先、中文回落苹方；**不要把 PingFang 放第一位**（英文会难看）
 - 课程数据：`lessons/<课程id>.json`，结构与建课流程见
   `english-daka/docs/课程制作指南.md`（改课程/建课前先读它）
+- `english-daka/docs/课程制作规范.md` — **建课/改课前必读**：五种课型模板、
+  提问句式表、发音的全部特殊实现（`/x/` 记号、音素配方、音色表、闯关词池同步）、
+  配图 prompt 规范、自检清单。给「拿到英文原文要产出一节课」的人或 Agent 看
 - `english-daka/docs/排障记录.md` — 线上发现、开发机不易复现的问题记录（症状 →
   走过的弯路 → 怎么量准 → 根因 → 验证数字）。遇到"平板上不对但本地看着好好的"
   先翻它；里面也有拍屏视频测位移、量页面溢出的可复用方法
 
+## 课型模板（建课前先看这个）
+
+现有 29 课全部落在 **5 套模板**里，新课先判断属于哪一型，然后用脚手架生成骨架
+——**不要手写 JSON**（seq 该取几、字段顺序、固定句式让脚本算）：
+
+| 课型 | seq 段 | 分组 | 卡片构成 | 现有 |
+|---|---|---|---|---|
+| `letter` | 1xx | 字母 Letters | 字母卡 + N 张词卡，各 2 问 | 11 节 |
+| `word-family` | 2xx | 词族 Word Family | 族卡(`quiz:false`) + 词卡（**带拼读面板**） | 3 节 |
+| `cvc` | 3xx | 拼读 Phonics | 全是带拼读面板的三音词卡，1 问 | 5 节 |
+| `sight-word` | 4xx | 常见词 Sight Words | 虚词卡(`quiz:false`) + 实词卡 | 4 节 |
+| `topic` | 5xx/6xx/7xx | 主题 / 数学 / 科学 | 一词一卡，句式从规范文档的句式表里挑 | 6 节 |
+
+```bash
+python3 new_lesson.py letter      --badge C --words cat,cup,car
+python3 new_lesson.py word-family --rime ot --words hot,dot,pot
+python3 new_lesson.py cvc         --vowel u --words cub,tub,mud
+python3 new_lesson.py sight-word  --words see,you --extra bird
+python3 new_lesson.py topic --group "主题 Topics" --title "At the Farm · 农场" \
+                           --badge 🐄 --words cow,pig,duck
+```
+
+**模板是三件套**，第三件最容易漏：
+
+1. `lessons/<课程id>.json` —— 数据骨架，只留 `cn` / 例句 / `a_cn` 标着「待填」
+2. `docs/prompts/<课程id>.md` —— 每张卡一条配图 prompt（统一风格前缀已写好，别改）
+3. 终端打印的**上线前同步清单** —— 比如新字母要往 `app.html` 的 `LETTER_CHIPS` /
+   `PHONEME_CHIPS` 里加；漏了闯关的干扰项会掉进普通名词池，变成送分题
+
+⚠️ **脚本不替你选词**。词表永远来自线下课件，见下面「原始素材与遗留」。
+
+⚠️ 字母 C/Q/X 的音标记号是 `/k/` `/kw/` `/ks/`，不是 `/c/` `/q/` `/x/` ——
+写错映射不到音素库，会退回 TTS 念成字母名。一字多音用 `--sound` 指定。
+
+建课流程（每步都别跳）：
+
+```bash
+new_lesson.py → 填「待填」→ check_lesson.py → 出图 → ingest_images.py
+→ gen_audio.py →（拼读/词族课）gen_phonics.py --blends → 再 check_lesson.py
+```
+
+完整规范（提问句式表、发音的全部特殊实现、自检清单、改一处要同步几处）见
+`english-daka/docs/课程制作规范.md`。
+
 ## 关键脚本（都在 english-daka/ 下运行）
 
-- `python3 new_lesson.py 21 "标题"` — 新课脚手架（课号标识，不用日期）
+- `python3 new_lesson.py <课型> ...` — 见上面「课型模板」
+- `python3 check_lesson.py [lessons/x.json]` — 课程自检（不带参数查全部）。
+  ❌ 必须清零才能上线：音标混音色、记号映射不到音素库、key 没进闯关词池、
+  拼读面板 sound 是哑的、缺音频…… 建课流程里跑两次（填完内容一次、生成音频后一次）
 - `python3 gen_audio.py lessons/x.json` — 生成句子/单词/鼓励语/考题音频，
   回写 JSON 并自动更新 index.json
 - `python3 gen_phonics.py` — 拼读音素公共库（lessons/phonics.json，87 个音）；
@@ -54,8 +104,9 @@ python3 -m http.server 8123 -d english-daka
 - `python3 add_image.py 原图.png 语义名` — 单张配图归一化（3:4 720×960 webp ≤150KB）
 - `python3 split_panels.py [--dry]` — 聚合拼图（2×2/三格）按格切成单图并回填
   `dialog[].image`；每格坐标写死在脚本的 PANELS 表里，改图后要同步改坐标
-- `python3 ingest_images.py <目录> [--dry]` — 批量入库新配图；编号→文件名的映射
-  自动从 `docs/配图Prompt清单.md` 的表格解析（该文档是 116 条配图 prompt 的清单）
+- `python3 ingest_images.py <目录> [--dry]` — 批量入库新配图。**新课不用编号**：
+  文件名直接用目标语义名（= prompt 里的「存为」名 = 卡片 `image` 字段名，一名三用）。
+  三位数字命名的老图才查 `docs/配图Prompt清单.md` 的编号表（那是首批 116 张的产物）
 
 ## 音频体系约定（重要）
 
@@ -95,13 +146,17 @@ python3 -m http.server 8123 -d english-daka
 
 ## 数据约定
 
-- 课程标识：新课用课号（`"num": 20`，文件名 `20-标题slug.json`）；
-  K2 课程用 `seq`（topic*100+序号）+ `group` + `badge` 分组展示。
+- 课程标识：一律用 `seq`（topic*100+序号）+ `group` + `badge`。
+  ⚠️ `num`/`date` 是**退役写法**，现役 29 课没有一节在用；写 `num` 会掉进目录页的
+  「未分组课号课」分支，排在所有分组前面、进不了任何组（check_lesson.py 会报错）。
   分组段位按**学习路径**排，目录页的组序就是 seq 段序：
   1xx 字母 → 2xx 词族 → 3xx 拼读 → 4xx 常见词 → 5xx 主题 → 6xx 数学
   → 7xx 科学（8xx 留给未做的绘本）。先认字母和音，再韵脚成块，再整词拼读
 - 卡片判分关键词 `key` = 该题正确答案（小写单词）；闯关选项从本课 key 池抽取，
-  同课内各题 key 尽量不重复
+  同类优先（颜色配颜色、数字配数字），同类不够才掺数字凑数
+- 两个开关，管的不是一回事：卡级 `"quiz": false` 挡考一考的「哪一个是 X」；
+  问级 `"practice": false`（写在 `dialog[]` 里）挡闯关的三选一 ——
+  给「What can chips show?」这种**答案不唯一**的对话式问句用，学一学照常教
 - **答案是音时，key 就写音标**：`"What sound does sea begin with?"` 的 key 是
   `["/s/"]`，不是 `["sea"]`（sea 是题干里的词，不是孩子该说的答案）。
   闯关识别到 `/x/` 形状的 key 会改从音标池抽干扰项（app.html 的
