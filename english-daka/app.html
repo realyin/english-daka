@@ -19,6 +19,10 @@
     font-family:"PingFang SC","Arial Rounded MT Bold",-apple-system,sans-serif;
     background:var(--bg); color:var(--ink);
     min-height:100vh; padding-bottom:40px;
+    /* 关掉滚动锚定:展开卡片时浏览器(安卓 Chrome)会挑一个可见节点当锚,
+       内容一长就自己改 scrollTop 去"稳住"那个锚——正好把我们展开后补回来的
+       滚动位置又冲掉,卡片重新往上窜。这页没有异步插内容的地方,不需要锚定 */
+    overflow-anchor:none;
   }
   /* 课程页顶部只留一条吸顶工具条:返回 + 课程名 + 星星 + 模式切换。
      内容限宽到和卡片同一列 —— 否则宽屏上 flex 会把返回键甩到屏幕最左角,
@@ -802,6 +806,21 @@ function makePhonicsPanel(c){
   return box;
 }
 
+// 展开后再补一下:卡片头别缩在吸顶条底下,卡片尾别掉出屏幕。
+// 两个诉求冲突时(长卡装不下)以"头露出来"为准——孩子要先看见点的是哪个词
+function revealCard(d){
+  const bar = document.querySelector(".topbar").getBoundingClientRect().bottom;
+  const r = d.getBoundingClientRect();
+  const topRoom = r.top - (bar + 8);            // >0 说明头下方还有余量可以往上滚
+  const overflow = r.bottom - (innerHeight - 8); // >0 说明卡尾露在屏幕外
+  let delta = 0;
+  if(topRoom < 0) delta = topRoom;
+  else if(overflow > 0) delta = Math.min(overflow, topRoom);
+  // 用瞬时滚动:平滑滚动在部分内核里被静默忽略(预览浏览器就是),
+  // 补位补不上等于没修;这里位移都不大,跳一下也比露不出来强
+  if(delta) window.scrollBy(0, delta);
+}
+
 function renderLearn(){
   const list = document.getElementById("learnList");
   list.innerHTML = "";
@@ -827,11 +846,17 @@ function renderLearn(){
       <span class="${tagClass(c.tag)}">${c.tag||"word"}</span>`;
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
+      // 展开前先记下这张卡在屏幕上的位置:收起上面那张卡会把内容整体抽走,
+      // 页面滚动位置却不变,卡片就往上窜——看着像"底边钉住、朝上展开",
+      // 头部连同刚点的词一起被顶出屏幕。展开后按位移把滚动补回去
+      const anchor = head.getBoundingClientRect().top;
       document.querySelectorAll(".lcard").forEach(x=>x.classList.remove("open"));
       stopAllSound();
       if(!wasOpen){
         d.classList.add("open");
       }
+      window.scrollBy(0, head.getBoundingClientRect().top - anchor);
+      if(!wasOpen) revealCard(d);
     };
     const wordPlay = document.createElement("button");
     wordPlay.className = "mini word-play";
