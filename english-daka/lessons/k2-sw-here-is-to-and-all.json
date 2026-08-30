@@ -356,6 +356,36 @@
       "word": "man",
       "cn": "男人",
       "tag": "CVC",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/mæn/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-man.mp3"
+      },
       "image": "images/sw-cvc-dan-man.webp",
       "dialog": [
         {
@@ -382,6 +412,36 @@
       "word": "cat",
       "cn": "猫",
       "tag": "CVC",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/cæt/",
+        "parts": [
+          {
+            "text": "c",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "c",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-cat.mp3"
+      },
       "image": "images/sw-cvc-pat-cat.webp",
       "dialog": [
         {
@@ -408,6 +468,36 @@
       "word": "mat",
       "cn": "垫子",
       "tag": "CVC",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/mæt/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-mat.mp3"
+      },
       "image": "images/sw-cvc-rat-mat.webp",
       "dialog": [
         {

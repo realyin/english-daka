@@ -134,13 +134,48 @@
       "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-eight-633ac5.mp3"
     },
     {
-      "word": "nine and ten",
-      "cn": "九和十",
+      "word": "nine",
+      "cn": "九",
       "tag": "number",
-      "image": "images/math-nine-ten.webp",
+      "image": "images/math-nine.webp",
       "dialog": [
         {
+          "q": "What's this number?",
+          "a": [
+            "It's number nine."
+          ],
+          "key": [
+            "nine"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字九。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-it-s-number-nine-7a9de2.mp3"
+          ]
+        },
+        {
+          "q": "How many chickens are there?",
+          "a": [
+            "There are nine chickens."
+          ],
+          "key": [
+            "nine"
+          ],
+          "q_cn": "有几只小鸡？",
+          "a_cn": [
+            "有九只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-there-are-nine-chickens-9a82d5.mp3"
+          ]
+        },
+        {
           "q": "How many chips can show nine chickens?",
+          "image": "images/math-nine-chips.webp",
           "a": [
             "Nine chips can show nine chickens."
           ],
@@ -155,9 +190,53 @@
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-nine-chips-can-show-nine-chickens-ac593d.mp3"
           ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-nine-2c49cf.mp3"
+    },
+    {
+      "word": "ten",
+      "cn": "十",
+      "tag": "number",
+      "image": "images/math-ten.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number ten."
+          ],
+          "key": [
+            "ten"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字十。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+          ]
+        },
+        {
+          "q": "How many chickens are there?",
+          "a": [
+            "There are ten chickens."
+          ],
+          "key": [
+            "ten"
+          ],
+          "q_cn": "有几只小鸡？",
+          "a_cn": [
+            "有十只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
+          ]
         },
         {
           "q": "How many chips can show ten chickens?",
+          "image": "images/math-ten-chips.webp",
           "a": [
             "Ten chips can show ten chickens."
           ],
@@ -174,14 +253,14 @@
           ]
         }
       ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-nine-and-ten-a3c3e7.mp3",
-      "quiz": false
+      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-ten-8e942d.mp3"
     },
     {
       "word": "ten fingers",
       "cn": "十根手指",
       "tag": "number",
       "image": "images/math-fingers.webp",
+      "quiz": false,
       "dialog": [
         {
           "q": "Show me five fingers.",
@@ -309,7 +388,6 @@
     "many": "audio/words/many.mp3",
     "me": "audio/words/me.mp3",
     "nine": "audio/words/nine.mp3",
-    "nine and ten": "audio/words/nine-and-ten.mp3",
     "number": "audio/words/number.mp3",
     "on": "audio/words/on.mp3",
     "one": "audio/words/one.mp3",

@@ -9,6 +9,7 @@
       "cn": "-at 词族",
       "tag": "CVC",
       "image": "images/wf-at-1.webp",
+      "collage": true,
       "quiz": false,
       "dialog": [
         {
@@ -52,6 +53,36 @@
       "word": "sat",
       "cn": "坐",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/sæt/",
+        "parts": [
+          {
+            "text": "s",
+            "sound": "s",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "s",
+          "sound": "s"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-sat.mp3"
+      },
       "image": "images/wf-at-1-sat.webp",
       "dialog": [
         {
@@ -81,6 +112,36 @@
       "word": "fat",
       "cn": "胖的",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/fæt/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-fat.mp3"
+      },
       "image": "images/wf-at-1-fat.webp",
       "dialog": [
         {
@@ -110,6 +171,36 @@
       "word": "mat",
       "cn": "垫子",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/mæt/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-mat.mp3"
+      },
       "image": "images/wf-at-1-mat.webp",
       "dialog": [
         {
@@ -136,10 +227,40 @@
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-mat-a683af.mp3"
     },
     {
-      "word": "cat bat hat",
-      "cn": "-at 词族单词",
-      "tag": "CVC",
-      "image": "images/wf-at-2.webp",
+      "word": "cat",
+      "cn": "猫",
+      "tag": "word",
+      "image": "images/wf-at-2-cat.webp",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/cæt/",
+        "parts": [
+          {
+            "text": "c",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "c",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-cat.mp3"
+      },
       "dialog": [
         {
           "q": "How do you read: c — at?",
@@ -160,7 +281,46 @@
             "audio/sentences/k2-wf-at/a-i-have-a-fat-cat-04495b.mp3"
           ],
           "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-c-at-cf41d8.mp3"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-cat-e4be72.mp3"
+    },
+    {
+      "word": "bat",
+      "cn": "蝙蝠",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/bæt/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
         },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-bat.mp3"
+      },
+      "image": "images/wf-at-2-bat.webp",
+      "dialog": [
         {
           "q": "Can the bat fly?",
           "a": [
@@ -177,7 +337,46 @@
           "a_audio": [
             "audio/sentences/k2-wf-at/a-yes-the-bat-can-fly-0e131b.mp3"
           ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-bat-b308c0.mp3"
+    },
+    {
+      "word": "hat",
+      "cn": "帽子",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/hæt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
         },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-hat.mp3"
+      },
+      "image": "images/wf-at-2-hat.webp",
+      "dialog": [
         {
           "q": "What color is your hat?",
           "a": [
@@ -196,8 +395,7 @@
           ]
         }
       ],
-      "quiz": false,
-      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-cat-bat-hat-1522e6.mp3"
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-hat-a558d9.mp3"
     }
   ],
   "praise_audio": {
@@ -219,7 +417,6 @@
     "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
     "cat": "audio/words/cat.mp3",
-    "cat bat hat": "audio/words/cat-bat-hat.mp3",
     "color": "audio/words/color.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",

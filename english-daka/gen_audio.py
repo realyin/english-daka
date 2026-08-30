@@ -212,9 +212,16 @@ def manifest_path(lessons_root: Path) -> Path:
 
 def phonics_fingerprint(lessons_root: Path) -> str:
     """拼接配方的指纹:音素库内容 + 停顿参数。
-    库里任何一个音重做了、或者停顿改了,拼接句都得跟着重做。"""
+    库里任何一个音重做了、或者停顿改了,拼接句都得跟着重做。
+
+    ⚠️ 排除 blend-*.mp3:那是「m→an→man」这类**单词**的串联音频,
+    是 gen_phonics.py --blends 的产物,不参与 /x/ 句子的拼接。
+    早先把它也算进指纹,结果给一节课加几个拼读面板(=多几个 blend 文件)
+    就会让全站所有含 /x/ 的句子重合成一遍,白跑一趟 TTS。"""
     h = hashlib.md5(f"gap={GAP_MS},{GAP_PUNCT_MS}".encode())
     for f in sorted((lessons_root / AUDIO_DIR / "phonics").glob("*.mp3")):
+        if f.name.startswith("blend-"):
+            continue
         h.update(f.name.encode())
         h.update(f.read_bytes())
     return h.hexdigest()[:12]
