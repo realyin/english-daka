@@ -276,6 +276,7 @@
       "cn": "需要",
       "tag": "word",
       "image": "images/n-need.webp",
+      "collage": true,
       "dialog": [
         {
           "q": "Can you spell number one?",

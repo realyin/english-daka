@@ -9,6 +9,7 @@
       "cn": "-it 词族",
       "tag": "CVC",
       "image": "images/wf-it.webp",
+      "collage": true,
       "quiz": false,
       "dialog": [
         {
@@ -35,6 +36,36 @@
       "word": "hit",
       "cn": "打",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/hɪt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-hit.mp3"
+      },
       "image": "images/wf-it-hit.webp",
       "dialog": [
         {
@@ -64,6 +95,36 @@
       "word": "bit",
       "cn": "一小块",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/bɪt/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-bit.mp3"
+      },
       "image": "images/wf-it-bit.webp",
       "dialog": [
         {
@@ -93,6 +154,36 @@
       "word": "lit",
       "cn": "点亮的",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/lɪt/",
+        "parts": [
+          {
+            "text": "l",
+            "sound": "l",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "l",
+          "sound": "l"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-lit.mp3"
+      },
       "image": "images/wf-it-lit.webp",
       "dialog": [
         {
@@ -122,6 +213,36 @@
       "word": "bat",
       "cn": "蝙蝠",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/bæt/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-bat.mp3"
+      },
       "image": "images/wf-at-bat.webp",
       "dialog": [
         {
@@ -151,6 +272,36 @@
       "word": "rat",
       "cn": "老鼠",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/ræt/",
+        "parts": [
+          {
+            "text": "r",
+            "sound": "r",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "r",
+          "sound": "r"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-rat.mp3"
+      },
       "image": "images/wf-at-rat.webp",
       "dialog": [
         {
@@ -180,6 +331,36 @@
       "word": "hat",
       "cn": "帽子",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/hæt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-hat.mp3"
+      },
       "image": "images/wf-at-hat.webp",
       "dialog": [
         {
@@ -209,6 +390,36 @@
       "word": "tot",
       "cn": "小娃娃",
       "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/tɑt/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-tot.mp3"
+      },
       "image": "images/wf-ot-tot.webp",
       "dialog": [
         {
@@ -238,6 +449,36 @@
       "word": "hot",
       "cn": "热的",
       "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/hɑt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-hot.mp3"
+      },
       "image": "images/wf-ot-hot.webp",
       "dialog": [
         {
@@ -267,6 +508,36 @@
       "word": "dot",
       "cn": "点",
       "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/dɑt/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-dot.mp3"
+      },
       "image": "images/wf-ot-dot.webp",
       "dialog": [
         {
@@ -296,6 +567,36 @@
       "word": "dad",
       "cn": "爸爸",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/dæd/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-dad.mp3"
+      },
       "image": "images/wf-ad-dad.webp",
       "dialog": [
         {
@@ -325,6 +626,36 @@
       "word": "sad",
       "cn": "伤心的",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/sæd/",
+        "parts": [
+          {
+            "text": "s",
+            "sound": "s",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "s",
+          "sound": "s"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-sad.mp3"
+      },
       "image": "images/wf-ad-sad.webp",
       "dialog": [
         {
@@ -354,6 +685,36 @@
       "word": "bad",
       "cn": "坏的",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/bæd/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-bad.mp3"
+      },
       "image": "images/wf-ad-bad.webp",
       "dialog": [
         {
@@ -383,6 +744,36 @@
       "word": "did",
       "cn": "做",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -id 词族",
+        "ipa": "/dɪd/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "id",
+          "sound": "id"
+        },
+        "blend_audio": "audio/phonics/blend-did.mp3"
+      },
       "image": "images/wf-id-did.webp",
       "dialog": [
         {
@@ -412,6 +803,36 @@
       "word": "hid",
       "cn": "躲藏",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -id 词族",
+        "ipa": "/hɪd/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "id",
+          "sound": "id"
+        },
+        "blend_audio": "audio/phonics/blend-hid.mp3"
+      },
       "image": "images/wf-id-hid.webp",
       "dialog": [
         {
@@ -441,6 +862,36 @@
       "word": "lid",
       "cn": "盖子",
       "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -id 词族",
+        "ipa": "/lɪd/",
+        "parts": [
+          {
+            "text": "l",
+            "sound": "l",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "l",
+          "sound": "l"
+        },
+        "rime": {
+          "text": "id",
+          "sound": "id"
+        },
+        "blend_audio": "audio/phonics/blend-lid.mp3"
+      },
       "image": "images/wf-id-lid.webp",
       "dialog": [
         {

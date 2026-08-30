@@ -9,6 +9,7 @@
       "cn": "-an 词族",
       "tag": "CVC",
       "image": "images/wf-an-1.webp",
+      "collage": true,
       "quiz": false,
       "dialog": [
         {
@@ -52,10 +53,41 @@
       "word": "man",
       "cn": "男人",
       "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/mæn/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-man.mp3"
+      },
       "image": "images/wf-an-1-man.webp",
       "dialog": [
         {
           "q": "How do you read: m — an?",
+          "image": "images/wf-an-1-man.webp",
           "a": [
             "/m/ /an/, man.",
             "This is a man."
@@ -73,76 +105,10 @@
             "audio/sentences/k2-wf-an/a-this-is-a-man-0ac957.mp3"
           ],
           "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-m-an-d41730.mp3"
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
-    },
-    {
-      "word": "fan",
-      "cn": "风扇",
-      "tag": "word",
-      "image": "images/wf-an-1-fan.webp",
-      "dialog": [
-        {
-          "q": "How do you read: f — an?",
-          "a": [
-            "/f/ /an/, fan.",
-            "It's a fan."
-          ],
-          "key": [
-            "fan"
-          ],
-          "q_cn": "f 加 an 怎么读？",
-          "a_cn": [
-            "/f/ /æn/，fan。",
-            "这是风扇。"
-          ],
-          "a_audio": [
-            "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3",
-            "audio/sentences/k2-wf-an/a-it-s-a-fan-85775b.mp3"
-          ],
-          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-f-an-503659.mp3"
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
-    },
-    {
-      "word": "tan",
-      "cn": "浅棕色",
-      "tag": "word",
-      "image": "images/wf-an-1-tan.webp",
-      "dialog": [
-        {
-          "q": "How do you read: t — an?",
-          "a": [
-            "/t/ /an/, tan.",
-            "The dog is tan."
-          ],
-          "key": [
-            "tan"
-          ],
-          "q_cn": "t 加 an 怎么读？",
-          "a_cn": [
-            "/t/ /æn/，tan。",
-            "这只狗是浅棕色的。"
-          ],
-          "a_audio": [
-            "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3",
-            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
-          ],
-          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3"
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
-    },
-    {
-      "word": "man",
-      "cn": "男人",
-      "tag": "CVC",
-      "image": "images/wf-an-2-man.webp",
-      "dialog": [
+        },
         {
           "q": "Who is the man?",
+          "image": "images/wf-an-2-man.webp",
           "a": [
             "The man is my dad."
           ],
@@ -162,39 +128,65 @@
       "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
     },
     {
-      "word": "tan",
-      "cn": "浅棕色",
-      "tag": "CVC",
-      "image": "images/wf-an-2-tan.webp",
-      "dialog": [
-        {
-          "q": "What color is the dog?",
-          "a": [
-            "The dog is tan."
-          ],
-          "key": [
-            "tan"
-          ],
-          "q_cn": "这只狗是什么颜色的？",
-          "a_cn": [
-            "这只狗是浅棕色的。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-an/q-what-color-is-the-dog-0a389b.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
-    },
-    {
       "word": "fan",
       "cn": "风扇",
-      "tag": "CVC",
-      "image": "images/wf-an-2-fan.webp",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/fæn/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-fan.mp3"
+      },
+      "image": "images/wf-an-1-fan.webp",
       "dialog": [
         {
+          "q": "How do you read: f — an?",
+          "image": "images/wf-an-1-fan.webp",
+          "a": [
+            "/f/ /an/, fan.",
+            "It's a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "f 加 an 怎么读？",
+          "a_cn": [
+            "/f/ /æn/，fan。",
+            "这是风扇。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3",
+            "audio/sentences/k2-wf-an/a-it-s-a-fan-85775b.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-f-an-503659.mp3"
+        },
+        {
           "q": "What do you need when you feel hot?",
+          "image": "images/wf-an-2-fan.webp",
           "a": [
             "I need a fan."
           ],
@@ -212,6 +204,84 @@
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
+    },
+    {
+      "word": "tan",
+      "cn": "浅棕色",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/tæn/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-tan.mp3"
+      },
+      "image": "images/wf-an-1-tan.webp",
+      "dialog": [
+        {
+          "q": "How do you read: t — an?",
+          "image": "images/wf-an-1-tan.webp",
+          "a": [
+            "/t/ /an/, tan.",
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "t 加 an 怎么读？",
+          "a_cn": [
+            "/t/ /æn/，tan。",
+            "这只狗是浅棕色的。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3",
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3"
+        },
+        {
+          "q": "What color is the dog?",
+          "image": "images/wf-an-2-tan.webp",
+          "a": [
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "这只狗是什么颜色的？",
+          "a_cn": [
+            "这只狗是浅棕色的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-color-is-the-dog-0a389b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
     },
     {
       "word": "birds",

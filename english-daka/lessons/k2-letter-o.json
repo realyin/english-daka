@@ -141,6 +141,7 @@
       "cn": "盒子",
       "tag": "word",
       "image": "images/o-box.webp",
+      "quiz": false,
       "dialog": [
         {
           "q": "What's this?",
@@ -161,6 +162,7 @@
         },
         {
           "q": "What is in the box?",
+          "image": "images/o-box.webp",
           "a": [
             "A fox is in the box."
           ],
@@ -174,8 +176,7 @@
           "q_audio": "audio/sentences/k2-letter-o/q-what-is-in-the-box-6735a2.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-o/a-a-fox-is-in-the-box-786ec5.mp3"
-          ],
-          "image": "images/o-box-fox-in.webp"
+          ]
         },
         {
           "q": "What sound does box have in the middle?",
@@ -263,6 +264,7 @@
       "cn": "狐狸",
       "tag": "word",
       "image": "images/o-fox.webp",
+      "quiz": false,
       "dialog": [
         {
           "q": "What's this animal?",
@@ -283,6 +285,7 @@
         },
         {
           "q": "Where is the fox?",
+          "image": "images/o-fox.webp",
           "a": [
             "The fox is on a box."
           ],
@@ -296,8 +299,7 @@
           "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-fox-cef8d1.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-o/a-the-fox-is-on-a-box-80dba5.mp3"
-          ],
-          "image": "images/o-fox-box-on.webp"
+          ]
         },
         {
           "q": "Can you spell fox?",

@@ -672,18 +672,16 @@ const QUIZ_FORMULA = /^(it's|this is|it is)\s+(sight word|key word|letter|number
    - 整张卡只有一问、且这张卡本身可考时,卡片图就是这一问的图
    反过来,残余聚合卡(sort it out / need)只有一张拼图、没有单格图,
    两种题都出不来,正是我们要的。*/
-/* 这张卡片图是不是「被拆过的整版拼图」。
-   拆图时单格图按 <拼图名>-<词>.webp 命名(split_panels.py),所以同一课里
-   只要有别的图以它的名字加连字符开头,它就是那张拼图。
-   拼图画的是好几样东西,拿来配一句话必然对不上(recycling-sort 四格里
-   根本没有 glass),不能进听句题;而 sw-too 这种单主体图没有派生单格图,
-   即使卡片因为 word 画不出来而 quiz:false,它的听句题照样成立。*/
-function isCollage(img){
-  if(!img) return false;
-  const stem = img.replace(/\.[a-z0-9]+$/i, "") + "-";
-  return (lesson.cards || []).some(c =>
-    (c.image && c.image !== img && c.image.startsWith(stem)) ||
-    c.dialog.some(t => t.image && t.image !== img && t.image.startsWith(stem)));
+/* 这张卡的图是不是「画着好几样东西的整版拼图」。拼图配一句话必然对不上
+   (recycling-sort 四格里根本没有 glass),两种考题都出不来。
+   ⚠️ 这是**卡片上显式声明**的,不要再退回按文件名推断。
+   曾经的写法是「同一课里有别的图以它的名字加连字符开头,它就是拼图」——
+   因为拆图的单格图叫 <拼图名>-<词>.webp。但这是把语义塞进文件名,
+   一撞前缀就误伤:o-box.webp(纸箱里的狐狸)被 o-box-fox-in.webp 顶掉、
+   f-fox 被 f-fox-forest 顶掉…… 实测 10 张正经的一图一词卡被挡在考一考外面,
+   而它们跟拼图毫无关系,只是名字撞了。命名从此可以自由取。*/
+function isCollage(card){
+  return !!(card && card.collage);
 }
 
 function quizItems(){
@@ -692,12 +690,12 @@ function quizItems(){
     // 整版拼图当选项永远是坏题(画着四样东西,问哪一个是 X 无从答起),
     // 两种题都挡掉,不必等数据侧补 quiz:false
     const wordOK = c.quiz !== false && !!(c.image || c.eq || c.emoji)
-                   && !isCollage(c.image);
+                   && !isCollage(c);
     if(wordOK)
       items.push({kind:"word", c, image:c.image, eq:c.eq, emoji:c.emoji,
                   pic: c.image || c.eq || c.emoji});
     for(const t of c.dialog){
-      const img = t.image || (c.dialog.length === 1 && !isCollage(c.image) ? c.image : null);
+      const img = t.image || (c.dialog.length === 1 && !isCollage(c) ? c.image : null);
       if(!img || !t.a_audio) continue;
       // 一问的答句可能不止一条:["It's sight word my.", "This is my toy."]
       // 第一条常是套话(说的是词不是画面),往后找第一条真正描述画面、且配了音的
@@ -932,28 +930,38 @@ function readChips(){
                         audio: chipAudio(b.dataset.k), el: b})));
 }
 
+/* 闯关只收「能出成三选一」的问。
+   有些问天生做不成选择题:"What can chips show?" 的答案是「同样多」,而本课能抽到的
+   干扰项只有数字 —— 出成 four / same / ten,而「chips can show four」本身就是对的,
+   孩子选 four 会被判错。这类问在数据里标 "practice": false:
+   学一学照常教、照常点读,只是不进闯关。
+   (对照:卡级的 "quiz": false 挡的是考一考的「哪一个是 X」,两者管的不是一回事) */
+function askable(c){ return (c.dialog || []).filter(t => t.practice !== false); }
+
 function startPractice(){
   // 每轮最多 ROUND_MAX 问:整课 25 问对 K2 孩子太长,而打卡是天天来的 ——
   // 每次随机抽一轮,几天下来自然覆盖全课,还不重样
   const bag = lesson.cards.slice().sort(()=>Math.random()-0.5);
   pOrder = []; let n = 0;
   for(const c of bag){
-    if(pOrder.length && n + c.dialog.length > ROUND_MAX) continue;
-    pOrder.push(c); n += c.dialog.length;
+    const k = askable(c).length;
+    if(!k) continue;                             // 整张卡的问都不进闯关
+    if(pOrder.length && n + k > ROUND_MAX) continue;
+    pOrder.push(c); n += k;
     if(n >= ROUND_MAX) break;
   }
   pc = 0; pq = 0;
   askQuestion();
 }
 function curCard(){ return pOrder[pc]; }
-function curQA(){ return curCard().dialog[pq]; }
+function curQA(){ return askable(curCard())[pq]; }
 
 let pRevealed = false;   // 当前题是否已展示过答案(防止重复追加气泡)
 function askQuestion(){
   pRevealed = false;
   const c = curCard(), qa = curQA();
-  const total = pOrder.reduce((s,x)=>s+x.dialog.length,0);
-  const doneN = pOrder.slice(0,pc).reduce((s,x)=>s+x.dialog.length,0) + pq;
+  const total = pOrder.reduce((s,x)=>s+askable(x).length,0);
+  const doneN = pOrder.slice(0,pc).reduce((s,x)=>s+askable(x).length,0) + pq;
   const pic = qa.image || c.image;
   // 词条出现在答案里就不显示,否则等于把答案写在题面上
   const leaks = qa.a.some(s => norm(s).includes(norm(c.word)));
@@ -984,7 +992,7 @@ function askQuestion(){
   // 用它当选项来源会让某些轮次同类候选不足。
   // 不用 flatMap(ES2019,iOS 12 以下没有,会抛错让整个闯关白屏)
   const plain = [...new Set(
-    lesson.cards.reduce((acc, c)=>acc.concat(c.dialog.map(d=>d.key.join(" "))), [])
+    lesson.cards.reduce((acc, c)=>acc.concat(askable(c).map(d=>d.key.join(" "))), [])
   )].filter(k=>!chipFamily(k));
   let cands = (chipFamily(correct) || plain).filter(k=>k!==correct);
   if(cands.length < 2)   // 同类词不够(整课就这么几个)才放宽,保证始终三个选项
@@ -1054,7 +1062,7 @@ function selfStar(btn){ addStars(1); btn.disabled = true; btn.textContent = "⭐
 function nextQA(){
   stopAllSound();
   pq++;
-  if(pq >= curCard().dialog.length){ pq = 0; pc++; }
+  if(pq >= askable(curCard()).length){ pq = 0; pc++; }
   if(pc >= pOrder.length){ return finishPractice(); }
   askQuestion();
 }

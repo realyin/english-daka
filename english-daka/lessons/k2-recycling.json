@@ -269,6 +269,7 @@
       "cn": "分一分",
       "tag": "science",
       "image": "images/recycling-sort.webp",
+      "collage": true,
       "dialog": [
         {
           "q": "Where should the glass bottle go?",

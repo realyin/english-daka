@@ -86,16 +86,7 @@
           "a_audio": [
             "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
           ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-apple-b0e24e.mp3"
-    },
-    {
-      "word": "apple",
-      "cn": "苹果",
-      "tag": "word",
-      "image": "images/a-words-1-apple.webp",
-      "dialog": [
+        },
         {
           "q": "What color is the apple?",
           "a": [
