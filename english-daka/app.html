@@ -386,7 +386,6 @@
   /* 两段式选项的中间态:点过一下(听过音了),再点同一个才算选定。
      用 outline 不用 border —— 边框会改变尺寸让整行选项跳一下;
      蓝描边压在黄底 chip 上也够显眼 */
-  .ans-chip.armed{outline:3px solid var(--blue);outline-offset:2px;}
   .ans-chip.right{background:var(--green);color:#fff;}
   .ans-chip.wrong{background:#FFD9D9;animation:shake .3s;}
   @keyframes shake{25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
@@ -2109,7 +2108,7 @@ function renderQuestion(){
     </div>
     <div class="chat" id="pChat"></div>
     <div class="result-emoji" id="pResult"></div>
-    <div class="p-hint">🔊 点一下听选项 · 再点同一个选中它</div>
+    <div class="p-hint">🔊 听完题目，大声说出答案，再点一点它</div>
     <div class="ans-chips" id="ansChips"></div>
     <div class="ctrl" id="pCtrl">
       <button class="btn" onclick="readChips()">🔊 听选项</button>
@@ -2146,22 +2145,10 @@ function renderQuestion(){
     b.dataset.k = k;
     b.onclick = ()=>{
       if(answered) return;
-      /* 两段式:第一下只听音,再点同一个才判分。
-         孩子不认字,选项对他就是三团图形 —— 直接判分等于逼他盲选(不点
-         「🔊 听选项」就没有任何信息)。第一下点谁就念谁、给个蓝描边表示
-         "再点我就是选它",点别的就把描边挪过去、念别的。
-         ⚠️ 判分那条路(stopAllSound / answered / SFX / flyStar / burst /
-         showNext)一个字没动,这里只是在它前面加了一道"确认"。*/
-      if(!b.classList.contains("armed")){
-        stopAllSound();        // 上一个选项还在念就掐掉,两个词叠着念听不清
-        chipsBox.querySelectorAll(".armed").forEach(x=>x.classList.remove("armed"));
-        chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
-        b.classList.add("armed");
-        playSeq([{text: k, role: "w", audio: chipAudio(k), el: b}]);
-        return;
-      }
+      /* 一点即判。曾试过两段式(第一下听音、再点同一个才判分,防不识字盲选),
+         家长反馈没这个必要 —— 孩子认识简单词、有大人陪,多一道确认反而烦。
+         要听选项音仍有「🔊 听选项」按钮。 */
       stopAllSound();          // 打断正在念的选项,别和判分音重叠
-      chipsBox.querySelectorAll(".armed").forEach(x=>x.classList.remove("armed"));
       chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
       if(k === correct){
         answered = true;
