@@ -81,6 +81,7 @@
   .cover .art{
     flex:1;display:flex;align-items:center;justify-content:center;
     background:var(--c);
+    position:relative;                         /* 星数角标的定位基准 */
   }
   .cover .glyph{
     font-size:calc(var(--cw) * 0.42);font-weight:900;color:#fff;line-height:1;
@@ -96,15 +97,66 @@
   .cover .n{font-size:12px;color:#5E6E8C;font-weight:700;margin-top:5px;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
+  /* ===== 打卡条 ===== */
+  /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
+     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请 */
+  .checkin{
+    max-width:360px;margin:16px auto 0;padding:9px 14px;
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    box-shadow:0 3px 10px rgba(43,58,85,.08);
+  }
+  /* 内容是 JS 填的:老浏览器解析不了脚本时别在标题下留一个空白盒子 */
+  .checkin:empty{display:none;}
+  .checkin-days{display:flex;gap:5px;}
+  .cday{display:flex;flex-direction:column;align-items:center;gap:3px;}
+  .cdot{
+    width:20px;height:20px;border-radius:50%;
+    border:2px solid #CFDCEE;background:#fff;box-sizing:border-box;
+  }
+  .cdot.on{background:var(--yellow);border-color:#E9A800;}
+  /* 今天那格加一圈蓝描边:七个点长得一样时,孩子分不清哪个是"今天该点亮的" */
+  .cday.today .cdot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(62,139,255,.28);}
+  .cw{font-size:11px;font-weight:700;color:#5E6E8C;line-height:1;}
+  .cday.today .cw{color:var(--blue);}
+  .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
+
+  /* ===== header 行动区 ===== */
+  .acts{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:14px;}
+  /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
+  .go-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-height:52px;max-width:94%;padding:12px 26px;border-radius:999px;
+    background:var(--green);color:#fff;font-weight:900;font-size:17px;
+    text-decoration:none;box-shadow:0 4px 0 rgba(0,0,0,.14);line-height:1.25;
+  }
+  .go-btn:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.14);}
+  .go-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
      而且每次进去内容都不一样,当成"课"会误导 */
   .review-btn{
-    display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;
+    display:inline-block;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
     text-decoration:none;box-shadow:0 3px 0 rgba(0,0,0,.12);
   }
   .review-btn:active{transform:translateY(2px);box-shadow:none;}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+  /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次 */
+  .review-btn.ghost{
+    background:#fff;color:var(--ink);border:2px solid var(--line,#DCE5F2);
+    box-shadow:none;
+  }
+  .review-btn.ghost:active{transform:translateY(2px);}
+
+  /* 封面右上角的星数角标:白底小胶囊,压在画面上但不遮巨型字形 */
+  .cover-stars{
+    position:absolute;top:8px;right:8px;
+    padding:2px 9px;border-radius:999px;
+    background:rgba(255,255,255,.94);color:var(--ink);
+    font-size:13px;font-weight:900;line-height:1.5;
+    box-shadow:0 2px 6px rgba(43,58,85,.18);
+  }
 
   /* 单手时点圆点比滑动省力,所以点击区做到 30px,视觉上仍是小圆点 */
   .dots{display:flex;gap:2px;justify-content:center;margin-top:2px;flex-wrap:wrap;}
@@ -146,7 +198,10 @@
 <header>
   <h1>🌟 我的英语打卡 🌟</h1>
   <p>左右滑动挑一张，点中间那张开始</p>
-  <a class="review-btn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+  <div class="checkin" id="checkin"></div>
+  <div class="acts" id="acts">
+    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+  </div>
 </header>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
@@ -171,6 +226,113 @@ window.onerror = function (msg, src, line) {
 };
 </script>
 <script>
+/* ================================================================
+   进度存档 —— 与 app.html 里的是同一份代码、同一个 key，改一处要同步改两处。
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   ⚠️ 隐私模式 / 关了站点数据的浏览器，光是碰 localStorage 就可能抛，所以每次
+   读写各自包 try/catch，失败就静默退回"没有存档"的样子 —— 这一页是纯 JS 渲染的，
+   顶层抛一个错就是整片白屏（页面底下那段 window.onerror 兜底就是为这个留的）。
+   ⚠️ 日期本地时区手拼，不用 toISOString()（那是 UTC，晚上会记成明天）。
+   ================================================================ */
+var STORE_KEY = "daka.v1";
+function ymd(d){
+  var m = d.getMonth() + 1, day = d.getDate();
+  return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+}
+var store = {
+  load: function(){
+    var o = null;
+    try{
+      var s = localStorage.getItem(STORE_KEY);
+      if(s) o = JSON.parse(s);
+    }catch(e){ o = null; }
+    if(!o || typeof o !== "object") o = {};
+    if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
+    if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
+    if(!(o.days instanceof Array)) o.days = [];
+    if(!o.last || typeof o.last !== "object") o.last = null;
+    return o;
+  },
+  save: function(o){
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify(o)); return true; }
+    catch(e){ return false; }
+  }
+};
+/* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
+   昨天也没有才是真的断了。setDate(-1) 自带跨月跨年,别自己算天数。 */
+function streakOf(days){
+  var set = {}, i;
+  for(i = 0; i < days.length; i++) set[days[i]] = 1;
+  var d = new Date();
+  if(!set[ymd(d)]){
+    d.setDate(d.getDate() - 1);
+    if(!set[ymd(d)]) return 0;
+  }
+  var n = 0;
+  while(set[ymd(d)]){ n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+
+/* 封面流的停留位置记在 sessionStorage(不是 localStorage):从课程页返回时
+   回到刚才那张,但下次重新打开应用还是从头开始 —— 位置是"这一趟"的上下文 */
+var SHELF_KEY = "daka.shelf";
+function shelfMem(){
+  try{
+    var s = sessionStorage.getItem(SHELF_KEY);
+    if(s){ var o = JSON.parse(s); if(o && typeof o === "object") return o; }
+  }catch(e){}
+  return {};
+}
+function saveShelfMem(group, n){
+  try{
+    var o = shelfMem();
+    o[group] = n;
+    sessionStorage.setItem(SHELF_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+
+var SAVE = store.load();
+
+/* 打卡条:最近 7 天(含今天)一天一个点 + 右侧连续天数 */
+const WEEK_CN = ["日","一","二","三","四","五","六"];
+function renderCheckin(){
+  const box = document.getElementById("checkin");
+  if(!box) return;
+  const set = {};
+  SAVE.days.forEach(d => { set[d] = 1; });
+  let cells = "";
+  for(let i = 6; i >= 0; i--){                 // 从 6 天前排到今天,今天在最右
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    const key = ymd(d);
+    cells += `<div class="cday${i === 0 ? " today" : ""}">` +
+             `<span class="cdot${set[key] ? " on" : ""}"></span>` +
+             `<span class="cw">${WEEK_CN[d.getDay()]}</span></div>`;
+  }
+  box.innerHTML =
+    `<div class="checkin-days" role="img" aria-label="最近七天打卡情况">${cells}</div>` +
+    `<div class="checkin-streak">🔥 ${streakOf(SAVE.days)} 天</div>`;
+}
+
+/* 「继续学 · 某课」:有存档且那节课还在清单里才出。
+   出现时把复习按钮降级成白底次按钮 —— 两个绿胶囊并排就没有主行动了 */
+function renderContinue(lessons){
+  const last = SAVE.last;
+  const id = last && last.lesson ? last.lesson : null;
+  if(!id) return;
+  let hit = null;
+  for(let i = 0; i < lessons.length; i++){ if(lessons[i].id === id){ hit = lessons[i]; break; } }
+  if(!hit) return;
+  const acts = document.getElementById("acts");
+  const a = document.createElement("a");
+  a.className = "go-btn";
+  a.href = "app.html?lesson=" + hit.id;
+  a.textContent = "▶ 继续学 · " + hit.title;
+  acts.insertBefore(a, acts.firstChild);
+  const rb = document.getElementById("reviewBtn");
+  if(rb) rb.classList.add("ghost");
+}
+
 const COVER_COLORS = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)"];
 
 /* 卡片在架子上的位置 —— off 是它离中心的距离(可为小数,拖动时连续变化) */
@@ -234,8 +396,12 @@ function buildShelf(group, lessons){
     a.href = `app.html?lesson=${l.id}`;
     a.draggable = false;
     a.style.setProperty("--c", COVER_COLORS[i % COVER_COLORS.length]);
+    // 这一课攒了多少星:攒过才显示,0 星的课挂个「⭐ 0」等于提醒他没做
+    const rec = SAVE.lessons[l.id];
+    const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
     a.innerHTML =
-      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span></div>` +
+      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
+      (got > 0 ? `<span class="cover-stars">⭐ ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
       `<div class="cn">${cn || l.badge_sub || ""}</div>` +
       `<div class="n">${l.words} 张卡片</div></div>`;
@@ -347,7 +513,8 @@ function buildShelf(group, lessons){
     // 那个 <a> 收不到 click,靠默认行为进不去课程(桌面鼠标必现)
     if(!moved && downCard){
       const i = covers.indexOf(downCard);
-      if(i === idx()) { location.href = downCard.href; return; }   // 点中间那张 → 进课程
+      // 记下停在第几张:从课程页返回时直接落回这里,不用再滑一遍
+      if(i === idx()) { saveShelfMem(group, i); location.href = downCard.href; return; }   // 点中间那张 → 进课程
       go(i); return;                                               // 点侧边那张 → 转到中间
     }
     vel = track * 16.7;                          // 张/毫秒 → 张/帧,带走手指的惯性
@@ -366,14 +533,32 @@ function buildShelf(group, lessons){
   stage.addEventListener("keydown", e => {
     if(e.key === "ArrowLeft"){ go(idx() - 1); e.preventDefault(); }
     if(e.key === "ArrowRight"){ go(idx() + 1); e.preventDefault(); }
-    if(e.key === "Enter" && covers[idx()]) location.href = covers[idx()].href;
+    if(e.key === "Enter" && covers[idx()]){
+      saveShelfMem(group, idx());
+      location.href = covers[idx()].href;
+    }
   });
+
+  /* 初始定位的优先级:本趟停过的位置 > 最近学的那一课 > 第一张。
+     直接把 pos/target 一起写死再 paint()(SLOW 的直达路径),不走弹簧 ——
+     一进页面就看见几组卡片各自"弹"一下,像是页面没加载完 */
+  let startAt = 0;
+  const mem = shelfMem();
+  if(typeof mem[group] === "number" && mem[group] >= 0 && mem[group] <= LAST){
+    startAt = Math.round(mem[group]);
+  }else if(SAVE.last && SAVE.last.lesson){
+    for(let i = 0; i <= LAST; i++){
+      if(lessons[i].id === SAVE.last.lesson){ startAt = i; break; }
+    }
+  }
+  pos = target = startAt;
 
   paint();
   return wrap;
 }
 
 (async function(){
+  renderCheckin();               // 打卡条不依赖课程清单,先画出来;清单拉不到也还在
   try{
     const r = await fetch("lessons/index.json", {cache:"no-store"});
     if(!r.ok) throw new Error();
@@ -385,6 +570,7 @@ function buildShelf(group, lessons){
       if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
       byGroup.get(g).push(l);
     });
+    renderContinue(data.lessons);
     order.forEach(g => shelves.appendChild(buildShelf(g, byGroup.get(g))));
   }catch(e){
     document.getElementById("note").innerHTML =

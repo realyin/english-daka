@@ -317,6 +317,20 @@
   }
   .big-btn:active{transform:translateY(4px);box-shadow:var(--shadow-sm);}
 
+  /* 结算页:两行成绩 + 竖排出口。三个按钮都是儿童热区,min-height 48px 起 */
+  .done-stat{font-size:17px;font-weight:800;margin-top:4px;}
+  .done-streak{font-size:15px;font-weight:800;color:var(--orange);margin-top:2px;}
+  .done-acts{
+    display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:18px;
+  }
+  .done-acts .big-btn{
+    margin-top:0;min-height:48px;min-width:190px;
+    display:inline-flex;align-items:center;justify-content:center;
+    text-decoration:none;line-height:1.2;
+  }
+  /* 「回目录」是同级但更弱的出口:白底描边,别和主行动抢眼 */
+  .big-btn.ghost{background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);}
+
   /* ===== 考一考 ===== */
   .q-word{font-size:36px;font-weight:900;color:var(--purple);margin:6px 0 2px;text-align:center;}
   /* 听句选图的题面是整句,比单词长得多,压小并留边 */
@@ -532,8 +546,109 @@ let DICT = {
 };
 
 let lesson = null;
-let stars = 0;
-function addStars(n){ stars+=n; document.getElementById("stars").textContent = stars; }
+
+/* ================================================================
+   进度存档 —— localStorage 单键 "daka.v1"
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   ⚠️ 隐私模式 / 关了站点数据的浏览器,连 localStorage 这个属性都可能直接抛,
+   所以每一次读写都各自包 try/catch,失败就静默退回"不记账"的老行为 —— 打卡
+   记不住是遗憾,页面白屏是事故。
+   ⚠️ 日期一律本地时区手拼,不要 toISOString():那是 UTC,东八区晚上 8 点以后
+   会算成"明天",孩子睡前打的卡记到第二天,连续天数直接断。
+   ================================================================ */
+var STORE_KEY = "daka.v1";
+function ymd(d){
+  var m = d.getMonth() + 1, day = d.getDate();
+  return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+}
+function today(){ return ymd(new Date()); }
+var store = {
+  load: function(){
+    var o = null;
+    try{
+      var s = localStorage.getItem(STORE_KEY);
+      if(s) o = JSON.parse(s);
+    }catch(e){ o = null; }
+    if(!o || typeof o !== "object") o = {};
+    if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
+    if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
+    if(!(o.days instanceof Array)) o.days = [];
+    if(!o.last || typeof o.last !== "object") o.last = null;
+    return o;
+  },
+  save: function(o){
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify(o)); return true; }
+    catch(e){ return false; }
+  }
+};
+function rec4(o, id){                          // 取/建某课的记录
+  var r = o.lessons[id];
+  if(!r || typeof r !== "object") r = {stars:0, done:0};
+  if(typeof r.stars !== "number") r.stars = 0;
+  if(typeof r.done  !== "number") r.done  = 0;
+  o.lessons[id] = r;
+  return r;
+}
+function markToday(o){                         // 今天并进打卡日,去重升序,只留最近 60 天
+  var t = today();
+  if(o.days.indexOf(t) < 0){
+    o.days.push(t);
+    o.days.sort();
+    if(o.days.length > 60) o.days = o.days.slice(o.days.length - 60);
+  }
+}
+/* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
+   昨天也没有才是真的断了。setDate(-1) 自带跨月跨年,别自己算天数。 */
+function streakOf(days){
+  var set = {}, i;
+  for(i = 0; i < days.length; i++) set[days[i]] = 1;
+  var d = new Date();
+  if(!set[ymd(d)]){
+    d.setDate(d.getDate() - 1);
+    if(!set[ymd(d)]) return 0;
+  }
+  var n = 0;
+  while(set[ymd(d)]){ n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+
+/* CUR_ID = 当前课程 id。三档语义,别合并:
+   真课程 id → 星数记到该课 + 记总数 + 记打卡日 + 记"最近学的课"
+   "review"(混合复习)→ 只记总数和打卡日(它不是一节课,不该有自己的星罐)
+   null(没带 ?lesson= 的预览课)→ 什么都不写 */
+var CUR_ID = null;
+let stars = 0;                                 // 语义:**本课**累计星数(不是总数)
+function addStars(n){
+  stars += n;
+  document.getElementById("stars").textContent = stars;
+  if(!CUR_ID) return;
+  var o = store.load();
+  o.total = o.total + n;
+  if(CUR_ID !== "review") rec4(o, CUR_ID).stars += n;
+  store.save(o);
+}
+/* 进课/换课时把星罐恢复成这一课的累计数,顺便记下"最近学的课" */
+function loadLessonProgress(){
+  var o = store.load();
+  stars = (CUR_ID && CUR_ID !== "review") ? rec4(o, CUR_ID).stars : 0;
+  document.getElementById("stars").textContent = stars;
+  if(CUR_ID && CUR_ID !== "review"){
+    o.last = {lesson: CUR_ID, at: today()};
+    store.save(o);
+  }
+}
+/* 完成一轮:记打卡日 + 该课完成轮数 +1。返回结算页要显示的总数与连续天数。
+   ⚠️ 必须在 flushStars() 之后调用,否则半空中的星星还没落袋,total 少算 */
+let doneStat = {total:0, streak:0};
+function recordFinish(){
+  var o = store.load();
+  if(CUR_ID){
+    markToday(o);
+    if(CUR_ID !== "review") rec4(o, CUR_ID).done += 1;
+    store.save(o);
+  }
+  return {total: o.total, streak: streakOf(o.days)};
+}
 
 /* ================================================================
    声音:有预生成音频文件就播文件,没有降级到设备 TTS
@@ -1570,16 +1685,35 @@ function nextQA(){
   SFX.flip();                    // 翻页音只在真的还有下一题时响,收尾走 win
   askQuestion();
 }
+/* 结算页共用的两块:成绩(本课 / 总共 / 连续天数)+ 三个出口。
+   连续天数 N=1 不显示 —— 天天来的孩子每天都是 1,那不叫成就 */
+function doneStatHTML(){
+  var h = `<div class="done-stat">本课 ⭐ × ${stars} · 总共 ⭐ × ${doneStat.total}</div>`;
+  if(doneStat.streak >= 2) h += `<div class="done-streak">🔥 连续打卡 ${doneStat.streak} 天</div>`;
+  return h;
+}
+function doneActsHTML(again){
+  const hasNext = LESSON_AT >= 0 && LESSON_AT + 1 < LESSON_ORDER.length;
+  return `<div class="done-acts">` +
+    `<button class="big-btn" onclick="${again}">再来一轮</button>` +
+    (hasNext ? `<button class="big-btn" onclick="gotoLesson(1)">下一课 ➜</button>` : ``) +
+    `<a class="big-btn ghost" href="index.html">回目录</a>` +
+    `</div>`;
+}
+
 function finishPractice(){
   flushStars();                  // 半空中的星星先落袋,否则结算页的「⭐ × N」少算刚挣的
+  doneStat = recordFinish();     // 记打卡日/完成轮数,必须排在 flushStars 后面
+  markTabDone("practice");
   swapIn(pbox, renderPracticeDone, 1);
 }
 function renderPracticeDone(){
   pbox.innerHTML = `
     <div class="done">
       <div class="big">🏆</div>
-      问答闯关完成！<br>现在有 ⭐ × ${stars}
-      <br><button class="big-btn" onclick="startPractice()">再来一轮</button>
+      问答闯关完成！
+      ${doneStatHTML()}
+      ${doneActsHTML("startPractice()")}
     </div>`;
   celebrate(pbox, function(){
     playOne("You did it! Amazing!", "q",
@@ -1672,14 +1806,17 @@ function renderQuizQuestion(){
 }
 function finishQuiz(){
   flushStars();                  // 同 finishPractice:半空中的星星先落袋再结算
+  doneStat = recordFinish();
+  markTabDone("quiz");
   swapIn(qbox, renderQuizDone, 1);
 }
 function renderQuizDone(){
   qbox.innerHTML = `
     <div class="done">
       <div class="big">🎉</div>
-      今日打卡完成！<br>现在有 ⭐ × ${stars}
-      <br><button class="big-btn" onclick="startQuiz()">再来一轮</button>
+      今日打卡完成！
+      ${doneStatHTML()}
+      ${doneActsHTML("startQuiz()")}
     </div>`;
   celebrate(qbox, function(){ praise("You did it! See you tomorrow!"); });
 }
@@ -1740,8 +1877,23 @@ const QUIZ_HOME = `
   <div class="done"><div class="big">🎯</div>听一听、选一选！
   <br><button class="big-btn" onclick="startQuiz()">开 始</button></div>`;
 
+/* 页签完成态角标:本次会话里跑完一轮就在页签后面打个 ✓。
+   只做会话内的勾,不读历史 done —— 历史勾会天天都亮着,反倒看不出"今天做了没" */
+let tabDone = {practice:false, quiz:false};
+const TAB_TEXT = {practice:"🎤 问答闯关", quiz:"🎯 考一考"};
+function paintTabDone(){
+  ["practice","quiz"].forEach(k => {
+    const el = document.getElementById("tab" + k[0].toUpperCase() + k.slice(1));
+    if(el) el.textContent = TAB_TEXT[k] + (tabDone[k] ? " ✓" : "");
+  });
+}
+function markTabDone(k){ tabDone[k] = true; paintTabDone(); }
+
 /* 把课程内容装载到界面上 —— 首次进入和换课都走这里 */
 function applyLesson(){
+  loadLessonProgress();          // 星罐换成这一课的累计星数 + 记下"最近学的课"
+  tabDone = {practice:false, quiz:false};   // 换课要清勾,不然新课一进来就是做完的
+  paintTabDone();
   document.getElementById("lessonTitle").textContent = lesson.title;
   const hint = document.getElementById("learnHint");
   hint.textContent = lesson.audio_mode === "word"
@@ -1803,6 +1955,7 @@ async function gotoLesson(dir){
     if(!r.ok) throw new Error("lesson " + id);
     lesson = await r.json();
     LESSON_AT = n;
+    CUR_ID = id;                              // 在 applyLesson 之前设,星罐才换得对
     history.pushState({lesson:id}, "", "app.html?lesson=" + id);
     showPage("learn", true);                  // 整页已经在滑了,页签动画不用再叠一层
     applyLesson();
@@ -1833,6 +1986,7 @@ addEventListener("popstate", async e => {
     if(r.ok) lesson = await r.json();
   }catch(err){}
   LESSON_AT = n;
+  CUR_ID = id;
   stopAllSound(); showPage("learn", true); applyLesson(); showPages(); window.scrollTo(0, 0);
 });
 /* 用捕获阶段:单词、气泡等子元素会 stopPropagation,冒泡阶段收不到 */
@@ -1874,6 +2028,7 @@ async function buildReviewLesson(perLesson = 2){
 
 (async function init(){
   const id = new URLSearchParams(location.search).get("lesson");
+  CUR_ID = id;                   // 没带 ?lesson= 时是 null:预览课不记账
   lesson = FALLBACK_LESSON;
   if(id === "review"){
     try{ lesson = await buildReviewLesson(); }catch(e){}
