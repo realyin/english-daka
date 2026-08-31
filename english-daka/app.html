@@ -66,8 +66,10 @@
   }
   /* 纵向 padding/gap 比原来紧一档(8/8/11 → 6/6/8):页签合成分段控件后,
      容器自己多了一圈 2px 边框 + 3px 内衬(见 .tabs),不收一收整条顶栏反而变高 */
+  /* ⚠️ 内容列宽和目录页对齐(720):曾经是 520,平板/桌面上从目录进课,
+     内容列突然缩窄一截,两页像两个应用(实测点名"宽度为什么不一样") */
   .topbar-in{
-    max-width:520px;margin:0 auto;padding:6px 14px 8px;
+    max-width:720px;margin:0 auto;padding:6px 14px 8px;
     display:flex;flex-direction:column;gap:6px;
   }
   /* gap 8 而不是 10:一行要塞下 back(48)+navbtn(48)+标题+navbtn(48)+星罐,
@@ -136,8 +138,9 @@
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
   /* 上内边距是页面自己的:以前这口气靠学一学的说明行(.hint)撑着,
      而它看两次就从 DOM 摘掉(见 init 里的 learnHint 计数),一摘第一张卡
-     就顶死吸顶栏(实测点名);闯关/考一考的面板同样吃这 12px */
-  .page{display:none;padding:12px 14px 0;max-width:520px;margin:0 auto;touch-action:pan-y;}
+     就顶死吸顶栏(实测点名);闯关/考一考的面板同样吃这 12px。
+     宽度 720 和目录页内容列对齐(两页宽度不一像两个应用,实测点名) */
+  .page{display:none;padding:12px 14px 0;max-width:720px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
   /* 页签切换的方向感:往右边的页签走就从右边滑进来,往左走就从左边。
      三个页签是并排的一条,硬切会让人分不清刚才点的是哪一个 */
