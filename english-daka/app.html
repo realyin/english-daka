@@ -25,8 +25,11 @@
     -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
     -webkit-touch-callout:none;}
   /* 目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷一帧浏览器默认白底 ——
-     深色底的封面流跳到这里就是"啪"一下白闪。背景写在 html 上,首帧就有色 */
-  html{ background:var(--bg); }
+     深色底的封面流跳到这里就是"啪"一下白闪。背景写在 html 上,首帧就有色。
+     overflow-x 必须封在 html 上(理由同 index.html 那段血泪注释,body 上没用):
+     换课时 #pages 被 translateX(±60px) 滑出视口、换题 swapIn 也 ±40px 平移
+     面板 —— 不封的话过渡的每一帧都在底部闪一条横向滚动条(桌面实测点名) */
+  html{ background:var(--bg); overflow-x:hidden; }
   /* ===== 图标 =====
      UI 层原来用的是 emoji。emoji 的字形、粗细、基线各平台各不相同(安卓那套
      线条细、iOS 那套厚实),同一行里和文字高矮对不齐,而且换个系统整页气质就变了。
