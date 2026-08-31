@@ -407,6 +407,33 @@
     .confetti{display:none;}
   }
 
+  /* ===== 轻量提示条(toast):目前只给「横滑换课」用 =====
+     手势换课是最容易误触的一步(孩子的手掌整个压在屏幕上划过去),
+     所以换完要留一句话告诉他换到哪了、并给一条一步退回去的路。
+     时长/缓动照旧走 theme.css 的 token,减弱动效时 --dur-base 归 0,
+     transition 自然变成瞬时显示/消失,不用再写一条 media 规则关动画。
+     z-index 要高过飞星(60)—— 星星飞过去时提示条不该被盖住 */
+  .toast{
+    position:fixed;left:50%;bottom:24px;z-index:70;
+    display:flex;align-items:center;gap:10px;
+    max-width:calc(100vw - 32px);
+    padding:10px 10px 10px 16px;border-radius:99px;
+    background:rgba(30,42,64,.94);color:#fff;
+    font-size:14px;font-weight:700;line-height:1.3;
+    box-shadow:0 8px 24px rgba(20,30,50,.28);
+    transform:translate(-50%,16px);opacity:0;pointer-events:none;
+    transition:transform var(--dur-base) var(--ease-out),
+               opacity var(--dur-base) var(--ease-out);
+  }
+  .toast.in{transform:translate(-50%,0);opacity:1;pointer-events:auto;}
+  .toast .toast-msg{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .toast .toast-act{
+    flex:none;border:0;border-radius:99px;padding:7px 14px;
+    background:#fff;color:#1E2A40;
+    font:inherit;font-weight:800;cursor:pointer;
+  }
+  .toast .toast-act:active{transform:scale(.94);}
+
   /* 键盘焦点圈:这页所有控件都是自绘样式,浏览器默认 outline 被圆角和阴影盖住,
      用键盘/外接设备走一遍完全看不出焦点在哪。:focus-visible 只对键盘生效,
      不会在触摸点击后留下一圈框(index.html 里已有同款规则) */
@@ -648,6 +675,68 @@ function recordFinish(){
     store.save(o);
   }
   return {total: o.total, streak: streakOf(o.days)};
+}
+
+/* ================================================================
+   课程代号 lessonGen —— 换一次课加一,用来作废"上一课挂着的定时器"。
+   考一考答对后要定格 1.8 秒再翻页;这 1.8 秒里横滑换了课,旧定时器照样会
+   醒过来把**上一课的题**渲染进新课的面板(题目、图、答案全是旧课的,
+   而 qi/quizOrder 也还是旧的,接着答下去整轮都是错位的)。
+   凡是"会渲染内容或推进题号"的延时回调,都要先记下当时的 gen、
+   回调里对不上就直接 return。纯装饰的定时器(飞星/彩带自删、
+   .wrong 抖动清理)作废与否都无所谓,不用挂。
+   ================================================================ */
+let lessonGen = 0;
+
+/* ================================================================
+   本轮答题快照 —— sessionStorage 单键 "daka.round"
+   { lesson, mode:"practice"|"quiz",
+     practice:{cards:[卡在 lesson.cards 里的下标...], pc, pq},
+     quiz:{items:[{ci,kind,qaIdx,pic}...], qi} }
+   为什么要存:闯关/考一考一轮 12 问,中途手一滑换了课(或干脆刷新),
+   回来是从头再来 —— 孩子刚答到第 9 问,重来一遍就不肯玩了。
+   ⚠️ 用**下标**定位而不是 word:同一课里 man/fan 这类词会有两张卡两张图,
+   按词找回来可能找到另一张,题面就对不上了。找不回任何一张就整个丢弃快照,
+   宁可从头,也不能拼出一轮张冠李戴的题。
+   ⚠️ 只用 sessionStorage:标签页关掉就该忘掉,不是长期进度(那在 daka.v1)。
+   ⚠️ 单槽:换到别的课并开一轮新的会把这一份顶掉,这是有意的取舍 ——
+   多槽存下去要管过期和清理,收益却只有"两课来回切还都留着"这一种情形。
+   ⚠️ review(混合复习)每次进来现抽卡片,下标指不回同一批题,不存也不恢复。
+   ================================================================ */
+var ROUND_KEY = "daka.round";
+function roundLoad(){
+  var o = null;
+  try{
+    var s = sessionStorage.getItem(ROUND_KEY);
+    if(s) o = JSON.parse(s);
+  }catch(e){ o = null; }
+  return (o && typeof o === "object") ? o : null;
+}
+function roundWrite(o){
+  try{
+    if(o) sessionStorage.setItem(ROUND_KEY, JSON.stringify(o));
+    else sessionStorage.removeItem(ROUND_KEY);
+  }catch(e){}
+}
+function roundSnapshotOK(){ return !!CUR_ID && CUR_ID !== "review"; }
+/* 存:只覆盖 mode 那一半,另一半留着 —— 闯关做到一半跳去考一考,
+   两边的进度都该在 */
+function saveRound(mode, data){
+  if(!roundSnapshotOK()) return;
+  var o = roundLoad();
+  if(!o || o.lesson !== CUR_ID) o = {lesson: CUR_ID};
+  o.mode = mode;
+  o[mode] = data;
+  roundWrite(o);
+}
+/* 清:一轮做完了就把这一半抹掉;两半都没了就把键删干净 */
+function clearRound(mode){
+  var o = roundLoad();
+  // 存的是别的课的快照就别动它 —— 在 B 课做完一轮不该去动 A 课那份
+  if(!o || o.lesson !== CUR_ID) return;
+  delete o[mode];
+  if(o.mode === mode) delete o.mode;
+  roundWrite((o.practice || o.quiz) ? o : null);
 }
 
 /* ================================================================
@@ -952,10 +1041,12 @@ function growBar(el, from, to){
    ⚠️ 人声比号角晚 300ms:号角只有半秒,压着人声开头一起响会把
    "You did it" 的第一个词糊掉。目标次序是「号角+彩带同帧 → 随后人声」*/
 function celebrate(box, say){
+  var gen = lessonGen;                 // 结算页刚出来就被横滑换掉课:号角和彩带作废
   setTimeout(function(){
+    if(gen !== lessonGen) return;
     SFX.win();
     burst((box && box.querySelector(".done .big")) || box);
-    setTimeout(say, 300);
+    setTimeout(function(){ if(gen === lessonGen) say(); }, 300);
   }, durMs("--dur-base"));
 }
 
@@ -1484,8 +1575,39 @@ function swapIn(el, render, dir){
     }, ms + 60);
   }, ms);
 }
+/* 作废这个面板上挂着的换题过渡,并把内联样式清干净。
+   换课时必须调:swapIn 的 render 是延时执行的,gotoLesson 已经把面板
+   innerHTML 换成开始页了,旧的 render 才醒过来,把上一课的题写回去。
+   而且中途换课时面板正停在 opacity:0 上,不清样式就是一整块空白。*/
+function cancelSwap(el){
+  if(!el) return;
+  el.__swapGen = (el.__swapGen || 0) + 1;
+  el.style.transition = "";
+  el.style.transform = "";
+  el.style.opacity = "";
+}
+
+/* 推进锁 —— 实测:对着「下一题 ➜」连点三下就跳三题。
+   按钮在换题过渡的 240ms 里一直挂着 onclick,每一下都真的走一遍 nextQA,
+   孩子想确认"我点到了没"多按两下,两问就这么没了(还看不见,因为
+   swapIn 的代次号会把中间那次渲染丢掉 —— 题号却已经加过了)。
+   考一考那边靠题内的 answered 哨兵挡住了(它同时管重复计分),
+   闯关的「下一题」按钮没有对应的哨兵,所以在这里统一加一道。
+   释放走定时器而不是 render 回调:结算页、开始页各有各的渲染路径,
+   挂漏一条就永久卡死"下一题"。下限 260ms 是防连点本身要的 ——
+   减弱动效时过渡时长是 0,不兜一个下限等于没锁。*/
+let advancing = false;
+function releaseAdvance(){ advancing = false; }
+function lockAdvance(){
+  if(advancing) return false;
+  advancing = true;
+  setTimeout(releaseAdvance, Math.max(durMs("--dur-base") + 80, 260));
+  return true;
+}
 
 let pOrder = [], pc = 0, pq = 0;
+/* 「这一栏正有一轮没做完」—— 横滑换课要据此收紧阈值,见文件底部的手势 */
+let pActive = false, qActive = false;
 /* 音标类答案的干扰项池:已教的 11 个字母音 + 已教的词族韵脚 */
 const PHONEME_CHIPS = ["/s/","/t/","/m/","/a/","/n/","/o/","/f/","/i/","/r/","/b/","/d/"];
 const RIME_CHIPS    = ["/an/","/at/","/ot/","/ad/","/id/","/it/"];
@@ -1539,6 +1661,7 @@ function readChips(){
 function askable(c){ return (c.dialog || []).filter(t => t.practice !== false); }
 
 function startPractice(){
+  releaseAdvance();   // 结算页的「再来一轮」不该被上一题的推进锁挡住
   // 每轮最多 ROUND_MAX 问:整课 25 问对 K2 孩子太长,而打卡是天天来的 ——
   // 每次随机抽一轮,几天下来自然覆盖全课,还不重样
   const bag = lesson.cards.slice().sort(()=>Math.random()-0.5);
@@ -1555,6 +1678,14 @@ function startPractice(){
 }
 function curCard(){ return pOrder[pc]; }
 function curQA(){ return askable(curCard())[pq]; }
+/* 本轮的问数 / 已完成问数 / 进度条百分比。
+   恢复快照时也要用它把 pBarPct 预置成当前位置,否则 growBar 会从 0 涨过去,
+   刷新回来第一眼是进度条"倒回起点再冲上来",看着像进度丢了 */
+function pTotals(){
+  var total = pOrder.reduce(function(s,x){ return s + askable(x).length; }, 0);
+  var doneN = pOrder.slice(0, pc).reduce(function(s,x){ return s + askable(x).length; }, 0) + pq;
+  return {total: total, doneN: doneN, pct: total ? doneN / total * 100 : 0};
+}
 
 let pRevealed = false;   // 当前题是否已展示过答案(防止重复追加气泡)
 let pBarPct = 0;         // 上一题进度条停在哪 —— 换题时要从这个值涨过去,见 growBar
@@ -1563,15 +1694,16 @@ let pBarPct = 0;         // 上一题进度条停在哪 —— 换题时要从�
 function askQuestion(){ swapIn(pbox, renderQuestion, 1); }
 function renderQuestion(){
   pRevealed = false;
+  pActive = true;
   const c = curCard(), qa = curQA();
-  const total = pOrder.reduce((s,x)=>s+askable(x).length,0);
-  const doneN = pOrder.slice(0,pc).reduce((s,x)=>s+askable(x).length,0) + pq;
+  const tot = pTotals();
+  const total = tot.total, doneN = tot.doneN;
   const pic = qa.image || c.image;
   // 词条出现在答案里就不显示,否则等于把答案写在题面上
   const leaks = qa.a.some(s => norm(s).includes(norm(c.word)));
   // 进度条走**已完成数**而不是当前题号:条子该在"翻到下一题"那一下往前长,
   // 用 doneN+1 的话第一题一进来就已经涨了一格,等于把没答的算成答了
-  const barPct = total ? doneN / total * 100 : 0;
+  const barPct = tot.pct;
   pbox.innerHTML = `
     <div class="pbar"><i id="pBar" style="width:${barPct}%"></i></div>
     <div class="progress">第 ${doneN+1} / ${total} 问</div>
@@ -1609,15 +1741,21 @@ function renderQuestion(){
     cands = [...new Set([...cands, ...plain, ...NUM_CHIPS])].filter(k=>k!==correct);
   const pool = shuffle(cands).slice(0, 2);
   const chipsBox = document.getElementById("ansChips");
+  // 和考一考同款的 answered 哨兵:disabled 挡得住绝大多数,但触摸端在
+  // disabled 生效之前就已经排进队列的那一下照样会进来 —— 没有哨兵就是
+  // 两次 SFX.star + 两次 flyStar(⭐+4)+ 两遍夸奖叠着播,出口按钮也画两回
+  let answered = false;
   shuffle([correct, ...pool]).forEach(k=>{
     const b = document.createElement("button");
     b.className = "ans-chip";
     b.textContent = k;
     b.dataset.k = k;
     b.onclick = ()=>{
+      if(answered) return;
       stopAllSound();          // 打断正在念的选项,别和判分音重叠
       chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
       if(k === correct){
+        answered = true;
         b.classList.add("right");
         chipsBox.querySelectorAll(".ans-chip").forEach(x=>x.disabled=true);
         document.getElementById("pResult").textContent = "🎉";
@@ -1644,6 +1782,32 @@ function renderQuestion(){
   // 选项仍然手动(🔊 听选项):认得的词他会伸手就点,自动念选项会变成边选边播。
   // 要重听题目,点问题气泡或气泡里的 🔊 即可,和以前那个按钮效果一样。
   playQuestion();
+  savePracticeRound();
+}
+
+/* 把这一轮的位置写进快照。存卡在 lesson.cards 里的下标 —— 找不到下标
+   (review 课临时拼的卡就是这样)整轮不存,免得存一份恢复不了的 */
+function savePracticeRound(){
+  if(!roundSnapshotOK()) return;
+  var cards = [], i, at;
+  for(i = 0; i < pOrder.length; i++){
+    at = lesson.cards.indexOf(pOrder[i]);
+    if(at < 0) return;
+    cards.push(at);
+  }
+  saveRound("practice", {cards: cards, pc: pc, pq: pq});
+}
+/* 按下标把 pOrder 拼回来。任何一张卡对不上(课程数据改过了、
+   换的是别的课)就返回 null,调用方丢弃整份快照 */
+function restorePOrder(idxs){
+  if(!(idxs instanceof Array) || !idxs.length) return null;
+  var out = [], i, c;
+  for(i = 0; i < idxs.length; i++){
+    c = (lesson.cards || [])[idxs[i]];
+    if(!c || !askable(c).length) return null;
+    out.push(c);
+  }
+  return out;
 }
 
 /* 念题目:自动播和重听走同一条路,高亮的是问题气泡里的句子 */
@@ -1678,6 +1842,7 @@ function selfStar(btn){
 }
 
 function nextQA(){
+  if(!lockAdvance()) return;     // 连点三下只算一下,见 lockAdvance
   stopAllSound();
   pq++;
   if(pq >= askable(curCard()).length){ pq = 0; pc++; }
@@ -1705,9 +1870,11 @@ function finishPractice(){
   flushStars();                  // 半空中的星星先落袋,否则结算页的「⭐ × N」少算刚挣的
   doneStat = recordFinish();     // 记打卡日/完成轮数,必须排在 flushStars 后面
   markTabDone("practice");
+  clearRound("practice");        // 这一轮做完了,没什么可恢复的了
   swapIn(pbox, renderPracticeDone, 1);
 }
 function renderPracticeDone(){
+  pActive = false;               // 结算页不算"进行中":横滑阈值恢复常态
   pbox.innerHTML = `
     <div class="done">
       <div class="big">🏆</div>
@@ -1728,6 +1895,7 @@ let quizOrder = [], qi = 0;
 const qbox = document.getElementById("quizBox");
 function shuffle(a){return a.slice().sort(()=>Math.random()-0.5);}
 function startQuiz(){
+  releaseAdvance();   // 同 startPractice:「再来一轮」不该被推进锁挡住
   // 一张图一轮只考一次:同一张图的 word 题和 sent 题不在同一轮里重复出现,
   // 每轮随机挑到哪一种,几天下来两种问法都会碰上
   const seen = new Set();
@@ -1738,12 +1906,14 @@ function startQuiz(){
 }
 let qBarPct = 0;   // 同 pBarPct:上一题进度条的宽度,换题时从它涨过去
 function nextQuestion(){
+  if(!lockAdvance()) return;     // 同 nextQA:重复调用只算一次
   // 收尾判断放在过渡外面:要么翻到下一题,要么翻到结算页,两条路各自带自己的过渡
   if(qi >= quizOrder.length){ return finishQuiz(); }
   SFX.flip();
   swapIn(qbox, renderQuizQuestion, 1);
 }
 function renderQuizQuestion(){
+  qActive = true;
   const it = quizOrder[qi], c = it.c;
   // 干扰项不能和正解同词:-an 课里 man/fan/tan 各有两张卡两张图(词族卡一张、
   // 生活场景卡一张),另一张混进选项就成了"两个都对",孩子点中它反而算错
@@ -1794,7 +1964,13 @@ function renderQuizQuestion(){
         flyStar(b, 1);            // 星星飞进罐子,落袋才 +1(不再直接 addStars)
         qi++;
         praise(randPraise());
-        setTimeout(nextQuestion, 1800);
+        // 这 1.8 秒里可能被横滑换掉课:对不上课程代号的定时器直接作废,
+        // 否则旧课的题会渲染进新课的面板
+        var gen = lessonGen;
+        setTimeout(function(){
+          if(gen !== lessonGen) return;
+          nextQuestion();
+        }, 1800);
       }else{
         b.classList.add("wrong");
         SFX.wrong();
@@ -1803,14 +1979,58 @@ function renderQuizQuestion(){
       }
     };
   });
+  saveQuizRound();
 }
+
+/* 考一考的快照:每道题记「卡下标 + 题型 + 问在 dialog 里的下标 + 图」。
+   ai(答句选第几条)不存 —— 它是 quizItems() 按固定规则算出来的,
+   恢复时重算一遍就是同一个值,存了反而多一处会对不上的地方 */
+function saveQuizRound(){
+  if(!roundSnapshotOK()) return;
+  var items = [], i, it, ci, di;
+  for(i = 0; i < quizOrder.length; i++){
+    it = quizOrder[i];
+    ci = lesson.cards.indexOf(it.c);
+    if(ci < 0) return;
+    di = it.kind === "sent" ? (it.c.dialog || []).indexOf(it.qa) : -1;
+    if(it.kind === "sent" && di < 0) return;
+    items.push({ci: ci, kind: it.kind, qaIdx: di, pic: it.pic});
+  }
+  saveRound("quiz", {items: items, qi: qi});
+}
+/* 按下标把 quizOrder 拼回来。不自己拼题目对象,而是重跑 quizItems()
+   再从里面挑 —— 题目对象怎么组装(pic 取 image 还是 emoji、单问卡的
+   答句能不能借用卡片图)那套规则只该有一份,抄第二份迟早两边走偏。
+   pic 顺带当校验:对不上说明课程数据变了,整份快照作废 */
+function restoreQuizOrder(items){
+  if(!(items instanceof Array) || !items.length) return null;
+  var all = quizItems(), out = [], i, j, want, card, hit;
+  for(i = 0; i < items.length; i++){
+    want = items[i];
+    card = (lesson.cards || [])[want.ci];
+    if(!card) return null;
+    hit = null;
+    for(j = 0; j < all.length; j++){
+      if(all[j].c !== card || all[j].kind !== want.kind) continue;
+      if(want.kind === "sent" && all[j].qa !== (card.dialog || [])[want.qaIdx]) continue;
+      hit = all[j];
+      break;
+    }
+    if(!hit || hit.pic !== want.pic) return null;
+    out.push(hit);
+  }
+  return out;
+}
+
 function finishQuiz(){
   flushStars();                  // 同 finishPractice:半空中的星星先落袋再结算
   doneStat = recordFinish();
   markTabDone("quiz");
+  clearRound("quiz");
   swapIn(qbox, renderQuizDone, 1);
 }
 function renderQuizDone(){
+  qActive = false;
   qbox.innerHTML = `
     <div class="done">
       <div class="big">🎉</div>
@@ -1891,6 +2111,12 @@ function markTabDone(k){ tabDone[k] = true; paintTabDone(); }
 
 /* 把课程内容装载到界面上 —— 首次进入和换课都走这里 */
 function applyLesson(){
+  lessonGen++;                   // 上一课挂着的延时回调从这一刻起全部作废
+  cancelSwap(document.getElementById("practiceBox"));
+  cancelSwap(document.getElementById("quizBox"));
+  hideToast();                   // 上一次换课的「撤销」已经指不回来了
+  pActive = qActive = false;
+  releaseAdvance();
   loadLessonProgress();          // 星罐换成这一课的累计星数 + 记下"最近学的课"
   tabDone = {practice:false, quiz:false};   // 换课要清勾,不然新课一进来就是做完的
   paintTabDone();
@@ -1912,6 +2138,45 @@ function applyLesson(){
 
   wireLessonNav();
   renderLearn();
+  restoreRound();                // 刚才那一轮要是还没做完,接着做,别从头来
+}
+
+/* 快照恢复。放在两个面板被重置成开始页之后 —— 先还原成干净的开始页,
+   有快照再盖回去,没快照/对不上就是原来的样子。
+   ⚠️ 只恢复 mode 那一栏并翻到对应页签,另一栏留在开始页:两栏都渲染
+   意味着两段题目音频同时开播。mode 每渲染一题就更新一次,
+   所以它就是"孩子最后在做的那一栏"。
+   ⚠️ 走 showPage 不走 tapPage:这是页面自己在恢复,不是孩子按了页签,
+   响一声"咔哒"等于页面在无中生有地报点击。而且 showPage 收尾会
+   stopAllSound(),必须排在渲染(带自动播题)前面,否则题目音刚起就被掐掉。*/
+function restoreRound(){
+  if(!roundSnapshotOK()) return;
+  var s = roundLoad();
+  if(!s || s.lesson !== CUR_ID) return;
+  if(s.mode === "practice" && s.practice) return resumePractice(s.practice);
+  if(s.mode === "quiz" && s.quiz && document.getElementById("tabQuiz").style.display !== "none")
+    return resumeQuiz(s.quiz);
+}
+function resumePractice(d){
+  var order = restorePOrder(d.cards);
+  if(!order) return clearRound("practice");
+  var at = d.pc, sub = d.pq;
+  if(!(at >= 0 && at < order.length)) return clearRound("practice");
+  if(!(sub >= 0 && sub < askable(order[at]).length)) return clearRound("practice");
+  pOrder = order; pc = at; pq = sub;
+  pBarPct = pTotals().pct;       // 预置成当前位置,进度条才不会从 0 闪着涨上来
+  showPage("practice", true);
+  renderQuestion();
+}
+function resumeQuiz(d){
+  var order = restoreQuizOrder(d.items);
+  if(!order) return clearRound("quiz");
+  var at = d.qi;
+  if(!(at >= 0 && at < order.length)) return clearRound("quiz");
+  quizOrder = order; qi = at;
+  qBarPct = order.length ? at / order.length * 100 : 0;
+  showPage("quiz", true);
+  renderQuizQuestion();
 }
 
 function wireLessonNav(){
@@ -1924,6 +2189,48 @@ function wireLessonNav(){
   });
 }
 
+/* ================================================================
+   提示条 —— 全局唯一一条,新的顶掉旧的(两条叠着出现只会互相盖住,
+   而且撤销按钮会指向哪一次换课根本说不清)。
+   2.5 秒自动淡出;时长/缓动全在 CSS 里走 token,减弱动效自动变瞬时。
+   ================================================================ */
+let toastTimer = 0;
+function toastEl(){
+  var el = document.getElementById("toast");
+  if(!el){
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    el.setAttribute("role", "status");
+    document.body.appendChild(el);
+  }
+  return el;
+}
+function hideToast(){
+  if(toastTimer){ clearTimeout(toastTimer); toastTimer = 0; }
+  var el = document.getElementById("toast");
+  if(el) el.classList.remove("in");
+}
+function showToast(msg, actLabel, act){
+  var el = toastEl();
+  hideToast();
+  el.innerHTML = "";
+  var s = document.createElement("span");
+  s.className = "toast-msg";
+  s.textContent = msg;                         // textContent:课程标题不进 HTML 解析
+  el.appendChild(s);
+  if(act){
+    var b = document.createElement("button");
+    b.className = "toast-act";
+    b.textContent = actLabel;
+    b.onclick = function(){ hideToast(); act(); };
+    el.appendChild(b);
+  }
+  void el.offsetWidth;                         // 强制重排,连着两次出条才会重放淡入
+  el.classList.add("in");
+  toastTimer = setTimeout(hideToast, 2500);
+}
+
 /* 换课:不刷新页面,原地换内容 + 左右滑出滑入。
    整页跳转会重新加载所有资源,既慢又没法做过渡动画。 */
 let switching = false;
@@ -1933,7 +2240,9 @@ function showPages(){                          // 无论如何都要把页面还
   wrap.style.transform = "translateX(0)";
   wrap.style.opacity = "1";
 }
-async function gotoLesson(dir){
+/* byGesture:只有横滑换课才出提示条。按钮和「下一课 ➜」是孩子明确按下去的,
+   继续卡/前进后退同理 —— 那些不需要一句"你换到哪了"外加一条后悔路 */
+async function gotoLesson(dir, byGesture){
   const n = LESSON_AT + dir;
   if(switching || LESSON_AT < 0 || n < 0 || n >= LESSON_ORDER.length) return;
   switching = true;
@@ -1960,6 +2269,9 @@ async function gotoLesson(dir){
     showPage("learn", true);                  // 整页已经在滑了,页签动画不用再叠一层
     applyLesson();
     window.scrollTo(0, 0);
+    // applyLesson 里 hideToast 过了,提示条要在它之后再出
+    if(byGesture) showToast("已切到 " + LESSON_ORDER[n].title,
+                            "撤销", function(){ gotoLesson(-dir); });
 
     wrap.style.transition = "none";           // 从另一侧就位,再滑进来
     wrap.style.transform = `translateX(${-out}px)`;
@@ -1995,14 +2307,41 @@ addEventListener("pointerdown", e => {
 }, true);
 addEventListener("pointermove", e => { if(swOn) swDx = e.clientX - swX; }, true);
 addEventListener("pointercancel", () => { swOn = false; swDx = 0; }, true);
+/* 答题中?—— 当前这一栏正有一轮没做完(不在开始页也不在结算页)。
+   只看**当前页**:闯关做到一半但人在学一学翻卡片,那横滑就该照常好使 */
+function activePage(){
+  var ks = ["learn", "practice", "quiz"], i, el;
+  for(i = 0; i < ks.length; i++){
+    el = document.getElementById("page" + ks[i][0].toUpperCase() + ks[i].slice(1));
+    if(el && el.classList.contains("on")) return ks[i];
+  }
+  return "learn";
+}
+function roundBusy(){
+  var p = activePage();
+  return (p === "practice" && pActive) || (p === "quiz" && qActive);
+}
 addEventListener("pointerup", e => {
   if(!swOn) return;
   swOn = false;
   const dy = e.clientY - swY;
   // 要够长、且明显是横向,才算换课(否则会误伤点单词、滚页面)
-  if(Math.abs(swDx) > 80 && Math.abs(swDx) > Math.abs(dy) * 1.5){
-    gotoLesson(swDx < 0 ? 1 : -1);
+  if(Math.abs(swDx) <= Math.abs(dy) * 1.5) return;
+  // 答题中收紧:80px 是"翻页"的手感,可选项排成一行、孩子的手掌又整个压在
+  // 屏幕上,答着题很容易划出这么一下 —— 一轮进度就没了。
+  // 加到 140px 还不够(划得长只是更用力,不代表更有意),再要求**从屏幕边缘起手**:
+  // 边缘那 24% 没有选项也没有卡片,手指落在那儿基本只可能是奔着翻页去的。
+  const busy = roundBusy();
+  if(!busy){
+    if(Math.abs(swDx) <= 80) return;
+  }else{
+    if(Math.abs(swDx) <= 140) return;
+    const w = window.innerWidth || document.documentElement.clientWidth || 0;
+    const edge = w * 0.24;
+    if(!(w > 0 && (swX <= edge || swX >= w - edge))) return;
   }
+  const dir = swDx < 0 ? 1 : -1;
+  gotoLesson(dir, true);
 }, true);
 
 /* 混合复习:把各课的卡片凑成一节临时的课。
