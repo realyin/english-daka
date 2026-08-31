@@ -1955,19 +1955,40 @@ function afterExpand(dialog, fn){
   setTimeout(finish, ms + 50);
 }
 
-// 展开后再补一下:卡片头别缩在吸顶条底下,卡片尾别掉出屏幕。
+// 卡片头别缩在吸顶条底下,卡片尾别掉出屏幕。
 // 两个诉求冲突时(长卡装不下)以"头露出来"为准——孩子要先看见点的是哪个词
-function revealCard(d){
+function revealDelta(d){
   const bar = document.querySelector(".topbar").getBoundingClientRect().bottom;
   const r = d.getBoundingClientRect();
   const topRoom = r.top - (bar + 8);            // >0 说明头下方还有余量可以往上滚
   const overflow = r.bottom - (innerHeight - 8); // >0 说明卡尾露在屏幕外
-  let delta = 0;
-  if(topRoom < 0) delta = topRoom;
-  else if(overflow > 0) delta = Math.min(overflow, topRoom);
-  // 用瞬时滚动:平滑滚动在部分内核里被静默忽略(预览浏览器就是),
-  // 补位补不上等于没修;这里位移都不大,跳一下也比露不出来强
+  if(topRoom < 0) return topRoom;
+  if(overflow > 0) return Math.min(overflow, topRoom);
+  return 0;
+}
+// 过渡结束后的兜底校正(懒加载的图片把高度撑变了之类)。
+// 用瞬时滚动:平滑滚动在部分内核里被静默忽略(预览浏览器就是),
+// 补位补不上等于没修;正常情况下主补位已由 glideScrollBy 和展开动画
+// 同步跑完,这里量到的是 0 或几个像素
+function revealCard(d){
+  const delta = revealDelta(d);
   if(delta) window.scrollBy(0, delta);
+}
+/* 和展开动画并行的滚动:自己 rAF 驱动(不依赖内核的 smooth 支持),
+   缓动形状对齐 --ease-out,时长同 --dur-slow —— 卡片撑开和页面滚动是
+   同一个动作,分两段做(先展完、再瞬移)看着就是"先往下张嘴、又猛跳到顶" */
+let glideId = 0;
+function glideScrollBy(delta, ms){
+  cancelAnimationFrame(glideId);
+  if(!delta) return;
+  const from = window.scrollY, t0 = performance.now();
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  function step(now){
+    const t = Math.min(1, (now - t0) / ms);
+    window.scrollTo(0, from + delta * ease(t));
+    if(t < 1) glideId = requestAnimationFrame(step);
+  }
+  glideId = requestAnimationFrame(step);
 }
 
 /* ================================================================
@@ -2144,10 +2165,16 @@ function renderLearn(){
     }
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
-      // 展开前先记下这张卡在屏幕上的位置:收起上面那张卡会把内容整体抽走,
-      // 页面滚动位置却不变,卡片就往上窜——看着像"底边钉住、朝上展开",
-      // 头部连同刚点的词一起被顶出屏幕。展开后按位移把滚动补回去
+      // 正在收起的那张(们):FLIP 的起态要用到它们的展开时 padding
+      const prevOpen = [...document.querySelectorAll(".lcard.open")].filter(x=>x!==d);
       const anchor = head.getBoundingClientRect().top;
+      // ⚠️ 必须在翻类之前建内容:空 dialog 的展开高度是 0,
+      // 动画从 0fr 到 1fr 也还是 0,终态量到的同样是空盒子
+      if(!wasOpen) ensureDialog(d);
+      // 起态快照:收起卡当前(展开态)的 padding、要开的卡当前(收起态)的 padding
+      const padOf = x => getComputedStyle(x.querySelector(".dialog-in")).padding;
+      const openStartPad = wasOpen ? null : padOf(d);
+      const closeStartPads = prevOpen.map(padOf);
       document.querySelectorAll(".lcard").forEach(x=>{
         x.classList.remove("open");
         // 收起别的卡时它们的 aria-expanded 也要跟着回 false,
@@ -2157,17 +2184,43 @@ function renderLearn(){
       });
       stopAllSound();
       if(!wasOpen){
-        // ⚠️ 必须在加 .open 之前建内容:空 dialog 的展开高度是 0,
-        // 动画从 0fr 到 1fr 也还是 0,补位量到的同样是空盒子
-        ensureDialog(d);
         d.classList.add("open");
         head.setAttribute("aria-expanded", "true");
         SFX.pop();                 // 只在"展开"这一下响,收起是安静的
       }
-      window.scrollBy(0, head.getBoundingClientRect().top - anchor);
-      // 展开现在是动画,补位要等它把高度撑完再量 —— 立刻量到的还是 0fr 时的尺寸,
-      // 补出来的位置正好差一整个卡片的高度
-      if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
+      const ms = durMs("--dur-slow");
+      if(!wasOpen && ms > 0){
+        /* FLIP:类已翻到终态。先关过渡瞬时跳到终态布局,量出滚动补位量
+           (含上方卡收起抽走的高度 + 卡头顶到吸顶栏下的诉求),再退回起态、
+           放开过渡 —— 展开/收起动画与 glideScrollBy 的滚动同时长、同步跑,
+           整个过程是一个连续动作。以前是"展完再瞬移",实测看着就是
+           先往下张嘴、又猛跳到顶,割裂(家长反馈)。 */
+        const pairs = [d].concat(prevOpen).map(x=>({
+          dd: x.querySelector(".dialog"), ii: x.querySelector(".dialog-in")
+        }));
+        pairs.forEach(p=>{ p.dd.style.transition = "none"; p.ii.style.transition = "none"; });
+        void document.body.offsetHeight;                 // 终态布局
+        const delta = revealDelta(d);
+        // Invert:退回起态(px 值只用于 padding;行高必须用 0fr/1fr,fr 和 px 不互插)
+        pairs[0].dd.style.gridTemplateRows = "0fr";
+        pairs[0].ii.style.padding = openStartPad;
+        prevOpen.forEach((x,i)=>{
+          pairs[i+1].dd.style.gridTemplateRows = "1fr";
+          pairs[i+1].ii.style.padding = closeStartPads[i];
+        });
+        void document.body.offsetHeight;                 // 起态布局落定
+        // Play:放开过渡、清掉内联起态,类定义的终态接管 → 动画跑起来
+        pairs.forEach(p=>{
+          p.dd.style.transition = ""; p.ii.style.transition = "";
+          p.dd.style.gridTemplateRows = ""; p.ii.style.padding = "";
+        });
+        glideScrollBy(delta, ms);
+        afterExpand(dialog, ()=>revealCard(d));          // 终态兜底校正(懒图撑高等)
+      }else{
+        // 收起、或减弱动效(时长 0,一切瞬时):沿用老补位
+        window.scrollBy(0, head.getBoundingClientRect().top - anchor);
+        if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
+      }
       // 第一次真的展开一张卡时,顺带把"长按能查词"演示给大人看一次
       if(!wasOpen) coachPress(d);
       // 学一学口径:展开的这张卡计入"今天听过几张"(见 noteLearnOpen)
