@@ -359,6 +359,40 @@
     .opt.right,.opt.wrong{animation:none;}
   }
 
+  /* ===== 奖励反馈层:飞星 / 彩带 / 进度条 ===== */
+  /* 数字用等宽数位:0→10 位数变化时罐子宽度不跳,弹跳动画才不会跟着抖 */
+  .star-jar #stars{font-variant-numeric:tabular-nums;}
+  .star-jar.bounce{animation:jar-bounce .45s var(--ease-spring);}
+  @keyframes jar-bounce{40%{transform:scale(1.22);}}
+  /* 飞星和彩带都是 position:fixed 挂在 body 上的临时元素,
+     z-index 必须高过 .topbar(20),否则星星飞到罐子跟前会钻到吸顶条底下 */
+  .flystar{
+    position:fixed;z-index:60;pointer-events:none;
+    font-size:26px;line-height:1;will-change:transform,opacity;
+  }
+  .confetti{
+    position:fixed;z-index:59;pointer-events:none;
+    animation:confetti-fly 600ms var(--ease-out) forwards;
+  }
+  /* --dx/--dy 由 JS 逐片写在元素上,keyframes 只有一条、所有粒子共用 */
+  @keyframes confetti-fly{
+    from{ transform:translate(0,0) scale(1); opacity:1; }
+    to  { transform:translate(var(--dx,0px),var(--dy,0px)) scale(.3); opacity:0; }
+  }
+  /* 进度条:"第 N/M 问"那行字对不认字的孩子等于没有,进度得看得见 */
+  .pbar{
+    height:12px;border-radius:99px;background:#E3ECF7;
+    overflow:hidden;margin:0 auto 8px;max-width:260px;
+  }
+  .pbar i{
+    display:block;height:100%;width:0;border-radius:99px;background:var(--green);
+    transition:width var(--dur-slow) var(--ease-out);
+  }
+  @media (prefers-reduced-motion:reduce){
+    .star-jar.bounce{animation:none;}
+    .confetti{display:none;}
+  }
+
   /* 键盘焦点圈:这页所有控件都是自绘样式,浏览器默认 outline 被圆角和阴影盖住,
      用键盘/外接设备走一遍完全看不出焦点在哪。:focus-visible 只对键盘生效,
      不会在触摸点击后留下一圈框(index.html 里已有同款规则) */
@@ -391,9 +425,11 @@
       <div class="star-jar">⭐ <span id="stars">0</span></div>
     </div>
     <div class="tabs">
-      <button class="tab on" id="tabLearn" onclick="showPage('learn')">📖 学一学</button>
-      <button class="tab" id="tabPractice" onclick="showPage('practice')">🎤 问答闯关</button>
-      <button class="tab" id="tabQuiz" onclick="showPage('quiz')">🎯 考一考</button>
+      <!-- 走 tapPage 而不是直接 showPage:showPage 还被 gotoLesson / popstate 调用,
+           那些是被动切页,不该出"点击"音效。音效只挂在真的手指按下的这条路上 -->
+      <button class="tab on" id="tabLearn" onclick="tapPage('learn')">📖 学一学</button>
+      <button class="tab" id="tabPractice" onclick="tapPage('practice')">🎤 问答闯关</button>
+      <button class="tab" id="tabQuiz" onclick="tapPage('quiz')">🎯 考一考</button>
     </div>
   </div>
 </div>
@@ -573,6 +609,240 @@ if(TTS) TTS.getVoices();   // 预热音色表(部分浏览器首次调用是异�
 
 const PRAISES = ["Great job!","Well done!","Awesome!","Excellent!","Perfect!"];
 function randPraise(){ return PRAISES[Math.floor(Math.random()*PRAISES.length)]; }
+
+/* ================================================================
+   UI 音效:Web Audio 现场合成,零音频文件、零依赖
+   ⚠️ 和上面那套语音是**两条完全独立的通道**:不经过 currentAudio / playGen,
+   所以 stopAllSound() 打断不了它,它也永远打断不了语音 —— 语音是教学主体,
+   音效只是"我点到了 / 我答对了"的即时回执,叠在语音上响没关系,盖住就有关系。
+   保证不盖住的手段是一个总闸 master(增益 .2):所有音都串在它下面,
+   同时响几个都超不过 .25。单个音的 peak 是相对总闸的比例,不是绝对音量。
+   ⚠️ 每个音起止都要 ramp。直接 setValueAtTime 拉起/切断,扬声器会"啪"一声爆音,
+   在小音量的平板上比音效本身还响。
+   减弱动效(prefers-reduced-motion)不关音效 —— 那管的是动画,不是声音。
+   ================================================================ */
+var SFX = (function(){
+  var ctx = null, master = null, dead = false;
+  /* 懒创建:AudioContext 一建就占着音频硬件,没人点过按钮就不该建。
+     ⚠️ 必须 typeof 探测 —— Safari 只有 webkitAudioContext,
+     裸写 AudioContext 在没有它的内核上是 ReferenceError,顶层一抛整页白。*/
+  function ac(){
+    if(dead) return null;
+    try{
+      if(!ctx){
+        var C = (typeof AudioContext !== "undefined") ? AudioContext
+              : (typeof webkitAudioContext !== "undefined") ? webkitAudioContext
+              : null;
+        if(!C){ dead = true; return null; }
+        ctx = new C();
+      }
+      // 首次用户手势之前 AudioContext 是 suspended。我们的音效全部由点击触发,
+      // 所以这里 resume 天然满足"用户手势内"的要求,一次就能解锁。
+      if(ctx.state === "suspended" && ctx.resume) ctx.resume();
+      if(!master){
+        master = ctx.createGain();
+        master.gain.value = .2;          // 总闸:音效永远压在语音下面
+        master.connect(ctx.destination);
+      }
+      return ctx;
+    }catch(e){ dead = true; return null; }
+  }
+  /* attack/decay 包络。exponentialRamp 不接受 0,所以起止用 .0001 代替静音 */
+  function env(gain, t0, dur, peak){
+    var p = Math.max(.001, Math.min(peak || .4, 1));
+    gain.gain.setValueAtTime(.0001, t0);
+    gain.gain.exponentialRampToValueAtTime(p, t0 + Math.min(.012, dur * .3));
+    gain.gain.exponentialRampToValueAtTime(.0001, t0 + dur);
+  }
+  /* o = {freq, to(可选,滑到这个频率), type, at(相对现在的起始秒), dur, peak} */
+  function tone(o){
+    var c = ac(); if(!c) return;
+    try{
+      var t = c.currentTime + (o.at || 0);
+      var osc = c.createOscillator(), g = c.createGain();
+      osc.type = o.type || "sine";
+      osc.frequency.setValueAtTime(o.freq, t);
+      if(o.to) osc.frequency.exponentialRampToValueAtTime(o.to, t + o.dur);
+      env(g, t, o.dur, o.peak);
+      osc.connect(g); g.connect(master);
+      osc.start(t);
+      osc.stop(t + o.dur + .02);
+    }catch(e){}
+  }
+  var api = { enabled: true };
+  function on(fn){
+    return function(){
+      if(!api.enabled) return;
+      try{ fn(); }catch(e){}          // 音效坏掉绝不能影响判分/翻页
+    };
+  }
+  api.tap   = on(function(){ tone({freq:880, to:660,  dur:.04, peak:.45}); });
+  api.pop   = on(function(){ tone({freq:620, to:880,  dur:.05, peak:.4});
+                             tone({freq:880, to:1180, dur:.05, peak:.35, at:.045}); });
+  api.flip  = on(function(){ tone({freq:1200, to:340, dur:.08, peak:.3, type:"triangle"}); });
+  api.star  = on(function(){ tone({freq:1318.5, dur:.13, peak:.5});                 // E6
+                             tone({freq:1760,   dur:.14, peak:.5, at:.11}); });      // A6
+  // 答错要"低、软、比得星小一档":音量小、方波但增益压到 .22,像轻轻摇头,不像警报
+  api.wrong = on(function(){ tone({freq:220, to:180, dur:.09, peak:.22, type:"square"});
+                             tone({freq:165, to:140, dur:.10, peak:.18, type:"square", at:.085}); });
+  api.win   = on(function(){ tone({freq:1046.5, dur:.2, peak:.45});                  // C6
+                             tone({freq:1318.5, dur:.2, peak:.45, at:.13});          // E6
+                             tone({freq:1568,   dur:.24, peak:.5, at:.26}); });      // G6
+  return api;
+})();
+
+/* ================================================================
+   奖励反馈层:飞星入罐 + 答对彩带 + 完成庆祝
+   ================================================================ */
+/* 动效总开关。durMs 归 0(theme.css 在减弱动效下把 token 清零)或系统直接
+   报了 reduce,都按"不做动画"走 —— 但音效照播,那是另一回事 */
+function motionOff(){
+  if(durMs("--dur-base") <= 0) return true;
+  try{
+    return !!(window.matchMedia &&
+              window.matchMedia("(prefers-reduced-motion:reduce)").matches);
+  }catch(e){ return false; }
+}
+
+/* 还在半空中的星星:结算页要显示总数,得先把它们催落袋,
+   否则"⭐ × N"少算刚挣的那两颗(飞行 620ms,孩子手快就撞上了) */
+var pendingLands = [];
+function flushStars(){
+  var q = pendingLands; pendingLands = [];
+  for(var i = 0; i < q.length; i++) q[i]();   // land() 自带 landed 哨兵,重复调用无害
+}
+
+/* 从 fromEl 中心飞一颗(n≥2 飞两颗)⭐ 进顶栏星罐,落袋时罐子弹一下,
+   **然后才** addStars(n) —— 数字必须等飞完再加:先加数字再飞,孩子早看见分了,
+   飞的那一下就没有"这颗星是我挣的"的因果感。
+   ⚠️ 不改 addStars 的签名/语义(后续要做持久化,入口只能有一个)。
+   ⚠️ 星罐在 sticky topbar 里永远可见,直接量 rect 就行,不用管滚动。
+   减弱动效 / 量不到位置 / 没有 fromEl:直接 addStars,不飞。*/
+function flyStar(fromEl, n, done){
+  n = n || 1;
+  var jar = document.querySelector(".star-jar");
+  var a = null, b = null;
+  if(fromEl && jar && !motionOff()){
+    try{
+      a = fromEl.getBoundingClientRect();
+      b = jar.getBoundingClientRect();
+    }catch(e){ a = null; }
+  }
+  if(!a || !b){ addStars(n); if(done) done(); return; }
+
+  var landed = false;
+  function land(){
+    if(landed) return;
+    landed = true;
+    jar.classList.remove("bounce");
+    void jar.offsetWidth;                       // 强制重排,否则连着答对两题不会重放
+    jar.classList.add("bounce");
+    setTimeout(function(){ jar.classList.remove("bounce"); }, 520);
+    addStars(n);                                // 数字在罐子弹跳的同一帧 +n
+    if(done) done();
+  }
+  pendingLands.push(land);
+
+  var count = n >= 2 ? 2 : 1;                   // 两颗星飞两颗,但只加一次数字
+  var x0 = a.left + a.width / 2,  y0 = a.top + a.height / 2;
+  var x1 = b.left + b.width / 2,  y1 = b.top + b.height / 2;
+  function launch(i){
+    var s = document.createElement("span");
+    s.className = "flystar";
+    s.textContent = "⭐";
+    s.style.left = (x0 - 13) + "px";
+    s.style.top  = (y0 - 13) + "px";
+    s.style.transform = "translate(0,0) scale(1)";
+    s.style.opacity = "1";
+    document.body.appendChild(s);
+    void s.offsetWidth;                         // 起点样式先落地,否则两次赋值被合并、过渡不跑
+    var gone = false;
+    function bye(){
+      if(gone) return;
+      gone = true;
+      if(s.parentNode) s.parentNode.removeChild(s);
+      if(i === count - 1) land();               // 最后起飞的那颗最后落地
+    }
+    setTimeout(function(){
+      // cubic-bezier 的 y 起手为负 = 先微微下坠再飞出去,走出一道弧线;
+      // 直线飞看着像 UI 元素在滑动,弧线才像"被吸进罐子里"
+      s.style.transition = "transform 620ms cubic-bezier(.35,-0.2,.35,1), " +
+                           "opacity 620ms linear";
+      s.style.transform = "translate(" + (x1 - x0) + "px," + (y1 - y0) + "px) scale(.55)";
+      s.style.opacity = ".25";
+      // transform 和 opacity 各发一次 transitionend,bye 自带哨兵;
+      // 另挂 setTimeout 兜底 —— 元素被别的逻辑摘掉时 transitionend 根本不会来
+      s.addEventListener("transitionend", bye);
+      setTimeout(bye, 1000);
+    }, i * 120);
+  }
+  for(var i = 0; i < count; i++) launch(i);
+}
+
+/* 答对的彩带:在 fromEl 原地炸开 12–14 片,和飞星同时发生 ——
+   粒子留在原地炸、星星飞去罐子,两件事层次分明,不会看成一团 */
+var CONFETTI_VARS = ["--pink","--yellow","--green","--blue","--purple","--orange"];
+function burst(fromEl){
+  if(!fromEl || motionOff()) return;
+  var r;
+  try{ r = fromEl.getBoundingClientRect(); }catch(e){ return; }
+  if(!r.width && !r.height) return;
+  var x0 = r.left + r.width / 2, y0 = r.top + r.height / 2;
+  var n = 12 + Math.floor(Math.random() * 3);
+  function piece(i){
+    var p = document.createElement("span");
+    p.className = "confetti";
+    var size = 6 + Math.floor(Math.random() * 5);          // 6–10px
+    // 按序号铺满一圈再加抖动:纯随机方向会成片挤在一侧,看着像漏气不像炸开
+    var ang  = Math.PI * 2 * (i / n) + (Math.random() - .5) * .5;
+    var dist = 60 + Math.random() * 70;
+    p.style.width  = size + "px";
+    p.style.height = size + "px";
+    p.style.left   = (x0 - size / 2) + "px";
+    p.style.top    = (y0 - size / 2) + "px";
+    p.style.background = "var(" + CONFETTI_VARS[Math.floor(Math.random() * CONFETTI_VARS.length)] + ")";
+    p.style.borderRadius = Math.random() < .5 ? "50%" : "2px";
+    p.style.setProperty("--dx", (Math.cos(ang) * dist).toFixed(1) + "px");
+    p.style.setProperty("--dy", (Math.sin(ang) * dist - 20).toFixed(1) + "px");  // -20 让整团略微上飘
+    document.body.appendChild(p);
+    var gone = false;
+    function bye(){
+      if(gone) return;
+      gone = true;
+      if(p.parentNode) p.parentNode.removeChild(p);
+    }
+    p.addEventListener("animationend", bye);
+    setTimeout(bye, 900);                                   // 兜底:动画被跳过时也要自删
+  }
+  for(var i = 0; i < n; i++) piece(i);
+}
+
+/* 进度条的增长动画。
+   ⚠️ 题面是 innerHTML 整块重建的,新 <i> 一出生就是新宽度,CSS transition
+   压根没有旧值可过渡 —— 直接写死宽度只会"闪"到新位置,看不见涨。
+   所以渲染后补一步:先把宽度按回上一题的值、强制重排、再设新值,过渡才真的跑。
+   (另一条路是把 pbar 挪到 swapIn 容器外面固定一条,但那样进度条就不跟着换题
+   一起滑,和题面脱开了,反而更奇怪)*/
+function growBar(el, from, to){
+  if(!el) return;
+  if(durMs("--dur-slow") <= 0 || from === to) return;   // 减弱动效:留在新宽度上,不折腾
+  el.style.width = from + "%";
+  void el.offsetWidth;
+  el.style.width = to + "%";
+}
+
+/* 结算页的号角 + 彩带 + 人声夸奖。
+   ⚠️ 要等换页滑动落位再炸:swapIn 调 render() 的那一刻面板还偏在 -40px 上,
+   这时量 🏆 的位置,彩带会炸在它左边 40px 的空处。
+   ⚠️ 人声比号角晚 300ms:号角只有半秒,压着人声开头一起响会把
+   "You did it" 的第一个词糊掉。目标次序是「号角+彩带同帧 → 随后人声」*/
+function celebrate(box, say){
+  setTimeout(function(){
+    SFX.win();
+    burst((box && box.querySelector(".done .big")) || box);
+    setTimeout(say, 300);
+  }, durMs("--dur-base"));
+}
 
 /* ================================================================
    点读句子构建:每个单词可点(发音)、可长按(词典)
@@ -993,6 +1263,7 @@ function renderLearn(){
       stopAllSound();
       if(!wasOpen){
         d.classList.add("open");
+        SFX.pop();                 // 只在"展开"这一下响,收起是安静的
       }
       window.scrollBy(0, head.getBoundingClientRect().top - anchor);
       // 展开现在是动画,补位要等它把高度撑完再量 —— 立刻量到的还是 0fr 时的尺寸,
@@ -1164,13 +1435,14 @@ function startPractice(){
     pOrder.push(c); n += k;
     if(n >= ROUND_MAX) break;
   }
-  pc = 0; pq = 0;
+  pc = 0; pq = 0; pBarPct = 0;
   askQuestion();
 }
 function curCard(){ return pOrder[pc]; }
 function curQA(){ return askable(curCard())[pq]; }
 
 let pRevealed = false;   // 当前题是否已展示过答案(防止重复追加气泡)
+let pBarPct = 0;         // 上一题进度条停在哪 —— 换题时要从这个值涨过去,见 growBar
 /* 出题分两层:askQuestion 只负责"带过渡地换过去",真正的渲染在 renderQuestion。
    startPractice 的第一题也走这里 —— 从开始页翻到第一题同样是一次换页 */
 function askQuestion(){ swapIn(pbox, renderQuestion, 1); }
@@ -1182,7 +1454,11 @@ function renderQuestion(){
   const pic = qa.image || c.image;
   // 词条出现在答案里就不显示,否则等于把答案写在题面上
   const leaks = qa.a.some(s => norm(s).includes(norm(c.word)));
+  // 进度条走**已完成数**而不是当前题号:条子该在"翻到下一题"那一下往前长,
+  // 用 doneN+1 的话第一题一进来就已经涨了一格,等于把没答的算成答了
+  const barPct = total ? doneN / total * 100 : 0;
   pbox.innerHTML = `
+    <div class="pbar"><i id="pBar" style="width:${barPct}%"></i></div>
     <div class="progress">第 ${doneN+1} / ${total} 问</div>
     <div class="p-head">
       ${pic ? `<img class="pic mid" src="${imgSrc(pic)}" alt="">`
@@ -1198,6 +1474,8 @@ function renderQuestion(){
       <button class="btn" onclick="readChips()">🔊 听选项</button>
       <button class="btn" onclick="reveal(false)">👀 看答案</button>
     </div>`;
+  growBar(document.getElementById("pBar"), pBarPct, barPct);
+  pBarPct = barPct;
   const chat = document.getElementById("pChat");
   chat.appendChild(makeBubble("q", qa));
   // key 是关键词数组(如 ["bus","stop"]),拼起来才是完整答案
@@ -1228,7 +1506,10 @@ function renderQuestion(){
         b.classList.add("right");
         chipsBox.querySelectorAll(".ans-chip").forEach(x=>x.disabled=true);
         document.getElementById("pResult").textContent = "🎉";
-        addStars(2);
+        SFX.star();
+        if(navigator.vibrate) navigator.vibrate(15);   // 安卓有震感,iOS 直接忽略
+        burst(b);                 // 彩带在选项原地炸开
+        flyStar(b, 2);            // 星星飞进罐子,数字落袋才 +2(不再直接 addStars)
         // 答对就停在这儿:绿色选项留在屏幕上,出口(下一题 / 看答案)自己选。
         // 以前会在 2.6 秒后自动翻到答案页 —— 孩子正要点下一题,画面自己跳走了
         showNext(true);
@@ -1236,6 +1517,7 @@ function renderQuestion(){
       }else{
         b.classList.add("wrong");
         document.getElementById("pResult").textContent = "🤔";
+        SFX.wrong();
         praise("Try again!");
         setTimeout(()=>b.classList.remove("wrong"), 600);
       }
@@ -1274,16 +1556,24 @@ function reveal(gotStar){
   showNext(gotStar);
   playSeq(qa.a.map((s,i)=>({text:s, role:"a", audio:(qa.a_audio||[])[i]})));
 }
-function selfStar(btn){ addStars(1); btn.disabled = true; btn.textContent = "⭐ +1"; }
+function selfStar(btn){
+  SFX.star();
+  flyStar(btn, 1);
+  btn.disabled = true; btn.textContent = "⭐ +1";
+}
 
 function nextQA(){
   stopAllSound();
   pq++;
   if(pq >= askable(curCard()).length){ pq = 0; pc++; }
   if(pc >= pOrder.length){ return finishPractice(); }
+  SFX.flip();                    // 翻页音只在真的还有下一题时响,收尾走 win
   askQuestion();
 }
-function finishPractice(){ swapIn(pbox, renderPracticeDone, 1); }
+function finishPractice(){
+  flushStars();                  // 半空中的星星先落袋,否则结算页的「⭐ × N」少算刚挣的
+  swapIn(pbox, renderPracticeDone, 1);
+}
 function renderPracticeDone(){
   pbox.innerHTML = `
     <div class="done">
@@ -1291,8 +1581,10 @@ function renderPracticeDone(){
       问答闯关完成！<br>现在有 ⭐ × ${stars}
       <br><button class="big-btn" onclick="startPractice()">再来一轮</button>
     </div>`;
-  playOne("You did it! Amazing!", "q",
-          lesson.praise_audio ? lesson.praise_audio["You did it! Amazing!"] : null);
+  celebrate(pbox, function(){
+    playOne("You did it! Amazing!", "q",
+            lesson.praise_audio ? lesson.praise_audio["You did it! Amazing!"] : null);
+  });
 }
 
 /* ================================================================
@@ -1308,11 +1600,13 @@ function startQuiz(){
   quizOrder = shuffle(quizItems())
     .filter(it => !seen.has(it.pic) && seen.add(it.pic))
     .slice(0, ROUND_MAX);
-  qi = 0; nextQuestion();
+  qi = 0; qBarPct = 0; nextQuestion();
 }
+let qBarPct = 0;   // 同 pBarPct:上一题进度条的宽度,换题时从它涨过去
 function nextQuestion(){
   // 收尾判断放在过渡外面:要么翻到下一题,要么翻到结算页,两条路各自带自己的过渡
   if(qi >= quizOrder.length){ return finishQuiz(); }
+  SFX.flip();
   swapIn(qbox, renderQuizQuestion, 1);
 }
 function renderQuizQuestion(){
@@ -1323,7 +1617,10 @@ function renderQuizQuestion(){
   const nOpt = Math.min(3, pool.length + 1);
   const opts = shuffle([it, ...shuffle(pool).slice(0, nOpt-1)]);
   const sent = it.kind === "sent";
+  // 已答对的题数就是 qi(答对才 qi++),正好是"已完成"的口径
+  const barPct = quizOrder.length ? qi / quizOrder.length * 100 : 0;
   qbox.innerHTML = `
+    <div class="pbar"><i id="qBar" style="width:${barPct}%"></i></div>
     <div class="progress">第 ${qi+1} / ${quizOrder.length} 题</div>
     <div class="q-prompt">${sent ? "听一听，说的是哪一张？" : "哪一个是……"}</div>
     ${sent ? `<div class="q-sent">${it.qa.a[it.ai]}</div>`
@@ -1335,6 +1632,8 @@ function renderQuizQuestion(){
         : `<button class="opt" data-p="${o.pic}">${o.eq ? eqHTML(o.eq) : (o.emoji||"⬜")}</button>`
       ).join("")}
     </div>`;
+  growBar(document.getElementById("qBar"), qBarPct, barPct);
+  qBarPct = barPct;
   const ask = sent
     ? ()=>playOne(it.qa.a[it.ai], "a", it.qa.a_audio[it.ai])
     : ()=>playOne("Which one is " + c.word + "?", "q", c.quiz_audio);
@@ -1354,18 +1653,27 @@ function renderQuizQuestion(){
       if(b.dataset.p === it.pic){
         answered = true;
         optBtns.forEach(x=>{ x.disabled = true; });
-        b.classList.add("right"); addStars(1); qi++;
+        b.classList.add("right");
+        SFX.star();
+        if(navigator.vibrate) navigator.vibrate(15);   // 安卓有震感,iOS 直接忽略
+        burst(b);                 // 彩带在选中那张图上原地炸开
+        flyStar(b, 1);            // 星星飞进罐子,落袋才 +1(不再直接 addStars)
+        qi++;
         praise(randPraise());
         setTimeout(nextQuestion, 1800);
       }else{
         b.classList.add("wrong");
+        SFX.wrong();
         praise("Try again!");
         setTimeout(()=>b.classList.remove("wrong"), 600);
       }
     };
   });
 }
-function finishQuiz(){ swapIn(qbox, renderQuizDone, 1); }
+function finishQuiz(){
+  flushStars();                  // 同 finishPractice:半空中的星星先落袋再结算
+  swapIn(qbox, renderQuizDone, 1);
+}
 function renderQuizDone(){
   qbox.innerHTML = `
     <div class="done">
@@ -1373,7 +1681,7 @@ function renderQuizDone(){
       今日打卡完成！<br>现在有 ⭐ × ${stars}
       <br><button class="big-btn" onclick="startQuiz()">再来一轮</button>
     </div>`;
-  praise("You did it! See you tomorrow!");
+  celebrate(qbox, function(){ praise("You did it! See you tomorrow!"); });
 }
 
 /* ================================================================
@@ -1384,6 +1692,10 @@ function renderQuizDone(){
    首次载入不放动画 —— 「学一学」在 HTML 里就带着 .on,init 根本不调 showPage,
    所以 lastPageAt 直接从 0(学一学)起步,第一次点页签就有方向。
    noAnim 给换课/前进后退用:它们本身已经有整页滑动,再叠一层会打架 */
+/* 页签按钮走这里,不直接绑 showPage。showPage 还被 gotoLesson / popstate /
+   init 调用 —— 那些是被动切页,响一声"点击"就成了页面自己在响。
+   音效只挂在真的按下页签的这条路上。*/
+function tapPage(p){ SFX.tap(); showPage(p); }
 const PAGE_AT = {learn:0, practice:1, quiz:2};
 let lastPageAt = 0, pageAnimTimer = 0;
 function showPage(p, noAnim){
