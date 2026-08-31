@@ -394,13 +394,18 @@
   }
   .review-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
-  /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次 */
+  /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次。
+     次按钮不用素白 —— 一实心两白的三连排头重脚轻,给两个次入口各一层
+     淡淡的身份色:混合复习淡蓝(换换花样)、错题本淡橙(要加把劲)。
+     主次仍然清楚:实心饱和绿 vs 两块粉彩;文字取深一档同色相,15px 粗体过 AA */
   .review-btn.ghost{
-    background:#fff;color:var(--ink);border:2px solid var(--line,#DCE5F2);
-    box-shadow:none;
+    background:#E3EEFF;color:#2A66C4;border:none;box-shadow:none;
+  }
+  .review-btn.book{
+    background:#FFF0DD;color:#9E5800;border:none;box-shadow:none;
   }
   /* 次按钮平时就没有投影,按下去也不该凭空长出来一层 —— 只保留下沉 2px */
-  .review-btn.ghost:active{transform:translateY(2px);box-shadow:none;}
+  .review-btn.ghost:active,.review-btn.book:active{transform:translateY(2px);box-shadow:none;}
 
   /* 封面右上角的星数角标:白底小胶囊,压在画面上但不遮巨型字形 */
   .cover-stars{
@@ -463,7 +468,7 @@
       <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
            有在练的词时由脚本往 label 里带数(只动文字,别动图标);
            始终是白底次按钮,主行动留给复习/继续学 -->
-      <a class="review-btn ghost" id="wrongBtn" href="app.html?lesson=review&pick=wrong"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> <span id="wrongBtnLabel">错题本</span></a>
+      <a class="review-btn book" id="wrongBtn" href="app.html?lesson=review&pick=wrong"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> <span id="wrongBtnLabel">错题本</span></a>
     </div>
   </div>
 </header>
