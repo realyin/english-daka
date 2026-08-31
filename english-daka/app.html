@@ -234,6 +234,16 @@
      但元素在),相邻选择器够不着角标,它的 auto 边距就还活着 ——
      和旗子的 auto 平分空隙,每张卡的旗子停在各自文字宽度的中途,整列是乱的 */
   .lhead .bookmark ~ .chev{margin-left:2px;}
+  /* 收起状态的旗子太危险:38px 的按钮贴着展开角标排成一列,孩子点卡片
+     右缘想展开,常常误插一面旗(实测点名)。收起时:
+     - 没插旗的用 visibility 隐形 —— 占位不变(display:none 会让 auto 边距
+       换主人,整行布局跳),点到原位置落在卡头上 = 正常展开,误触消失;
+     - 插了旗的留着当标记,但 pointer-events:none 只展示不接点击 ——
+       取消要先点开卡片再操作,"取消标记"本来就该是深思熟虑的动作。
+     展开后旗子恢复可点,并和角标多拉开一点距离 */
+  .lcard:not(.open) .lhead .bookmark{pointer-events:none;}
+  .lcard:not(.open) .lhead .bookmark:not(.on){visibility:hidden;}
+  .lcard.open .lhead .bookmark ~ .chev{margin-left:8px;}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
 
