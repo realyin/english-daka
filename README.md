@@ -39,6 +39,12 @@ python3 -m http.server 8123 -d english-daka
 每轮随机抽题，上限 12 题。整课 25 问对 K2 太长，而打卡是天天来的——
 几天下来自然覆盖全课。
 
+目录页顶部还有三个复习入口：**混合复习**（全部课程一个池子，Leitner 间隔
+调度抽一轮）、**按课堂复习**（挑某一天，把那天线下课学的卡片整套再过一遍——
+一次课的内容常散在字母/常见词/主题好几节课里，这个入口按上课日期把它们
+聚回一批；日期戳由 gen_audio.py 给新卡自动盖）、**错题本**（错过且还没
+练熟的词专练）。三个入口进去都和普通课一样先落在「学一学」。
+
 ## 目录结构
 
 ```
@@ -67,7 +73,8 @@ english-daka/
 
 ```bash
 python3 new_lesson.py 21 "标题"          # 新课脚手架
-python3 gen_audio.py lessons/x.json      # 生成全部音频并回写 JSON
+python3 gen_audio.py lessons/x.json      # 生成全部音频并回写 JSON;新卡顺带盖
+                                         # 上课日期(补录昨天的课加 --date)
 python3 gen_phonics.py                   # 重建音素公共库
 python3 add_image.py 原图.png 语义名      # 单张配图归一化（webp ≤150KB）
 python3 ingest_images.py <目录>          # 批量入库
