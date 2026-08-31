@@ -781,6 +781,11 @@ window.onerror = function (msg, src, line) {
   return false;
 };
 </script>
+<!-- 两页共用的存档读写层(daka.v1 的 store + daka.rev.v1 的账本读写)。
+     必须排在主脚本之前:下面第一行 init 就要 store.load()。
+     ⚠️ 不加 defer/async —— 那会让它跑到主脚本后面去,主脚本顶层引用 store 直接报错。
+     ⚠️ 它在 sw.js 的 SHELL 里,离线也拿得到;加文件记得同步那份清单。 -->
+<script src="shared.js"></script>
 <script>var PREVIEW_IMG = {};   /* 预览图见 preview-img.js,无 ?lesson= 时由 init 动态加载回填 */</script>
 <script>
 /* ================================================================
@@ -861,49 +866,11 @@ let DICT = {
 
 let lesson = null;
 
-/* ================================================================
-   进度存档 —— localStorage 单键 "daka.v1"
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
-     dayStars:{"YYYY-MM-DD":n}, dayCards:{"YYYY-MM-DD":n}, last:{lesson,at} }
-   ⚠️ dayStars 是后加的字段(给目录页的打卡日历分深浅用):**旧存档里没有它**,
-   load() 一律补成空对象 —— 少写这一条,老用户一进来就是 undefined 上取属性,
-   整页白屏。同理,读它的地方永远要当"可能没有这一天"来写。
-   ⚠️ 隐私模式 / 关了站点数据的浏览器,连 localStorage 这个属性都可能直接抛,
-   所以每一次读写都各自包 try/catch,失败就静默退回"不记账"的老行为 —— 打卡
-   记不住是遗憾,页面白屏是事故。
-   ⚠️ 日期一律本地时区手拼,不要 toISOString():那是 UTC,东八区晚上 8 点以后
-   会算成"明天",孩子睡前打的卡记到第二天,连续天数直接断。
-   ================================================================ */
-var STORE_KEY = "daka.v1";
-function ymd(d){
-  var m = d.getMonth() + 1, day = d.getDate();
-  return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
-}
-function today(){ return ymd(new Date()); }
-var store = {
-  load: function(){
-    var o = null;
-    try{
-      var s = localStorage.getItem(STORE_KEY);
-      if(s) o = JSON.parse(s);
-    }catch(e){ o = null; }
-    if(!o || typeof o !== "object") o = {};
-    if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
-    if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
-    if(!(o.days instanceof Array)) o.days = [];
-    // 数组也是 object,所以要单独挡一下:老存档里万一存成了数组,
-    // 后面 dayStars[key] += n 会往数组上挂字符串下标,存出去就是个怪东西
-    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
-    // dayCards(当天听过几张卡,给日历分深浅)同 dayStars:后加字段,旧存档没有
-    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
-    if(!o.last || typeof o.last !== "object") o.last = null;
-    return o;
-  },
-  save: function(o){
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify(o)); return true; }
-    catch(e){ return false; }
-  }
-};
+/* 进度存档(STORE_KEY / ymd / today / store)和复习账本(REV_KEY / REV_GAP /
+   revStore / revRec)都在 shared.js 里 —— 那两段和目录页本来就是同一份代码,
+   各存一份就得"改一处同步改两处"(两边的注释已经飘成两个版本了)。
+   本文件只留自己独有的消费逻辑(记账时机、调度、手动进出错题本)。 */
+
 /* 一次性示能演示的记账 —— 单独一个键 "daka.coach"({card:1,press:1};
    目录页那条 shelf 演示已随横滚货架改造去掉,旧存档里残留的 shelf:1 无害),
    和进度分开:清演示不该把星星一起清掉,反过来也一样。
@@ -948,35 +915,9 @@ function bumpCoach(k){
   }catch(e){}
 }
 
-/* 复习账本 —— 单独一个键 "daka.rev.v1",和进度、演示标记互不纠缠(清谁都不伤谁)。
-   每张进过混合复习的卡记一条:{ b:盒号 0-5, t:最后见到的日期, w:累计错次 }。
-   盒号是 Leitner 间隔重复的全部状态:REV_GAP[b] 天后到期,答对升盒、答错降盒。
-   读不到(隐私模式)就当人人都是新卡 —— 调度退化成随机抽新卡,和旧行为一个档次。 */
-var REV_KEY = "daka.rev.v1";
-var REV_GAP = [0, 1, 2, 4, 7, 14];             // 盒号 → 间隔天数,14 天封顶
-var revStore = {
-  load: function(){
-    try{
-      var s = localStorage.getItem(REV_KEY);
-      var o = s ? JSON.parse(s) : null;
-      return (o && typeof o === "object") ? o : {};
-    }catch(e){ return {}; }
-  },
-  save: function(o){
-    try{ localStorage.setItem(REV_KEY, JSON.stringify(o)); }catch(e){}
-  }
-};
+/* 复习账本(REV_KEY / REV_GAP / revStore / revRec)见 shared.js。
+   下面是这一页独有的部分:账本的键怎么拼、什么时候记一笔。 */
 function revKey(card){ return card._src + ":" + card.word; }
-function revRec(o, k){                         // 取/修某卡的账,字段坏了就地扶正
-  var r = o[k];
-  if(!r || typeof r !== "object") r = {b:0, t:today(), w:0};
-  if(!(typeof r.b === "number" && isFinite(r.b))) r.b = 0;
-  r.b = Math.min(Math.max(Math.round(r.b), 0), 5);
-  if(!(typeof r.w === "number" && isFinite(r.w))) r.w = 0;
-  if(!(typeof r.t === "string" && /^\d{4}-\d{2}-\d{2}$/.test(r.t))) r.t = today();
-  o[k] = r;
-  return r;
-}
 /* 俩 ymd 差几天(b - a)。手拆再拼 Date:不走字符串解析,老 Safari 对
    ISO 串的时区解释踩过坑,本地日期构造没有歧义 */
 function ymdDate(s){ var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
