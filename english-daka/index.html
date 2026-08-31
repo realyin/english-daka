@@ -433,7 +433,9 @@
      以前主按钮 52px/17px、次按钮 ~44px/15px,2×2 摆一起大小参差(实测点名) */
   .acts > a,.acts > button{
     flex:1 1 40%;min-width:0;white-space:nowrap;
-    min-height:52px;padding:12px 20px;font-size:16px;font-weight:900;line-height:1.25;
+    /* 44px:统一到 52 后整块头重(实测点名"太大"),44 是触屏热区的下限,
+       视觉轻一档、热区不缩水 */
+    min-height:44px;padding:9px 16px;font-size:15px;font-weight:900;line-height:1.25;
   }
   /* 手机竖屏:半宽格(~150px)装不下长文案,退回一行一个 */
   @media (max-width: 560px){
