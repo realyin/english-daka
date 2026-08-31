@@ -327,13 +327,13 @@
      换色相(比如浅的偏黄、深的偏蓝)会被读成"不同种类的一天",而它们只是多少之分。
      s0 是"打了卡但没有星数记录"的老数据:比 s1 还浅一档,和空格子拉开,
      但也不假装知道那天学了多少。阈值见 JS 的 STAR_TIERS */
-  .cal-cell.s0{background:#CDEBD6;}
-  .cal-cell.s1{background:#A8DFBB;}
-  .cal-cell.s2{background:#74CE93;}
+  /* 相邻档明度差拉到肉眼一格可辨(原来 s2/s3/s4 挤在一起,看不出深浅 ——
+     实测点名);最深档压到墨绿,和最浅档隔出整个亮度带 */
+  .cal-cell.s0{background:#DFF2E5;}
+  .cal-cell.s1{background:#C4EAD1;}
+  .cal-cell.s2{background:#8BD6A4;}
   .cal-cell.s3{background:var(--green,#4CC26E);}
-  .cal-cell.s4{background:#2E9C51;}
-  /* outline 而不是 border:border 会把 10px 的格子挤小,一整列就对不齐了 */
-  .cal-cell.now{outline:2px solid var(--blue,#3E8BFF);}
+  .cal-cell.s4{background:#1F7A40;}
   .cal-legend{
     display:flex;align-items:center;gap:3px;
     margin-top:var(--sp-2,12px);
@@ -898,8 +898,9 @@ function renderCal(){
     for(let r = 0; r < 7; r++){
       const key = ymd(cur);
       if(key > todayKey) break;                // 未来不画
-      col += `<span class="cal-cell${calTier(!!set[key], eff(key))}` +
-             `${key === todayKey ? " now" : ""}"></span>`;
+      // 今天不再加蓝圈:热力图里一圈描边读作"被选中",而这图没有选中这回事;
+      // 今天永远是最后一格,位置本身就说明了它是谁(实测点名)
+      col += `<span class="cal-cell${calTier(!!set[key], eff(key))}"></span>`;
       cur.setDate(cur.getDate() + 1);          // setDate 自带跨月跨年
     }
     grid += `<span class="cal-col">${col}</span>`;
