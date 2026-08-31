@@ -846,7 +846,7 @@ let lesson = null;
 /* ================================================================
    进度存档 —— localStorage 单键 "daka.v1"
    { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
-     dayStars:{"YYYY-MM-DD":n}, last:{lesson,at} }
+     dayStars:{"YYYY-MM-DD":n}, dayCards:{"YYYY-MM-DD":n}, last:{lesson,at} }
    ⚠️ dayStars 是后加的字段(给目录页的打卡日历分深浅用):**旧存档里没有它**,
    load() 一律补成空对象 —— 少写这一条,老用户一进来就是 undefined 上取属性,
    整页白屏。同理,读它的地方永远要当"可能没有这一天"来写。
@@ -876,6 +876,8 @@ var store = {
     // 数组也是 object,所以要单独挡一下:老存档里万一存成了数组,
     // 后面 dayStars[key] += n 会往数组上挂字符串下标,存出去就是个怪东西
     if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
+    // dayCards(当天听过几张卡,给日历分深浅)同 dayStars:后加字段,旧存档没有
+    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -1000,12 +1002,14 @@ function markToday(o){                         // 今天并进打卡日,去重�
       o.days = o.days.slice(o.days.length - KEEP_DAYS);
       // dayStars 必须跟着 days 一起裁:它是按天累加的,不裁就会无限长大,
       // 而且裁剩的日子在日历上根本画不出来,留着也没人看
-      var keep = {}, i, k;
+      var keepS = {}, keepC = {}, i, k;
       for(i = 0; i < o.days.length; i++){
         k = o.days[i];
-        if(typeof o.dayStars[k] === "number") keep[k] = o.dayStars[k];
+        if(typeof o.dayStars[k] === "number") keepS[k] = o.dayStars[k];
+        if(typeof o.dayCards[k] === "number") keepC[k] = o.dayCards[k];
       }
-      o.dayStars = keep;
+      o.dayStars = keepS;
+      o.dayCards = keepC;   // 和 dayStars 一样按天累加,不裁就无限长大
     }
   }
 }
@@ -1055,12 +1059,15 @@ function addStars(n){
 
 /* 学一学的打卡口径:当天展开听过 LEARN_MARK_N 张**不同的**卡就算打卡。
    K2 的孩子"听"本身就是学习,原来只有答题得星才留记录,认真听半小时的
-   那天在日历上是空的(家长定的规则:3 张卡)。只记打卡日、不给星 ——
-   日历上这种天正好落在"打了卡但没星数"的最浅绿档,深色留给真答了题的天。
-   o.learnMark = {d:今天, cards:[已数过的卡], done:够了没}:按天自动重置,
-   done 之后既不再记也不再写存档;卡的去重键是 课程id:词,跨课不串。
-   ⚠️ 弹窗里写给家长看的规则文案(index.html 的 .cal-note)提到"3 张卡",
-   改这个数字要两处一起改 */
+   那天在日历上是空的(家长定的规则:3 张卡)。
+   听卡不进真实的星星账(星罐/总星星只算做题),但**参与日历的深浅**:
+   o.dayCards 记"当天听过几张不同的卡",目录页按 每 3 张折 1 星 和
+   dayStars 加在一起分档(家长定的规则:听得多颜色也要深)。
+   o.learnMark = {d:今天, cards:[今天听过的卡], done:打卡记了没}:
+   按天自动重置;cards 全天保留用来去重和计数,同一张卡翻来覆去听只算一次;
+   去重键是 课程id:词,跨课不串。
+   ⚠️ 弹窗里写给家长看的规则文案(index.html 的 .cal-note)和它的折星算法
+   (calTier 调用处的 /3)都写着"3",改这个数字要三处一起改 */
 var LEARN_MARK_N = 3;
 function noteLearnOpen(word){
   if(!CUR_ID) return;                          // 预览课不写任何存档,口径同上
@@ -1068,10 +1075,11 @@ function noteLearnOpen(word){
   var t = today();
   if(!o.learnMark || o.learnMark.d !== t) o.learnMark = {d: t, cards: [], done: false};
   var lm = o.learnMark, key = CUR_ID + ":" + word;
-  if(lm.done || lm.cards.indexOf(key) >= 0) return;
+  if(lm.cards.indexOf(key) >= 0) return;       // 今天已经数过这张
   lm.cards.push(key);
-  if(lm.cards.length >= LEARN_MARK_N){
-    lm.done = true; lm.cards = [];             // 攒够了,清单就没用了
+  o.dayCards[t] = lm.cards.length;             // 给日历分深浅用的"今天听了几张"
+  if(!lm.done && lm.cards.length >= LEARN_MARK_N){
+    lm.done = true;
     markToday(o);
   }
   store.save(o);

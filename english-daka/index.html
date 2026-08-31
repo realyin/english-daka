@@ -490,7 +490,8 @@
          看起来只是随机深浅。⚠️ "3 张卡片"的数字要和 app.html 的
          LEARN_MARK_N 保持一致,改一边记得改另一边 -->
     <p class="cal-note">怎样算打卡：做题得到星星，或者当天在「学一学」里听完
-      3 张卡片。颜色越深，当天得的星星越多；最浅的绿是"听过了、还没做题"。</p>
+      3 张卡片。颜色越深 = 那天学得越多：做题的星星，加上听卡片折算的星星
+      （每听 3 张算 1 颗），一起决定深浅。</p>
     <div class="cal-stats" id="calStats"></div>
   </div>
 </div>
@@ -562,6 +563,7 @@ var store = {
     if(!(o.days instanceof Array)) o.days = [];
     // 数组也是 object,所以要单独挡一下(和 app.html 那份保持逐字一致)
     if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
+    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -698,6 +700,12 @@ function renderCal(){
   const set = {};
   SAVE.days.forEach(d => { set[d] = 1; });
   const ds = SAVE.dayStars || {};              // 旧存档没有这个字段
+  /* 深浅的口径(家长定):做题的星星 + 学一学听卡折的星(每 3 张折 1 颗)。
+     只影响颜色,不进真实星星账(总星星统计块仍然只数做题挣的)。
+     ⚠️ 这个 3 和 app.html 的 LEARN_MARK_N、下面 .cal-note 的文案是同一件事 */
+  const dc = SAVE.dayCards || {};
+  const eff = k => (typeof ds[k] === "number" ? ds[k] : 0) +
+                   Math.floor((typeof dc[k] === "number" ? dc[k] : 0) / 3);
 
   const now = new Date();
   const todayKey = ymd(now);
@@ -748,7 +756,7 @@ function renderCal(){
     for(let r = 0; r < 7; r++){
       const key = ymd(cur);
       if(key > todayKey) break;                // 未来不画
-      col += `<span class="cal-cell${calTier(!!set[key], ds[key])}` +
+      col += `<span class="cal-cell${calTier(!!set[key], eff(key))}` +
              `${key === todayKey ? " now" : ""}"></span>`;
       cur.setDate(cur.getDate() + 1);          // setDate 自带跨月跨年
     }
