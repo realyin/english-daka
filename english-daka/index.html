@@ -319,6 +319,11 @@
   }
   .cal-legend span:first-child{margin-right:2px;}
   .cal-legend span:last-child{margin-left:2px;}
+  /* 规则说明:小字灰字,别抢热力图的戏 */
+  .cal-note{
+    margin-top:6px;font-size:12px;line-height:1.7;
+    color:var(--muted,#5E6E8C);
+  }
   /* 统计块:窄屏两列、宽屏四列,不写断点 —— auto-fit + minmax 让浏览器自己数
      一行放得下几个(手机上的可用宽度约 294px,放得下两个 120;
      弹窗最宽时约 644px,四个正好铺满) */
@@ -481,6 +486,11 @@
       <span class="cal-cell s3"></span><span class="cal-cell s4"></span>
       <span>多</span>
     </div>
+    <!-- 打卡规则写明在日历里(家长要求):不解释的话"最浅的绿"和"深绿"
+         看起来只是随机深浅。⚠️ "3 张卡片"的数字要和 app.html 的
+         LEARN_MARK_N 保持一致,改一边记得改另一边 -->
+    <p class="cal-note">怎样算打卡：做题得到星星，或者当天在「学一学」里听完
+      3 张卡片。颜色越深，当天得的星星越多；最浅的绿是"听过了、还没做题"。</p>
     <div class="cal-stats" id="calStats"></div>
   </div>
 </div>
