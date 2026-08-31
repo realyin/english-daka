@@ -351,7 +351,20 @@
     flex:1 1 100%;min-width:0;
     display:flex;flex-wrap:wrap;gap:var(--sp-1,8px);
   }
-  .acts > a{flex:1 1 240px;min-width:0;}
+  /* 三个入口(继续学/混合复习/错题本)同排:都是"开始学"的同层级动作,
+     并列省一行,货架早一行进视野;主次靠颜色分(绿主按钮 vs 白底次按钮)。
+     均分 + 文字不换行;真挤不下(手机竖屏)退回折行 —— 硬排只会把字截烂 */
+  .acts > a{flex:1 1 0;min-width:0;white-space:nowrap;}
+  /* 继续学的课名长度不可控:label 装进 span 才有省略号
+     (flex 容器里的裸文本节点没法 text-overflow) */
+  .acts .go-btn span{overflow:hidden;text-overflow:ellipsis;}
+  /* 有继续学时 renderContinue 给 .acts 挂 .trio:三按钮挤一排,
+     混合复习的副标题让位;宽屏只有两按钮时副标题照旧 */
+  .acts.trio .review-btn .sub{display:none;}
+  @media (max-width:560px){
+    .acts > a{flex:1 1 240px;}
+    .acts.trio .review-btn .sub{display:inline;}  /* 折行后各占整行,副标题回来 */
+  }
   /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
   .go-btn{
     display:inline-flex;align-items:center;justify-content:center;
@@ -446,7 +459,7 @@
          按钮的默认样式/内联布局要一条条覆盖,而这里连键盘行为都是自己写的 -->
     <div class="checkin" id="checkin" role="button" tabindex="0" aria-label="查看打卡日历"></div>
     <div class="acts" id="acts">
-      <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
+      <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习<span class="sub"> · 各课随机抽题</span></a>
       <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
            有在练的词时由脚本往 label 里带数(只动文字,别动图标);
            始终是白底次按钮,主行动留给复习/继续学 -->
@@ -869,8 +882,12 @@ function renderContinue(lessons){
   // 图标是我们自己写的常量、课程标题走 textContent 单独塞进去 —— 不拼 innerHTML,
   // 免得课程名里的字符被当成标签解析
   a.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-play"/></svg> ';
-  a.appendChild(document.createTextNode("继续学 · " + hit.title));
+  // 标题装进 span:同排时课名太长要省略号,裸文本节点做不到(见 .go-btn span)
+  const label = document.createElement("span");
+  label.textContent = "继续学 · " + hit.title;
+  a.appendChild(label);
   acts.insertBefore(a, acts.firstChild);
+  acts.classList.add("trio");   // 三按钮同排的开关:混合复习的副标题让位
   const rb = document.getElementById("reviewBtn");
   if(rb) rb.classList.add("ghost");
 }

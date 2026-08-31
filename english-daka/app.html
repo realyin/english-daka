@@ -2645,6 +2645,12 @@ function startQuiz(){
   qi = 0; qBarPct = 0; nextQuestion();
 }
 let qBarPct = 0;   // 同 pBarPct:上一题进度条的宽度,换题时从它涨过去
+/* 考一考也给复习账本记账(P3 并账):同一张卡从两种题型积累证据 ——
+   闯关考"听问题说答案",这里考"听整句认画面",两个角度都对才算真掌握。
+   规则和闯关一字不差:每题只记第一件事(qScored 把关),首点即对记对、
+   点错记错;revMark 自带的门都还在 —— 只在混合复习/错题本里记
+   (普通课的卡没有 _src),一天一笔,回炉卡不记。 */
+let qScored = false;
 function nextQuestion(){
   if(!lockAdvance()) return;     // 同 nextQA:重复调用只算一次
   // 收尾判断放在过渡外面:要么翻到下一题,要么翻到结算页,两条路各自带自己的过渡
@@ -2654,6 +2660,7 @@ function nextQuestion(){
 }
 function renderQuizQuestion(){
   qActive = true;
+  qScored = false;
   const it = quizOrder[qi], c = it.c;
   // 干扰项不能和正解同词:-an 课里 man/fan/tan 各有两张卡两张图(词族卡一张、
   // 生活场景卡一张),另一张混进选项就成了"两个都对",孩子点中它反而算错
@@ -2696,6 +2703,7 @@ function renderQuizQuestion(){
       if(answered) return;
       if(b.dataset.p === it.pic){
         answered = true;
+        if(!qScored){ qScored = true; revMark(c, true); }
         optBtns.forEach(x=>{ x.disabled = true; });
         b.classList.add("right");
         SFX.star();
@@ -2712,6 +2720,7 @@ function renderQuizQuestion(){
           nextQuestion();
         }, 1800);
       }else{
+        if(!qScored){ qScored = true; revMark(c, false); }
         b.classList.add("wrong");
         SFX.wrong();
         praise("Try again!");
