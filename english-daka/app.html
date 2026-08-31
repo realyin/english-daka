@@ -134,7 +134,10 @@
   .tab.on{background:var(--yellow,#FFC53D);}
   .tab:active{opacity:.5;}
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
-  .page{display:none;padding:0 14px;max-width:520px;margin:0 auto;touch-action:pan-y;}
+  /* 上内边距是页面自己的:以前这口气靠学一学的说明行(.hint)撑着,
+     而它看两次就从 DOM 摘掉(见 init 里的 learnHint 计数),一摘第一张卡
+     就顶死吸顶栏(实测点名);闯关/考一考的面板同样吃这 12px */
+  .page{display:none;padding:12px 14px 0;max-width:520px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
   /* 页签切换的方向感:往右边的页签走就从右边滑进来,往左走就从左边。
      三个页签是并排的一条,硬切会让人分不清刚才点的是哪一个 */
