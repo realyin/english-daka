@@ -418,11 +418,15 @@
     flex:1 1 100%;min-width:0;
     display:flex;flex-wrap:wrap;gap:var(--sp-1,8px);
   }
-  /* 三个入口(继续学/混合复习/错题本)同排:都是"开始学"的同层级动作,
-     并列省一行,货架早一行进视野;主次靠颜色分(绿主按钮 vs 白底次按钮)。
-     均分 + 文字不换行;真挤不下(手机竖屏)退回折行 —— 硬排只会把字截烂 */
+  /* 几个入口(继续学/混合复习/按课堂复习/错题本)同排:都是"开始学"的
+     同层级动作,并列省行,货架早进视野;主次靠颜色分。
+     ⚠️ flex-basis 必须是 auto 不能是 0:basis 0 的假想尺寸永远"放得下",
+     flex-wrap 一辈子不会触发 —— 四个按钮被硬均分,胶囊压得比文字窄,
+     nowrap 的字就从圆角底里淌出去(「错题本 · 14 个词在练」实测溢出)。
+     basis auto 才是真正的 wrap 数学:放得下就同排(grow 均分富余),
+     放不下整个按钮折到下一行,文字永远不会出格 */
   /* > button 也要收进来:「按课堂复习」开的是弹窗不是链接,元素是 <button> */
-  .acts > a,.acts > button{flex:1 1 0;min-width:0;white-space:nowrap;}
+  .acts > a,.acts > button{flex:1 1 auto;min-width:0;white-space:nowrap;}
   /* 继续学的课名长度不可控:label 装进 span 才有省略号
      (flex 容器里的裸文本节点没法 text-overflow) */
   .acts .go-btn span{overflow:hidden;text-overflow:ellipsis;}
