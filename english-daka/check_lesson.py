@@ -135,6 +135,15 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
         if c.get("cn") == TODO or c.get("word") == TODO:
             r.e(where, f"还有没填的「{TODO}」")
 
+        # sight word 徽章只属于「标题宣称的那几个常见词」。
+        # 例词卡(box/cow/piano 这类普通名词)标 sight word,学一学的徽章就在
+        # 说谎 —— 曾经 20 张例词卡全标错。例词一律 tag:word
+        if c.get("tag") == "sight word" and "Sight Words" in (d.get("title") or ""):
+            claimed = [x.strip().lower() for x in d["title"].split("·")[1].split("/")]
+            if w.lower() not in claimed:
+                r.w(where, f"tag 是 sight word,但「{w}」不在标题宣称的词里 —— "
+                           f"例词卡应当 tag:word,常见词徽章只给虚词卡")
+
         # 一卡一词。只报「真聚合卡」:多问、多个不同答案、还共用一张卡片图 ——
         # 那是一页四格塞进一张卡的形状,该用 split_panels.py 拆开。
         # 单问的算式卡("two and three" 讲 2+3=5)是一整幅场景、只问一个和,

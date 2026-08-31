@@ -35,7 +35,7 @@
     {
       "word": "birds",
       "cn": "鸟",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-all-birds-wings.webp",
       "dialog": [
         {
@@ -61,7 +61,7 @@
     {
       "word": "play",
       "cn": "玩",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-all-play.webp",
       "dialog": [
         {
@@ -87,7 +87,7 @@
     {
       "word": "questions",
       "cn": "提问",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-all-questions.webp",
       "dialog": [
         {
@@ -113,7 +113,7 @@
     {
       "word": "skip",
       "cn": "跳",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-cvc-skip.webp",
       "dialog": [
         {
