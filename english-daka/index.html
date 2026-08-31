@@ -429,6 +429,7 @@
 <symbol id="i-play" viewBox="0 0 24 24"><path d="M7.6 6.1 18 12 7.6 17.9Z" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></symbol>
 <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></g></symbol>
 <symbol id="i-shuffle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M2.9 6.9h3.3c.72 0 1.4.35 1.82.94l5.66 7.94c.42.59 1.1.94 1.82.94h3.4"/><path d="M2.9 17.1h3.3c.72 0 1.4-.35 1.82-.94l5.66-7.94c.42-.59 1.1-.94 1.82-.94h3.4"/></g><path d="M17.9 3.7 21.6 6.9 17.9 10.1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17.9 13.9 21.6 17.1 17.9 20.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 4.9 8.1 4.3 5.7 4.3c-1 0-1.9.12-2.7.36V18c.8-.24 1.7-.36 2.7-.36 2.4 0 4.7.64 6.3 1.96 1.6-1.32 3.9-1.96 6.3-1.96 1 0 1.9.12 2.7.36V4.66c-.8-.24-1.7-.36-2.7-.36-2.4 0-4.7.64-6.3 1.9Z"/><path d="M12 6.2v13.4"/></g></symbol>
 </defs></svg>
 
 <header>
@@ -446,6 +447,10 @@
     <div class="checkin" id="checkin" role="button" tabindex="0" aria-label="查看打卡日历"></div>
     <div class="acts" id="acts">
       <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
+      <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
+           有在练的词时由脚本往 label 里带数(只动文字,别动图标);
+           始终是白底次按钮,主行动留给复习/继续学 -->
+      <a class="review-btn ghost" id="wrongBtn" href="app.html?lesson=review&pick=wrong"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> <span id="wrongBtnLabel">错题本</span></a>
     </div>
   </div>
 </header>
@@ -869,6 +874,27 @@ function renderContinue(lessons){
   const rb = document.getElementById("reviewBtn");
   if(rb) rb.classList.add("ghost");
 }
+
+/* 错题本按钮带数:「N 个词在练」。数据来自 app.html 维护的复习账本
+   daka.rev.v1(每卡 {b:盒号,t:最后见到,w:错次}),这里只读不写;
+   在练 = 错过(w>0)且还没爬到 7 天盒(b≤3),口径必须和 app.html 的
+   pickWrongBook 一致,不然按钮报 5 个点进去只有 3 个。
+   读不到(隐私模式/账本还没建)就保持素颜按钮 —— 入口不藏。 */
+function renderWrongCount(){
+  const el = document.getElementById("wrongBtnLabel");   // 只改文字,图标留在旁边
+  if(!el) return;
+  try{
+    const o = JSON.parse(localStorage.getItem("daka.rev.v1") || "{}");
+    let n = 0;
+    for(const k in o){
+      const r = o[k];
+      if(r && typeof r === "object" && r.w > 0 &&
+         typeof r.b === "number" && r.b <= 3) n++;
+    }
+    if(n > 0) el.textContent = "错题本 · " + n + " 个词在练";
+  }catch(e){}
+}
+renderWrongCount();
 
 /* 封面色 —— 旧写法是五色按**组内序号**循环,于是每个组的第一张永远是同一个粉色、
    第二张永远是同一个蓝色:颜色只表达"你是这组的第几张",不表达"你属于哪一组"。
