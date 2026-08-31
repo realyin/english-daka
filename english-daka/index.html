@@ -341,6 +341,49 @@
   .cal-tile span{display:block;margin-top:2px;font-size:11px;font-weight:700;
                  color:var(--muted,#5E6E8C);}
 
+  /* ===== 存档导出/导入(家长区)=====
+     刻意做成弹窗最底下一行灰色小字链接,而不是彩色胶囊按钮:
+     一是这是家长一年用不了几次的功能,做成按钮只会稀释旁边真正要点的入口;
+     二是孩子翻到打卡日历时,不该有任何一个显眼的东西通向"覆盖存档"。
+     虚线分隔:它和上面的热力图/统计不是一类内容(一个是看,一个是管)。
+     wrap:手机上那句说明放不下就整条折到下一行(靠左继续排),
+     不去挤两个按钮 —— 按钮被压窄到换行才是真难点 */
+  .cal-io{
+    display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2,12px);
+    margin-top:var(--sp-2,12px);padding-top:var(--sp-2,12px);
+    border-top:1px dashed var(--line,#DCE5F2);
+  }
+  .cal-iobtn{
+    border:0;background:none;padding:6px 2px;
+    font:inherit;font-size:12px;font-weight:700;color:var(--muted,#5E6E8C);
+    text-decoration:underline;text-underline-offset:3px;cursor:pointer;
+  }
+  .cal-iobtn:hover{color:var(--ink);}
+  .cal-io-note{flex:1 1 auto;min-width:0;font-size:11px;line-height:1.6;color:var(--muted,#5E6E8C);}
+
+  /* ===== 轻量提示条(toast)=====
+     这一页目前只有"该备份了"这一句话要说。样式和 app.html 的 .toast 对齐 ——
+     同一个应用里的提示条不该在两页长得不一样。
+     z-index 必须高过日历弹窗的遮罩(50),否则弹窗开着时提示条被盖在底下。
+     时长/缓动走 theme.css 的 token,减弱动效时归 0、自动变成瞬时显示。
+     ⚠️ pointer-events 一直是 none(app.html 那版在 .in 里放开了):
+     那边条上有可点的撤销按钮,这边只是一句话 —— 让它挡住底下的货架
+     没有任何好处,孩子的手指正好会落在那一带 */
+  .toast{
+    position:fixed;left:50%;bottom:var(--sp-5,24px);z-index:70;
+    display:flex;align-items:center;
+    max-width:calc(100vw - 32px);
+    padding:10px var(--sp-3,16px);border-radius:99px;
+    background:rgba(30,42,64,.94);color:#fff;
+    font-size:14px;font-weight:700;line-height:1.3;
+    box-shadow:0 8px 24px rgba(20,30,50,.28);
+    transform:translate(-50%,16px);opacity:0;pointer-events:none;
+    transition:transform var(--dur-base,.24s) var(--ease-out,ease),
+               opacity var(--dur-base,.24s) var(--ease-out,ease);
+  }
+  .toast.in{transform:translate(-50%,0);opacity:1;}
+  .toast .toast-msg{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
   /* ===== header 行动区 ===== */
   /* 帽子里的按钮行(家长反馈:电脑上两个按钮竖着叠像"重叠",宽屏该并排)。
      不写媒体断点,靠 wrap 数学:每个按钮 flex-basis 240px ——
@@ -559,6 +602,20 @@
       3 张卡片。颜色越深 = 那天学得越多：做题的星星，加上听卡片折算的星星
       （每听 3 张算 1 颗），一起决定深浅。</p>
     <div class="cal-stats" id="calStats"></div>
+    <!-- 存档导出/导入:全应用只有这一处入口,而且藏在日历弹窗最底下。
+         打卡记录只在这台设备上,换手机、清站点数据、重装系统都会丢 ——
+         家长得有一条自己把它拿走的路。放在这里是因为日历正是他唯一
+         会为了"看孩子坚持得怎么样"而主动打开的地方。
+         ⚠️ 文件选择器是原生 <input type=file>,不写 hidden 会在弹窗里
+         多出一个丑陋的"选择文件"控件;点击由旁边的按钮代劳。
+         ⚠️ 这两个按钮在 calMask 里面,弹窗的 Tab 焦点圈会自动把它们算进去
+         (那段代码按"一圈可聚焦元素"写的,不用回去改)。 -->
+    <div class="cal-io">
+      <button class="cal-iobtn" id="calExport" type="button">导出存档</button>
+      <button class="cal-iobtn" id="calImport" type="button">导入存档</button>
+      <input type="file" id="calImportFile" accept=".json,application/json" hidden>
+      <span class="cal-io-note">记录只存在这台设备上，换机前先导出一份</span>
+    </div>
   </div>
 </div>
 
@@ -613,47 +670,28 @@ window.onerror = function (msg, src, line) {
   return false;
 };
 </script>
+<!-- 想把站点数据钉住,别让系统在存储紧张时把它当缓存清掉。
+     打卡记录只存在这台设备的 localStorage 里,没有账号也没有云端 —— 被回收
+     就是几个月的星星和连续天数一次性消失,而家长完全不会知道发生过什么。
+     ⚠️ 单独成块、只用 ES5 写,和下面的白屏兜底一个道理:老内核上要能安全跳过。
+     ⚠️ 特性检测 + try/catch + 不看返回值:批准与否由浏览器自己判(Safari 看
+     "是否加到主屏",Chrome 看站点参与度),被拒绝也没有第二条路可走,
+     更不该为此打扰家长。失败就是回到今天的样子,不是错误。
+     ⚠️ 这是"降低被清掉的概率",不是备份 —— 真正的兜底是日历里的导出存档。 -->
 <script>
-/* ================================================================
-   进度存档 —— 与 app.html 里的是同一份代码、同一个 key，改一处要同步改两处。
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
-     dayStars:{"YYYY-MM-DD":n}, last:{lesson,at} }
-   ⚠️ dayStars 是后加的字段(打卡日历按它给格子分深浅);写入方只有 app.html
-   的 addStars(),这一页只读。**旧存档里没有它**,load() 一律补成空对象,
-   读的时候也永远要当"可能没有这一天"来写 —— 这一页是纯 JS 渲染的,
-   在 undefined 上取属性就是整片白屏。
-   ⚠️ 隐私模式 / 关了站点数据的浏览器，光是碰 localStorage 就可能抛，所以每次
-   读写各自包 try/catch，失败就静默退回"没有存档"的样子 —— 这一页是纯 JS 渲染的，
-   顶层抛一个错就是整片白屏（页面底下那段 window.onerror 兜底就是为这个留的）。
-   ⚠️ 日期本地时区手拼，不用 toISOString()（那是 UTC，晚上会记成明天）。
-   ================================================================ */
-var STORE_KEY = "daka.v1";
-function ymd(d){
-  var m = d.getMonth() + 1, day = d.getDate();
-  return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
-}
-var store = {
-  load: function(){
-    var o = null;
-    try{
-      var s = localStorage.getItem(STORE_KEY);
-      if(s) o = JSON.parse(s);
-    }catch(e){ o = null; }
-    if(!o || typeof o !== "object") o = {};
-    if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
-    if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
-    if(!(o.days instanceof Array)) o.days = [];
-    // 数组也是 object,所以要单独挡一下(和 app.html 那份保持逐字一致)
-    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
-    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
-    if(!o.last || typeof o.last !== "object") o.last = null;
-    return o;
-  },
-  save: function(o){
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify(o)); return true; }
-    catch(e){ return false; }
+try{
+  if (navigator.storage && navigator.storage.persist) {
+    navigator.storage.persist().catch(function () {});
   }
-};
+}catch (e) {}
+</script>
+
+<!-- 两页共用的存档读写层(daka.v1 的 store + daka.rev.v1 的账本读写)。
+     原先这几十行在两个页面里各存一份,注释上写着"改一处要同步改两处"。
+     ⚠️ 必须排在主脚本之前、且不加 defer/async:下面顶层第一件事就是 store.load()。
+     ⚠️ 它在 sw.js 的 SHELL 里,离线也拿得到;加文件记得同步那份清单。 -->
+<script src="shared.js"></script>
+<script>
 /* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
    昨天也没有才是真的断了。setDate(-1) 自带跨月跨年,别自己算天数。 */
 function streakOf(days){
@@ -930,6 +968,245 @@ function closeCal(){
   });
 })();
 
+/* ================================================================
+   轻量提示条 —— 全局唯一一条,新的顶掉旧的。2.5 秒自动淡出。
+   ⚠️ 和 app.html 的 showToast 是同一套样式和时长,但**没有**动作按钮:
+   这一页要说的话只有"该备份了",不需要一步可撤销的动作。真要加按钮时
+   照 app.html 那版补 .toast-act,别在这里另发明一种。
+   ================================================================ */
+let toastTimer = 0;
+function hideToast(){
+  if(toastTimer){ clearTimeout(toastTimer); toastTimer = 0; }
+  const el = document.getElementById("toast");
+  if(el) el.classList.remove("in");
+}
+function showToast(msg){
+  let el = document.getElementById("toast");
+  if(!el){
+    el = document.createElement("div");
+    el.id = "toast";
+    el.className = "toast";
+    el.setAttribute("role", "status");
+    document.body.appendChild(el);
+  }
+  hideToast();
+  el.innerHTML = "";
+  const s = document.createElement("span");
+  s.className = "toast-msg";
+  s.textContent = msg;                         // textContent:提示文案不进 HTML 解析
+  el.appendChild(s);
+  void el.offsetWidth;                         // 强制重排,连着两次出条才会重放淡入
+  el.classList.add("in");
+  toastTimer = setTimeout(hideToast, 2500);
+}
+
+/* ================================================================
+   存档导出 / 导入 —— 唯一一条把记录带离这台设备的路。
+   打卡数据全在 localStorage:换手机、清站点数据、iOS 长期不用自动清理,
+   任何一条发生,几个月的星星和连续天数就一次性消失,而且没有任何征兆。
+   persist()(见页面顶部那段)只降低概率,导出才是真正的兜底。
+
+   信封格式(schema 1),故意不直接导出裸的三个键:
+     { app:"daka", schema:1, exportedAt:"YYYY-MM-DD HH:mm", data:{ 键: 值 } }
+   app/schema 两个字段的作用是导入时能一眼认出"这不是打卡存档",
+   而不是把一份随便什么 JSON 塞进 localStorage 把存档搞坏。
+   ⚠️ exportedAt 本地时区手拼,不用 toISOString() —— 理由同存档里的日期
+   (UTC 会把晚上导出的记成第二天,家长对不上"我什么时候存的")。
+   ================================================================ */
+/* 要打包哪几个键。daka.shelf 不在里面:那是货架滚到哪儿了,存在
+   sessionStorage、关掉应用就没了,备份它没有任何意义 */
+const BACKUP_KEYS = ["daka.v1", "daka.rev.v1", "daka.coach"];
+
+function stampNow(){
+  const d = new Date(), h = d.getHours(), mi = d.getMinutes();
+  return ymd(d) + " " + (h < 10 ? "0" : "") + h + ":" + (mi < 10 ? "0" : "") + mi;
+}
+
+/* 打包。某个键不存在(或存的东西已经坏到 parse 不出来)就不放进信封 ——
+   宁可少一个键,也不要写一个 null 进去:导入方看见键就会照单覆盖 */
+function buildBackup(){
+  const data = {};
+  BACKUP_KEYS.forEach(k => {
+    try{
+      const s = localStorage.getItem(k);
+      if(s !== null) data[k] = JSON.parse(s);
+    }catch(e){}
+  });
+  return { app:"daka", schema:1, exportedAt:stampNow(), data:data };
+}
+
+/* 记一笔"存过了",给下面的备份提醒用。
+   ⚠️ 重新 load 一遍再写,不直接改内存里的 SAVE:这一页从不写存档,
+   SAVE 是启动时的快照,拿它整个存回去等于用旧数据盖掉课程页刚记的星星
+   (家长在另一个标签页里学完一课回来点导出,就是这个场景) */
+function markBackedUp(){
+  const o = store.load();
+  o.lastBackupAt = today();
+  if(store.save(o)) SAVE.lastBackupAt = o.lastBackupAt;
+}
+
+/* 回退路径:a[download] + Blob URL。
+   ⚠️ 不能马上 revokeObjectURL —— 部分内核是异步取的流,撤早了下载直接断,
+   而且不报错。给一分钟,页面活着就够用了 */
+function downloadJSON(text, name){
+  try{
+    const url = URL.createObjectURL(new Blob([text], {type:"application/json"}));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    return true;
+  }catch(e){ return false; }
+}
+
+/* 优先系统分享面板:手机上"下载一个 json"多半只是躺进下载目录,家长下一步
+   还得自己找出来发走;分享面板可以直接丢进微信收藏/网盘/AirDrop,那才是备份。
+   ⚠️ 必须同步走完特性检测和 new File():share() 要求在用户手势里发起,
+   中间插一个 await 就会被浏览器判成非手势调用而拒绝。
+   ⚠️ canShare({files}) 要单独问一次 —— 有 navigator.share 不代表能分享文件
+   (桌面 Chrome 就是这样),不问就会在那些机器上抛出去、什么也没发生。
+   ⚠️ 只有 share 的 Promise 真的 resolve 才算存过:用户在面板上点取消是
+   reject,那时候记 lastBackupAt 等于骗自己"备份好了"。 */
+function doExport(){
+  const text = JSON.stringify(buildBackup(), null, 2);
+  const name = "daka-backup-" + today() + ".json";
+  try{
+    if(navigator.share && navigator.canShare && typeof File === "function"){
+      const f = new File([text], name, {type:"application/json"});
+      if(navigator.canShare({files:[f]})){
+        navigator.share({files:[f], title:"打卡存档"})
+          .then(() => { markBackedUp(); showToast("存档已导出"); })
+          .catch(() => {});                    // 取消分享不是错误,不打扰
+        return;
+      }
+    }
+  }catch(e){}                                  // 面板不可用就当没有这条路,往下走回退
+  if(downloadJSON(text, name)){
+    markBackedUp();
+    showToast("存档已导出：" + name);
+  }else{
+    showToast("这台设备存不了文件");
+  }
+}
+
+/* 存档摘要"打卡 X 天 / Y 星"。星数按各课记录求和,和上面统计块的「总星星」
+   同一个口径(不取 total —— 那里面还混着混合复习挣的星),
+   两个数字家长会当场对照,口径不一样就成了 bug */
+function backupBrief(o){
+  let days = 0, stars = 0;
+  if(o && typeof o === "object"){
+    if(o.days instanceof Array) days = o.days.length;
+    if(o.lessons && typeof o.lessons === "object"){
+      for(const id in o.lessons){
+        const r = o.lessons[id];
+        if(r && typeof r.stars === "number") stars += r.stars;
+      }
+    }
+  }
+  return "打卡 " + days + " 天 / " + stars + " 星";
+}
+/* "2026-08-20 10:31" → "8月20日导出"。老信封里这个字段可能缺/坏,
+   所以是正则取而不是 split —— 取不到就别硬说一个日期出来 */
+function backupWhen(s){
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(s || ""));
+  return m ? (+m[2]) + "月" + (+m[3]) + "日导出" : "导出时间不详";
+}
+
+/* 校验 + 确认 + 整体覆盖。
+   ⚠️ 覆盖不合并:两份存档的 days/dayStars 合起来是"哪天学过"的并集,但
+   lessons[id].stars 该取谁的?取大的会凭空多出星星,取新的又说不清哪份新。
+   合并规则怎么定都会在某个场景下算错,而算错的是孩子攒了半年的星星 ——
+   "把那台设备的记录搬过来"是家长真正想做的事,也只有这一件事说得清楚。
+   ⚠️ 信封里没有的键不动本机的:只导出过一次、当时还没有错题本的老存档,
+   不该在导入时把今天的错题本清空。
+   ⚠️ 确认用 window.confirm:自绘弹层要多一套遮罩/焦点圈/Esc,而这个动作
+   一年发生一次,原生框反而更难被误点过去(它会把页面钉住)。 */
+function applyBackup(text){
+  let env = null;
+  try{ env = JSON.parse(text); }catch(e){}
+  if(!env || typeof env !== "object" || env.app !== "daka" || env.schema !== 1 ||
+     !env.data || typeof env.data !== "object" || env.data instanceof Array){
+    showToast("这不是打卡存档文件");
+    return;
+  }
+  const msg = "用备份覆盖这台设备上的记录？\n\n" +
+              "备份：" + backupBrief(env.data["daka.v1"]) +
+              "（" + backupWhen(env.exportedAt) + "）\n" +
+              "本机：" + backupBrief(store.load()) + "\n\n" +
+              "覆盖之后，本机现在的记录就找不回来了。";
+  if(!window.confirm(msg)) return;
+  let wrote = 0;
+  BACKUP_KEYS.forEach(k => {
+    if(!Object.prototype.hasOwnProperty.call(env.data, k)) return;
+    try{ localStorage.setItem(k, JSON.stringify(env.data[k])); wrote++; }catch(e){}
+  });
+  if(!wrote){ showToast("没能写入存档"); return; }
+  // 整页重来:打卡条、日历、货架定位、错题本计数全是启动时按 SAVE 画的,
+  // 一个个重画既漏得多又没必要 —— 导入本来就该是"回到那台设备的样子"
+  location.reload();
+}
+
+(function bindBackup(){
+  const ex = document.getElementById("calExport");
+  const im = document.getElementById("calImport");
+  const file = document.getElementById("calImportFile");
+  if(!ex || !im || !file) return;
+  ex.addEventListener("click", doExport);
+  im.addEventListener("click", () => file.click());
+  file.addEventListener("change", () => {
+    const f = file.files && file.files[0];
+    // value 清空必须做:不清的话选同一个文件第二次不触发 change,
+    // 家长会以为"点了没反应"
+    file.value = "";
+    if(!f) return;
+    const r = new FileReader();
+    r.onload = () => applyBackup(String(r.result));
+    r.onerror = () => showToast("文件没能读出来");
+    r.readAsText(f);
+  });
+})();
+
+/* ================================================================
+   备份提醒 —— 攒了东西、又很久没存过,才念叨一句。
+   三个条件缺一不可:有打卡记录(没记录不存在"丢失")、上次备份超过 14 天
+   (或从没备份过)、上次备份之后又学过新的(否则那份备份已经是最新的了,
+   催他再存一遍只是噪音)。
+   ⚠️ 一次会话只提醒一次,记在 sessionStorage:从课程页返回目录页是整页
+   跳转,不记的话来回几趟就要弹好几遍,提醒会变成"又是它",直接被无视。
+   下次重开应用还会提醒 —— 那时候确实又过了一天。
+   ================================================================ */
+const BACKUP_REMIND_DAYS = 14;
+const REMIND_KEY = "daka.remind";              // sessionStorage,和 daka.* 那几个存档键无关
+function remindedThisSession(){
+  try{ return !!sessionStorage.getItem(REMIND_KEY); }catch(e){ return true; }
+}
+function markReminded(){
+  try{ sessionStorage.setItem(REMIND_KEY, "1"); }catch(e){}
+}
+function dayGap(a, b){ return Math.round((parseYmd(b) - parseYmd(a)) / 864e5); }
+
+function remindBackup(){
+  if(remindedThisSession()) return;
+  if(!SAVE.days.length) return;                // 还没打过卡,没有值得丢的东西
+  // days 正常是升序的,但存档是外部数据,自己取一次最大值更稳
+  let last = "";
+  for(let i = 0; i < SAVE.days.length; i++) if(SAVE.days[i] > last) last = SAVE.days[i];
+  const at = SAVE.lastBackupAt;
+  const ok = typeof at === "string" && /^\d{4}-\d{2}-\d{2}$/.test(at);
+  if(ok){
+    if(dayGap(at, today()) <= BACKUP_REMIND_DAYS) return;   // 备份还新
+    if(!(last > at)) return;                                // 存过之后没再学,那份就是最新的
+  }
+  markReminded();
+  // 延后一点再出:首屏正在画货架,这时候弹条会和内容一起抖进来,
+  // 而且家长的注意力还在"今天学哪一课"上,根本读不进去
+  setTimeout(() => showToast("存档 " + BACKUP_REMIND_DAYS + " 天没备份了，点日历里的导出存一份"), 1500);
+}
+remindBackup();
+
 /* 「继续学 · 某课」:有存档且那节课还在清单里才出。
    出现时把复习按钮降级成白底次按钮 —— 两个绿胶囊并排就没有主行动了 */
 function renderContinue(lessons){
@@ -960,20 +1237,19 @@ function renderContinue(lessons){
    daka.rev.v1(每卡 {b:盒号,t:最后见到,w:错次}),这里只读不写;
    在练 = 错过(w>0)且还没爬到 7 天盒(b≤3),口径必须和 app.html 的
    pickWrongBook 一致,不然按钮报 5 个点进去只有 3 个。
-   读不到(隐私模式/账本还没建)就保持素颜按钮 —— 入口不藏。 */
+   ⚠️ 走 shared.js 的 revStore.load()(读不到时返回 {}),不要自己再 JSON.parse
+   一遍 —— 两边各写一套读法,正是"报 5 个点进去 3 个"的来路。 */
 function renderWrongCount(){
   const el = document.getElementById("wrongBtnLabel");   // 只改文字,图标留在旁边
   if(!el) return;
-  try{
-    const o = JSON.parse(localStorage.getItem("daka.rev.v1") || "{}");
-    let n = 0;
-    for(const k in o){
-      const r = o[k];
-      if(r && typeof r === "object" && r.w > 0 &&
-         typeof r.b === "number" && r.b <= 3) n++;
-    }
-    if(n > 0) el.textContent = "错题本 · " + n + " 个词在练";
-  }catch(e){}
+  const o = revStore.load();
+  let n = 0;
+  for(const k in o){
+    const r = o[k];
+    if(r && typeof r === "object" && r.w > 0 &&
+       typeof r.b === "number" && r.b <= 3) n++;
+  }
+  if(n > 0) el.textContent = "错题本 · " + n + " 个词在练";   // 0 个就保持素颜按钮,入口不藏
 }
 renderWrongCount();
 
