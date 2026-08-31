@@ -141,6 +141,12 @@
      "能滑"由右缘那张被裁一半的卡片来说明 */
   .shelf-row{scrollbar-width:none;}
   .shelf-row::-webkit-scrollbar{display:none;}
+  /* 桌面鼠标的横滚入口:滚动条藏了、鼠标又没有"横划"手势,不给拖就完全滑不动
+     (家长实测反馈)。只在真鼠标环境给抓手光标,触摸屏不受影响 */
+  @media (hover:hover) and (pointer:fine){
+    .shelf-row,.cal-scroll{cursor:grab;}
+    .shelf-row.dragging,.cal-scroll.dragging{cursor:grabbing;}
+  }
 
   .cover{
     flex:none;width:var(--cw);height:var(--ch);scroll-snap-align:start;
@@ -908,6 +914,7 @@ function renderCal(){
 const calMask = document.getElementById("calMask");
 const calClose = document.getElementById("calClose");
 const calScroll = document.getElementById("calScroll");
+enableMouseDrag(calScroll);                      // 日历横滚同样藏了滚动条,桌面也要能拖
 
 /* 开关就是加/去一个 class,没有任何计时器、帧回调、transitionend ——
    淡入淡出、能不能点、进不进 Tab 序全部由 CSS 那三条属性负责。
@@ -1355,6 +1362,56 @@ function coverColors(group){
   return COVER_COLORS;
 }
 
+/* 桌面鼠标拖动滚动。触摸端浏览器原生就能横划,但鼠标没有"横划"这个动作,
+   滚动条又特意藏了(读者是孩子,灰杠只会招来乱拖) —— 结果桌面上货架
+   完全滑不动(家长实测反馈)。只接管 pointerType==="mouse" 的主键拖动:
+   - 死区 6px:没过线就是普通点击,卡片 <a> 默认跳转不受影响
+   - 过线后 scrollLeft 跟手,松手带一点惯性(scrollBy smooth 顺便让
+     scroll-snap 落位),并在捕获阶段拦掉这一次 click(拖完松手不算点)
+   - 触摸/触控笔一概不碰,原生滚动照旧 */
+function enableMouseDrag(row){
+  if(!row) return;
+  let down = false, moved = false, sx = 0, sl = 0, vx = 0, lx = 0, lt = 0;
+  row.addEventListener("pointerdown", e => {
+    if(e.pointerType !== "mouse" || e.button !== 0) return;
+    down = true; moved = false; sx = lx = e.clientX; sl = row.scrollLeft;
+    lt = performance.now(); vx = 0;
+  });
+  row.addEventListener("pointermove", e => {
+    if(!down || e.pointerType !== "mouse") return;
+    const dx = e.clientX - sx;
+    if(!moved){
+      if(Math.abs(dx) < 6) return;               // 死区:手一抖不算拖
+      moved = true;
+      row.classList.add("dragging");
+      // 捕获指针:拖出货架边界、甚至拖出窗口,move/up 也还归我们
+      try{ row.setPointerCapture(e.pointerId); }catch(err){}
+    }
+    row.scrollLeft = sl - dx;
+    const now = performance.now(), dt = Math.max(1, now - lt);
+    vx = vx * 0.7 + ((lx - e.clientX) / dt) * 0.3;   // px/ms,低通滤抖
+    lx = e.clientX; lt = now;
+    e.preventDefault();
+  });
+  const up = () => {
+    if(!down) return;
+    down = false;
+    if(moved){
+      row.classList.remove("dragging");
+      // 甩得越快滑得越远;smooth 滚动结束时 scroll-snap 自己吸附
+      if(Math.abs(vx) > 0.05) row.scrollBy({left: vx * 160, behavior: "smooth"});
+    }
+  };
+  row.addEventListener("pointerup", up);
+  row.addEventListener("pointercancel", up);
+  // 拖动过的这一次松手不算点击:捕获阶段拦掉,免得落点在卡片上触发跳转
+  row.addEventListener("click", e => {
+    if(moved){ moved = false; e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  // 封面画是 <img>,浏览器默认能拽出个"幽灵图"把拖动手势顶掉
+  row.addEventListener("dragstart", e => e.preventDefault());
+}
+
 function buildShelf(group, lessons){
   const wrap = document.createElement("section");
   wrap.className = "shelf";
@@ -1404,6 +1461,7 @@ function buildShelf(group, lessons){
 
   // 跳转走 <a> 的默认行为,这里只顺手记下滚到哪儿了(处理器在导航之前跑完)
   row.addEventListener("click", () => saveShelfMem(group, row.scrollLeft));
+  enableMouseDrag(row);                          // 桌面鼠标也能拖着滚
 
   return wrap;
 }
