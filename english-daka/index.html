@@ -208,6 +208,10 @@
   .cdot.on{background:var(--yellow);border-color:#E9A800;}
   /* 今天那格加一圈蓝描边:几个点长得一样时,孩子分不清哪个是"今天该点亮的" */
   .cday.today .cdot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(62,139,255,.28);}
+  /* 本周还没到的天:一眼要能和"过去没打卡的空圈"区分开 ——
+     圈更淡、字更淡,读作"这周还剩这几天",不是"这几天没打" */
+  .cday.future .cdot{border-color:#E4EDF8;}
+  .cday.future .cw{color:#B9C6DA;}
   .cw{font-size:11px;font-weight:700;color:#5E6E8C;line-height:1;}
   .cday.today .cw{color:var(--blue);}
   .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
@@ -592,11 +596,11 @@ function saveShelfMem(group, x){
 
 var SAVE = store.load();
 
-/* 打卡条:本周(周一起)到今天,一天一个点 + 右侧连续天数。
-   ⚠️ 不是"最近 7 天滚动窗"了 —— 家长的明确要求:窗口里永远有 7 个格子,
-   谁看都会读成"一整周",于是今天右边那几个空格就被当成"这周后面还没打的天",
-   像是画了未来。周一起点、不画未来:今天永远是最后一个点,周一当天就只有
-   一个点,周日才是满满 7 个 —— 一行点的长度本身就说明"这周过了几天"。
+/* 打卡条:本周固定 7 个点,周一排到周日 + 右侧连续天数。
+   曾经试过"周一只画到今天"(不画未来)—— 周一当天整条只剩孤零零一个圈,
+   家长看着像坏了,而且一眼看不出"这是一周"。定稿:七个圈永远都在,
+   还没到的天用 .future 压淡(更浅的虚位样式),读作"这周还剩这几天",
+   不会误当成"没打卡的空格"。今天蓝圈高亮不变。
    ⚠️ 连胜(streakOf)跟这个窗口无关,它算的是真实的连续天数,一天没动。
    周起点算法:getDay() 里周日是 0,(day+6)%7 把它挪成"离本周一过了几天" */
 const WEEK_CN = ["日","一","二","三","四","五","六"];
@@ -605,14 +609,15 @@ function renderCheckin(){
   if(!box) return;
   const set = {};
   SAVE.days.forEach(d => { set[d] = 1; });
-  const today = new Date();
+  const passed = (new Date().getDay() + 6) % 7;   // 今天是本周第几天(周一=0)
   let cells = "";
-  for(let i = (today.getDay() + 6) % 7; i >= 0; i--){   // 从本周一排到今天
+  for(let i = 0; i < 7; i++){                      // 永远画满周一..周日
     const d = new Date();
-    d.setDate(d.getDate() - i);
+    d.setDate(d.getDate() + (i - passed));
     const key = ymd(d);
-    cells += `<div class="cday${i === 0 ? " today" : ""}">` +
-             `<span class="cdot${set[key] ? " on" : ""}"></span>` +
+    const cls = i === passed ? " today" : (i > passed ? " future" : "");
+    cells += `<div class="cday${cls}">` +
+             `<span class="cdot${i <= passed && set[key] ? " on" : ""}"></span>` +
              `<span class="cw">${WEEK_CN[d.getDay()]}</span></div>`;
   }
   box.innerHTML =
