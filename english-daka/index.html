@@ -371,13 +371,15 @@
     /* 不设 max-width:在帽子的右列里要撑满列宽,和「混合复习」对齐成一条边;
        文字仍由 justify-content:center 居中 */
     min-height:52px;padding:12px 26px;border-radius:999px;
-    background:var(--green);color:#fff;font-weight:900;font-size:17px;
-    /* 阴影走 theme.css 的柔投影 token,不再是"墨色硬边"那一套 ——
-       全站(含 app.html 的按钮/卡片)统一成浅色细边 + 柔投影 */
-    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));line-height:1.25;
+    /* 淡绿而不是实心绿:帽子行三个入口统一成粉彩胶囊(淡绿/淡蓝/淡橙),
+       实心饱和绿夹在两块粉彩里是"一个重两个轻",怎么配都不协调。
+       继续学靠首位 + 绿色相领头就够了 —— 这一行是快捷入口,
+       页面真正的主行动是下面的课程封面。文字深一档同色相,4.5:1 过 AA */
+    background:#DEF4E6;color:#1B7C46;font-weight:900;font-size:17px;
+    text-decoration:none;box-shadow:none;line-height:1.25;
   }
-  /* 按压反馈全站一个口径:下沉 2px + 收成 --shadow-sm */
-  .go-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
+  /* 按压反馈:粉彩胶囊平时没有投影,按下去只下沉,别凭空长出一层影子 */
+  .go-btn:active{transform:translateY(2px);box-shadow:none;}
   .go-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
@@ -389,10 +391,12 @@
        block 的文字会贴在顶上,竖向也要居中 */
     display:flex;align-items:center;justify-content:center;
     text-align:center;padding:10px 20px;border-radius:999px;
-    background:var(--green);color:#fff;font-weight:900;font-size:15px;
-    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
+    /* 底色是淡蓝(和 .ghost 一致):帽子行不论两个还是三个按钮,
+       都是同一排粉彩胶囊,没有哪种组合会出现"一个实心夹粉彩" */
+    background:#E3EEFF;color:#2A66C4;font-weight:900;font-size:15px;
+    text-decoration:none;box-shadow:none;
   }
-  .review-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
+  .review-btn:active{transform:translateY(2px);box-shadow:none;}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
   /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次。
      次按钮不用素白 —— 一实心两白的三连排头重脚轻,给两个次入口各一层
