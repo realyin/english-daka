@@ -217,6 +217,20 @@
   }
   .lhead .tag.review + .chev{margin-left:6px;}
   .lcard.open .lhead .chev{transform:rotate(90deg);}
+  /* 卡头右侧的小书角:点一下手动进/出错题本(家长觉得不熟就标,不用等答错)。
+     默认淡灰只当个安静的示能 —— 一页几十张卡,亮着反而吵;
+     进本后换错题本的橙(和目录页错题本按钮同一身份色)。
+     它接管 margin-left:auto 把自己和角标一起顶到右边,角标的 auto 让位
+     (两个 auto 会平分空隙,书角被挤到中间) */
+  .lhead .bookmark{
+    flex:none;margin-left:auto;width:38px;height:38px;border:none;border-radius:50%;
+    background:none;color:#C3D0E3;padding:0;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .lhead .bookmark svg{width:20px;height:20px;fill:currentColor;}
+  .lhead .bookmark.on{color:#9E5800;background:#FFF0DD;}
+  .lhead .bookmark:active{transform:translateY(1px);}
+  .lhead .bookmark + .chev{margin-left:2px;}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
 
@@ -982,6 +996,35 @@ function revMark(card, ok){
   else { if(r.b > 1) r.b -= 1; r.w += 1; }
   r.t = today();
   revStore.save(o);
+}
+
+/* 手动进出错题本(学一学卡头上的小书角)。
+   revKey 只认 _src(复习临时课的卡才有),这里泛化:普通课里 CUR_ID 就是课程 id。
+   进本 = 记成"今天就到期的低盒卡"(b=0,错次至少 1);
+   出本 = 提前毕业到盒 4 —— 不删记录,历史错次留着,7 天后混合复习照常验证。
+   这是家长的显式操作,不走 revMark 的一天一笔。 */
+function revKeyOf(c){
+  var src = c._src || (CUR_ID && CUR_ID !== "review" ? CUR_ID : null);
+  return src ? src + ":" + c.word : null;
+}
+function inWrongBook(c){
+  var k = revKeyOf(c);
+  if(!k) return false;
+  var o = revStore.load();
+  if(!o[k]) return false;
+  var r = revRec(o, k);
+  return r.w > 0 && r.b <= 3;
+}
+function toggleWrongBook(c){
+  var k = revKeyOf(c);
+  if(!k) return null;
+  var o = revStore.load();
+  var r = revRec(o, k);
+  var was = r.w > 0 && r.b <= 3;
+  if(was){ r.b = 4; }
+  else { r.b = 0; r.w = Math.max(r.w, 1); r.t = today(); }
+  revStore.save(o);
+  return !was;
 }
 
 function rec4(o, id){                          // 取/建某课的记录
@@ -2125,7 +2168,27 @@ function renderLearn(){
                 : `<span class="emoji">${c.emoji||"⬜"}</span>`}</span>
       <div><div class="word">${c.word}</div><div class="cn">${c.cn||""}</div></div>
       ${tagHTML(c.tag)}
+      ${revKeyOf(c) && askable(c).length
+        ? `<button class="bookmark${inWrongBook(c) ? " on" : ""}"
+                    aria-label="加入错题本" aria-pressed="${inWrongBook(c)}">
+             <svg aria-hidden="true"><use href="#i-book"/></svg></button>`
+        : ``}
       <span class="chev" aria-hidden="true">›</span>`;
+    // 小书角:家长觉得不熟就标上,不用等答错。stopPropagation 两连 ——
+    // 点它别顺手展开卡片,键盘上按它也别触发卡头的 Enter/空格展开
+    const bk = head.querySelector(".bookmark");
+    if(bk){
+      bk.onclick = (e)=>{
+        e.stopPropagation();
+        const nowIn = toggleWrongBook(c);
+        if(nowIn === null) return;
+        bk.classList.toggle("on", nowIn);
+        bk.setAttribute("aria-pressed", nowIn ? "true" : "false");
+        SFX.tap();
+        showToast(nowIn ? "已加入错题本 · 复习时会多练它" : "已移出错题本");
+      };
+      bk.addEventListener("keydown", e=>e.stopPropagation());
+    }
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
       // 展开前先记下这张卡在屏幕上的位置:收起上面那张卡会把内容整体抽走,
