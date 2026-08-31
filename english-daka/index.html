@@ -597,10 +597,11 @@
       </button>
     </div>
     <div class="cal-map">
-      <!-- 只标 一/三/五:七行全标的话 9px 的字挤成一坨,反而读不出来 -->
+      <!-- 只标 一/三/五/日:七行全标的话 9px 的字挤成一坨,反而读不出来;
+           最后一行的"日"要标 —— 不标的话最下面两行没名字,数不出是周几(实测点名) -->
       <div class="cal-wd" aria-hidden="true">
         <span>一</span><span></span><span>三</span><span></span>
-        <span>五</span><span></span><span></span>
+        <span>五</span><span></span><span>日</span>
       </div>
       <div class="cal-scroll" id="calScroll">
         <div class="cal-inner">
@@ -872,38 +873,60 @@ function renderCal(){
   const cur = new Date(thisMon);
   cur.setDate(cur.getDate() - (cols - 1) * 7);
 
-  let months = "", grid = "", labeledMon = -1, labelEnd = -1;
+  /* 月份标签(和 GitHub 同款):严格钉在"包含 1 号的那一列"。
+     旧算法按"列首周一的月份变了"标,还会在标签冲突时把月份名往后漂移
+     几列 —— 名字和下面的格子对不上列;而且月初头几天所在的列,列首周一
+     还是上个月,新月份要等下一周才出现(9 月 1 号当天看不到"9月",实测点名)。
+     现在:第一遍建格子,顺手记下每个 1 号落在哪一列;第二遍生成标签,
+     冲突时先把前一个标签的年份去掉再试,还不行才丢弃后者(绝不漂移)。 */
+  let grid = "";
+  const marks = [];                            // 待标的列:{c, y, m}
   for(let c = 0; c < cols; c++){
-    const m = cur.getMonth(), monKey = cur.getFullYear() * 12 + m;
-    /* 每个月标一次。⚠️ 一月和第一列的标签带上年份:图拉长到跨年之后,
-       一串"11月 12月 1月 2月"看不出中间换了一年 —— 换年的地方正是一月。
-       ⚠️ 标签槽只有一列宽(12px),文字是溢出画到右边的 —— 带年份的长标签
-       ("2026年6月")会一直铺到四五列开外,把下一个月的"7月"直接压住
-       (家长截图实锤)。所以记住上一个标签的文字铺到哪一列,铺到的范围内
-       不放新标签;宽度按 CJK 11px/ASCII 7px 分开估,每列 12px。
-       ⚠️ 不能只在"换月的那一列"试一次:那一列若正撞在压制范围里,这个月
-       就永远不补标了(8 月就是这么丢的)—— 所以改成"这个月还没标过 &&
-       这一列不冲突"就标,标签落在月中间几列也比整月没名字强 */
-    if(monKey !== labeledMon && c > labelEnd){
-      const lab = (c === 0 || m === 0) ? `${cur.getFullYear()}年${m + 1}月` : `${m + 1}月`;
-      let px = 0;
-      for(const ch of lab) px += ch.charCodeAt(0) > 127 ? 11 : 7;
-      labelEnd = c + Math.ceil(px / 12);
-      labeledMon = monKey;
-      months += `<span class="cal-mon"><b>${lab}</b></span>`;
-    }else{
-      months += `<span class="cal-mon"></span>`;
-    }
+    if(c === 0) marks.push({c: 0, y: cur.getFullYear(), m: cur.getMonth()});
     let col = "";
     for(let r = 0; r < 7; r++){
       const key = ymd(cur);
       if(key > todayKey) break;                // 未来不画
+      if(cur.getDate() === 1){
+        // 1 号所在列就是这个月的标签列;第 0 列若同时含月末和月初,标新月
+        // (它占了这一列的大头,也更有信息量)
+        if(c === 0) marks[0] = {c: 0, y: cur.getFullYear(), m: cur.getMonth()};
+        else marks.push({c, y: cur.getFullYear(), m: cur.getMonth()});
+      }
       // 今天不再加蓝圈:热力图里一圈描边读作"被选中",而这图没有选中这回事;
       // 今天永远是最后一格,位置本身就说明了它是谁(实测点名)
       col += `<span class="cal-cell${calTier(!!set[key], eff(key))}"></span>`;
       cur.setDate(cur.getDate() + 1);          // setDate 自带跨月跨年
     }
     grid += `<span class="cal-col">${col}</span>`;
+  }
+  /* 标签文字:第一枚和一月带年份(跨年的地方正是一月)。
+     宽度按 CJK 11px/ASCII 7px 估,每列 12px —— 前一枚铺进后一枚的列就算冲突 */
+  const labW = t => {
+    let px = 0;
+    for(const ch of t) px += ch.charCodeAt(0) > 127 ? 11 : 7;
+    return Math.ceil(px / 12);
+  };
+  const labs = marks.map((mk, i) => ({
+    c: mk.c,
+    text: (i === 0 || mk.m === 0) ? `${mk.y}年${mk.m + 1}月` : `${mk.m + 1}月`
+  }));
+  for(let i = 1; i < labs.length; i++){
+    const prev = labs[i - 1];
+    if(prev.c + labW(prev.text) > labs[i].c){
+      const short = prev.text.replace(/^\d+年/, "");
+      if(short !== prev.text && prev.c + labW(short) <= labs[i].c) prev.text = short;
+      else { labs.splice(i, 1); i--; }         // 实在放不下:丢标签,不挪位置
+    }
+  }
+  let months = "", li = 0;
+  for(let c = 0; c < cols; c++){
+    if(li < labs.length && labs[li].c === c){
+      months += `<span class="cal-mon"><b>${labs[li].text}</b></span>`;
+      li++;
+    }else{
+      months += `<span class="cal-mon"></span>`;
+    }
   }
 
   document.getElementById("calMonths").innerHTML = months;
