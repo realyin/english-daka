@@ -785,6 +785,55 @@ function markCoach(k){
   }catch(e){}
 }
 
+/* 复习账本 —— 单独一个键 "daka.rev.v1",和进度、演示标记互不纠缠(清谁都不伤谁)。
+   每张进过混合复习的卡记一条:{ b:盒号 0-5, t:最后见到的日期, w:累计错次 }。
+   盒号是 Leitner 间隔重复的全部状态:REV_GAP[b] 天后到期,答对升盒、答错降盒。
+   读不到(隐私模式)就当人人都是新卡 —— 调度退化成随机抽新卡,和旧行为一个档次。 */
+var REV_KEY = "daka.rev.v1";
+var REV_GAP = [0, 1, 2, 4, 7, 14];             // 盒号 → 间隔天数,14 天封顶
+var revStore = {
+  load: function(){
+    try{
+      var s = localStorage.getItem(REV_KEY);
+      var o = s ? JSON.parse(s) : null;
+      return (o && typeof o === "object") ? o : {};
+    }catch(e){ return {}; }
+  },
+  save: function(o){
+    try{ localStorage.setItem(REV_KEY, JSON.stringify(o)); }catch(e){}
+  }
+};
+function revKey(card){ return card._src + ":" + card.word; }
+function revRec(o, k){                         // 取/修某卡的账,字段坏了就地扶正
+  var r = o[k];
+  if(!r || typeof r !== "object") r = {b:0, t:today(), w:0};
+  if(!(typeof r.b === "number" && isFinite(r.b))) r.b = 0;
+  r.b = Math.min(Math.max(Math.round(r.b), 0), 5);
+  if(!(typeof r.w === "number" && isFinite(r.w))) r.w = 0;
+  if(!(typeof r.t === "string" && /^\d{4}-\d{2}-\d{2}$/.test(r.t))) r.t = today();
+  o[k] = r;
+  return r;
+}
+/* 俩 ymd 差几天(b - a)。手拆再拼 Date:不走字符串解析,老 Safari 对
+   ISO 串的时区解释踩过坑,本地日期构造没有歧义 */
+function ymdDate(s){ var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+function dayDiff(a, b){ return Math.round((ymdDate(b) - ymdDate(a)) / 864e5); }
+/* 记一笔:只在混合复习里调用(卡上有 _src 才记得了账)。
+   对 → 升一盒;错/看答案 → 降一盒但最低留在盒 1 ——
+   一错归零对成人背单词合理,对 5 岁孩子偶然点歪过于严厉,降一档已够拉回高频区。
+   新卡(盒 0)答错留在盒 0:间隔 0 天等于天天到期,直到答对为止。
+   回炉卡(_retry)一律不记账:错已经在原题记过了,当轮再问一遍只是当场闭环的
+   练习 —— 记进去等于同一次错还能靠"马上重做"把盒号刷回来,调度就失真了。 */
+function revMark(card, ok){
+  if(CUR_ID !== "review" || !card || !card._src || card._retry) return;
+  var o = revStore.load();
+  var r = revRec(o, revKey(card));
+  if(ok) r.b = Math.min(r.b + 1, REV_GAP.length - 1);
+  else { if(r.b > 1) r.b -= 1; r.w += 1; }
+  r.t = today();
+  revStore.save(o);
+}
+
 function rec4(o, id){                          // 取/建某课的记录
   var r = o.lessons[id];
   if(!r || typeof r !== "object") r = {stars:0, done:0};
@@ -2056,8 +2105,10 @@ function askable(c){ return (c.dialog || []).filter(t => t.practice !== false); 
 function startPractice(){
   releaseAdvance();   // 结算页的「再来一轮」不该被上一题的推进锁挡住
   // 每轮最多 ROUND_MAX 问:整课 25 问对 K2 孩子太长,而打卡是天天来的 ——
-  // 每次随机抽一轮,几天下来自然覆盖全课,还不重样
-  const bag = lesson.cards.slice().sort(()=>Math.random()-0.5);
+  // 每次随机抽一轮,几天下来自然覆盖全课,还不重样。
+  // 混合复习(ordered)例外:卡序出自调度器,同课已排开,别再洗回去
+  const bag = lesson.ordered ? lesson.cards.slice()
+                             : lesson.cards.slice().sort(()=>Math.random()-0.5);
   pOrder = []; let n = 0;
   for(const c of bag){
     const k = askable(c).length;
@@ -2066,7 +2117,7 @@ function startPractice(){
     pOrder.push(c); n += k;
     if(n >= ROUND_MAX) break;
   }
-  pc = 0; pq = 0; pBarPct = 0;
+  pc = 0; pq = 0; pBarPct = 0; pRetryN = 0;
   askQuestion();
 }
 function curCard(){ return pOrder[pc]; }
@@ -2081,12 +2132,30 @@ function pTotals(){
 }
 
 let pRevealed = false;   // 当前题是否已展示过答案(防止重复追加气泡)
+/* 这一题记过复习账没有。一题只记第一件事:首点即对记"对",点错或先看答案记"错"——
+   错完再点对不算对,答对之后再看答案也不算错 */
+let pScored = false;
 let pBarPct = 0;         // 上一题进度条停在哪 —— 换题时要从这个值涨过去,见 growBar
+let pRetryN = 0;         // 本轮回炉了几张,结算页要报,见 pRetryPush
+/* 当轮回炉:复习里答错(或没答就看答案)的卡,当轮末尾补问一遍 ——
+   一错就翻过去,孩子这一天等于没学会;当场闭环一次才有"最后我做对了"的收尾。
+   只在混合复习里做:普通课一轮就那几张卡,重复太密反而像罚抄。
+   浅克隆打上 _retry,它管住两件事:回炉卡不记账(见 revMark)、
+   回炉卡自己再答错也不再回炉(否则一直答错就是无限队列)。
+   调用点由 pScored 把关,所以一题最多回炉一张。
+   ⚠️ 追加进 pOrder 会让 pTotals 的分母变大(10 → 11),这是诚实的:
+   进度 k/T → (k+1)/(T+1) 在 k<T 时恒增,进度条不会倒缩,不用管 growBar。*/
+function pRetryPush(c){
+  if(CUR_ID !== "review" || !c || c._retry) return;
+  pOrder.push(Object.assign({}, c, {_retry: true}));
+  pRetryN++;
+}
 /* 出题分两层:askQuestion 只负责"带过渡地换过去",真正的渲染在 renderQuestion。
    startPractice 的第一题也走这里 —— 从开始页翻到第一题同样是一次换页 */
 function askQuestion(){ swapIn(pbox, renderQuestion, 1); }
 function renderQuestion(){
   pRevealed = false;
+  pScored = false;
   pActive = true;
   const c = curCard(), qa = curQA();
   const tot = pTotals();
@@ -2152,6 +2221,7 @@ function renderQuestion(){
       chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
       if(k === correct){
         answered = true;
+        if(!pScored){ pScored = true; revMark(c, true); }
         b.classList.add("right");
         chipsBox.querySelectorAll(".ans-chip").forEach(x=>x.disabled=true);
         document.getElementById("pResult").textContent = "🎉";
@@ -2159,12 +2229,15 @@ function renderQuestion(){
         if(navigator.vibrate) navigator.vibrate(15);   // 安卓有震感,iOS 直接忽略
         burst(b);                 // 彩带在选项原地炸开
         botHappy();               // 提问的那个机器人也跟着跳一下
-        flyStar(b, 2);            // 星星飞进罐子,数字落袋才 +2(不再直接 addStars)
+        // 星星飞进罐子,数字落袋才加(不再直接 addStars)。
+        // 回炉题只给 1 颗:答对了得有安慰,但同一张卡不该靠错一次多挣一份分
+        flyStar(b, c._retry ? 1 : 2);
         // 答对就停在这儿:绿色选项留在屏幕上,出口(下一题 / 看答案)自己选。
         // 以前会在 2.6 秒后自动翻到答案页 —— 孩子正要点下一题,画面自己跳走了
         showNext(true);
         praise(randPraise());
       }else{
+        if(!pScored){ pScored = true; revMark(c, false); pRetryPush(c); }
         b.classList.add("wrong");
         document.getElementById("pResult").textContent = "🤔";
         SFX.wrong();
@@ -2225,6 +2298,8 @@ function showNext(gotStar){
 function reveal(gotStar){
   if(pRevealed) return;
   pRevealed = true;
+  // 没答就直接看答案 = 不会,复习账记"错"(答对后再看答案时 pScored 已置,不会重记)
+  if(!pScored){ pScored = true; revMark(curCard(), false); pRetryPush(curCard()); }
   const qa = curQA();
   const ch = document.getElementById("ansChips");
   if(ch) ch.style.display = "none";
@@ -2254,6 +2329,15 @@ function doneStatHTML(){
   if(doneStat.streak >= 2) h += `<div class="done-streak">🔥 连续打卡 ${doneStat.streak} 天</div>`;
   return h;
 }
+/* 复习专属的一行:这一轮碰了几个词、其中几个回炉过。
+   报的是**卡**数不是问数 —— 复习每张卡只有一问,对家长来说"复习了 10 个词"
+   比"做了 11 问"直白。回炉 0 就不提,免得没错的那天也惦记着"回炉"俩字。*/
+function reviewDoneStatHTML(){
+  if(CUR_ID !== "review") return "";
+  var n = pOrder.length - pRetryN;
+  return `<div class="done-stat">复习 ${n} 词` +
+         (pRetryN ? ` · 回炉 ${pRetryN} 词` : ``) + `</div>`;
+}
 function doneActsHTML(again){
   const hasNext = LESSON_AT >= 0 && LESSON_AT + 1 < LESSON_ORDER.length;
   return `<div class="done-acts">` +
@@ -2261,6 +2345,20 @@ function doneActsHTML(again){
     (hasNext ? `<button class="big-btn" onclick="gotoLesson(1)">下一课 ➜</button>` : ``) +
     `<a class="big-btn ghost" href="index.html">回目录</a>` +
     `</div>`;
+}
+
+/* 复习的「再来一轮」= 重新调度一次,不是把刚才那 10 张再考一遍:
+   上一轮的账已经记了 —— 答对的升盒退场、答错的降盒还在高频区 ——
+   重抽自然以错题和新卡为主,多轮递进是调度器白送的性质。
+   只换 lesson 和学一学的卡列表,不走 applyLesson:它会把星罐清回 0(review
+   的星罐是"这次进来攒了多少",孩子看着清零会以为白玩了)。
+   重抽失败(断网)就拿现有这批再来,别让按钮点了没反应。 */
+async function reviewAgain(){
+  try{
+    lesson = await buildReviewLesson();
+    renderLearn();
+  }catch(e){}
+  startPractice();
 }
 
 function finishPractice(){
@@ -2277,7 +2375,8 @@ function renderPracticeDone(){
       <div class="big">🏆</div>
       问答闯关完成！
       ${doneStatHTML()}
-      ${doneActsHTML("startPractice()")}
+      ${reviewDoneStatHTML()}
+      ${doneActsHTML(CUR_ID === "review" ? "reviewAgain()" : "startPractice()")}
     </div>`;
   celebrate(pbox, function(){
     playOne("You did it! Amazing!", "q",
@@ -2796,24 +2895,108 @@ addEventListener("pointerup", e => {
 }, true);
 
 /* 混合复习:把各课的卡片凑成一节临时的课。
-   打卡最需要的是螺旋复现 —— 学完一课就再也不碰,等于没学。每节课抽 1-2 张卡,
-   ROUND_MAX 再从中抽一轮,所以每次进来题目都不一样,而且干扰项来自别的课,
-   比课内复习难一档。卡里的图和音频路径本来就相对 lessons/,混着用不用改写。 */
-async function buildReviewLesson(perLesson = 2){
+   打卡最需要的是螺旋复现 —— 学完一课就再也不碰,等于没学。
+   凑法不再是"每课均匀抽两张"(卡池只会越加课越稀,单卡一个多月才轮到一次,
+   错过的卡也不会更常出现),改成按复习账本调度(轻量 Leitner,见 revStore):
+   一轮 REVIEW_ROUND 张卡,配额 6 到期 + 2 新卡 + 2 巩固,不足向后借位;
+   到期卡按"逾期天数 + 错次"加权随机 —— 拖得越久、错得越多,越优先。
+   每卡只留一问:复习是抽查,覆盖面优先;课内闯关才是一卡连问的教学。
+   同课最多 2 张、排列尽量不同课相邻:干扰项跨课已是交错练习,题序也交错。
+   卡里的图和音频路径本来就相对 lessons/,混着用不用改写。 */
+const REVIEW_ROUND = 10;      // 复习一轮的卡数(每卡一问)。比课内 12 短:这是叠在新课上的第二任务
+const REV_PER_LESSON = 2;     // 一轮里同一课最多几张
+
+async function buildReviewLesson(){
   const idx = await (await fetch(LESSON_BASE + "index.json", {cache:"no-store"})).json();
-  const all = await Promise.all((idx.lessons || []).map(l =>
+  const metas = idx.lessons || [];
+  const all = await Promise.all(metas.map(l =>
     fetch(LESSON_BASE + l.id + ".json").then(r => r.ok ? r.json() : null).catch(()=>null)));
-  const cards = [], word_audio = {}, praise_audio = {};
-  all.filter(Boolean).forEach(d => {
+  const pool = [], word_audio = {}, praise_audio = {};
+  all.forEach((d, i) => {
+    if(!d) return;
     Object.assign(word_audio, d.word_audio || {});
     Object.assign(praise_audio, d.praise_audio || {});
-    // 优先挑出得了题的卡;一张都没有的课(整课都是虚词)退而取全部,至少能学一学
-    const pool = d.cards.filter(c => c.quiz !== false && (c.image || c.eq || c.emoji));
-    const pick = (pool.length ? pool : d.cards).slice().sort(()=>Math.random()-0.5);
-    cards.push(...pick.slice(0, perLesson));
+    (d.cards || []).forEach(c => {
+      const qs = askable(c);
+      if(!qs.length) return;                   // 闯不了关的卡进不了复习池
+      // 每卡只留一问:选中的保持原引用,其余克隆成 practice:false ——
+      // 学一学照常显示全部对话(practice 只管闯关),原课程数据一个字不动
+      const keep = qs[Math.floor(Math.random() * qs.length)];
+      const dialog = (c.dialog || []).map(t =>
+        (t === keep || t.practice === false) ? t : Object.assign({}, t, {practice: false}));
+      pool.push(Object.assign({}, c, {dialog: dialog, _src: metas[i].id}));
+    });
   });
-  return {title: "混合复习 · 各课随机抽题", cards: cards.sort(()=>Math.random()-0.5),
-          word_audio, praise_audio};
+  return {title: "混合复习 · 各课随机抽题", cards: pickReviewRound(pool),
+          word_audio, praise_audio, ordered: true};
+}
+
+function pickReviewRound(pool){
+  var o = revStore.load(), t = today();
+  var due = [], fresh = [], rest = [];
+  pool.forEach(function(c){
+    if(!o[revKey(c)]){ fresh.push(c); return; } // 没进过账 = 新卡
+    var r = revRec(o, revKey(c));
+    (dayDiff(r.t, t) >= REV_GAP[r.b] ? due : rest).push(c);
+  });
+  // 巩固桶:没到期但盒号低的优先(昨天刚错过的,多见一面有益);同盒之间随机
+  rest = shuffle(rest).sort(function(a, b){
+    return revRec(o, revKey(a)).b - revRec(o, revKey(b)).b;
+  });
+  fresh = shuffle(fresh);
+  var dueW = function(c){
+    var r = revRec(o, revKey(c));
+    return 1 + Math.min(dayDiff(r.t, t) - REV_GAP[r.b], 7) + 2 * r.w;
+  };
+  var perLesson = {}, out = [];
+  takeWeighted(out, due, dueW, 6, perLesson);
+  takePlain(out, fresh, 2, perLesson);
+  takePlain(out, rest, 2, perLesson);
+  // 借位补齐:到期 → 新卡 → 巩固,谁还有就再从谁那儿拿。
+  // 刚开始用时全池都是新卡,自然整轮新卡 —— 不需要冷启动特判
+  takeWeighted(out, due, dueW, REVIEW_ROUND - out.length, perLesson);
+  takePlain(out, fresh, REVIEW_ROUND - out.length, perLesson);
+  takePlain(out, rest, REVIEW_ROUND - out.length, perLesson);
+  return arrangeReview(out);
+}
+/* 从 cands 头部按序取 n 张(cands 已按优先级排好),同课超上限的跳过。
+   取走的从 cands 里删掉 —— 借位那几轮接着从剩下的里拿 */
+function takePlain(out, cands, n, perLesson){
+  while(n > 0 && cands.length){
+    var c = cands.splice(0, 1)[0];
+    if((perLesson[c._src] || 0) >= REV_PER_LESSON) continue;
+    perLesson[c._src] = (perLesson[c._src] || 0) + 1;
+    out.push(c); n--;
+  }
+}
+/* 加权随机取 n 张(不放回)。加权而不是硬排序:该多考的多考,但保留一点惊喜感 */
+function takeWeighted(out, cands, wOf, n, perLesson){
+  while(n > 0 && cands.length){
+    var tot = 0, ws = cands.map(function(c){
+      var w = wOf(c);
+      w = (typeof w === "number" && isFinite(w) && w > 0) ? w : .01;
+      tot += w; return w;
+    });
+    var r = Math.random() * tot, at = cands.length - 1;
+    for(var i = 0; i < ws.length; i++){ r -= ws[i]; if(r <= 0){ at = i; break; } }
+    var c = cands.splice(at, 1)[0];
+    if((perLesson[c._src] || 0) >= REV_PER_LESSON) continue;
+    perLesson[c._src] = (perLesson[c._src] || 0) + 1;
+    out.push(c); n--;
+  }
+}
+/* 排题序:洗一遍再贪心 —— 每次挑第一张和上一张不同课的,挑不到才容忍相邻 */
+function arrangeReview(cards){
+  var rem = shuffle(cards), out = [];
+  while(rem.length){
+    var at = -1;
+    for(var i = 0; i < rem.length; i++){
+      if(!out.length || rem[i]._src !== out[out.length - 1]._src){ at = i; break; }
+    }
+    if(at < 0) at = 0;
+    out.push(rem.splice(at, 1)[0]);
+  }
+  return out;
 }
 
 /* 样例课的内嵌图:只在真的要用 FALLBACK_LESSON 时才去下 preview-img.js(436KB)。
@@ -2868,6 +3051,9 @@ function fillPreviewImages(){
   }catch(e){}
   history.replaceState({lesson:id}, "", location.href);
   applyLesson();
+  // 复习默认落在闯关:复习的第一动作应该是"考",不是翻卡重读(测试效应)。
+  // 学一学页签仍在,想翻随时切。走 showPage 不走 tapPage —— 这不是孩子按的页签
+  if(id === "review") showPage("practice", true);
 })();
 </script>
 </body>
