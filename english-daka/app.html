@@ -61,9 +61,11 @@
        吸顶条底下那道黑边比页面上任何一张卡都重 */
     box-shadow:0 8px 14px -10px rgba(43,58,85,.22);
   }
+  /* 纵向 padding/gap 比原来紧一档(8/8/11 → 6/6/8):页签合成分段控件后,
+     容器自己多了一圈 2px 边框 + 3px 内衬(见 .tabs),不收一收整条顶栏反而变高 */
   .topbar-in{
-    max-width:520px;margin:0 auto;padding:8px 14px 11px;
-    display:flex;flex-direction:column;gap:8px;
+    max-width:520px;margin:0 auto;padding:6px 14px 8px;
+    display:flex;flex-direction:column;gap:6px;
   }
   /* gap 8 而不是 10:一行要塞下 back(48)+navbtn(48)+标题+navbtn(48)+星罐,
      375px 屏上 10px 的间距会把标题挤没 */
@@ -80,38 +82,54 @@
      整条 bar 会溢出、把吸顶条撑得能横滚。所以下限只在 361px 以上生效,
      再窄就退回"能压多小压多小"(那种屏上标题本来也读不成句) */
   @media (max-width:360px){ .lesson-title{min-width:0;} }
-  /* 星罐:白底细边,和顶栏里的返回/上下课按钮同一套外观。
-     原来是黄底黄框 —— 顶栏一行里就有了两处黄色高亮(星罐 + 选中的页签),
-     "现在在哪一栏"这条唯一该抢眼的信息被稀释了。星星本身是金色的 i-star,
-     识别度已经够,罐子不必再染色 */
+  /* 星罐:白底细边。原来是黄底黄框 —— 顶栏一行里就有了两处黄色高亮
+     (星罐 + 选中的页签),"现在在哪一栏"这条唯一该抢眼的信息被稀释了。
+     星星本身是金色的 i-star,识别度已经够,罐子不必再染色。
+     ⚠️ 返回/上下课钮已经去壳(见下),这一行现在是顶栏里**唯一**还带描边的
+     小块 —— 它不是按钮,是个读数,留一圈边正好把它和旁边的图标钮分开 */
   .star-jar{
     flex:none;display:inline-flex;align-items:center;gap:5px;
     background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:999px;
     padding:6px 12px;font-size:16px;font-weight:800;
   }
-  .back,.tab{
-    border:2px solid var(--line);border-radius:14px;background:#fff;
-    font-size:15px;font-weight:800;color:var(--ink);min-height:48px;
-    box-shadow:var(--shadow);cursor:pointer;transition:transform var(--dur-fast,.15s);
+  /* 返回 / 上一课 / 下一课都去壳:一条顶栏原来并排 6 个白底描边投影块,
+     壳的视觉重量比里面的图标还大。只留图标 + 48×48 热区(热区是不能缩的,
+     壳没了也照样是 48)。没有底色可以"沉"下去了,按压反馈改成压透明度 ——
+     和下面的 .tab 一个口径 */
+  .back,.navbtn{
+    flex:none;width:48px;height:48px;padding:0;
+    border:none;background:none;box-shadow:none;cursor:pointer;
     display:flex;align-items:center;justify-content:center;
+    transition:opacity var(--dur-fast,.15s);
   }
-  .back{flex:none;width:48px;height:48px;font-size:22px;text-decoration:none;}
+  .back{font-size:22px;font-weight:800;color:var(--ink,#2B3A55);text-decoration:none;}
   /* 上一课/下一课:整页左右滑也能切,但按钮要在,否则孩子发现不了这个手势 */
-  .navbtn{
-    flex:none;width:48px;height:48px;font-size:26px;line-height:1;padding:0;
-    border:2px solid var(--line);border-radius:14px;background:#fff;
-    font-weight:900;color:var(--blue);box-shadow:var(--shadow);cursor:pointer;
-    display:flex;align-items:center;justify-content:center;transition:transform var(--dur-fast,.15s);
+  .navbtn{font-size:26px;line-height:1;font-weight:900;color:var(--blue,#3E8BFF);}
+  .navbtn:disabled{opacity:.3;cursor:default;}
+  .back:active,.navbtn:not(:disabled):active{opacity:.5;}
+  /* 分段控件:三个页签共用**一个**盒子,边框/白底/投影只画在容器上,
+     里面靠"选中的那块有黄底"区分。原来是三张各自描边投影的独立卡,
+     既没说清"这三个是一组、只能选一个",又把顶栏塞得满满当当 */
+  .tabs{
+    display:flex;gap:2px;
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
+    padding:3px;box-shadow:var(--shadow-sm,0 1px 4px rgba(43,58,85,.14));
   }
-  .navbtn:disabled{opacity:.3;box-shadow:none;cursor:default;}
-  .navbtn:not(:disabled):active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
-  .back:active,.tab:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
-  .tabs{display:flex;gap:8px;}
   /* 字号跟屏宽收,别让"问答闯关"在窄屏折成两行 */
   /* gap 而不是靠 HTML 里那个空格:.tab 是 flex 容器,图标和文案是两个 flex 项,
      它们之间那个纯空白文本节点不参与布局(会被丢掉),写了空格也是贴在一起 */
-  .tab{flex:1;padding:0 2px;white-space:nowrap;font-size:clamp(13px, 3.6vw, 15px);gap:.35em;}
-  .tab.on{background:var(--yellow);}
+  /* 圆角比容器小一档(16-3 内衬 ≈ 13,取 12):选中块的圆弧要贴着容器内壁走 */
+  .tab{
+    flex:1;padding:0 2px;min-height:44px;
+    border:none;background:none;box-shadow:none;border-radius:12px;
+    font-size:clamp(13px, 3.6vw, 15px);font-weight:800;color:var(--ink,#2B3A55);
+    white-space:nowrap;gap:.35em;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    transition:background var(--dur-fast,.15s) var(--ease-out,ease),
+               opacity var(--dur-fast,.15s);
+  }
+  .tab.on{background:var(--yellow,#FFC53D);}
+  .tab:active{opacity:.5;}
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
   .page{display:none;padding:0 14px;max-width:520px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
@@ -161,15 +179,15 @@
   .lhead .eq{font-size:14px;}
   .lhead .word{font-size:19px;font-weight:800;line-height:1.25;}
   .lhead .cn{font-size:12px;color:#5E6E8C;margin-top:2px;}
-  .lhead .tag{
+  /* 只剩「复习」这一种标记 —— 原课件字母课里夹的复习页(颜色/数数),
+     内容留着,但标出来别和本课主线混。
+     word/letter/sight/sign 那几个英文类型胶囊已删:孩子不认字,家长也不需要
+     在每张卡上被告知"这是个 sight word",它只是给每一行加了一块彩色噪点 */
+  .lhead .tag.review{
     margin-left:auto;font-size:10px;font-weight:700;color:#fff;
+    background:var(--green,#4CC26E);
     border-radius:999px;padding:3px 9px;white-space:nowrap;
   }
-  .tag{background:var(--purple);}
-  .tag.sight{background:var(--pink);}
-  .tag.sign{background:var(--blue);}
-  /* 原课件字母课里夹的复习页(颜色/数数),内容留着,但标出来别和本课主线混 */
-  .tag.review{background:var(--green,#4CAF7D);}
   /* 展开/收起走 grid-template-rows 0fr→1fr:高度是内容撑出来的,不用 JS 量高。
      ⚠️ 三件套缺一不可 —— 外层 display:grid、内层 min-height:0 + overflow:hidden,
      少一个就折不平。不支持过渡 grid 的老内核(Safari 16 以前)照样能 0fr/1fr
@@ -189,12 +207,15 @@
     transition:padding var(--dur-slow) var(--ease-out);
   }
   .lcard.open .dialog-in{padding:10px 4px 4px;}
-  /* 展开指示角标:卡片头看不出"这里能点开",一个会转的角标就够了 */
+  /* 展开指示角标:卡片头看不出"这里能点开",一个会转的角标就够了。
+     margin-left:auto —— 以前是类型标签把自己和角标一起顶到右边的,标签删了
+     角标得自己撑;还带着「复习」标记的卡由标记接管撑开,角标贴着它(下一条) */
   .lhead .chev{
-    flex:none;margin-left:6px;font-size:20px;font-weight:900;line-height:1;
+    flex:none;margin-left:auto;font-size:20px;font-weight:900;line-height:1;
     color:var(--muted,#5E6E8C);
     transition:transform var(--dur-base) var(--ease-out);
   }
+  .lhead .tag.review + .chev{margin-left:6px;}
   .lcard.open .lhead .chev{transform:rotate(90deg);}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
@@ -234,13 +255,16 @@
   .dialog .pic{margin-top:10px;}
 
   /* ===== 气泡:句级 + 词级点读 ===== */
+  /* 气泡是纯信息展示,不是能按的控件 —— 2px 彩色描边是留给交互件的语言
+     (.opt/.ans-chip 靠 border-color 报对错,.pic 的边是画框)。
+     这里去掉边框只留底色,底色相应加深半档:没有边界线兜着,原来那两个
+     很浅的底在白卡上会散成一片。padding 补回被边框吃掉的 2px,块的大小不变 */
   .bubble{
-    max-width:88%;padding:9px 12px;border-radius:16px;
+    max-width:88%;padding:11px 14px;border-radius:16px;
     font-size:16px;font-weight:600;line-height:1.55;margin-top:9px;
-    border:2px solid var(--line);
   }
-  .bubble.q{background:#FFF1E0;border-color:var(--orange);border-bottom-left-radius:4px;margin-right:auto;}
-  .bubble.a{background:#E7F0FF;border-color:var(--blue);border-bottom-right-radius:4px;margin-left:auto;}
+  .bubble.q{background:#FFE8CE;border-bottom-left-radius:4px;margin-right:auto;}
+  .bubble.a{background:#DCE8FF;border-bottom-right-radius:4px;margin-left:auto;}
   .bubble .who{font-size:10px;color:#5E6E8C;font-weight:700;display:block;margin-bottom:4px;}
   /* 角色标签只有 10px,图标按 1em 就是 10px —— 机器人的天线和眼睛在那个尺寸下糊成一团。
      放到 1.3em(13px)并把基线相应压下去,和旁边的字仍在一条线上 */
@@ -872,6 +896,27 @@ function markCoach(k){
     var o = s ? JSON.parse(s) : null;
     if(!o || typeof o !== "object") o = {};
     o[k] = 1;
+    localStorage.setItem(COACH_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+/* 同一个键下的**计数**槽位(目前只有 learnHint):有些提示不是"演一次就够",
+   而是"看两次就记住了"。和布尔槽位互不干扰 —— 键名不同,coachDone 对数字
+   也照样判真,两套读法不会打架。
+   ⚠️ 读不到(隐私模式抛错)返回 Infinity = "早看够了",和 coachDone 返回 true
+   是同一个取舍:存不住计数的浏览器里,每次进页面都摆一遍比不摆更烦人 */
+function coachCount(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    return (o && typeof o === "object" && +o[k]) || 0;
+  }catch(e){ return Infinity; }
+}
+function bumpCoach(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    if(!o || typeof o !== "object") o = {};
+    o[k] = (+o[k] || 0) + 1;
     localStorage.setItem(COACH_KEY, JSON.stringify(o));
   }catch(e){}
 }
@@ -1621,8 +1666,11 @@ function makeBubble(role, qa){
 /* ================================================================
    学一学:点开卡片看对话,不自动播,句句可点、词词可点
    ================================================================ */
-const TAG_CLASS = {"sight word":"tag sight", sign:"tag sign", review:"tag review"};
-function tagClass(t){ return TAG_CLASS[t] || "tag"; }
+/* 卡片头的类型胶囊只剩「复习」一种:课程数据里的 tag 还有 word/letter/sight
+   word/sign/CVC/number/science 等等,但那些是给做课件的人看的分类,渲染到每张卡上
+   只是一行行彩色噪点。review 不一样 —— 它标的是"这一页不是本课主线"(原课件字母课里
+   夹的颜色/数数复习页),家长需要这条信息,所以留着,并且用中文说 */
+function tagHTML(t){ return t === "review" ? `<span class="tag review">复习</span>` : ``; }
 /* 卡片算式("9-1" / "0")→ 彩色数字块,替代渲染不可控的 keycap emoji */
 function eqHTML(eq){
   return `<span class="eq">` +
@@ -2000,7 +2048,7 @@ function renderLearn(){
                 : c.eq ? eqHTML(c.eq)
                 : `<span class="emoji">${c.emoji||"⬜"}</span>`}</span>
       <div><div class="word">${c.word}</div><div class="cn">${c.cn||""}</div></div>
-      <span class="${tagClass(c.tag)}">${c.tag||"word"}</span>
+      ${tagHTML(c.tag)}
       <span class="chev" aria-hidden="true">›</span>`;
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
@@ -2054,7 +2102,9 @@ function renderLearn(){
       e.stopPropagation();
       playWord(c.word.toLowerCase());
     };
-    head.insertBefore(wordPlay, head.querySelector(".tag"));
+    // 插在"右侧那一组"之前:大多数卡已经没有标签了,锚点退回角标
+    // (querySelector 按文档顺序返回第一个命中,有标签时仍是标签)
+    head.insertBefore(wordPlay, head.querySelector(".tag, .chev"));
     d.appendChild(head);
 
     // 空壳:只建 grid 容器和它唯一的子元素,内容留到首次展开(见 ensureDialog)
@@ -2435,10 +2485,16 @@ function reviewDoneStatHTML(){
   return `<div class="done-stat">复习 ${n} 词` +
          (pRetryN ? ` · 回炉 ${pRetryN} 词` : ``) + `</div>`;
 }
+/* 三个出口只该有**一个**主按钮:原来「再来一轮」和「下一课」都是绿色,
+   一页两个同样重的绿胶囊,等于没给建议。做完一课的默认下一步是往前走,
+   所以主按钮是「下一课」,「再来一轮」降成白底描边(min-height/min-width 由
+   .done-acts .big-btn 管,降级不影响热区)。
+   ⚠️ 没有下一课时(最后一课 / 混合复习 / index.json 没取到)「再来一轮」就是
+   唯一的前进动作,得升回绿色 —— 否则整页一个绿点都没有,看不出该点哪 */
 function doneActsHTML(again){
   const hasNext = LESSON_AT >= 0 && LESSON_AT + 1 < LESSON_ORDER.length;
   return `<div class="done-acts">` +
-    `<button class="big-btn" onclick="${again}">再来一轮</button>` +
+    `<button class="big-btn${hasNext ? " ghost" : ""}" onclick="${again}">再来一轮</button>` +
     (hasNext ? `<button class="big-btn" onclick="gotoLesson(1)">下一课 ➜</button>` : ``) +
     `<a class="big-btn ghost" href="index.html">回目录</a>` +
     `</div>`;
@@ -2767,11 +2823,12 @@ function applyLesson(){
   tabDone = {practice:false, quiz:false};   // 换课要清勾,不然新课一进来就是做完的
   paintTabDone();
   document.getElementById("lessonTitle").textContent = lesson.title;
-  const hint = document.getElementById("learnHint");
   // 提示行以图标为主、尽量短:整行字对孩子是看不懂的,长了连家长也不读。
   // 图标要和句子行上的两个圆钮对得上(喇叭=听、眼睛=翻译),那边换了这边就得跟着换。
   // 走 innerHTML 是因为要塞图标;拼进去的全是本文件的常量,无注入风险
-  hint.innerHTML = lesson.audio_mode === "word"
+  // 前 2 次之后这一行已经被 init 从 DOM 里摘掉了(见那儿的注释),所以要判空
+  const hint = document.getElementById("learnHint");
+  if(hint) hint.innerHTML = lesson.audio_mode === "word"
     ? IC_SPEAKER + " 点词听词 · 按住看意思"
     : lesson.cards.some(c => c.phonics)
       ? IC_SPEAKER + " 点字母听纯音 · 跟读3个音 · 再读整词"
@@ -3119,6 +3176,16 @@ function fillPreviewImages(){
 }
 
 (async function init(){
+  /* 学一学那条说明行("点句听句 · 点词听词 · 按住看意思")是给家长看的一次性说明:
+     看懂了就该让位,常驻等于每天在内容上方永久占一行。前 2 次进课程页显示,
+     之后整行从 DOM 里摘掉(不是藏起来 —— 藏起来仍占位)。
+     按**页面加载**计数,所以放在 init 的第一句(await 之前,同步跑完,不会先闪一下):
+     换课走的是 applyLesson,那条路不该算成新的一次。 */
+  if(coachCount("learnHint") < 2) bumpCoach("learnHint");
+  else{
+    const h = document.getElementById("learnHint");
+    if(h) h.remove();
+  }
   const id = new URLSearchParams(location.search).get("lesson");
   CUR_ID = id;                   // 没带 ?lesson= 时是 null:预览课不记账
   lesson = FALLBACK_LESSON;
