@@ -3002,11 +3002,14 @@ function prefetchAudio(){
   function batch(){
     if(gen !== lessonGen) return;               // 换课了,剩下的不排了
     for(var n = 0; n < 4 && at < list.length; n++){
+      /* ⚠️ 用 fetch 不用 new Audio():媒体元素哪怕只是 preload 也会触碰
+         系统音频栈,蓝牙音箱/耳机上每一批都"戳"一下解码通道 —— 进课后
+         听得到一串跟着 300ms 节拍的轻微"嗯嗒"声(实测点名,节奏和这里的
+         批处理完全对上)。fetch 只走网络层,同样把文件暖进 HTTP 缓存
+         (开着 SW 时还会顺手落进 CacheStorage,离线直接受益),不碰声卡。 */
       try{
-        var a = new Audio();
-        a.preload = "auto";
-        a.src = LESSON_BASE + list[at++];
-      }catch(e){ at++; }
+        fetch(LESSON_BASE + list[at++], {credentials:"same-origin"}).catch(function(){});
+      }catch(e){}
     }
     if(at < list.length) setTimeout(batch, 300);
   }
