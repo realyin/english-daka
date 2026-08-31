@@ -845,7 +845,11 @@ let lesson = null;
 
 /* ================================================================
    进度存档 —— localStorage 单键 "daka.v1"
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
+     dayStars:{"YYYY-MM-DD":n}, last:{lesson,at} }
+   ⚠️ dayStars 是后加的字段(给目录页的打卡日历分深浅用):**旧存档里没有它**,
+   load() 一律补成空对象 —— 少写这一条,老用户一进来就是 undefined 上取属性,
+   整页白屏。同理,读它的地方永远要当"可能没有这一天"来写。
    ⚠️ 隐私模式 / 关了站点数据的浏览器,连 localStorage 这个属性都可能直接抛,
    所以每一次读写都各自包 try/catch,失败就静默退回"不记账"的老行为 —— 打卡
    记不住是遗憾,页面白屏是事故。
@@ -869,6 +873,9 @@ var store = {
     if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
     if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
     if(!(o.days instanceof Array)) o.days = [];
+    // 数组也是 object,所以要单独挡一下:老存档里万一存成了数组,
+    // 后面 dayStars[key] += n 会往数组上挂字符串下标,存出去就是个怪东西
+    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -978,12 +985,28 @@ function rec4(o, id){                          // 取/建某课的记录
   o.lessons[id] = r;
   return r;
 }
-function markToday(o){                         // 今天并进打卡日,去重升序,只留最近 60 天
+/* 打卡日保留多少条。原来是 60 —— 那时候只有目录页的"最近 7 天"要用它,
+   留两个月绰绰有余。现在目录页的打卡日历要画**全程**,60 条等于最多两个月,
+   "坚持了一年"这件事根本存不下来,所以放宽到 1200 天(三年多)。
+   字符串日期一条 11 字节,1200 条连 dayStars 一起也就 40KB 上下,
+   离 localStorage 的 5MB 还差两个数量级。 */
+var KEEP_DAYS = 1200;
+function markToday(o){                         // 今天并进打卡日,去重升序,只留最近 KEEP_DAYS 天
   var t = today();
   if(o.days.indexOf(t) < 0){
     o.days.push(t);
     o.days.sort();
-    if(o.days.length > 60) o.days = o.days.slice(o.days.length - 60);
+    if(o.days.length > KEEP_DAYS){
+      o.days = o.days.slice(o.days.length - KEEP_DAYS);
+      // dayStars 必须跟着 days 一起裁:它是按天累加的,不裁就会无限长大,
+      // 而且裁剩的日子在日历上根本画不出来,留着也没人看
+      var keep = {}, i, k;
+      for(i = 0; i < o.days.length; i++){
+        k = o.days[i];
+        if(typeof o.dayStars[k] === "number") keep[k] = o.dayStars[k];
+      }
+      o.dayStars = keep;
+    }
   }
 }
 /* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
@@ -1013,6 +1036,14 @@ function addStars(n){
   if(!CUR_ID) return;
   var o = store.load();
   o.total = o.total + n;
+  /* 记一笔"今天挣了多少星" —— 目录页的打卡日历靠它给格子分深浅:
+     光有"来没来"只能画出两种颜色,分了深浅才看得出哪天是真的学了一大段。
+     ⚠️ 这里是全站唯一的星星入账口(星罐动画那条路最后也落到这个函数),
+     记在这一处就不会漏;将来要是又多出一条加星的路,也必须收到这里来。
+     ⚠️ 和 o.total 一样只在 CUR_ID 存在时记(上面已经 return 过):
+     没带 ?lesson= 的预览课不写任何存档。 */
+  var t = today();
+  o.dayStars[t] = (typeof o.dayStars[t] === "number" ? o.dayStars[t] : 0) + n;
   if(CUR_ID !== "review") rec4(o, CUR_ID).stars += n;
   store.save(o);
 }
