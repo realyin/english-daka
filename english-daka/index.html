@@ -186,16 +186,21 @@
      空心变实心是他能自己看懂的唯一"进度"。
      它住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
      全部去掉,只留内部那条 flex 行 —— 卡中卡会多出一圈没有意义的描边。
-     现在和 h1 同排:flex:1 吃掉标题右边剩下的宽度,justify-content:flex-end
-     把"点阵 + 连胜"整组贴到卡的右缘 —— 和下面按钮行的右缘对成一条线。
-     窄屏 wrap 到第二行时仍然靠右,和左上角的标题形成对角平衡。
-     min-height:44px:整条现在是可点的(开打卡日历),要够儿童手指的热区;
-     左右负 margin 抵掉 padding —— 悬停底色能铺得比内容宽一点,
-     但点阵和连胜的位置和加热区之前一模一样 */
+     现在和 h1 同排:宽度只包住内容("点阵 + 连胜"是一组),margin-left:auto
+     把整组推到卡的右缘 —— 同排时贴右,窄屏 wrap 到第二行时照样贴右,
+     和左上角的标题形成对角平衡。
+     ⚠️ 不要回到 flex:1 吃满剩余宽度的写法:悬停底色会跟着铺满标题到
+     点阵之间整条空白,看着像一根莫名其妙的长条(家长实测点名)。
+     min-height:44px:整条是可点的(开打卡日历),要够儿童手指的热区;
+     右侧负 margin 抵掉 padding —— 悬停底色比内容宽一点,点阵位置不动。
+     自身允许 wrap:连胜攒到三位数("🔥 365 天")、又赶上 320px 窄屏时,
+     连胜自己折到点阵下面一行,而不是把整条撑出卡外 */
   .checkin{
-    flex:1 1 auto;min-width:0;
-    display:flex;align-items:center;justify-content:flex-end;gap:var(--sp-2,12px);
-    min-height:44px;padding:0 var(--sp-1,8px);margin:0 calc(var(--sp-1,8px) * -1);
+    margin-left:auto;flex:0 1 auto;min-width:0;
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;
+    gap:var(--sp-1,8px) var(--sp-2,12px);
+    min-height:44px;padding:4px var(--sp-1,8px);
+    margin-right:calc(var(--sp-1,8px) * -1);
     border-radius:14px;cursor:pointer;
     transition:background var(--dur-fast,.15s) var(--ease-out,ease);
   }
