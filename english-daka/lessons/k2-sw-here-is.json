@@ -98,7 +98,7 @@
     {
       "word": "pilot",
       "cn": "飞行员",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-is-pilot.webp",
       "dialog": [
         {
@@ -124,7 +124,7 @@
     {
       "word": "circle",
       "cn": "圆形",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-is-circle.webp",
       "dialog": [
         {
@@ -150,7 +150,7 @@
     {
       "word": "summer",
       "cn": "夏天",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-is-summer.webp",
       "dialog": [
         {

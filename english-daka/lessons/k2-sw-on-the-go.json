@@ -96,9 +96,9 @@
       "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-on-bcec31.mp3"
     },
     {
-      "word": "box",
-      "cn": "盒子",
-      "tag": "sight word",
+      "word": "fox",
+      "cn": "狐狸",
+      "tag": "word",
       "image": "images/o-fox-box-on.webp",
       "dialog": [
         {
@@ -119,38 +119,12 @@
           ]
         }
       ],
-      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-box-95852a.mp3"
-    },
-    {
-      "word": "elephant",
-      "cn": "大象",
-      "tag": "sight word",
-      "image": "images/sw-on-elephant.webp",
-      "dialog": [
-        {
-          "q": "Which animal has the longest nose?",
-          "a": [
-            "The elephant has the longest nose."
-          ],
-          "key": [
-            "elephant"
-          ],
-          "q_cn": "哪种动物的鼻子最长？",
-          "a_cn": [
-            "大象的鼻子最长。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-on-the-go/q-which-animal-has-the-longest-nose-0299c8.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-on-the-go/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-elephant-09f7c9.mp3"
+      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-fox-899921.mp3"
     },
     {
       "word": "cow",
       "cn": "奶牛",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-on-farm-cow.webp",
       "dialog": [
         {
@@ -176,7 +150,7 @@
     {
       "word": "book",
       "cn": "书",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/on-table-book.webp",
       "dialog": [
         {
@@ -202,7 +176,7 @@
     {
       "word": "snowman",
       "cn": "雪人",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-on-snowman.webp",
       "dialog": [
         {
@@ -228,7 +202,7 @@
     {
       "word": "Christmas",
       "cn": "圣诞节",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-on-holiday-christmas.webp",
       "dialog": [
         {
@@ -254,7 +228,7 @@
     {
       "word": "Easter egg",
       "cn": "复活节彩蛋",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-on-holiday-egg.webp",
       "dialog": [
         {
@@ -280,7 +254,7 @@
     {
       "word": "turkey",
       "cn": "火鸡",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-on-holiday-turkey.webp",
       "dialog": [
         {
@@ -390,7 +364,6 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "an": "audio/words/an.mp3",
-    "animal": "audio/words/animal.mp3",
     "book": "audio/words/book.mp3",
     "box": "audio/words/box.mp3",
     "build": "audio/words/build.mp3",
@@ -409,14 +382,12 @@
     "easter egg": "audio/words/easter-egg.mp3",
     "eat": "audio/words/eat.mp3",
     "egg": "audio/words/egg.mp3",
-    "elephant": "audio/words/elephant.mp3",
     "every": "audio/words/every.mp3",
     "farm": "audio/words/farm.mp3",
     "fat": "audio/words/fat.mp3",
     "fox": "audio/words/fox.mp3",
     "go": "audio/words/go.mp3",
     "goes": "audio/words/goes.mp3",
-    "has": "audio/words/has.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
     "hunt": "audio/words/hunt.mp3",
@@ -427,12 +398,10 @@
     "k": "audio/words/k.mp3",
     "live": "audio/words/live.mp3",
     "lives": "audio/words/lives.mp3",
-    "longest": "audio/words/longest.mp3",
     "m": "audio/words/m.mp3",
     "mat": "audio/words/mat.mp3",
     "merry": "audio/words/merry.mp3",
     "my": "audio/words/my.mp3",
-    "nose": "audio/words/nose.mp3",
     "on": "audio/words/on.mp3",
     "out": "audio/words/out.mp3",
     "s": "audio/words/s.mp3",
@@ -461,7 +430,6 @@
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
     "where's": "audio/words/where-s.mp3",
-    "which": "audio/words/which.mp3",
     "word": "audio/words/word.mp3",
     "work": "audio/words/work.mp3",
     "you": "audio/words/you.mp3",

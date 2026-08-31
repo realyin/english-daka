@@ -187,7 +187,7 @@
     {
       "id": "k2-sw-on-the-go",
       "title": "Sight Words · go / on",
-      "words": 11,
+      "words": 10,
       "group": "常见词 Sight Words",
       "badge": "go",
       "seq": 402
@@ -227,10 +227,9 @@
     {
       "id": "k2-zoo",
       "title": "At the Zoo · 动物园",
-      "words": 7,
+      "words": 8,
       "group": "主题 Topics",
       "badge": "🦁",
-      "cover": "images/cover-zoo.webp",
       "seq": 501
     },
     {
