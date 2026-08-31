@@ -1175,7 +1175,7 @@ let lessonGen = 0;
 
 /* ================================================================
    本轮答题快照 —— sessionStorage 单键 "daka.round"
-   { lesson, mode:"practice"|"quiz",
+   { lesson, mode:"practice"|"quiz", at:存盘毫秒时间戳(30 分钟外作废,见 restoreRound),
      practice:{cards:[卡在 lesson.cards 里的下标...], pc, pq},
      quiz:{items:[{ci,kind,qaIdx,pic}...], qi} }
    为什么要存:闯关/考一考一轮 12 问,中途手一滑换了课(或干脆刷新),
@@ -1204,14 +1204,20 @@ function roundWrite(o){
   }catch(e){}
 }
 function roundSnapshotOK(){ return !!CUR_ID && CUR_ID !== "review"; }
-/* 存:只覆盖 mode 那一半,另一半留着 —— 闯关做到一半跳去考一考,
-   两边的进度都该在 */
+/* 存:只覆盖 mode 那一半,另一半(若还在)留着。
+   at 是快照的救场时限:它只救"手滑换课/误刷新",不是隔天续考 ——
+   restoreRound 那头 30 分钟外按过期清。
+   ⚠️ 孩子亲手切页签离开进行中的一轮,视为"这轮先不玩了",
+   tapPage 会把那半快照弃掉 —— 快照劫持落地页曾是真实投诉:
+   sessionStorage 在一直不关的平板标签页里事实上永生,
+   三天前没做完的半轮考一考每次进课都往里拽,还没有任何放弃的出口。 */
 function saveRound(mode, data){
   if(!roundSnapshotOK()) return;
   var o = roundLoad();
   if(!o || o.lesson !== CUR_ID) o = {lesson: CUR_ID};
   o.mode = mode;
   o[mode] = data;
+  o.at = Date.now();
   roundWrite(o);
 }
 /* 清:一轮做完了就把这一半抹掉;两半都没了就把键删干净 */
@@ -2868,7 +2874,18 @@ function renderQuizDone(){
 /* 页签按钮走这里,不直接绑 showPage。showPage 还被 gotoLesson / popstate /
    init 调用 —— 那些是被动切页,响一声"点击"就成了页面自己在响。
    音效只挂在真的按下页签的这条路上。*/
-function tapPage(p){ SFX.tap(); showPage(p); }
+function tapPage(p){
+  SFX.tap();
+  // 孩子亲手切走 = 明说"这轮先不玩了":弃掉那个模式的快照,下次进课不再往回拽。
+  // 只清快照不动内存 —— 本次访问里切回去,题还停在原处;接着答,下一题会重新存上。
+  // 只在 tapPage 清:showPage 还被 gotoLesson/popstate/恢复调用,那些不是孩子的表态
+  var cur = ["learn","practice","quiz"][lastPageAt];
+  if(cur !== p){
+    if(cur === "practice" && pActive) clearRound("practice");
+    if(cur === "quiz" && qActive) clearRound("quiz");
+  }
+  showPage(p);
+}
 const PAGE_AT = {learn:0, practice:1, quiz:2};
 let lastPageAt = 0, pageAnimTimer = 0;
 function showPage(p, noAnim){
@@ -3026,7 +3043,12 @@ function applyLesson(){
 function restoreRound(){
   if(!roundSnapshotOK()) return;
   var s = roundLoad();
-  if(!s || s.lesson !== CUR_ID) return;
+  if(!s) return;
+  // 30 分钟没回来就不算"手滑",过期整份清掉(哪节课的都一样),
+  // 别让陈年半轮一直劫持进课落地页。没有 at 的是旧版快照,一并按过期算
+  if(!(typeof s.at === "number" && Date.now() - s.at < 30 * 60 * 1000))
+    return roundWrite(null);
+  if(s.lesson !== CUR_ID) return;
   if(s.mode === "practice" && s.practice) return resumePractice(s.practice);
   if(s.mode === "quiz" && s.quiz && document.getElementById("tabQuiz").style.display !== "none")
     return resumeQuiz(s.quiz);
