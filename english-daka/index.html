@@ -922,6 +922,10 @@ enableMouseDrag(calScroll);                      // 日历横滚同样藏了滚�
    不触发)这两种情况就各要一条兜底,而它们都是最容易漏测的 */
 function openCal(){
   if(!calMask || calMask.classList.contains("open")) return;
+  // 弹窗打开的这一刻重读存档:SAVE 是页面启动时的快照,而这一页经常是
+  // 从课程页"后退"回来的 —— bfcache 直接恢复旧页面,不重新执行脚本,
+  // 快照里就没有刚才在课程页挣的星星(实测:练了半天,总星星纹丝不动)
+  SAVE = store.load();
   renderCal();
   calMask.classList.add("open");
   // 读一次 offsetHeight 逼浏览器立刻把上面这行的样式算出来:
@@ -1259,6 +1263,49 @@ function renderWrongCount(){
   if(n > 0) el.textContent = "错题本 · " + n + " 个词在练";   // 0 个就保持素颜按钮,入口不藏
 }
 renderWrongCount();
+
+/* ================================================================
+   从课程页回来时刷新画面。这一页所有数字(打卡条、封面星角标、错题本
+   计数、日历统计)都是启动时按 SAVE 快照画的,但"后退"回目录经常走
+   bfcache —— 页面从内存里原样恢复,脚本不重跑,刚在课程页挣的星星
+   一颗都看不见(家长实测:总星星不会动)。两个钩子都要挂:
+   - pageshow(persisted):bfcache 恢复
+   - visibilitychange → visible:目录页和课程页开在两个标签页来回切
+   封面角标就地改文字,不重建货架(重建会丢横滚位置)。 */
+function updateCoverStars(){
+  document.querySelectorAll(".cover").forEach(a => {
+    const m = /[?&]lesson=([^&]+)/.exec(a.getAttribute("href") || "");
+    if(!m) return;
+    const rec = SAVE.lessons[decodeURIComponent(m[1])];
+    const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
+    if(got <= 0) return;
+    let tag = a.querySelector(".cover-stars");
+    if(!tag){
+      const art = a.querySelector(".art");
+      if(!art) return;
+      tag = document.createElement("span");
+      tag.className = "cover-stars";
+      tag.innerHTML = `<svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> `;
+      art.appendChild(tag);
+    }
+    // 只动数字,别整块重写(SVG 引用不必反复重建)
+    const want = String(got);
+    if(tag.lastChild && tag.lastChild.nodeType === 3) tag.lastChild.textContent = " " + want;
+    else tag.appendChild(document.createTextNode(" " + want));
+  });
+}
+function refreshFromStore(){
+  SAVE = store.load();
+  renderCheckin();
+  renderWrongCount();
+  updateCoverStars();
+  // 日历若恰好开着(平板分屏边练边看),重画统计
+  if(calMask && calMask.classList.contains("open")) renderCal();
+}
+addEventListener("pageshow", e => { if(e.persisted) refreshFromStore(); });
+document.addEventListener("visibilitychange", () => {
+  if(!document.hidden) refreshFromStore();
+});
 
 /* ================================================================
    「按课堂复习」:入口按钮 + 日期选择弹窗
