@@ -204,6 +204,17 @@
     border-radius:14px;cursor:pointer;
     transition:background var(--dur-fast,.15s) var(--ease-out,ease);
   }
+  /* 手机竖屏:标题和打卡条挤不进同一行,折行后右挂着、左边一大片空白,
+     看着像摆错了位置(实测点名)。窄屏改成独占一行铺满卡宽:七个点均匀
+     摊开、连胜收尾 —— 一条完整的"本周进度条",空白就成了呼吸而不是缺口 */
+  @media (max-width: 560px){
+    .checkin{
+      width:100%;flex-basis:100%;margin-left:0;margin-right:0;
+      flex-wrap:nowrap;justify-content:space-between;
+      padding:4px 2px;gap:var(--sp-2,12px);
+    }
+    .checkin-days{flex:1 1 auto;justify-content:space-between;gap:0;}
+  }
   .checkin:hover{background:#F4F8FE;}
   .checkin:active{background:#EAF1FC;}
   .checkin:focus-visible{outline:4px solid var(--blue);outline-offset:2px;}
