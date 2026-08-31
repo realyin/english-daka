@@ -1052,6 +1052,30 @@ function addStars(n){
   if(CUR_ID !== "review") rec4(o, CUR_ID).stars += n;
   store.save(o);
 }
+
+/* 学一学的打卡口径:当天展开听过 LEARN_MARK_N 张**不同的**卡就算打卡。
+   K2 的孩子"听"本身就是学习,原来只有答题得星才留记录,认真听半小时的
+   那天在日历上是空的(家长定的规则:3 张卡)。只记打卡日、不给星 ——
+   日历上这种天正好落在"打了卡但没星数"的最浅绿档,深色留给真答了题的天。
+   o.learnMark = {d:今天, cards:[已数过的卡], done:够了没}:按天自动重置,
+   done 之后既不再记也不再写存档;卡的去重键是 课程id:词,跨课不串。
+   ⚠️ 弹窗里写给家长看的规则文案(index.html 的 .cal-note)提到"3 张卡",
+   改这个数字要两处一起改 */
+var LEARN_MARK_N = 3;
+function noteLearnOpen(word){
+  if(!CUR_ID) return;                          // 预览课不写任何存档,口径同上
+  var o = store.load();
+  var t = today();
+  if(!o.learnMark || o.learnMark.d !== t) o.learnMark = {d: t, cards: [], done: false};
+  var lm = o.learnMark, key = CUR_ID + ":" + word;
+  if(lm.done || lm.cards.indexOf(key) >= 0) return;
+  lm.cards.push(key);
+  if(lm.cards.length >= LEARN_MARK_N){
+    lm.done = true; lm.cards = [];             // 攒够了,清单就没用了
+    markToday(o);
+  }
+  store.save(o);
+}
 /* 进课/换课时把星罐恢复成这一课的累计数,顺便记下"最近学的课" */
 function loadLessonProgress(){
   var o = store.load();
@@ -2114,6 +2138,8 @@ function renderLearn(){
       if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
       // 第一次真的展开一张卡时,顺带把"长按能查词"演示给大人看一次
       if(!wasOpen) coachPress(d);
+      // 学一学口径:展开的这张卡计入"今天听过几张"(见 noteLearnOpen)
+      if(!wasOpen) noteLearnOpen(String(c.word || c.cn || ""));
     };
     head.setAttribute("aria-expanded", "false");
     /* 回车/空格 = 点一下。空格必须 preventDefault:它在可聚焦元素上的默认行为
