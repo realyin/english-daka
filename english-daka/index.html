@@ -427,8 +427,14 @@
      每行撑满 —— 四个入口 2×2,奇数个时落单的那个自动铺满整行。
      曾试过 basis auto 的自然折行:三种内容宽度挤一排、长的又独占整条,
      每行宽窄参差(实测点名"不协调"),对称网格才稳定 */
-  /* > button 也要收进来:「按课堂复习」开的是弹窗不是链接,元素是 <button> */
-  .acts > a,.acts > button{flex:1 1 40%;min-width:0;white-space:nowrap;}
+  /* > button 也要收进来:「按课堂复习」开的是弹窗不是链接,元素是 <button>。
+     ⚠️ 高度/字号/内边距统一写死在这里,压过 .go-btn/.review-btn 各自的值
+     (选择器 0,1,1 > 0,1,0)—— 四个胶囊必须同宽同高同字号,主次只靠颜色分;
+     以前主按钮 52px/17px、次按钮 ~44px/15px,2×2 摆一起大小参差(实测点名) */
+  .acts > a,.acts > button{
+    flex:1 1 40%;min-width:0;white-space:nowrap;
+    min-height:52px;padding:12px 20px;font-size:16px;font-weight:900;line-height:1.25;
+  }
   /* 手机竖屏:半宽格(~150px)装不下长文案,退回一行一个 */
   @media (max-width: 560px){
     .acts > a,.acts > button{flex-basis:100%;}
