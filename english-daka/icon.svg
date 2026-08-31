@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="英语打卡">
+  <title>英语打卡</title>
+  <!-- 应用图标:纯代码画,零依赖。用 <path> 画五角星而不是 <text> 写 emoji ——
+       emoji 的字形由系统字体决定,同一份 SVG 在安卓/iOS/桌面上会长得不一样,
+       图标是认人的东西,不能让它每台设备一个样。 -->
+  <rect width="512" height="512" rx="112" fill="#3E8BFF"/>
+  <path d="M 256.0 116.0 L 290.1 209.1 L 389.1 212.7 L 311.2 273.9 L 338.3 369.3 L 256.0 314.0 L 173.7 369.3 L 200.8 273.9 L 122.9 212.7 L 221.9 209.1 Z" fill="#FFC53D"/>
+</svg>
