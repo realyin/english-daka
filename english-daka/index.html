@@ -1372,6 +1372,18 @@ function coverColors(group){
 function enableMouseDrag(row){
   if(!row) return;
   let down = false, moved = false, sx = 0, sl = 0, vx = 0, lx = 0, lt = 0;
+  let restoreTimer = 0;
+  // 拖动期间必须把 scroll-snap 关掉:程序逐帧改 scrollLeft 会被吸附点
+  // 每次都拽回去,表现是"卡住不动 → 猛跳一格",完全不是滑动(实测反馈)。
+  // 松手后自己算落点(带惯性 + 吸到最近的卡),平滑滚过去,再把 snap 还回来。
+  const snapOff = () => {
+    clearTimeout(restoreTimer);
+    row.style.scrollSnapType = "none";
+  };
+  const snapRestore = () => {
+    clearTimeout(restoreTimer);
+    restoreTimer = setTimeout(() => { row.style.scrollSnapType = ""; }, 650);
+  };
   row.addEventListener("pointerdown", e => {
     if(e.pointerType !== "mouse" || e.button !== 0) return;
     down = true; moved = false; sx = lx = e.clientX; sl = row.scrollLeft;
@@ -1384,6 +1396,7 @@ function enableMouseDrag(row){
       if(Math.abs(dx) < 6) return;               // 死区:手一抖不算拖
       moved = true;
       row.classList.add("dragging");
+      snapOff();
       // 捕获指针:拖出货架边界、甚至拖出窗口,move/up 也还归我们
       try{ row.setPointerCapture(e.pointerId); }catch(err){}
     }
@@ -1398,8 +1411,24 @@ function enableMouseDrag(row){
     down = false;
     if(moved){
       row.classList.remove("dragging");
-      // 甩得越快滑得越远;smooth 滚动结束时 scroll-snap 自己吸附
-      if(Math.abs(vx) > 0.05) row.scrollBy({left: vx * 160, behavior: "smooth"});
+      // 落点 = 当前位置 + 惯性,再吸到最近一张卡的左缘(snap 此刻还关着,
+      // 得自己吸;算法和 restoreShelfPos 同源:卡与卡的 offsetLeft 之差)
+      let target = row.scrollLeft + vx * 220;
+      target = Math.max(0, Math.min(target, row.scrollWidth - row.clientWidth));
+      const kids = row.children;
+      if(kids.length && /^cover/.test(kids[0].className)){
+        const base = kids[0].offsetLeft;
+        let best = 0, bd = Infinity;
+        for(let i = 0; i < kids.length; i++){
+          const x = kids[i].offsetLeft - base;
+          const d = Math.abs(x - target);
+          if(d < bd){ bd = d; best = x; }
+        }
+        // 已经滚到底时别硬拽回卡缘,贴着右端停
+        if(target < row.scrollWidth - row.clientWidth - 8) target = best;
+      }
+      row.scrollTo({left: target, behavior: "smooth"});
+      snapRestore();
     }
   };
   row.addEventListener("pointerup", up);
