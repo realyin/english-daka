@@ -173,9 +173,10 @@
      看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请。
      它现在住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
      全部去掉,只留内部那条 flex 行 —— 卡中卡会多出一圈没有意义的描边。
-     flex:1 1 300px = 宽屏占左半列、窄到放不下 300px 时整行独占再让按钮换行 */
+     flex-basis:100% = 永远独占一行:点阵靠左、连胜靠右(space-between),
+     连胜的右缘和下面按钮行的右缘对成一条线 */
   .checkin{
-    flex:1 1 300px;min-width:0;
+    flex:1 1 100%;min-width:0;
     display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);
   }
   /* 内容是 JS 填的:老浏览器解析不了脚本时,帽子里就只剩按钮列,
@@ -195,13 +196,16 @@
   .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
 
   /* ===== header 行动区 ===== */
-  /* 帽子里的右列。align-items:stretch(不是 center)+ 按钮不再设 max-width,
-     两个按钮左右缘对齐成一条竖边 —— 宽窄不一的胶囊叠在一起像"没对齐的贴纸"。
-     flex:1 1 240px:宽屏和打卡条分左右两列,窄屏换行后独占一行、按钮撑满 */
+  /* 帽子里的按钮行(家长反馈:电脑上两个按钮竖着叠像"重叠",宽屏该并排)。
+     不写媒体断点,靠 wrap 数学:每个按钮 flex-basis 240px ——
+     宽屏一行放得下两个就并排各占一半,手机(卡内容 ~310px)放不下就
+     自动换行、单个按钮撑满整行,和原来的堆叠一模一样。
+     默认 align-items:stretch 让并排的两个按钮同高(次按钮被拉到主按钮的 52px) */
   .acts{
-    flex:1 1 240px;min-width:0;
-    display:flex;flex-direction:column;align-items:stretch;gap:var(--sp-1,8px);
+    flex:1 1 100%;min-width:0;
+    display:flex;flex-wrap:wrap;gap:var(--sp-1,8px);
   }
+  .acts > a{flex:1 1 240px;min-width:0;}
   /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
   .go-btn{
     display:inline-flex;align-items:center;justify-content:center;
@@ -222,7 +226,10 @@
   /* text-align:center 显式写出来:它以前是从 header 继承的,
      而 header 的 text-align 只服务标题,不该被按钮的居中依赖着 */
   .review-btn{
-    display:block;text-align:center;padding:10px 20px;border-radius:999px;
+    /* flex 而不是 block:并排时会被 stretch 拉到和主按钮同高(52px),
+       block 的文字会贴在顶上,竖向也要居中 */
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
     text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
   }
