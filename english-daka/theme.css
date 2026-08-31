@@ -20,6 +20,20 @@
   --font-main: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold",
                "Comic Sans MS", "Trebuchet MS",
                "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* 动效:全站过渡只准引用这几个 token,不要在别处硬写秒数/缓动。
+     fast=按下反馈,base=页面/元素换位,slow=展开收起(位移大,需要多一点时间)。
+     ease-out 起步快、收尾稳(界面元素就位);spring 末尾轻微过冲(弹窗弹出) */
+  --dur-fast:.15s; --dur-base:.24s; --dur-slow:.32s;
+  --ease-out:cubic-bezier(.22,.61,.36,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+}
+
+/* 系统里开了「减弱动效」就把时长全部归零 —— 过渡自然消失,不用改一行 JS。
+   ⚠️ 时长为 0 时 transitionend 不会触发,凡是靠它收尾的逻辑都必须先判断
+   时长(app.html 的 durMs())或加 setTimeout 兜底 */
+@media (prefers-reduced-motion:reduce){
+  :root{ --dur-fast:0s; --dur-base:0s; --dur-slow:0s; }
 }
 
 body{ font-family: var(--font-main); }

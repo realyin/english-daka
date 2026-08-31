@@ -15,6 +15,9 @@
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;
     -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
     -webkit-touch-callout:none;}
+  /* 目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷一帧浏览器默认白底 ——
+     深色底的封面流跳到这里就是"啪"一下白闪。背景写在 html 上,首帧就有色 */
+  html{ background:var(--bg); }
   body{
     /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
        theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
@@ -74,6 +77,12 @@
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
   .page{display:none;padding:0 14px;max-width:520px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
+  /* 页签切换的方向感:往右边的页签走就从右边滑进来,往左走就从左边。
+     三个页签是并排的一条,硬切会让人分不清刚才点的是哪一个 */
+  @keyframes page-in-r{ from{ opacity:0; transform:translateX(26px); } }
+  @keyframes page-in-l{ from{ opacity:0; transform:translateX(-26px); } }
+  .page.page-in-r{ animation:page-in-r var(--dur-base) var(--ease-out); }
+  .page.page-in-l{ animation:page-in-l var(--dur-base) var(--ease-out); }
   .hint{text-align:center;font-size:12px;color:#5E6E8C;margin-bottom:10px;line-height:1.7;}
 
   .panel{
@@ -111,8 +120,32 @@
   .tag.sign{background:var(--blue);}
   /* 原课件字母课里夹的复习页(颜色/数数),内容留着,但标出来别和本课主线混 */
   .tag.review{background:var(--green,#4CAF7D);}
-  .dialog{margin-top:10px;display:none;}
-  .lcard.open .dialog{display:block;}
+  /* 展开/收起走 grid-template-rows 0fr→1fr:高度是内容撑出来的,不用 JS 量高。
+     ⚠️ 三件套缺一不可 —— 外层 display:grid、内层 min-height:0 + overflow:hidden,
+     少一个就折不平。不支持过渡 grid 的老内核(Safari 16 以前)照样能 0fr/1fr
+     折叠,只是没动画,退回硬切。
+     ⚠️ 内层的纵向 padding **不会**被 0fr 压掉(min-height:0 只让内容缩,padding
+     留着),收起的卡会平白多出一条 14px 空条 —— 所以纵向 padding 只写在 .open
+     状态里,并和行高一起过渡,收起时归零。
+     横向 -4px 负边距是给 .mini / .sound-tile 的柔投影留的余量(overflow:hidden
+     会把它切掉一条边);只动横向,纵向负边距会掺进 grid 行高计算。 */
+  .dialog{
+    display:grid;grid-template-rows:0fr;
+    transition:grid-template-rows var(--dur-slow) var(--ease-out);
+  }
+  .lcard.open .dialog{grid-template-rows:1fr;}
+  .dialog-in{
+    overflow:hidden;min-height:0;padding:0 4px;margin:0 -4px;
+    transition:padding var(--dur-slow) var(--ease-out);
+  }
+  .lcard.open .dialog-in{padding:10px 4px 4px;}
+  /* 展开指示角标:卡片头看不出"这里能点开",一个会转的角标就够了 */
+  .lhead .chev{
+    flex:none;margin-left:6px;font-size:20px;font-weight:900;line-height:1;
+    color:var(--muted,#5E6E8C);
+    transition:transform var(--dur-base) var(--ease-out);
+  }
+  .lcard.open .lhead .chev{transform:rotate(90deg);}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
 
@@ -189,15 +222,34 @@
   .sline.showzh .trans{display:block;}
 
   /* 词典弹窗 */
+  /* ⚠️ 蒙层常驻 display:block(要过渡就不能 display:none),挡不挡得住整页点击
+     全靠 pointer-events —— 少了 pointer-events:none 这行,整个应用会变成"点哪都
+     没反应"。.show 才把它收回来 */
   #wpopWrap{
-    display:none;position:fixed;inset:0;z-index:50;
+    display:block;position:fixed;inset:0;z-index:50;
     background:rgba(43,58,85,.35);
+    opacity:0;pointer-events:none;
+    transition:opacity var(--dur-base) var(--ease-out);
   }
+  #wpopWrap.show{opacity:1;pointer-events:auto;}
+  /* transform 里的 translateX(-50%) 是定位用的,任何时候都不能丢 */
   #wpop{
-    position:absolute;left:50%;bottom:12vh;transform:translateX(-50%);
+    position:absolute;left:50%;bottom:12vh;
+    transform:translateX(-50%) translateY(24px) scale(.96);opacity:0;
+    transition:transform var(--dur-base) var(--ease-spring),
+               opacity var(--dur-base) var(--ease-out);
     width:min(320px, 86vw);
     background:#fff;border:2px solid var(--line);border-radius:22px;
     box-shadow:var(--shadow);padding:20px;text-align:center;
+  }
+  #wpopWrap.show #wpop{transform:translateX(-50%) translateY(0) scale(1);opacity:1;}
+  /* 关闭按钮:视觉上是个小叉,热区靠 padding 撑到 48px —— 只能点蒙层关闭
+     对孩子不成立,他不知道"外面"是可以点的 */
+  .pop-close{
+    position:absolute;top:0;right:0;min-width:48px;min-height:48px;padding:0;
+    border:none;background:none;cursor:pointer;
+    font-size:16px;font-weight:900;line-height:1;color:var(--muted,#5E6E8C);
+    display:flex;align-items:center;justify-content:center;
   }
   #wpop .pw{font-size:30px;font-weight:900;color:var(--purple);}
   #wpop .pc{font-size:16px;font-weight:700;margin-top:8px;line-height:1.5;}
@@ -291,8 +343,12 @@
   /* 答对后整排选项会被 disable(见 nextQuestion)。不去掉 :active 的位移和
      手型,按下去还会"陷"一下,孩子以为点上了还在连点。
      注意别在这里加 opacity/灰底 —— 答对的那颗 .opt.right 要保持绿色高亮,
-     它是这 1.4 秒定格里唯一的"你答对了"反馈 */
-     color/opacity 是压 UA 默认的 button:disabled 灰化(emoji 选项会被它调灰) */
+     它是这 1.8 秒定格里唯一的"你答对了"反馈。
+     color/opacity 是压 UA 默认的 button:disabled 灰化(emoji 选项会被它调灰)。
+     ⚠️ 上面这段原来在中间多了一个注释结束符,注释提前闭合,剩下的半句就成了
+     选择器的一部分 —— 而带结束符的选择器是非法的,整条 .opt:disabled 规则会被
+     浏览器整个丢掉,答对后那颗绿选项就被 UA 灰化了。
+     CSS 注释不嵌套,所以正文里一个结束符都不能出现(这句话本身就是踩过的坑) */
   .opt:disabled{cursor:default;opacity:1;color:var(--ink);}
   .opt:disabled:active{transform:none;box-shadow:var(--shadow);}
   .opt.right{background:#DFF7E6;border-color:var(--green);animation:pop .4s;}
@@ -308,6 +364,18 @@
      不会在触摸点击后留下一圈框(index.html 里已有同款规则) */
   button:focus-visible,a:focus-visible,[tabindex]:focus-visible{
     outline:4px solid var(--blue);outline-offset:2px;
+  }
+
+  /* 目录页 ⇄ 课程页的跨文档过渡(渐进增强)。不认识 @view-transition 的浏览器
+     按 CSS 错误恢复规则整块跳过,退回原来的硬跳转,不会坏。
+     两页都要声明,少一边就不生效。
+     减弱动效时不写 navigation:none(嵌套 @view-transition 的支持度不明),
+     改成把快照的动画关掉 —— 效果一样是瞬时,而且是稳的选择器语法 */
+  @view-transition{ navigation:auto; }
+  @media (prefers-reduced-motion:reduce){
+    ::view-transition-group(*),
+    ::view-transition-old(root),
+    ::view-transition-new(root){ animation:none !important; }
   }
 </style>
 <link rel="stylesheet" href="theme.css">
@@ -348,6 +416,7 @@
 <!-- 词典弹窗 -->
 <div id="wpopWrap">
   <div id="wpop">
+    <button class="pop-close" aria-label="关闭" onclick="closePop()">✕</button>
     <div class="pw" id="popWord"></div>
     <div class="pc" id="popCn"></div>
     <button class="mini" onclick="popSpeak()">🔊</button>
@@ -533,14 +602,18 @@ function openPop(word){
   const pc = document.getElementById("popCn");
   pc.textContent = cn || "这个词还没收进词典";
   pc.className = cn ? "pc" : "pc none";
-  document.getElementById("wpopWrap").style.display = "block";
+  // 蒙层常驻 display:block(见 CSS),显隐靠 .show 走过渡
+  document.getElementById("wpopWrap").classList.add("show");
   playWord(word);
+}
+function closePop(){
+  document.getElementById("wpopWrap").classList.remove("show");
 }
 function popSpeak(){ if(popCurrentWord) playWord(popCurrentWord); }
 /* 弹窗是在长按过程中弹出来的,手指还按着,安卓会接着选中弹窗里的词并弹原生菜单 */
 document.getElementById("wpopWrap").addEventListener("contextmenu", e=>e.preventDefault());
 document.getElementById("wpopWrap").addEventListener("click", e=>{
-  if(e.target.id === "wpopWrap") e.target.style.display = "none";
+  if(e.target.id === "wpopWrap") closePop();
 });
 
 function makeWordSpan(raw){
@@ -832,6 +905,45 @@ function makePhonicsPanel(c){
   return box;
 }
 
+/* 读 theme.css 里的动效时长 token,换算成毫秒。
+   一切"等动画播完再干活"的逻辑都以它为准 —— 系统开了「减弱动效」时 token 是 0s,
+   这里返回 0,调用方就该走直通分支(不等待、不监听 transitionend)。
+   theme.css 万一没加载,取到空串,同样按 0 处理:没有过渡可等,直接硬切。
+   ES5 写法(不用 ?? / ?.),这是顶层脚本,一处新语法就能白掉整页 */
+function durMs(name){
+  var v = "";
+  try{
+    v = getComputedStyle(document.documentElement).getPropertyValue(name || "--dur-base");
+  }catch(e){ return 0; }
+  v = String(v).trim();
+  if(!v) return 0;
+  if(v.slice(-2) === "ms") return parseFloat(v) || 0;
+  if(v.slice(-1) === "s")  return (parseFloat(v) || 0) * 1000;
+  return parseFloat(v) || 0;
+}
+
+/* 等卡片展开动画结束再执行 fn。
+   ⚠️ 两道保险都不能省:老内核(Safari 16 以前)不支持过渡 grid-template-rows,
+   压根不会发 transitionend;减弱动效时时长为 0 也不会发。所以既监听 transitionend,
+   又挂一个 setTimeout 兜底,谁先到谁算数(done 标志防止跑两次)。*/
+function afterExpand(dialog, fn){
+  var ms = durMs("--dur-slow");
+  if(ms <= 0){ fn(); return; }
+  var done = false;
+  function finish(){
+    if(done) return;
+    done = true;
+    dialog.removeEventListener("transitionend", onEnd);
+    fn();
+  }
+  function onEnd(e){
+    // 只认 dialog 自己那条 grid 行高的过渡:里面气泡/图片的过渡不算数
+    if(e.target === dialog && e.propertyName === "grid-template-rows") finish();
+  }
+  dialog.addEventListener("transitionend", onEnd);
+  setTimeout(finish, ms + 50);
+}
+
 // 展开后再补一下:卡片头别缩在吸顶条底下,卡片尾别掉出屏幕。
 // 两个诉求冲突时(长卡装不下)以"头露出来"为准——孩子要先看见点的是哪个词
 function revealCard(d){
@@ -869,7 +981,8 @@ function renderLearn(){
                 : c.eq ? eqHTML(c.eq)
                 : `<span class="emoji">${c.emoji||"⬜"}</span>`}</span>
       <div><div class="word">${c.word}</div><div class="cn">${c.cn||""}</div></div>
-      <span class="${tagClass(c.tag)}">${c.tag||"word"}</span>`;
+      <span class="${tagClass(c.tag)}">${c.tag||"word"}</span>
+      <span class="chev" aria-hidden="true">›</span>`;
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
       // 展开前先记下这张卡在屏幕上的位置:收起上面那张卡会把内容整体抽走,
@@ -882,7 +995,9 @@ function renderLearn(){
         d.classList.add("open");
       }
       window.scrollBy(0, head.getBoundingClientRect().top - anchor);
-      if(!wasOpen) revealCard(d);
+      // 展开现在是动画,补位要等它把高度撑完再量 —— 立刻量到的还是 0fr 时的尺寸,
+      // 补出来的位置正好差一整个卡片的高度
+      if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
     };
     const wordPlay = document.createElement("button");
     wordPlay.className = "mini word-play";
@@ -896,36 +1011,43 @@ function renderLearn(){
 
     const dialog = document.createElement("div");
     dialog.className = "dialog";
+    /* ⚠️ 内容一律往 din 里塞,不要直接 appendChild 到 dialog:
+       dialog 现在是 grid 容器,行高从 0fr 过渡到 1fr,靠的就是"只有一个子元素、
+       它自己 overflow:hidden + min-height:0"。往 dialog 直接加第二个子元素,
+       多出来的那个不受行高约束,收起状态会露在外面 */
+    const din = document.createElement("div");
+    din.className = "dialog-in";
+    dialog.appendChild(din);
     // 只要有问答带了自己的单格图,就整张卡改成"一问一图"(和闯关的 qa.image||c.image 一致):
     // 图不再顶在最上面滚出屏幕,没有单格图的那几问回落到卡片图,就近显示
     const perQA = c.dialog.some(qa=>qa.image);
     if(c.image && !perQA){
       const img = document.createElement("img");
       img.className = "pic"; img.src = imgSrc(c.image); img.alt = c.word;
-      dialog.appendChild(img);
+      din.appendChild(img);
     }else if(c.eq){
       // 没有配图的算式卡:把算式放大顶上,一眼看清在问什么
       const box = document.createElement("div");
       box.className = "eq-box";
       box.innerHTML = eqHTML(c.eq);
-      dialog.appendChild(box);
+      din.appendChild(box);
     }
-    if(c.phonics) dialog.appendChild(makePhonicsPanel(c));
+    if(c.phonics) din.appendChild(makePhonicsPanel(c));
     c.dialog.forEach(qa=>{
       const pic = perQA ? (qa.image || c.image) : null;
       if(pic){
         const img = document.createElement("img");
         img.className = "pic"; img.src = imgSrc(pic);
-        dialog.appendChild(img);
+        din.appendChild(img);
       }else if(perQA && /^[a-z]{2,6}$/i.test(qa.key[0] || "")){
         // 这一问没图、卡片也没图 —— 放字母,不要留空
         const box = document.createElement("div");
         box.className = "eq-box";
         box.innerHTML = letterTiles(qa.key[0]);
-        dialog.appendChild(box);
+        din.appendChild(box);
       }
-      dialog.appendChild(makeBubble("q", qa));
-      dialog.appendChild(makeBubble("a", qa));
+      din.appendChild(makeBubble("q", qa));
+      din.appendChild(makeBubble("a", qa));
     });
     d.appendChild(dialog);
     list.appendChild(d);
@@ -936,6 +1058,47 @@ function renderLearn(){
    问答闯关:机器人读问题,孩子回答;答案气泡同样句句词词可点
    ================================================================ */
 const pbox = document.getElementById("practiceBox");
+
+/* 换题过渡:旧内容先滑出去,render() 换好新内容,再从另一侧滑回来。
+   闯关和考一考都是"整个面板换一茬"—— innerHTML 直接替换看着就是画面闪一下,
+   孩子分不清是翻到下一题了还是自己点错了什么。
+   dir: 1 = 前进(向左滑出、从右滑入);其余 = 原地淡入。
+   减弱动效(--dur-base 归 0)或 theme.css 没加载时直接 render(),退回原来的硬切。
+   ⚠️ render 里带播音是有意的:音频本身就要加载,和这 240ms 是并行的,不耽误。
+   ⚠️ 收尾一定要把内联样式清干净,残留的 transform 会给里面的 position:fixed
+   元素造新的包含块,也会让后面量位置的逻辑量歪。*/
+const SWAP_CSS = "transform var(--dur-base) var(--ease-out), " +
+                 "opacity var(--dur-base) var(--ease-out)";
+function swapIn(el, render, dir){
+  var ms = durMs("--dur-base");
+  if(!el || ms <= 0){ render(); return; }
+  // 连点"下一题"会叠两次过渡:用代次号作废上一次挂起的 render,
+  // 否则同一题会渲染两遍、音频重叠着播
+  var gen = (el.__swapGen || 0) + 1;
+  el.__swapGen = gen;
+  var back = dir > 0 ? 40 : 0;                 // 从哪一侧回来
+  el.style.transition = SWAP_CSS;
+  el.style.transform = "translateX(" + (dir > 0 ? -40 : 0) + "px)";
+  el.style.opacity = "0";
+  setTimeout(function(){
+    if(el.__swapGen !== gen) return;           // 期间又切了一次,这次作废
+    render();
+    el.style.transition = "none";              // 先无过渡就位
+    el.style.transform = "translateX(" + back + "px)";
+    el.style.opacity = "0";
+    void el.offsetWidth;                       // 强制重排,否则两次赋值会被合并
+    el.style.transition = SWAP_CSS;
+    el.style.transform = "translateX(0)";
+    el.style.opacity = "1";
+    setTimeout(function(){
+      if(el.__swapGen !== gen) return;
+      el.style.transition = "";
+      el.style.transform = "";
+      el.style.opacity = "";
+    }, ms + 60);
+  }, ms);
+}
+
 let pOrder = [], pc = 0, pq = 0;
 /* 音标类答案的干扰项池:已教的 11 个字母音 + 已教的词族韵脚 */
 const PHONEME_CHIPS = ["/s/","/t/","/m/","/a/","/n/","/o/","/f/","/i/","/r/","/b/","/d/"];
@@ -1008,7 +1171,10 @@ function curCard(){ return pOrder[pc]; }
 function curQA(){ return askable(curCard())[pq]; }
 
 let pRevealed = false;   // 当前题是否已展示过答案(防止重复追加气泡)
-function askQuestion(){
+/* 出题分两层:askQuestion 只负责"带过渡地换过去",真正的渲染在 renderQuestion。
+   startPractice 的第一题也走这里 —— 从开始页翻到第一题同样是一次换页 */
+function askQuestion(){ swapIn(pbox, renderQuestion, 1); }
+function renderQuestion(){
   pRevealed = false;
   const c = curCard(), qa = curQA();
   const total = pOrder.reduce((s,x)=>s+askable(x).length,0);
@@ -1117,7 +1283,8 @@ function nextQA(){
   if(pc >= pOrder.length){ return finishPractice(); }
   askQuestion();
 }
-function finishPractice(){
+function finishPractice(){ swapIn(pbox, renderPracticeDone, 1); }
+function renderPracticeDone(){
   pbox.innerHTML = `
     <div class="done">
       <div class="big">🏆</div>
@@ -1144,7 +1311,11 @@ function startQuiz(){
   qi = 0; nextQuestion();
 }
 function nextQuestion(){
+  // 收尾判断放在过渡外面:要么翻到下一题,要么翻到结算页,两条路各自带自己的过渡
   if(qi >= quizOrder.length){ return finishQuiz(); }
+  swapIn(qbox, renderQuizQuestion, 1);
+}
+function renderQuizQuestion(){
   const it = quizOrder[qi], c = it.c;
   // 干扰项不能和正解同词:-an 课里 man/fan/tan 各有两张卡两张图(词族卡一张、
   // 生活场景卡一张),另一张混进选项就成了"两个都对",孩子点中它反而算错
@@ -1169,7 +1340,8 @@ function nextQuestion(){
     : ()=>playOne("Which one is " + c.word + "?", "q", c.quiz_audio);
   document.getElementById("qSpeak").onclick = ask;
   ask();
-  // 答对后要定格 1.4 秒再翻页,这 1.4 秒里选项还挂着 onclick:
+  // 答对后要定格 1.8 秒再翻页(换题多了 0.24s 滑出滑入,定格从 1.4 延到 1.8,
+  // 让"变绿 → 停一下 → 滑走"三段各自看得清),这 1.8 秒里选项还挂着 onclick:
   // 对着已经变绿的那颗连点 3 下 → qi 跳 3 题、多得 2 星、挂 3 个 nextQuestion 定时器;
   // 点旁边的错图 → 照样标红 shake 加一句 "Try again!",孩子明明答对了却挨批。
   // 两道保险:disabled 挡住绝大多数;answered 哨兵兜住触摸端 disabled 生效前
@@ -1184,7 +1356,7 @@ function nextQuestion(){
         optBtns.forEach(x=>{ x.disabled = true; });
         b.classList.add("right"); addStars(1); qi++;
         praise(randPraise());
-        setTimeout(nextQuestion, 1400);
+        setTimeout(nextQuestion, 1800);
       }else{
         b.classList.add("wrong");
         praise("Try again!");
@@ -1193,7 +1365,8 @@ function nextQuestion(){
     };
   });
 }
-function finishQuiz(){
+function finishQuiz(){ swapIn(qbox, renderQuizDone, 1); }
+function renderQuizDone(){
   qbox.innerHTML = `
     <div class="done">
       <div class="big">🎉</div>
@@ -1206,11 +1379,33 @@ function finishQuiz(){
 /* ================================================================
    页面切换 & 启动
    ================================================================ */
-function showPage(p){
+/* 三个页签在顶栏是并排的一条,切换时给新页面一个方向感:
+   往右边的页签走 → 新页面从右边滑进来;往左走 → 从左边。
+   首次载入不放动画 —— 「学一学」在 HTML 里就带着 .on,init 根本不调 showPage,
+   所以 lastPageAt 直接从 0(学一学)起步,第一次点页签就有方向。
+   noAnim 给换课/前进后退用:它们本身已经有整页滑动,再叠一层会打架 */
+const PAGE_AT = {learn:0, practice:1, quiz:2};
+let lastPageAt = 0, pageAnimTimer = 0;
+function showPage(p, noAnim){
   ["learn","practice","quiz"].forEach(x=>{
     document.getElementById("page"+x[0].toUpperCase()+x.slice(1)).classList.toggle("on", p===x);
     document.getElementById("tab"+x[0].toUpperCase()+x.slice(1)).classList.toggle("on", p===x);
   });
+  const at = PAGE_AT[p];
+  const ms = durMs("--dur-base");
+  if(!noAnim && at !== undefined && at !== lastPageAt && ms > 0){
+    const el = document.getElementById("page"+p[0].toUpperCase()+p.slice(1));
+    if(pageAnimTimer) clearTimeout(pageAnimTimer);
+    // 三个页面一起清:上一次的动画类可能还挂在别的页面上
+    document.querySelectorAll(".page").forEach(x=>x.classList.remove("page-in-r","page-in-l"));
+    void el.offsetWidth;                       // 强制重排,否则连点同一路径不会重放
+    el.classList.add(at > lastPageAt ? "page-in-r" : "page-in-l");
+    pageAnimTimer = setTimeout(()=>{
+      el.classList.remove("page-in-r","page-in-l");
+      pageAnimTimer = 0;
+    }, ms + 80);
+  }
+  if(at !== undefined) lastPageAt = at;
   stopAllSound();
 }
 
@@ -1282,10 +1477,14 @@ async function gotoLesson(dir){
   const out = dir > 0 ? -60 : 60;             // 往哪边滑出去
   try{
     stopAllSound();
-    wrap.style.transition = "transform .2s ease-in, opacity .2s ease-in";
+    // 时长/缓动一律读 theme.css 的 token,别在这里硬写秒数 —— 减弱动效时
+    // token 归 0,过渡自然消失(setTimeout 也跟着变 0,不会白等)
+    const ms = durMs("--dur-base");
+    wrap.style.transition = "transform var(--dur-base) var(--ease-out), " +
+                            "opacity var(--dur-base) var(--ease-out)";
     wrap.style.transform = `translateX(${out}px)`;
     wrap.style.opacity = "0";
-    await new Promise(r => setTimeout(r, 200));
+    await new Promise(r => setTimeout(r, ms));
 
     const id = LESSON_ORDER[n].id;
     const r = await fetch(LESSON_BASE + id + ".json");
@@ -1293,17 +1492,18 @@ async function gotoLesson(dir){
     lesson = await r.json();
     LESSON_AT = n;
     history.pushState({lesson:id}, "", "app.html?lesson=" + id);
-    showPage("learn");
+    showPage("learn", true);                  // 整页已经在滑了,页签动画不用再叠一层
     applyLesson();
     window.scrollTo(0, 0);
 
     wrap.style.transition = "none";           // 从另一侧就位,再滑进来
     wrap.style.transform = `translateX(${-out}px)`;
     void wrap.offsetWidth;                    // 强制重排,否则两次赋值会被合并
-    wrap.style.transition = "transform .26s cubic-bezier(.22,.61,.36,1), opacity .26s ease-out";
+    wrap.style.transition = "transform var(--dur-base) var(--ease-out), " +
+                            "opacity var(--dur-base) var(--ease-out)";
     wrap.style.transform = "translateX(0)";
     wrap.style.opacity = "1";
-    await new Promise(r => setTimeout(r, 260));
+    await new Promise(r => setTimeout(r, ms + 40));
   }catch(e){
     showPages();                              // 换课失败也不能把页面留在隐形状态
   }finally{
@@ -1321,7 +1521,7 @@ addEventListener("popstate", async e => {
     if(r.ok) lesson = await r.json();
   }catch(err){}
   LESSON_AT = n;
-  stopAllSound(); showPage("learn"); applyLesson(); showPages(); window.scrollTo(0, 0);
+  stopAllSound(); showPage("learn", true); applyLesson(); showPages(); window.scrollTo(0, 0);
 });
 /* 用捕获阶段:单词、气泡等子元素会 stopPropagation,冒泡阶段收不到 */
 addEventListener("pointerdown", e => {

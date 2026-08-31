@@ -22,8 +22,11 @@
      滚动容器,就不再往视口传递了;视口的溢出行为取的是 html 的值。
      不封住的后果:折叠到最外侧的卡片被 translateX 甩出 .stage(它是 overflow:visible),
      整页因此横向可滚 —— 平板上 414px 宽能滚 290px。手指在封面流上横划时,
-     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。 */
-  html{ overflow-x:hidden; }
+     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。
+     ⚠️ overflow-x:hidden 不能删,理由就是上面这一整段。
+     background 是另一回事:目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷
+     一帧浏览器默认白底,深色封面跳过去就是"啪"一下白闪。写在 html 上首帧就有色 */
+  html{ overflow-x:hidden; background:var(--bg); }
   body{
     /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
        theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
@@ -123,6 +126,18 @@
   /* 卡片动画由 rAF 驱动,减弱动效时脚本会直接跳到位;这里只关掉圆点的过渡 */
   @media (prefers-reduced-motion: reduce){
     .dot::before{transition:none;}
+  }
+
+  /* 目录页 ⇄ 课程页的跨文档过渡(渐进增强)。不认识 @view-transition 的浏览器
+     按 CSS 错误恢复规则整块跳过,退回原来的硬跳转,不会坏。
+     ⚠️ 两页都要声明,app.html 里有一份一样的,少一边就不生效。
+     减弱动效时不写 navigation:none(嵌套 @view-transition 的支持度不明),
+     改成把快照的动画关掉 —— 效果一样是瞬时,而且是稳的选择器语法 */
+  @view-transition{ navigation:auto; }
+  @media (prefers-reduced-motion:reduce){
+    ::view-transition-group(*),
+    ::view-transition-old(root),
+    ::view-transition-new(root){ animation:none !important; }
   }
 </style>
 <link rel="stylesheet" href="theme.css">
