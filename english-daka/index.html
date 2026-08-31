@@ -7,9 +7,11 @@
 <meta name="theme-color" content="#F0F7FF">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
-<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
-     要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
-<link rel="apple-touch-icon" href="icon.svg">
+<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),所以这里指向 png。
+     icon-180.png 由 docs/UI素材Prompt.md 的 A1 生成(1024 缩到 180),现在还没入库 ——
+     404 无害:iOS 拿不到就退回原来的网页截图行为,和以前一模一样。
+     favicon 仍然走矢量的 icon.svg,不受影响 -->
+<link rel="apple-touch-icon" href="icon-180.png" sizes="180x180">
 
 <style>
   :root{
@@ -42,6 +44,17 @@
     background:var(--bg); color:var(--ink); min-height:100vh; padding-bottom:44px;
     overflow-x:hidden;
   }
+  /* ===== 图标 =====
+     UI 层原来用的是 emoji。emoji 的字形、粗细、基线各平台各不相同(安卓那套
+     线条细、iOS 那套厚实),同一行里和文字高矮对不齐,而且换个系统整页气质就变了。
+     换成内联 SVG:形状我们自己定,颜色跟着文字走(fill:currentColor),
+     字号一变图标跟着变(1em 见方)。
+     ⚠️ 引用变量必须带回落值:这段内联 <style> 排在 theme.css 之前 */
+  .ic{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:currentColor;flex:none;}
+  /* 星星金、火苗橙:这两个是"奖励/连胜"的语义色,不该跟着正文变灰 */
+  .ic-star{color:var(--yellow,#FFC53D);}
+  .ic-flame{color:var(--orange,#FF9A3D);}
+
   header{text-align:center;padding:24px 16px 10px;}
   header h1{font-size:26px;letter-spacing:2px;}
   header p{font-size:13px;color:#5E6E8C;margin-top:6px;font-weight:600;}
@@ -115,6 +128,13 @@
     text-shadow:0 3px 0 rgba(0,0,0,.13);
   }
   .cover .glyph.long{font-size:calc(var(--cw) * 0.25);letter-spacing:-1px;}
+  /* 课程封面画:有 cover 字段的课在字形徽章之上铺一张水彩图。
+     图铺满 .art 绝对定位,底下的 glyph 照常渲染 —— 图 404 时 onerror 把 <img>
+     摘掉,露出来的就是原来那个巨型字形封面,外观和以前一模一样。
+     素材还没入库(见 docs/UI素材Prompt.md 的 C1~C3),所以现在走的就是回退这一支 */
+  .cover .art img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  }
   /* 折叠后文字既读不了又会被邻卡切断,淡出只留封面画面 */
   .cover .label{padding:13px 15px 15px;background:#fff;}
   .cover .label > *{opacity:var(--lab,1);}
@@ -155,9 +175,12 @@
     display:inline-flex;align-items:center;justify-content:center;
     min-height:52px;max-width:94%;padding:12px 26px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:17px;
-    text-decoration:none;box-shadow:0 4px 0 rgba(0,0,0,.14);line-height:1.25;
+    /* 阴影走 theme.css 的柔投影 token,不再是"墨色硬边"那一套 ——
+       全站(含 app.html 的按钮/卡片)统一成浅色细边 + 柔投影 */
+    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));line-height:1.25;
   }
-  .go-btn:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.14);}
+  /* 按压反馈全站一个口径:下沉 2px + 收成 --shadow-sm */
+  .go-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
   .go-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
@@ -165,20 +188,22 @@
   .review-btn{
     display:inline-block;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
-    text-decoration:none;box-shadow:0 3px 0 rgba(0,0,0,.12);
+    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
   }
-  .review-btn:active{transform:translateY(2px);box-shadow:none;}
+  .review-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
   /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次 */
   .review-btn.ghost{
     background:#fff;color:var(--ink);border:2px solid var(--line,#DCE5F2);
     box-shadow:none;
   }
-  .review-btn.ghost:active{transform:translateY(2px);}
+  /* 次按钮平时就没有投影,按下去也不该凭空长出来一层 —— 只保留下沉 2px */
+  .review-btn.ghost:active{transform:translateY(2px);box-shadow:none;}
 
   /* 封面右上角的星数角标:白底小胶囊,压在画面上但不遮巨型字形 */
   .cover-stars{
     position:absolute;top:8px;right:8px;
+    z-index:2;                                 /* 压在封面画之上,别被铺满的 <img> 盖掉 */
     padding:2px 9px;border-radius:999px;
     background:rgba(255,255,255,.94);color:var(--ink);
     font-size:13px;font-weight:900;line-height:1.5;
@@ -232,12 +257,24 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+<!-- ===== 图标 sprite =====
+     ⚠️ 两页各有一份 sprite(只放本页用得上的图标),改图标要**同步改两处**。
+     不抽成外部 .svg 文件:图标是壳的一部分,多一次请求就多一次首屏等待,
+     而且 <use> 引外部文件在离线/file:// 下有各种坑。
+     用法:<svg class="ic" aria-hidden="true"><use href="#i-star"/></svg> -->
+<svg style="display:none" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5c.42 0 .8.24.98.61l2.34 4.74 5.23.76c.9.13 1.27 1.25.6 1.9l-3.78 3.69.89 5.2c.16.91-.79 1.6-1.6 1.17L12 18.11l-4.68 2.46c-.81.43-1.76-.26-1.6-1.17l.89-5.2-3.78-3.69c-.67-.65-.3-1.77.6-1.9l5.23-.76 2.34-4.74c.19-.37.57-.61.99-.61z"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><g transform="translate(0 1.5) scale(1.5)"><path fill-rule="evenodd" d="M8 14c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 2 9-1.5 6-2c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 12 4.686 14 8 14Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 8 7 8.5 7 8.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 12 9.657 13 8 13Z"/></g></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7.6 6.1 18 12 7.6 17.9Z" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M2.9 6.9h3.3c.72 0 1.4.35 1.82.94l5.66 7.94c.42.59 1.1.94 1.82.94h3.4"/><path d="M2.9 17.1h3.3c.72 0 1.4-.35 1.82-.94l5.66-7.94c.42-.59 1.1-.94 1.82-.94h3.4"/></g><path d="M17.9 3.7 21.6 6.9 17.9 10.1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17.9 13.9 21.6 17.1 17.9 20.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
 <header>
-  <h1>🌟 我的英语打卡 🌟</h1>
+  <h1>我的英语打卡</h1>
   <p>左右滑动挑一张，点中间那张开始</p>
   <div class="checkin" id="checkin"></div>
   <div class="acts" id="acts">
-    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
   </div>
 </header>
 <div id="shelves"></div>
@@ -386,7 +423,7 @@ function renderCheckin(){
   }
   box.innerHTML =
     `<div class="checkin-days" role="img" aria-label="最近七天打卡情况">${cells}</div>` +
-    `<div class="checkin-streak">🔥 ${streakOf(SAVE.days)} 天</div>`;
+    `<div class="checkin-streak"><svg class="ic ic-flame" aria-hidden="true"><use href="#i-flame"/></svg> ${streakOf(SAVE.days)} 天</div>`;
 }
 
 /* 「继续学 · 某课」:有存档且那节课还在清单里才出。
@@ -402,7 +439,10 @@ function renderContinue(lessons){
   const a = document.createElement("a");
   a.className = "go-btn";
   a.href = "app.html?lesson=" + hit.id;
-  a.textContent = "▶ 继续学 · " + hit.title;
+  // 图标是我们自己写的常量、课程标题走 textContent 单独塞进去 —— 不拼 innerHTML,
+  // 免得课程名里的字符被当成标签解析
+  a.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-play"/></svg> ';
+  a.appendChild(document.createTextNode("继续学 · " + hit.title));
   acts.insertBefore(a, acts.firstChild);
   const rb = document.getElementById("reviewBtn");
   if(rb) rb.classList.add("ghost");
@@ -500,12 +540,19 @@ function buildShelf(group, lessons, first){
     a.href = `app.html?lesson=${l.id}`;
     a.draggable = false;
     a.style.setProperty("--c", palette[i % palette.length]);
-    // 这一课攒了多少星:攒过才显示,0 星的课挂个「⭐ 0」等于提醒他没做
+    // 这一课攒了多少星:攒过才显示,0 星的课挂个「星 0」等于提醒他没做
     const rec = SAVE.lessons[l.id];
     const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
+    // 封面画(可选):有 cover 字段就铺一张图盖住字形徽章;图还没入库时 onerror
+    // 把 <img> 摘掉,露出底下照常渲染的 glyph —— 404 下外观和以前完全一样
+    const cover = l.cover
+      ? `<img src="lessons/${l.cover}" alt="" loading="lazy"` +
+        ` onerror="this.parentNode&&this.parentNode.removeChild(this)">`
+      : ``;
     a.innerHTML =
       `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
-      (got > 0 ? `<span class="cover-stars">⭐ ${got}</span>` : ``) + `</div>` +
+      cover +
+      (got > 0 ? `<span class="cover-stars"><svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
       `<div class="cn">${cn || l.badge_sub || ""}</div>` +
       `<div class="n">${l.words} 张卡片</div></div>`;

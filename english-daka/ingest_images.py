@@ -96,8 +96,12 @@ def main():
         if dry:
             print(f"  [预览] {label} {note}")
             continue
-        r = subprocess.run([sys.executable, "add_image.py", str(f), name],
-                           cwd=ROOT, capture_output=True, text=True)
+        # ui-* 是界面贴纸(透明底正方形),走 add_image.py 的 --sticker 支线:
+        # 默认支线会 convert("RGB")+裁 3:4 —— 透明底变黑底、贴纸被切边
+        cmd = [sys.executable, "add_image.py", str(f), name]
+        if name.startswith("ui-"):
+            cmd.insert(2, "--sticker")
+        r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
         ok = [l for l in r.stdout.splitlines() if "✓" in l]
         print(f"  {ok[0].strip() if ok else '✗ ' + label} {note}")
         done += 1
