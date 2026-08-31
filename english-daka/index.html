@@ -420,13 +420,19 @@
   }
   /* 几个入口(继续学/混合复习/按课堂复习/错题本)同排:都是"开始学"的
      同层级动作,并列省行,货架早进视野;主次靠颜色分。
-     ⚠️ flex-basis 必须是 auto 不能是 0:basis 0 的假想尺寸永远"放得下",
-     flex-wrap 一辈子不会触发 —— 四个按钮被硬均分,胶囊压得比文字窄,
-     nowrap 的字就从圆角底里淌出去(「错题本 · 14 个词在练」实测溢出)。
-     basis auto 才是真正的 wrap 数学:放得下就同排(grow 均分富余),
-     放不下整个按钮折到下一行,文字永远不会出格 */
+     ⚠️ flex-basis 不能是 0:basis 0 的假想尺寸永远"放得下",flex-wrap
+     一辈子不会触发 —— 按钮被硬均分,胶囊压得比文字窄,nowrap 的字从
+     圆角底里淌出去(「错题本 · 14 个词在练」实测溢出)。
+     basis 40% = 两列对称网格:一行恰好放两个(40%×3 超行宽),grow 把
+     每行撑满 —— 四个入口 2×2,奇数个时落单的那个自动铺满整行。
+     曾试过 basis auto 的自然折行:三种内容宽度挤一排、长的又独占整条,
+     每行宽窄参差(实测点名"不协调"),对称网格才稳定 */
   /* > button 也要收进来:「按课堂复习」开的是弹窗不是链接,元素是 <button> */
-  .acts > a,.acts > button{flex:1 1 auto;min-width:0;white-space:nowrap;}
+  .acts > a,.acts > button{flex:1 1 40%;min-width:0;white-space:nowrap;}
+  /* 手机竖屏:半宽格(~150px)装不下长文案,退回一行一个 */
+  @media (max-width: 560px){
+    .acts > a,.acts > button{flex-basis:100%;}
+  }
   /* 继续学的课名长度不可控:label 装进 span 才有省略号
      (flex 容器里的裸文本节点没法 text-overflow) */
   .acts .go-btn span{overflow:hidden;text-overflow:ellipsis;}
