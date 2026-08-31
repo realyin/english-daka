@@ -1463,7 +1463,13 @@ function enableMouseDrag(row){
   };
   row.addEventListener("pointerdown", e => {
     if(e.pointerType !== "mouse" || e.button !== 0) return;
-    down = true; moved = false; sx = lx = e.clientX; sl = row.scrollLeft;
+    down = true; moved = false; sx = lx = e.clientX;
+    /* 按住 = 接住正在滑行的货架。上一次松手的 smooth 滚动还在后台逐帧写
+       scrollLeft,不掐掉它就和手里这次拖动互相抢,拖起来一顿一顿(实测:
+       第一次拖顺,紧接着再拖就不流畅)。一次瞬时 scrollTo 会立刻中止
+       在途的平滑滚动;起点必须在取消**之后**再记 */
+    row.scrollTo({left: row.scrollLeft, behavior: "auto"});
+    sl = row.scrollLeft;
     lt = performance.now(); vx = 0;
   });
   row.addEventListener("pointermove", e => {
