@@ -707,19 +707,28 @@ function renderCal(){
   const cur = new Date(thisMon);
   cur.setDate(cur.getDate() - (cols - 1) * 7);
 
-  let months = "", grid = "", prevMon = -1;
+  let months = "", grid = "", labeledMon = -1, labelEnd = -1;
   for(let c = 0; c < cols; c++){
-    const m = cur.getMonth();
-    /* 月份只在"这一列的周一进入了新的月份"时标一次,不然每一列都写满重复的字。
-       ⚠️ 一月和第一列的标签带上年份:图拉长到跨年之后,一串"11月 12月 1月 2月"
-       看不出中间换了一年 —— 换年的地方正是一月,所以年份就标在那儿 */
-    if(m !== prevMon){
+    const m = cur.getMonth(), monKey = cur.getFullYear() * 12 + m;
+    /* 每个月标一次。⚠️ 一月和第一列的标签带上年份:图拉长到跨年之后,
+       一串"11月 12月 1月 2月"看不出中间换了一年 —— 换年的地方正是一月。
+       ⚠️ 标签槽只有一列宽(12px),文字是溢出画到右边的 —— 带年份的长标签
+       ("2026年6月")会一直铺到四五列开外,把下一个月的"7月"直接压住
+       (家长截图实锤)。所以记住上一个标签的文字铺到哪一列,铺到的范围内
+       不放新标签;宽度按 CJK 11px/ASCII 7px 分开估,每列 12px。
+       ⚠️ 不能只在"换月的那一列"试一次:那一列若正撞在压制范围里,这个月
+       就永远不补标了(8 月就是这么丢的)—— 所以改成"这个月还没标过 &&
+       这一列不冲突"就标,标签落在月中间几列也比整月没名字强 */
+    if(monKey !== labeledMon && c > labelEnd){
       const lab = (c === 0 || m === 0) ? `${cur.getFullYear()}年${m + 1}月` : `${m + 1}月`;
+      let px = 0;
+      for(const ch of lab) px += ch.charCodeAt(0) > 127 ? 11 : 7;
+      labelEnd = c + Math.ceil(px / 12);
+      labeledMon = monKey;
       months += `<span class="cal-mon"><b>${lab}</b></span>`;
     }else{
       months += `<span class="cal-mon"></span>`;
     }
-    prevMon = m;
     let col = "";
     for(let r = 0; r < 7; r++){
       const key = ymd(cur);

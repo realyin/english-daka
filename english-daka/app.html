@@ -1044,6 +1044,11 @@ function addStars(n){
      没带 ?lesson= 的预览课不写任何存档。 */
   var t = today();
   o.dayStars[t] = (typeof o.dayStars[t] === "number" ? o.dayStars[t] : 0) + n;
+  /* 挣到星星的那天就算打卡日。原来只有 recordFinish()(完成一整轮到结算页)
+     才 markToday —— 孩子学了半截退出去,那天就"白学":日历上没格子、
+     dayStars 里却有星数,统计还会出现"0 天打卡但有星星"的怪账(家长实际
+     遇到了)。收进这里,和 dayStars 的口径合上:有星必有打卡日 */
+  markToday(o);
   if(CUR_ID !== "review") rec4(o, CUR_ID).stars += n;
   store.save(o);
 }
