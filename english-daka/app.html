@@ -230,7 +230,10 @@
   .lhead .bookmark svg{width:20px;height:20px;fill:currentColor;}
   .lhead .bookmark.on{color:#9E5800;background:#FFF0DD;}
   .lhead .bookmark:active{transform:translateY(1px);}
-  .lhead .bookmark + .chev{margin-left:2px;}
+  /* ⚠️ 是 ~ 不是 +:旗子和角标之间还隔着 .word-play(收起时 display:none,
+     但元素在),相邻选择器够不着角标,它的 auto 边距就还活着 ——
+     和旗子的 auto 平分空隙,每张卡的旗子停在各自文字宽度的中途,整列是乱的 */
+  .lhead .bookmark ~ .chev{margin-left:2px;}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
 
