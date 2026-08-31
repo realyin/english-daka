@@ -322,7 +322,29 @@
       "image": "images/wf-at-2-bat.webp",
       "dialog": [
         {
+          "q": "How do you read b, a, t?",
+          "image": "images/wf-at-bat.webp",
+          "a": [
+            "/b/ /a/ /t/, bat.",
+            "I see a bat."
+          ],
+          "key": [
+            "bat"
+          ],
+          "q_cn": "b-a-t 怎么拼读？",
+          "a_cn": [
+            "/b/ /æ/ /t/，bat。",
+            "我看到一只蝙蝠。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-b-a-t-c10ad5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-b-a-t-bat-fadebf.mp3",
+            "audio/sentences/k2-wf-at/a-i-see-a-bat-bb6a08.mp3"
+          ]
+        },
+        {
           "q": "Can the bat fly?",
+          "image": "images/wf-at-2-bat.webp",
           "a": [
             "Yes, the bat can fly."
           ],
@@ -340,6 +362,65 @@
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-bat-b308c0.mp3"
+    },
+    {
+      "word": "rat",
+      "cn": "老鼠",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -at 词族",
+        "ipa": "/ræt/",
+        "parts": [
+          {
+            "text": "r",
+            "sound": "r",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "r",
+          "sound": "r"
+        },
+        "rime": {
+          "text": "at",
+          "sound": "at"
+        },
+        "blend_audio": "audio/phonics/blend-rat.mp3"
+      },
+      "image": "images/wf-at-rat.webp",
+      "dialog": [
+        {
+          "q": "How do you read r, a, t?",
+          "a": [
+            "/r/ /a/ /t/, rat.",
+            "The rat can run."
+          ],
+          "key": [
+            "rat"
+          ],
+          "q_cn": "r-a-t 怎么拼读？",
+          "a_cn": [
+            "/r/ /æ/ /t/，rat。",
+            "老鼠会跑。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-r-a-t-11fc54.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-r-a-t-rat-5787c1.mp3",
+            "audio/sentences/k2-wf-at/a-the-rat-can-run-dffec1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-rat-317ce8.mp3"
     },
     {
       "word": "hat",
@@ -378,7 +459,29 @@
       "image": "images/wf-at-2-hat.webp",
       "dialog": [
         {
+          "q": "How do you read h, a, t?",
+          "image": "images/wf-at-hat.webp",
+          "a": [
+            "/h/ /a/ /t/, hat.",
+            "I have a hat."
+          ],
+          "key": [
+            "hat"
+          ],
+          "q_cn": "h-a-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /æ/ /t/，hat。",
+            "我有一顶帽子。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-h-a-t-0c49ca.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-h-a-t-hat-53885c.mp3",
+            "audio/sentences/k2-wf-at/a-i-have-a-hat-7f28db.mp3"
+          ]
+        },
+        {
           "q": "What color is your hat?",
+          "image": "images/wf-at-2-hat.webp",
           "a": [
             "I have a pink hat."
           ],
@@ -413,6 +516,7 @@
     "-at family": "audio/words/at-family.mp3",
     "a": "audio/words/a.mp3",
     "at": "audio/words/at.mp3",
+    "b": "audio/words/b.mp3",
     "bat": "audio/words/bat.mp3",
     "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
@@ -424,6 +528,7 @@
     "family": "audio/words/family.mp3",
     "fat": "audio/words/fat.mp3",
     "fly": "audio/words/fly.mp3",
+    "h": "audio/words/h.mp3",
     "hat": "audio/words/hat.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
@@ -437,10 +542,15 @@
     "mat": "audio/words/mat.mp3",
     "on": "audio/words/on.mp3",
     "pink": "audio/words/pink.mp3",
+    "r": "audio/words/r.mp3",
+    "rat": "audio/words/rat.mp3",
     "read": "audio/words/read.mp3",
+    "run": "audio/words/run.mp3",
     "s": "audio/words/s.mp3",
     "sat": "audio/words/sat.mp3",
+    "see": "audio/words/see.mp3",
     "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "what": "audio/words/what.mp3",
