@@ -15,7 +15,7 @@
    改 precache 清单或缓存策略时,把 CACHE 的版本号往上加一位,
    activate 会把旧版整个删掉。
    ================================================================ */
-const CACHE = "daka-v3";
+const CACHE = "daka-v4";   // v4:UI 素材(封面/贴纸/icon-180)入库 + 混合复习 Leitner 版(main 侧曾占用 v3)
 
 /* 壳:没有它们页面根本打不开。装 SW 的时候一次性拉齐。
    ⚠️ preview-img.js 436KB 也在里面 —— 它只在直接打开 app.html(不带 ?lesson=)
@@ -29,7 +29,18 @@ const SHELL = [
   "icon.svg",
   "lessons/index.json",
   "lessons/dictionary.json",
-  "lessons/phonics.json"
+  "lessons/phonics.json",
+  /* 界面素材:三张课程封面 + 四张入口/结算贴纸 + 主屏图标,已全部入库(v4)。
+     逐个 add 各自 catch 的机制保留:哪台机器上少了哪张也只是装不上那一张,
+     页面两边都有回退(封面退回巨型字形徽章、贴纸退回 emoji)。 */
+  "lessons/images/cover-zoo.webp",
+  "lessons/images/cover-signs.webp",
+  "lessons/images/cover-recycling.webp",
+  "lessons/images/ui-mic.webp",
+  "lessons/images/ui-target.webp",
+  "lessons/images/ui-trophy.webp",
+  "lessons/images/ui-party.webp",
+  "icon-180.png"
 ];
 
 self.addEventListener("install", (e) => {

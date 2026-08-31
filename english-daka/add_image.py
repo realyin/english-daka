@@ -27,6 +27,15 @@ if "--landscape" in sys.argv:
 else:
     _LANDSCAPE = False
 
+# --sticker:界面贴纸(ui-*.png,透明底正方形),和课程配图是两种资产:
+#   - 必须保留 alpha —— convert("RGB") 会把透明像素直接变成黑底
+#   - 保持 1:1 不裁(3:4 居中裁会切掉贴纸左右)
+if "--sticker" in sys.argv:
+    sys.argv.remove("--sticker")
+    _STICKER = True
+else:
+    _STICKER = False
+
 from PIL import Image
 
 TARGET_W, TARGET_H = 720, 960          # 3:4 竖图(卡片标准);横图素材加 --landscape
@@ -34,8 +43,25 @@ MAX_BYTES = 150 * 1024                 # 150KB
 OUT_DIR = Path("lessons/images")
 
 
+def normalize_sticker(src: Path, name: str) -> Path:
+    """贴纸:RGBA 原样保留,方形收到 512,webp 带 alpha(页面上最大显示 86px)"""
+    img = Image.open(src).convert("RGBA")
+    img.thumbnail((512, 512), Image.LANCZOS)
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out = OUT_DIR / f"{name}.webp"
+    for quality in (85, 75, 65, 55, 45):
+        img.save(out, "WEBP", quality=quality)
+        if out.stat().st_size <= MAX_BYTES:
+            break
+    kb = out.stat().st_size // 1024
+    print(f"  ✓ {out}  ({kb}KB, q={quality}, sticker/alpha)")
+    return out
+
+
 def normalize(src: Path, name: str) -> Path:
     global TARGET_W, TARGET_H
+    if _STICKER:
+        return normalize_sticker(src, name)
     if _LANDSCAPE and TARGET_W < TARGET_H:
         TARGET_W, TARGET_H = TARGET_H, TARGET_W
     img = Image.open(src).convert("RGB")
