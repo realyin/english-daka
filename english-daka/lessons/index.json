@@ -190,6 +190,7 @@
       "words": 7,
       "group": "主题 Topics",
       "badge": "🦁",
+      "cover": "images/cover-zoo.webp",
       "seq": 501
     },
     {
@@ -198,6 +199,7 @@
       "words": 4,
       "group": "主题 Topics",
       "badge": "🚏",
+      "cover": "images/cover-signs.webp",
       "seq": 502
     },
     {
@@ -231,6 +233,7 @@
       "words": 15,
       "group": "科学 Science",
       "badge": "♻️",
+      "cover": "images/cover-recycling.webp",
       "seq": 701
     }
   ]

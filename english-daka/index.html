@@ -7,9 +7,11 @@
 <meta name="theme-color" content="#F0F7FF">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
-<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
-     要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
-<link rel="apple-touch-icon" href="icon.svg">
+<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),所以这里指向 png。
+     icon-180.png 由 docs/UI素材Prompt.md 的 A1 生成(1024 缩到 180),现在还没入库 ——
+     404 无害:iOS 拿不到就退回原来的网页截图行为,和以前一模一样。
+     favicon 仍然走矢量的 icon.svg,不受影响 -->
+<link rel="apple-touch-icon" href="icon-180.png" sizes="180x180">
 
 <style>
   :root{
@@ -17,20 +19,20 @@
     --pink:#FF6FA5; --yellow:#FFC53D; --green:#4CC26E; --blue:#3E8BFF;
     /* 封面色:比主题色深一档,保证巨大白字的对比度达标 */
     --c1:#E85C93; --c2:#2F7BEF; --c3:#37A85B; --c4:#8557EA; --c5:#EE8420;
-    /* 封面尺寸随屏幕走:手机上占到六成屏宽,大屏封顶 */
-    --cw:clamp(212px, 64vw, 268px); --ch:calc(var(--cw) * 1.28);
+    /* 封面尺寸随屏幕走:375px 手机上一屏两张半(第三张被右缘裁掉一截,
+       "这一排还能往右滑"就不用另外拿一行字解释了),720px 内容列里是四张半 */
+    --cw:clamp(120px, 34vw, 160px); --ch:calc(var(--cw) * 1.28);
   }
   *{
     box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;
     -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
   }
-  /* 必须写在 html 上,只写 body 是没用的(原来就只写了 body,实测页面照样能横滚
+  /* overflow-x:hidden 是防御性的:横滚现在关在 .shelf-row 自己的滚动容器里,
+     整页本来就不该横向可滚。留着它,是因为一旦哪条规则算宽算多了几像素,
+     手指在货架上横划时浏览器会顺手把整页一起平移,看着就是"整个页面在抖"。
+     必须写在 html 上,只写 body 没用(原来就只写了 body,实测页面照样能横滚
      290px):body 的 overflow-x:hidden 配 overflow-y:visible 会让 body 自己变成
      滚动容器,就不再往视口传递了;视口的溢出行为取的是 html 的值。
-     不封住的后果:折叠到最外侧的卡片被 translateX 甩出 .stage(它是 overflow:visible),
-     整页因此横向可滚 —— 平板上 414px 宽能滚 290px。手指在封面流上横划时,
-     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。
-     ⚠️ overflow-x:hidden 不能删,理由就是上面这一整段。
      background 是另一回事:目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷
      一帧浏览器默认白底,深色封面跳过去就是"啪"一下白闪。写在 html 上首帧就有色 */
   html{ overflow-x:hidden; background:var(--bg); }
@@ -42,9 +44,48 @@
     background:var(--bg); color:var(--ink); min-height:100vh; padding-bottom:44px;
     overflow-x:hidden;
   }
-  header{text-align:center;padding:24px 16px 10px;}
-  header h1{font-size:26px;letter-spacing:2px;}
-  header p{font-size:13px;color:#5E6E8C;margin-top:6px;font-weight:600;}
+  /* ===== 图标 =====
+     UI 层原来用的是 emoji。emoji 的字形、粗细、基线各平台各不相同(安卓那套
+     线条细、iOS 那套厚实),同一行里和文字高矮对不齐,而且换个系统整页气质就变了。
+     换成内联 SVG:形状我们自己定,颜色跟着文字走(fill:currentColor),
+     字号一变图标跟着变(1em 见方)。
+     ⚠️ 引用变量必须带回落值:这段内联 <style> 排在 theme.css 之前 */
+  .ic{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:currentColor;flex:none;}
+  /* 星星金、火苗橙:这两个是"奖励/连胜"的语义色,不该跟着正文变灰 */
+  .ic-star{color:var(--yellow,#FFC53D);}
+  .ic-flame{color:var(--orange,#FF9A3D);}
+
+  /* header 自己不留左右 padding:唯一的孩子 .hat 自己出左右边距 ——
+     .hat 要和下面货架的内容列像素级同轴,多一层 padding 就得两处一起算。
+     标题已经收进 .hat 里当卡内第一行,header 只剩"顶部留一点气口"这一个职责,
+     text-align:center 也一并撤掉(标题现在靠左,和货架的分组标题同一条左缘) */
+  header{padding:var(--sp-1,8px) 0 0;}
+  /* 26→21px:它从"整页大标题"降级成"卡内标题",要和右边同排的打卡条平视,
+     字号再大就把那一行压塌了。letter-spacing 保留 —— 六个汉字疏一点才像招牌。
+     左右 padding 去掉:左缘由 .hat 的 padding 统一出,自己再加一份就错开一档 */
+  header h1{font-size:21px;letter-spacing:2px;flex:none;}
+
+  /* ===== 帽子(打卡条 + 行动按钮) =====
+     原来打卡条(360px)、继续学(内容宽)、混合复习(内容宽)是三个各自居中的悬浮
+     元素,三种宽度,和下面左对齐的货架内容列是两套构图轴 —— 家长反馈"上下分离"。
+     现在收进同一张白卡,卡的左右缘和分组标题/第一张封面严格同一条竖线。
+     宽度算法必须和 .shelf 那套对齐:.shelf 是 max-width:720 + margin auto,
+     .shelf-head 再往里缩 16px,所以内容列 = min(视口, 720) - 32,居中。
+     这里就写成 calc(100% - 32px) 封顶 688px(=720-32),两边都是同一个结果。
+     ⚠️ 改 .shelf 的 720 或 .shelf-head 的 16px,这里的 688/32 要跟着改。
+     第一行是「标题 + 本周打卡记录」:标题 flex:none 靠左,打卡条 flex:1 吃掉
+     剩下的宽度并把内容贴右(点阵 + 🔥连胜是一组,分开摆就成了两个孤零零的元素)。
+     窄屏放不下时靠 flex-wrap 自然折成"标题一行、打卡条一行",不用写断点;
+     第二行(按钮)靠 flex-basis:100% 永远独占一行 */
+  .hat{
+    width:calc(100% - var(--sp-3,16px) * 2);max-width:688px;
+    margin:var(--sp-4,20px) auto 0;
+    padding:var(--sp-2,12px) var(--sp-3,16px);
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:20px;
+    box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:var(--sp-2,12px) var(--sp-3,16px);
+  }
 
   /* ===== 骨架屏 =====
      课程清单要等一次网络往返才回来,那之前整页只有一个标题和一片空白 ——
@@ -52,14 +93,17 @@
      数据到了就地换掉,画面不跳。
      ⚠️ 只做形状不做内容:骨架里写"加载中"之类的字,孩子也读不懂,
      而且真数据到了字一闪就没,反而是干扰。 */
-  .skel{max-width:720px;margin:0 auto;padding:0 16px;}
-  .skel-head{height:16px;width:150px;border-radius:8px;margin:26px 2px 10px;}
-  .skel-row{display:flex;gap:12px;justify-content:center;overflow:hidden;}
-  .skel-card{
-    flex:none;width:var(--cw);height:var(--ch);border-radius:22px;
+  .skel{max-width:720px;margin:0 auto;}
+  .skel-head{height:16px;width:150px;border-radius:8px;margin:26px var(--sp-3,16px) 10px;}
+  /* 灰块的排布必须和真货架一模一样(同尺寸、同 gap、同左内边距、同样左对齐),
+     数据到了就地换掉时画面才不跳 */
+  .skel-row{
+    display:flex;gap:var(--sp-2,12px);overflow:hidden;
+    padding:var(--sp-1,8px) var(--sp-3,16px) var(--sp-3,16px);
   }
-  /* 侧边那两张按真封面的折叠感缩一点,别是三个一样大的方块 */
-  .skel-card.side{transform:scale(.82);opacity:.6;}
+  .skel-card{
+    flex:none;width:var(--cw);height:var(--ch);border-radius:16px;
+  }
   .skel-head,.skel-card{background:#DCE7F5;animation:skel-pulse 1.4s ease-in-out infinite;}
   @keyframes skel-pulse{0%,100%{opacity:.5;}50%{opacity:.9;}}
   @media (prefers-reduced-motion:reduce){
@@ -67,73 +111,93 @@
   }
 
   /* ===== 专辑架 ===== */
-  .shelf{max-width:720px;margin:0 auto;padding:0 16px;}
+  /* .shelf 自己不加左右 padding:横滚行要一直铺到内容列边缘,卡片被右缘裁掉半张
+     正是"还能往右滑"的提示。左内边距改由 .shelf-head 的 margin 和 .shelf-row 的
+     padding 各自出,两者都是 16px —— 标题和第一张卡必须同一条左缘 */
+  .shelf{max-width:720px;margin:0 auto;}
   .shelf-head{
     display:flex;align-items:center;gap:10px;
-    margin:26px 2px 6px;font-size:15px;font-weight:900;color:var(--ink);
+    margin:26px var(--sp-3,16px) 6px;font-size:15px;font-weight:900;color:var(--ink);
   }
   .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
   .shelf-head .count{font-size:12px;font-weight:700;color:#5E6E8C;}
 
-  /* 通栏:侧边卡片会画到内容宽度之外,手势区必须跟着铺满,
-     否则去拨那张侧卡是没反应的(最自然的拨动位置反而失灵) */
-  .stage{
-    position:relative;height:calc(var(--ch) + 34px);perspective:1200px;
-    width:100vw;margin-left:calc(50% - 50vw);
-    touch-action:pan-y;cursor:grab;
+  /* 横滚货架:滚动、惯性、吸附全交给浏览器原生实现,不再自己写手势 ——
+     换来的是一屏能看见三四张(原来一次只给看一张)、点哪张就进哪张(原来点侧卡
+     要先转正、多一次点击),而且惯性和边界回弹是系统那一套,和别的应用一致。
+     snap 用 proximity 不用 mandatory:mandatory 会把"只想推一点看看后面有什么"
+     变成必须整张整张翻,而且滚到末尾时容易被吸回去。
+     上下 padding 是给卡片投影和 :focus-visible 描边留的位置 ——
+     overflow-x:auto 会把 overflow-y 一起变成 auto,不留就被切平。*/
+  .shelf-row{
+    display:flex;gap:var(--sp-2,12px);
+    overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x proximity;
+    padding:var(--sp-1,8px) var(--sp-3,16px) var(--sp-3,16px);
+    scroll-padding-inline:var(--sp-3,16px);   /* 吸附后卡片左缘对齐标题,不贴死在边上 */
+    -webkit-overflow-scrolling:touch;
   }
-  .stage.grabbing{cursor:grabbing;}
-  /* rack 自己不能接点击:它在 z=0 平面且铺满整个 stage,而折叠的卡都被
-     translateZ(-88px) 推到它后面 —— 3D 上下文里排序看深度,rack 就挡在所有
-     折叠卡前面,「点侧卡转到中间」实际上一直是坏的(最外侧那张整片点不到,
-     第二张只剩 30px 能点)。改成 none 之后各卡的可点区间才和画出来的位置对上。 */
-  .rack{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none;}
+  /* 滚动条藏起来:这一页的读者是孩子,一条灰杠只会招来乱拖;
+     "能滑"由右缘那张被裁一半的卡片来说明 */
+  .shelf-row{scrollbar-width:none;}
+  .shelf-row::-webkit-scrollbar{display:none;}
 
   .cover{
-    position:absolute;left:50%;top:50%;width:var(--cw);height:var(--ch);
-    margin:calc(var(--ch) / -2) 0 0 calc(var(--cw) / -2);
+    flex:none;width:var(--cw);height:var(--ch);scroll-snap-align:start;
     display:flex;flex-direction:column;text-decoration:none;color:var(--ink);
-    background:#fff;border-radius:20px;overflow:hidden;
-    box-shadow:0 8px 22px rgba(43,58,85,.16);
-    will-change:transform,opacity;
-    pointer-events:auto;                       /* 父级 .rack 是 none,卡片要自己收回来 */
-  }
-  /* 位置/阴影/文字全部由 rAF 弹簧逐帧驱动,不用 CSS 过渡 ——
-     混用会让阴影和文字比卡片慢半拍,滑动时看着就是"颜色闪一下" */
-  .cover::after{
-    content:"";position:absolute;inset:0;pointer-events:none;border-radius:20px;
-    background:linear-gradient(var(--g,90deg), rgba(20,30,50,.42), rgba(20,30,50,0) 72%);
-    opacity:var(--shade,0);
+    background:#fff;border-radius:16px;overflow:hidden;
+    box-shadow:0 6px 16px rgba(43,58,85,.14);
   }
   .cover .art{
     flex:1;display:flex;align-items:center;justify-content:center;
     background:var(--c);
     position:relative;                         /* 星数角标的定位基准 */
   }
+  /* 字号跟着卡宽走,卡片缩到 120px 时字形也要仍然是"一眼认出的那个字母";
+     比例比通栏时期略提(.42→.46),小卡上字形周围的留白本来就少不了 */
   .cover .glyph{
-    font-size:calc(var(--cw) * 0.42);font-weight:900;color:#fff;line-height:1;
+    font-size:calc(var(--cw) * 0.46);font-weight:900;color:#fff;line-height:1;
     text-shadow:0 3px 0 rgba(0,0,0,.13);
   }
-  .cover .glyph.long{font-size:calc(var(--cw) * 0.25);letter-spacing:-1px;}
-  /* 折叠后文字既读不了又会被邻卡切断,淡出只留封面画面 */
-  .cover .label{padding:13px 15px 15px;background:#fff;}
-  .cover .label > *{opacity:var(--lab,1);}
-  .cover .en{font-size:17px;font-weight:900;line-height:1.2;}
-  .cover .cn{font-size:13px;color:#5E6E8C;font-weight:700;margin-top:3px;
+  .cover .glyph.long{font-size:calc(var(--cw) * 0.27);letter-spacing:-1px;}
+  /* 课程封面画:有 cover 字段的课在字形徽章之上铺一张水彩图。
+     图铺满 .art 绝对定位,底下的 glyph 照常渲染 —— 图 404 时 onerror 把 <img>
+     摘掉,露出来的就是原来那个巨型字形封面,外观和以前一模一样。
+     目前只有主题/科学几课配了图(见 docs/UI素材Prompt.md 的 C1~C3),
+     其余的课本来就没有 cover 字段,走的是纯字形那一支 */
+  .cover .art img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  }
+  .cover .label{padding:8px 10px 10px;background:#fff;}
+  .cover .en{font-size:14px;font-weight:900;line-height:1.2;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .cover .n{font-size:12px;color:#5E6E8C;font-weight:700;margin-top:5px;}
+  .cover .cn{font-size:11px;color:#5E6E8C;font-weight:700;margin-top:2px;
+             white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* ===== 打卡条 ===== */
-  /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
-     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请 */
+  /* 本周(周一起)到今天,一天一个点。天天来的孩子看的就是这一行 ——
+     空心变实心是他能自己看懂的唯一"进度"。
+     它住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
+     全部去掉,只留内部那条 flex 行 —— 卡中卡会多出一圈没有意义的描边。
+     现在和 h1 同排:flex:1 吃掉标题右边剩下的宽度,justify-content:flex-end
+     把"点阵 + 连胜"整组贴到卡的右缘 —— 和下面按钮行的右缘对成一条线。
+     窄屏 wrap 到第二行时仍然靠右,和左上角的标题形成对角平衡。
+     min-height:44px:整条现在是可点的(开打卡日历),要够儿童手指的热区;
+     左右负 margin 抵掉 padding —— 悬停底色能铺得比内容宽一点,
+     但点阵和连胜的位置和加热区之前一模一样 */
   .checkin{
-    max-width:360px;margin:var(--sp-3,16px) auto 0;padding:9px 14px;
-    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
-    display:flex;align-items:center;justify-content:space-between;gap:12px;
-    box-shadow:0 3px 10px rgba(43,58,85,.08);
+    flex:1 1 auto;min-width:0;
+    display:flex;align-items:center;justify-content:flex-end;gap:var(--sp-2,12px);
+    min-height:44px;padding:0 var(--sp-1,8px);margin:0 calc(var(--sp-1,8px) * -1);
+    border-radius:14px;cursor:pointer;
+    transition:background var(--dur-fast,.15s) var(--ease-out,ease);
   }
-  /* 内容是 JS 填的:老浏览器解析不了脚本时别在标题下留一个空白盒子 */
+  .checkin:hover{background:#F4F8FE;}
+  .checkin:active{background:#EAF1FC;}
+  .checkin:focus-visible{outline:4px solid var(--blue);outline-offset:2px;}
+  /* 内容是 JS 填的:老浏览器解析不了脚本时,帽子里就只剩按钮列,
+     不能在按钮旁边留一个撑着 300px 的空盒子(会把按钮挤成半宽) */
   .checkin:empty{display:none;}
   .checkin-days{display:flex;gap:5px;}
   .cday{display:flex;flex-direction:column;align-items:center;gap:3px;}
@@ -142,81 +206,203 @@
     border:2px solid #CFDCEE;background:#fff;box-sizing:border-box;
   }
   .cdot.on{background:var(--yellow);border-color:#E9A800;}
-  /* 今天那格加一圈蓝描边:七个点长得一样时,孩子分不清哪个是"今天该点亮的" */
+  /* 今天那格加一圈蓝描边:几个点长得一样时,孩子分不清哪个是"今天该点亮的" */
   .cday.today .cdot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(62,139,255,.28);}
+  /* 本周还没到的天:一眼要能和"过去没打卡的空圈"区分开 ——
+     圈更淡、字更淡,读作"这周还剩这几天",不是"这几天没打" */
+  .cday.future .cdot{border-color:#E4EDF8;}
+  .cday.future .cw{color:#B9C6DA;}
   .cw{font-size:11px;font-weight:700;color:#5E6E8C;line-height:1;}
   .cday.today .cw{color:var(--blue);}
   .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
 
+  /* ===== 打卡日历弹窗 =====
+     打卡条只给"这一周",家长想看的"坚持了多久"没地方看。点一下打卡条弹出
+     一整年的热力图 —— 它是回顾,不是操作,所以做成弹窗而不是再占一块首屏。
+     ⚠️ 遮罩是 position:fixed,不进正常流,不会给整页添出横向滚动。
+     ⚠️ 关着的时候用 visibility:hidden 而不是 display:none / hidden 属性:
+     display 一变,过渡就没有起点可插值,还得靠 rAF 或 transitionend 补一帧 ——
+     那些回调在后台标签页里根本不跑,弹窗会卡在"打开了但看不见"。
+     visibility 和 display:none 一样会把里面的关闭钮移出 Tab 序和无障碍树,
+     所以关着的时候键盘绝对够不到它;pointer-events:none 再挡掉鼠标。
+     ⚠️ visibility 的过渡写成 0s:打开这一下必须在样式重算时就立刻生效
+     (JS 紧接着要 focus() 关闭钮,而 visibility:hidden 的元素聚焦不了)——
+     写成有时长的过渡就得等第一帧,后台标签页里那一帧不来,焦点就丢了。
+     关闭时给 visibility 挂 --dur-base 的**延迟**:淡出跑完才真正藏起来,
+     而 opacity/pointer-events 是立刻的,不用等任何回调。
+     减弱动效时 --dur-* 归零,这一整套自动变成瞬时,不用写一行 JS 判断 */
+  .cal-mask{
+    position:fixed;inset:0;z-index:50;
+    display:flex;align-items:center;justify-content:center;padding:var(--sp-3,16px);
+    background:rgba(43,58,85,.45);
+    opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity var(--dur-base,.24s) var(--ease-out,ease),
+               visibility 0s linear var(--dur-base,.24s);
+  }
+  .cal-mask.open{
+    opacity:1;visibility:visible;pointer-events:auto;
+    transition:opacity var(--dur-base,.24s) var(--ease-out,ease),
+               visibility 0s linear 0s;
+  }
+  .cal{
+    /* 700 而不是 680:一年(53 列)的热力图连星期标签一共 655px,加上卡的
+       内边距和边框正好要 700 才能在桌面上一次看完 —— 差那 20px 就得横滚,
+       而"一屏看完一年"正是这张图的意义。用了不止一年的存档会更长,
+       那时候和窄屏一样在 .cal-scroll 里横滚,不影响这一档的体验 */
+    width:100%;max-width:700px;max-height:calc(100vh - var(--sp-3,16px) * 2);
+    overflow-y:auto;
+    padding:var(--sp-3,16px);
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:20px;
+    box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
+    /* 弹出用 spring:末尾轻微过冲,和 app.html 的弹窗是同一种"蹦出来"的手感 */
+    transform:scale(.94);
+    transition:transform var(--dur-base,.24s) var(--ease-spring,ease);
+  }
+  .cal-mask.open .cal{transform:scale(1);}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);}
+  .cal-head h2{font-size:17px;font-weight:900;letter-spacing:1px;}
+  /* 44px 见方的热区,里面的 ✕ 只有 16px —— 图标大小和可点范围是两回事 */
+  .cal-x{
+    flex:none;width:44px;height:44px;margin:-10px -10px -10px 0;
+    display:flex;align-items:center;justify-content:center;
+    border:0;background:none;color:var(--muted,#5E6E8C);font-size:16px;
+    border-radius:50%;cursor:pointer;
+  }
+  .cal-x:hover{background:#F4F8FE;color:var(--ink);}
+  .cal-x:focus-visible{outline:4px solid var(--blue);outline-offset:-2px;}
+
+  /* 热力图:列=周(周一在顶),从 52 周前排到本周,共 53 列。
+     星期标签留在滚动容器外面 —— 横滚时"一/三/五"要一直钉在左边,
+     跟着一起滑走的话滚到中间就没有坐标系了 */
+  .cal-map{display:flex;align-items:flex-start;gap:4px;margin-top:var(--sp-2,12px);}
+  /* padding-top 必须等于月份标签行的总高(14+2),否则星期和格子错半行 */
+  .cal-wd{
+    flex:none;display:flex;flex-direction:column;padding-top:16px;
+    font-size:9px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-wd span{height:10px;margin-bottom:2px;line-height:10px;}
+  /* 53 列约 634px:桌面弹窗(680)刚好放得下,手机放不下就在这里横滚。
+     滚动条藏起来,和货架同一套理由(读者是孩子,一条灰杠只会招来乱拖) */
+  .cal-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;}
+  .cal-scroll{scrollbar-width:none;}
+  .cal-scroll::-webkit-scrollbar{display:none;}
+  /* inline-block:让内层按内容宽度撑开(而不是被滚动容器压成 100%)。
+     padding 给"今天"那圈 outline 留位置,月份行和格子行同时缩进,不会错位 */
+  .cal-inner{display:inline-block;padding:2px;}
+  .cal-months{display:flex;gap:2px;height:14px;margin-bottom:2px;}
+  /* 每列一个占位格,月份名绝对定位吐在格子外面 —— 列只有 10px 宽,
+     不脱离文档流的话"12月"三个字会把整行撑散、和格子对不上列 */
+  .cal-mon{flex:none;width:10px;position:relative;}
+  .cal-mon b{
+    position:absolute;left:0;top:0;white-space:nowrap;
+    font-size:9px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-grid{display:flex;gap:2px;}
+  .cal-col{flex:none;width:10px;display:flex;flex-direction:column;gap:2px;}
+  /* 未打卡的浅蓝和 --line 同一族:是"还没填的格子",不是"缺席"的警示色 */
+  .cal-cell{flex:none;width:10px;height:10px;border-radius:3px;background:#E2EBF7;}
+  /* 四档绿 = 那天挣了多少星。色相全部锁死在 --green 上只动明度 ——
+     换色相(比如浅的偏黄、深的偏蓝)会被读成"不同种类的一天",而它们只是多少之分。
+     s0 是"打了卡但没有星数记录"的老数据:比 s1 还浅一档,和空格子拉开,
+     但也不假装知道那天学了多少。阈值见 JS 的 STAR_TIERS */
+  .cal-cell.s0{background:#CDEBD6;}
+  .cal-cell.s1{background:#A8DFBB;}
+  .cal-cell.s2{background:#74CE93;}
+  .cal-cell.s3{background:var(--green,#4CC26E);}
+  .cal-cell.s4{background:#2E9C51;}
+  /* outline 而不是 border:border 会把 10px 的格子挤小,一整列就对不齐了 */
+  .cal-cell.now{outline:2px solid var(--blue,#3E8BFF);}
+  .cal-legend{
+    display:flex;align-items:center;gap:3px;
+    margin-top:var(--sp-2,12px);
+    font-size:11px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-legend span:first-child{margin-right:2px;}
+  .cal-legend span:last-child{margin-left:2px;}
+  /* 规则说明:小字灰字,别抢热力图的戏 */
+  .cal-note{
+    margin-top:6px;font-size:12px;line-height:1.7;
+    color:var(--muted,#5E6E8C);
+  }
+  /* 统计块:窄屏两列、宽屏四列,不写断点 —— auto-fit + minmax 让浏览器自己数
+     一行放得下几个(手机上的可用宽度约 294px,放得下两个 120;
+     弹窗最宽时约 644px,四个正好铺满) */
+  .cal-stats{
+    display:grid;grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+    gap:var(--sp-1,8px);margin-top:var(--sp-2,12px);
+  }
+  .cal-tile{
+    padding:10px var(--sp-2,12px);border-radius:14px;background:#F2F7FD;
+  }
+  /* 数值大、单位和标签小:家长扫一眼要看到的是那个数,不是"天"字 */
+  .cal-tile b{display:block;font-size:22px;font-weight:900;line-height:1.1;}
+  .cal-tile b i{font-style:normal;font-size:12px;font-weight:700;margin-left:2px;
+                color:var(--muted,#5E6E8C);}
+  .cal-tile span{display:block;margin-top:2px;font-size:11px;font-weight:700;
+                 color:var(--muted,#5E6E8C);}
+
   /* ===== header 行动区 ===== */
-  .acts{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:14px;}
+  /* 帽子里的按钮行(家长反馈:电脑上两个按钮竖着叠像"重叠",宽屏该并排)。
+     不写媒体断点,靠 wrap 数学:每个按钮 flex-basis 240px ——
+     宽屏一行放得下两个就并排各占一半,手机(卡内容 ~310px)放不下就
+     自动换行、单个按钮撑满整行,和原来的堆叠一模一样。
+     默认 align-items:stretch 让并排的两个按钮同高(次按钮被拉到主按钮的 52px) */
+  .acts{
+    flex:1 1 100%;min-width:0;
+    display:flex;flex-wrap:wrap;gap:var(--sp-1,8px);
+  }
+  .acts > a{flex:1 1 240px;min-width:0;}
   /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
   .go-btn{
     display:inline-flex;align-items:center;justify-content:center;
-    min-height:52px;max-width:94%;padding:12px 26px;border-radius:999px;
+    /* 不设 max-width:在帽子的右列里要撑满列宽,和「混合复习」对齐成一条边;
+       文字仍由 justify-content:center 居中 */
+    min-height:52px;padding:12px 26px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:17px;
-    text-decoration:none;box-shadow:0 4px 0 rgba(0,0,0,.14);line-height:1.25;
+    /* 阴影走 theme.css 的柔投影 token,不再是"墨色硬边"那一套 ——
+       全站(含 app.html 的按钮/卡片)统一成浅色细边 + 柔投影 */
+    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));line-height:1.25;
   }
-  .go-btn:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.14);}
+  /* 按压反馈全站一个口径:下沉 2px + 收成 --shadow-sm */
+  .go-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
   .go-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
      而且每次进去内容都不一样,当成"课"会误导 */
+  /* text-align:center 显式写出来:它以前是从 header 继承的,
+     而 header 的 text-align 只服务标题,不该被按钮的居中依赖着 */
   .review-btn{
-    display:inline-block;padding:10px 20px;border-radius:999px;
+    /* flex 而不是 block:并排时会被 stretch 拉到和主按钮同高(52px),
+       block 的文字会贴在顶上,竖向也要居中 */
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
-    text-decoration:none;box-shadow:0 3px 0 rgba(0,0,0,.12);
+    text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
   }
-  .review-btn:active{transform:translateY(2px);box-shadow:none;}
+  .review-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm, 0 1px 4px rgba(43,58,85,.14));}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
   /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次 */
   .review-btn.ghost{
     background:#fff;color:var(--ink);border:2px solid var(--line,#DCE5F2);
     box-shadow:none;
   }
-  .review-btn.ghost:active{transform:translateY(2px);}
+  /* 次按钮平时就没有投影,按下去也不该凭空长出来一层 —— 只保留下沉 2px */
+  .review-btn.ghost:active{transform:translateY(2px);box-shadow:none;}
 
   /* 封面右上角的星数角标:白底小胶囊,压在画面上但不遮巨型字形 */
   .cover-stars{
-    position:absolute;top:8px;right:8px;
-    padding:2px 9px;border-radius:999px;
+    position:absolute;top:6px;right:6px;
+    z-index:2;                                 /* 压在封面画之上,别被铺满的 <img> 盖掉 */
+    padding:2px 8px;border-radius:999px;
     background:rgba(255,255,255,.94);color:var(--ink);
-    font-size:13px;font-weight:900;line-height:1.5;
+    font-size:12px;font-weight:900;line-height:1.5;
     box-shadow:0 2px 6px rgba(43,58,85,.18);
   }
-
-  /* 单手时点圆点比滑动省力,所以点击区做到 30px,视觉上仍是小圆点 */
-  .dots{display:flex;gap:2px;justify-content:center;margin-top:2px;flex-wrap:wrap;}
-  .dot{
-    width:30px;height:30px;border:none;padding:0;background:none;
-    cursor:pointer;display:flex;align-items:center;justify-content:center;
-  }
-  .dot::before{
-    content:"";width:9px;height:9px;border-radius:50%;background:#CFDCEE;
-    transition:all .3s ease;
-  }
-  .dot.on::before{background:var(--blue);width:24px;border-radius:5px;}
-  .dot:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:8px;}
-  /* 节数多的组(字母课 11 节)按原尺寸要 11×30 + 10×2 = 350px,320px 屏上折成两行,
-     把下一个分组的标题一起顶下去,那一行圆点也就不再像"这一组有多长"了。
-     .many 只压**视觉**:圆点 9→6px、选中胶囊 24→16px、gap 归零,
-     点击区仍是 26×30px(手指 26px 够用,而竖向没被压)。
-     11×26=286px,320px 屏减掉 .shelf 的左右各 16px 正好剩 288px,单行放得下。
-     ⚠️ 别顺手把 .dot 的 height 也压下去 —— 竖向不是瓶颈,压了纯粹是变难点 */
-  .dots.many{gap:0;}
-  .dots.many .dot{width:26px;}
-  .dots.many .dot::before{width:6px;height:6px;}
-  .dots.many .dot.on::before{width:16px;border-radius:4px;}
 
   .note{
     max-width:520px;margin:20px auto 0;padding:14px 16px;
     font-size:13px;color:#5E6E8C;text-align:center;line-height:1.7;
   }
-  /* 卡片动画由 rAF 驱动,减弱动效时脚本会直接跳到位;这里只关掉圆点的过渡 */
-  @media (prefers-reduced-motion: reduce){
-    .dot::before{transition:none;}
-  }
-
   /* 目录页 ⇄ 课程页的跨文档过渡(渐进增强)。不认识 @view-transition 的浏览器
      按 CSS 错误恢复规则整块跳过,退回原来的硬跳转,不会坏。
      ⚠️ 两页都要声明,app.html 里有一份一样的,少一边就不生效。
@@ -232,19 +418,88 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+<!-- ===== 图标 sprite =====
+     ⚠️ 两页各有一份 sprite(只放本页用得上的图标),改图标要**同步改两处**。
+     不抽成外部 .svg 文件:图标是壳的一部分,多一次请求就多一次首屏等待,
+     而且 <use> 引外部文件在离线/file:// 下有各种坑。
+     用法:<svg class="ic" aria-hidden="true"><use href="#i-star"/></svg> -->
+<svg style="display:none" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5c.42 0 .8.24.98.61l2.34 4.74 5.23.76c.9.13 1.27 1.25.6 1.9l-3.78 3.69.89 5.2c.16.91-.79 1.6-1.6 1.17L12 18.11l-4.68 2.46c-.81.43-1.76-.26-1.6-1.17l.89-5.2-3.78-3.69c-.67-.65-.3-1.77.6-1.9l5.23-.76 2.34-4.74c.19-.37.57-.61.99-.61z"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><g transform="translate(0 1.5) scale(1.5)"><path fill-rule="evenodd" d="M8 14c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 2 9-1.5 6-2c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 12 4.686 14 8 14Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 8 7 8.5 7 8.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 12 9.657 13 8 13Z"/></g></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7.6 6.1 18 12 7.6 17.9Z" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></g></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M2.9 6.9h3.3c.72 0 1.4.35 1.82.94l5.66 7.94c.42.59 1.1.94 1.82.94h3.4"/><path d="M2.9 17.1h3.3c.72 0 1.4-.35 1.82-.94l5.66-7.94c.42-.59 1.1-.94 1.82-.94h3.4"/></g><path d="M17.9 3.7 21.6 6.9 17.9 10.1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17.9 13.9 21.6 17.1 17.9 20.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 4.9 8.1 4.3 5.7 4.3c-1 0-1.9.12-2.7.36V18c.8-.24 1.7-.36 2.7-.36 2.4 0 4.7.64 6.3 1.96 1.6-1.32 3.9-1.96 6.3-1.96 1 0 1.9.12 2.7.36V4.66c-.8-.24-1.7-.36-2.7-.36-2.4 0-4.7.64-6.3 1.9Z"/><path d="M12 6.2v13.4"/></g></symbol>
+</defs></svg>
+
 <header>
-  <h1>🌟 我的英语打卡 🌟</h1>
-  <p>左右滑动挑一张，点中间那张开始</p>
-  <div class="checkin" id="checkin"></div>
-  <div class="acts" id="acts">
-    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
-    <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
-         有在练的词时由脚本把数带上;始终是白底次按钮,主行动留给复习/继续学 -->
-    <a class="review-btn ghost" id="wrongBtn" href="app.html?lesson=review&pick=wrong">📕 错题本</a>
+  <!-- 标题、打卡条、行动按钮住在同一张白卡(.hat)里,卡的左右缘与下面货架的
+       分组标题/第一张封面同轴 —— 详见 CSS 的「帽子」一节。
+       h1 收进卡里当第一行、和打卡条同排:原来标题悬在卡外面自成一层,
+       和下面这张卡是两个独立的块,顶部就多出一段空落落的白。
+       ⚠️ h1 仍然是页面唯一的一级标题(语义没动),document.title 和
+       manifest 里的名字也都保持原样 -->
+  <div class="hat">
+    <h1>我的英语打卡</h1>
+    <!-- 整条打卡记录是「查看打卡日历」的按钮:它是一年记录的缩略图,
+         点开看全年是最自然的手势。用 div + role 而不是 <button>:
+         按钮的默认样式/内联布局要一条条覆盖,而这里连键盘行为都是自己写的 -->
+    <div class="checkin" id="checkin" role="button" tabindex="0" aria-label="查看打卡日历"></div>
+    <div class="acts" id="acts">
+      <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
+      <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
+           有在练的词时由脚本往 label 里带数(只动文字,别动图标);
+           始终是白底次按钮,主行动留给复习/继续学 -->
+      <a class="review-btn ghost" id="wrongBtn" href="app.html?lesson=review&pick=wrong"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> <span id="wrongBtnLabel">错题本</span></a>
+    </div>
   </div>
 </header>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
+
+<!-- 打卡日历弹窗:静态写在这里、默认 hidden,不用 JS 建。
+     结构固定不变(只有格子是 JS 填的),写成模板比在脚本里拼一堆 createElement
+     好读,而且 JS 挂了的时候它就是个隐藏节点,不会在页面上留下半截东西。
+     ⚠️ 不写 hidden 属性:显示/隐藏全交给 .open class 和 CSS 的 visibility,
+     理由见样式表里「打卡日历弹窗」一节。 -->
+<div class="cal-mask" id="calMask">
+  <div class="cal" role="dialog" aria-modal="true" aria-labelledby="calTitle">
+    <div class="cal-head">
+      <h2 id="calTitle">打卡日历</h2>
+      <button class="cal-x" id="calClose" type="button" aria-label="关闭">
+        <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="cal-map">
+      <!-- 只标 一/三/五:七行全标的话 9px 的字挤成一坨,反而读不出来 -->
+      <div class="cal-wd" aria-hidden="true">
+        <span>一</span><span></span><span>三</span><span></span>
+        <span>五</span><span></span><span></span>
+      </div>
+      <div class="cal-scroll" id="calScroll">
+        <div class="cal-inner">
+          <div class="cal-months" id="calMonths" aria-hidden="true"></div>
+          <div class="cal-grid" id="calGrid" role="img" aria-label="打卡日历热力图"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 图例:四档绿是"那天学了多少",不解释一句家长会当成随机深浅。
+         aria-hidden:读屏念一串空 span 没有意义,统计块里已经有文字了 -->
+    <div class="cal-legend" aria-hidden="true">
+      <span>少</span>
+      <span class="cal-cell s1"></span><span class="cal-cell s2"></span>
+      <span class="cal-cell s3"></span><span class="cal-cell s4"></span>
+      <span>多</span>
+    </div>
+    <!-- 打卡规则写明在日历里(家长要求):不解释的话"最浅的绿"和"深绿"
+         看起来只是随机深浅。⚠️ "3 张卡片"的数字要和 app.html 的
+         LEARN_MARK_N 保持一致,改一边记得改另一边 -->
+    <p class="cal-note">怎样算打卡：做题得到星星，或者当天在「学一学」里听完
+      3 张卡片。颜色越深 = 那天学得越多：做题的星星，加上听卡片折算的星星
+      （每听 3 张算 1 颗），一起决定深浅。</p>
+    <div class="cal-stats" id="calStats"></div>
+  </div>
+</div>
 
 <!-- Service Worker 注册:装到主屏后没网也能打开,音频/配图边用边缓。
      ⚠️ 单独成块、只用 ES5 写,和上面的白屏兜底一个道理 —— 这段要在
@@ -284,7 +539,12 @@ window.onerror = function (msg, src, line) {
 <script>
 /* ================================================================
    进度存档 —— 与 app.html 里的是同一份代码、同一个 key，改一处要同步改两处。
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
+     dayStars:{"YYYY-MM-DD":n}, last:{lesson,at} }
+   ⚠️ dayStars 是后加的字段(打卡日历按它给格子分深浅);写入方只有 app.html
+   的 addStars(),这一页只读。**旧存档里没有它**,load() 一律补成空对象,
+   读的时候也永远要当"可能没有这一天"来写 —— 这一页是纯 JS 渲染的,
+   在 undefined 上取属性就是整片白屏。
    ⚠️ 隐私模式 / 关了站点数据的浏览器，光是碰 localStorage 就可能抛，所以每次
    读写各自包 try/catch，失败就静默退回"没有存档"的样子 —— 这一页是纯 JS 渲染的，
    顶层抛一个错就是整片白屏（页面底下那段 window.onerror 兜底就是为这个留的）。
@@ -306,6 +566,9 @@ var store = {
     if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
     if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
     if(!(o.days instanceof Array)) o.days = [];
+    // 数组也是 object,所以要单独挡一下(和 app.html 那份保持逐字一致)
+    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
+    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -329,30 +592,9 @@ function streakOf(days){
   return n;
 }
 
-/* 一次性示能演示的记账 —— 键 "daka.coach"({shelf:1,card:1,press:1}),
-   和 app.html 里的是同一份代码、同一个键,改一处要同步改两处。
-   ⚠️ 读不到(隐私模式抛错)一律当"做过了":标记存不住的浏览器里,
-   演示会每次进页面都放一遍,那比不演示更烦人。 */
-var COACH_KEY = "daka.coach";
-function coachDone(k){
-  try{
-    var s = localStorage.getItem(COACH_KEY);
-    var o = s ? JSON.parse(s) : null;
-    return !!(o && typeof o === "object" && o[k]);
-  }catch(e){ return true; }
-}
-function markCoach(k){
-  try{
-    var s = localStorage.getItem(COACH_KEY);
-    var o = s ? JSON.parse(s) : null;
-    if(!o || typeof o !== "object") o = {};
-    o[k] = 1;
-    localStorage.setItem(COACH_KEY, JSON.stringify(o));
-  }catch(e){}
-}
-
-/* 封面流的停留位置记在 sessionStorage(不是 localStorage):从课程页返回时
-   回到刚才那张,但下次重新打开应用还是从头开始 —— 位置是"这一趟"的上下文 */
+/* 货架的横滚位置记在 sessionStorage(不是 localStorage):从课程页返回时
+   回到刚才滑到的地方,但下次重新打开应用还是从头开始 —— 位置是"这一趟"的上下文。
+   ⚠️ 存的是像素 scrollLeft,不是第几张:卡宽跟着 vw 走,换个屏幕序号会对不上位。 */
 var SHELF_KEY = "daka.shelf";
 function shelfMem(){
   try{
@@ -361,36 +603,255 @@ function shelfMem(){
   }catch(e){}
   return {};
 }
-function saveShelfMem(group, n){
+function saveShelfMem(group, x){
   try{
     var o = shelfMem();
-    o[group] = n;
+    o[group] = x;
     sessionStorage.setItem(SHELF_KEY, JSON.stringify(o));
   }catch(e){}
 }
 
 var SAVE = store.load();
 
-/* 打卡条:最近 7 天(含今天)一天一个点 + 右侧连续天数 */
+/* 打卡条:本周固定 7 个点,周一排到周日 + 右侧连续天数。
+   曾经试过"周一只画到今天"(不画未来)—— 周一当天整条只剩孤零零一个圈,
+   家长看着像坏了,而且一眼看不出"这是一周"。定稿:七个圈永远都在,
+   还没到的天用 .future 压淡(更浅的虚位样式),读作"这周还剩这几天",
+   不会误当成"没打卡的空格"。今天蓝圈高亮不变。
+   ⚠️ 连胜(streakOf)跟这个窗口无关,它算的是真实的连续天数,一天没动。
+   周起点算法:getDay() 里周日是 0,(day+6)%7 把它挪成"离本周一过了几天" */
 const WEEK_CN = ["日","一","二","三","四","五","六"];
 function renderCheckin(){
   const box = document.getElementById("checkin");
   if(!box) return;
   const set = {};
   SAVE.days.forEach(d => { set[d] = 1; });
+  const passed = (new Date().getDay() + 6) % 7;   // 今天是本周第几天(周一=0)
   let cells = "";
-  for(let i = 6; i >= 0; i--){                 // 从 6 天前排到今天,今天在最右
+  for(let i = 0; i < 7; i++){                      // 永远画满周一..周日
     const d = new Date();
-    d.setDate(d.getDate() - i);
+    d.setDate(d.getDate() + (i - passed));
     const key = ymd(d);
-    cells += `<div class="cday${i === 0 ? " today" : ""}">` +
-             `<span class="cdot${set[key] ? " on" : ""}"></span>` +
+    const cls = i === passed ? " today" : (i > passed ? " future" : "");
+    cells += `<div class="cday${cls}">` +
+             `<span class="cdot${i <= passed && set[key] ? " on" : ""}"></span>` +
              `<span class="cw">${WEEK_CN[d.getDay()]}</span></div>`;
   }
   box.innerHTML =
-    `<div class="checkin-days" role="img" aria-label="最近七天打卡情况">${cells}</div>` +
-    `<div class="checkin-streak">🔥 ${streakOf(SAVE.days)} 天</div>`;
+    `<div class="checkin-days" role="img" aria-label="本周打卡情况">${cells}</div>` +
+    `<div class="checkin-streak"><svg class="ic ic-flame" aria-hidden="true"><use href="#i-flame"/></svg> ${streakOf(SAVE.days)} 天</div>`;
 }
+
+/* ================================================================
+   打卡日历弹窗 —— 全程热力图(列=周,周一在顶)
+   打卡条只给"这一周",而家长真正想看的"孩子坚持了多久"没有地方看。
+   点打卡条弹出这张图:一眼看完从头到今天,坚持得好不好不用数。
+   ⚠️ 日期一律用 ymd() 手拼 + 字符串比较("YYYY-MM-DD" 补过零,
+   字典序就是时间序),不碰 toISOString()(UTC,晚上会记成明天)。
+   ================================================================ */
+/* 最少画多少列。两个作用:一是没有任何记录时总得画点什么(全灰的十二周,
+   空着的格子就是邀请);二是刚开始用的头几周,不至于弹出来只有孤零零一列 ——
+   那看着像坏了,而不像"才刚开始" */
+const CAL_MIN_COLS = 12;
+/* 每天挣的星数分档阈值:1-4 / 5-11 / 12-19 / ≥20 四档,越深表示那天学得越多。
+   ⚠️ 这几个数是可调的经验值(一节课大约 10~20 颗星),不是什么算出来的边界;
+   要改就改这里,别去动下面的 if 链。
+   ⚠️ dayStars 是后来才加的字段:更早的打卡记录只知道"打了卡",不知道挣了
+   几颗星 —— 那些天走 s0(最浅的绿),既不能算成 0(它不是没学),
+   也不能瞎归到某一档里去。 */
+const STAR_TIERS = [5, 12, 20];
+
+/* "YYYY-MM-DD" → 本地时区的 Date。
+   ⚠️ 不能写 new Date("2026-01-01"):只有日期没有时间的字符串按 UTC 解析,
+   西半球的时区会整体偏成前一天。分开传年月日才是本地时区。 */
+function parseYmd(s){
+  const p = String(s).split("-");
+  return new Date(+p[0], +p[1] - 1, +p[2]);
+}
+/* 某天的深浅档:没打卡 → 空;打了卡但没有星数记录 → s0;有记录按阈值分四档 */
+function calTier(on, v){
+  if(!on) return "";
+  if(typeof v !== "number" || v <= 0) return " s0";
+  if(v < STAR_TIERS[0]) return " s1";
+  if(v < STAR_TIERS[1]) return " s2";
+  if(v < STAR_TIERS[2]) return " s3";
+  return " s4";
+}
+/* 全程最长连续天数。不能拿"离今天最近的那段"(streakOf)充数:
+   那是"现在连着几天",断过一次就归零,而家长想看的是"最好的时候坚持了多久"。
+   days 已经是升序去重的,但这里自己再排一次去重 —— 存档是外部数据,
+   不该假设它一定被谁整理过。 */
+function longestStreak(days){
+  const s = days.slice().sort();
+  let best = 0, run = 0, prev = null;
+  for(let i = 0; i < s.length; i++){
+    if(s[i] === prev) continue;
+    if(prev){
+      const d = parseYmd(prev);
+      d.setDate(d.getDate() + 1);              // setDate 自带跨月跨年
+      run = ymd(d) === s[i] ? run + 1 : 1;
+    }else{
+      run = 1;
+    }
+    if(run > best) best = run;
+    prev = s[i];
+  }
+  return best;
+}
+
+/* 画热力图 + 填统计块。今天之后的格子不渲染 —— 本周未来的那几行就是空的,
+   和打卡条"不画未来"是同一条规矩(列顶对齐,缺的自然缺在底部) */
+function renderCal(){
+  const set = {};
+  SAVE.days.forEach(d => { set[d] = 1; });
+  const ds = SAVE.dayStars || {};              // 旧存档没有这个字段
+  /* 深浅的口径(家长定):做题的星星 + 学一学听卡折的星(每 3 张折 1 颗)。
+     只影响颜色,不进真实星星账(总星星统计块仍然只数做题挣的)。
+     ⚠️ 这个 3 和 app.html 的 LEARN_MARK_N、下面 .cal-note 的文案是同一件事 */
+  const dc = SAVE.dayCards || {};
+  const eff = k => (typeof ds[k] === "number" ? ds[k] : 0) +
+                   Math.floor((typeof dc[k] === "number" ? dc[k] : 0) / 3);
+
+  const now = new Date();
+  const todayKey = ymd(now);
+  // 本周一(取本地零点:下面要拿它和另一个零点日期相减算周数,
+  // 带着当前时分秒去减会差出小半天,四舍五入就可能少一列)
+  const thisMon = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  thisMon.setDate(thisMon.getDate() - ((now.getDay() + 6) % 7));
+
+  /* 画多远:从"最早那次打卡所在周的周一"一直画到本周 —— 不再是固定 52 周。
+     固定窗口有两个毛病:刚用一个月的人看到的是一整片灰(像没记上),
+     用了两年的人则看不到前一年。全程画,图的长度本身就是"坚持了多久"。 */
+  let first = null;
+  SAVE.days.forEach(d => { if(!first || d < first) first = d; });
+  let cols = CAL_MIN_COLS;
+  if(first){
+    const fd = parseYmd(first);
+    fd.setDate(fd.getDate() - ((fd.getDay() + 6) % 7));   // 那一周的周一
+    const w = Math.round((thisMon - fd) / 604800000) + 1; // 604800000 = 一周的毫秒数
+    if(w > cols) cols = w;
+  }
+
+  const cur = new Date(thisMon);
+  cur.setDate(cur.getDate() - (cols - 1) * 7);
+
+  let months = "", grid = "", labeledMon = -1, labelEnd = -1;
+  for(let c = 0; c < cols; c++){
+    const m = cur.getMonth(), monKey = cur.getFullYear() * 12 + m;
+    /* 每个月标一次。⚠️ 一月和第一列的标签带上年份:图拉长到跨年之后,
+       一串"11月 12月 1月 2月"看不出中间换了一年 —— 换年的地方正是一月。
+       ⚠️ 标签槽只有一列宽(12px),文字是溢出画到右边的 —— 带年份的长标签
+       ("2026年6月")会一直铺到四五列开外,把下一个月的"7月"直接压住
+       (家长截图实锤)。所以记住上一个标签的文字铺到哪一列,铺到的范围内
+       不放新标签;宽度按 CJK 11px/ASCII 7px 分开估,每列 12px。
+       ⚠️ 不能只在"换月的那一列"试一次:那一列若正撞在压制范围里,这个月
+       就永远不补标了(8 月就是这么丢的)—— 所以改成"这个月还没标过 &&
+       这一列不冲突"就标,标签落在月中间几列也比整月没名字强 */
+    if(monKey !== labeledMon && c > labelEnd){
+      const lab = (c === 0 || m === 0) ? `${cur.getFullYear()}年${m + 1}月` : `${m + 1}月`;
+      let px = 0;
+      for(const ch of lab) px += ch.charCodeAt(0) > 127 ? 11 : 7;
+      labelEnd = c + Math.ceil(px / 12);
+      labeledMon = monKey;
+      months += `<span class="cal-mon"><b>${lab}</b></span>`;
+    }else{
+      months += `<span class="cal-mon"></span>`;
+    }
+    let col = "";
+    for(let r = 0; r < 7; r++){
+      const key = ymd(cur);
+      if(key > todayKey) break;                // 未来不画
+      col += `<span class="cal-cell${calTier(!!set[key], eff(key))}` +
+             `${key === todayKey ? " now" : ""}"></span>`;
+      cur.setDate(cur.getDate() + 1);          // setDate 自带跨月跨年
+    }
+    grid += `<span class="cal-col">${col}</span>`;
+  }
+
+  document.getElementById("calMonths").innerHTML = months;
+  document.getElementById("calGrid").innerHTML = grid;
+
+  /* 四块统计。总星星按各课记录求和(SAVE.total 里还混着"混合复习"挣的星,
+     而复习不属于任何一课 —— 两个口径都说得通,这里跟课程记录走,
+     和封面右上角那些星数角标加起来对得上) */
+  let starSum = 0;
+  for(const id in SAVE.lessons){
+    const r = SAVE.lessons[id];
+    if(r && typeof r.stars === "number") starSum += r.stars;
+  }
+  const tiles = [
+    [SAVE.days.length,        "天", "总打卡"],
+    [starSum,                 "颗", "总星星"],
+    [streakOf(SAVE.days),     "天", "当前连续"],
+    [longestStreak(SAVE.days), "天", "最长连续"]
+  ];
+  document.getElementById("calStats").innerHTML = tiles.map(
+    t => `<div class="cal-tile"><b>${t[0]}<i>${t[1]}</i></b><span>${t[2]}</span></div>`
+  ).join("");
+}
+
+const calMask = document.getElementById("calMask");
+const calClose = document.getElementById("calClose");
+const calScroll = document.getElementById("calScroll");
+
+/* 开关就是加/去一个 class,没有任何计时器、帧回调、transitionend ——
+   淡入淡出、能不能点、进不进 Tab 序全部由 CSS 那三条属性负责。
+   时序一旦交给 JS,后台标签页(rAF 不跑)和减弱动效(时长 0,transitionend
+   不触发)这两种情况就各要一条兜底,而它们都是最容易漏测的 */
+function openCal(){
+  if(!calMask || calMask.classList.contains("open")) return;
+  renderCal();
+  calMask.classList.add("open");
+  // 读一次 offsetHeight 逼浏览器立刻把上面这行的样式算出来:
+  // 下面 focus() 要求元素此刻已经是 visible,样式还没刷新就会聚焦失败
+  void calMask.offsetHeight;
+  // 初始滚到最右:今天在最后一列,手机上放不下 53 列时先看见的必须是"现在"
+  calScroll.scrollLeft = calScroll.scrollWidth;
+  calClose.focus();
+}
+
+function closeCal(){
+  if(!calMask || !calMask.classList.contains("open")) return;
+  calMask.classList.remove("open");
+  const box = document.getElementById("checkin");
+  if(box) box.focus();                         // 焦点还给打开它的那一条
+}
+
+(function bindCal(){
+  const box = document.getElementById("checkin");
+  if(!box || !calMask) return;
+  box.addEventListener("click", openCal);
+  box.addEventListener("keydown", e => {
+    // div + role=button 没有原生键盘行为,回车/空格要自己接。
+    // 空格必须 preventDefault:默认行为是把整页往下翻一屏
+    if(e.key === "Enter" || e.key === " " || e.key === "Spacebar"){
+      e.preventDefault();
+      openCal();
+    }
+  });
+  calClose.addEventListener("click", closeCal);
+  // 点遮罩关闭:只认打在遮罩自己身上的点击,冒泡上来的(点在白卡里)不算
+  calMask.addEventListener("click", e => { if(e.target === calMask) closeCal(); });
+  /* Esc 绑在 document 而不是 calMask:焦点若落到弹窗外(比如点了白卡里
+     非聚焦区域,浏览器会把焦点丢给 body),按键就不会冒泡经过 calMask,
+     Esc 就"死"了。绑 document、以 open 状态做开关,焦点在哪都能关 */
+  document.addEventListener("keydown", e => {
+    if((e.key === "Escape" || e.key === "Esc") && calMask.classList.contains("open")) closeCal();
+  });
+  calMask.addEventListener("keydown", e => {
+    if(e.key !== "Tab") return;
+    // 焦点圈在弹窗里:不拦的话 Tab 第二下就跑到遮罩背后的货架上去了,
+    // 键盘用户看不见自己在哪儿。现在弹窗里只有关闭钮一个可聚焦元素,
+    // 但按"一圈能焦点元素"写,以后加了别的控件不用回来改
+    // ⚠️ 必须写 a[href] 不能写 [href]:图标是 <svg><use href="#i-close">,
+    // 光写 [href] 会把那个 <use> 也算成"可聚焦元素",焦点圈就多出一站空的
+    const f = calMask.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])");
+    if(!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  });
+})();
 
 /* 「继续学 · 某课」:有存档且那节课还在清单里才出。
    出现时把复习按钮降级成白底次按钮 —— 两个绿胶囊并排就没有主行动了 */
@@ -405,7 +866,10 @@ function renderContinue(lessons){
   const a = document.createElement("a");
   a.className = "go-btn";
   a.href = "app.html?lesson=" + hit.id;
-  a.textContent = "▶ 继续学 · " + hit.title;
+  // 图标是我们自己写的常量、课程标题走 textContent 单独塞进去 —— 不拼 innerHTML,
+  // 免得课程名里的字符被当成标签解析
+  a.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-play"/></svg> ';
+  a.appendChild(document.createTextNode("继续学 · " + hit.title));
   acts.insertBefore(a, acts.firstChild);
   const rb = document.getElementById("reviewBtn");
   if(rb) rb.classList.add("ghost");
@@ -417,7 +881,7 @@ function renderContinue(lessons){
    pickWrongBook 一致,不然按钮报 5 个点进去只有 3 个。
    读不到(隐私模式/账本还没建)就保持素颜按钮 —— 入口不藏。 */
 function renderWrongCount(){
-  const el = document.getElementById("wrongBtn");
+  const el = document.getElementById("wrongBtnLabel");   // 只改文字,图标留在旁边
   if(!el) return;
   try{
     const o = JSON.parse(localStorage.getItem("daka.rev.v1") || "{}");
@@ -427,7 +891,7 @@ function renderWrongCount(){
       if(r && typeof r === "object" && r.w > 0 &&
          typeof r.b === "number" && r.b <= 3) n++;
     }
-    if(n > 0) el.textContent = "📕 错题本 · " + n + " 个词在练";
+    if(n > 0) el.textContent = "错题本 · " + n + " 个词在练";
   }catch(e){}
 }
 renderWrongCount();
@@ -459,60 +923,15 @@ function coverColors(group){
   return COVER_COLORS;
 }
 
-/* 卡片在架子上的位置 —— off 是它离中心的距离(可为小数,拖动时连续变化) */
-function placeCover(el, off){
-  const a = Math.abs(off), sign = off < 0 ? -1 : 1;
-  if(a > 2.6){                                   // 太远的收起来,不参与布局
-    if(el.dataset.parked === "1") return;        // 已收起就别再写样式(逐帧调用,省开销)
-    el.dataset.parked = "1";
-    el.style.opacity = 0;
-    el.style.transform = `translateX(${sign*160}%) scale(.5)`;
-    el.style.zIndex = 0;
-    // opacity:0 只是看不见,照样能点中 —— 而且收起来的卡全叠在 translateX(±160%)
-    // 同一个点上,那正好是最外侧那张折叠卡画着的位置。少了这行,点那片"空白"
-    // 命中的是收起来的最后一张,画面直接跳到最后一课(实测最外侧那张整片点不到)。
-    // 注意光靠 zIndex 压不住:.rack 是 transform-style:preserve-3d,3D 上下文里
-    // 排序看的是深度 —— 折叠卡都被 translateZ(-88px) 推远了,收起来的卡 z 是 0,
-    // 反而离观众最近,稳稳压在前面。
-    el.style.pointerEvents = "none";
-    el.setAttribute("tabindex", "-1");
-    return;
-  }
-  el.dataset.parked = "0";
-  el.style.pointerEvents = "auto";
-  const cl   = Math.max(-2.4, Math.min(2.4, off));
-  const near = Math.min(a, 1);                   // 第一格就折到位,再远只微调
-  const far  = Math.max(0, Math.min(a, 2.4) - 1);
-  const rot  = -sign * (near * 44 + far * 7);    // 折叠角度
-  // 横向偏移:侧卡转 44° 后投影只剩约 6 成宽,偏移要够大才不会盖住彼此的标题
-  const x    = cl * 76;
-  const sc   = 1 - Math.min(a, 2.4) * 0.15;
-  const z    = -Math.min(a, 2.4) * 44;
-  el.style.transform =
-    `translateX(${x}%) translateZ(${z}px) rotateY(${rot}deg) scale(${sc})`;
-  el.style.opacity  = a > 2 ? Math.max(0, (2.6 - a) / 0.6) : 1;
-  el.style.zIndex   = 100 - Math.round(a * 10);
-  el.style.setProperty("--shade", Math.min(a, 1.6) / 1.6 * 0.9);
-  // 暗的是转离观众的那条边:右侧卡右缘后仰,左侧卡左缘后仰
-  el.style.setProperty("--g", off < 0 ? "90deg" : "270deg");
-  el.style.setProperty("--lab", String(1 - Math.min(a, 0.85) / 0.85));
-  el.setAttribute("tabindex", a < 0.5 ? "0" : "-1");
-}
-
-function buildShelf(group, lessons, first){
+function buildShelf(group, lessons){
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
     `<div class="shelf-head"><span>${group}</span>` +
     `<span class="count">${lessons.length} 节</span><span class="rule"></span></div>` +
-    `<div class="stage"><div class="rack"></div></div><div class="dots"></div>`;
-  const stage = wrap.querySelector(".stage");
-  const rack  = wrap.querySelector(".rack");
-  const dots  = wrap.querySelector(".dots");
+    `<div class="shelf-row"></div>`;
+  const row = wrap.querySelector(".shelf-row");
   const palette = coverColors(group);
-  /* 8 节以上的组(字母课有 11 节)圆点会挤成两行,还把下一组的标题推下去 ——
-     视觉上收成迷你进度条(点击热区不动,单手点圆点比滑动省力,那是有用的) */
-  if(lessons.length >= 8) dots.classList.add("many");
 
   lessons.forEach((l, i) => {
     const [en, cn] = String(l.title).split(" · ");
@@ -524,191 +943,60 @@ function buildShelf(group, lessons, first){
     a.href = `app.html?lesson=${l.id}`;
     a.draggable = false;
     a.style.setProperty("--c", palette[i % palette.length]);
-    // 这一课攒了多少星:攒过才显示,0 星的课挂个「⭐ 0」等于提醒他没做
+    // 这一课攒了多少星:攒过才显示,0 星的课挂个「星 0」等于提醒他没做
     const rec = SAVE.lessons[l.id];
     const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
+    // 封面画(可选):有 cover 字段就铺一张图盖住字形徽章;图还没入库时 onerror
+    // 把 <img> 摘掉,露出底下照常渲染的 glyph —— 404 下外观和以前完全一样
+    const cover = l.cover
+      ? `<img src="lessons/${l.cover}" alt="" loading="lazy"` +
+        ` onerror="this.parentNode&&this.parentNode.removeChild(this)">`
+      : ``;
     a.innerHTML =
       `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
-      (got > 0 ? `<span class="cover-stars">⭐ ${got}</span>` : ``) + `</div>` +
+      cover +
+      (got > 0 ? `<span class="cover-stars"><svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
-      `<div class="cn">${cn || l.badge_sub || ""}</div>` +
-      `<div class="n">${l.words} 张卡片</div></div>`;
-    rack.appendChild(a);
-
-    const d = document.createElement("button");
-    d.className = "dot"; d.type = "button";
-    d.setAttribute("aria-label", `第 ${i+1} 张：${en}`);
-    d.onclick = () => go(i);
-    dots.appendChild(d);
+      `<div class="cn">${cn || l.badge_sub || ""}</div></div>`;
+    row.appendChild(a);
   });
 
-  const covers = [...rack.children];
-  const LAST = covers.length - 1;
-  // 走 window. 而不是裸 matchMedia:全局不存在时裸标识符会抛 ReferenceError,
-  // 而这是顶层代码,一抛错整个 <script> 就停,页面白屏(同 app.html 的 TTS 探测)
-  const SLOW = !!(window.matchMedia &&
-                  window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  /* 组名报给读屏:横滚行在辅助技术里只是个普通容器,不给名字就只剩一串链接,
+     读不出"这是哪一组"。role 必须一起给 —— 光在裸 <div> 上挂 aria-label,
+     多数读屏根本不读(没有角色的元素不进无障碍树)。
+     ⚠️ 不给它加 tabIndex —— 可滚动容器浏览器本来就允许键盘滚动,
+     手动加只会在 Tab 序里多出一站空的。卡片是 <a>,Tab + Enter 原生可达,
+     聚焦到看不见的那张时浏览器会自己把它滚进可视区。*/
+  row.setAttribute("role", "group");
+  row.setAttribute("aria-label", group);
 
-  // 卡片行程是卡宽的 76%,但手指只需走它的一半就翻一张 ——
-  // 单手拇指的舒适行程只有 60~100px,1:1 跟手对鼠标合适,对拇指就是"滑不动"
-  // 同上,不用可选链 ?.(ES2020 语法)
-  const TRAVEL = () => ((covers[0] && covers[0].offsetWidth) || 212) * 0.76;
-  const STEP   = () => TRAVEL() * 0.5;
+  // 跳转走 <a> 的默认行为,这里只顺手记下滚到哪儿了(处理器在导航之前跑完)
+  row.addEventListener("click", () => saveShelfMem(group, row.scrollLeft));
 
-  /* pos 是连续的位置(2.4 表示停在第 2、3 张之间),弹簧把它推向 target。
-     位置/折叠/阴影/文字全部由 pos 逐帧算出,所以永远同步,不会有谁慢半拍。*/
-  let pos = 0, vel = 0, target = 0, raf = 0;
-  let dragging = false, moved = false, armed = false, ptr = null,
-      startX = 0, startPos = 0,
-      lastX = 0, lastT = 0, track = 0,           // track: 速度(张/毫秒)
-      downCard = null;                           // 按下时手指/鼠标压住的那张卡
-
-  /* 手指按住不动时,触摸屏上报的接触点质心会在相邻两个估计值之间反复跳(指腹越大越明显)。
-     卡片行程是手指行程的 2 倍(见 STEP),8px 的原始跳变会被放大成 17px 的卡片哆嗦。
-     实测:孩子按住一张卡犹豫两秒,整行就跟着抖两秒 —— 逐帧量过是干净的双稳态方波,
-     在两个位置之间来回跳、没有中间值,所以不是手在抖,是 pos 直接吃了未经处理的 clientX。
-     两道防线:DEAD 死区挡住"按住不动",LOWPASS 滤掉真拖动时残余的指腹抖。 */
-  const DEAD    = 10;                            // 手指越过这么多像素才算真的在拖
-  const LOWPASS = 0.35;                          // pos 向目标追的比例,滞后 1~2 帧,察觉不到
-
-  const clamp = n => Math.max(0, Math.min(LAST, n));
-  const idx   = () => clamp(Math.round(pos));
-
-  function paint(){
-    covers.forEach((c, i) => placeCover(c, i - pos));
-    const a = idx();
-    [...dots.children].forEach((d, i) => d.classList.toggle("on", i === a));
-  }
-  function tick(){
-    // 刚度/阻尼实测过:0.20/0.75 大力甩会过冲 70%(弹过头一张多),
-    // 0.10/0.66 过冲收到 4~8%,只留一点点回弹,而且落定更快(约 0.42s)
-    vel += (target - pos) * 0.10;                // 弹簧刚度
-    vel *= 0.66;                                 // 阻尼
-    pos += vel;
-    if(Math.abs(target - pos) < 0.004 && Math.abs(vel) < 0.004){
-      pos = target; vel = 0; raf = 0; paint(); return;
-    }
-    paint();
-    raf = requestAnimationFrame(tick);
-  }
-  function spring(){ if(!raf) raf = requestAnimationFrame(tick); }
-  function go(n){
-    target = clamp(n);
-    if(SLOW){ pos = target; vel = 0; paint(); return; }
-    spring();
-  }
-
-  stage.addEventListener("pointerdown", e => {
-    // 只让主指针开新的拖动:第二根手指(握平板的虎口最常见)按下来不该抢走这一次手势。
-    // 写 === false 而不是 !e.isPrimary —— 万一某个浏览器没这个属性,不能把拖动整个废掉
-    if(e.isPrimary === false) return;
-    if(raf){ cancelAnimationFrame(raf); raf = 0; }
-    dragging = true; moved = false; armed = false; vel = 0; track = 0;
-    ptr = e.pointerId;
-    downCard = e.target.closest(".cover");
-    startX = lastX = e.clientX; startPos = pos; lastT = performance.now();
-    stage.classList.add("grabbing");
-    stage.setPointerCapture(e.pointerId);
-  });
-  stage.addEventListener("pointermove", e => {
-    // 认准按下时那根手指。少了这句,第二个指针的 move 也会进来,
-    // 而 startX 是别人的 —— 两个指针交替刷新 pos,画面在两张卡之间来回跳
-    if(!dragging || e.pointerId !== ptr) return;
-    const dx = e.clientX - startX;
-    if(!armed){
-      if(Math.abs(dx) < DEAD) return;            // 还在死区里:一帧都不画,按住不动就是不动
-      // 过线这一刻把原点搬到当前位置(dx 归零),否则卡片会"啪"地跳 DEAD/STEP 那么远。
-      // 计时/测速也一起重置,免得死区里干等的那段时间被算进甩动惯性
-      armed = moved = true;                      // moved:区分点按和拖动,阈值同 DEAD
-      startX = lastX = e.clientX; lastT = performance.now(); track = 0;
-      return;
-    }
-    let p = startPos - dx / STEP();
-    if(p < 0) p *= 0.35;                         // 到头了给点橡皮筋阻尼
-    else if(p > LAST) p = LAST + (p - LAST) * 0.35;
-    pos += (p - pos) * LOWPASS;                  // 一阶低通:跟手,但不跟指腹的抖
-    const now = performance.now(), dt = Math.max(1, now - lastT);
-    track = track * 0.7 + ((lastX - e.clientX) / STEP() / dt) * 0.3;
-    lastX = e.clientX; lastT = now;
-    paint();
-  });
-  const release = (flick) => {
-    if(!dragging) return;
-    dragging = false; ptr = null;
-    stage.classList.remove("grabbing");
-    if(!flick){ vel = 0; go(Math.round(pos)); return; }  // 手势被打断:就近稳住,别再甩
-    // 没拖动 = 一次点按。跳转由这里接管:指针捕获会把 click 重定向到 stage,
-    // 那个 <a> 收不到 click,靠默认行为进不去课程(桌面鼠标必现)
-    if(!moved && downCard){
-      const i = covers.indexOf(downCard);
-      // 记下停在第几张:从课程页返回时直接落回这里,不用再滑一遍
-      if(i === idx()) { saveShelfMem(group, i); location.href = downCard.href; return; }   // 点中间那张 → 进课程
-      go(i); return;                                               // 点侧边那张 → 转到中间
-    }
-    vel = track * 16.7;                          // 张/毫秒 → 张/帧,带走手指的惯性
-    go(clamp(Math.round(pos + vel * 8)));        // 甩得越快,冲得越远(SLOW 时直接到位)
-  };
-  // 同样只认那根手指:别的手指抬起来不该结束这一次拖动
-  stage.addEventListener("pointerup", e => { if(e.pointerId === ptr) release(true); });
-  // 系统把手势判成上下滑会发 pointercancel —— 此时不带惯性,就近落位
-  stage.addEventListener("pointercancel", e => { if(e.pointerId === ptr) release(false); });
-
-  // 跳转已由 release() 接管,这里一律拦掉 <a> 的默认行为,避免重复跳转
-  rack.addEventListener("click", e => { if(e.target.closest(".cover")) e.preventDefault(); });
-
-  stage.tabIndex = 0;
-  stage.setAttribute("aria-label", `${group}，左右方向键切换课程`);
-  stage.addEventListener("keydown", e => {
-    if(e.key === "ArrowLeft"){ go(idx() - 1); e.preventDefault(); }
-    if(e.key === "ArrowRight"){ go(idx() + 1); e.preventDefault(); }
-    if(e.key === "Enter" && covers[idx()]){
-      saveShelfMem(group, idx());
-      location.href = covers[idx()].href;
-    }
-  });
-
-  /* 初始定位的优先级:本趟停过的位置 > 最近学的那一课 > 第一张。
-     直接把 pos/target 一起写死再 paint()(SLOW 的直达路径),不走弹簧 ——
-     一进页面就看见几组卡片各自"弹"一下,像是页面没加载完 */
-  let startAt = 0;
-  const mem = shelfMem();
-  if(typeof mem[group] === "number" && mem[group] >= 0 && mem[group] <= LAST){
-    startAt = Math.round(mem[group]);
-  }else if(SAVE.last && SAVE.last.lesson){
-    for(let i = 0; i <= LAST; i++){
-      if(lessons[i].id === SAVE.last.lesson){ startAt = i; break; }
-    }
-  }
-  pos = target = startAt;
-
-  paint();
-
-  /* 一次性示能演示:第一个分组自己往右挪半张再弹回来 ——「这一排是能滑的」
-     这件事,演一下比副标题那行字管用得多(孩子不认字,那行是写给家长的)。
-     go() 收的是连续位置,clamp 不取整,所以 0.55 是合法目标,弹簧照常动画。
-     只在从第一张起步时演:停在中间某张时往右挪会盖掉"回到刚才那张"的语义。 */
-  if(first && LAST >= 1 && !coachDone("shelf")){
-    if(SLOW){ markCoach("shelf"); }
-    else if(startAt === 0){
-      markCoach("shelf");
-      var peeked = false;
-      var cancelPeek = function(){                 // 孩子先动手了就别演,他已经知道了
-        peeked = true;
-        stage.removeEventListener("pointerdown", cancelPeek);
-      };
-      stage.addEventListener("pointerdown", cancelPeek);
-      setTimeout(function(){
-        if(peeked) return;
-        go(0.55);
-        setTimeout(function(){
-          stage.removeEventListener("pointerdown", cancelPeek);
-          if(peeked) return;                       // 演到一半被拨走,别再拉回 0
-          go(0);
-        }, 500);
-      }, 800);
-    }
-  }
   return wrap;
+}
+
+/* 横滚位置的初始定位,优先级:本趟停过的位置 > 最近学的那一课 > 第一张。
+   ⚠️ 必须在货架插进文档之后调用:没上树的元素量不到 offsetLeft,scrollLeft 也写不进去。
+   ⚠️ 不用 scrollIntoView():它会连带把整页竖向滚一段 —— 一进目录页就被拽到
+   第三个货架那儿去了。两张卡的 offsetLeft 之差不受 offsetParent 是谁的影响,
+   正好等于要滚的距离(第一张停在 scrollLeft=0 时左缘正对标题)。 */
+function restoreShelfPos(group, wrap, lessons){
+  const row = wrap.querySelector(".shelf-row");
+  const covers = row.children;
+  const mem = shelfMem();
+  let x = 0;
+  if(typeof mem[group] === "number" && mem[group] > 0){
+    x = mem[group];
+  }else if(SAVE.last && SAVE.last.lesson){
+    for(let i = 1; i < lessons.length; i++){    // 从 1 起:第 0 张本来就在 x=0
+      if(lessons[i].id === SAVE.last.lesson){
+        x = covers[i].offsetLeft - covers[0].offsetLeft;
+        break;
+      }
+    }
+  }
+  if(x > 0) row.scrollLeft = x;                // 超出可滚范围浏览器自己会夹住
 }
 
 /* 清单还没回来时先占住版面(见 CSS 的「骨架屏」)。
@@ -720,8 +1008,8 @@ function showSkeleton(){
     '<div class="skel" aria-hidden="true">' +
     '<div class="skel-head"></div>' +
     '<div class="skel-row">' +
-    '<div class="skel-card side"></div><div class="skel-card"></div>' +
-    '<div class="skel-card side"></div></div></div>';
+    '<div class="skel-card"></div><div class="skel-card"></div>' +
+    '<div class="skel-card"></div></div></div>';
 }
 
 (async function(){
@@ -740,7 +1028,12 @@ function showSkeleton(){
       byGroup.get(g).push(l);
     });
     renderContinue(data.lessons);
-    order.forEach((g, i) => shelves.appendChild(buildShelf(g, byGroup.get(g), i === 0)));
+    order.forEach(g => {
+      const ls = byGroup.get(g);
+      const wrap = buildShelf(g, ls);
+      shelves.appendChild(wrap);
+      restoreShelfPos(g, wrap, ls);            // 先上树再定位,理由见函数注释
+    });
   }catch(e){
     // 骨架必须撤掉:留着它就是"永远在加载",而下面明明写着加载失败了
     document.getElementById("shelves").innerHTML = "";

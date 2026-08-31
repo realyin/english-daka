@@ -7,9 +7,11 @@
 <meta name="theme-color" content="#F0F7FF">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icon.svg">
-<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
-     要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
-<link rel="apple-touch-icon" href="icon.svg">
+<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),所以这里指向 png。
+     icon-180.png 由 docs/UI素材Prompt.md 的 A1 生成(1024 缩到 180),现在还没入库 ——
+     404 无害:iOS 拿不到就退回原来的网页截图行为,和以前一模一样。
+     favicon 仍然走矢量的 icon.svg,不受影响 -->
+<link rel="apple-touch-icon" href="icon-180.png" sizes="180x180">
 
 <style>
   :root{
@@ -25,6 +27,18 @@
   /* 目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷一帧浏览器默认白底 ——
      深色底的封面流跳到这里就是"啪"一下白闪。背景写在 html 上,首帧就有色 */
   html{ background:var(--bg); }
+  /* ===== 图标 =====
+     UI 层原来用的是 emoji。emoji 的字形、粗细、基线各平台各不相同(安卓那套
+     线条细、iOS 那套厚实),同一行里和文字高矮对不齐,而且换个系统整页气质就变了。
+     换成内联 SVG:形状我们自己定,颜色跟着文字走(fill:currentColor),
+     字号一变图标跟着变(1em 见方)。
+     ⚠️ 课程内容层的 emoji(卡片贴纸槽 .lhead .emoji、考题选项、答题反馈 pResult)
+     不在此列 —— 那些是课程数据画出来的画面,不是界面控件。
+     ⚠️ 引用变量必须带回落值:这段内联 <style> 排在 theme.css 之前 */
+  .ic{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:currentColor;flex:none;}
+  /* 星星金、火苗橙:这两个是"奖励/连胜"的语义色,不该跟着正文变灰 */
+  .ic-star{color:var(--yellow,#FFC53D);}
+  .ic-flame{color:var(--orange,#FF9A3D);}
   body{
     /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
        theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
@@ -42,11 +56,16 @@
      和内容完全脱节。课程页不再重复显示应用名,省下一整行高度。 */
   .topbar{
     position:sticky;top:0;z-index:20;background:var(--bg);
-    box-shadow:0 8px 14px -10px rgba(43,58,85,.45);
+    /* 参数保持(负扩散只在下缘留一道窄影),但透明度从 .45 降到 .22 ——
+       .45 是墨色硬阴影时代留下的,和全站的柔投影(--shadow 才 .10)不在一个量级,
+       吸顶条底下那道黑边比页面上任何一张卡都重 */
+    box-shadow:0 8px 14px -10px rgba(43,58,85,.22);
   }
+  /* 纵向 padding/gap 比原来紧一档(8/8/11 → 6/6/8):页签合成分段控件后,
+     容器自己多了一圈 2px 边框 + 3px 内衬(见 .tabs),不收一收整条顶栏反而变高 */
   .topbar-in{
-    max-width:520px;margin:0 auto;padding:8px 14px 11px;
-    display:flex;flex-direction:column;gap:8px;
+    max-width:520px;margin:0 auto;padding:6px 14px 8px;
+    display:flex;flex-direction:column;gap:6px;
   }
   /* gap 8 而不是 10:一行要塞下 back(48)+navbtn(48)+标题+navbtn(48)+星罐,
      375px 屏上 10px 的间距会把标题挤没 */
@@ -63,32 +82,54 @@
      整条 bar 会溢出、把吸顶条撑得能横滚。所以下限只在 361px 以上生效,
      再窄就退回"能压多小压多小"(那种屏上标题本来也读不成句) */
   @media (max-width:360px){ .lesson-title{min-width:0;} }
+  /* 星罐:白底细边。原来是黄底黄框 —— 顶栏一行里就有了两处黄色高亮
+     (星罐 + 选中的页签),"现在在哪一栏"这条唯一该抢眼的信息被稀释了。
+     星星本身是金色的 i-star,识别度已经够,罐子不必再染色。
+     ⚠️ 返回/上下课钮已经去壳(见下),这一行现在是顶栏里**唯一**还带描边的
+     小块 —— 它不是按钮,是个读数,留一圈边正好把它和旁边的图标钮分开 */
   .star-jar{
     flex:none;display:inline-flex;align-items:center;gap:5px;
-    background:#FFF3D6;border:2px solid var(--yellow);border-radius:999px;
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:999px;
     padding:6px 12px;font-size:16px;font-weight:800;
   }
-  .back,.tab{
-    border:2px solid var(--line);border-radius:14px;background:#fff;
-    font-size:15px;font-weight:800;color:var(--ink);min-height:48px;
-    box-shadow:var(--shadow);cursor:pointer;transition:transform .1s;
+  /* 返回 / 上一课 / 下一课都去壳:一条顶栏原来并排 6 个白底描边投影块,
+     壳的视觉重量比里面的图标还大。只留图标 + 48×48 热区(热区是不能缩的,
+     壳没了也照样是 48)。没有底色可以"沉"下去了,按压反馈改成压透明度 ——
+     和下面的 .tab 一个口径 */
+  .back,.navbtn{
+    flex:none;width:48px;height:48px;padding:0;
+    border:none;background:none;box-shadow:none;cursor:pointer;
     display:flex;align-items:center;justify-content:center;
+    transition:opacity var(--dur-fast,.15s);
   }
-  .back{flex:none;width:48px;height:48px;font-size:22px;text-decoration:none;}
+  .back{font-size:22px;font-weight:800;color:var(--ink,#2B3A55);text-decoration:none;}
   /* 上一课/下一课:整页左右滑也能切,但按钮要在,否则孩子发现不了这个手势 */
-  .navbtn{
-    flex:none;width:48px;height:48px;font-size:26px;line-height:1;padding:0;
-    border:2px solid var(--line);border-radius:14px;background:#fff;
-    font-weight:900;color:var(--blue);box-shadow:var(--shadow);cursor:pointer;
-    display:flex;align-items:center;justify-content:center;transition:transform .1s;
+  .navbtn{font-size:26px;line-height:1;font-weight:900;color:var(--blue,#3E8BFF);}
+  .navbtn:disabled{opacity:.3;cursor:default;}
+  .back:active,.navbtn:not(:disabled):active{opacity:.5;}
+  /* 分段控件:三个页签共用**一个**盒子,边框/白底/投影只画在容器上,
+     里面靠"选中的那块有黄底"区分。原来是三张各自描边投影的独立卡,
+     既没说清"这三个是一组、只能选一个",又把顶栏塞得满满当当 */
+  .tabs{
+    display:flex;gap:2px;
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
+    padding:3px;box-shadow:var(--shadow-sm,0 1px 4px rgba(43,58,85,.14));
   }
-  .navbtn:disabled{opacity:.3;box-shadow:none;cursor:default;}
-  .navbtn:not(:disabled):active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
-  .back:active,.tab:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
-  .tabs{display:flex;gap:8px;}
   /* 字号跟屏宽收,别让"问答闯关"在窄屏折成两行 */
-  .tab{flex:1;padding:0 2px;white-space:nowrap;font-size:clamp(13px, 3.6vw, 15px);}
-  .tab.on{background:var(--yellow);}
+  /* gap 而不是靠 HTML 里那个空格:.tab 是 flex 容器,图标和文案是两个 flex 项,
+     它们之间那个纯空白文本节点不参与布局(会被丢掉),写了空格也是贴在一起 */
+  /* 圆角比容器小一档(16-3 内衬 ≈ 13,取 12):选中块的圆弧要贴着容器内壁走 */
+  .tab{
+    flex:1;padding:0 2px;min-height:44px;
+    border:none;background:none;box-shadow:none;border-radius:12px;
+    font-size:clamp(13px, 3.6vw, 15px);font-weight:800;color:var(--ink,#2B3A55);
+    white-space:nowrap;gap:.35em;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    transition:background var(--dur-fast,.15s) var(--ease-out,ease),
+               opacity var(--dur-fast,.15s);
+  }
+  .tab.on{background:var(--yellow,#FFC53D);}
+  .tab:active{opacity:.5;}
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
   .page{display:none;padding:0 14px;max-width:520px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
@@ -138,15 +179,15 @@
   .lhead .eq{font-size:14px;}
   .lhead .word{font-size:19px;font-weight:800;line-height:1.25;}
   .lhead .cn{font-size:12px;color:#5E6E8C;margin-top:2px;}
-  .lhead .tag{
+  /* 只剩「复习」这一种标记 —— 原课件字母课里夹的复习页(颜色/数数),
+     内容留着,但标出来别和本课主线混。
+     word/letter/sight/sign 那几个英文类型胶囊已删:孩子不认字,家长也不需要
+     在每张卡上被告知"这是个 sight word",它只是给每一行加了一块彩色噪点 */
+  .lhead .tag.review{
     margin-left:auto;font-size:10px;font-weight:700;color:#fff;
+    background:var(--green,#4CC26E);
     border-radius:999px;padding:3px 9px;white-space:nowrap;
   }
-  .tag{background:var(--purple);}
-  .tag.sight{background:var(--pink);}
-  .tag.sign{background:var(--blue);}
-  /* 原课件字母课里夹的复习页(颜色/数数),内容留着,但标出来别和本课主线混 */
-  .tag.review{background:var(--green,#4CAF7D);}
   /* 展开/收起走 grid-template-rows 0fr→1fr:高度是内容撑出来的,不用 JS 量高。
      ⚠️ 三件套缺一不可 —— 外层 display:grid、内层 min-height:0 + overflow:hidden,
      少一个就折不平。不支持过渡 grid 的老内核(Safari 16 以前)照样能 0fr/1fr
@@ -166,12 +207,15 @@
     transition:padding var(--dur-slow) var(--ease-out);
   }
   .lcard.open .dialog-in{padding:10px 4px 4px;}
-  /* 展开指示角标:卡片头看不出"这里能点开",一个会转的角标就够了 */
+  /* 展开指示角标:卡片头看不出"这里能点开",一个会转的角标就够了。
+     margin-left:auto —— 以前是类型标签把自己和角标一起顶到右边的,标签删了
+     角标得自己撑;还带着「复习」标记的卡由标记接管撑开,角标贴着它(下一条) */
   .lhead .chev{
-    flex:none;margin-left:6px;font-size:20px;font-weight:900;line-height:1;
+    flex:none;margin-left:auto;font-size:20px;font-weight:900;line-height:1;
     color:var(--muted,#5E6E8C);
     transition:transform var(--dur-base) var(--ease-out);
   }
+  .lhead .tag.review + .chev{margin-left:6px;}
   .lcard.open .lhead .chev{transform:rotate(90deg);}
   .word-play{display:none;}
   .lcard.open .word-play{display:inline-block;}
@@ -195,7 +239,7 @@
   }
   .sound-tile.vowel{background:#FFE5EF;}
   .sound-tile.silent{background:#EEF1F5;color:#5E6E8C;border-style:dashed;box-shadow:none;}
-  .sound-tile:active,.sound-tile.speaking{transform:translateY(3px);box-shadow:none;background:var(--yellow);}
+  .sound-tile:active,.sound-tile.speaking{transform:translateY(2px);box-shadow:none;background:var(--yellow);}
   .sound-tile .letter{display:block;font-size:25px;font-weight:900;line-height:1;}
   .sound-tile .ipa{display:block;font-size:12px;font-weight:700;margin-top:5px;}
   .sound-cue{font-size:12px;color:#66748B;font-weight:650;line-height:1.6;margin:10px auto 0;max-width:390px;}
@@ -211,14 +255,20 @@
   .dialog .pic{margin-top:10px;}
 
   /* ===== 气泡:句级 + 词级点读 ===== */
+  /* 气泡是纯信息展示,不是能按的控件 —— 2px 彩色描边是留给交互件的语言
+     (.opt/.ans-chip 靠 border-color 报对错,.pic 的边是画框)。
+     这里去掉边框只留底色,底色相应加深半档:没有边界线兜着,原来那两个
+     很浅的底在白卡上会散成一片。padding 补回被边框吃掉的 2px,块的大小不变 */
   .bubble{
-    max-width:88%;padding:9px 12px;border-radius:16px;
+    max-width:88%;padding:11px 14px;border-radius:16px;
     font-size:16px;font-weight:600;line-height:1.55;margin-top:9px;
-    border:2px solid var(--line);
   }
-  .bubble.q{background:#FFF1E0;border-color:var(--orange);border-bottom-left-radius:4px;margin-right:auto;}
-  .bubble.a{background:#E7F0FF;border-color:var(--blue);border-bottom-right-radius:4px;margin-left:auto;}
+  .bubble.q{background:#FFE8CE;border-bottom-left-radius:4px;margin-right:auto;}
+  .bubble.a{background:#DCE8FF;border-bottom-right-radius:4px;margin-left:auto;}
   .bubble .who{font-size:10px;color:#5E6E8C;font-weight:700;display:block;margin-bottom:4px;}
+  /* 角色标签只有 10px,图标按 1em 就是 10px —— 机器人的天线和眼睛在那个尺寸下糊成一团。
+     放到 1.3em(13px)并把基线相应压下去,和旁边的字仍在一条线上 */
+  .bubble .who .ic{width:1.3em;height:1.3em;vertical-align:-.28em;}
   .bubble{cursor:pointer;}
   .sline{margin-top:6px;}
   .sline:first-of-type{margin-top:0;}
@@ -230,6 +280,9 @@
     box-shadow:var(--shadow);cursor:pointer;padding:0;margin-top:1px;
   }
   .mini:active{transform:translateY(2px);box-shadow:none;}
+  /* .mini 是 27px 的圆钮,12px 字号是当年给「中」那个汉字定的。emoji 的字形画得比
+     字号大不少,换成 SVG 后按 1em 只有 12px,在圆钮里空一圈 —— 放到 1.35em(≈16px) */
+  .mini .ic{width:1.35em;height:1.35em;vertical-align:-.3em;}
   .mini.on{background:var(--yellow);}
   .stext{flex:1;user-select:none;-webkit-user-select:none;}
   .stext.speaking{text-shadow:0 0 0;background:linear-gradient(transparent 65%, #FFE9A8 65%);border-radius:4px;}
@@ -328,6 +381,8 @@
   }
   /* 机器人:闯关页常驻的那个"提问的人"。三个模块里只有闯关是一问一答的对话,
      但页面上从来没有出现过"谁在问" —— 一个会呼吸的小机器人就够了。
+     里面装的是 i-robot 的 SVG,font-size 仍然决定它多大(.ic 是 1em 见方),
+     呼吸/跳跃的动画和定位逻辑一行没动。
      inline-flex:transform 对纯行内元素无效(同 .w 那段的教训) */
   .bot{
     display:inline-flex;font-size:19px;line-height:1;vertical-align:-2px;
@@ -363,9 +418,9 @@
   .btn{
     border:2px solid var(--line);border-radius:16px;background:#fff;
     font-size:15px;font-weight:800;color:var(--ink);padding:12px 16px;
-    box-shadow:var(--shadow);cursor:pointer;transition:transform .1s;
+    box-shadow:var(--shadow);cursor:pointer;transition:transform var(--dur-fast,.15s);
   }
-  .btn:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
+  .btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   .btn.go{background:var(--green);color:#fff;}
   .btn.blue{background:var(--blue);color:#fff;}
   .heard{
@@ -378,9 +433,9 @@
   .ans-chip{
     border:2px solid var(--line);border-radius:16px;background:#FFF3D6;
     padding:12px 18px;font-size:20px;font-weight:900;color:var(--ink);
-    box-shadow:var(--shadow);cursor:pointer;transition:transform .1s;
+    box-shadow:var(--shadow);cursor:pointer;transition:transform var(--dur-fast,.15s);
   }
-  .ans-chip:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
+  .ans-chip:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   /* 正在念到的那个选项高亮 —— 孩子靠"哪个在响"把声音和字对上 */
   .ans-chip.speaking{background:var(--yellow,#FFD34D);transform:scale(1.08);}
   /* 两段式选项的中间态:点过一下(听过音了),再点同一个才算选定。
@@ -393,23 +448,41 @@
   .result-emoji{text-align:center;font-size:38px;margin-top:6px;min-height:44px;}
 
   .done{text-align:center;font-size:19px;font-weight:800;line-height:1.8;}
-  /* 结算页那个 🏆/🎉 是整页的主角,却和成绩、按钮一起"啪"地出现 ——
+  /* 结算页那个奖杯/庆祝贴纸(见下面的 .bigart)是整页的主角,
+     却和成绩、按钮一起"啪"地出现 ——
      给它一个从小弹到大的入场,庆祝就有了一个开始的时刻。
-     inline-block:transform 对纯行内元素无效;.done 是 text-align:center,
-     所以不用再写 margin auto。
+     block 而不是原来的 inline-block:emoji 时代 54px 的字形跟半句话还能挤一行,
+     换成 86px 的贴纸后同一行的文案会被顶得中途折行("……答/案,"孤字成行)。
+     独占一行、靠 .done 的 text-align:center 居中,主角就该站在文案上面。
+     (transform 对 block 一样有效,动画不受影响)
      动画时长 .5s ≈ celebrate() 等的 --dur-base(240ms)+ 号角起音,
      弹到位和彩带炸开正好前后脚 */
   .done .big{
-    font-size:54px;display:inline-block;
+    font-size:54px;display:block;
     animation:big-in .5s var(--ease-spring) both;
   }
   @keyframes big-in{from{opacity:0;transform:scale(.3);}}
+  /* ===== 大图标位:水彩贴纸 + emoji 回退 =====
+     入口页和结算页那个"主角"位置改用手绘水彩贴纸(lessons/images/ui-*.webp,
+     由 docs/UI素材Prompt.md 的 S1~S4 生成)。素材还没入库,现在全是 404 ——
+     img 的 onerror 给父级加 .noimg,换回原来的 emoji,所以图片没生成时
+     外观和以前一模一样,不会留下一个碎图占位符。
+     贴纸尺寸 86px ≈ 54px emoji 的视觉体量;入场动画由外层 .done .big 一起带,
+     图和 emoji 都是同一下 big-in,换不换素材节奏都一样 */
+  .bigart{display:inline-block;line-height:1;}
+  .bigart img{display:block;width:86px;height:86px;object-fit:contain;margin:0 auto;}
+  .bigart-fb{display:none;}
+  .bigart.noimg img{display:none;}
+  .bigart.noimg .bigart-fb{display:inline;}
+  /* 主 CTA 一律胶囊:目录页的「继续学 / 混合复习」是 999px 的胶囊,
+     课程页的「开始 / 再来一轮 / 下一课」和它们是同一个层级的按钮,
+     圆角对不上就成了两套设计语言。padding 不动,只改圆角 */
   .big-btn{
-    margin-top:16px;border:2px solid var(--line);border-radius:18px;
+    margin-top:16px;border:2px solid var(--line);border-radius:999px;
     background:var(--green);color:#fff;font-size:18px;font-weight:800;
     padding:13px 34px;box-shadow:var(--shadow);cursor:pointer;
   }
-  .big-btn:active{transform:translateY(4px);box-shadow:var(--shadow-sm);}
+  .big-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
 
   /* 结算页:两行成绩 + 竖排出口。三个按钮都是儿童热区,min-height 48px 起 */
   .done-stat{font-size:17px;font-weight:800;margin-top:4px;}
@@ -437,13 +510,13 @@
     box-shadow:var(--shadow);cursor:pointer;
     display:flex;align-items:center;justify-content:center;
   }
-  .speak-btn:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
+  .speak-btn:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
   .opts.two{grid-template-columns:repeat(2,1fr);}
   .opt{
     border:2px solid var(--line);border-radius:18px;background:#fff;
     font-size:42px;padding:14px 0;box-shadow:var(--shadow);
-    cursor:pointer;transition:transform .1s;overflow:hidden;
+    cursor:pointer;transition:transform var(--dur-fast,.15s);overflow:hidden;
   }
   /* 无图选项(emoji / 算式)也走贴纸底,和 .lhead .emoji、.p-emoji 一套。
      三选一里混着一张水彩图和两个白底 emoji 时,那张图会显得"更像答案" ——
@@ -453,7 +526,7 @@
   .opt:not(.haspic){background:linear-gradient(#F4F9FF,#E8F1FC);}
   .opt.haspic{padding:0;font-size:0;}
   .opt.haspic img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;}
-  .opt:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
+  .opt:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   /* 答对后整排选项会被 disable(见 nextQuestion)。不去掉 :active 的位移和
      手型,按下去还会"陷"一下,孩子以为点上了还在连点。
      注意别在这里加 opacity/灰底 —— 答对的那颗 .opt.right 要保持绿色高亮,
@@ -582,17 +655,35 @@
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+<!-- ===== 图标 sprite =====
+     ⚠️ 两页各有一份 sprite(只放本页用得上的图标),改图标要**同步改两处**。
+     不抽成外部 .svg 文件:图标是壳的一部分,多一次请求就多一次首屏等待,
+     而且 <use> 引外部文件在离线/file:// 下有各种坑。
+     用法:<svg class="ic" aria-hidden="true"><use href="#i-star"/></svg> -->
+<svg style="display:none" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M12 3.6 20.6 11.2 3.4 11.2Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M4.9 11h14.2v8.6A2.4 2.4 0 0 1 16.7 22h-2.3v-4.8a2.4 2.4 0 0 0-4.8 0V22H7.3A2.4 2.4 0 0 1 4.9 19.6z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5c.42 0 .8.24.98.61l2.34 4.74 5.23.76c.9.13 1.27 1.25.6 1.9l-3.78 3.69.89 5.2c.16.91-.79 1.6-1.6 1.17L12 18.11l-4.68 2.46c-.81.43-1.76-.26-1.6-1.17l.89-5.2-3.78-3.69c-.67-.65-.3-1.77.6-1.9l5.23-.76 2.34-4.74c.19-.37.57-.61.99-.61z"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><g transform="translate(0 1.5) scale(1.5)"><path fill-rule="evenodd" d="M8 14c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 2 9-1.5 6-2c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 12 4.686 14 8 14Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 8 7 8.5 7 8.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 12 9.657 13 8 13Z"/></g></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M11 5.9v14.2c-1.55-1.06-3.5-1.6-5.7-1.6H4a1.6 1.6 0 0 1-1.6-1.6V5.5A1.6 1.6 0 0 1 4 3.9h1.3c2.4 0 4.4.6 5.7 2z"/><path d="M13 5.9v14.2c1.55-1.06 3.5-1.6 5.7-1.6H20a1.6 1.6 0 0 0 1.6-1.6V5.5A1.6 1.6 0 0 0 20 3.9h-1.3c-2.4 0-4.4.6-5.7 2z"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="8.8" y="1.8" width="6.4" height="11.6" rx="3.2"/><path d="M5.5 9.6a1.05 1.05 0 0 0-2.1 0 8.6 8.6 0 0 0 7.55 8.54V20H9a1.05 1.05 0 0 0 0 2.1h6a1.05 1.05 0 0 0 0-2.1h-2.05v-1.86a8.6 8.6 0 0 0 7.55-8.54 1.05 1.05 0 0 0-2.1 0 6.5 6.5 0 0 1-13 0z"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.6a9.4 9.4 0 1 1 0 18.8 9.4 9.4 0 1 1 0-18.8zm0 2.3a7.1 7.1 0 1 0 0 14.2 7.1 7.1 0 0 0 0-14.2z"/><path fill-rule="evenodd" d="M12 7.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 1 1 0-9.4zm0 2.3a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8z"/><circle cx="12" cy="12" r="1.5"/></symbol>
+<symbol id="i-speaker" viewBox="0 0 24 24"><path d="M11.9 3.35a1.05 1.05 0 0 1 1.7.83v15.64a1.05 1.05 0 0 1-1.7.83L7.1 16.9H4.4a1.7 1.7 0 0 1-1.7-1.7V8.8a1.7 1.7 0 0 1 1.7-1.7h2.7z"/><path d="M16.1 8.5a1.05 1.05 0 0 1 1.48.06 5.6 5.6 0 0 1 0 6.88 1.05 1.05 0 1 1-1.6-1.36 3.5 3.5 0 0 0 0-4.16 1.05 1.05 0 0 1 .12-1.42z"/><path d="M18.9 5.5a1.05 1.05 0 0 1 1.48.05 9.2 9.2 0 0 1 0 12.9 1.05 1.05 0 1 1-1.53-1.44 7.1 7.1 0 0 0 0-10.02 1.05 1.05 0 0 1 .05-1.49z"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 4.7c-4.7 0-8.45 3.3-9.98 6.6a1.65 1.65 0 0 0 0 1.4C3.55 16 7.3 19.3 12 19.3s8.45-3.3 9.98-6.6a1.65 1.65 0 0 0 0-1.4C20.45 8 16.7 4.7 12 4.7zm0 3.85a3.45 3.45 0 1 1 0 6.9 3.45 3.45 0 1 1 0-6.9z"/></symbol>
+<symbol id="i-robot" viewBox="0 0 24 24"><circle cx="12" cy="2.9" r="1.7"/><rect x="11.1" y="4.1" width="1.8" height="3.1"/><path fill-rule="evenodd" d="M7.2 6.6h9.6a4.7 4.7 0 0 1 4.7 4.7v4.4a4.7 4.7 0 0 1-4.7 4.7H7.2a4.7 4.7 0 0 1-4.7-4.7v-4.4a4.7 4.7 0 0 1 4.7-4.7zM9.2 11.6a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7zm5.6 0a1.85 1.85 0 1 0 0 3.7 1.85 1.85 0 0 0 0-3.7z"/></symbol>
+<symbol id="i-speech" viewBox="0 0 24 24"><path d="M5.4 3.6h13.2A3.4 3.4 0 0 1 22 7v6.8a3.4 3.4 0 0 1-3.4 3.4H10.9l-4.2 3.3a1 1 0 0 1-1.62-.79V17.2A3.4 3.4 0 0 1 2 13.8V7a3.4 3.4 0 0 1 3.4-3.4z"/></symbol>
+</defs></svg>
+
 <div class="topbar">
   <div class="topbar-in">
     <div class="bar-row">
-      <a class="back" href="index.html" aria-label="返回课程列表" title="返回课程列表">🏠</a>
+      <a class="back" href="index.html" aria-label="返回课程列表" title="返回课程列表"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg></a>
       <button class="navbtn" id="prevLesson" aria-label="上一课" disabled>‹</button>
       <div class="lesson-title" id="lessonTitle"></div>
       <button class="navbtn" id="nextLesson" aria-label="下一课" disabled>›</button>
-      <!-- 一个 ⭐ 加一个数字,不说是"什么的星":title 给家长悬停看,
+      <!-- 一颗金星加一个数字,不说是"什么的星":title 给家长悬停看,
            aria-label 给读屏。role=status 让飞星落袋后的数字变化自动播报,
            不用抢焦点(星罐在 sticky 顶栏里,任何时候都在屏上) -->
-      <div class="star-jar" role="status" aria-label="本课星数" title="本课星数">⭐ <span id="stars">0</span></div>
+      <div class="star-jar" role="status" aria-label="本课星数" title="本课星数"><svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> <span id="stars">0</span></div>
     </div>
     <div class="tabs">
       <!-- 走 tapPage 而不是直接 showPage:showPage 还被 gotoLesson / popstate 调用,
@@ -600,16 +691,17 @@
       <!-- aria-pressed 而不是 role=tab:role=tab 要配 tablist/tabpanel 和一整套
            方向键漫游焦点才算数,只加一半反而更糟。这三个按钮本来就是"三选一的
            开关",aria-pressed 一个属性就说清了,由 showPage 统一同步 -->
-      <button class="tab on" id="tabLearn" aria-pressed="true" onclick="tapPage('learn')">📖 学一学</button>
-      <button class="tab" id="tabPractice" aria-pressed="false" onclick="tapPage('practice')">🎤 问答闯关</button>
-      <button class="tab" id="tabQuiz" aria-pressed="false" onclick="tapPage('quiz')">🎯 考一考</button>
+      <button class="tab on" id="tabLearn" aria-pressed="true" onclick="tapPage('learn')"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg> 学一学</button>
+      <button class="tab" id="tabPractice" aria-pressed="false" onclick="tapPage('practice')"><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg> 问答闯关</button>
+      <button class="tab" id="tabQuiz" aria-pressed="false" onclick="tapPage('quiz')"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg> 考一考</button>
     </div>
   </div>
 </div>
 
 <div id="pages">
 <div class="page on" id="pageLearn">
-  <p class="hint" id="learnHint">🔊 点句听句 · 点词听词 · 按住看意思 · 👁 翻译</p>
+  <!-- 这一行的图标要和 applyLesson() 里按课型重写的那三句保持同一套,两处一起改 -->
+  <p class="hint" id="learnHint"><svg class="ic" aria-hidden="true"><use href="#i-speaker"/></svg> 点句听句 · 点词听词 · 按住看意思 · <svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg> 翻译</p>
   <div id="learnList"></div>
 </div>
 
@@ -632,7 +724,7 @@
     <img class="pop-pic" id="popPic" alt="" loading="lazy">
     <div class="pw" id="popWord"></div>
     <div class="pc" id="popCn"></div>
-    <button class="mini" onclick="popSpeak()">🔊</button>
+    <button class="mini" aria-label="朗读这个词" onclick="popSpeak()"><svg class="ic" aria-hidden="true"><use href="#i-speaker"/></svg></button>
   </div>
 </div>
 
@@ -678,6 +770,28 @@ window.onerror = function (msg, src, line) {
    直接打开(无参数/无服务器)时使用内嵌样例,保证随时可预览
    ================================================================ */
 const LESSON_BASE = "lessons/";
+
+/* ===== UI 图标 =====
+   sprite 在 <body> 顶部,这里只是把那串 <svg><use> 写一次,免得抄十几遍、改一处漏九处。
+   ⚠️ 全是本文件里的字符串常量,不含任何课程数据/用户输入,拼进 innerHTML 无注入风险。
+   ⚠️ 只给界面控件用。课程内容层的 emoji(卡片贴纸槽、考题选项、答题反馈)
+   仍然由课程数据画,不走这里。 */
+function ic(name, cls){
+  return '<svg class="ic' + (cls ? " " + cls : "") + '" aria-hidden="true"><use href="#' + name + '"/></svg>';
+}
+const IC_SPEAKER = ic("i-speaker"), IC_EYE = ic("i-eye"),
+      IC_STAR    = ic("i-star", "ic-star"), IC_FLAME = ic("i-flame", "ic-flame"),
+      IC_ROBOT   = ic("i-robot"), IC_SPEECH = ic("i-speech"),
+      IC_BOOK    = ic("i-book"), IC_MIC = ic("i-mic"), IC_TARGET = ic("i-target");
+
+/* 入口/结算页的大图标位:水彩贴纸,素材没入库时 onerror 回退到 emoji(见 CSS 的 .bigart)。
+   fb 是回退用的 emoji,只有在图片 404 时才显示出来。 */
+function bigArt(file, fb){
+  return '<span class="bigart">' +
+         '<img src="' + LESSON_BASE + 'images/' + file + '" alt=""' +
+         ' onerror="this.parentNode.classList.add(\'noimg\')">' +
+         '<span class="bigart-fb">' + fb + '</span></span>';
+}
 /* ⚠️ 卡片这里**没有** image 字段:预览图(436KB base64)已经拆到 preview-img.js,
    只有真的要用这份样例课(没带 ?lesson=)时 init 才去加载它,再按 pkey 回填 image。
    拿不到就一直没有 image,学一学/闯关/考一考都回落到 emoji,不会有空图或报错。
@@ -731,7 +845,11 @@ let lesson = null;
 
 /* ================================================================
    进度存档 —— localStorage 单键 "daka.v1"
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
+     dayStars:{"YYYY-MM-DD":n}, dayCards:{"YYYY-MM-DD":n}, last:{lesson,at} }
+   ⚠️ dayStars 是后加的字段(给目录页的打卡日历分深浅用):**旧存档里没有它**,
+   load() 一律补成空对象 —— 少写这一条,老用户一进来就是 undefined 上取属性,
+   整页白屏。同理,读它的地方永远要当"可能没有这一天"来写。
    ⚠️ 隐私模式 / 关了站点数据的浏览器,连 localStorage 这个属性都可能直接抛,
    所以每一次读写都各自包 try/catch,失败就静默退回"不记账"的老行为 —— 打卡
    记不住是遗憾,页面白屏是事故。
@@ -755,6 +873,11 @@ var store = {
     if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
     if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
     if(!(o.days instanceof Array)) o.days = [];
+    // 数组也是 object,所以要单独挡一下:老存档里万一存成了数组,
+    // 后面 dayStars[key] += n 会往数组上挂字符串下标,存出去就是个怪东西
+    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
+    // dayCards(当天听过几张卡,给日历分深浅)同 dayStars:后加字段,旧存档没有
+    if(!o.dayCards || typeof o.dayCards !== "object" || o.dayCards instanceof Array) o.dayCards = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -763,7 +886,8 @@ var store = {
     catch(e){ return false; }
   }
 };
-/* 一次性示能演示的记账 —— 单独一个键 "daka.coach"({shelf:1,card:1,press:1}),
+/* 一次性示能演示的记账 —— 单独一个键 "daka.coach"({card:1,press:1};
+   目录页那条 shelf 演示已随横滚货架改造去掉,旧存档里残留的 shelf:1 无害),
    和进度分开:清演示不该把星星一起清掉,反过来也一样。
    ⚠️ coachDone 读不到(隐私模式抛错)一律返回 true = "做过了" —— 存不住标记的
    浏览器里,演示会每次进页面都放一遍,那比不演示更烦人。 */
@@ -781,6 +905,27 @@ function markCoach(k){
     var o = s ? JSON.parse(s) : null;
     if(!o || typeof o !== "object") o = {};
     o[k] = 1;
+    localStorage.setItem(COACH_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+/* 同一个键下的**计数**槽位(目前只有 learnHint):有些提示不是"演一次就够",
+   而是"看两次就记住了"。和布尔槽位互不干扰 —— 键名不同,coachDone 对数字
+   也照样判真,两套读法不会打架。
+   ⚠️ 读不到(隐私模式抛错)返回 Infinity = "早看够了",和 coachDone 返回 true
+   是同一个取舍:存不住计数的浏览器里,每次进页面都摆一遍比不摆更烦人 */
+function coachCount(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    return (o && typeof o === "object" && +o[k]) || 0;
+  }catch(e){ return Infinity; }
+}
+function bumpCoach(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    if(!o || typeof o !== "object") o = {};
+    o[k] = (+o[k] || 0) + 1;
     localStorage.setItem(COACH_KEY, JSON.stringify(o));
   }catch(e){}
 }
@@ -847,12 +992,30 @@ function rec4(o, id){                          // 取/建某课的记录
   o.lessons[id] = r;
   return r;
 }
-function markToday(o){                         // 今天并进打卡日,去重升序,只留最近 60 天
+/* 打卡日保留多少条。原来是 60 —— 那时候只有目录页的"最近 7 天"要用它,
+   留两个月绰绰有余。现在目录页的打卡日历要画**全程**,60 条等于最多两个月,
+   "坚持了一年"这件事根本存不下来,所以放宽到 1200 天(三年多)。
+   字符串日期一条 11 字节,1200 条连 dayStars 一起也就 40KB 上下,
+   离 localStorage 的 5MB 还差两个数量级。 */
+var KEEP_DAYS = 1200;
+function markToday(o){                         // 今天并进打卡日,去重升序,只留最近 KEEP_DAYS 天
   var t = today();
   if(o.days.indexOf(t) < 0){
     o.days.push(t);
     o.days.sort();
-    if(o.days.length > 60) o.days = o.days.slice(o.days.length - 60);
+    if(o.days.length > KEEP_DAYS){
+      o.days = o.days.slice(o.days.length - KEEP_DAYS);
+      // dayStars 必须跟着 days 一起裁:它是按天累加的,不裁就会无限长大,
+      // 而且裁剩的日子在日历上根本画不出来,留着也没人看
+      var keepS = {}, keepC = {}, i, k;
+      for(i = 0; i < o.days.length; i++){
+        k = o.days[i];
+        if(typeof o.dayStars[k] === "number") keepS[k] = o.dayStars[k];
+        if(typeof o.dayCards[k] === "number") keepC[k] = o.dayCards[k];
+      }
+      o.dayStars = keepS;
+      o.dayCards = keepC;   // 和 dayStars 一样按天累加,不裁就无限长大
+    }
   }
 }
 /* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
@@ -885,7 +1048,48 @@ function addStars(n){
   if(!CUR_ID) return;
   var o = store.load();
   o.total = o.total + n;
+  /* 记一笔"今天挣了多少星" —— 目录页的打卡日历靠它给格子分深浅:
+     光有"来没来"只能画出两种颜色,分了深浅才看得出哪天是真的学了一大段。
+     ⚠️ 这里是全站唯一的星星入账口(星罐动画那条路最后也落到这个函数),
+     记在这一处就不会漏;将来要是又多出一条加星的路,也必须收到这里来。
+     ⚠️ 和 o.total 一样只在 CUR_ID 存在时记(上面已经 return 过):
+     没带 ?lesson= 的预览课不写任何存档。 */
+  var t = today();
+  o.dayStars[t] = (typeof o.dayStars[t] === "number" ? o.dayStars[t] : 0) + n;
+  /* 挣到星星的那天就算打卡日。原来只有 recordFinish()(完成一整轮到结算页)
+     才 markToday —— 孩子学了半截退出去,那天就"白学":日历上没格子、
+     dayStars 里却有星数,统计还会出现"0 天打卡但有星星"的怪账(家长实际
+     遇到了)。收进这里,和 dayStars 的口径合上:有星必有打卡日 */
+  markToday(o);
   if(CUR_ID !== "review") rec4(o, CUR_ID).stars += n;
+  store.save(o);
+}
+
+/* 学一学的打卡口径:当天展开听过 LEARN_MARK_N 张**不同的**卡就算打卡。
+   K2 的孩子"听"本身就是学习,原来只有答题得星才留记录,认真听半小时的
+   那天在日历上是空的(家长定的规则:3 张卡)。
+   听卡不进真实的星星账(星罐/总星星只算做题),但**参与日历的深浅**:
+   o.dayCards 记"当天听过几张不同的卡",目录页按 每 3 张折 1 星 和
+   dayStars 加在一起分档(家长定的规则:听得多颜色也要深)。
+   o.learnMark = {d:今天, cards:[今天听过的卡], done:打卡记了没}:
+   按天自动重置;cards 全天保留用来去重和计数,同一张卡翻来覆去听只算一次;
+   去重键是 课程id:词,跨课不串。
+   ⚠️ 弹窗里写给家长看的规则文案(index.html 的 .cal-note)和它的折星算法
+   (calTier 调用处的 /3)都写着"3",改这个数字要三处一起改 */
+var LEARN_MARK_N = 3;
+function noteLearnOpen(word){
+  if(!CUR_ID) return;                          // 预览课不写任何存档,口径同上
+  var o = store.load();
+  var t = today();
+  if(!o.learnMark || o.learnMark.d !== t) o.learnMark = {d: t, cards: [], done: false};
+  var lm = o.learnMark, key = CUR_ID + ":" + word;
+  if(lm.cards.indexOf(key) >= 0) return;       // 今天已经数过这张
+  lm.cards.push(key);
+  o.dayCards[t] = lm.cards.length;             // 给日历分深浅用的"今天听了几张"
+  if(!lm.done && lm.cards.length >= LEARN_MARK_N){
+    lm.done = true;
+    markToday(o);
+  }
   store.save(o);
 }
 /* 进课/换课时把星罐恢复成这一课的累计数,顺便记下"最近学的课" */
@@ -1022,7 +1226,7 @@ function playSeq(items, onDone){
     if(i >= items.length){ onDone && onDone(); return; }
     const it = items[i++];
     it.el && it.el.classList.add("speaking");
-    /* 🔊 加载态:网络慢的时候点下去要等好几秒才出声,中间没有任何反馈,
+    /* 喇叭钮的加载态:网络慢的时候点下去要等好几秒才出声,中间没有任何反馈,
        孩子只会以为没点上、接着连戳。300ms 还没响就让按钮脉动起来。
        ⚠️ 门槛不能太低:本地/已缓存的音频几十毫秒就开播,闪一下反而是噪音。 */
     let slowT = 0;
@@ -1179,14 +1383,14 @@ function motionOff(){
 }
 
 /* 还在半空中的星星:结算页要显示总数,得先把它们催落袋,
-   否则"⭐ × N"少算刚挣的那两颗(飞行 620ms,孩子手快就撞上了) */
+   否则"本课 星 × N"那行少算刚挣的那两颗(飞行 620ms,孩子手快就撞上了) */
 var pendingLands = [];
 function flushStars(){
   var q = pendingLands; pendingLands = [];
   for(var i = 0; i < q.length; i++) q[i]();   // land() 自带 landed 哨兵,重复调用无害
 }
 
-/* 从 fromEl 中心飞一颗(n≥2 飞两颗)⭐ 进顶栏星罐,落袋时罐子弹一下,
+/* 从 fromEl 中心飞一颗(n≥2 飞两颗)金星进顶栏星罐,落袋时罐子弹一下,
    **然后才** addStars(n) —— 数字必须等飞完再加:先加数字再飞,孩子早看见分了,
    飞的那一下就没有"这颗星是我挣的"的因果感。
    ⚠️ 不改 addStars 的签名/语义(后续要做持久化,入口只能有一个)。
@@ -1223,7 +1427,9 @@ function flyStar(fromEl, n, done){
   function launch(i){
     var s = document.createElement("span");
     s.className = "flystar";
-    s.textContent = "⭐";
+    // 塞的是 i-star 的 SVG(金色),不是 emoji —— .flystar 的 font-size:26px 仍然
+    // 决定它的大小(.ic 是 1em 见方),飞行/落袋这一整套逻辑一点没动
+    s.innerHTML = IC_STAR;
     s.style.left = (x0 - 13) + "px";
     s.style.top  = (y0 - 13) + "px";
     s.style.transform = "translate(0,0) scale(1)";
@@ -1330,7 +1536,7 @@ function growBar(el, from, to){
 
 /* 结算页的号角 + 彩带 + 人声夸奖。
    ⚠️ 要等换页滑动落位再炸:swapIn 调 render() 的那一刻面板还偏在 -40px 上,
-   这时量 🏆 的位置,彩带会炸在它左边 40px 的空处。
+   这时量 .done .big(奖杯/庆祝贴纸)的位置,彩带会炸在它左边 40px 的空处。
    ⚠️ 人声比号角晚 300ms:号角只有半秒,压着人声开头一起响会把
    "You did it" 的第一个词糊掉。目标次序是「号角+彩带同帧 → 随后人声」*/
 function celebrate(box, say){
@@ -1345,7 +1551,7 @@ function celebrate(box, say){
 
 /* ================================================================
    点读句子构建:每个单词可点(发音)、可长按(词典)
-   sline = [🔊][中] 单词们 + 隐藏的整句翻译
+   sline = [喇叭钮][眼睛钮] 单词们 + 隐藏的整句翻译
    ================================================================ */
 function normWord(w){ return w.toLowerCase().replace(/[^a-z']/g, ""); }
 /* 整词/短语匹配用:前后补空格,避免 man 命中 woman */
@@ -1466,7 +1672,8 @@ function makeSline(text, cn, role, audio){
   line.className = "line";
 
   const spk = document.createElement("button");
-  spk.className = "mini"; spk.textContent = "🔊";
+  spk.className = "mini"; spk.innerHTML = IC_SPEAKER;
+  spk.setAttribute("aria-label", "朗读这一句");
   const stext = document.createElement("span");
   stext.className = "stext";
   spk.onclick = e=>{ e.stopPropagation(); playOne(text, role, audio, null, stext); };
@@ -1474,7 +1681,7 @@ function makeSline(text, cn, role, audio){
   // 「中」是个汉字,对不认字的孩子和旁边的英文一样是图形;换成眼睛图标,
   // "看一眼" 这个动作他能自己猜出来(aria-label 留给读屏和家长)
   const zh = document.createElement("button");
-  zh.className = "mini"; zh.textContent = "👁";
+  zh.className = "mini"; zh.innerHTML = IC_EYE;
   zh.setAttribute("aria-label", "显示中文翻译");
   zh.onclick = e=>{
     e.stopPropagation();
@@ -1512,7 +1719,7 @@ function makeBubble(role, qa){
   b.className = "bubble " + role;
   const who = document.createElement("span");
   who.className = "who";
-  who.textContent = role === "q" ? "🤖 提问" : "🗣️ 回答";
+  who.innerHTML = (role === "q" ? IC_ROBOT : IC_SPEECH) + (role === "q" ? " 提问" : " 回答");
   b.appendChild(who);
   if(role === "q"){
     b.appendChild(makeSline(qa.q, qa.q_cn, "q", qa.q_audio));
@@ -1521,9 +1728,11 @@ function makeBubble(role, qa){
       b.appendChild(makeSline(s, (qa.a_cn||[])[i], "a", (qa.a_audio||[])[i]));
     });
   }
-  // 点气泡自身的空白处(边缘、角色标签)顺序播放整个气泡
+  // 点气泡自身的空白处(边缘、角色标签)顺序播放整个气泡。
+  // ⚠️ 角色标签里现在嵌着一个 <svg> 图标,点正它时 e.target 是那个 svg 而不是 .who ——
+  // 所以用 closest 往上找,不能再判 classList
   b.addEventListener("click", e=>{
-    if(e.target !== b && !e.target.classList.contains("who")) return;
+    if(e.target !== b && !e.target.closest(".who")) return;
     const items = [...b.querySelectorAll(".sline")].map(s=>s._say).filter(Boolean);
     if(items.length) playSeq(items);
   });
@@ -1533,8 +1742,11 @@ function makeBubble(role, qa){
 /* ================================================================
    学一学:点开卡片看对话,不自动播,句句可点、词词可点
    ================================================================ */
-const TAG_CLASS = {"sight word":"tag sight", sign:"tag sign", review:"tag review"};
-function tagClass(t){ return TAG_CLASS[t] || "tag"; }
+/* 卡片头的类型胶囊只剩「复习」一种:课程数据里的 tag 还有 word/letter/sight
+   word/sign/CVC/number/science 等等,但那些是给做课件的人看的分类,渲染到每张卡上
+   只是一行行彩色噪点。review 不一样 —— 它标的是"这一页不是本课主线"(原课件字母课里
+   夹的颜色/数数复习页),家长需要这条信息,所以留着,并且用中文说 */
+function tagHTML(t){ return t === "review" ? `<span class="tag review">复习</span>` : ``; }
 /* 卡片算式("9-1" / "0")→ 彩色数字块,替代渲染不可控的 keycap emoji */
 function eqHTML(eq){
   return `<span class="eq">` +
@@ -1685,7 +1897,7 @@ function makePhonicsPanel(c){
 
   const play = document.createElement("button");
   play.className = "btn blend-play";
-  play.textContent = wordOnly ? "🔊 听单词发音" : "🔊 听3个纯音 → 整词";
+  play.innerHTML = IC_SPEAKER + (wordOnly ? " 听单词发音" : " 听3个纯音 → 整词");
   play.onclick = e=>{
     e.stopPropagation();
     if(wordOnly){
@@ -1813,7 +2025,7 @@ function coachPress(d){
     if(!q || !q.parentNode) return;
     var tip = document.createElement("div");
     tip.className = "coach-tip";
-    tip.textContent = "按住单词可以看意思 👆";
+    tip.textContent = "按住单词可以看意思";
     // ⚠️ 插进 .dialog-in,不能直接插到 .dialog:那是 grid 容器,
     // 多出来的子元素不受行高约束,收起状态会露在外面
     q.parentNode.insertBefore(tip, q);
@@ -1912,7 +2124,7 @@ function renderLearn(){
                 : c.eq ? eqHTML(c.eq)
                 : `<span class="emoji">${c.emoji||"⬜"}</span>`}</span>
       <div><div class="word">${c.word}</div><div class="cn">${c.cn||""}</div></div>
-      <span class="${tagClass(c.tag)}">${c.tag||"word"}</span>
+      ${tagHTML(c.tag)}
       <span class="chev" aria-hidden="true">›</span>`;
     head.onclick = ()=>{
       const wasOpen = d.classList.contains("open");
@@ -1942,13 +2154,15 @@ function renderLearn(){
       if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
       // 第一次真的展开一张卡时,顺带把"长按能查词"演示给大人看一次
       if(!wasOpen) coachPress(d);
+      // 学一学口径:展开的这张卡计入"今天听过几张"(见 noteLearnOpen)
+      if(!wasOpen) noteLearnOpen(String(c.word || c.cn || ""));
     };
     head.setAttribute("aria-expanded", "false");
     /* 回车/空格 = 点一下。空格必须 preventDefault:它在可聚焦元素上的默认行为
        是往下滚一屏 —— 卡片刚展开页面就被翻走了,而展开的补位正是靠
        scrollBy 精确算出来的,两边一起动就全乱了 */
     head.addEventListener("keydown", e=>{
-      // ⚠️ 只认按在卡片头**自己**身上的键。里面还嵌着一颗 🔊 按钮,
+      // ⚠️ 只认按在卡片头**自己**身上的键。里面还嵌着一颗喇叭按钮,
       // 在它上面按回车会先触发它自己的 click(念单词)、再把 keydown 冒泡上来 ——
       // 不挡的话每念一次单词就顺手把卡片折起来(它的 stopPropagation 拦的是
       // click,拦不住 keydown)
@@ -1960,12 +2174,15 @@ function renderLearn(){
     });
     const wordPlay = document.createElement("button");
     wordPlay.className = "mini word-play";
-    wordPlay.textContent = "🔊";
+    wordPlay.innerHTML = IC_SPEAKER;
+    wordPlay.setAttribute("aria-label", "朗读这个词");
     wordPlay.onclick = e=>{
       e.stopPropagation();
       playWord(c.word.toLowerCase());
     };
-    head.insertBefore(wordPlay, head.querySelector(".tag"));
+    // 插在"右侧那一组"之前:大多数卡已经没有标签了,锚点退回角标
+    // (querySelector 按文档顺序返回第一个命中,有标签时仍是标签)
+    head.insertBefore(wordPlay, head.querySelector(".tag, .chev"));
     d.appendChild(head);
 
     // 空壳:只建 grid 容器和它唯一的子元素,内容留到首次展开(见 ensureDialog)
@@ -2189,7 +2406,7 @@ function renderQuestion(){
   const barPct = tot.pct;
   pbox.innerHTML = `
     <div class="pbar"><i id="pBar" style="width:${barPct}%"></i></div>
-    <div class="progress"><span class="bot" id="pBot" aria-hidden="true">🤖</span>第 ${doneN+1} / ${total} 问</div>
+    <div class="progress"><span class="bot" id="pBot" aria-hidden="true">${IC_ROBOT}</span>第 ${doneN+1} / ${total} 问</div>
     <div class="p-head">
       ${pic ? `<img class="pic mid" src="${imgSrc(pic)}" alt="" loading="lazy">`
             : c.eq ? `<div>${eqHTML(c.eq)}</div>`
@@ -2198,11 +2415,11 @@ function renderQuestion(){
     </div>
     <div class="chat" id="pChat"></div>
     <div class="result-emoji" id="pResult"></div>
-    <div class="p-hint">🔊 听完题目，大声说出答案，再点一点它</div>
+    <div class="p-hint">${IC_SPEAKER} 听完题目，大声说出答案，再点一点它</div>
     <div class="ans-chips" id="ansChips"></div>
     <div class="ctrl" id="pCtrl">
-      <button class="btn" onclick="readChips()">🔊 听选项</button>
-      <button class="btn" onclick="reveal(false)">👀 看答案</button>
+      <button class="btn" onclick="readChips()">${IC_SPEAKER} 听选项</button>
+      <button class="btn" onclick="reveal(false)">${IC_EYE} 看答案</button>
     </div>`;
   growBar(document.getElementById("pBar"), pBarPct, barPct);
   pBarPct = barPct;
@@ -2226,7 +2443,7 @@ function renderQuestion(){
   const chipsBox = document.getElementById("ansChips");
   // 和考一考同款的 answered 哨兵:disabled 挡得住绝大多数,但触摸端在
   // disabled 生效之前就已经排进队列的那一下照样会进来 —— 没有哨兵就是
-  // 两次 SFX.star + 两次 flyStar(⭐+4)+ 两遍夸奖叠着播,出口按钮也画两回
+  // 两次 SFX.star + 两次 flyStar(星 +4)+ 两遍夸奖叠着播,出口按钮也画两回
   let answered = false;
   shuffle([correct, ...pool]).forEach(k=>{
     const b = document.createElement("button");
@@ -2237,7 +2454,7 @@ function renderQuestion(){
       if(answered) return;
       /* 一点即判。曾试过两段式(第一下听音、再点同一个才判分,防不识字盲选),
          家长反馈没这个必要 —— 孩子认识简单词、有大人陪,多一道确认反而烦。
-         要听选项音仍有「🔊 听选项」按钮。 */
+         要听选项音仍有「听选项」按钮。 */
       stopAllSound();          // 打断正在念的选项,别和判分音重叠
       chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
       if(k === correct){
@@ -2270,8 +2487,8 @@ function renderQuestion(){
   });
   // 题目自动播。孩子还不认字,题面对他就是一串图形 —— 不出声就没法答,
   // 每题都得先按一下按钮纯属多一道手续(考一考也是渲染完直接 ask())。
-  // 选项仍然手动(🔊 听选项):认得的词他会伸手就点,自动念选项会变成边选边播。
-  // 要重听题目,点问题气泡或气泡里的 🔊 即可,和以前那个按钮效果一样。
+  // 选项仍然手动(「听选项」按钮):认得的词他会伸手就点,自动念选项会变成边选边播。
+  // 要重听题目,点问题气泡或气泡里的喇叭钮即可,和以前那个按钮效果一样。
   playQuestion();
   savePracticeRound();
 }
@@ -2312,8 +2529,8 @@ function playQuestion(){
 function showNext(gotStar){
   document.querySelectorAll(".p-hint").forEach(x=>x.style.display="none");
   document.getElementById("pCtrl").innerHTML = `
-    ${gotStar ? '' : '<button class="btn" onclick="selfStar(this)">我会读了 ⭐</button>'}
-    ${pRevealed ? '' : `<button class="btn" onclick="reveal(${gotStar})">👀 看答案</button>`}
+    ${gotStar ? '' : '<button class="btn" onclick="selfStar(this)">我会读了 ' + IC_STAR + '</button>'}
+    ${pRevealed ? '' : `<button class="btn" onclick="reveal(${gotStar})">${IC_EYE} 看答案</button>`}
     <button class="btn go" onclick="nextQA()">下一题 ➜</button>`;
 }
 function reveal(gotStar){
@@ -2331,7 +2548,7 @@ function reveal(gotStar){
 function selfStar(btn){
   SFX.star();
   flyStar(btn, 1);
-  btn.disabled = true; btn.textContent = "⭐ +1";
+  btn.disabled = true; btn.innerHTML = IC_STAR + " +1";
 }
 
 function nextQA(){
@@ -2346,8 +2563,8 @@ function nextQA(){
 /* 结算页共用的两块:成绩(本课 / 总共 / 连续天数)+ 三个出口。
    连续天数 N=1 不显示 —— 天天来的孩子每天都是 1,那不叫成就 */
 function doneStatHTML(){
-  var h = `<div class="done-stat">本课 ⭐ × ${stars} · 总共 ⭐ × ${doneStat.total}</div>`;
-  if(doneStat.streak >= 2) h += `<div class="done-streak">🔥 连续打卡 ${doneStat.streak} 天</div>`;
+  var h = `<div class="done-stat">本课 ${IC_STAR} × ${stars} · 总共 ${IC_STAR} × ${doneStat.total}</div>`;
+  if(doneStat.streak >= 2) h += `<div class="done-streak">${IC_FLAME} 连续打卡 ${doneStat.streak} 天</div>`;
   return h;
 }
 /* 复习专属的一行:这一轮碰了几个词、其中几个回炉过。
@@ -2359,10 +2576,16 @@ function reviewDoneStatHTML(){
   return `<div class="done-stat">复习 ${n} 词` +
          (pRetryN ? ` · 回炉 ${pRetryN} 词` : ``) + `</div>`;
 }
+/* 三个出口只该有**一个**主按钮:原来「再来一轮」和「下一课」都是绿色,
+   一页两个同样重的绿胶囊,等于没给建议。做完一课的默认下一步是往前走,
+   所以主按钮是「下一课」,「再来一轮」降成白底描边(min-height/min-width 由
+   .done-acts .big-btn 管,降级不影响热区)。
+   ⚠️ 没有下一课时(最后一课 / 混合复习 / index.json 没取到)「再来一轮」就是
+   唯一的前进动作,得升回绿色 —— 否则整页一个绿点都没有,看不出该点哪 */
 function doneActsHTML(again){
   const hasNext = LESSON_AT >= 0 && LESSON_AT + 1 < LESSON_ORDER.length;
   return `<div class="done-acts">` +
-    `<button class="big-btn" onclick="${again}">再来一轮</button>` +
+    `<button class="big-btn${hasNext ? " ghost" : ""}" onclick="${again}">再来一轮</button>` +
     (hasNext ? `<button class="big-btn" onclick="gotoLesson(1)">下一课 ➜</button>` : ``) +
     `<a class="big-btn ghost" href="index.html">回目录</a>` +
     `</div>`;
@@ -2383,7 +2606,7 @@ async function reviewAgain(){
 }
 
 function finishPractice(){
-  flushStars();                  // 半空中的星星先落袋,否则结算页的「⭐ × N」少算刚挣的
+  flushStars();                  // 半空中的星星先落袋,否则结算页的「星 × N」少算刚挣的
   doneStat = recordFinish();     // 记打卡日/完成轮数,必须排在 flushStars 后面
   markTabDone("practice");
   clearRound("practice");        // 这一轮做完了,没什么可恢复的了
@@ -2393,7 +2616,7 @@ function renderPracticeDone(){
   pActive = false;               // 结算页不算"进行中":横滑阈值恢复常态
   pbox.innerHTML = `
     <div class="done">
-      <div class="big">🏆</div>
+      <div class="big">${bigArt("ui-trophy.webp", "🏆")}</div>
       问答闯关完成！
       ${doneStatHTML()}
       ${reviewDoneStatHTML()}
@@ -2446,7 +2669,7 @@ function renderQuizQuestion(){
     <div class="q-prompt">${sent ? "听一听，说的是哪一张？" : "哪一个是……"}</div>
     ${sent ? `<div class="q-sent">${it.qa.a[it.ai]}</div>`
            : `<div class="q-word">${c.word}</div>`}
-    <button class="speak-btn" id="qSpeak">🔊</button>
+    <button class="speak-btn" id="qSpeak" aria-label="再听一遍">${IC_SPEAKER}</button>
     <div class="opts ${nOpt===2?'two':''}">
       ${opts.map(o=>o.image
         ? `<button class="opt haspic" data-p="${o.pic}" aria-label="${o.c.word}"><img src="${imgSrc(o.image)}" alt="${o.c.word}" loading="lazy"></button>`
@@ -2550,7 +2773,7 @@ function renderQuizDone(){
   qActive = false;
   qbox.innerHTML = `
     <div class="done">
-      <div class="big">🎉</div>
+      <div class="big">${bigArt("ui-party.webp", "🎉")}</div>
       今日打卡完成！
       ${doneStatHTML()}
       ${doneActsHTML("startQuiz()")}
@@ -2609,25 +2832,27 @@ let swX = 0, swY = 0, swDx = 0, swOn = false;
 
 const PRACTICE_HOME = `
   <div class="done">
-    <div class="big">🎤</div>
+    <div class="big">${bigArt("ui-mic.webp", "🎤")}</div>
     机器人提问，大声说出答案，<br>再从选项里点出它！<br>
     <span style="font-size:14px;color:#5E6E8C;font-weight:600">
-      点对了得 ⭐⭐，看答案跟读得 ⭐
+      点对了得 ${IC_STAR}${IC_STAR}，看答案跟读得 ${IC_STAR}
     </span>
     <br><button class="big-btn" onclick="startPractice()">开 始</button>
   </div>`;
 const QUIZ_HOME = `
-  <div class="done"><div class="big">🎯</div>听一听、选一选！
+  <div class="done"><div class="big">${bigArt("ui-target.webp", "🎯")}</div>听一听、选一选！
   <br><button class="big-btn" onclick="startQuiz()">开 始</button></div>`;
 
 /* 页签完成态角标:本次会话里跑完一轮就在页签后面打个 ✓。
    只做会话内的勾,不读历史 done —— 历史勾会天天都亮着,反倒看不出"今天做了没" */
 let tabDone = {practice:false, quiz:false};
-const TAB_TEXT = {practice:"🎤 问答闯关", quiz:"🎯 考一考"};
+/* 页签文案里带图标,所以只能走 innerHTML —— 里面全是本文件的字符串常量,无注入风险。
+   ⚠️ 和 <body> 里那三个 <button class="tab"> 的初始内容是同一套,改一处要改两处 */
+const TAB_TEXT = {practice: IC_MIC + " 问答闯关", quiz: IC_TARGET + " 考一考"};
 function paintTabDone(){
   ["practice","quiz"].forEach(k => {
     const el = document.getElementById("tab" + k[0].toUpperCase() + k.slice(1));
-    if(el) el.textContent = TAB_TEXT[k] + (tabDone[k] ? " ✓" : "");
+    if(el) el.innerHTML = TAB_TEXT[k] + (tabDone[k] ? " ✓" : "");
   });
 }
 function markTabDone(k){ tabDone[k] = true; paintTabDone(); }
@@ -2689,22 +2914,24 @@ function applyLesson(){
   tabDone = {practice:false, quiz:false};   // 换课要清勾,不然新课一进来就是做完的
   paintTabDone();
   document.getElementById("lessonTitle").textContent = lesson.title;
-  const hint = document.getElementById("learnHint");
   // 提示行以图标为主、尽量短:整行字对孩子是看不懂的,长了连家长也不读。
-  // 「👁」对应句子行上那个翻译钮(它已经不是「中」字了),两处要一起改
-  hint.textContent = lesson.audio_mode === "word"
-    ? "🔊 点词听词 · 按住看意思"
+  // 图标要和句子行上的两个圆钮对得上(喇叭=听、眼睛=翻译),那边换了这边就得跟着换。
+  // 走 innerHTML 是因为要塞图标;拼进去的全是本文件的常量,无注入风险
+  // 前 2 次之后这一行已经被 init 从 DOM 里摘掉了(见那儿的注释),所以要判空
+  const hint = document.getElementById("learnHint");
+  if(hint) hint.innerHTML = lesson.audio_mode === "word"
+    ? IC_SPEAKER + " 点词听词 · 按住看意思"
     : lesson.cards.some(c => c.phonics)
-      ? "🔊 点字母听纯音 · 跟读3个音 · 再读整词"
-      : "🔊 点句听句 · 点词听词 · 按住看意思 · 👁 翻译";
+      ? IC_SPEAKER + " 点字母听纯音 · 跟读3个音 · 再读整词"
+      : IC_SPEAKER + " 点句听句 · 点词听词 · 按住看意思 · " + IC_EYE + " 翻译";
 
   document.getElementById("practiceBox").innerHTML = PRACTICE_HOME;
   // 可选的图不足两张就没法出选择题,隐藏这一栏而不是出坏题
   const enough = quizPics().length >= 2;
   document.getElementById("tabQuiz").style.display = enough ? "" : "none";
   document.getElementById("quizBox").innerHTML = enough ? QUIZ_HOME :
-    `<div class="done"><div class="big">🎯</div>这一课的卡片是整版拼图，` +
-    `没法做听音选卡。<br>去「学一学」和「问答闯关」吧！</div>`;
+    `<div class="done"><div class="big">${bigArt("ui-target.webp", "🎯")}</div>` +
+    `这一课的卡片是整版拼图，没法做听音选卡。<br>去「学一学」和「问答闯关」吧！</div>`;
 
   wireLessonNav();
   renderLearn();
@@ -3062,6 +3289,16 @@ function fillPreviewImages(){
 }
 
 (async function init(){
+  /* 学一学那条说明行("点句听句 · 点词听词 · 按住看意思")是给家长看的一次性说明:
+     看懂了就该让位,常驻等于每天在内容上方永久占一行。前 2 次进课程页显示,
+     之后整行从 DOM 里摘掉(不是藏起来 —— 藏起来仍占位)。
+     按**页面加载**计数,所以放在 init 的第一句(await 之前,同步跑完,不会先闪一下):
+     换课走的是 applyLesson,那条路不该算成新的一次。 */
+  if(coachCount("learnHint") < 2) bumpCoach("learnHint");
+  else{
+    const h = document.getElementById("learnHint");
+    if(h) h.remove();
+  }
   const id = new URLSearchParams(location.search).get("lesson");
   CUR_ID = id;                   // 没带 ?lesson= 时是 null:预览课不记账
   lesson = FALLBACK_LESSON;
@@ -3095,13 +3332,14 @@ function fillPreviewImages(){
   }catch(e){}
   history.replaceState({lesson:id}, "", location.href);
   applyLesson();
-  // 复习默认落在闯关:复习的第一动作应该是"考",不是翻卡重读(测试效应)。
-  // 学一学页签仍在,想翻随时切。走 showPage 不走 tapPage —— 这不是孩子按的页签
-  if(id === "review"){
-    showPage("practice", true);
-    // 错题本空着进来:applyLesson 摆的「开 始」按钮点了也没题可出,直接上庆祝页
-    if(REVIEW_PICK === "wrong" && !(lesson.cards || []).length)
-      pbox.innerHTML = emptyRoundHTML();
+  // 复习和普通课一样落在「学一学」(HTML 里 learn 自带 .on,什么都不用做)。
+  // 曾经让复习直接落在闯关(理由是"先考不先翻卡"的测试效应),家长明确要求
+  // 改回:孩子的习惯是先看一遍再答,直接进闯关像"还没复习就被考"。
+  // 错题本同样落学一学 —— 翻本子正是"先看一遍"。
+  // 本子空着进来是唯一的例外:没有可翻可考的内容,两个页签都摆庆祝页
+  if(id === "review" && REVIEW_PICK === "wrong" && !(lesson.cards || []).length){
+    document.getElementById("learnList").innerHTML = emptyRoundHTML();
+    pbox.innerHTML = emptyRoundHTML();
   }
 })();
 </script>
