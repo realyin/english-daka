@@ -1,0 +1,276 @@
+{
+  "seq": 203,
+  "group": "词族 Word Family",
+  "badge": "-it",
+  "title": "Word Family · -it 词族",
+  "cards": [
+    {
+      "word": "-it family",
+      "cn": "-it 词族",
+      "tag": "CVC",
+      "image": "images/wf-it.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -it make?",
+          "a": [
+            "It makes the sound /it/."
+          ],
+          "key": [
+            "/it/"
+          ],
+          "q_cn": "-it 发什么音？",
+          "a_cn": [
+            "-it 发 /ɪt/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-it-make-9edd70.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-it-makes-the-sound-it-16ebe5.mp3"
+          ]
+        },
+        {
+          "q": "Which family do hit, bit and lit belong to?",
+          "a": [
+            "Hit, bit and lit belong to -it family."
+          ],
+          "key": [
+            "it"
+          ],
+          "q_cn": "hit、bit、lit 属于哪个词族？",
+          "a_cn": [
+            "它们属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-family-do-hit-bit-and-lit-belo-292877.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-bit-and-lit-belong-to-it-family-a1c6b2.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-it-family-c9ed81.mp3"
+    },
+    {
+      "word": "hit",
+      "cn": "打",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/hɪt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-hit.mp3"
+      },
+      "image": "images/wf-it-hit.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, i, t?",
+          "a": [
+            "/h/ /i/ /t/, hit.",
+            "I can hit the ball."
+          ],
+          "key": [
+            "hit"
+          ],
+          "q_cn": "h-i-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɪ/ /t/，hit。",
+            "我能击球。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-h-i-t-6282d2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3",
+            "audio/sentences/k2-wf-it/a-i-can-hit-the-ball-20ba50.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-hit-1b9f2a.mp3"
+    },
+    {
+      "word": "bit",
+      "cn": "一小块",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/bɪt/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-bit.mp3"
+      },
+      "image": "images/wf-it-bit.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, i, t?",
+          "a": [
+            "/b/ /i/ /t/, bit.",
+            "I want a bit of cake."
+          ],
+          "key": [
+            "bit"
+          ],
+          "q_cn": "b-i-t 怎么拼读？",
+          "a_cn": [
+            "/b/ /ɪ/ /t/，bit。",
+            "我想要一小块蛋糕。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-b-i-t-1176fd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3",
+            "audio/sentences/k2-wf-it/a-i-want-a-bit-of-cake-5e5277.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-bit-406516.mp3"
+    },
+    {
+      "word": "lit",
+      "cn": "点亮的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/lɪt/",
+        "parts": [
+          {
+            "text": "l",
+            "sound": "l",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "l",
+          "sound": "l"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-lit.mp3"
+      },
+      "image": "images/wf-it-lit.webp",
+      "dialog": [
+        {
+          "q": "How do you read l, i, t?",
+          "a": [
+            "/l/ /i/ /t/, lit.",
+            "The lamp is lit."
+          ],
+          "key": [
+            "lit"
+          ],
+          "q_cn": "l-i-t 怎么拼读？",
+          "a_cn": [
+            "/l/ /ɪ/ /t/，lit。",
+            "台灯亮了。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-l-i-t-67bd81.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-l-i-t-lit-952c03.mp3",
+            "audio/sentences/k2-wf-it/a-the-lamp-is-lit-39f71d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-lit-8e2d9b.mp3"
+    }
+  ],
+  "word_audio": {
+    "-it family": "audio/words/it-family.mp3",
+    "a": "audio/words/a.mp3",
+    "and": "audio/words/and.mp3",
+    "b": "audio/words/b.mp3",
+    "ball": "audio/words/ball.mp3",
+    "belong": "audio/words/belong.mp3",
+    "bit": "audio/words/bit.mp3",
+    "cake": "audio/words/cake.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "family": "audio/words/family.mp3",
+    "h": "audio/words/h.mp3",
+    "hit": "audio/words/hit.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "l": "audio/words/l.mp3",
+    "lamp": "audio/words/lamp.mp3",
+    "lit": "audio/words/lit.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "of": "audio/words/of.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
+    "to": "audio/words/to.mp3",
+    "want": "audio/words/want.mp3",
+    "what": "audio/words/what.mp3",
+    "which": "audio/words/which.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

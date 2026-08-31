@@ -1,0 +1,244 @@
+{
+  "seq": 404,
+  "group": "常见词 Sight Words",
+  "badge": "to",
+  "title": "Sight Words · to / and",
+  "cards": [
+    {
+      "word": "to",
+      "cn": "去；到",
+      "tag": "sight word",
+      "image": "images/sw-to.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word to."
+          ],
+          "key": [
+            "to"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 to。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-to-19af97.mp3"
+    },
+    {
+      "word": "sing",
+      "cn": "唱歌",
+      "tag": "sight word",
+      "image": "images/sw-to-sing.webp",
+      "dialog": [
+        {
+          "q": "What do you like to do?",
+          "a": [
+            "I like to sing a song."
+          ],
+          "key": [
+            "sing"
+          ],
+          "q_cn": "你喜欢做什么？",
+          "a_cn": [
+            "我喜欢唱歌。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-do-you-like-to-do-8b4356.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-sing-a2d751.mp3"
+    },
+    {
+      "word": "drums",
+      "cn": "架子鼓",
+      "tag": "sight word",
+      "image": "images/sw-to-drums.webp",
+      "dialog": [
+        {
+          "q": "Do you like to play the drums?",
+          "a": [
+            "Yes, I like to play the drums."
+          ],
+          "key": [
+            "drums"
+          ],
+          "q_cn": "你喜欢打鼓吗？",
+          "a_cn": [
+            "喜欢，我喜欢打鼓。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-do-you-like-to-play-the-drums-cd7d74.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-yes-i-like-to-play-the-drums-0a96bd.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-drums-02e43a.mp3"
+    },
+    {
+      "word": "teacher",
+      "cn": "老师",
+      "tag": "sight word",
+      "image": "images/sw-to-teacher.webp",
+      "dialog": [
+        {
+          "q": "What do you want to be?",
+          "a": [
+            "I want to be a teacher."
+          ],
+          "key": [
+            "teacher"
+          ],
+          "q_cn": "你想成为什么？",
+          "a_cn": [
+            "我想当老师。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-do-you-want-to-be-222838.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-teacher-de59e1.mp3"
+    },
+    {
+      "word": "and",
+      "cn": "和",
+      "tag": "sight word",
+      "image": "images/sw-and.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word and."
+          ],
+          "key": [
+            "and"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 and。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-and-c834d6.mp3"
+    },
+    {
+      "word": "piano",
+      "cn": "钢琴",
+      "tag": "sight word",
+      "image": "images/sw-and-piano.webp",
+      "dialog": [
+        {
+          "q": "What color is a piano?",
+          "a": [
+            "A piano is black and white."
+          ],
+          "key": [
+            "black"
+          ],
+          "q_cn": "钢琴是什么颜色的？",
+          "a_cn": [
+            "钢琴是黑白相间的。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-color-is-a-piano-6b3c10.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-piano-f3fa19.mp3"
+    },
+    {
+      "word": "market",
+      "cn": "市场",
+      "tag": "sight word",
+      "image": "images/market.webp",
+      "dialog": [
+        {
+          "q": "Where can we buy apples and bananas?",
+          "a": [
+            "We can buy apples and bananas in the market."
+          ],
+          "key": [
+            "market"
+          ],
+          "q_cn": "我们可以在哪里买苹果和香蕉？",
+          "a_cn": [
+            "我们可以在市场买苹果和香蕉。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-market-82bcf9.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "and": "audio/words/and.mp3",
+    "apples": "audio/words/apples.mp3",
+    "bananas": "audio/words/bananas.mp3",
+    "be": "audio/words/be.mp3",
+    "black": "audio/words/black.mp3",
+    "buy": "audio/words/buy.mp3",
+    "can": "audio/words/can.mp3",
+    "color": "audio/words/color.mp3",
+    "do": "audio/words/do.mp3",
+    "drums": "audio/words/drums.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "like": "audio/words/like.mp3",
+    "market": "audio/words/market.mp3",
+    "piano": "audio/words/piano.mp3",
+    "play": "audio/words/play.mp3",
+    "sight": "audio/words/sight.mp3",
+    "sing": "audio/words/sing.mp3",
+    "song": "audio/words/song.mp3",
+    "teacher": "audio/words/teacher.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "want": "audio/words/want.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "white": "audio/words/white.mp3",
+    "word": "audio/words/word.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

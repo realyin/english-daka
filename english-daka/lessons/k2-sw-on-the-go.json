@@ -2,7 +2,7 @@
   "seq": 402,
   "group": "常见词 Sight Words",
   "badge": "go",
-  "title": "Sight Words · go / by / on / the",
+  "title": "Sight Words · go / on",
   "cards": [
     {
       "word": "go",
@@ -66,6 +66,34 @@
       ],
       "quiz": false,
       "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-go-e52f52.mp3"
+    },
+    {
+      "word": "on",
+      "cn": "在……上面",
+      "tag": "sight word",
+      "image": "images/sw-on.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word on."
+          ],
+          "key": [
+            "on"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 on。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-on-bcec31.mp3"
     },
     {
       "word": "box",

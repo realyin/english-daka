@@ -1,0 +1,274 @@
+{
+  "seq": 204,
+  "group": "词族 Word Family",
+  "badge": "-ot",
+  "title": "Word Family · -ot 词族",
+  "cards": [
+    {
+      "word": "-ot family",
+      "cn": "-ot 词族",
+      "tag": "CVC",
+      "image": "images/wf-ot.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -ot make?",
+          "a": [
+            "Ot makes the sound /ot/."
+          ],
+          "key": [
+            "/ot/"
+          ],
+          "q_cn": "-ot 发什么音？",
+          "a_cn": [
+            "-ot 发 /ɑt/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ot/q-what-sound-does-ot-make-af13d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ot/a-ot-makes-the-sound-ot-31b86d.mp3"
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -ot family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -ot 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ot/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ot/a-it-s-ot-family-485e6b.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-wf-ot/q-which-one-is-ot-family-707975.mp3"
+    },
+    {
+      "word": "tot",
+      "cn": "小娃娃",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/tɑt/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-tot.mp3"
+      },
+      "image": "images/wf-ot-tot.webp",
+      "dialog": [
+        {
+          "q": "How do you read t, o, t?",
+          "a": [
+            "/t/ /o/ /t/, tot.",
+            "The tot can hop."
+          ],
+          "key": [
+            "tot"
+          ],
+          "q_cn": "t-o-t 怎么拼读？",
+          "a_cn": [
+            "/t/ /ɑ/ /t/，tot。",
+            "小娃娃会蹦跳。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ot/q-how-do-you-read-t-o-t-bbfbb2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ot/a-t-o-t-tot-cb2f74.mp3",
+            "audio/sentences/k2-wf-ot/a-the-tot-can-hop-8a5db4.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ot/q-which-one-is-tot-5adaf9.mp3"
+    },
+    {
+      "word": "hot",
+      "cn": "热的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/hɑt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-hot.mp3"
+      },
+      "image": "images/wf-ot-hot.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, o, t?",
+          "a": [
+            "/h/ /o/ /t/, hot.",
+            "It is hot."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "h-o-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɑ/ /t/，hot。",
+            "天气很热。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ot/q-how-do-you-read-h-o-t-1bb60c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ot/a-h-o-t-hot-4cad64.mp3",
+            "audio/sentences/k2-wf-ot/a-it-is-hot-1a733d.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ot/q-which-one-is-hot-c419d5.mp3"
+    },
+    {
+      "word": "dot",
+      "cn": "点",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 o /ɑ/ · -ot 词族",
+        "ipa": "/dɑt/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "o",
+            "sound": "aa",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ot",
+          "sound": "ot"
+        },
+        "blend_audio": "audio/phonics/blend-dot.mp3"
+      },
+      "image": "images/wf-ot-dot.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, o, t?",
+          "a": [
+            "/d/ /o/ /t/, dot.",
+            "I see a dot."
+          ],
+          "key": [
+            "dot"
+          ],
+          "q_cn": "d-o-t 怎么拼读？",
+          "a_cn": [
+            "/d/ /ɑ/ /t/，dot。",
+            "我看到一个圆点。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ot/q-how-do-you-read-d-o-t-deb5b0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ot/a-d-o-t-dot-03283a.mp3",
+            "audio/sentences/k2-wf-ot/a-i-see-a-dot-268e59.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ot/q-which-one-is-dot-dc07ac.mp3"
+    }
+  ],
+  "word_audio": {
+    "-ot family": "audio/words/ot-family.mp3",
+    "a": "audio/words/a.mp3",
+    "can": "audio/words/can.mp3",
+    "d": "audio/words/d.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "dot": "audio/words/dot.mp3",
+    "family": "audio/words/family.mp3",
+    "h": "audio/words/h.mp3",
+    "hop": "audio/words/hop.mp3",
+    "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "o": "audio/words/o.mp3",
+    "ot": "audio/words/ot.mp3",
+    "read": "audio/words/read.mp3",
+    "see": "audio/words/see.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "tot": "audio/words/tot.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}
