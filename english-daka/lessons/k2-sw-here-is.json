@@ -71,24 +71,26 @@
       "cn": "是",
       "tag": "sight word",
       "image": "images/sw-is.webp",
-      "collage": true,
       "quiz": false,
       "dialog": [
         {
           "q": "What's this sight word?",
           "a": [
-            "It's sight word is."
+            "It's sight word is.",
+            "This is a cat."
           ],
           "key": [
             "is"
           ],
           "q_cn": "这是什么常见词？",
           "a_cn": [
-            "是常见词 is。"
+            "是常见词 is。",
+            "这是一只猫。"
           ],
           "q_audio": "audio/sentences/k2-sw-here-is/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
-            "audio/sentences/k2-sw-here-is/a-it-s-sight-word-is-c3c8c1.mp3"
+            "audio/sentences/k2-sw-here-is/a-it-s-sight-word-is-c3c8c1.mp3",
+            "audio/sentences/k2-sw-here-is/a-this-is-a-cat-2cc935.mp3"
           ]
         }
       ],
@@ -177,6 +179,7 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
     "circle": "audio/words/circle.mp3",
     "come": "audio/words/come.mp3",
     "fox": "audio/words/fox.mp3",

@@ -14,18 +14,21 @@
         {
           "q": "What's this sight word?",
           "a": [
-            "It's sight word all."
+            "It's sight word all.",
+            "The apples are all red."
           ],
           "key": [
             "all"
           ],
           "q_cn": "这是什么常见词？",
           "a_cn": [
-            "是常见词 all。"
+            "是常见词 all。",
+            "苹果全是红色的。"
           ],
           "q_audio": "audio/sentences/k2-sw-all/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
-            "audio/sentences/k2-sw-all/a-it-s-sight-word-all-b38dd2.mp3"
+            "audio/sentences/k2-sw-all/a-it-s-sight-word-all-b38dd2.mp3",
+            "audio/sentences/k2-sw-all/a-the-apples-are-all-red-c0ee98.mp3"
           ]
         }
       ],
@@ -140,6 +143,8 @@
   "word_audio": {
     "all": "audio/words/all.mp3",
     "and": "audio/words/and.mp3",
+    "apples": "audio/words/apples.mp3",
+    "are": "audio/words/are.mp3",
     "asking": "audio/words/asking.mp3",
     "birds": "audio/words/birds.mp3",
     "cam": "audio/words/cam.mp3",
@@ -155,6 +160,7 @@
     "my": "audio/words/my.mp3",
     "play": "audio/words/play.mp3",
     "questions": "audio/words/questions.mp3",
+    "red": "audio/words/red.mp3",
     "sight": "audio/words/sight.mp3",
     "skip": "audio/words/skip.mp3",
     "the": "audio/words/the.mp3",
