@@ -55,10 +55,15 @@
   .ic-star{color:var(--yellow,#FFC53D);}
   .ic-flame{color:var(--orange,#FF9A3D);}
 
-  /* header 自己不留左右 padding:里面的 h1 和 .hat 各自出自己的左右边距 ——
-     .hat 要和下面货架的内容列像素级同轴,多一层 padding 就得两处一起算 */
-  header{text-align:center;padding:var(--sp-5,24px) 0 0;}
-  header h1{font-size:26px;letter-spacing:2px;padding:0 var(--sp-3,16px);}
+  /* header 自己不留左右 padding:唯一的孩子 .hat 自己出左右边距 ——
+     .hat 要和下面货架的内容列像素级同轴,多一层 padding 就得两处一起算。
+     标题已经收进 .hat 里当卡内第一行,header 只剩"顶部留一点气口"这一个职责,
+     text-align:center 也一并撤掉(标题现在靠左,和货架的分组标题同一条左缘) */
+  header{padding:var(--sp-1,8px) 0 0;}
+  /* 26→21px:它从"整页大标题"降级成"卡内标题",要和右边同排的打卡条平视,
+     字号再大就把那一行压塌了。letter-spacing 保留 —— 六个汉字疏一点才像招牌。
+     左右 padding 去掉:左缘由 .hat 的 padding 统一出,自己再加一份就错开一档 */
+  header h1{font-size:21px;letter-spacing:2px;flex:none;}
 
   /* ===== 帽子(打卡条 + 行动按钮) =====
      原来打卡条(360px)、继续学(内容宽)、混合复习(内容宽)是三个各自居中的悬浮
@@ -68,8 +73,10 @@
      .shelf-head 再往里缩 16px,所以内容列 = min(视口, 720) - 32,居中。
      这里就写成 calc(100% - 32px) 封顶 688px(=720-32),两边都是同一个结果。
      ⚠️ 改 .shelf 的 720 或 .shelf-head 的 16px,这里的 688/32 要跟着改。
-     宽屏 space-between 把打卡条推到左、按钮列贴右;
-     窄屏靠 flex-wrap 自然堆叠成"打卡条一行 + 按钮全宽",不用写断点 */
+     第一行是「标题 + 本周打卡记录」:标题 flex:none 靠左,打卡条 flex:1 吃掉
+     剩下的宽度并把内容贴右(点阵 + 🔥连胜是一组,分开摆就成了两个孤零零的元素)。
+     窄屏放不下时靠 flex-wrap 自然折成"标题一行、打卡条一行",不用写断点;
+     第二行(按钮)靠 flex-basis:100% 永远独占一行 */
   .hat{
     width:calc(100% - var(--sp-3,16px) * 2);max-width:688px;
     margin:var(--sp-4,20px) auto 0;
@@ -169,16 +176,26 @@
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* ===== 打卡条 ===== */
-  /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
-     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请。
-     它现在住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
+  /* 本周(周一起)到今天,一天一个点。天天来的孩子看的就是这一行 ——
+     空心变实心是他能自己看懂的唯一"进度"。
+     它住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
      全部去掉,只留内部那条 flex 行 —— 卡中卡会多出一圈没有意义的描边。
-     flex-basis:100% = 永远独占一行:点阵靠左、连胜靠右(space-between),
-     连胜的右缘和下面按钮行的右缘对成一条线 */
+     现在和 h1 同排:flex:1 吃掉标题右边剩下的宽度,justify-content:flex-end
+     把"点阵 + 连胜"整组贴到卡的右缘 —— 和下面按钮行的右缘对成一条线。
+     窄屏 wrap 到第二行时仍然靠右,和左上角的标题形成对角平衡。
+     min-height:44px:整条现在是可点的(开打卡日历),要够儿童手指的热区;
+     左右负 margin 抵掉 padding —— 悬停底色能铺得比内容宽一点,
+     但点阵和连胜的位置和加热区之前一模一样 */
   .checkin{
-    flex:1 1 100%;min-width:0;
-    display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);
+    flex:1 1 auto;min-width:0;
+    display:flex;align-items:center;justify-content:flex-end;gap:var(--sp-2,12px);
+    min-height:44px;padding:0 var(--sp-1,8px);margin:0 calc(var(--sp-1,8px) * -1);
+    border-radius:14px;cursor:pointer;
+    transition:background var(--dur-fast,.15s) var(--ease-out,ease);
   }
+  .checkin:hover{background:#F4F8FE;}
+  .checkin:active{background:#EAF1FC;}
+  .checkin:focus-visible{outline:4px solid var(--blue);outline-offset:2px;}
   /* 内容是 JS 填的:老浏览器解析不了脚本时,帽子里就只剩按钮列,
      不能在按钮旁边留一个撑着 300px 的空盒子(会把按钮挤成半宽) */
   .checkin:empty{display:none;}
@@ -189,11 +206,131 @@
     border:2px solid #CFDCEE;background:#fff;box-sizing:border-box;
   }
   .cdot.on{background:var(--yellow);border-color:#E9A800;}
-  /* 今天那格加一圈蓝描边:七个点长得一样时,孩子分不清哪个是"今天该点亮的" */
+  /* 今天那格加一圈蓝描边:几个点长得一样时,孩子分不清哪个是"今天该点亮的" */
   .cday.today .cdot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(62,139,255,.28);}
   .cw{font-size:11px;font-weight:700;color:#5E6E8C;line-height:1;}
   .cday.today .cw{color:var(--blue);}
   .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
+
+  /* ===== 打卡日历弹窗 =====
+     打卡条只给"这一周",家长想看的"坚持了多久"没地方看。点一下打卡条弹出
+     一整年的热力图 —— 它是回顾,不是操作,所以做成弹窗而不是再占一块首屏。
+     ⚠️ 遮罩是 position:fixed,不进正常流,不会给整页添出横向滚动。
+     ⚠️ 关着的时候用 visibility:hidden 而不是 display:none / hidden 属性:
+     display 一变,过渡就没有起点可插值,还得靠 rAF 或 transitionend 补一帧 ——
+     那些回调在后台标签页里根本不跑,弹窗会卡在"打开了但看不见"。
+     visibility 和 display:none 一样会把里面的关闭钮移出 Tab 序和无障碍树,
+     所以关着的时候键盘绝对够不到它;pointer-events:none 再挡掉鼠标。
+     ⚠️ visibility 的过渡写成 0s:打开这一下必须在样式重算时就立刻生效
+     (JS 紧接着要 focus() 关闭钮,而 visibility:hidden 的元素聚焦不了)——
+     写成有时长的过渡就得等第一帧,后台标签页里那一帧不来,焦点就丢了。
+     关闭时给 visibility 挂 --dur-base 的**延迟**:淡出跑完才真正藏起来,
+     而 opacity/pointer-events 是立刻的,不用等任何回调。
+     减弱动效时 --dur-* 归零,这一整套自动变成瞬时,不用写一行 JS 判断 */
+  .cal-mask{
+    position:fixed;inset:0;z-index:50;
+    display:flex;align-items:center;justify-content:center;padding:var(--sp-3,16px);
+    background:rgba(43,58,85,.45);
+    opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity var(--dur-base,.24s) var(--ease-out,ease),
+               visibility 0s linear var(--dur-base,.24s);
+  }
+  .cal-mask.open{
+    opacity:1;visibility:visible;pointer-events:auto;
+    transition:opacity var(--dur-base,.24s) var(--ease-out,ease),
+               visibility 0s linear 0s;
+  }
+  .cal{
+    /* 700 而不是 680:一年(53 列)的热力图连星期标签一共 655px,加上卡的
+       内边距和边框正好要 700 才能在桌面上一次看完 —— 差那 20px 就得横滚,
+       而"一屏看完一年"正是这张图的意义。用了不止一年的存档会更长,
+       那时候和窄屏一样在 .cal-scroll 里横滚,不影响这一档的体验 */
+    width:100%;max-width:700px;max-height:calc(100vh - var(--sp-3,16px) * 2);
+    overflow-y:auto;
+    padding:var(--sp-3,16px);
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:20px;
+    box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
+    /* 弹出用 spring:末尾轻微过冲,和 app.html 的弹窗是同一种"蹦出来"的手感 */
+    transform:scale(.94);
+    transition:transform var(--dur-base,.24s) var(--ease-spring,ease);
+  }
+  .cal-mask.open .cal{transform:scale(1);}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);}
+  .cal-head h2{font-size:17px;font-weight:900;letter-spacing:1px;}
+  /* 44px 见方的热区,里面的 ✕ 只有 16px —— 图标大小和可点范围是两回事 */
+  .cal-x{
+    flex:none;width:44px;height:44px;margin:-10px -10px -10px 0;
+    display:flex;align-items:center;justify-content:center;
+    border:0;background:none;color:var(--muted,#5E6E8C);font-size:16px;
+    border-radius:50%;cursor:pointer;
+  }
+  .cal-x:hover{background:#F4F8FE;color:var(--ink);}
+  .cal-x:focus-visible{outline:4px solid var(--blue);outline-offset:-2px;}
+
+  /* 热力图:列=周(周一在顶),从 52 周前排到本周,共 53 列。
+     星期标签留在滚动容器外面 —— 横滚时"一/三/五"要一直钉在左边,
+     跟着一起滑走的话滚到中间就没有坐标系了 */
+  .cal-map{display:flex;align-items:flex-start;gap:4px;margin-top:var(--sp-2,12px);}
+  /* padding-top 必须等于月份标签行的总高(14+2),否则星期和格子错半行 */
+  .cal-wd{
+    flex:none;display:flex;flex-direction:column;padding-top:16px;
+    font-size:9px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-wd span{height:10px;margin-bottom:2px;line-height:10px;}
+  /* 53 列约 634px:桌面弹窗(680)刚好放得下,手机放不下就在这里横滚。
+     滚动条藏起来,和货架同一套理由(读者是孩子,一条灰杠只会招来乱拖) */
+  .cal-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;}
+  .cal-scroll{scrollbar-width:none;}
+  .cal-scroll::-webkit-scrollbar{display:none;}
+  /* inline-block:让内层按内容宽度撑开(而不是被滚动容器压成 100%)。
+     padding 给"今天"那圈 outline 留位置,月份行和格子行同时缩进,不会错位 */
+  .cal-inner{display:inline-block;padding:2px;}
+  .cal-months{display:flex;gap:2px;height:14px;margin-bottom:2px;}
+  /* 每列一个占位格,月份名绝对定位吐在格子外面 —— 列只有 10px 宽,
+     不脱离文档流的话"12月"三个字会把整行撑散、和格子对不上列 */
+  .cal-mon{flex:none;width:10px;position:relative;}
+  .cal-mon b{
+    position:absolute;left:0;top:0;white-space:nowrap;
+    font-size:9px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-grid{display:flex;gap:2px;}
+  .cal-col{flex:none;width:10px;display:flex;flex-direction:column;gap:2px;}
+  /* 未打卡的浅蓝和 --line 同一族:是"还没填的格子",不是"缺席"的警示色 */
+  .cal-cell{flex:none;width:10px;height:10px;border-radius:3px;background:#E2EBF7;}
+  /* 四档绿 = 那天挣了多少星。色相全部锁死在 --green 上只动明度 ——
+     换色相(比如浅的偏黄、深的偏蓝)会被读成"不同种类的一天",而它们只是多少之分。
+     s0 是"打了卡但没有星数记录"的老数据:比 s1 还浅一档,和空格子拉开,
+     但也不假装知道那天学了多少。阈值见 JS 的 STAR_TIERS */
+  .cal-cell.s0{background:#CDEBD6;}
+  .cal-cell.s1{background:#A8DFBB;}
+  .cal-cell.s2{background:#74CE93;}
+  .cal-cell.s3{background:var(--green,#4CC26E);}
+  .cal-cell.s4{background:#2E9C51;}
+  /* outline 而不是 border:border 会把 10px 的格子挤小,一整列就对不齐了 */
+  .cal-cell.now{outline:2px solid var(--blue,#3E8BFF);}
+  .cal-legend{
+    display:flex;align-items:center;gap:3px;
+    margin-top:var(--sp-2,12px);
+    font-size:11px;font-weight:700;color:var(--muted,#5E6E8C);
+  }
+  .cal-legend span:first-child{margin-right:2px;}
+  .cal-legend span:last-child{margin-left:2px;}
+  /* 统计块:窄屏两列、宽屏四列,不写断点 —— auto-fit + minmax 让浏览器自己数
+     一行放得下几个(手机上的可用宽度约 294px,放得下两个 120;
+     弹窗最宽时约 644px,四个正好铺满) */
+  .cal-stats{
+    display:grid;grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+    gap:var(--sp-1,8px);margin-top:var(--sp-2,12px);
+  }
+  .cal-tile{
+    padding:10px var(--sp-2,12px);border-radius:14px;background:#F2F7FD;
+  }
+  /* 数值大、单位和标签小:家长扫一眼要看到的是那个数,不是"天"字 */
+  .cal-tile b{display:block;font-size:22px;font-weight:900;line-height:1.1;}
+  .cal-tile b i{font-style:normal;font-size:12px;font-weight:700;margin-left:2px;
+                color:var(--muted,#5E6E8C);}
+  .cal-tile span{display:block;margin-top:2px;font-size:11px;font-weight:700;
+                 color:var(--muted,#5E6E8C);}
 
   /* ===== header 行动区 ===== */
   /* 帽子里的按钮行(家长反馈:电脑上两个按钮竖着叠像"重叠",宽屏该并排)。
@@ -281,16 +418,23 @@
 <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5c.42 0 .8.24.98.61l2.34 4.74 5.23.76c.9.13 1.27 1.25.6 1.9l-3.78 3.69.89 5.2c.16.91-.79 1.6-1.6 1.17L12 18.11l-4.68 2.46c-.81.43-1.76-.26-1.6-1.17l.89-5.2-3.78-3.69c-.67-.65-.3-1.77.6-1.9l5.23-.76 2.34-4.74c.19-.37.57-.61.99-.61z"/></symbol>
 <symbol id="i-flame" viewBox="0 0 24 24"><g transform="translate(0 1.5) scale(1.5)"><path fill-rule="evenodd" d="M8 14c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 2 9-1.5 6-2c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 12 4.686 14 8 14Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 8 7 8.5 7 8.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 12 9.657 13 8 13Z"/></g></symbol>
 <symbol id="i-play" viewBox="0 0 24 24"><path d="M7.6 6.1 18 12 7.6 17.9Z" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6 18 18"/><path d="M18 6 6 18"/></g></symbol>
 <symbol id="i-shuffle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M2.9 6.9h3.3c.72 0 1.4.35 1.82.94l5.66 7.94c.42.59 1.1.94 1.82.94h3.4"/><path d="M2.9 17.1h3.3c.72 0 1.4-.35 1.82-.94l5.66-7.94c.42-.59 1.1-.94 1.82-.94h3.4"/></g><path d="M17.9 3.7 21.6 6.9 17.9 10.1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17.9 13.9 21.6 17.1 17.9 20.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
 </defs></svg>
 
 <header>
-  <h1>我的英语打卡</h1>
-  <!-- 打卡条和行动按钮住在同一张白卡(.hat)里,卡的左右缘与下面货架的
+  <!-- 标题、打卡条、行动按钮住在同一张白卡(.hat)里,卡的左右缘与下面货架的
        分组标题/第一张封面同轴 —— 详见 CSS 的「帽子」一节。
-       ⚠️ #checkin / #acts 这两个 id 和内部渲染逻辑没动,只是被包了一层 -->
+       h1 收进卡里当第一行、和打卡条同排:原来标题悬在卡外面自成一层,
+       和下面这张卡是两个独立的块,顶部就多出一段空落落的白。
+       ⚠️ h1 仍然是页面唯一的一级标题(语义没动),document.title 和
+       manifest 里的名字也都保持原样 -->
   <div class="hat">
-    <div class="checkin" id="checkin"></div>
+    <h1>我的英语打卡</h1>
+    <!-- 整条打卡记录是「查看打卡日历」的按钮:它是一年记录的缩略图,
+         点开看全年是最自然的手势。用 div + role 而不是 <button>:
+         按钮的默认样式/内联布局要一条条覆盖,而这里连键盘行为都是自己写的 -->
+    <div class="checkin" id="checkin" role="button" tabindex="0" aria-label="查看打卡日历"></div>
     <div class="acts" id="acts">
       <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
     </div>
@@ -298,6 +442,44 @@
 </header>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
+
+<!-- 打卡日历弹窗:静态写在这里、默认 hidden,不用 JS 建。
+     结构固定不变(只有格子是 JS 填的),写成模板比在脚本里拼一堆 createElement
+     好读,而且 JS 挂了的时候它就是个隐藏节点,不会在页面上留下半截东西。
+     ⚠️ 不写 hidden 属性:显示/隐藏全交给 .open class 和 CSS 的 visibility,
+     理由见样式表里「打卡日历弹窗」一节。 -->
+<div class="cal-mask" id="calMask">
+  <div class="cal" role="dialog" aria-modal="true" aria-labelledby="calTitle">
+    <div class="cal-head">
+      <h2 id="calTitle">打卡日历</h2>
+      <button class="cal-x" id="calClose" type="button" aria-label="关闭">
+        <svg class="ic" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="cal-map">
+      <!-- 只标 一/三/五:七行全标的话 9px 的字挤成一坨,反而读不出来 -->
+      <div class="cal-wd" aria-hidden="true">
+        <span>一</span><span></span><span>三</span><span></span>
+        <span>五</span><span></span><span></span>
+      </div>
+      <div class="cal-scroll" id="calScroll">
+        <div class="cal-inner">
+          <div class="cal-months" id="calMonths" aria-hidden="true"></div>
+          <div class="cal-grid" id="calGrid" role="img" aria-label="打卡日历热力图"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 图例:四档绿是"那天学了多少",不解释一句家长会当成随机深浅。
+         aria-hidden:读屏念一串空 span 没有意义,统计块里已经有文字了 -->
+    <div class="cal-legend" aria-hidden="true">
+      <span>少</span>
+      <span class="cal-cell s1"></span><span class="cal-cell s2"></span>
+      <span class="cal-cell s3"></span><span class="cal-cell s4"></span>
+      <span>多</span>
+    </div>
+    <div class="cal-stats" id="calStats"></div>
+  </div>
+</div>
 
 <!-- Service Worker 注册:装到主屏后没网也能打开,音频/配图边用边缓。
      ⚠️ 单独成块、只用 ES5 写,和上面的白屏兜底一个道理 —— 这段要在
@@ -337,7 +519,12 @@ window.onerror = function (msg, src, line) {
 <script>
 /* ================================================================
    进度存档 —— 与 app.html 里的是同一份代码、同一个 key，改一处要同步改两处。
-   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"],
+     dayStars:{"YYYY-MM-DD":n}, last:{lesson,at} }
+   ⚠️ dayStars 是后加的字段(打卡日历按它给格子分深浅);写入方只有 app.html
+   的 addStars(),这一页只读。**旧存档里没有它**,load() 一律补成空对象,
+   读的时候也永远要当"可能没有这一天"来写 —— 这一页是纯 JS 渲染的,
+   在 undefined 上取属性就是整片白屏。
    ⚠️ 隐私模式 / 关了站点数据的浏览器，光是碰 localStorage 就可能抛，所以每次
    读写各自包 try/catch，失败就静默退回"没有存档"的样子 —— 这一页是纯 JS 渲染的，
    顶层抛一个错就是整片白屏（页面底下那段 window.onerror 兜底就是为这个留的）。
@@ -359,6 +546,8 @@ var store = {
     if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
     if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
     if(!(o.days instanceof Array)) o.days = [];
+    // 数组也是 object,所以要单独挡一下(和 app.html 那份保持逐字一致)
+    if(!o.dayStars || typeof o.dayStars !== "object" || o.dayStars instanceof Array) o.dayStars = {};
     if(!o.last || typeof o.last !== "object") o.last = null;
     return o;
   },
@@ -403,15 +592,22 @@ function saveShelfMem(group, x){
 
 var SAVE = store.load();
 
-/* 打卡条:最近 7 天(含今天)一天一个点 + 右侧连续天数 */
+/* 打卡条:本周(周一起)到今天,一天一个点 + 右侧连续天数。
+   ⚠️ 不是"最近 7 天滚动窗"了 —— 家长的明确要求:窗口里永远有 7 个格子,
+   谁看都会读成"一整周",于是今天右边那几个空格就被当成"这周后面还没打的天",
+   像是画了未来。周一起点、不画未来:今天永远是最后一个点,周一当天就只有
+   一个点,周日才是满满 7 个 —— 一行点的长度本身就说明"这周过了几天"。
+   ⚠️ 连胜(streakOf)跟这个窗口无关,它算的是真实的连续天数,一天没动。
+   周起点算法:getDay() 里周日是 0,(day+6)%7 把它挪成"离本周一过了几天" */
 const WEEK_CN = ["日","一","二","三","四","五","六"];
 function renderCheckin(){
   const box = document.getElementById("checkin");
   if(!box) return;
   const set = {};
   SAVE.days.forEach(d => { set[d] = 1; });
+  const today = new Date();
   let cells = "";
-  for(let i = 6; i >= 0; i--){                 // 从 6 天前排到今天,今天在最右
+  for(let i = (today.getDay() + 6) % 7; i >= 0; i--){   // 从本周一排到今天
     const d = new Date();
     d.setDate(d.getDate() - i);
     const key = ymd(d);
@@ -420,9 +616,205 @@ function renderCheckin(){
              `<span class="cw">${WEEK_CN[d.getDay()]}</span></div>`;
   }
   box.innerHTML =
-    `<div class="checkin-days" role="img" aria-label="最近七天打卡情况">${cells}</div>` +
+    `<div class="checkin-days" role="img" aria-label="本周打卡情况">${cells}</div>` +
     `<div class="checkin-streak"><svg class="ic ic-flame" aria-hidden="true"><use href="#i-flame"/></svg> ${streakOf(SAVE.days)} 天</div>`;
 }
+
+/* ================================================================
+   打卡日历弹窗 —— 全程热力图(列=周,周一在顶)
+   打卡条只给"这一周",而家长真正想看的"孩子坚持了多久"没有地方看。
+   点打卡条弹出这张图:一眼看完从头到今天,坚持得好不好不用数。
+   ⚠️ 日期一律用 ymd() 手拼 + 字符串比较("YYYY-MM-DD" 补过零,
+   字典序就是时间序),不碰 toISOString()(UTC,晚上会记成明天)。
+   ================================================================ */
+/* 最少画多少列。两个作用:一是没有任何记录时总得画点什么(全灰的十二周,
+   空着的格子就是邀请);二是刚开始用的头几周,不至于弹出来只有孤零零一列 ——
+   那看着像坏了,而不像"才刚开始" */
+const CAL_MIN_COLS = 12;
+/* 每天挣的星数分档阈值:1-4 / 5-11 / 12-19 / ≥20 四档,越深表示那天学得越多。
+   ⚠️ 这几个数是可调的经验值(一节课大约 10~20 颗星),不是什么算出来的边界;
+   要改就改这里,别去动下面的 if 链。
+   ⚠️ dayStars 是后来才加的字段:更早的打卡记录只知道"打了卡",不知道挣了
+   几颗星 —— 那些天走 s0(最浅的绿),既不能算成 0(它不是没学),
+   也不能瞎归到某一档里去。 */
+const STAR_TIERS = [5, 12, 20];
+
+/* "YYYY-MM-DD" → 本地时区的 Date。
+   ⚠️ 不能写 new Date("2026-01-01"):只有日期没有时间的字符串按 UTC 解析,
+   西半球的时区会整体偏成前一天。分开传年月日才是本地时区。 */
+function parseYmd(s){
+  const p = String(s).split("-");
+  return new Date(+p[0], +p[1] - 1, +p[2]);
+}
+/* 某天的深浅档:没打卡 → 空;打了卡但没有星数记录 → s0;有记录按阈值分四档 */
+function calTier(on, v){
+  if(!on) return "";
+  if(typeof v !== "number" || v <= 0) return " s0";
+  if(v < STAR_TIERS[0]) return " s1";
+  if(v < STAR_TIERS[1]) return " s2";
+  if(v < STAR_TIERS[2]) return " s3";
+  return " s4";
+}
+/* 全程最长连续天数。不能拿"离今天最近的那段"(streakOf)充数:
+   那是"现在连着几天",断过一次就归零,而家长想看的是"最好的时候坚持了多久"。
+   days 已经是升序去重的,但这里自己再排一次去重 —— 存档是外部数据,
+   不该假设它一定被谁整理过。 */
+function longestStreak(days){
+  const s = days.slice().sort();
+  let best = 0, run = 0, prev = null;
+  for(let i = 0; i < s.length; i++){
+    if(s[i] === prev) continue;
+    if(prev){
+      const d = parseYmd(prev);
+      d.setDate(d.getDate() + 1);              // setDate 自带跨月跨年
+      run = ymd(d) === s[i] ? run + 1 : 1;
+    }else{
+      run = 1;
+    }
+    if(run > best) best = run;
+    prev = s[i];
+  }
+  return best;
+}
+
+/* 画热力图 + 填统计块。今天之后的格子不渲染 —— 本周未来的那几行就是空的,
+   和打卡条"不画未来"是同一条规矩(列顶对齐,缺的自然缺在底部) */
+function renderCal(){
+  const set = {};
+  SAVE.days.forEach(d => { set[d] = 1; });
+  const ds = SAVE.dayStars || {};              // 旧存档没有这个字段
+
+  const now = new Date();
+  const todayKey = ymd(now);
+  // 本周一(取本地零点:下面要拿它和另一个零点日期相减算周数,
+  // 带着当前时分秒去减会差出小半天,四舍五入就可能少一列)
+  const thisMon = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  thisMon.setDate(thisMon.getDate() - ((now.getDay() + 6) % 7));
+
+  /* 画多远:从"最早那次打卡所在周的周一"一直画到本周 —— 不再是固定 52 周。
+     固定窗口有两个毛病:刚用一个月的人看到的是一整片灰(像没记上),
+     用了两年的人则看不到前一年。全程画,图的长度本身就是"坚持了多久"。 */
+  let first = null;
+  SAVE.days.forEach(d => { if(!first || d < first) first = d; });
+  let cols = CAL_MIN_COLS;
+  if(first){
+    const fd = parseYmd(first);
+    fd.setDate(fd.getDate() - ((fd.getDay() + 6) % 7));   // 那一周的周一
+    const w = Math.round((thisMon - fd) / 604800000) + 1; // 604800000 = 一周的毫秒数
+    if(w > cols) cols = w;
+  }
+
+  const cur = new Date(thisMon);
+  cur.setDate(cur.getDate() - (cols - 1) * 7);
+
+  let months = "", grid = "", prevMon = -1;
+  for(let c = 0; c < cols; c++){
+    const m = cur.getMonth();
+    /* 月份只在"这一列的周一进入了新的月份"时标一次,不然每一列都写满重复的字。
+       ⚠️ 一月和第一列的标签带上年份:图拉长到跨年之后,一串"11月 12月 1月 2月"
+       看不出中间换了一年 —— 换年的地方正是一月,所以年份就标在那儿 */
+    if(m !== prevMon){
+      const lab = (c === 0 || m === 0) ? `${cur.getFullYear()}年${m + 1}月` : `${m + 1}月`;
+      months += `<span class="cal-mon"><b>${lab}</b></span>`;
+    }else{
+      months += `<span class="cal-mon"></span>`;
+    }
+    prevMon = m;
+    let col = "";
+    for(let r = 0; r < 7; r++){
+      const key = ymd(cur);
+      if(key > todayKey) break;                // 未来不画
+      col += `<span class="cal-cell${calTier(!!set[key], ds[key])}` +
+             `${key === todayKey ? " now" : ""}"></span>`;
+      cur.setDate(cur.getDate() + 1);          // setDate 自带跨月跨年
+    }
+    grid += `<span class="cal-col">${col}</span>`;
+  }
+
+  document.getElementById("calMonths").innerHTML = months;
+  document.getElementById("calGrid").innerHTML = grid;
+
+  /* 四块统计。总星星按各课记录求和(SAVE.total 里还混着"混合复习"挣的星,
+     而复习不属于任何一课 —— 两个口径都说得通,这里跟课程记录走,
+     和封面右上角那些星数角标加起来对得上) */
+  let starSum = 0;
+  for(const id in SAVE.lessons){
+    const r = SAVE.lessons[id];
+    if(r && typeof r.stars === "number") starSum += r.stars;
+  }
+  const tiles = [
+    [SAVE.days.length,        "天", "总打卡"],
+    [starSum,                 "颗", "总星星"],
+    [streakOf(SAVE.days),     "天", "当前连续"],
+    [longestStreak(SAVE.days), "天", "最长连续"]
+  ];
+  document.getElementById("calStats").innerHTML = tiles.map(
+    t => `<div class="cal-tile"><b>${t[0]}<i>${t[1]}</i></b><span>${t[2]}</span></div>`
+  ).join("");
+}
+
+const calMask = document.getElementById("calMask");
+const calClose = document.getElementById("calClose");
+const calScroll = document.getElementById("calScroll");
+
+/* 开关就是加/去一个 class,没有任何计时器、帧回调、transitionend ——
+   淡入淡出、能不能点、进不进 Tab 序全部由 CSS 那三条属性负责。
+   时序一旦交给 JS,后台标签页(rAF 不跑)和减弱动效(时长 0,transitionend
+   不触发)这两种情况就各要一条兜底,而它们都是最容易漏测的 */
+function openCal(){
+  if(!calMask || calMask.classList.contains("open")) return;
+  renderCal();
+  calMask.classList.add("open");
+  // 读一次 offsetHeight 逼浏览器立刻把上面这行的样式算出来:
+  // 下面 focus() 要求元素此刻已经是 visible,样式还没刷新就会聚焦失败
+  void calMask.offsetHeight;
+  // 初始滚到最右:今天在最后一列,手机上放不下 53 列时先看见的必须是"现在"
+  calScroll.scrollLeft = calScroll.scrollWidth;
+  calClose.focus();
+}
+
+function closeCal(){
+  if(!calMask || !calMask.classList.contains("open")) return;
+  calMask.classList.remove("open");
+  const box = document.getElementById("checkin");
+  if(box) box.focus();                         // 焦点还给打开它的那一条
+}
+
+(function bindCal(){
+  const box = document.getElementById("checkin");
+  if(!box || !calMask) return;
+  box.addEventListener("click", openCal);
+  box.addEventListener("keydown", e => {
+    // div + role=button 没有原生键盘行为,回车/空格要自己接。
+    // 空格必须 preventDefault:默认行为是把整页往下翻一屏
+    if(e.key === "Enter" || e.key === " " || e.key === "Spacebar"){
+      e.preventDefault();
+      openCal();
+    }
+  });
+  calClose.addEventListener("click", closeCal);
+  // 点遮罩关闭:只认打在遮罩自己身上的点击,冒泡上来的(点在白卡里)不算
+  calMask.addEventListener("click", e => { if(e.target === calMask) closeCal(); });
+  /* Esc 绑在 document 而不是 calMask:焦点若落到弹窗外(比如点了白卡里
+     非聚焦区域,浏览器会把焦点丢给 body),按键就不会冒泡经过 calMask,
+     Esc 就"死"了。绑 document、以 open 状态做开关,焦点在哪都能关 */
+  document.addEventListener("keydown", e => {
+    if((e.key === "Escape" || e.key === "Esc") && calMask.classList.contains("open")) closeCal();
+  });
+  calMask.addEventListener("keydown", e => {
+    if(e.key !== "Tab") return;
+    // 焦点圈在弹窗里:不拦的话 Tab 第二下就跑到遮罩背后的货架上去了,
+    // 键盘用户看不见自己在哪儿。现在弹窗里只有关闭钮一个可聚焦元素,
+    // 但按"一圈能焦点元素"写,以后加了别的控件不用回来改
+    // ⚠️ 必须写 a[href] 不能写 [href]:图标是 <svg><use href="#i-close">,
+    // 光写 [href] 会把那个 <use> 也算成"可聚焦元素",焦点圈就多出一站空的
+    const f = calMask.querySelectorAll("button, a[href], [tabindex]:not([tabindex='-1'])");
+    if(!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  });
+})();
 
 /* 「继续学 · 某课」:有存档且那节课还在清单里才出。
    出现时把复习按钮降级成白底次按钮 —— 两个绿胶囊并排就没有主行动了 */
