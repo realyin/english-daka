@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>我的英语打卡</title>
 <style>
   :root{
@@ -16,7 +16,10 @@
     -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
     -webkit-touch-callout:none;}
   body{
-    font-family:"PingFang SC","Arial Rounded MT Bold",-apple-system,sans-serif;
+    /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
+       theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
+    font-family:ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",
+                "Comic Sans MS","Trebuchet MS","PingFang SC","Microsoft YaHei",sans-serif;
     background:var(--bg); color:var(--ink);
     min-height:100vh; padding-bottom:40px;
     /* 关掉滚动锚定:展开卡片时浏览器(安卓 Chrome)会挑一个可见节点当锚,
@@ -35,7 +38,9 @@
     max-width:520px;margin:0 auto;padding:8px 14px 11px;
     display:flex;flex-direction:column;gap:8px;
   }
-  .bar-row{display:flex;align-items:center;gap:10px;}
+  /* gap 8 而不是 10:一行要塞下 back(48)+navbtn(48)+标题+navbtn(48)+星罐,
+     375px 屏上 10px 的间距会把标题挤没 */
+  .bar-row{display:flex;align-items:center;gap:8px;}
   .lesson-title{
     flex:1;min-width:0;font-size:15px;font-weight:800;color:var(--ink);
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
@@ -43,7 +48,7 @@
   .star-jar{
     flex:none;display:inline-flex;align-items:center;gap:5px;
     background:#FFF3D6;border:2px solid var(--yellow);border-radius:999px;
-    padding:6px 14px;font-size:16px;font-weight:800;
+    padding:6px 12px;font-size:16px;font-weight:800;
   }
   .back,.tab{
     border:2px solid var(--line);border-radius:14px;background:#fff;
@@ -54,7 +59,7 @@
   .back{flex:none;width:48px;height:48px;font-size:22px;text-decoration:none;}
   /* 上一课/下一课:整页左右滑也能切,但按钮要在,否则孩子发现不了这个手势 */
   .navbtn{
-    flex:none;width:38px;height:48px;font-size:26px;line-height:1;padding:0;
+    flex:none;width:48px;height:48px;font-size:26px;line-height:1;padding:0;
     border:2px solid var(--line);border-radius:14px;background:#fff;
     font-weight:900;color:var(--blue);box-shadow:var(--shadow);cursor:pointer;
     display:flex;align-items:center;justify-content:center;transition:transform .1s;
@@ -69,7 +74,7 @@
   /* pan-y:纵向滚动交给浏览器,横向留给"上一课/下一课"手势 */
   .page{display:none;padding:0 14px;max-width:520px;margin:0 auto;touch-action:pan-y;}
   .page.on{display:block;}
-  .hint{text-align:center;font-size:12px;color:#7A879E;margin-bottom:10px;line-height:1.7;}
+  .hint{text-align:center;font-size:12px;color:#5E6E8C;margin-bottom:10px;line-height:1.7;}
 
   .panel{
     background:#fff;border:2px solid var(--line);border-radius:22px;
@@ -96,7 +101,7 @@
   .lhead .thumb{width:52px;height:70px;object-fit:cover;border-radius:10px;border:2px solid var(--line);}
   .lhead .eq{font-size:14px;}
   .lhead .word{font-size:19px;font-weight:800;line-height:1.25;}
-  .lhead .cn{font-size:12px;color:#7A879E;margin-top:2px;}
+  .lhead .cn{font-size:12px;color:#5E6E8C;margin-top:2px;}
   .lhead .tag{
     margin-left:auto;font-size:10px;font-weight:700;color:#fff;
     border-radius:999px;padding:3px 9px;white-space:nowrap;
@@ -121,7 +126,7 @@
     margin-top:12px;padding:13px;background:#F7FAFF;
     border:2.5px dashed #A9BCE0;border-radius:17px;text-align:center;
   }
-  .phonics-step{font-size:11px;font-weight:800;color:#7A879E;margin:2px 0 8px;}
+  .phonics-step{font-size:11px;font-weight:800;color:#5E6E8C;margin:2px 0 8px;}
   .sound-tiles{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
   .sound-tile{
     min-width:62px;border:2px solid var(--line);border-radius:14px;
@@ -129,7 +134,7 @@
     box-shadow:var(--shadow);cursor:pointer;
   }
   .sound-tile.vowel{background:#FFE5EF;}
-  .sound-tile.silent{background:#EEF1F5;color:#7A879E;border-style:dashed;box-shadow:none;}
+  .sound-tile.silent{background:#EEF1F5;color:#5E6E8C;border-style:dashed;box-shadow:none;}
   .sound-tile:active,.sound-tile.speaking{transform:translateY(3px);box-shadow:none;background:var(--yellow);}
   .sound-tile .letter{display:block;font-size:25px;font-weight:900;line-height:1;}
   .sound-tile .ipa{display:block;font-size:12px;font-weight:700;margin-top:5px;}
@@ -139,7 +144,7 @@
     border:2px solid var(--line);border-radius:13px;background:#FFF3D6;
     padding:7px 13px;font-size:21px;font-weight:900;cursor:pointer;
   }
-  .blend-arrow{font-size:18px;font-weight:900;color:#7A879E;}
+  .blend-arrow{font-size:18px;font-weight:900;color:#5E6E8C;}
   .blend-chip.speaking{background:var(--yellow);transform:scale(1.06);}
   .blend-word{font-size:28px;color:var(--purple);}
   .blend-play{margin-top:12px;background:var(--green);color:#fff;}
@@ -153,7 +158,7 @@
   }
   .bubble.q{background:#FFF1E0;border-color:var(--orange);border-bottom-left-radius:4px;margin-right:auto;}
   .bubble.a{background:#E7F0FF;border-color:var(--blue);border-bottom-right-radius:4px;margin-left:auto;}
-  .bubble .who{font-size:10px;color:#7A879E;font-weight:700;display:block;margin-bottom:4px;}
+  .bubble .who{font-size:10px;color:#5E6E8C;font-weight:700;display:block;margin-bottom:4px;}
   .bubble{cursor:pointer;}
   .sline{margin-top:6px;}
   .sline:first-of-type{margin-top:0;}
@@ -168,10 +173,17 @@
   .mini.on{background:var(--yellow);}
   .stext{flex:1;user-select:none;-webkit-user-select:none;}
   .stext.speaking{text-shadow:0 0 0;background:linear-gradient(transparent 65%, #FFE9A8 65%);border-radius:4px;}
-  .w{padding:1px 2px;border-radius:6px;cursor:pointer;}
+  /* 点读热区:16px 的词自身只有 ~19px 高,手指点不准。
+     不能直接往 .w 上加纵向 padding —— 气泡 line-height 是 1.55(行盒 ~25px),
+     padding 一撑 .w.hl 的黄底就变成 33px 高、跨行压住相邻行的字。
+     改用一层透明 ::after 单独扩热区:背景和排版都不动,伪元素又不是事件目标,
+     e.target 仍是 .w,line 600 的 closest(".w") 判断照旧成立。
+     横向只扩 1px(视觉 3px),把词间空白留给"点空白播整句"。 */
+  .w{padding:1px 2px;border-radius:6px;cursor:pointer;position:relative;}
+  .w::after{content:"";position:absolute;inset:-9px -1px;}
   .w.hl{background:var(--yellow);}
   .trans{
-    display:none;font-size:12.5px;color:#7A879E;font-weight:600;
+    display:none;font-size:12.5px;color:#5E6E8C;font-weight:600;
     margin-top:4px;padding-left:36px;
   }
   .sline.showzh .trans{display:block;}
@@ -189,7 +201,7 @@
   }
   #wpop .pw{font-size:30px;font-weight:900;color:var(--purple);}
   #wpop .pc{font-size:16px;font-weight:700;margin-top:8px;line-height:1.5;}
-  #wpop .pc.none{color:#A9B4C6;font-size:13px;}
+  #wpop .pc.none{color:#5E6E8C;font-size:13px;}
   #wpop .mini{width:40px;height:40px;font-size:17px;margin-top:14px;}
 
   /* ===== 问答闯关 ===== */
@@ -224,11 +236,11 @@
   .btn.go{background:var(--green);color:#fff;}
   .btn.blue{background:var(--blue);color:#fff;}
   .heard{
-    margin-top:12px;font-size:14px;color:#7A879E;text-align:center;
+    margin-top:12px;font-size:14px;color:#5E6E8C;text-align:center;
     background:#F4F6FA;border-radius:12px;padding:8px;display:none;
   }
   .heard b{color:var(--ink);}
-  .p-hint{margin-top:14px;font-size:13px;color:#7A879E;font-weight:700;text-align:center;}
+  .p-hint{margin-top:14px;font-size:13px;color:#5E6E8C;font-weight:700;text-align:center;}
   .ans-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px;}
   .ans-chip{
     border:2px solid var(--line);border-radius:16px;background:#FFF3D6;
@@ -241,7 +253,7 @@
   .ans-chip.right{background:var(--green);color:#fff;}
   .ans-chip.wrong{background:#FFD9D9;animation:shake .3s;}
   @keyframes shake{25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
-  .progress{text-align:center;font-size:13px;color:#7A879E;margin-bottom:8px;}
+  .progress{text-align:center;font-size:13px;color:#5E6E8C;margin-bottom:8px;}
   .result-emoji{text-align:center;font-size:38px;margin-top:6px;min-height:44px;}
 
   .done{text-align:center;font-size:19px;font-weight:800;line-height:1.8;}
@@ -258,7 +270,7 @@
   /* 听句选图的题面是整句,比单词长得多,压小并留边 */
   .q-sent{font-size:22px;font-weight:900;color:var(--purple);margin:6px auto 2px;
           text-align:center;line-height:1.35;max-width:19em;padding:0 8px;}
-  .q-prompt{font-size:14px;color:#7A879E;text-align:center;}
+  .q-prompt{font-size:14px;color:#5E6E8C;text-align:center;}
   .speak-btn{
     margin:12px auto;width:58px;height:58px;border-radius:50%;
     border:2px solid var(--line);background:var(--blue);color:#fff;font-size:26px;
@@ -276,12 +288,26 @@
   .opt.haspic{padding:0;font-size:0;}
   .opt.haspic img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;}
   .opt:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
+  /* 答对后整排选项会被 disable(见 nextQuestion)。不去掉 :active 的位移和
+     手型,按下去还会"陷"一下,孩子以为点上了还在连点。
+     注意别在这里加 opacity/灰底 —— 答对的那颗 .opt.right 要保持绿色高亮,
+     它是这 1.4 秒定格里唯一的"你答对了"反馈 */
+     color/opacity 是压 UA 默认的 button:disabled 灰化(emoji 选项会被它调灰) */
+  .opt:disabled{cursor:default;opacity:1;color:var(--ink);}
+  .opt:disabled:active{transform:none;box-shadow:var(--shadow);}
   .opt.right{background:#DFF7E6;border-color:var(--green);animation:pop .4s;}
   .opt.wrong{background:#FFE3E3;border-color:var(--pink);animation:shake .4s;}
   @keyframes pop{50%{transform:scale(1.1);}}
   @keyframes shake{25%{transform:translateX(-6px);}75%{transform:translateX(6px);}}
   @media (prefers-reduced-motion: reduce){
     .opt.right,.opt.wrong{animation:none;}
+  }
+
+  /* 键盘焦点圈:这页所有控件都是自绘样式,浏览器默认 outline 被圆角和阴影盖住,
+     用键盘/外接设备走一遍完全看不出焦点在哪。:focus-visible 只对键盘生效,
+     不会在触摸点击后留下一圈框(index.html 里已有同款规则) */
+  button:focus-visible,a:focus-visible,[tabindex]:focus-visible{
+    outline:4px solid var(--blue);outline-offset:2px;
   }
 </style>
 <link rel="stylesheet" href="theme.css">
@@ -1143,9 +1169,19 @@ function nextQuestion(){
     : ()=>playOne("Which one is " + c.word + "?", "q", c.quiz_audio);
   document.getElementById("qSpeak").onclick = ask;
   ask();
-  qbox.querySelectorAll(".opt").forEach(b=>{
+  // 答对后要定格 1.4 秒再翻页,这 1.4 秒里选项还挂着 onclick:
+  // 对着已经变绿的那颗连点 3 下 → qi 跳 3 题、多得 2 星、挂 3 个 nextQuestion 定时器;
+  // 点旁边的错图 → 照样标红 shake 加一句 "Try again!",孩子明明答对了却挨批。
+  // 两道保险:disabled 挡住绝大多数;answered 哨兵兜住触摸端 disabled 生效前
+  // 就已经排队的那一下(以及 disabled 前已进入队列的合成事件)。
+  let answered = false;
+  const optBtns = qbox.querySelectorAll(".opt");
+  optBtns.forEach(b=>{
     b.onclick = ()=>{
+      if(answered) return;
       if(b.dataset.p === it.pic){
+        answered = true;
+        optBtns.forEach(x=>{ x.disabled = true; });
         b.classList.add("right"); addStars(1); qi++;
         praise(randPraise());
         setTimeout(nextQuestion, 1400);
@@ -1188,7 +1224,7 @@ const PRACTICE_HOME = `
   <div class="done">
     <div class="big">🎤</div>
     机器人提问，大声说出答案，<br>再从选项里点出它！<br>
-    <span style="font-size:14px;color:#7A879E;font-weight:600">
+    <span style="font-size:14px;color:#5E6E8C;font-weight:600">
       点对了得 ⭐⭐，看答案跟读得 ⭐
     </span>
     <br><button class="big-btn" onclick="startPractice()">开 始</button>

@@ -4,7 +4,9 @@
    ============================================================ */
 :root{
   /* 配色 */
-  --bg:#F0F7FF; --ink:#2B3A55; --muted:#7A879E;
+  /* --muted 是 12–13px 小字的颜色,必须过 WCAG AA 4.5:1 ——
+     旧的 #7A879E 在 #F0F7FF 底上只有 3.36:1、白底 3.63:1 */
+  --bg:#F0F7FF; --ink:#2B3A55; --muted:#5E6E8C;
   --pink:#FF6FA5; --yellow:#FFC53D; --green:#4CC26E;
   --blue:#3E8BFF; --purple:#9B6DFF; --orange:#FF9A3D;
 

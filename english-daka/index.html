@@ -25,13 +25,16 @@
      浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。 */
   html{ overflow-x:hidden; }
   body{
-    font-family:"PingFang SC","Arial Rounded MT Bold",-apple-system,sans-serif;
+    /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
+       theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
+    font-family:ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",
+                "Comic Sans MS","Trebuchet MS","PingFang SC","Microsoft YaHei",sans-serif;
     background:var(--bg); color:var(--ink); min-height:100vh; padding-bottom:44px;
     overflow-x:hidden;
   }
   header{text-align:center;padding:24px 16px 10px;}
   header h1{font-size:26px;letter-spacing:2px;}
-  header p{font-size:13px;color:#7A879E;margin-top:6px;font-weight:600;}
+  header p{font-size:13px;color:#5E6E8C;margin-top:6px;font-weight:600;}
 
   /* ===== 专辑架 ===== */
   .shelf{max-width:720px;margin:0 auto;padding:0 16px;}
@@ -40,7 +43,7 @@
     margin:26px 2px 6px;font-size:15px;font-weight:900;color:var(--ink);
   }
   .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
-  .shelf-head .count{font-size:12px;font-weight:700;color:#7A879E;}
+  .shelf-head .count{font-size:12px;font-weight:700;color:#5E6E8C;}
 
   /* 通栏:侧边卡片会画到内容宽度之外,手势区必须跟着铺满,
      否则去拨那张侧卡是没反应的(最自然的拨动位置反而失灵) */
@@ -85,9 +88,9 @@
   .cover .label{padding:13px 15px 15px;background:#fff;}
   .cover .label > *{opacity:var(--lab,1);}
   .cover .en{font-size:17px;font-weight:900;line-height:1.2;}
-  .cover .cn{font-size:13px;color:#7A879E;font-weight:700;margin-top:3px;
+  .cover .cn{font-size:13px;color:#5E6E8C;font-weight:700;margin-top:3px;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .cover .n{font-size:12px;color:#9AA6BC;font-weight:700;margin-top:5px;}
+  .cover .n{font-size:12px;color:#5E6E8C;font-weight:700;margin-top:5px;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
@@ -115,7 +118,7 @@
 
   .note{
     max-width:520px;margin:20px auto 0;padding:14px 16px;
-    font-size:13px;color:#7A879E;text-align:center;line-height:1.7;
+    font-size:13px;color:#5E6E8C;text-align:center;line-height:1.7;
   }
   /* 卡片动画由 rAF 驱动,减弱动效时脚本会直接跳到位;这里只关掉圆点的过渡 */
   @media (prefers-reduced-motion: reduce){
