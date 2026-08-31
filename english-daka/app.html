@@ -3185,9 +3185,9 @@ async function gotoLesson(dir, byGesture){
     showPage("learn", true);                  // 整页已经在滑了,页签动画不用再叠一层
     applyLesson();
     window.scrollTo(0, 0);
-    // applyLesson 里 hideToast 过了,提示条要在它之后再出
-    if(byGesture) showToast("已切到 " + LESSON_ORDER[n].title,
-                            "撤销", function(){ gotoLesson(-dir); });
+    // 手势换课曾经弹「已切到 XX · 撤销」的提示条 —— 家长反馈多余(顶栏课程名
+    // 本来就换了,滑动动画也有方向感,再盖一条黑条是重复告知),已去掉。
+    // byGesture 参数保留:将来若有手势专属逻辑还从这里进
 
     wrap.style.transition = "none";           // 从另一侧就位,再滑进来
     wrap.style.transform = `translateX(${-out}px)`;
