@@ -4,7 +4,9 @@
    ============================================================ */
 :root{
   /* 配色 */
-  --bg:#F0F7FF; --ink:#2B3A55; --muted:#7A879E;
+  /* --muted 是 12–13px 小字的颜色,必须过 WCAG AA 4.5:1 ——
+     旧的 #7A879E 在 #F0F7FF 底上只有 3.36:1、白底 3.63:1 */
+  --bg:#F0F7FF; --ink:#2B3A55; --muted:#5E6E8C;
   --pink:#FF6FA5; --yellow:#FFC53D; --green:#4CC26E;
   --blue:#3E8BFF; --purple:#9B6DFF; --orange:#FF9A3D;
 
@@ -18,6 +20,30 @@
   --font-main: ui-rounded, "SF Pro Rounded", "Arial Rounded MT Bold",
                "Comic Sans MS", "Trebuchet MS",
                "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* 动效:全站过渡只准引用这几个 token,不要在别处硬写秒数/缓动。
+     fast=按下反馈,base=页面/元素换位,slow=展开收起(位移大,需要多一点时间)。
+     ease-out 起步快、收尾稳(界面元素就位);spring 末尾轻微过冲(弹窗弹出) */
+  --dur-fast:.15s; --dur-base:.24s; --dur-slow:.32s;
+  --ease-out:cubic-bezier(.22,.61,.36,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+
+  /* 间距阶梯(4 的倍数,8 起步 —— 儿童界面上小于 8px 的留白等于没有)。
+     ⚠️ **新写的样式一律用 --sp-***,不要再手写 px 间距。
+     老规则里那些手写值不做全站替换(改动面大、收益小),只在顺手改到的
+     规则里换过来;换的时候必须是**等值**替换(16px→--sp-3),
+     顺带"调一调"会让两个页面的同类元素悄悄错开一档。
+     ⚠️ 引用时带上回落值(var(--sp-3,16px)):两个页面的内联 <style> 排在
+     theme.css 之前,theme.css 万一没加载(离线首帧/文件 404),
+     没有回落的 var() 会让整条声明失效,间距直接塌成 0 */
+  --sp-1:8px; --sp-2:12px; --sp-3:16px; --sp-4:20px; --sp-5:24px;
+}
+
+/* 系统里开了「减弱动效」就把时长全部归零 —— 过渡自然消失,不用改一行 JS。
+   ⚠️ 时长为 0 时 transitionend 不会触发,凡是靠它收尾的逻辑都必须先判断
+   时长(app.html 的 durMs())或加 setTimeout 兜底 */
+@media (prefers-reduced-motion:reduce){
+  :root{ --dur-fast:0s; --dur-base:0s; --dur-slow:0s; }
 }
 
 body{ font-family: var(--font-main); }

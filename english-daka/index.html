@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>英语打卡 · 课程目录</title>
+<meta name="theme-color" content="#F0F7FF">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
+     要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
+<link rel="apple-touch-icon" href="icon.svg">
+
 <style>
   :root{
     --bg:#F0F7FF; --ink:#2B3A55;
@@ -22,16 +29,42 @@
      滚动容器,就不再往视口传递了;视口的溢出行为取的是 html 的值。
      不封住的后果:折叠到最外侧的卡片被 translateX 甩出 .stage(它是 overflow:visible),
      整页因此横向可滚 —— 平板上 414px 宽能滚 290px。手指在封面流上横划时,
-     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。 */
-  html{ overflow-x:hidden; }
+     浏览器会顺手把整页一起平移,看着就是"整个页面在抖"(标题、分组标题全在跟着动)。
+     ⚠️ overflow-x:hidden 不能删,理由就是上面这一整段。
+     background 是另一回事:目录页 ⇄ 课程页是整页跳转,新文档在样式生效前会先刷
+     一帧浏览器默认白底,深色封面跳过去就是"啪"一下白闪。写在 html 上首帧就有色 */
+  html{ overflow-x:hidden; background:var(--bg); }
   body{
-    font-family:"PingFang SC","Arial Rounded MT Bold",-apple-system,sans-serif;
+    /* 与 theme.css 的 --font-main 保持同序:英文圆体优先、中文回落苹方。
+       theme.css 万一没加载,这里也不能把 PingFang 排在英文字体前面 */
+    font-family:ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",
+                "Comic Sans MS","Trebuchet MS","PingFang SC","Microsoft YaHei",sans-serif;
     background:var(--bg); color:var(--ink); min-height:100vh; padding-bottom:44px;
     overflow-x:hidden;
   }
   header{text-align:center;padding:24px 16px 10px;}
   header h1{font-size:26px;letter-spacing:2px;}
-  header p{font-size:13px;color:#7A879E;margin-top:6px;font-weight:600;}
+  header p{font-size:13px;color:#5E6E8C;margin-top:6px;font-weight:600;}
+
+  /* ===== 骨架屏 =====
+     课程清单要等一次网络往返才回来,那之前整页只有一个标题和一片空白 ——
+     看着像"打不开",家长会去刷新。先摆三个灰块占住位置,尺寸跟真封面一样,
+     数据到了就地换掉,画面不跳。
+     ⚠️ 只做形状不做内容:骨架里写"加载中"之类的字,孩子也读不懂,
+     而且真数据到了字一闪就没,反而是干扰。 */
+  .skel{max-width:720px;margin:0 auto;padding:0 16px;}
+  .skel-head{height:16px;width:150px;border-radius:8px;margin:26px 2px 10px;}
+  .skel-row{display:flex;gap:12px;justify-content:center;overflow:hidden;}
+  .skel-card{
+    flex:none;width:var(--cw);height:var(--ch);border-radius:22px;
+  }
+  /* 侧边那两张按真封面的折叠感缩一点,别是三个一样大的方块 */
+  .skel-card.side{transform:scale(.82);opacity:.6;}
+  .skel-head,.skel-card{background:#DCE7F5;animation:skel-pulse 1.4s ease-in-out infinite;}
+  @keyframes skel-pulse{0%,100%{opacity:.5;}50%{opacity:.9;}}
+  @media (prefers-reduced-motion:reduce){
+    .skel-head,.skel-card{animation:none;opacity:.6;}
+  }
 
   /* ===== 专辑架 ===== */
   .shelf{max-width:720px;margin:0 auto;padding:0 16px;}
@@ -40,7 +73,7 @@
     margin:26px 2px 6px;font-size:15px;font-weight:900;color:var(--ink);
   }
   .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
-  .shelf-head .count{font-size:12px;font-weight:700;color:#7A879E;}
+  .shelf-head .count{font-size:12px;font-weight:700;color:#5E6E8C;}
 
   /* 通栏:侧边卡片会画到内容宽度之外,手势区必须跟着铺满,
      否则去拨那张侧卡是没反应的(最自然的拨动位置反而失灵) */
@@ -75,6 +108,7 @@
   .cover .art{
     flex:1;display:flex;align-items:center;justify-content:center;
     background:var(--c);
+    position:relative;                         /* 星数角标的定位基准 */
   }
   .cover .glyph{
     font-size:calc(var(--cw) * 0.42);font-weight:900;color:#fff;line-height:1;
@@ -85,20 +119,71 @@
   .cover .label{padding:13px 15px 15px;background:#fff;}
   .cover .label > *{opacity:var(--lab,1);}
   .cover .en{font-size:17px;font-weight:900;line-height:1.2;}
-  .cover .cn{font-size:13px;color:#7A879E;font-weight:700;margin-top:3px;
+  .cover .cn{font-size:13px;color:#5E6E8C;font-weight:700;margin-top:3px;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .cover .n{font-size:12px;color:#9AA6BC;font-weight:700;margin-top:5px;}
+  .cover .n{font-size:12px;color:#5E6E8C;font-weight:700;margin-top:5px;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
+  /* ===== 打卡条 ===== */
+  /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
+     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请 */
+  .checkin{
+    max-width:360px;margin:var(--sp-3,16px) auto 0;padding:9px 14px;
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    box-shadow:0 3px 10px rgba(43,58,85,.08);
+  }
+  /* 内容是 JS 填的:老浏览器解析不了脚本时别在标题下留一个空白盒子 */
+  .checkin:empty{display:none;}
+  .checkin-days{display:flex;gap:5px;}
+  .cday{display:flex;flex-direction:column;align-items:center;gap:3px;}
+  .cdot{
+    width:20px;height:20px;border-radius:50%;
+    border:2px solid #CFDCEE;background:#fff;box-sizing:border-box;
+  }
+  .cdot.on{background:var(--yellow);border-color:#E9A800;}
+  /* 今天那格加一圈蓝描边:七个点长得一样时,孩子分不清哪个是"今天该点亮的" */
+  .cday.today .cdot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(62,139,255,.28);}
+  .cw{font-size:11px;font-weight:700;color:#5E6E8C;line-height:1;}
+  .cday.today .cw{color:var(--blue);}
+  .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
+
+  /* ===== header 行动区 ===== */
+  .acts{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:14px;}
+  /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
+  .go-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-height:52px;max-width:94%;padding:12px 26px;border-radius:999px;
+    background:var(--green);color:#fff;font-weight:900;font-size:17px;
+    text-decoration:none;box-shadow:0 4px 0 rgba(0,0,0,.14);line-height:1.25;
+  }
+  .go-btn:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.14);}
+  .go-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
      而且每次进去内容都不一样,当成"课"会误导 */
   .review-btn{
-    display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;
+    display:inline-block;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
     text-decoration:none;box-shadow:0 3px 0 rgba(0,0,0,.12);
   }
   .review-btn:active{transform:translateY(2px);box-shadow:none;}
   .review-btn:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+  /* 有「继续学」时复习降级为次按钮:两个绿胶囊并排等于没有主次 */
+  .review-btn.ghost{
+    background:#fff;color:var(--ink);border:2px solid var(--line,#DCE5F2);
+    box-shadow:none;
+  }
+  .review-btn.ghost:active{transform:translateY(2px);}
+
+  /* 封面右上角的星数角标:白底小胶囊,压在画面上但不遮巨型字形 */
+  .cover-stars{
+    position:absolute;top:8px;right:8px;
+    padding:2px 9px;border-radius:999px;
+    background:rgba(255,255,255,.94);color:var(--ink);
+    font-size:13px;font-weight:900;line-height:1.5;
+    box-shadow:0 2px 6px rgba(43,58,85,.18);
+  }
 
   /* 单手时点圆点比滑动省力,所以点击区做到 30px,视觉上仍是小圆点 */
   .dots{display:flex;gap:2px;justify-content:center;margin-top:2px;flex-wrap:wrap;}
@@ -112,14 +197,36 @@
   }
   .dot.on::before{background:var(--blue);width:24px;border-radius:5px;}
   .dot:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:8px;}
+  /* 节数多的组(字母课 11 节)按原尺寸要 11×30 + 10×2 = 350px,320px 屏上折成两行,
+     把下一个分组的标题一起顶下去,那一行圆点也就不再像"这一组有多长"了。
+     .many 只压**视觉**:圆点 9→6px、选中胶囊 24→16px、gap 归零,
+     点击区仍是 26×30px(手指 26px 够用,而竖向没被压)。
+     11×26=286px,320px 屏减掉 .shelf 的左右各 16px 正好剩 288px,单行放得下。
+     ⚠️ 别顺手把 .dot 的 height 也压下去 —— 竖向不是瓶颈,压了纯粹是变难点 */
+  .dots.many{gap:0;}
+  .dots.many .dot{width:26px;}
+  .dots.many .dot::before{width:6px;height:6px;}
+  .dots.many .dot.on::before{width:16px;border-radius:4px;}
 
   .note{
     max-width:520px;margin:20px auto 0;padding:14px 16px;
-    font-size:13px;color:#7A879E;text-align:center;line-height:1.7;
+    font-size:13px;color:#5E6E8C;text-align:center;line-height:1.7;
   }
   /* 卡片动画由 rAF 驱动,减弱动效时脚本会直接跳到位;这里只关掉圆点的过渡 */
   @media (prefers-reduced-motion: reduce){
     .dot::before{transition:none;}
+  }
+
+  /* 目录页 ⇄ 课程页的跨文档过渡(渐进增强)。不认识 @view-transition 的浏览器
+     按 CSS 错误恢复规则整块跳过,退回原来的硬跳转,不会坏。
+     ⚠️ 两页都要声明,app.html 里有一份一样的,少一边就不生效。
+     减弱动效时不写 navigation:none(嵌套 @view-transition 的支持度不明),
+     改成把快照的动画关掉 —— 效果一样是瞬时,而且是稳的选择器语法 */
+  @view-transition{ navigation:auto; }
+  @media (prefers-reduced-motion:reduce){
+    ::view-transition-group(*),
+    ::view-transition-old(root),
+    ::view-transition-new(root){ animation:none !important; }
   }
 </style>
 <link rel="stylesheet" href="theme.css">
@@ -128,10 +235,29 @@
 <header>
   <h1>🌟 我的英语打卡 🌟</h1>
   <p>左右滑动挑一张，点中间那张开始</p>
-  <a class="review-btn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+  <div class="checkin" id="checkin"></div>
+  <div class="acts" id="acts">
+    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+  </div>
 </header>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
+
+<!-- Service Worker 注册:装到主屏后没网也能打开,音频/配图边用边缓。
+     ⚠️ 单独成块、只用 ES5 写,和上面的白屏兜底一个道理 —— 这段要在
+     不支持 SW 的老内核上也能安全跳过,而不是把整个脚本块拖垮。
+     ⚠️ 等 load 再注册:注册本身会抢一点主线程和带宽,不该和首屏渲染挤在一起。
+     ⚠️ 壳(HTML)在 sw.js 里是 network-first,所以联网时永远拿到新代码,
+     不会出现"改了上线用户还是旧版"。详见 sw.js 顶部注释。 -->
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    try {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    } catch (e) {}
+  });
+}
+</script>
 
 <!-- 白屏兜底:页面内容全是 JS 渲染的,JS 一旦解析失败(老浏览器不认新语法)
      或初始化抛错,就会留下一片空白,看不出任何线索。这段单独成块、且只用 ES5 写,
@@ -153,7 +279,161 @@ window.onerror = function (msg, src, line) {
 };
 </script>
 <script>
+/* ================================================================
+   进度存档 —— 与 app.html 里的是同一份代码、同一个 key，改一处要同步改两处。
+   { total, lessons:{id:{stars,done}}, days:["YYYY-MM-DD"], last:{lesson,at} }
+   ⚠️ 隐私模式 / 关了站点数据的浏览器，光是碰 localStorage 就可能抛，所以每次
+   读写各自包 try/catch，失败就静默退回"没有存档"的样子 —— 这一页是纯 JS 渲染的，
+   顶层抛一个错就是整片白屏（页面底下那段 window.onerror 兜底就是为这个留的）。
+   ⚠️ 日期本地时区手拼，不用 toISOString()（那是 UTC，晚上会记成明天）。
+   ================================================================ */
+var STORE_KEY = "daka.v1";
+function ymd(d){
+  var m = d.getMonth() + 1, day = d.getDate();
+  return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+}
+var store = {
+  load: function(){
+    var o = null;
+    try{
+      var s = localStorage.getItem(STORE_KEY);
+      if(s) o = JSON.parse(s);
+    }catch(e){ o = null; }
+    if(!o || typeof o !== "object") o = {};
+    if(typeof o.total !== "number" || !isFinite(o.total)) o.total = 0;
+    if(!o.lessons || typeof o.lessons !== "object") o.lessons = {};
+    if(!(o.days instanceof Array)) o.days = [];
+    if(!o.last || typeof o.last !== "object") o.last = null;
+    return o;
+  },
+  save: function(o){
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify(o)); return true; }
+    catch(e){ return false; }
+  }
+};
+/* 连续天数:从今天往回逐日查;今天还没打就从昨天起算(白天打开时不该显示 0),
+   昨天也没有才是真的断了。setDate(-1) 自带跨月跨年,别自己算天数。 */
+function streakOf(days){
+  var set = {}, i;
+  for(i = 0; i < days.length; i++) set[days[i]] = 1;
+  var d = new Date();
+  if(!set[ymd(d)]){
+    d.setDate(d.getDate() - 1);
+    if(!set[ymd(d)]) return 0;
+  }
+  var n = 0;
+  while(set[ymd(d)]){ n++; d.setDate(d.getDate() - 1); }
+  return n;
+}
+
+/* 一次性示能演示的记账 —— 键 "daka.coach"({shelf:1,card:1,press:1}),
+   和 app.html 里的是同一份代码、同一个键,改一处要同步改两处。
+   ⚠️ 读不到(隐私模式抛错)一律当"做过了":标记存不住的浏览器里,
+   演示会每次进页面都放一遍,那比不演示更烦人。 */
+var COACH_KEY = "daka.coach";
+function coachDone(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    return !!(o && typeof o === "object" && o[k]);
+  }catch(e){ return true; }
+}
+function markCoach(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    if(!o || typeof o !== "object") o = {};
+    o[k] = 1;
+    localStorage.setItem(COACH_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+
+/* 封面流的停留位置记在 sessionStorage(不是 localStorage):从课程页返回时
+   回到刚才那张,但下次重新打开应用还是从头开始 —— 位置是"这一趟"的上下文 */
+var SHELF_KEY = "daka.shelf";
+function shelfMem(){
+  try{
+    var s = sessionStorage.getItem(SHELF_KEY);
+    if(s){ var o = JSON.parse(s); if(o && typeof o === "object") return o; }
+  }catch(e){}
+  return {};
+}
+function saveShelfMem(group, n){
+  try{
+    var o = shelfMem();
+    o[group] = n;
+    sessionStorage.setItem(SHELF_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+
+var SAVE = store.load();
+
+/* 打卡条:最近 7 天(含今天)一天一个点 + 右侧连续天数 */
+const WEEK_CN = ["日","一","二","三","四","五","六"];
+function renderCheckin(){
+  const box = document.getElementById("checkin");
+  if(!box) return;
+  const set = {};
+  SAVE.days.forEach(d => { set[d] = 1; });
+  let cells = "";
+  for(let i = 6; i >= 0; i--){                 // 从 6 天前排到今天,今天在最右
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    const key = ymd(d);
+    cells += `<div class="cday${i === 0 ? " today" : ""}">` +
+             `<span class="cdot${set[key] ? " on" : ""}"></span>` +
+             `<span class="cw">${WEEK_CN[d.getDay()]}</span></div>`;
+  }
+  box.innerHTML =
+    `<div class="checkin-days" role="img" aria-label="最近七天打卡情况">${cells}</div>` +
+    `<div class="checkin-streak">🔥 ${streakOf(SAVE.days)} 天</div>`;
+}
+
+/* 「继续学 · 某课」:有存档且那节课还在清单里才出。
+   出现时把复习按钮降级成白底次按钮 —— 两个绿胶囊并排就没有主行动了 */
+function renderContinue(lessons){
+  const last = SAVE.last;
+  const id = last && last.lesson ? last.lesson : null;
+  if(!id) return;
+  let hit = null;
+  for(let i = 0; i < lessons.length; i++){ if(lessons[i].id === id){ hit = lessons[i]; break; } }
+  if(!hit) return;
+  const acts = document.getElementById("acts");
+  const a = document.createElement("a");
+  a.className = "go-btn";
+  a.href = "app.html?lesson=" + hit.id;
+  a.textContent = "▶ 继续学 · " + hit.title;
+  acts.insertBefore(a, acts.firstChild);
+  const rb = document.getElementById("reviewBtn");
+  if(rb) rb.classList.add("ghost");
+}
+
+/* 封面色 —— 旧写法是五色按**组内序号**循环,于是每个组的第一张永远是同一个粉色、
+   第二张永远是同一个蓝色:颜色只表达"你是这组的第几张",不表达"你属于哪一组"。
+   翻到第三屏时家长和孩子都认不出自己滑到哪儿了。
+   改成一组一个主色相,组内只在同色的 2~3 档深浅之间轮换 —— 色相认组,深浅分张。
+   ⚠️ 明度全部对齐现有 --c1..--c5 的水平(白底巨型字形的对比度 2.6~6.4:1),
+   任何一档都不许再往浅了调:封面上那个字号的白字是这一页唯一的信息,
+   浅一档就糊在底色里了。橙/绿两组的第三档试过都掉到 2.3~2.6 以下,所以只留两档。
+   ⚠️ 按**组名关键字**匹配(中英各写一条,课程数据两种写法都出现过);
+   匹配不上的组(比如以后的 8xx 绘本)照旧走五色循环,不至于没颜色。 */
 const COVER_COLORS = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)"];
+const GROUP_COLORS = [
+  {re:/字母|letter/i,        colors:["#2F7BEF","#1F63CC","#4C93FF"]},  /* 蓝 */
+  {re:/词族|word\s*family/i, colors:["#8557EA","#6E3FD1","#9C74F5"]},  /* 紫 */
+  {re:/拼读|phonics/i,       colors:["#EE8420","#C86A10"]},            /* 橙 */
+  {re:/常见词|sight/i,       colors:["#E85C93","#C9407A","#F0729F"]},  /* 粉 */
+  {re:/主题|topic/i,         colors:["#37A85B","#268A47"]},            /* 绿 */
+  {re:/数学|math/i,          colors:["#1F8FA8","#16748A","#2AA0BC"]},  /* 青 */
+  {re:/科学|science/i,       colors:["#2E8B74","#1F7160","#3A9E87"]}   /* 深绿 */
+];
+function coverColors(group){
+  const g = group ? String(group) : "";
+  for(let i = 0; i < GROUP_COLORS.length; i++){
+    if(GROUP_COLORS[i].re.test(g)) return GROUP_COLORS[i].colors;
+  }
+  return COVER_COLORS;
+}
 
 /* 卡片在架子上的位置 —— off 是它离中心的距离(可为小数,拖动时连续变化) */
 function placeCover(el, off){
@@ -195,7 +475,7 @@ function placeCover(el, off){
   el.setAttribute("tabindex", a < 0.5 ? "0" : "-1");
 }
 
-function buildShelf(group, lessons){
+function buildShelf(group, lessons, first){
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
@@ -205,6 +485,10 @@ function buildShelf(group, lessons){
   const stage = wrap.querySelector(".stage");
   const rack  = wrap.querySelector(".rack");
   const dots  = wrap.querySelector(".dots");
+  const palette = coverColors(group);
+  /* 8 节以上的组(字母课有 11 节)圆点会挤成两行,还把下一组的标题推下去 ——
+     视觉上收成迷你进度条(点击热区不动,单手点圆点比滑动省力,那是有用的) */
+  if(lessons.length >= 8) dots.classList.add("many");
 
   lessons.forEach((l, i) => {
     const [en, cn] = String(l.title).split(" · ");
@@ -215,9 +499,13 @@ function buildShelf(group, lessons){
     a.className = "cover";
     a.href = `app.html?lesson=${l.id}`;
     a.draggable = false;
-    a.style.setProperty("--c", COVER_COLORS[i % COVER_COLORS.length]);
+    a.style.setProperty("--c", palette[i % palette.length]);
+    // 这一课攒了多少星:攒过才显示,0 星的课挂个「⭐ 0」等于提醒他没做
+    const rec = SAVE.lessons[l.id];
+    const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
     a.innerHTML =
-      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span></div>` +
+      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
+      (got > 0 ? `<span class="cover-stars">⭐ ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
       `<div class="cn">${cn || l.badge_sub || ""}</div>` +
       `<div class="n">${l.words} 张卡片</div></div>`;
@@ -329,7 +617,8 @@ function buildShelf(group, lessons){
     // 那个 <a> 收不到 click,靠默认行为进不去课程(桌面鼠标必现)
     if(!moved && downCard){
       const i = covers.indexOf(downCard);
-      if(i === idx()) { location.href = downCard.href; return; }   // 点中间那张 → 进课程
+      // 记下停在第几张:从课程页返回时直接落回这里,不用再滑一遍
+      if(i === idx()) { saveShelfMem(group, i); location.href = downCard.href; return; }   // 点中间那张 → 进课程
       go(i); return;                                               // 点侧边那张 → 转到中间
     }
     vel = track * 16.7;                          // 张/毫秒 → 张/帧,带走手指的惯性
@@ -348,27 +637,89 @@ function buildShelf(group, lessons){
   stage.addEventListener("keydown", e => {
     if(e.key === "ArrowLeft"){ go(idx() - 1); e.preventDefault(); }
     if(e.key === "ArrowRight"){ go(idx() + 1); e.preventDefault(); }
-    if(e.key === "Enter" && covers[idx()]) location.href = covers[idx()].href;
+    if(e.key === "Enter" && covers[idx()]){
+      saveShelfMem(group, idx());
+      location.href = covers[idx()].href;
+    }
   });
 
+  /* 初始定位的优先级:本趟停过的位置 > 最近学的那一课 > 第一张。
+     直接把 pos/target 一起写死再 paint()(SLOW 的直达路径),不走弹簧 ——
+     一进页面就看见几组卡片各自"弹"一下,像是页面没加载完 */
+  let startAt = 0;
+  const mem = shelfMem();
+  if(typeof mem[group] === "number" && mem[group] >= 0 && mem[group] <= LAST){
+    startAt = Math.round(mem[group]);
+  }else if(SAVE.last && SAVE.last.lesson){
+    for(let i = 0; i <= LAST; i++){
+      if(lessons[i].id === SAVE.last.lesson){ startAt = i; break; }
+    }
+  }
+  pos = target = startAt;
+
   paint();
+
+  /* 一次性示能演示:第一个分组自己往右挪半张再弹回来 ——「这一排是能滑的」
+     这件事,演一下比副标题那行字管用得多(孩子不认字,那行是写给家长的)。
+     go() 收的是连续位置,clamp 不取整,所以 0.55 是合法目标,弹簧照常动画。
+     只在从第一张起步时演:停在中间某张时往右挪会盖掉"回到刚才那张"的语义。 */
+  if(first && LAST >= 1 && !coachDone("shelf")){
+    if(SLOW){ markCoach("shelf"); }
+    else if(startAt === 0){
+      markCoach("shelf");
+      var peeked = false;
+      var cancelPeek = function(){                 // 孩子先动手了就别演,他已经知道了
+        peeked = true;
+        stage.removeEventListener("pointerdown", cancelPeek);
+      };
+      stage.addEventListener("pointerdown", cancelPeek);
+      setTimeout(function(){
+        if(peeked) return;
+        go(0.55);
+        setTimeout(function(){
+          stage.removeEventListener("pointerdown", cancelPeek);
+          if(peeked) return;                       // 演到一半被拨走,别再拉回 0
+          go(0);
+        }, 500);
+      }, 800);
+    }
+  }
   return wrap;
 }
 
+/* 清单还没回来时先占住版面(见 CSS 的「骨架屏」)。
+   ⚠️ 两条出路都要记得撤掉它:成功时被真架子换掉,失败时在 catch 里清空。
+   漏了失败那条,页面就是"错误提示 + 底下三个灰块还在呼吸",自相矛盾。 */
+function showSkeleton(){
+  var box = document.getElementById("shelves");
+  box.innerHTML =
+    '<div class="skel" aria-hidden="true">' +
+    '<div class="skel-head"></div>' +
+    '<div class="skel-row">' +
+    '<div class="skel-card side"></div><div class="skel-card"></div>' +
+    '<div class="skel-card side"></div></div></div>';
+}
+
 (async function(){
+  renderCheckin();               // 打卡条不依赖课程清单,先画出来;清单拉不到也还在
+  showSkeleton();
   try{
     const r = await fetch("lessons/index.json", {cache:"no-store"});
     if(!r.ok) throw new Error();
     const data = await r.json();
     const shelves = document.getElementById("shelves");
+    shelves.innerHTML = "";      // 骨架下岗,真架子上台
     const order = [], byGroup = new Map();
     data.lessons.forEach(l => {
       const g = l.group || "其他 Others";
       if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
       byGroup.get(g).push(l);
     });
-    order.forEach(g => shelves.appendChild(buildShelf(g, byGroup.get(g))));
+    renderContinue(data.lessons);
+    order.forEach((g, i) => shelves.appendChild(buildShelf(g, byGroup.get(g), i === 0)));
   }catch(e){
+    // 骨架必须撤掉:留着它就是"永远在加载",而下面明明写着加载失败了
+    document.getElementById("shelves").innerHTML = "";
     document.getElementById("note").innerHTML =
       "课程清单需要通过本地服务器访问：<br>在项目目录运行 <b>python3 -m http.server</b>，<br>然后浏览器打开 <b>http://localhost:8000</b>";
   }
