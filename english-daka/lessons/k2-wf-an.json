@@ -123,6 +123,24 @@
           "a_audio": [
             "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
           ]
+        },
+        {
+          "q": "Who is Dan?",
+          "image": "images/sw-cvc-dan-man.webp",
+          "a": [
+            "Dan is a man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "丹是谁？",
+          "a_cn": [
+            "丹是一个男人。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-who-is-dan-c8522a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
@@ -329,6 +347,7 @@
     "can": "audio/words/can.mp3",
     "color": "audio/words/color.mp3",
     "dad": "audio/words/dad.mp3",
+    "dan": "audio/words/dan.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "dog": "audio/words/dog.mp3",

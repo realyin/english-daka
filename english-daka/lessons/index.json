@@ -187,18 +187,34 @@
     {
       "id": "k2-sw-on-the-go",
       "title": "Sight Words · go / by / on / the",
-      "words": 10,
+      "words": 11,
       "group": "常见词 Sight Words",
       "badge": "go",
       "seq": 402
     },
     {
-      "id": "k2-sw-here-is-to-and-all",
-      "title": "Sight Words · here / is / to / and / all",
-      "words": 16,
+      "id": "k2-sw-here-is",
+      "title": "Sight Words · here / is",
+      "words": 5,
       "group": "常见词 Sight Words",
       "badge": "here",
       "seq": 403
+    },
+    {
+      "id": "k2-sw-to-and",
+      "title": "Sight Words · to / and",
+      "words": 7,
+      "group": "常见词 Sight Words",
+      "badge": "to",
+      "seq": 404
+    },
+    {
+      "id": "k2-sw-all",
+      "title": "Sight Words · all",
+      "words": 5,
+      "group": "常见词 Sight Words",
+      "badge": "all",
+      "seq": 405
     },
     {
       "id": "k2-sw-from-have",
@@ -206,7 +222,7 @@
       "words": 6,
       "group": "常见词 Sight Words",
       "badge": "from",
-      "seq": 404
+      "seq": 406
     },
     {
       "id": "k2-zoo",
@@ -264,8 +280,12 @@
   "days": [
     {
       "date": "2026-08-31",
-      "cards": 3,
+      "cards": 8,
       "lessons": [
+        "k2-sw-all",
+        "k2-sw-here-is",
+        "k2-sw-on-the-go",
+        "k2-sw-to-and",
         "k2-wf-ad",
         "k2-wf-id",
         "k2-wf-ot"

@@ -222,6 +222,24 @@
             "audio/sentences/k2-wf-at/a-this-is-a-mat-0c4374.mp3"
           ],
           "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-m-at-93a5cb.mp3"
+        },
+        {
+          "q": "Where did the rat sit?",
+          "image": "images/sw-cvc-rat-mat.webp",
+          "a": [
+            "The rat sat on the mat."
+          ],
+          "key": [
+            "mat"
+          ],
+          "q_cn": "老鼠坐在哪里？",
+          "a_cn": [
+            "老鼠坐在垫子上。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-where-did-the-rat-sit-0c3a80.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-mat-a683af.mp3"
@@ -281,6 +299,24 @@
             "audio/sentences/k2-wf-at/a-i-have-a-fat-cat-04495b.mp3"
           ],
           "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-c-at-cf41d8.mp3"
+        },
+        {
+          "q": "Can you pat the cat?",
+          "image": "images/sw-cvc-pat-cat.webp",
+          "a": [
+            "I can pat the tan cat."
+          ],
+          "key": [
+            "pat"
+          ],
+          "q_cn": "你能拍拍这只猫吗？",
+          "a_cn": [
+            "我能拍拍这只棕色的猫。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-can-you-pat-the-cat-04537b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-cat-e4be72.mp3"
@@ -522,6 +558,7 @@
     "can": "audio/words/can.mp3",
     "cat": "audio/words/cat.mp3",
     "color": "audio/words/color.mp3",
+    "did": "audio/words/did.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "f": "audio/words/f.mp3",
@@ -541,6 +578,7 @@
     "makes": "audio/words/makes.mp3",
     "mat": "audio/words/mat.mp3",
     "on": "audio/words/on.mp3",
+    "pat": "audio/words/pat.mp3",
     "pink": "audio/words/pink.mp3",
     "r": "audio/words/r.mp3",
     "rat": "audio/words/rat.mp3",
@@ -549,12 +587,15 @@
     "s": "audio/words/s.mp3",
     "sat": "audio/words/sat.mp3",
     "see": "audio/words/see.mp3",
+    "sit": "audio/words/sit.mp3",
     "sound": "audio/words/sound.mp3",
     "t": "audio/words/t.mp3",
+    "tan": "audio/words/tan.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3",
     "your": "audio/words/your.mp3"
