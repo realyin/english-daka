@@ -38,6 +38,7 @@ import json
 import re
 import sys
 import tempfile
+from datetime import date
 from pathlib import Path
 
 import edge_tts
@@ -319,6 +320,42 @@ def plan_lesson(lesson: dict, lesson_id: str, tasks: dict, write_back=True):
         lesson["praise_audio"] = praise_map
 
 
+def stamp_added(lesson: dict, class_date: str) -> int:
+    """给这次新加的卡盖上课日期(added,目录页「按课堂复习」按它分批)。
+    新卡的判据:既没有 added、也还没生成过任何问句音频 —— 刚写进 JSON 的卡
+    两样都没有;老底子的卡(早于盖戳机制入库)虽然没有 added,但 q_audio
+    早就回写过了,不会在老课重生成时被误盖成今天。补录昨天的课用 --date。"""
+    n = 0
+    for c in lesson.get("cards", []):
+        if c.get("added"):
+            continue
+        if any(t.get("q_audio") for t in c.get("dialog", [])):
+            continue
+        c["added"] = class_date
+        n += 1
+    return n
+
+
+def build_days(lessons_root: Path):
+    """扫全部课程,把卡片的 added 聚合成「课堂日」汇总 —— 写进 index.json 的
+    days 字段,目录页的日期选择面板直接读它,不用把 30 个课程 JSON 全拉一遍。
+    没有 added 的老卡不属于任何课堂日,天然不进汇总。
+    ⚠️ check_lesson.py 里有一份逐字一致的拷贝(自检不 import 本文件:
+    这里 import 了 edge_tts,没装它的机器自检就跑不了),改一处要同步改另一处。"""
+    days = {}
+    for f in lesson_files(lessons_root):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for c in d.get("cards", []):
+            a = c.get("added")
+            if not a:
+                continue
+            rec = days.setdefault(a, {"date": a, "cards": 0, "lessons": []})
+            rec["cards"] += 1
+            if f.stem not in rec["lessons"]:
+                rec["lessons"].append(f.stem)
+    return [days[k] for k in sorted(days, reverse=True)]
+
+
 def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
     """把课程登记进目录页 index.json(按日期倒序)"""
     index_file = lessons_root / "index.json"
@@ -343,11 +380,13 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
                     if not has(x, "group") and not has(x, "num")],
                    key=lambda x: x["id"], reverse=True)
     index["lessons"] = numbered + grouped + dated
+    # 顺带重建课堂日汇总:此刻课程文件都已回写到磁盘,扫出来的就是最新状态
+    index["days"] = build_days(lessons_root)
     index_file.write_text(
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-async def main(lesson_path: str):
+async def main(lesson_path: str, class_date: str = None):
     lesson_file = Path(lesson_path)
     lesson = json.loads(lesson_file.read_text(encoding="utf-8"))
     lessons_root = lesson_file.parent
@@ -359,6 +398,8 @@ async def main(lesson_path: str):
             del card[k]
         if card.get("image") == "":
             del card["image"]
+
+    stamped = stamp_added(lesson, class_date or date.today().isoformat())
 
     lint_lesson(lesson, lesson_id)
 
@@ -399,6 +440,9 @@ async def main(lesson_path: str):
         json.dumps(lesson, ensure_ascii=False, indent=2), encoding="utf-8")
     update_index(lessons_root, lesson_id, lesson)
     print(f"\n完成:新生成 {made} 条,复用已有 {skipped} 条")
+    if stamped:
+        print(f"新卡 {stamped} 张已盖上课日期 {class_date or date.today().isoformat()}"
+              f"(补录昨天的课用 --date 改)")
     print(f"目录页 index.json 已更新:{lesson_id} · {lesson['title']}")
     print(f"其中词级点读 {len(lesson['word_audio'])} 个单词")
     print(f"音频目录:{lessons_root / AUDIO_DIR}")
@@ -406,7 +450,16 @@ async def main(lesson_path: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("用法: python gen_audio.py lessons/2026-08-29.json")
+    argv = sys.argv[1:]
+    class_date = None
+    if "--date" in argv:
+        i = argv.index("--date")
+        class_date = argv[i + 1] if i + 1 < len(argv) else ""
+        del argv[i:i + 2]
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", class_date):
+            print("--date 要求 YYYY-MM-DD,例如 --date 2026-08-30")
+            sys.exit(1)
+    if len(argv) != 1:
+        print("用法: python gen_audio.py lessons/2026-08-29.json [--date 2026-08-30]")
         sys.exit(1)
-    asyncio.run(main(sys.argv[1]))
+    asyncio.run(main(argv[0], class_date))

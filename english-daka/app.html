@@ -1026,9 +1026,11 @@ function streakOf(days){
    "review"(混合复习)→ 只记总数和打卡日(它不是一节课,不该有自己的星罐)
    null(没带 ?lesson= 的预览课)→ 什么都不写 */
 var CUR_ID = null;
-/* review 的变体(URL 的 ?pick=):"wrong" = 错题本(账本切片),null = 正常调度。
-   CUR_ID 两种变体下都是 "review" —— 记账、不建星罐、不存快照这些特例要照单全收 */
+/* review 的变体(URL 的 ?pick=):"wrong" = 错题本(账本切片),
+   "day" = 按课堂复习(某天上课的卡,日期在 ?d=),null = 正常调度。
+   CUR_ID 各变体下都是 "review" —— 记账、不建星罐、不存快照这些特例要照单全收 */
 var REVIEW_PICK = null;
+var REVIEW_DAY = null;   // pick=day 时的目标课堂日(YYYY-MM-DD,来自 URL 的 ?d=)
 let stars = 0;                                 // 语义:**本课**累计星数(不是总数)
 function addStars(n){
   stars += n;
@@ -2362,15 +2364,22 @@ function startPractice(){
   pc = 0; pq = 0; pBarPct = 0; pRetryN = 0;
   askQuestion();
 }
-/* 空着陆页。错题本的"空"不是缺失是成就,给庆祝不给灰色的"暂无数据" */
+/* 空着陆页。错题本的"空"不是缺失是成就,给庆祝不给灰色的"暂无数据"。
+   课堂日的"空"则是真找不到(日期传歪了,或那批卡后来删了/挪了):
+   说清楚 + 给回目录的出口,别让孩子对着灰页发呆 */
 function emptyRoundHTML(){
-  return REVIEW_PICK === "wrong"
-    ? `<div class="done"><div class="big">🎉</div>错题本空啦！<br>错过的词都练熟了
+  if(REVIEW_PICK === "wrong")
+    return `<div class="done"><div class="big">🎉</div>错题本空啦！<br>错过的词都练熟了
          <div class="done-acts">
            <a class="big-btn" href="app.html?lesson=review">去混合复习</a>
            <a class="big-btn ghost" href="index.html">回目录</a>
-         </div></div>`
-    : `<div class="done"><div class="big">🤔</div>这一课没有可以出题的卡片</div>`;
+         </div></div>`;
+  if(REVIEW_PICK === "day")
+    return `<div class="done"><div class="big">🤔</div>没找到这一天上课的卡片<br>内容可能后来调整过了
+         <div class="done-acts">
+           <a class="big-btn" href="index.html">回目录</a>
+         </div></div>`;
+  return `<div class="done"><div class="big">🤔</div>这一课没有可以出题的卡片</div>`;
 }
 function curCard(){ return pOrder[pc]; }
 function curQA(){ return askable(curCard())[pq]; }
@@ -3204,21 +3213,40 @@ async function buildReviewLesson(pick){
     Object.assign(word_audio, d.word_audio || {});
     Object.assign(praise_audio, d.praise_audio || {});
     (d.cards || []).forEach(c => {
+      // 按课堂复习(pick=day)只收那天上课的卡(added 由 gen_audio.py 盖戳);
+      // 没有戳的老卡不属于任何课堂日,天然进不了这个切片
+      if(pick === "day" && c.added !== REVIEW_DAY) return;
       const qs = askable(c);
-      if(!qs.length) return;                   // 闯不了关的卡进不了复习池
+      // 闯不了关的卡进不了调度池;但课堂日的卡列表要如实还原那天的课 ——
+      // 虚词卡照样进学一学,闯关那边 startPractice 自己会跳过没题可出的卡
+      if(!qs.length && pick !== "day") return;
       // 每卡只留一问:选中的保持原引用,其余克隆成 practice:false ——
       // 学一学照常显示全部对话(practice 只管闯关),原课程数据一个字不动
-      const keep = qs[Math.floor(Math.random() * qs.length)];
+      const keep = qs.length ? qs[Math.floor(Math.random() * qs.length)] : null;
       const dialog = (c.dialog || []).map(t =>
         (t === keep || t.practice === false) ? t : Object.assign({}, t, {practice: false}));
       pool.push(Object.assign({}, c, {dialog: dialog, _src: metas[i].id}));
     });
   });
+  if(pick === "day")
+    // 不设 ordered:池子按 index 的课程序排(学一学同课的卡挨着翻),
+    // 闯关每轮自己洗牌 —— 那天的卡超过一轮上限时,「再来一轮」能碰到不同的一批
+    return {title: dayReviewTitle(REVIEW_DAY), cards: pool,
+            word_audio, praise_audio};
   if(pick === "wrong")
     return {title: "错题本 · 把它们练熟", cards: pickWrongBook(pool),
             word_audio, praise_audio, ordered: true};
   return {title: "混合复习 · 各课随机抽题", cards: pickReviewRound(pool),
           word_audio, praise_audio, ordered: true};
+}
+
+/* 课堂日复习的标题:"8月30日的课"(当天就叫"今天的课"),孩子和家长
+   都不用换算 YYYY-MM-DD。日期没传/格式歪了就叫"那天的课" —— 池子必然
+   是空的,init 会摆着陆页,标题只是陪衬 */
+function dayReviewTitle(d){
+  var p = String(d || "").split("-");
+  var md = p.length === 3 ? (+p[1]) + "月" + (+p[2]) + "日" : "那天";
+  return (d === today() ? "今天" : md) + "的课 · 整套再过一遍";
 }
 
 /* 错题本:账本的一个切片,不是第二套数据 —— w>0(错过)且 b≤3(还没爬到 7 天盒)。
@@ -3342,7 +3370,9 @@ function fillPreviewImages(){
   CUR_ID = id;                   // 没带 ?lesson= 时是 null:预览课不记账
   lesson = FALLBACK_LESSON;
   if(id === "review"){
-    REVIEW_PICK = new URLSearchParams(location.search).get("pick");
+    const params = new URLSearchParams(location.search);
+    REVIEW_PICK = params.get("pick");
+    if(REVIEW_PICK === "day") REVIEW_DAY = params.get("d");
     try{ lesson = await buildReviewLesson(REVIEW_PICK); }catch(e){}
   }else if(id){
     try{
@@ -3375,8 +3405,10 @@ function fillPreviewImages(){
   // 曾经让复习直接落在闯关(理由是"先考不先翻卡"的测试效应),家长明确要求
   // 改回:孩子的习惯是先看一遍再答,直接进闯关像"还没复习就被考"。
   // 错题本同样落学一学 —— 翻本子正是"先看一遍"。
-  // 本子空着进来是唯一的例外:没有可翻可考的内容,两个页签都摆庆祝页
-  if(id === "review" && REVIEW_PICK === "wrong" && !(lesson.cards || []).length){
+  // 空着进来是唯一的例外:没有可翻可考的内容,两个页签都摆着陆页
+  // (错题本的空是庆祝;课堂日的空是"没找到",文案在 emptyRoundHTML 里分岔)
+  if(id === "review" && (REVIEW_PICK === "wrong" || REVIEW_PICK === "day") &&
+     !(lesson.cards || []).length){
     document.getElementById("learnList").innerHTML = emptyRoundHTML();
     pbox.innerHTML = emptyRoundHTML();
   }

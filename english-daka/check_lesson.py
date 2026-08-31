@@ -147,6 +147,14 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
                        f"考一考问的是「Which one is {w}?」，这么问答不出来。"
                        f"用 split_panels.py 按主体切开，拆成一卡一词")
 
+        # 上课日期戳(added):按课堂复习的分批依据,由 gen_audio.py 盖,格式必须
+        # 是 YYYY-MM-DD —— 目录页按字典序倒排日期,格式歪了排序和"今天/昨天"
+        # 的判断都会错。没有这个字段不报:老底子的卡(早于盖戳机制)就没有
+        if c.get("added") is not None and \
+                not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(c["added"])):
+            r.e(where, f"added「{c['added']}」不是 YYYY-MM-DD —— "
+                       f"课堂日列表按它排序,格式错了整批都找不到")
+
         # 考一考要的画面
         if not (c.get("image") or c.get("eq") or c.get("emoji")):
             r.w(where, "既没有 image 也没有 eq/emoji —— 学一学没画面，"
@@ -336,6 +344,26 @@ def quiz_pics(cards, audio_ready):
     return out
 
 
+def build_days(lessons_root: Path):
+    """扫全部课程,把卡片的 added 聚合成「课堂日」汇总(index.json 的 days)。
+    ⚠️ 与 gen_audio.py 的 build_days 逐字一致(不 import 它:那边 import 了
+    edge_tts,没装它的机器自检就跑不了),改一处要同步改另一处。"""
+    days = {}
+    for f in sorted(lessons_root.glob("*.json")):
+        if f.name in NON_LESSON:
+            continue
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for c in d.get("cards", []):
+            a = c.get("added")
+            if not a:
+                continue
+            rec = days.setdefault(a, {"date": a, "cards": 0, "lessons": []})
+            rec["cards"] += 1
+            if f.stem not in rec["lessons"]:
+                rec["lessons"].append(f.stem)
+    return [days[k] for k in sorted(days, reverse=True)]
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     files = [Path(a) for a in args] if args else \
@@ -356,7 +384,9 @@ def main():
         ok &= check_lesson(f, pools, lib, audio_ready).show()
 
     if "--fix-index" in sys.argv or not args:
-        idx = json.loads((LESSONS / "index.json").read_text(encoding="utf-8"))["lessons"]
+        idx_file = LESSONS / "index.json"
+        idx_data = json.loads(idx_file.read_text(encoding="utf-8"))
+        idx = idx_data["lessons"]
         listed = {l["id"] for l in idx}
         on_disk = {f.stem for f in LESSONS.glob("*.json") if f.name not in NON_LESSON}
         for miss in sorted(on_disk - listed):
@@ -365,6 +395,18 @@ def main():
         for ghost in sorted(listed - on_disk):
             print(f"❌ index.json 里的 {ghost} 找不到对应课程文件")
             ok = False
+        # 课堂日汇总(days)和卡片的 added 对不上就地重建:gen_audio 每次会重算,
+        # 但手改课程文件(删卡/挪卡/补 added)不跑音频时,这里是唯一的重建口
+        days = build_days(LESSONS)
+        if (idx_data.get("days") or []) != days:
+            idx_data["days"] = days
+            if "--fix-index" in sys.argv:
+                idx_file.write_text(
+                    json.dumps(idx_data, ensure_ascii=False, indent=2), encoding="utf-8")
+                print(f"✔ index.json 的课堂日汇总已重建({len(days)} 个课堂日)")
+            else:
+                print("⚠ index.json 的课堂日汇总(days)和卡片的 added 对不上 —— "
+                      "跑 python check_lesson.py --fix-index 重建")
 
     print(f"\n{'全部通过' if ok else '有错误，见上'}（{len(files)} 节课）")
     sys.exit(0 if ok else 1)
