@@ -55,8 +55,30 @@
   .ic-star{color:var(--yellow,#FFC53D);}
   .ic-flame{color:var(--orange,#FF9A3D);}
 
-  header{text-align:center;padding:24px 16px 10px;}
-  header h1{font-size:26px;letter-spacing:2px;}
+  /* header 自己不留左右 padding:里面的 h1 和 .hat 各自出自己的左右边距 ——
+     .hat 要和下面货架的内容列像素级同轴,多一层 padding 就得两处一起算 */
+  header{text-align:center;padding:var(--sp-5,24px) 0 0;}
+  header h1{font-size:26px;letter-spacing:2px;padding:0 var(--sp-3,16px);}
+
+  /* ===== 帽子(打卡条 + 行动按钮) =====
+     原来打卡条(360px)、继续学(内容宽)、混合复习(内容宽)是三个各自居中的悬浮
+     元素,三种宽度,和下面左对齐的货架内容列是两套构图轴 —— 家长反馈"上下分离"。
+     现在收进同一张白卡,卡的左右缘和分组标题/第一张封面严格同一条竖线。
+     宽度算法必须和 .shelf 那套对齐:.shelf 是 max-width:720 + margin auto,
+     .shelf-head 再往里缩 16px,所以内容列 = min(视口, 720) - 32,居中。
+     这里就写成 calc(100% - 32px) 封顶 688px(=720-32),两边都是同一个结果。
+     ⚠️ 改 .shelf 的 720 或 .shelf-head 的 16px,这里的 688/32 要跟着改。
+     宽屏 space-between 把打卡条推到左、按钮列贴右;
+     窄屏靠 flex-wrap 自然堆叠成"打卡条一行 + 按钮全宽",不用写断点 */
+  .hat{
+    width:calc(100% - var(--sp-3,16px) * 2);max-width:688px;
+    margin:var(--sp-4,20px) auto 0;
+    padding:var(--sp-2,12px) var(--sp-3,16px);
+    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:20px;
+    box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:var(--sp-2,12px) var(--sp-3,16px);
+  }
 
   /* ===== 骨架屏 =====
      课程清单要等一次网络往返才回来,那之前整页只有一个标题和一片空白 ——
@@ -148,14 +170,16 @@
 
   /* ===== 打卡条 ===== */
   /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
-     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请 */
+     看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请。
+     它现在住在 .hat 这张白卡里,自己不再是一张卡:白底/边框/投影/max-width
+     全部去掉,只留内部那条 flex 行 —— 卡中卡会多出一圈没有意义的描边。
+     flex:1 1 300px = 宽屏占左半列、窄到放不下 300px 时整行独占再让按钮换行 */
   .checkin{
-    max-width:360px;margin:var(--sp-3,16px) auto 0;padding:9px 14px;
-    background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
-    display:flex;align-items:center;justify-content:space-between;gap:12px;
-    box-shadow:0 3px 10px rgba(43,58,85,.08);
+    flex:1 1 300px;min-width:0;
+    display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);
   }
-  /* 内容是 JS 填的:老浏览器解析不了脚本时别在标题下留一个空白盒子 */
+  /* 内容是 JS 填的:老浏览器解析不了脚本时,帽子里就只剩按钮列,
+     不能在按钮旁边留一个撑着 300px 的空盒子(会把按钮挤成半宽) */
   .checkin:empty{display:none;}
   .checkin-days{display:flex;gap:5px;}
   .cday{display:flex;flex-direction:column;align-items:center;gap:3px;}
@@ -171,11 +195,19 @@
   .checkin-streak{font-size:15px;font-weight:900;white-space:nowrap;}
 
   /* ===== header 行动区 ===== */
-  .acts{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:14px;}
+  /* 帽子里的右列。align-items:stretch(不是 center)+ 按钮不再设 max-width,
+     两个按钮左右缘对齐成一条竖边 —— 宽窄不一的胶囊叠在一起像"没对齐的贴纸"。
+     flex:1 1 240px:宽屏和打卡条分左右两列,窄屏换行后独占一行、按钮撑满 */
+  .acts{
+    flex:1 1 240px;min-width:0;
+    display:flex;flex-direction:column;align-items:stretch;gap:var(--sp-1,8px);
+  }
   /* 「继续学」在有存档时是唯一的主行动:直接回到昨天那一课,省掉在架子上找 */
   .go-btn{
     display:inline-flex;align-items:center;justify-content:center;
-    min-height:52px;max-width:94%;padding:12px 26px;border-radius:999px;
+    /* 不设 max-width:在帽子的右列里要撑满列宽,和「混合复习」对齐成一条边;
+       文字仍由 justify-content:center 居中 */
+    min-height:52px;padding:12px 26px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:17px;
     /* 阴影走 theme.css 的柔投影 token,不再是"墨色硬边"那一套 ——
        全站(含 app.html 的按钮/卡片)统一成浅色细边 + 柔投影 */
@@ -187,8 +219,10 @@
 
   /* 复习入口放在目录页顶部而不是做成一节课:它不属于任何分组,
      而且每次进去内容都不一样,当成"课"会误导 */
+  /* text-align:center 显式写出来:它以前是从 header 继承的,
+     而 header 的 text-align 只服务标题,不该被按钮的居中依赖着 */
   .review-btn{
-    display:inline-block;padding:10px 20px;border-radius:999px;
+    display:block;text-align:center;padding:10px 20px;border-radius:999px;
     background:var(--green);color:#fff;font-weight:900;font-size:15px;
     text-decoration:none;box-shadow:var(--shadow, 0 3px 10px rgba(43,58,85,.10));
   }
@@ -245,9 +279,14 @@
 
 <header>
   <h1>我的英语打卡</h1>
-  <div class="checkin" id="checkin"></div>
-  <div class="acts" id="acts">
-    <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
+  <!-- 打卡条和行动按钮住在同一张白卡(.hat)里,卡的左右缘与下面货架的
+       分组标题/第一张封面同轴 —— 详见 CSS 的「帽子」一节。
+       ⚠️ #checkin / #acts 这两个 id 和内部渲染逻辑没动,只是被包了一层 -->
+  <div class="hat">
+    <div class="checkin" id="checkin"></div>
+    <div class="acts" id="acts">
+      <a class="review-btn" id="reviewBtn" href="app.html?lesson=review"><svg class="ic" aria-hidden="true"><use href="#i-shuffle"/></svg> 混合复习 · 各课随机抽题</a>
+    </div>
   </div>
 </header>
 <div id="shelves"></div>
