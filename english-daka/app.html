@@ -6,6 +6,7 @@
 <title>我的英语打卡</title>
 <meta name="theme-color" content="#F0F7FF">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
 <!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
      要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
 <link rel="apple-touch-icon" href="icon.svg">
@@ -50,10 +51,18 @@
   /* gap 8 而不是 10:一行要塞下 back(48)+navbtn(48)+标题+navbtn(48)+星罐,
      375px 屏上 10px 的间距会把标题挤没 */
   .bar-row{display:flex;align-items:center;gap:8px;}
+  /* min-width:64px —— 光有 min-width:0 时,窄屏上 flex 会把标题压到只剩一两个字
+     再接省略号("K2 字母…" → "K…"),那还不如干脆不显示。给它一个下限:
+     宁可让省略号早一点出现,也要保证标题始终是"一小段可读的字" */
   .lesson-title{
-    flex:1;min-width:0;font-size:15px;font-weight:800;color:var(--ink);
+    flex:1;min-width:64px;font-size:15px;font-weight:800;color:var(--ink);
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
+  /* 一行的固定宽度加起来已经 ~234px(48×3 + 星罐 ~58 + 4 个 8px 间距),
+     320px 屏减掉 topbar-in 的左右 14px 只剩 ~58px 给标题 —— 顶不住 64 的下限,
+     整条 bar 会溢出、把吸顶条撑得能横滚。所以下限只在 361px 以上生效,
+     再窄就退回"能压多小压多小"(那种屏上标题本来也读不成句) */
+  @media (max-width:360px){ .lesson-title{min-width:0;} }
   .star-jar{
     flex:none;display:inline-flex;align-items:center;gap:5px;
     background:#FFF3D6;border:2px solid var(--yellow);border-radius:999px;
@@ -112,7 +121,19 @@
     flex:none;width:76px;height:70px;
     display:flex;align-items:center;justify-content:center;
   }
-  .lhead .emoji{font-size:40px;}
+  /* ===== emoji 兜底的"贴纸"底 =====
+     没配图的卡在列表里就是一个裸字符,和旁边那些有白框水彩缩略图的卡并排时,
+     看着像"这张还没做完"。给 emoji 一层浅蓝渐变圆角底 + 同款细边框,
+     两种卡的视觉重量就齐了 —— 尺寸也照着 .thumb 走(52×70),换图后
+     补上 image 字段,位置一格都不会挪。
+     字号从 40 收到 34:52px 宽减掉两条 2px 边框只剩 48px 内宽,40px 的
+     emoji 字形(实际渲染常常比字号还宽一点)会顶到边上,贴纸就不像贴纸了 */
+  .lhead .emoji{
+    width:52px;height:70px;display:flex;align-items:center;justify-content:center;
+    font-size:34px;line-height:1;
+    background:linear-gradient(#F4F9FF,#E8F1FC);
+    border:2px solid var(--line);border-radius:10px;
+  }
   .lhead .thumb{width:52px;height:70px;object-fit:cover;border-radius:10px;border:2px solid var(--line);}
   .lhead .eq{font-size:14px;}
   .lhead .word{font-size:19px;font-weight:800;line-height:1.25;}
@@ -270,7 +291,7 @@
                opacity var(--dur-base) var(--ease-out);
     width:min(320px, 86vw);
     background:#fff;border:2px solid var(--line);border-radius:22px;
-    box-shadow:var(--shadow);padding:20px;text-align:center;
+    box-shadow:var(--shadow);padding:var(--sp-4,20px);text-align:center;
   }
   #wpopWrap.show #wpop{transform:translateX(-50%) translateY(0) scale(1);opacity:1;}
   /* 关闭按钮:视觉上是个小叉,热区靠 padding 撑到 48px —— 只能点蒙层关闭
@@ -295,7 +316,30 @@
 
   /* ===== 问答闯关 ===== */
   .p-head{text-align:center;}
-  .p-emoji{font-size:64px;}
+  /* 同 .lhead .emoji:没配图时也要是一张"卡",不是一个飘在白底上的字符。
+     不照抄 .pic.mid 的 3:4(190×253 的框里放一个 64px 的 emoji 太空),
+     做成方形贴纸;上下外边距和 .p-head .pic 对齐,有图没图换位置不跳 */
+  .p-emoji{
+    font-size:64px;line-height:1;
+    width:118px;height:118px;margin:10px auto 4px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(#F4F9FF,#E8F1FC);
+    border:2px solid var(--line);border-radius:22px;
+  }
+  /* 机器人:闯关页常驻的那个"提问的人"。三个模块里只有闯关是一问一答的对话,
+     但页面上从来没有出现过"谁在问" —— 一个会呼吸的小机器人就够了。
+     inline-flex:transform 对纯行内元素无效(同 .w 那段的教训) */
+  .bot{
+    display:inline-flex;font-size:19px;line-height:1;vertical-align:-2px;
+    margin-right:5px;animation:bot-breathe 3s ease-in-out infinite;
+  }
+  @keyframes bot-breathe{50%{transform:scale(1.06);}}
+  /* 答对时跳一下:上跳带一点落地压扁(squash),纯位移看着像元素在滚动 */
+  .bot.happy{animation:bot-hop .5s var(--ease-spring);}
+  @keyframes bot-hop{
+    25%{transform:translateY(-8px) scale(.92,1.10);}   /* 起跳:纵向拉长 */
+    60%{transform:translateY(0)    scale(1.12,.88);}   /* 落地:压扁一下 */
+  }
   /* 算式渲染(替代 keycap emoji,各平台样式一致) */
   .eq{display:inline-flex;align-items:center;gap:.28em;font-weight:900;}
   .eq b{
@@ -350,7 +394,17 @@
   .result-emoji{text-align:center;font-size:38px;margin-top:6px;min-height:44px;}
 
   .done{text-align:center;font-size:19px;font-weight:800;line-height:1.8;}
-  .done .big{font-size:54px;}
+  /* 结算页那个 🏆/🎉 是整页的主角,却和成绩、按钮一起"啪"地出现 ——
+     给它一个从小弹到大的入场,庆祝就有了一个开始的时刻。
+     inline-block:transform 对纯行内元素无效;.done 是 text-align:center,
+     所以不用再写 margin auto。
+     动画时长 .5s ≈ celebrate() 等的 --dur-base(240ms)+ 号角起音,
+     弹到位和彩带炸开正好前后脚 */
+  .done .big{
+    font-size:54px;display:inline-block;
+    animation:big-in .5s var(--ease-spring) both;
+  }
+  @keyframes big-in{from{opacity:0;transform:scale(.3);}}
   .big-btn{
     margin-top:16px;border:2px solid var(--line);border-radius:18px;
     background:var(--green);color:#fff;font-size:18px;font-weight:800;
@@ -392,6 +446,12 @@
     font-size:42px;padding:14px 0;box-shadow:var(--shadow);
     cursor:pointer;transition:transform .1s;overflow:hidden;
   }
+  /* 无图选项(emoji / 算式)也走贴纸底,和 .lhead .emoji、.p-emoji 一套。
+     三选一里混着一张水彩图和两个白底 emoji 时,那张图会显得"更像答案" ——
+     底色一致才是公平的三选一。
+     ⚠️ 必须排在 .opt.right / .opt.wrong 之前:两边特指度都是 0,2,0
+     (:not() 记它参数的特指度),靠先后顺序决胜,写到后面会把判分的绿/红盖掉 */
+  .opt:not(.haspic){background:linear-gradient(#F4F9FF,#E8F1FC);}
   .opt.haspic{padding:0;font-size:0;}
   .opt.haspic img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;}
   .opt:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
@@ -411,7 +471,9 @@
   @keyframes pop{50%{transform:scale(1.1);}}
   @keyframes shake{25%{transform:translateX(-6px);}75%{transform:translateX(6px);}}
   @media (prefers-reduced-motion: reduce){
-    .opt.right,.opt.wrong{animation:none;}
+    /* .ans-chip.wrong 用的是同一条 shake,以前漏在了外面 —— 判错时闯关的选项
+       照抖不误。答错的红底本身就是反馈,关掉抖动不丢信息 */
+    .opt.right,.opt.wrong,.ans-chip.wrong{animation:none;}
   }
 
   /* ===== 声音的两种"不正常"状态 =====
@@ -464,6 +526,12 @@
   @media (prefers-reduced-motion:reduce){
     .star-jar.bounce{animation:none;}
     .confetti{display:none;}
+    /* 角色化的三处动画一起关掉。机器人的"呼吸"是 infinite 的,
+       这类常驻循环动画对前庭敏感的人最难受,必须关。
+       ⚠️ .done .big 是 animation:...both —— 只写 animation:none 就够了
+       (none 之后 fill-mode 也不再起作用,不会卡在 opacity:0 上) */
+    .bot,.bot.happy{animation:none;}
+    .done .big{animation:none;}
   }
 
   /* ===== 轻量提示条(toast):目前只给「横滑换课」用 =====
@@ -473,10 +541,10 @@
      transition 自然变成瞬时显示/消失,不用再写一条 media 规则关动画。
      z-index 要高过飞星(60)—— 星星飞过去时提示条不该被盖住 */
   .toast{
-    position:fixed;left:50%;bottom:24px;z-index:70;
+    position:fixed;left:50%;bottom:var(--sp-5,24px);z-index:70;
     display:flex;align-items:center;gap:10px;
     max-width:calc(100vw - 32px);
-    padding:10px 10px 10px 16px;border-radius:99px;
+    padding:10px 10px 10px var(--sp-3,16px);border-radius:99px;
     background:rgba(30,42,64,.94);color:#fff;
     font-size:14px;font-weight:700;line-height:1.3;
     box-shadow:0 8px 24px rgba(20,30,50,.28);
@@ -522,14 +590,20 @@
       <button class="navbtn" id="prevLesson" aria-label="上一课" disabled>‹</button>
       <div class="lesson-title" id="lessonTitle"></div>
       <button class="navbtn" id="nextLesson" aria-label="下一课" disabled>›</button>
-      <div class="star-jar">⭐ <span id="stars">0</span></div>
+      <!-- 一个 ⭐ 加一个数字,不说是"什么的星":title 给家长悬停看,
+           aria-label 给读屏。role=status 让飞星落袋后的数字变化自动播报,
+           不用抢焦点(星罐在 sticky 顶栏里,任何时候都在屏上) -->
+      <div class="star-jar" role="status" aria-label="本课星数" title="本课星数">⭐ <span id="stars">0</span></div>
     </div>
     <div class="tabs">
       <!-- 走 tapPage 而不是直接 showPage:showPage 还被 gotoLesson / popstate 调用,
            那些是被动切页,不该出"点击"音效。音效只挂在真的手指按下的这条路上 -->
-      <button class="tab on" id="tabLearn" onclick="tapPage('learn')">📖 学一学</button>
-      <button class="tab" id="tabPractice" onclick="tapPage('practice')">🎤 问答闯关</button>
-      <button class="tab" id="tabQuiz" onclick="tapPage('quiz')">🎯 考一考</button>
+      <!-- aria-pressed 而不是 role=tab:role=tab 要配 tablist/tabpanel 和一整套
+           方向键漫游焦点才算数,只加一半反而更糟。这三个按钮本来就是"三选一的
+           开关",aria-pressed 一个属性就说清了,由 showPage 统一同步 -->
+      <button class="tab on" id="tabLearn" aria-pressed="true" onclick="tapPage('learn')">📖 学一学</button>
+      <button class="tab" id="tabPractice" aria-pressed="false" onclick="tapPage('practice')">🎤 问答闯关</button>
+      <button class="tab" id="tabQuiz" aria-pressed="false" onclick="tapPage('quiz')">🎯 考一考</button>
     </div>
   </div>
 </div>
@@ -551,7 +625,10 @@
 
 <!-- 词典弹窗 -->
 <div id="wpopWrap">
-  <div id="wpop">
+  <!-- ⚠️ 不写 aria-modal:这个弹窗常驻 DOM(要过渡就不能 display:none,
+       见 #wpopWrap 那段),aria-modal 会**一直**把整页对读屏藏起来。
+       关着的时候里面的 popWord/popCn 是空的,读屏扫过去也没内容 -->
+  <div id="wpop" role="dialog" aria-label="词典">
     <button class="pop-close" aria-label="关闭" onclick="closePop()">✕</button>
     <img class="pop-pic" id="popPic" alt="" loading="lazy">
     <div class="pw" id="popWord"></div>
@@ -1158,6 +1235,29 @@ function burst(fromEl){
   for(var i = 0; i < n; i++) piece(i);
 }
 
+/* 闯关页那个提问的小机器人:答对时跳一下。
+   ⚠️ 必须先摘 class 再强制重排:连着答对两题时,.happy 还挂在身上,
+   重复 add 不会重放动画(同 flyStar 里罐子弹跳、showPage 里换页动画那一手)。
+   ⚠️ animationend 之外还要挂 setTimeout 兜底:元素被换题的 innerHTML 抹掉、
+   或者动画被跳过时,animationend 根本不会来 —— 那时 off() 里的 removeEventListener
+   也就没人调,监听器会一直挂在一个已经离开文档的节点上。 */
+function botHappy(){
+  var el = document.getElementById("pBot");
+  if(!el || motionOff()) return;
+  el.classList.remove("happy");
+  void el.offsetWidth;
+  el.classList.add("happy");
+  var gone = false;
+  function off(){
+    if(gone) return;
+    gone = true;
+    el.classList.remove("happy");
+    el.removeEventListener("animationend", off);
+  }
+  el.addEventListener("animationend", off);
+  setTimeout(off, 800);
+}
+
 /* 进度条的增长动画。
    ⚠️ 题面是 innerHTML 整块重建的,新 <i> 一出生就是新宽度,CSS transition
    压根没有旧值可过渡 —— 直接写死宽度只会"闪"到新位置,看不见涨。
@@ -1743,6 +1843,13 @@ function renderLearn(){
 
     const head = document.createElement("div");
     head.className = "lhead";
+    /* 卡片头是个挂了 onclick 的 <div> —— 鼠标和手指能用,键盘完全够不着,
+       读屏也只念得出里面的字、说不出"这是能按的"。
+       补 role/tabindex 让它进 Tab 序列并被念成按钮;真正的触发在下面的 keydown。
+       ⚠️ 只改这一处。闯关/考一考的选项本来就是 <button>,不需要;
+       给动态重建的内容乱加 tabindex 会让 Tab 顺序每换一题就变一次 */
+    head.setAttribute("role", "button");
+    head.setAttribute("tabindex", "0");
     head.innerHTML = `
       <span class="slot">${
         c.image ? `<img class="thumb" src="${imgSrc(c.image)}" alt="" loading="lazy">`
@@ -1757,13 +1864,20 @@ function renderLearn(){
       // 页面滚动位置却不变,卡片就往上窜——看着像"底边钉住、朝上展开",
       // 头部连同刚点的词一起被顶出屏幕。展开后按位移把滚动补回去
       const anchor = head.getBoundingClientRect().top;
-      document.querySelectorAll(".lcard").forEach(x=>x.classList.remove("open"));
+      document.querySelectorAll(".lcard").forEach(x=>{
+        x.classList.remove("open");
+        // 收起别的卡时它们的 aria-expanded 也要跟着回 false,
+        // 否则读屏里会同时有好几张"已展开"的卡
+        const h = x.querySelector(".lhead");
+        if(h) h.setAttribute("aria-expanded", "false");
+      });
       stopAllSound();
       if(!wasOpen){
         // ⚠️ 必须在加 .open 之前建内容:空 dialog 的展开高度是 0,
         // 动画从 0fr 到 1fr 也还是 0,补位量到的同样是空盒子
         ensureDialog(d);
         d.classList.add("open");
+        head.setAttribute("aria-expanded", "true");
         SFX.pop();                 // 只在"展开"这一下响,收起是安静的
       }
       window.scrollBy(0, head.getBoundingClientRect().top - anchor);
@@ -1773,6 +1887,21 @@ function renderLearn(){
       // 第一次真的展开一张卡时,顺带把"长按能查词"演示给大人看一次
       if(!wasOpen) coachPress(d);
     };
+    head.setAttribute("aria-expanded", "false");
+    /* 回车/空格 = 点一下。空格必须 preventDefault:它在可聚焦元素上的默认行为
+       是往下滚一屏 —— 卡片刚展开页面就被翻走了,而展开的补位正是靠
+       scrollBy 精确算出来的,两边一起动就全乱了 */
+    head.addEventListener("keydown", e=>{
+      // ⚠️ 只认按在卡片头**自己**身上的键。里面还嵌着一颗 🔊 按钮,
+      // 在它上面按回车会先触发它自己的 click(念单词)、再把 keydown 冒泡上来 ——
+      // 不挡的话每念一次单词就顺手把卡片折起来(它的 stopPropagation 拦的是
+      // click,拦不住 keydown)
+      if(e.target !== head) return;
+      if(e.key === "Enter" || e.key === " " || e.key === "Spacebar"){
+        e.preventDefault();
+        head.onclick();
+      }
+    });
     const wordPlay = document.createElement("button");
     wordPlay.className = "mini word-play";
     wordPlay.textContent = "🔊";
@@ -1971,7 +2100,7 @@ function renderQuestion(){
   const barPct = tot.pct;
   pbox.innerHTML = `
     <div class="pbar"><i id="pBar" style="width:${barPct}%"></i></div>
-    <div class="progress">第 ${doneN+1} / ${total} 问</div>
+    <div class="progress"><span class="bot" id="pBot" aria-hidden="true">🤖</span>第 ${doneN+1} / ${total} 问</div>
     <div class="p-head">
       ${pic ? `<img class="pic mid" src="${imgSrc(pic)}" alt="" loading="lazy">`
             : c.eq ? `<div>${eqHTML(c.eq)}</div>`
@@ -2042,6 +2171,7 @@ function renderQuestion(){
         SFX.star();
         if(navigator.vibrate) navigator.vibrate(15);   // 安卓有震感,iOS 直接忽略
         burst(b);                 // 彩带在选项原地炸开
+        botHappy();               // 提问的那个机器人也跟着跳一下
         flyStar(b, 2);            // 星星飞进罐子,数字落袋才 +2(不再直接 addStars)
         // 答对就停在这儿:绿色选项留在屏幕上,出口(下一题 / 看答案)自己选。
         // 以前会在 2.6 秒后自动翻到答案页 —— 孩子正要点下一题,画面自己跳走了
@@ -2212,8 +2342,8 @@ function renderQuizQuestion(){
     <button class="speak-btn" id="qSpeak">🔊</button>
     <div class="opts ${nOpt===2?'two':''}">
       ${opts.map(o=>o.image
-        ? `<button class="opt haspic" data-p="${o.pic}"><img src="${imgSrc(o.image)}" alt="" loading="lazy"></button>`
-        : `<button class="opt" data-p="${o.pic}">${o.eq ? eqHTML(o.eq) : (o.emoji||"⬜")}</button>`
+        ? `<button class="opt haspic" data-p="${o.pic}" aria-label="${o.c.word}"><img src="${imgSrc(o.image)}" alt="${o.c.word}" loading="lazy"></button>`
+        : `<button class="opt" data-p="${o.pic}" aria-label="${o.c.word}">${o.eq ? eqHTML(o.eq) : (o.emoji||"⬜")}</button>`
       ).join("")}
     </div>`;
   growBar(document.getElementById("qBar"), qBarPct, barPct);
@@ -2337,8 +2467,14 @@ const PAGE_AT = {learn:0, practice:1, quiz:2};
 let lastPageAt = 0, pageAnimTimer = 0;
 function showPage(p, noAnim){
   ["learn","practice","quiz"].forEach(x=>{
-    document.getElementById("page"+x[0].toUpperCase()+x.slice(1)).classList.toggle("on", p===x);
-    document.getElementById("tab"+x[0].toUpperCase()+x.slice(1)).classList.toggle("on", p===x);
+    const cap = x[0].toUpperCase() + x.slice(1);
+    document.getElementById("page"+cap).classList.toggle("on", p===x);
+    const tb = document.getElementById("tab"+cap);
+    tb.classList.toggle("on", p===x);
+    // 「哪个页签是选中的」目前只靠黄底表示,读屏和高对比度模式下等于没有。
+    // showPage 是所有切页路径的必经之地(点页签 / 换课 / 前进后退),
+    // 同步写在这里就不会漏
+    tb.setAttribute("aria-pressed", p===x ? "true" : "false");
   });
   const at = PAGE_AT[p];
   const ms = durMs("--dur-base");

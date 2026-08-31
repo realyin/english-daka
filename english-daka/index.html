@@ -6,6 +6,7 @@
 <title>英语打卡 · 课程目录</title>
 <meta name="theme-color" content="#F0F7FF">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
 <!-- iOS 对 svg 的 apple-touch-icon 支持不好(多半会退回网页截图),写上无害;
      要真正好看得给它一张 png,但那需要引依赖来压图,先不做 -->
 <link rel="apple-touch-icon" href="icon.svg">
@@ -127,7 +128,7 @@
   /* 最近 7 天一天一个点。天天来的孩子看的就是这一行 —— 空心变实心是他能自己
      看懂的唯一"进度"。无记录时也照常显示 7 个空点:空着的格子才是要填的邀请 */
   .checkin{
-    max-width:360px;margin:16px auto 0;padding:9px 14px;
+    max-width:360px;margin:var(--sp-3,16px) auto 0;padding:9px 14px;
     background:#fff;border:2px solid var(--line,#DCE5F2);border-radius:16px;
     display:flex;align-items:center;justify-content:space-between;gap:12px;
     box-shadow:0 3px 10px rgba(43,58,85,.08);
@@ -196,6 +197,16 @@
   }
   .dot.on::before{background:var(--blue);width:24px;border-radius:5px;}
   .dot:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:8px;}
+  /* 节数多的组(字母课 11 节)按原尺寸要 11×30 + 10×2 = 350px,320px 屏上折成两行,
+     把下一个分组的标题一起顶下去,那一行圆点也就不再像"这一组有多长"了。
+     .many 只压**视觉**:圆点 9→6px、选中胶囊 24→16px、gap 归零,
+     点击区仍是 26×30px(手指 26px 够用,而竖向没被压)。
+     11×26=286px,320px 屏减掉 .shelf 的左右各 16px 正好剩 288px,单行放得下。
+     ⚠️ 别顺手把 .dot 的 height 也压下去 —— 竖向不是瓶颈,压了纯粹是变难点 */
+  .dots.many{gap:0;}
+  .dots.many .dot{width:26px;}
+  .dots.many .dot::before{width:6px;height:6px;}
+  .dots.many .dot.on::before{width:16px;border-radius:4px;}
 
   .note{
     max-width:520px;margin:20px auto 0;padding:14px 16px;
@@ -397,7 +408,32 @@ function renderContinue(lessons){
   if(rb) rb.classList.add("ghost");
 }
 
+/* 封面色 —— 旧写法是五色按**组内序号**循环,于是每个组的第一张永远是同一个粉色、
+   第二张永远是同一个蓝色:颜色只表达"你是这组的第几张",不表达"你属于哪一组"。
+   翻到第三屏时家长和孩子都认不出自己滑到哪儿了。
+   改成一组一个主色相,组内只在同色的 2~3 档深浅之间轮换 —— 色相认组,深浅分张。
+   ⚠️ 明度全部对齐现有 --c1..--c5 的水平(白底巨型字形的对比度 2.6~6.4:1),
+   任何一档都不许再往浅了调:封面上那个字号的白字是这一页唯一的信息,
+   浅一档就糊在底色里了。橙/绿两组的第三档试过都掉到 2.3~2.6 以下,所以只留两档。
+   ⚠️ 按**组名关键字**匹配(中英各写一条,课程数据两种写法都出现过);
+   匹配不上的组(比如以后的 8xx 绘本)照旧走五色循环,不至于没颜色。 */
 const COVER_COLORS = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)"];
+const GROUP_COLORS = [
+  {re:/字母|letter/i,        colors:["#2F7BEF","#1F63CC","#4C93FF"]},  /* 蓝 */
+  {re:/词族|word\s*family/i, colors:["#8557EA","#6E3FD1","#9C74F5"]},  /* 紫 */
+  {re:/拼读|phonics/i,       colors:["#EE8420","#C86A10"]},            /* 橙 */
+  {re:/常见词|sight/i,       colors:["#E85C93","#C9407A","#F0729F"]},  /* 粉 */
+  {re:/主题|topic/i,         colors:["#37A85B","#268A47"]},            /* 绿 */
+  {re:/数学|math/i,          colors:["#1F8FA8","#16748A","#2AA0BC"]},  /* 青 */
+  {re:/科学|science/i,       colors:["#2E8B74","#1F7160","#3A9E87"]}   /* 深绿 */
+];
+function coverColors(group){
+  const g = group ? String(group) : "";
+  for(let i = 0; i < GROUP_COLORS.length; i++){
+    if(GROUP_COLORS[i].re.test(g)) return GROUP_COLORS[i].colors;
+  }
+  return COVER_COLORS;
+}
 
 /* 卡片在架子上的位置 —— off 是它离中心的距离(可为小数,拖动时连续变化) */
 function placeCover(el, off){
@@ -449,6 +485,10 @@ function buildShelf(group, lessons, first){
   const stage = wrap.querySelector(".stage");
   const rack  = wrap.querySelector(".rack");
   const dots  = wrap.querySelector(".dots");
+  const palette = coverColors(group);
+  /* 8 节以上的组(字母课有 11 节)圆点会挤成两行,还把下一组的标题推下去 ——
+     视觉上收成迷你进度条(点击热区不动,单手点圆点比滑动省力,那是有用的) */
+  if(lessons.length >= 8) dots.classList.add("many");
 
   lessons.forEach((l, i) => {
     const [en, cn] = String(l.title).split(" · ");
@@ -459,7 +499,7 @@ function buildShelf(group, lessons, first){
     a.className = "cover";
     a.href = `app.html?lesson=${l.id}`;
     a.draggable = false;
-    a.style.setProperty("--c", COVER_COLORS[i % COVER_COLORS.length]);
+    a.style.setProperty("--c", palette[i % palette.length]);
     // 这一课攒了多少星:攒过才显示,0 星的课挂个「⭐ 0」等于提醒他没做
     const rec = SAVE.lessons[l.id];
     const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
