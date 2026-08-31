@@ -1,0 +1,272 @@
+{
+  "seq": 205,
+  "group": "词族 Word Family",
+  "badge": "-ad",
+  "title": "Word Family · -ad 词族",
+  "cards": [
+    {
+      "word": "-ad family",
+      "cn": "-ad 词族",
+      "tag": "CVC",
+      "image": "images/wf-ad.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -ad make?",
+          "a": [
+            "Ad makes the sound /ad/."
+          ],
+          "key": [
+            "/ad/"
+          ],
+          "q_cn": "-ad 发什么音？",
+          "a_cn": [
+            "-ad 发 /æd/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-ad-make-570eaf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-ad-ea2591.mp3"
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -ad family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -ad 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-it-s-ad-family-8ed62f.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-ad-family-c77708.mp3"
+    },
+    {
+      "word": "dad",
+      "cn": "爸爸",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/dæd/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-dad.mp3"
+      },
+      "image": "images/wf-ad-dad.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, a, d?",
+          "a": [
+            "/d/ /a/ /d/, dad.",
+            "This is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "d-a-d 怎么拼读？",
+          "a_cn": [
+            "/d/ /æ/ /d/，dad。",
+            "这是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-d-a-d-d6714d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3",
+            "audio/sentences/k2-wf-ad/a-this-is-my-dad-b8089e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-dad-78b10b.mp3"
+    },
+    {
+      "word": "sad",
+      "cn": "伤心的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/sæd/",
+        "parts": [
+          {
+            "text": "s",
+            "sound": "s",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "s",
+          "sound": "s"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-sad.mp3"
+      },
+      "image": "images/wf-ad-sad.webp",
+      "dialog": [
+        {
+          "q": "How do you read s, a, d?",
+          "a": [
+            "/s/ /a/ /d/, sad.",
+            "I am sad."
+          ],
+          "key": [
+            "sad"
+          ],
+          "q_cn": "s-a-d 怎么拼读？",
+          "a_cn": [
+            "/s/ /æ/ /d/，sad。",
+            "我很难过。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-s-a-d-8aacfb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-s-a-d-sad-cb7140.mp3",
+            "audio/sentences/k2-wf-ad/a-i-am-sad-394a59.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-sad-ec83f0.mp3"
+    },
+    {
+      "word": "bad",
+      "cn": "坏的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/bæd/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-bad.mp3"
+      },
+      "image": "images/wf-ad-bad.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, a, d?",
+          "a": [
+            "/b/ /a/ /d/, bad.",
+            "It is bad."
+          ],
+          "key": [
+            "bad"
+          ],
+          "q_cn": "b-a-d 怎么拼读？",
+          "a_cn": [
+            "/b/ /æ/ /d/，bad。",
+            "这是不好的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-b-a-d-69fb8c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3",
+            "audio/sentences/k2-wf-ad/a-it-is-bad-541d0a.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-bad-bcae35.mp3"
+    }
+  ],
+  "word_audio": {
+    "-ad family": "audio/words/ad-family.mp3",
+    "a": "audio/words/a.mp3",
+    "ad": "audio/words/ad.mp3",
+    "am": "audio/words/am.mp3",
+    "b": "audio/words/b.mp3",
+    "bad": "audio/words/bad.mp3",
+    "d": "audio/words/d.mp3",
+    "dad": "audio/words/dad.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "family": "audio/words/family.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "my": "audio/words/my.mp3",
+    "read": "audio/words/read.mp3",
+    "s": "audio/words/s.mp3",
+    "sad": "audio/words/sad.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "seq": 403,
+  "group": "常见词 Sight Words",
+  "badge": "here",
+  "title": "Sight Words · here / is",
+  "cards": [
+    {
+      "word": "here",
+      "cn": "这里",
+      "tag": "sight word",
+      "image": "images/sw-here.webp",
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word here."
+          ],
+          "key": [
+            "here"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 here。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-it-s-sight-word-here-522a28.mp3"
+          ]
+        },
+        {
+          "q": "Where is the fox?",
+          "a": [
+            "Here is a fox."
+          ],
+          "key": [
+            "here"
+          ],
+          "q_cn": "狐狸在哪里？",
+          "a_cn": [
+            "狐狸在这里。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-where-is-the-fox-cef8d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-here-is-a-fox-08b888.mp3"
+          ]
+        },
+        {
+          "q": "Can you come here?",
+          "a": [
+            "Yes, I come here."
+          ],
+          "key": [
+            "come"
+          ],
+          "q_cn": "你能过来吗？",
+          "a_cn": [
+            "能，我过来了。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-can-you-come-here-5dfcaf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-yes-i-come-here-f39e03.mp3"
+          ],
+          "image": "images/sw-here-come.webp"
+        }
+      ],
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-sw-here-is/q-which-one-is-here-57aad8.mp3"
+    },
+    {
+      "word": "is",
+      "cn": "是",
+      "tag": "sight word",
+      "image": "images/sw-is.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word is."
+          ],
+          "key": [
+            "is"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 is。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-it-s-sight-word-is-c3c8c1.mp3"
+          ]
+        }
+      ],
+      "added": "2026-08-31",
+      "quiz_audio": "audio/sentences/k2-sw-here-is/q-which-one-is-is-bf5fb7.mp3"
+    },
+    {
+      "word": "pilot",
+      "cn": "飞行员",
+      "tag": "sight word",
+      "image": "images/sw-is-pilot.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a pilot."
+          ],
+          "key": [
+            "pilot"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是飞行员。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-this-is-a-pilot-693a93.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is/q-which-one-is-pilot-7dcb4b.mp3"
+    },
+    {
+      "word": "circle",
+      "cn": "圆形",
+      "tag": "sight word",
+      "image": "images/sw-is-circle.webp",
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It is a circle."
+          ],
+          "key": [
+            "circle"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是圆形。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-it-is-a-circle-124171.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is/q-which-one-is-circle-690d3b.mp3"
+    },
+    {
+      "word": "summer",
+      "cn": "夏天",
+      "tag": "sight word",
+      "image": "images/sw-is-summer.webp",
+      "dialog": [
+        {
+          "q": "What season is it?",
+          "a": [
+            "It's summer."
+          ],
+          "key": [
+            "summer"
+          ],
+          "q_cn": "现在是什么季节？",
+          "a_cn": [
+            "现在是夏天。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-here-is/q-what-season-is-it-c04642.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-here-is/a-it-s-summer-723917.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-sw-here-is/q-which-one-is-summer-c4108a.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "can": "audio/words/can.mp3",
+    "circle": "audio/words/circle.mp3",
+    "come": "audio/words/come.mp3",
+    "fox": "audio/words/fox.mp3",
+    "here": "audio/words/here.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "job": "audio/words/job.mp3",
+    "pilot": "audio/words/pilot.mp3",
+    "season": "audio/words/season.mp3",
+    "shape": "audio/words/shape.mp3",
+    "sight": "audio/words/sight.mp3",
+    "summer": "audio/words/summer.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "word": "audio/words/word.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

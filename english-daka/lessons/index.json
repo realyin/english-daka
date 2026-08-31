@@ -91,7 +91,7 @@
     {
       "id": "k2-wf-an",
       "title": "Word Family · -an 词族",
-      "words": 8,
+      "words": 5,
       "group": "词族 Word Family",
       "badge": "-an",
       "seq": 201
@@ -99,18 +99,42 @@
     {
       "id": "k2-wf-at",
       "title": "Word Family · -at 词族",
-      "words": 7,
+      "words": 8,
       "group": "词族 Word Family",
       "badge": "-at",
       "seq": 202
     },
     {
-      "id": "k2-wf-mixed",
-      "title": "Word Family · it / at / ot / ad / id",
-      "words": 16,
+      "id": "k2-wf-it",
+      "title": "Word Family · -it 词族",
+      "words": 4,
       "group": "词族 Word Family",
       "badge": "-it",
       "seq": 203
+    },
+    {
+      "id": "k2-wf-ot",
+      "title": "Word Family · -ot 词族",
+      "words": 4,
+      "group": "词族 Word Family",
+      "badge": "-ot",
+      "seq": 204
+    },
+    {
+      "id": "k2-wf-ad",
+      "title": "Word Family · -ad 词族",
+      "words": 4,
+      "group": "词族 Word Family",
+      "badge": "-ad",
+      "seq": 205
+    },
+    {
+      "id": "k2-wf-id",
+      "title": "Word Family · -id 词族",
+      "words": 4,
+      "group": "词族 Word Family",
+      "badge": "-id",
+      "seq": 206
     },
     {
       "id": "k2-cvc-a",
@@ -162,19 +186,35 @@
     },
     {
       "id": "k2-sw-on-the-go",
-      "title": "Sight Words · go / by / on / the",
-      "words": 10,
+      "title": "Sight Words · go / on",
+      "words": 11,
       "group": "常见词 Sight Words",
       "badge": "go",
       "seq": 402
     },
     {
-      "id": "k2-sw-here-is-to-and-all",
-      "title": "Sight Words · here / is / to / and / all",
-      "words": 16,
+      "id": "k2-sw-here-is",
+      "title": "Sight Words · here / is",
+      "words": 5,
       "group": "常见词 Sight Words",
       "badge": "here",
       "seq": 403
+    },
+    {
+      "id": "k2-sw-to-and",
+      "title": "Sight Words · to / and",
+      "words": 7,
+      "group": "常见词 Sight Words",
+      "badge": "to",
+      "seq": 404
+    },
+    {
+      "id": "k2-sw-all",
+      "title": "Sight Words · all",
+      "words": 5,
+      "group": "常见词 Sight Words",
+      "badge": "all",
+      "seq": 405
     },
     {
       "id": "k2-sw-from-have",
@@ -182,7 +222,7 @@
       "words": 6,
       "group": "常见词 Sight Words",
       "badge": "from",
-      "seq": 404
+      "seq": 406
     },
     {
       "id": "k2-zoo",
@@ -235,6 +275,21 @@
       "badge": "♻️",
       "cover": "images/cover-recycling.webp",
       "seq": 701
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-08-31",
+      "cards": 8,
+      "lessons": [
+        "k2-sw-all",
+        "k2-sw-here-is",
+        "k2-sw-on-the-go",
+        "k2-sw-to-and",
+        "k2-wf-ad",
+        "k2-wf-id",
+        "k2-wf-ot"
+      ]
     }
   ]
 }
