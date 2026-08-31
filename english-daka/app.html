@@ -2613,7 +2613,9 @@ function playQuestion(){
 
 /* 答完这题的出口。「看答案」只在还没翻答案时给,翻过就只剩下一题 */
 function showNext(gotStar){
-  document.querySelectorAll(".p-hint").forEach(x=>x.style.display="none");
+  // visibility 而不是 display:hint 行(~34px)被抽走会让整页突然变短,
+  // 选项和按钮往上一跳(实测点名);留着占位,只是看不见
+  document.querySelectorAll(".p-hint").forEach(x=>x.style.visibility="hidden");
   document.getElementById("pCtrl").innerHTML = `
     ${gotStar ? '' : '<button class="btn" onclick="selfStar(this)">我会读了 ' + IC_STAR + '</button>'}
     ${pRevealed ? '' : `<button class="btn" onclick="reveal(${gotStar})">${IC_EYE} 看答案</button>`}
