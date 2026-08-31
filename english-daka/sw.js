@@ -15,7 +15,7 @@
    改 precache 清单或缓存策略时,把 CACHE 的版本号往上加一位,
    activate 会把旧版整个删掉。
    ================================================================ */
-const CACHE = "daka-v3";
+const CACHE = "daka-v4";
 
 /* 壳:没有它们页面根本打不开。装 SW 的时候一次性拉齐。
    ⚠️ preview-img.js 436KB 也在里面 —— 它只在直接打开 app.html(不带 ?lesson=)

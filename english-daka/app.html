@@ -827,6 +827,11 @@ function dayDiff(a, b){ return Math.round((ymdDate(b) - ymdDate(a)) / 864e5); }
 function revMark(card, ok){
   if(CUR_ID !== "review" || !card || !card._src || card._retry) return;
   var o = revStore.load();
+  // 一张卡一天只记一笔:当天已经记过账(不管对错)就只当练习,不再动盒子。
+  // 否则错题本「再来一轮」连刷半小时,一张卡能靠短时记忆从盒 0 刷到毕业 ——
+  // 短时记忆不算记住,间隔重复要的恰恰是隔夜验证。每天的第一答才定性。
+  var prev = o[revKey(card)];
+  if(prev && prev.t === today()) return;
   var r = revRec(o, revKey(card));
   if(ok) r.b = Math.min(r.b + 1, REV_GAP.length - 1);
   else { if(r.b > 1) r.b -= 1; r.w += 1; }
@@ -870,6 +875,9 @@ function streakOf(days){
    "review"(混合复习)→ 只记总数和打卡日(它不是一节课,不该有自己的星罐)
    null(没带 ?lesson= 的预览课)→ 什么都不写 */
 var CUR_ID = null;
+/* review 的变体(URL 的 ?pick=):"wrong" = 错题本(账本切片),null = 正常调度。
+   CUR_ID 两种变体下都是 "review" —— 记账、不建星罐、不存快照这些特例要照单全收 */
+var REVIEW_PICK = null;
 let stars = 0;                                 // 语义:**本课**累计星数(不是总数)
 function addStars(n){
   stars += n;
@@ -2117,8 +2125,21 @@ function startPractice(){
     pOrder.push(c); n += k;
     if(n >= ROUND_MAX) break;
   }
+  // 一张能出的卡都没有(错题本练空了,或临时课全是虚词卡)——
+  // 别让 curCard() 摸空翻车,给一页像样的着陆
+  if(!pOrder.length){ pbox.innerHTML = emptyRoundHTML(); return; }
   pc = 0; pq = 0; pBarPct = 0; pRetryN = 0;
   askQuestion();
+}
+/* 空着陆页。错题本的"空"不是缺失是成就,给庆祝不给灰色的"暂无数据" */
+function emptyRoundHTML(){
+  return REVIEW_PICK === "wrong"
+    ? `<div class="done"><div class="big">🎉</div>错题本空啦！<br>错过的词都练熟了
+         <div class="done-acts">
+           <a class="big-btn" href="app.html?lesson=review">去混合复习</a>
+           <a class="big-btn ghost" href="index.html">回目录</a>
+         </div></div>`
+    : `<div class="done"><div class="big">🤔</div>这一课没有可以出题的卡片</div>`;
 }
 function curCard(){ return pOrder[pc]; }
 function curQA(){ return askable(curCard())[pq]; }
@@ -2355,10 +2376,10 @@ function doneActsHTML(again){
    重抽失败(断网)就拿现有这批再来,别让按钮点了没反应。 */
 async function reviewAgain(){
   try{
-    lesson = await buildReviewLesson();
+    lesson = await buildReviewLesson(REVIEW_PICK);
     renderLearn();
   }catch(e){}
-  startPractice();
+  startPractice();   // 错题本这轮练空了也没关系:空卡池守卫会给庆祝页
 }
 
 function finishPractice(){
@@ -2906,7 +2927,7 @@ addEventListener("pointerup", e => {
 const REVIEW_ROUND = 10;      // 复习一轮的卡数(每卡一问)。比课内 12 短:这是叠在新课上的第二任务
 const REV_PER_LESSON = 2;     // 一轮里同一课最多几张
 
-async function buildReviewLesson(){
+async function buildReviewLesson(pick){
   const idx = await (await fetch(LESSON_BASE + "index.json", {cache:"no-store"})).json();
   const metas = idx.lessons || [];
   const all = await Promise.all(metas.map(l =>
@@ -2927,8 +2948,30 @@ async function buildReviewLesson(){
       pool.push(Object.assign({}, c, {dialog: dialog, _src: metas[i].id}));
     });
   });
+  if(pick === "wrong")
+    return {title: "错题本 · 把它们练熟", cards: pickWrongBook(pool),
+            word_audio, praise_audio, ordered: true};
   return {title: "混合复习 · 各课随机抽题", cards: pickReviewRound(pool),
           word_audio, praise_audio, ordered: true};
+}
+
+/* 错题本:账本的一个切片,不是第二套数据 —— w>0(错过)且 b≤3(还没爬到 7 天盒)。
+   专练答对照常升盒,爬到盒 4 自动毕业出本,本子自己变薄;毕业的卡不消失,
+   仍按 7/14 天间隔出现在混合复习里。排序按"最需要练":盒号升序 → 错次降序 →
+   最久没见优先。不限量:学一学翻的是整本,闯关一轮天然被 ROUND_MAX 截住,
+   按这个顺序取最前面的 —— 屡错的卡永远先上。 */
+function pickWrongBook(pool){
+  var o = revStore.load();
+  var book = pool.filter(function(c){
+    if(!o[revKey(c)]) return false;            // 没进过账的新卡谈不上"错"
+    var r = revRec(o, revKey(c));
+    return r.w > 0 && r.b <= 3;
+  });
+  return book.sort(function(a, b){
+    var ra = revRec(o, revKey(a)), rb = revRec(o, revKey(b));
+    return (ra.b - rb.b) || (rb.w - ra.w) ||
+           (ra.t < rb.t ? -1 : ra.t > rb.t ? 1 : 0);
+  });
 }
 
 function pickReviewRound(pool){
@@ -3023,7 +3066,8 @@ function fillPreviewImages(){
   CUR_ID = id;                   // 没带 ?lesson= 时是 null:预览课不记账
   lesson = FALLBACK_LESSON;
   if(id === "review"){
-    try{ lesson = await buildReviewLesson(); }catch(e){}
+    REVIEW_PICK = new URLSearchParams(location.search).get("pick");
+    try{ lesson = await buildReviewLesson(REVIEW_PICK); }catch(e){}
   }else if(id){
     try{
       const r = await fetch(LESSON_BASE + id + ".json");
@@ -3053,7 +3097,12 @@ function fillPreviewImages(){
   applyLesson();
   // 复习默认落在闯关:复习的第一动作应该是"考",不是翻卡重读(测试效应)。
   // 学一学页签仍在,想翻随时切。走 showPage 不走 tapPage —— 这不是孩子按的页签
-  if(id === "review") showPage("practice", true);
+  if(id === "review"){
+    showPage("practice", true);
+    // 错题本空着进来:applyLesson 摆的「开 始」按钮点了也没题可出,直接上庆祝页
+    if(REVIEW_PICK === "wrong" && !(lesson.cards || []).length)
+      pbox.innerHTML = emptyRoundHTML();
+  }
 })();
 </script>
 </body>

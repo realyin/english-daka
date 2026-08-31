@@ -238,6 +238,9 @@
   <div class="checkin" id="checkin"></div>
   <div class="acts" id="acts">
     <a class="review-btn" id="reviewBtn" href="app.html?lesson=review">🔄 混合复习 · 各课随机抽题</a>
+    <!-- 错题本入口常驻,不因空而藏:空的时候点进去是庆祝页,空不是缺失是成就。
+         有在练的词时由脚本把数带上;始终是白底次按钮,主行动留给复习/继续学 -->
+    <a class="review-btn ghost" id="wrongBtn" href="app.html?lesson=review&pick=wrong">📕 错题本</a>
   </div>
 </header>
 <div id="shelves"></div>
@@ -407,6 +410,27 @@ function renderContinue(lessons){
   const rb = document.getElementById("reviewBtn");
   if(rb) rb.classList.add("ghost");
 }
+
+/* 错题本按钮带数:「N 个词在练」。数据来自 app.html 维护的复习账本
+   daka.rev.v1(每卡 {b:盒号,t:最后见到,w:错次}),这里只读不写;
+   在练 = 错过(w>0)且还没爬到 7 天盒(b≤3),口径必须和 app.html 的
+   pickWrongBook 一致,不然按钮报 5 个点进去只有 3 个。
+   读不到(隐私模式/账本还没建)就保持素颜按钮 —— 入口不藏。 */
+function renderWrongCount(){
+  const el = document.getElementById("wrongBtn");
+  if(!el) return;
+  try{
+    const o = JSON.parse(localStorage.getItem("daka.rev.v1") || "{}");
+    let n = 0;
+    for(const k in o){
+      const r = o[k];
+      if(r && typeof r === "object" && r.w > 0 &&
+         typeof r.b === "number" && r.b <= 3) n++;
+    }
+    if(n > 0) el.textContent = "📕 错题本 · " + n + " 个词在练";
+  }catch(e){}
+}
+renderWrongCount();
 
 /* 封面色 —— 旧写法是五色按**组内序号**循环,于是每个组的第一张永远是同一个粉色、
    第二张永远是同一个蓝色:颜色只表达"你是这组的第几张",不表达"你属于哪一组"。
