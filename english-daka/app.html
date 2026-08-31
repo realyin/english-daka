@@ -472,7 +472,9 @@
   .ans-chip.wrong{background:#FFD9D9;animation:shake .3s;}
   @keyframes shake{25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
   .progress{text-align:center;font-size:13px;color:#5E6E8C;margin-bottom:8px;}
-  .result-emoji{text-align:center;font-size:38px;margin-top:6px;min-height:44px;}
+  /* 高度写死:min-height 44 挡不住 38px emoji 的真实行高(~50px),
+     🎉 一出现这行就长 6px,整页跟着变长(实测点名)。空态就按 50 占好位 */
+  .result-emoji{text-align:center;font-size:38px;margin-top:6px;height:50px;line-height:50px;}
 
   .done{text-align:center;font-size:19px;font-weight:800;line-height:1.8;}
   /* 结算页那个奖杯/庆祝贴纸(见下面的 .bigart)是整页的主角,
