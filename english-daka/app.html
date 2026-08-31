@@ -3288,9 +3288,9 @@ function fillPreviewImages(){
   }catch(e){}
   history.replaceState({lesson:id}, "", location.href);
   applyLesson();
-  // 复习默认落在闯关:复习的第一动作应该是"考",不是翻卡重读(测试效应)。
-  // 学一学页签仍在,想翻随时切。走 showPage 不走 tapPage —— 这不是孩子按的页签
-  if(id === "review") showPage("practice", true);
+  // 复习和普通课一样落在「学一学」(HTML 里 learn 自带 .on,什么都不用做)。
+  // 曾经让复习直接落在闯关(理由是"先考不先翻卡"的测试效应),家长明确要求
+  // 改回:孩子的习惯是先看一遍再答,直接进闯关像"还没复习就被考"
 })();
 </script>
 </body>
