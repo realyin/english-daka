@@ -1084,23 +1084,37 @@ function downloadJSON(text, name){
 function doExport(){
   const text = JSON.stringify(buildBackup(), null, 2);
   const name = "daka-backup-" + today() + ".json";
+  const fallback = () => {
+    if(downloadJSON(text, name)){
+      markBackedUp();
+      showToast("存档已导出：" + name);
+    }else{
+      showToast("这台设备存不了文件");
+    }
+  };
+  /* 分享面板只留给触屏设备(手机/平板):那里"下载的 json"多半只是躺进
+     下载目录,分享面板才能直接丢进微信收藏/网盘/AirDrop。
+     桌面(精确指针)直接下载 —— 桌面 Chrome 的 canShare({files}) 也会点头,
+     但 share() 常被系统一口回绝,而且桌面用户预期的本来就是"下载一个文件"。 */
+  const coarse = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches);
   try{
-    if(navigator.share && navigator.canShare && typeof File === "function"){
+    if(coarse && navigator.share && navigator.canShare && typeof File === "function"){
       const f = new File([text], name, {type:"application/json"});
       if(navigator.canShare({files:[f]})){
         navigator.share({files:[f], title:"打卡存档"})
           .then(() => { markBackedUp(); showToast("存档已导出"); })
-          .catch(() => {});                    // 取消分享不是错误,不打扰
+          .catch(err => {
+            /* 只有 AbortError 是"用户在面板上点了取消",安静退下;
+               其它拒绝(NotAllowedError 等)是这条路本身走不通 ——
+               必须回退下载,不然点导出就是无声无息(桌面实测就是这样) */
+            if(err && err.name === "AbortError") return;
+            fallback();
+          });
         return;
       }
     }
   }catch(e){}                                  // 面板不可用就当没有这条路,往下走回退
-  if(downloadJSON(text, name)){
-    markBackedUp();
-    showToast("存档已导出：" + name);
-  }else{
-    showToast("这台设备存不了文件");
-  }
+  fallback();
 }
 
 /* 存档摘要"打卡 X 天 / Y 星"。星数按各课记录求和,和上面统计块的「总星星」
