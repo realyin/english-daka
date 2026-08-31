@@ -273,6 +273,28 @@ function streakOf(days){
   return n;
 }
 
+/* 一次性示能演示的记账 —— 键 "daka.coach"({shelf:1,card:1,press:1}),
+   和 app.html 里的是同一份代码、同一个键,改一处要同步改两处。
+   ⚠️ 读不到(隐私模式抛错)一律当"做过了":标记存不住的浏览器里,
+   演示会每次进页面都放一遍,那比不演示更烦人。 */
+var COACH_KEY = "daka.coach";
+function coachDone(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    return !!(o && typeof o === "object" && o[k]);
+  }catch(e){ return true; }
+}
+function markCoach(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    if(!o || typeof o !== "object") o = {};
+    o[k] = 1;
+    localStorage.setItem(COACH_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+
 /* 封面流的停留位置记在 sessionStorage(不是 localStorage):从课程页返回时
    回到刚才那张,但下次重新打开应用还是从头开始 —— 位置是"这一趟"的上下文 */
 var SHELF_KEY = "daka.shelf";
@@ -375,7 +397,7 @@ function placeCover(el, off){
   el.setAttribute("tabindex", a < 0.5 ? "0" : "-1");
 }
 
-function buildShelf(group, lessons){
+function buildShelf(group, lessons, first){
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
@@ -554,6 +576,32 @@ function buildShelf(group, lessons){
   pos = target = startAt;
 
   paint();
+
+  /* 一次性示能演示:第一个分组自己往右挪半张再弹回来 ——「这一排是能滑的」
+     这件事,演一下比副标题那行字管用得多(孩子不认字,那行是写给家长的)。
+     go() 收的是连续位置,clamp 不取整,所以 0.55 是合法目标,弹簧照常动画。
+     只在从第一张起步时演:停在中间某张时往右挪会盖掉"回到刚才那张"的语义。 */
+  if(first && LAST >= 1 && !coachDone("shelf")){
+    if(SLOW){ markCoach("shelf"); }
+    else if(startAt === 0){
+      markCoach("shelf");
+      var peeked = false;
+      var cancelPeek = function(){                 // 孩子先动手了就别演,他已经知道了
+        peeked = true;
+        stage.removeEventListener("pointerdown", cancelPeek);
+      };
+      stage.addEventListener("pointerdown", cancelPeek);
+      setTimeout(function(){
+        if(peeked) return;
+        go(0.55);
+        setTimeout(function(){
+          stage.removeEventListener("pointerdown", cancelPeek);
+          if(peeked) return;                       // 演到一半被拨走,别再拉回 0
+          go(0);
+        }, 500);
+      }, 800);
+    }
+  }
   return wrap;
 }
 
@@ -571,7 +619,7 @@ function buildShelf(group, lessons){
       byGroup.get(g).push(l);
     });
     renderContinue(data.lessons);
-    order.forEach(g => shelves.appendChild(buildShelf(g, byGroup.get(g))));
+    order.forEach((g, i) => shelves.appendChild(buildShelf(g, byGroup.get(g), i === 0)));
   }catch(e){
     document.getElementById("note").innerHTML =
       "课程清单需要通过本地服务器访问：<br>在项目目录运行 <b>python3 -m http.server</b>，<br>然后浏览器打开 <b>http://localhost:8000</b>";

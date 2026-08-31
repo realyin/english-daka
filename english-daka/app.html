@@ -212,14 +212,38 @@
      改用一层透明 ::after 单独扩热区:背景和排版都不动,伪元素又不是事件目标,
      e.target 仍是 .w,line 600 的 closest(".w") 判断照旧成立。
      横向只扩 1px(视觉 3px),把词间空白留给"点空白播整句"。 */
-  .w{padding:1px 2px;border-radius:6px;cursor:pointer;position:relative;}
+  /* ⚠️ display 从 inline 改成 inline-block 是为了让 .pressing 的 scale 生效
+     (transform 对非替换的行内元素无效)。代价是背景框高度改由自身行高决定 ——
+     所以要把 line-height 压回 1.25:直接继承气泡的 1.55 会让 .hl 的黄底长到
+     27px,又变回上面那段说的"跨行压住相邻行的字"。vertical-align:baseline
+     保证它和词间空格里的文字对得上。 */
+  .w{
+    padding:1px 2px;border-radius:6px;cursor:pointer;position:relative;
+    display:inline-block;line-height:1.25;vertical-align:baseline;
+    transition:background var(--dur-fast) var(--ease-out),
+               transform var(--dur-fast) var(--ease-out);
+  }
   .w::after{content:"";position:absolute;inset:-9px -1px;}
   .w.hl{background:var(--yellow);}
+  /* 按住查词的过程反馈:按下 120ms 后才亮(轻点不闪),450ms 弹出词典时撤掉。
+     底色比 .hl 浅一档 —— 这是"正在按住",不是"正在念" */
+  .w.pressing{background:#FFE9A8;transform:scale(1.08);}
   .trans{
     display:none;font-size:12.5px;color:#5E6E8C;font-weight:600;
     margin-top:4px;padding-left:36px;
   }
   .sline.showzh .trans{display:block;}
+
+  /* 一次性的手势提示条(第一次展开卡片时浮一下,4 秒自己淡掉)。
+     这一条是给家长看的 —— 孩子不认字,长按这个手势没人告诉他就发现不了。
+     做得小、占一行、插在问句气泡上方,不挡内容 */
+  .coach-tip{
+    width:fit-content;max-width:92%;margin:2px auto 8px;padding:6px 13px;
+    border-radius:999px;background:#EFE6FF;color:var(--purple);
+    font-size:12.5px;font-weight:800;text-align:center;line-height:1.4;
+    transition:opacity var(--dur-base) var(--ease-out);
+  }
+  .coach-tip.out{opacity:0;}
 
   /* 词典弹窗 */
   /* ⚠️ 蒙层常驻 display:block(要过渡就不能 display:none),挡不挡得住整页点击
@@ -250,6 +274,13 @@
     border:none;background:none;cursor:pointer;
     font-size:16px;font-weight:900;line-height:1;color:var(--muted,#5E6E8C);
     display:flex;align-items:center;justify-content:center;
+  }
+  /* 词典弹窗的缩略图:本课有这张卡的配图就顶上去。孩子不认字,"cat = 猫"
+     这行中文对他同样是图形 —— 图才是他能直接读懂的那个解释。
+     常驻在 DOM 里,由 JS 控制 display,找不到图就藏起来 */
+  #wpop .pop-pic{
+    display:none;width:120px;height:160px;object-fit:cover;
+    border-radius:14px;margin:0 auto 12px;border:2px solid var(--line);
   }
   #wpop .pw{font-size:30px;font-weight:900;color:var(--purple);}
   #wpop .pc{font-size:16px;font-weight:700;margin-top:8px;line-height:1.5;}
@@ -302,6 +333,10 @@
   .ans-chip:active{transform:translateY(3px);box-shadow:var(--shadow-sm);}
   /* 正在念到的那个选项高亮 —— 孩子靠"哪个在响"把声音和字对上 */
   .ans-chip.speaking{background:var(--yellow,#FFD34D);transform:scale(1.08);}
+  /* 两段式选项的中间态:点过一下(听过音了),再点同一个才算选定。
+     用 outline 不用 border —— 边框会改变尺寸让整行选项跳一下;
+     蓝描边压在黄底 chip 上也够显眼 */
+  .ans-chip.armed{outline:3px solid var(--blue);outline-offset:2px;}
   .ans-chip.right{background:var(--green);color:#fff;}
   .ans-chip.wrong{background:#FFD9D9;animation:shake .3s;}
   @keyframes shake{25%{transform:translateX(-5px);}75%{transform:translateX(5px);}}
@@ -477,7 +512,7 @@
 
 <div id="pages">
 <div class="page on" id="pageLearn">
-  <p class="hint" id="learnHint">🔊 听整句 · 点单词听单词 · 按住单词看意思 · 中 看翻译</p>
+  <p class="hint" id="learnHint">🔊 点句听句 · 点词听词 · 按住看意思 · 👁 翻译</p>
   <div id="learnList"></div>
 </div>
 
@@ -494,6 +529,7 @@
 <div id="wpopWrap">
   <div id="wpop">
     <button class="pop-close" aria-label="关闭" onclick="closePop()">✕</button>
+    <img class="pop-pic" id="popPic" alt="">
     <div class="pw" id="popWord"></div>
     <div class="pc" id="popCn"></div>
     <button class="mini" onclick="popSpeak()">🔊</button>
@@ -608,6 +644,28 @@ var store = {
     catch(e){ return false; }
   }
 };
+/* 一次性示能演示的记账 —— 单独一个键 "daka.coach"({shelf:1,card:1,press:1}),
+   和进度分开:清演示不该把星星一起清掉,反过来也一样。
+   ⚠️ coachDone 读不到(隐私模式抛错)一律返回 true = "做过了" —— 存不住标记的
+   浏览器里,演示会每次进页面都放一遍,那比不演示更烦人。 */
+var COACH_KEY = "daka.coach";
+function coachDone(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    return !!(o && typeof o === "object" && o[k]);
+  }catch(e){ return true; }
+}
+function markCoach(k){
+  try{
+    var s = localStorage.getItem(COACH_KEY);
+    var o = s ? JSON.parse(s) : null;
+    if(!o || typeof o !== "object") o = {};
+    o[k] = 1;
+    localStorage.setItem(COACH_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+
 function rec4(o, id){                          // 取/建某课的记录
   var r = o.lessons[id];
   if(!r || typeof r !== "object") r = {stars:0, done:0};
@@ -1071,8 +1129,27 @@ function lookup(w){
 }
 
 let popCurrentWord = null;
+/* 本课有没有这个词的配图。匹配只做两档:精确、以及去掉复数 s ——
+   双向 startsWith 这类"聪明"匹配会把 cat 配到 caterpillar 的图上,
+   给一个不认字的孩子配错图比不配图更糟 */
+function popPicSrc(word){
+  var cards = (lesson && lesson.cards) || null;
+  if(!cards) return null;
+  var w = String(word).toLowerCase();
+  var alt = (w.length > 2 && w.charAt(w.length - 1) === "s") ? w.slice(0, -1) : null;
+  var i, cw;
+  for(i = 0; i < cards.length; i++){
+    if(!cards[i].image) continue;
+    cw = String(cards[i].word || "").toLowerCase();
+    if(cw === w || (alt && cw === alt)) return imgSrc(cards[i].image);
+  }
+  return null;
+}
 function openPop(word){
   popCurrentWord = word;
+  var pic = document.getElementById("popPic"), src = popPicSrc(word);
+  if(src){ pic.src = src; pic.style.display = "block"; }
+  else   { pic.removeAttribute("src"); pic.style.display = "none"; }
   document.getElementById("popWord").textContent = word;
   const cn = lookup(word);
   const pc = document.getElementById("popCn");
@@ -1112,13 +1189,23 @@ function makeWordSpan(raw){
     };
     return sp;
   }
-  let timer = null, longed = false;
+  /* 长按 450ms 弹词典。整个过程原来是没有任何反馈的 —— 孩子按住不动,屏幕
+     也不动,他没法知道"再按一会儿就有东西",通常半路就松手了。
+     按下 120ms 后先把词点亮(轻点不会闪一下),弹出词典那一刻撤掉。
+     两个定时器要一起清:只清 timer 会把 .pressing 永久留在词上。 */
+  let timer = null, hold = null, longed = false;
+  const unpress = ()=>{
+    clearTimeout(hold); hold = null;
+    sp.classList.remove("pressing");
+  };
   const start = e=>{
     longed = false;
-    timer = setTimeout(()=>{ longed = true; openPop(word); }, 450);
+    hold = setTimeout(()=>{ sp.classList.add("pressing"); }, 120);
+    timer = setTimeout(()=>{ longed = true; unpress(); openPop(word); }, 450);
   };
   const end = e=>{
     clearTimeout(timer);
+    unpress();
     // 手指是横着划过去的(在换课),不是点这个词
     if(!longed && Math.abs(swDx) < 12){
       sp.classList.add("hl");
@@ -1129,8 +1216,8 @@ function makeWordSpan(raw){
   };
   sp.addEventListener("pointerdown", start);
   sp.addEventListener("pointerup", end);
-  sp.addEventListener("pointercancel", ()=>clearTimeout(timer));
-  sp.addEventListener("pointerleave", ()=>clearTimeout(timer));
+  sp.addEventListener("pointercancel", ()=>{ clearTimeout(timer); unpress(); });
+  sp.addEventListener("pointerleave", ()=>{ clearTimeout(timer); unpress(); });
   sp.addEventListener("contextmenu", e=>e.preventDefault());
   return sp;
 }
@@ -1147,8 +1234,11 @@ function makeSline(text, cn, role, audio){
   stext.className = "stext";
   spk.onclick = e=>{ e.stopPropagation(); playOne(text, role, audio, null, stext); };
 
+  // 「中」是个汉字,对不认字的孩子和旁边的英文一样是图形;换成眼睛图标,
+  // "看一眼" 这个动作他能自己猜出来(aria-label 留给读屏和家长)
   const zh = document.createElement("button");
-  zh.className = "mini"; zh.textContent = "中";
+  zh.className = "mini"; zh.textContent = "👁";
+  zh.setAttribute("aria-label", "显示中文翻译");
   zh.onclick = e=>{
     e.stopPropagation();
     sline.classList.toggle("showzh");
@@ -1435,6 +1525,73 @@ function revealCard(d){
   if(delta) window.scrollBy(0, delta);
 }
 
+/* ================================================================
+   一次性示能演示 —— 用户不识字,说明书写得再清楚也等于没写,
+   所以把"能做什么"演一遍给他看。每种只演一次,记在 daka.coach。
+   ⚠️ 三条铁律:减弱动效跳过;换课(lessonGen 变了)作废;
+   用户一碰屏幕立刻收手并复原 —— 演示不能和真实操作抢画面。
+   ================================================================ */
+/* 第一张卡自动开合一次:"卡片是能点开的"这件事,展开一次比任何文字都清楚。
+   ⚠️ 只动 class,不走 head.onclick —— 那条路会 SFX.pop() 出声、会滚动补位,
+   等于页面自己假装被点了一下 */
+function coachCard(){
+  if(!CUR_ID || CUR_ID === "review") return;    // 预览课/复习课不演
+  if(coachDone("card")) return;
+  if(motionOff()){ markCoach("card"); return; }
+  var first = document.querySelector("#learnList .lcard");
+  if(!first) return;
+  markCoach("card");
+  var gen = lessonGen, t1 = 0, t2 = 0, over = false;
+  function stop(){
+    if(over) return;
+    over = true;
+    clearTimeout(t1); clearTimeout(t2);
+    first.classList.remove("open");
+    document.removeEventListener("pointerdown", stop, true);
+  }
+  document.addEventListener("pointerdown", stop, true);   // 捕获阶段:先于任何点击处理
+  t1 = setTimeout(function(){
+    if(over || gen !== lessonGen) return stop();
+    // 演示期间孩子可能已经翻到别的页签了,那就别在背后偷偷展开
+    var page = document.getElementById("pageLearn");
+    if(!page || !page.classList.contains("on")) return stop();
+    first.classList.add("open");
+  }, 900);
+  t2 = setTimeout(stop, 2300);
+}
+/* 长按查词的提示条:第一次真的展开了某张卡之后 2 秒浮一条,4 秒淡掉。
+   这一条有字,是有意的 —— 长按没有任何视觉线索可演,只能告诉大人一次。 */
+function coachPress(d){
+  if(coachDone("press")) return;
+  markCoach("press");
+  var gen = lessonGen;
+  setTimeout(function(){
+    if(gen !== lessonGen) return;                          // 换课了
+    if(!d.classList.contains("open")) return;              // 卡又被收起来了
+    if(d.querySelector(".coach-tip")) return;
+    var q = d.querySelector(".dialog-in .bubble.q");
+    if(!q || !q.parentNode) return;
+    var tip = document.createElement("div");
+    tip.className = "coach-tip";
+    tip.textContent = "按住单词可以看意思 👆";
+    // ⚠️ 插进 .dialog-in,不能直接插到 .dialog:那是 grid 容器,
+    // 多出来的子元素不受行高约束,收起状态会露在外面
+    q.parentNode.insertBefore(tip, q);
+    var gone = false;
+    function kill(){
+      if(gone) return;
+      gone = true;
+      document.removeEventListener("pointerdown", kill, true);
+      tip.classList.add("out");
+      setTimeout(function(){
+        if(tip.parentNode) tip.parentNode.removeChild(tip);
+      }, durMs("--dur-base") + 50);
+    }
+    document.addEventListener("pointerdown", kill, true);
+    setTimeout(kill, 4000);
+  }, 2000);
+}
+
 function renderLearn(){
   const list = document.getElementById("learnList");
   list.innerHTML = "";
@@ -1475,6 +1632,8 @@ function renderLearn(){
       // 展开现在是动画,补位要等它把高度撑完再量 —— 立刻量到的还是 0fr 时的尺寸,
       // 补出来的位置正好差一整个卡片的高度
       if(!wasOpen) afterExpand(dialog, ()=>revealCard(d));
+      // 第一次真的展开一张卡时,顺带把"长按能查词"演示给大人看一次
+      if(!wasOpen) coachPress(d);
     };
     const wordPlay = document.createElement("button");
     wordPlay.className = "mini word-play";
@@ -1529,6 +1688,7 @@ function renderLearn(){
     d.appendChild(dialog);
     list.appendChild(d);
   });
+  coachCard();          // 第一次进课程时把"卡片能点开"演一遍
 }
 
 /* ================================================================
@@ -1715,7 +1875,7 @@ function renderQuestion(){
     </div>
     <div class="chat" id="pChat"></div>
     <div class="result-emoji" id="pResult"></div>
-    <div class="p-hint">🔊 听完题目，大声说出答案，再点一点它</div>
+    <div class="p-hint">🔊 点一下听选项 · 再点同一个选中它</div>
     <div class="ans-chips" id="ansChips"></div>
     <div class="ctrl" id="pCtrl">
       <button class="btn" onclick="readChips()">🔊 听选项</button>
@@ -1752,7 +1912,22 @@ function renderQuestion(){
     b.dataset.k = k;
     b.onclick = ()=>{
       if(answered) return;
+      /* 两段式:第一下只听音,再点同一个才判分。
+         孩子不认字,选项对他就是三团图形 —— 直接判分等于逼他盲选(不点
+         「🔊 听选项」就没有任何信息)。第一下点谁就念谁、给个蓝描边表示
+         "再点我就是选它",点别的就把描边挪过去、念别的。
+         ⚠️ 判分那条路(stopAllSound / answered / SFX / flyStar / burst /
+         showNext)一个字没动,这里只是在它前面加了一道"确认"。*/
+      if(!b.classList.contains("armed")){
+        stopAllSound();        // 上一个选项还在念就掐掉,两个词叠着念听不清
+        chipsBox.querySelectorAll(".armed").forEach(x=>x.classList.remove("armed"));
+        chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
+        b.classList.add("armed");
+        playSeq([{text: k, role: "w", audio: chipAudio(k), el: b}]);
+        return;
+      }
       stopAllSound();          // 打断正在念的选项,别和判分音重叠
+      chipsBox.querySelectorAll(".armed").forEach(x=>x.classList.remove("armed"));
       chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
       if(k === correct){
         answered = true;
@@ -2122,11 +2297,13 @@ function applyLesson(){
   paintTabDone();
   document.getElementById("lessonTitle").textContent = lesson.title;
   const hint = document.getElementById("learnHint");
+  // 提示行以图标为主、尽量短:整行字对孩子是看不懂的,长了连家长也不读。
+  // 「👁」对应句子行上那个翻译钮(它已经不是「中」字了),两处要一起改
   hint.textContent = lesson.audio_mode === "word"
-    ? "🔊 点击单词或发音按钮，听标准完整发音 · 长按对话单词看意思"
+    ? "🔊 点词听词 · 按住看意思"
     : lesson.cards.some(c => c.phonics)
-      ? "🔊 点字母听纯音 · 辅音后不加“呃” · 跟读3个音，再读完整单词"
-      : "🔊 听整句 · 点单词听单词 · 按住单词看意思 · 中 看翻译";
+      ? "🔊 点字母听纯音 · 跟读3个音 · 再读整词"
+      : "🔊 点句听句 · 点词听词 · 按住看意思 · 👁 翻译";
 
   document.getElementById("practiceBox").innerHTML = PRACTICE_HOME;
   // 可选的图不足两张就没法出选择题,隐藏这一栏而不是出坏题
