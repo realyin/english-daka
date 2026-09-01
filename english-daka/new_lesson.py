@@ -64,7 +64,12 @@ TYPES = OrderedDict([
     ("topic",       (None,                 500, "")),         # 分组由 --group 指定
 ])
 # topic 类课程可以落在这几段
-TOPIC_BANDS = {"主题 Topics": 500, "数学 Math": 600, "科学 Science": 700}
+TOPIC_BANDS = {"主题 Topics": 500, "数学 Math": 600, "科学 Science": 700,
+               # K1 的组(段位 = 教材 T 号 ×100)
+               "数字 Numbers": 200, "颜色 Colors": 300, "动物 Animals": 400,
+               "身体 Body": 500, "动作 Actions": 600, "职业 Jobs": 700,
+               "天气 Weather": 800, "形状 Shapes": 900, "规律 Patterns": 1000,
+               "乐器 Instruments": 1100, "节日 Holidays": 1200}
 
 # 音标记号 → 音素库 key。⚠️ 与 gen_audio.py / app.html 的 PHONEME_MAP 是同一张表，
 # 改一处要三处同步（见 docs/课程制作规范.md「一处改动要同步三个地方」）

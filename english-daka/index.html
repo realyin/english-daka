@@ -1436,9 +1436,12 @@ function renderDayPicker(data){
       const g = groupOf[id];
       if(g && groups.indexOf(g) < 0) groups.push(g);
     });
+    // 有课名就把课名放在第二行:家长找的是"讲宠物那节",不是"8月30日那节"。
+    // 没起名的日子退回分组名(字母、常见词),至少比只有日期强
+    const sub = dy.name || groups.join("、");
     return `<a class="day-row" href="app.html?lesson=review&pick=day&d=${encodeURIComponent(dy.date)}">` +
       `<span><b>${rel[dy.date] || md}</b><i>${rel[dy.date] ? md + " " + wd : wd}</i></span>` +
-      `<span class="r"><b>${dy.cards} 张卡</b><i>${groups.join("、")}</i></span></a>`;
+      `<span class="r"><b>${dy.cards} 张卡</b><i>${sub}</i></span></a>`;
   }).join("");
 
   btn.hidden = false;
