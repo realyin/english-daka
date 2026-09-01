@@ -1,0 +1,233 @@
+{
+  "seq": 903,
+  "level": "K1",
+  "group": "形状 Shapes",
+  "badge": "△",
+  "title": "Shapes · Triangle / Diamond / Trapezoid 三角菱形梯形",
+  "cards": [
+    {
+      "word": "triangle",
+      "cn": "三角形",
+      "tag": "shape",
+      "pattern": [
+        "@triangle"
+      ],
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It's a triangle."
+          ],
+          "key": [
+            "triangle"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是三角形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-it-s-a-triangle-e6b316.mp3"
+          ]
+        },
+        {
+          "q": "What is like a triangle?",
+          "image": "images/k1-shape-sandwich.webp",
+          "a": [
+            "The sandwich is like a triangle."
+          ],
+          "key": [
+            "sandwich"
+          ],
+          "q_cn": "什么东西像三角形？",
+          "a_cn": [
+            "三明治像三角形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-triangle-09cce2.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-the-sandwich-is-like-a-triangle-18dbc5.mp3"
+          ]
+        },
+        {
+          "q": "How many sides does a triangle have?",
+          "a": [
+            "A triangle has three sides."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "三角形有几条边？",
+          "a_cn": [
+            "三角形有三条边。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-triangle-have-a51630.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-a-triangle-has-three-sides-e0e69f.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-shape-more/q-which-one-is-triangle-1915d2.mp3"
+    },
+    {
+      "word": "diamond",
+      "cn": "菱形",
+      "tag": "shape",
+      "pattern": [
+        "@diamond"
+      ],
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It's a diamond."
+          ],
+          "key": [
+            "diamond"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是菱形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-it-s-a-diamond-eb0eea.mp3"
+          ]
+        },
+        {
+          "q": "What is like a diamond?",
+          "image": "images/k1-shape-kite.webp",
+          "a": [
+            "The kite is like a diamond."
+          ],
+          "key": [
+            "kite"
+          ],
+          "q_cn": "什么东西像菱形？",
+          "a_cn": [
+            "风筝像菱形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-diamond-e1fd13.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-the-kite-is-like-a-diamond-375a4f.mp3"
+          ]
+        },
+        {
+          "q": "How many sides does a diamond have?",
+          "a": [
+            "A diamond has four sides."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "菱形有几条边？",
+          "a_cn": [
+            "菱形有四条边。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-diamond-have-70a65a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-a-diamond-has-four-sides-d7d0d9.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-shape-more/q-which-one-is-diamond-a67276.mp3"
+    },
+    {
+      "word": "trapezoid",
+      "cn": "梯形",
+      "tag": "shape",
+      "pattern": [
+        "@trapezoid"
+      ],
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It's a trapezoid."
+          ],
+          "key": [
+            "trapezoid"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是梯形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-it-s-a-trapezoid-d23901.mp3"
+          ]
+        },
+        {
+          "q": "What is like a trapezoid?",
+          "image": "images/k1-shape-flowerpot.webp",
+          "a": [
+            "The flowerpot is like a trapezoid."
+          ],
+          "key": [
+            "flowerpot"
+          ],
+          "q_cn": "什么东西像梯形？",
+          "a_cn": [
+            "花盆像梯形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-trapezoid-7a0591.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-the-flowerpot-is-like-a-trapezoid-3fbeaf.mp3"
+          ]
+        },
+        {
+          "q": "How many sides does a trapezoid have?",
+          "a": [
+            "A trapezoid has four sides."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "梯形有几条边？",
+          "a_cn": [
+            "梯形有四条边。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-trapezoid-have-f3c075.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-a-trapezoid-has-four-sides-3e0765.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-shape-more/q-which-one-is-trapezoid-eab2a8.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "diamond": "audio/words/diamond.mp3",
+    "does": "audio/words/does.mp3",
+    "flowerpot": "audio/words/flowerpot.mp3",
+    "four": "audio/words/four.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "kite": "audio/words/kite.mp3",
+    "like": "audio/words/like.mp3",
+    "many": "audio/words/many.mp3",
+    "sandwich": "audio/words/sandwich.mp3",
+    "shape": "audio/words/shape.mp3",
+    "sides": "audio/words/sides.mp3",
+    "the": "audio/words/the.mp3",
+    "three": "audio/words/three.mp3",
+    "trapezoid": "audio/words/trapezoid.mp3",
+    "triangle": "audio/words/triangle.mp3",
+    "what": "audio/words/what.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

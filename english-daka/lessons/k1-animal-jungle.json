@@ -1,0 +1,211 @@
+{
+  "seq": 403,
+  "level": "K1",
+  "group": "动物 Animals",
+  "badge": "丛林",
+  "title": "Animals · Jungle Animals 丛林动物",
+  "cards": [
+    {
+      "word": "elephant",
+      "cn": "大象",
+      "tag": "word",
+      "image": "images/k1-animal-elephant.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's an elephant."
+          ],
+          "key": [
+            "elephant"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是大象。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
+          ]
+        },
+        {
+          "q": "Where does an elephant live?",
+          "a": [
+            "An elephant lives in the jungle."
+          ],
+          "key": [
+            "jungle"
+          ],
+          "q_cn": "大象住在哪里？",
+          "a_cn": [
+            "大象住在丛林里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-where-does-an-elephant-live-c1f759.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-an-elephant-lives-in-the-jungle-a72cba.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-jungle/q-which-one-is-elephant-09f7c9.mp3"
+    },
+    {
+      "word": "hippo",
+      "cn": "河马",
+      "tag": "word",
+      "image": "images/k1-animal-hippo.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a hippo."
+          ],
+          "key": [
+            "hippo"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是河马。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
+          ]
+        },
+        {
+          "q": "Where does a hippo live?",
+          "a": [
+            "A hippo lives in the jungle."
+          ],
+          "key": [
+            "jungle"
+          ],
+          "q_cn": "河马住在哪里？",
+          "a_cn": [
+            "河马住在丛林里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-where-does-a-hippo-live-3b8cfe.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-a-hippo-lives-in-the-jungle-41e976.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-jungle/q-which-one-is-hippo-bec8ac.mp3"
+    },
+    {
+      "word": "monkey",
+      "cn": "猴子",
+      "tag": "word",
+      "image": "images/k1-animal-monkey.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a monkey."
+          ],
+          "key": [
+            "monkey"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是猴子。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-it-s-a-monkey-0bf444.mp3"
+          ]
+        },
+        {
+          "q": "Where does a monkey live?",
+          "a": [
+            "A monkey lives in the jungle."
+          ],
+          "key": [
+            "jungle"
+          ],
+          "q_cn": "猴子住在哪里？",
+          "a_cn": [
+            "猴子住在丛林里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-where-does-a-monkey-live-38c4ee.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-a-monkey-lives-in-the-jungle-0213cb.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-jungle/q-which-one-is-monkey-c6a4a2.mp3"
+    },
+    {
+      "word": "leopard",
+      "cn": "豹",
+      "tag": "word",
+      "image": "images/k1-animal-leopard.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a leopard."
+          ],
+          "key": [
+            "leopard"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是豹。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
+          ]
+        },
+        {
+          "q": "Where does a leopard live?",
+          "a": [
+            "A leopard lives in the jungle."
+          ],
+          "key": [
+            "jungle"
+          ],
+          "q_cn": "豹住在哪里？",
+          "a_cn": [
+            "豹住在丛林里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-jungle/q-where-does-a-leopard-live-428939.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-jungle/a-a-leopard-lives-in-the-jungle-ac8008.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-jungle/q-which-one-is-leopard-9759c9.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "animal": "audio/words/animal.mp3",
+    "does": "audio/words/does.mp3",
+    "elephant": "audio/words/elephant.mp3",
+    "hippo": "audio/words/hippo.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "jungle": "audio/words/jungle.mp3",
+    "leopard": "audio/words/leopard.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "monkey": "audio/words/monkey.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

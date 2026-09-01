@@ -1,0 +1,167 @@
+{
+  "seq": 902,
+  "level": "K1",
+  "group": "形状 Shapes",
+  "badge": "方",
+  "title": "Shapes · Square & Rectangle 正方形和长方形",
+  "cards": [
+    {
+      "word": "square",
+      "cn": "正方形",
+      "tag": "shape",
+      "pattern": [
+        "@square"
+      ],
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It's a square."
+          ],
+          "key": [
+            "square"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是正方形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-it-s-a-square-1bce58.mp3"
+          ]
+        },
+        {
+          "q": "What is like a square?",
+          "image": "images/k1-shape-toast.webp",
+          "a": [
+            "The toast is like a square."
+          ],
+          "key": [
+            "toast"
+          ],
+          "q_cn": "什么东西像正方形？",
+          "a_cn": [
+            "吐司像正方形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-what-is-like-a-square-dd347c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-the-toast-is-like-a-square-eaefcd.mp3"
+          ]
+        },
+        {
+          "q": "How many sides does a square have?",
+          "a": [
+            "A square has four sides."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "正方形有几条边？",
+          "a_cn": [
+            "正方形有四条边。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-how-many-sides-does-a-square-have-9cc79e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-a-square-has-four-sides-ab9f34.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-shape-square/q-which-one-is-square-ebea8c.mp3"
+    },
+    {
+      "word": "rectangle",
+      "cn": "长方形",
+      "tag": "shape",
+      "pattern": [
+        "@rectangle"
+      ],
+      "dialog": [
+        {
+          "q": "What shape is it?",
+          "a": [
+            "It's a rectangle."
+          ],
+          "key": [
+            "rectangle"
+          ],
+          "q_cn": "这是什么形状？",
+          "a_cn": [
+            "这是长方形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-what-shape-is-it-ada0c8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-it-s-a-rectangle-9f01d5.mp3"
+          ]
+        },
+        {
+          "q": "What is like a rectangle?",
+          "image": "images/k1-shape-bus.webp",
+          "a": [
+            "The bus is like a rectangle."
+          ],
+          "key": [
+            "bus"
+          ],
+          "q_cn": "什么东西像长方形？",
+          "a_cn": [
+            "公交车像长方形。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-what-is-like-a-rectangle-127318.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-the-bus-is-like-a-rectangle-c62189.mp3"
+          ]
+        },
+        {
+          "q": "How many sides does a rectangle have?",
+          "a": [
+            "A rectangle has four sides."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "长方形有几条边？",
+          "a_cn": [
+            "长方形有四条边。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-how-many-sides-does-a-rectangle-have-751ad2.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-a-rectangle-has-four-sides-38df80.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-shape-square/q-which-one-is-rectangle-93886d.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "bus": "audio/words/bus.mp3",
+    "does": "audio/words/does.mp3",
+    "four": "audio/words/four.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "like": "audio/words/like.mp3",
+    "many": "audio/words/many.mp3",
+    "rectangle": "audio/words/rectangle.mp3",
+    "shape": "audio/words/shape.mp3",
+    "sides": "audio/words/sides.mp3",
+    "square": "audio/words/square.mp3",
+    "the": "audio/words/the.mp3",
+    "toast": "audio/words/toast.mp3",
+    "what": "audio/words/what.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "seq": 404,
+  "level": "K1",
+  "group": "动物 Animals",
+  "badge": "鸟",
+  "title": "Animals · Birds 鸟类",
+  "cards": [
+    {
+      "word": "eagle",
+      "cn": "老鹰",
+      "tag": "word",
+      "image": "images/k1-animal-eagle.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's an eagle."
+          ],
+          "key": [
+            "eagle"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是老鹰。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
+          ]
+        },
+        {
+          "q": "Where does an eagle live?",
+          "a": [
+            "An eagle lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "老鹰住在哪里？",
+          "a_cn": [
+            "老鹰住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-an-eagle-live-3fb109.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-an-eagle-lives-in-the-nest-aeebc9.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-eagle-5898bc.mp3"
+    },
+    {
+      "word": "crow",
+      "cn": "乌鸦",
+      "tag": "word",
+      "image": "images/k1-animal-crow.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's a crow."
+          ],
+          "key": [
+            "crow"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是乌鸦。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
+          ]
+        },
+        {
+          "q": "Where does a crow live?",
+          "a": [
+            "A crow lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "乌鸦住在哪里？",
+          "a_cn": [
+            "乌鸦住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-a-crow-live-414e97.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-a-crow-lives-in-the-nest-17fd49.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-crow-c9add6.mp3"
+    },
+    {
+      "word": "owl",
+      "cn": "猫头鹰",
+      "tag": "word",
+      "image": "images/k1-animal-owl.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's an owl."
+          ],
+          "key": [
+            "owl"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是猫头鹰。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+          ]
+        },
+        {
+          "q": "Where does an owl live?",
+          "a": [
+            "An owl lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "猫头鹰住在哪里？",
+          "a_cn": [
+            "猫头鹰住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-an-owl-live-89bdf0.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-an-owl-lives-in-the-nest-23ea08.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-owl-f3c1de.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "bird": "audio/words/bird.mp3",
+    "crow": "audio/words/crow.mp3",
+    "does": "audio/words/does.mp3",
+    "eagle": "audio/words/eagle.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "nest": "audio/words/nest.mp3",
+    "owl": "audio/words/owl.mp3",
+    "the": "audio/words/the.mp3",
+    "what": "audio/words/what.mp3",
+    "where": "audio/words/where.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

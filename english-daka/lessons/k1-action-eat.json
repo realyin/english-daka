@@ -1,0 +1,81 @@
+{
+  "seq": 602,
+  "level": "K1",
+  "group": "动作 Actions",
+  "badge": "eat",
+  "title": "Actions · Eat & Drink 吃和喝",
+  "cards": [
+    {
+      "word": "eat",
+      "cn": "吃",
+      "tag": "word",
+      "image": "images/k1-act-eat.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can eat."
+          ],
+          "key": [
+            "eat"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会吃。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-can-eat-7a58b9.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-eat-75d318.mp3"
+    },
+    {
+      "word": "drink",
+      "cn": "喝",
+      "tag": "word",
+      "image": "images/k1-act-drink.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can drink."
+          ],
+          "key": [
+            "drink"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会喝。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-can-drink-630325.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-drink-5bca46.mp3"
+    }
+  ],
+  "word_audio": {
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "drink": "audio/words/drink.mp3",
+    "eat": "audio/words/eat.mp3",
+    "i": "audio/words/i.mp3",
+    "what": "audio/words/what.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

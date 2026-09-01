@@ -1,0 +1,256 @@
+{
+  "seq": 202,
+  "level": "K1",
+  "group": "数字 Numbers",
+  "badge": "6-10",
+  "title": "Numbers 6–10 · 数字 6–10",
+  "cards": [
+    {
+      "word": "six",
+      "cn": "六",
+      "tag": "number",
+      "image": "images/k1-num-six.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number six."
+          ],
+          "key": [
+            "six"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字六。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-it-s-number-six-ff0755.mp3"
+          ]
+        },
+        {
+          "q": "How many horns are there?",
+          "a": [
+            "There are six horns."
+          ],
+          "key": [
+            "six"
+          ],
+          "q_cn": "这里有几个喇叭？",
+          "a_cn": [
+            "这里有六个喇叭。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-how-many-horns-are-there-265db8.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-there-are-six-horns-78f8da.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-6-10/q-which-one-is-six-b2c869.mp3"
+    },
+    {
+      "word": "seven",
+      "cn": "七",
+      "tag": "number",
+      "image": "images/k1-num-seven.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number seven."
+          ],
+          "key": [
+            "seven"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字七。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-it-s-number-seven-ff96d3.mp3"
+          ]
+        },
+        {
+          "q": "How many toys are there?",
+          "a": [
+            "There are seven toys."
+          ],
+          "key": [
+            "seven"
+          ],
+          "q_cn": "这里有几个玩具？",
+          "a_cn": [
+            "这里有七个玩具。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-how-many-toys-are-there-8a5ee7.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-there-are-seven-toys-8c3d40.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-6-10/q-which-one-is-seven-ba7e49.mp3"
+    },
+    {
+      "word": "eight",
+      "cn": "八",
+      "tag": "number",
+      "image": "images/k1-num-eight.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number eight."
+          ],
+          "key": [
+            "eight"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字八。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-it-s-number-eight-c7674b.mp3"
+          ]
+        },
+        {
+          "q": "How many toy blocks are there?",
+          "a": [
+            "There are eight toy blocks."
+          ],
+          "key": [
+            "eight"
+          ],
+          "q_cn": "这里有几块积木？",
+          "a_cn": [
+            "这里有八块积木。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-how-many-toy-blocks-are-there-5eb1be.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-there-are-eight-toy-blocks-1b791c.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-6-10/q-which-one-is-eight-633ac5.mp3"
+    },
+    {
+      "word": "nine",
+      "cn": "九",
+      "tag": "number",
+      "image": "images/k1-num-nine.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number nine."
+          ],
+          "key": [
+            "nine"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字九。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-it-s-number-nine-7a9de2.mp3"
+          ]
+        },
+        {
+          "q": "How many birds are there?",
+          "a": [
+            "There are nine birds."
+          ],
+          "key": [
+            "nine"
+          ],
+          "q_cn": "这里有几只鸟？",
+          "a_cn": [
+            "这里有九只鸟。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-how-many-birds-are-there-8938ec.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-there-are-nine-birds-721b57.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-6-10/q-which-one-is-nine-2c49cf.mp3"
+    },
+    {
+      "word": "ten",
+      "cn": "十",
+      "tag": "number",
+      "image": "images/k1-num-ten.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number ten."
+          ],
+          "key": [
+            "ten"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字十。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-it-s-number-ten-f5e736.mp3"
+          ]
+        },
+        {
+          "q": "How many chickens are there?",
+          "a": [
+            "There are ten chickens."
+          ],
+          "key": [
+            "ten"
+          ],
+          "q_cn": "这里有几只小鸡？",
+          "a_cn": [
+            "这里有十只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k1-number-6-10/q-how-many-chickens-are-there-f42606.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-6-10/a-there-are-ten-chickens-4637a6.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-6-10/q-which-one-is-ten-8e942d.mp3"
+    }
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "birds": "audio/words/birds.mp3",
+    "blocks": "audio/words/blocks.mp3",
+    "chickens": "audio/words/chickens.mp3",
+    "eight": "audio/words/eight.mp3",
+    "horns": "audio/words/horns.mp3",
+    "how": "audio/words/how.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "many": "audio/words/many.mp3",
+    "nine": "audio/words/nine.mp3",
+    "number": "audio/words/number.mp3",
+    "seven": "audio/words/seven.mp3",
+    "six": "audio/words/six.mp3",
+    "ten": "audio/words/ten.mp3",
+    "there": "audio/words/there.mp3",
+    "this": "audio/words/this.mp3",
+    "toy": "audio/words/toy.mp3",
+    "toys": "audio/words/toys.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

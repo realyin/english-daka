@@ -1,0 +1,120 @@
+{
+  "seq": 203,
+  "level": "K1",
+  "group": "数字 Numbers",
+  "badge": "11-12",
+  "title": "Numbers 11–12 · 数字 11–12",
+  "cards": [
+    {
+      "word": "eleven",
+      "cn": "十一",
+      "tag": "number",
+      "image": "images/k1-num-eleven.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number eleven."
+          ],
+          "key": [
+            "eleven"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字十一。"
+          ],
+          "q_audio": "audio/sentences/k1-number-11-12/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-11-12/a-it-s-number-eleven-2ccca0.mp3"
+          ]
+        },
+        {
+          "q": "How many spaceships are there?",
+          "a": [
+            "There are eleven spaceships."
+          ],
+          "key": [
+            "eleven"
+          ],
+          "q_cn": "这里有几艘飞船？",
+          "a_cn": [
+            "这里有十一艘飞船。"
+          ],
+          "q_audio": "audio/sentences/k1-number-11-12/q-how-many-spaceships-are-there-8896be.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-11-12/a-there-are-eleven-spaceships-15e280.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-11-12/q-which-one-is-eleven-37d2a0.mp3"
+    },
+    {
+      "word": "twelve",
+      "cn": "十二",
+      "tag": "number",
+      "image": "images/k1-num-twelve.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number twelve."
+          ],
+          "key": [
+            "twelve"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字十二。"
+          ],
+          "q_audio": "audio/sentences/k1-number-11-12/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-11-12/a-it-s-number-twelve-fa3acb.mp3"
+          ]
+        },
+        {
+          "q": "How many friends are there?",
+          "a": [
+            "There are twelve friends."
+          ],
+          "key": [
+            "twelve"
+          ],
+          "q_cn": "这里有几个朋友？",
+          "a_cn": [
+            "这里有十二个朋友。"
+          ],
+          "q_audio": "audio/sentences/k1-number-11-12/q-how-many-friends-are-there-0ac004.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-11-12/a-there-are-twelve-friends-1e425e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-11-12/q-which-one-is-twelve-2dc1cb.mp3"
+    }
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "friends": "audio/words/friends.mp3",
+    "how": "audio/words/how.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "many": "audio/words/many.mp3",
+    "number": "audio/words/number.mp3",
+    "spaceships": "audio/words/spaceships.mp3",
+    "there": "audio/words/there.mp3",
+    "this": "audio/words/this.mp3",
+    "twelve": "audio/words/twelve.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

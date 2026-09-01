@@ -1,0 +1,178 @@
+{
+  "seq": 504,
+  "level": "K1",
+  "group": "身体 Body",
+  "badge": "head",
+  "title": "Body · Head & Neck & Shoulders 头颈肩",
+  "cards": [
+    {
+      "word": "head",
+      "cn": "头",
+      "tag": "word",
+      "image": "images/k1-body-head.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is a head."
+          ],
+          "key": [
+            "head"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是头。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-this-is-a-head-66cd58.mp3"
+          ]
+        },
+        {
+          "q": "Can you nod your head?",
+          "a": [
+            "I can nod my head."
+          ],
+          "key": [
+            "nod"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我能点头。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-can-you-nod-your-head-12582a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-i-can-nod-my-head-7bcc85.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-head/q-which-one-is-head-9a49d5.mp3"
+    },
+    {
+      "word": "neck",
+      "cn": "脖子",
+      "tag": "word",
+      "image": "images/k1-body-neck.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is a neck."
+          ],
+          "key": [
+            "neck"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是脖子。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-this-is-a-neck-1ea311.mp3"
+          ]
+        },
+        {
+          "q": "Do you have a long neck or a short neck?",
+          "a": [
+            "I have a short neck."
+          ],
+          "key": [
+            "short"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我的脖子是短的。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-do-you-have-a-long-neck-or-a-short-n-4706ef.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-i-have-a-short-neck-67bc78.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-head/q-which-one-is-neck-6d17d9.mp3"
+    },
+    {
+      "word": "shoulders",
+      "cn": "肩膀",
+      "tag": "word",
+      "image": "images/k1-body-shoulders.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are shoulders."
+          ],
+          "key": [
+            "shoulders"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是肩膀。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-these-are-shoulders-241c37.mp3"
+          ]
+        },
+        {
+          "q": "How many shoulders do you have?",
+          "a": [
+            "I have two shoulders."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几个肩膀？",
+          "a_cn": [
+            "我有两个肩膀。"
+          ],
+          "q_audio": "audio/sentences/k1-body-head/q-how-many-shoulders-do-you-have-866ad6.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-head/a-i-have-two-shoulders-0c1f17.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-head/q-which-one-is-shoulders-0a045f.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "are": "audio/words/are.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "have": "audio/words/have.mp3",
+    "head": "audio/words/head.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "long": "audio/words/long.mp3",
+    "many": "audio/words/many.mp3",
+    "my": "audio/words/my.mp3",
+    "neck": "audio/words/neck.mp3",
+    "nod": "audio/words/nod.mp3",
+    "or": "audio/words/or.mp3",
+    "part": "audio/words/part.mp3",
+    "parts": "audio/words/parts.mp3",
+    "short": "audio/words/short.mp3",
+    "shoulders": "audio/words/shoulders.mp3",
+    "these": "audio/words/these.mp3",
+    "this": "audio/words/this.mp3",
+    "two": "audio/words/two.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

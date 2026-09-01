@@ -1,0 +1,172 @@
+{
+  "seq": 302,
+  "level": "K1",
+  "group": "颜色 Colors",
+  "badge": "橙绿紫",
+  "title": "Colors · Orange / Green / Purple",
+  "cards": [
+    {
+      "word": "orange",
+      "cn": "橙色",
+      "tag": "color",
+      "pattern": [
+        "#orange"
+      ],
+      "dialog": [
+        {
+          "q": "What color is it?",
+          "a": [
+            "It's orange."
+          ],
+          "key": [
+            "orange"
+          ],
+          "q_cn": "这是什么颜色？",
+          "a_cn": [
+            "这是橙色。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-color-is-it-33e73a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-it-s-orange-587e78.mp3"
+          ]
+        },
+        {
+          "q": "What is orange?",
+          "image": "images/k1-color-orange.webp",
+          "a": [
+            "The orange is orange."
+          ],
+          "key": [
+            "orange"
+          ],
+          "q_cn": "什么是橙色的？",
+          "a_cn": [
+            "橙子是橙色的。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-is-orange-82c7b0.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-the-orange-is-orange-5d0244.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-color-orange/q-which-one-is-orange-a874ca.mp3"
+    },
+    {
+      "word": "green",
+      "cn": "绿色",
+      "tag": "color",
+      "pattern": [
+        "#green"
+      ],
+      "dialog": [
+        {
+          "q": "What color is it?",
+          "a": [
+            "It's green."
+          ],
+          "key": [
+            "green"
+          ],
+          "q_cn": "这是什么颜色？",
+          "a_cn": [
+            "这是绿色。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-color-is-it-33e73a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-it-s-green-324bc6.mp3"
+          ]
+        },
+        {
+          "q": "What is green?",
+          "image": "images/k1-color-green.webp",
+          "a": [
+            "The tree is green."
+          ],
+          "key": [
+            "tree"
+          ],
+          "q_cn": "什么是绿色的？",
+          "a_cn": [
+            "树是绿色的。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-is-green-d1381d.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-the-tree-is-green-6256c0.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-color-orange/q-which-one-is-green-af2ac7.mp3"
+    },
+    {
+      "word": "purple",
+      "cn": "紫色",
+      "tag": "color",
+      "pattern": [
+        "#purple"
+      ],
+      "dialog": [
+        {
+          "q": "What color is it?",
+          "a": [
+            "It's purple."
+          ],
+          "key": [
+            "purple"
+          ],
+          "q_cn": "这是什么颜色？",
+          "a_cn": [
+            "这是紫色。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-color-is-it-33e73a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-it-s-purple-e81e9e.mp3"
+          ]
+        },
+        {
+          "q": "What is purple?",
+          "image": "images/k1-color-purple.webp",
+          "a": [
+            "The grapes are purple."
+          ],
+          "key": [
+            "grapes"
+          ],
+          "q_cn": "什么是紫色的？",
+          "a_cn": [
+            "葡萄是紫色的。"
+          ],
+          "q_audio": "audio/sentences/k1-color-orange/q-what-is-purple-4058dc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-orange/a-the-grapes-are-purple-d883bf.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-color-orange/q-which-one-is-purple-2c2195.mp3"
+    }
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "color": "audio/words/color.mp3",
+    "grapes": "audio/words/grapes.mp3",
+    "green": "audio/words/green.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "orange": "audio/words/orange.mp3",
+    "purple": "audio/words/purple.mp3",
+    "the": "audio/words/the.mp3",
+    "tree": "audio/words/tree.mp3",
+    "what": "audio/words/what.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

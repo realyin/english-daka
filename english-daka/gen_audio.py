@@ -199,7 +199,7 @@ async def synth(text: str, voice: str, rate: str, out: Path,
     return True
 
 
-NON_LESSON = {"index.json", "phonics.json", "dictionary.json"}
+NON_LESSON = {"index.json", "phonics.json", "dictionary.json", "classes.json"}
 
 
 def lesson_files(lessons_root: Path):
@@ -354,7 +354,33 @@ def build_days(lessons_root: Path):
             rec["cards"] += 1
             if f.stem not in rec["lessons"]:
                 rec["lessons"].append(f.stem)
+    # 课名按日期登记在 classes.json 里,这里拼进来。
+    # 为什么不写进每张卡:一节课一个名字,改错别字只改一处;卡片在课程之间搬家
+    # (这个项目里发生过很多次)名字也不会跟着散;--backfill 的历史内容没有日期,
+    # 自然就没有条目,不用特判
+    names = load_classes(lessons_root)
+    for k, rec in days.items():
+        if names.get(k):
+            rec["name"] = names[k]
     return [days[k] for k in sorted(days, reverse=True)]
+
+
+def classes_path(lessons_root: Path) -> Path:
+    return lessons_root / "classes.json"
+
+
+def load_classes(lessons_root: Path) -> dict:
+    f = classes_path(lessons_root)
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
+def save_class_name(lessons_root: Path, date: str, name: str):
+    """给某一天的课起个名字。日期是这节课的身份,名字是给人看的标签"""
+    f = classes_path(lessons_root)
+    data = load_classes(lessons_root)
+    data[date] = name
+    f.write_text(json.dumps(dict(sorted(data.items(), reverse=True)),
+                            ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
@@ -390,7 +416,7 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-async def main(lesson_path: str, class_date: str = None):
+async def main(lesson_path: str, class_date: str = None, class_name: str = None):
     lesson_file = Path(lesson_path)
     lesson = json.loads(lesson_file.read_text(encoding="utf-8"))
     lessons_root = lesson_file.parent
@@ -445,6 +471,10 @@ async def main(lesson_path: str, class_date: str = None):
     write_manifest(lessons_root)
     lesson_file.write_text(
         json.dumps(lesson, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 课名要在 update_index 之前落盘 —— build_days 会读它
+    if class_name:
+        save_class_name(lessons_root, class_date, class_name)
+        print(f"课名已登记:{class_date} → 「{class_name}」")
     update_index(lessons_root, lesson_id, lesson)
     print(f"\n完成:新生成 {made} 条,复用已有 {skipped} 条")
     if stamped:
@@ -469,7 +499,21 @@ if __name__ == "__main__":
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", class_date):
             print("--date 要求 YYYY-MM-DD,例如 --date 2026-08-30")
             sys.exit(1)
+    class_name = None
+    if "--class" in argv:
+        i = argv.index("--class")
+        class_name = argv[i + 1].strip() if i + 1 < len(argv) else ""
+        del argv[i:i + 2]
+        if not class_name:
+            print("--class 后面要跟课名,例如 --class \"T4L2 动物 · 宠物\"")
+            sys.exit(1)
+        if not class_date or class_date == "--backfill":
+            print("--class 得配 --date 一起用:课名是挂在某一天的课上的\n"
+                  "  例: python gen_audio.py lessons/k2-zoo.json "
+                  "--date 2026-09-05 --class \"T4L2 动物 · 宠物\"")
+            sys.exit(1)
     if len(argv) != 1:
-        print("用法: python gen_audio.py lessons/x.json [--date 2026-08-30 | --backfill]")
+        print("用法: python gen_audio.py lessons/x.json "
+              "[--date 2026-08-30 [--class \"课名\"] | --backfill]")
         sys.exit(1)
-    asyncio.run(main(argv[0], class_date))
+    asyncio.run(main(argv[0], class_date, class_name))
