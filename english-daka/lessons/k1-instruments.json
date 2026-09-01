@@ -1,0 +1,266 @@
+{
+  "seq": 1101,
+  "level": "K1",
+  "group": "乐器 Instruments",
+  "badge": "🎹",
+  "title": "Musical Instruments · 乐器",
+  "cards": [
+    {
+      "word": "piano",
+      "cn": "钢琴",
+      "tag": "word",
+      "image": "images/k1-inst-piano.webp",
+      "dialog": [
+        {
+          "q": "What's this musical instrument?",
+          "a": [
+            "It's a piano."
+          ],
+          "key": [
+            "piano"
+          ],
+          "q_cn": "这是什么乐器？",
+          "a_cn": [
+            "这是钢琴。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-what-s-this-musical-instrument-4ac65f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-it-s-a-piano-8300b6.mp3"
+          ]
+        },
+        {
+          "q": "Which body parts can you use to play the piano?",
+          "a": [
+            "I can play the piano with my hands and fingers."
+          ],
+          "key": [
+            "fingers"
+          ],
+          "q_cn": "用身体的哪部分弹钢琴？",
+          "a_cn": [
+            "我用手和手指演奏钢琴。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-which-body-parts-can-you-use-to-play-b78b5c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-i-can-play-the-piano-with-my-hands-a-b644fb.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-piano-f3fa19.mp3"
+    },
+    {
+      "word": "guitar",
+      "cn": "吉他",
+      "tag": "word",
+      "image": "images/k1-inst-guitar.webp",
+      "dialog": [
+        {
+          "q": "What's this musical instrument?",
+          "a": [
+            "It's a guitar."
+          ],
+          "key": [
+            "guitar"
+          ],
+          "q_cn": "这是什么乐器？",
+          "a_cn": [
+            "这是吉他。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-what-s-this-musical-instrument-4ac65f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-it-s-a-guitar-c0bded.mp3"
+          ]
+        },
+        {
+          "q": "Which body parts can you use to play the guitar?",
+          "a": [
+            "I can play the guitar with my hands and fingers."
+          ],
+          "key": [
+            "fingers"
+          ],
+          "q_cn": "用身体的哪部分弹吉他？",
+          "a_cn": [
+            "我用手和手指演奏吉他。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-which-body-parts-can-you-use-to-play-4b179a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-i-can-play-the-guitar-with-my-hands--3f585f.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-guitar-c49270.mp3"
+    },
+    {
+      "word": "violin",
+      "cn": "小提琴",
+      "tag": "word",
+      "image": "images/k1-inst-violin.webp",
+      "dialog": [
+        {
+          "q": "What's this musical instrument?",
+          "a": [
+            "It's a violin."
+          ],
+          "key": [
+            "violin"
+          ],
+          "q_cn": "这是什么乐器？",
+          "a_cn": [
+            "这是小提琴。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-what-s-this-musical-instrument-4ac65f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-it-s-a-violin-ae75c9.mp3"
+          ]
+        },
+        {
+          "q": "Which body parts can you use to play the violin?",
+          "a": [
+            "I can play the violin with my hands and fingers."
+          ],
+          "key": [
+            "fingers"
+          ],
+          "q_cn": "用身体的哪部分弹小提琴？",
+          "a_cn": [
+            "我用手和手指演奏小提琴。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-which-body-parts-can-you-use-to-play-e6e12a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-i-can-play-the-violin-with-my-hands--2899f9.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-violin-c086a6.mp3"
+    },
+    {
+      "word": "trumpet",
+      "cn": "小号",
+      "tag": "word",
+      "image": "images/k1-inst-trumpet.webp",
+      "dialog": [
+        {
+          "q": "What's this musical instrument?",
+          "a": [
+            "It's a trumpet."
+          ],
+          "key": [
+            "trumpet"
+          ],
+          "q_cn": "这是什么乐器？",
+          "a_cn": [
+            "这是小号。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-what-s-this-musical-instrument-4ac65f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-it-s-a-trumpet-f848f7.mp3"
+          ]
+        },
+        {
+          "q": "Which body parts can you use to play the trumpet?",
+          "a": [
+            "I can play the trumpet with my mouth, hands and fingers."
+          ],
+          "key": [
+            "fingers"
+          ],
+          "q_cn": "用身体的哪部分弹小号？",
+          "a_cn": [
+            "我用嘴、手和手指演奏小号。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-which-body-parts-can-you-use-to-play-032a7b.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-i-can-play-the-trumpet-with-my-mouth-b2f143.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-trumpet-467e0e.mp3"
+    },
+    {
+      "word": "drums",
+      "cn": "鼓",
+      "tag": "word",
+      "image": "images/k1-inst-drums.webp",
+      "dialog": [
+        {
+          "q": "What's this musical instrument?",
+          "a": [
+            "They are drums."
+          ],
+          "key": [
+            "drums"
+          ],
+          "q_cn": "这是什么乐器？",
+          "a_cn": [
+            "这是鼓。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-what-s-this-musical-instrument-4ac65f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-they-are-drums-b38d54.mp3"
+          ]
+        },
+        {
+          "q": "Which body parts can you use to play the drums?",
+          "a": [
+            "I can play the drums with my hands."
+          ],
+          "key": [
+            "hands"
+          ],
+          "q_cn": "用身体的哪部分弹鼓？",
+          "a_cn": [
+            "我用手演奏鼓。"
+          ],
+          "q_audio": "audio/sentences/k1-instruments/q-which-body-parts-can-you-use-to-play-8a5e1c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-instruments/a-i-can-play-the-drums-with-my-hands-81db44.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-drums-02e43a.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "and": "audio/words/and.mp3",
+    "are": "audio/words/are.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "drums": "audio/words/drums.mp3",
+    "fingers": "audio/words/fingers.mp3",
+    "guitar": "audio/words/guitar.mp3",
+    "hands": "audio/words/hands.mp3",
+    "i": "audio/words/i.mp3",
+    "instrument": "audio/words/instrument.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "mouth": "audio/words/mouth.mp3",
+    "musical": "audio/words/musical.mp3",
+    "my": "audio/words/my.mp3",
+    "parts": "audio/words/parts.mp3",
+    "piano": "audio/words/piano.mp3",
+    "play": "audio/words/play.mp3",
+    "the": "audio/words/the.mp3",
+    "they": "audio/words/they.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "trumpet": "audio/words/trumpet.mp3",
+    "use": "audio/words/use.mp3",
+    "violin": "audio/words/violin.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

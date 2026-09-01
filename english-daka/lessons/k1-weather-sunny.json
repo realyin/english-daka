@@ -1,0 +1,130 @@
+{
+  "seq": 802,
+  "level": "K1",
+  "group": "天气 Weather",
+  "badge": "晴阴",
+  "title": "Weather · Sunny & Cloudy 晴天和阴天",
+  "cards": [
+    {
+      "word": "sunny",
+      "cn": "晴天",
+      "tag": "word",
+      "image": "images/k1-wx-sunny.webp",
+      "dialog": [
+        {
+          "q": "What's the weather like?",
+          "a": [
+            "It's a sunny day."
+          ],
+          "key": [
+            "sunny"
+          ],
+          "q_cn": "天气怎么样？",
+          "a_cn": [
+            "是晴天。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-sunny/q-what-s-the-weather-like-84a760.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-sunny/a-it-s-a-sunny-day-03c74a.mp3"
+          ]
+        },
+        {
+          "q": "What can you do on sunny days?",
+          "a": [
+            "I can eat ice cream on sunny days."
+          ],
+          "key": [
+            "cream"
+          ],
+          "q_cn": "晴天可以做什么？",
+          "a_cn": [
+            "晴天我可以吃冰激凌。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-sunny/q-what-can-you-do-on-sunny-days-f8c27a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-sunny/a-i-can-eat-ice-cream-on-sunny-days-a51d1b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-sunny/q-which-one-is-sunny-52b4bc.mp3"
+    },
+    {
+      "word": "cloudy",
+      "cn": "阴天",
+      "tag": "word",
+      "image": "images/k1-wx-cloudy.webp",
+      "dialog": [
+        {
+          "q": "What's the weather like?",
+          "a": [
+            "It's a cloudy day."
+          ],
+          "key": [
+            "cloudy"
+          ],
+          "q_cn": "天气怎么样？",
+          "a_cn": [
+            "是阴天。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-sunny/q-what-s-the-weather-like-84a760.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-sunny/a-it-s-a-cloudy-day-e9a206.mp3"
+          ]
+        },
+        {
+          "q": "What can you do on cloudy days?",
+          "a": [
+            "I can play in the house on cloudy days."
+          ],
+          "key": [
+            "house"
+          ],
+          "q_cn": "阴天可以做什么？",
+          "a_cn": [
+            "阴天我可以在家里玩。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-sunny/q-what-can-you-do-on-cloudy-days-70ba42.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-sunny/a-i-can-play-in-the-house-on-cloudy-da-92b18b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-sunny/q-which-one-is-cloudy-d925ee.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "can": "audio/words/can.mp3",
+    "cloudy": "audio/words/cloudy.mp3",
+    "cream": "audio/words/cream.mp3",
+    "day": "audio/words/day.mp3",
+    "days": "audio/words/days.mp3",
+    "do": "audio/words/do.mp3",
+    "eat": "audio/words/eat.mp3",
+    "house": "audio/words/house.mp3",
+    "i": "audio/words/i.mp3",
+    "ice": "audio/words/ice.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "like": "audio/words/like.mp3",
+    "on": "audio/words/on.mp3",
+    "play": "audio/words/play.mp3",
+    "sunny": "audio/words/sunny.mp3",
+    "the": "audio/words/the.mp3",
+    "weather": "audio/words/weather.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

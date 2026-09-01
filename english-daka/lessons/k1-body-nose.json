@@ -1,0 +1,126 @@
+{
+  "seq": 502,
+  "level": "K1",
+  "group": "身体 Body",
+  "badge": "nose",
+  "title": "Body · Nose & Mouth 鼻子和嘴巴",
+  "cards": [
+    {
+      "word": "nose",
+      "cn": "鼻子",
+      "tag": "word",
+      "image": "images/k1-body-nose.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is a nose."
+          ],
+          "key": [
+            "nose"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是鼻子。"
+          ],
+          "q_audio": "audio/sentences/k1-body-nose/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-nose/a-this-is-a-nose-db83ee.mp3"
+          ]
+        },
+        {
+          "q": "What can you do with your nose?",
+          "a": [
+            "I can smell with my nose."
+          ],
+          "key": [
+            "smell"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我能用鼻子闻。"
+          ],
+          "q_audio": "audio/sentences/k1-body-nose/q-what-can-you-do-with-your-nose-d27a20.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-nose/a-i-can-smell-with-my-nose-138300.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-nose/q-which-one-is-nose-42ded6.mp3"
+    },
+    {
+      "word": "mouth",
+      "cn": "嘴巴",
+      "tag": "word",
+      "image": "images/k1-body-mouth.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is a mouth."
+          ],
+          "key": [
+            "mouth"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是嘴巴。"
+          ],
+          "q_audio": "audio/sentences/k1-body-nose/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-nose/a-this-is-a-mouth-155fd0.mp3"
+          ]
+        },
+        {
+          "q": "What can you do with your mouth?",
+          "a": [
+            "I can eat with my mouth."
+          ],
+          "key": [
+            "eat"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我能用嘴巴吃东西。"
+          ],
+          "q_audio": "audio/sentences/k1-body-nose/q-what-can-you-do-with-your-mouth-a6009c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-nose/a-i-can-eat-with-my-mouth-b33f9e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-nose/q-which-one-is-mouth-caaf8e.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "eat": "audio/words/eat.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "mouth": "audio/words/mouth.mp3",
+    "my": "audio/words/my.mp3",
+    "nose": "audio/words/nose.mp3",
+    "part": "audio/words/part.mp3",
+    "smell": "audio/words/smell.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

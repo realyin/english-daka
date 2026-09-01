@@ -1,6 +1,483 @@
 {
   "lessons": [
     {
+      "id": "k1-letter-abcd",
+      "title": "Letters · A/B/C/D 认字母",
+      "words": 4,
+      "group": "字母 Letters",
+      "badge": "A",
+      "seq": 101,
+      "level": "K1"
+    },
+    {
+      "id": "k1-letter-efgh",
+      "title": "Letters · E/F/G/H 认字母",
+      "words": 4,
+      "group": "字母 Letters",
+      "badge": "E",
+      "seq": 102,
+      "level": "K1"
+    },
+    {
+      "id": "k1-letter-ijkl",
+      "title": "Letters · I/J/K/L 认字母",
+      "words": 4,
+      "group": "字母 Letters",
+      "badge": "I",
+      "seq": 103,
+      "level": "K1"
+    },
+    {
+      "id": "k1-letter-mnop",
+      "title": "Letters · M/N/O/P 认字母",
+      "words": 4,
+      "group": "字母 Letters",
+      "badge": "M",
+      "seq": 104,
+      "level": "K1"
+    },
+    {
+      "id": "k1-letter-qrstu",
+      "title": "Letters · Q/R/S/T/U 认字母",
+      "words": 5,
+      "group": "字母 Letters",
+      "badge": "Q",
+      "seq": 105,
+      "level": "K1"
+    },
+    {
+      "id": "k1-letter-vwxyz",
+      "title": "Letters · V/W/X/Y/Z 认字母",
+      "words": 5,
+      "group": "字母 Letters",
+      "badge": "V",
+      "seq": 106,
+      "level": "K1"
+    },
+    {
+      "id": "k1-number-1-5",
+      "title": "Numbers 1–5 · 数字 1–5",
+      "words": 5,
+      "group": "数字 Numbers",
+      "badge": "1-5",
+      "seq": 201,
+      "level": "K1"
+    },
+    {
+      "id": "k1-number-6-10",
+      "title": "Numbers 6–10 · 数字 6–10",
+      "words": 5,
+      "group": "数字 Numbers",
+      "badge": "6-10",
+      "seq": 202,
+      "level": "K1"
+    },
+    {
+      "id": "k1-number-11-12",
+      "title": "Numbers 11–12 · 数字 11–12",
+      "words": 2,
+      "group": "数字 Numbers",
+      "badge": "11-12",
+      "seq": 203,
+      "level": "K1"
+    },
+    {
+      "id": "k1-number-13-15",
+      "title": "Numbers 13–15 · 数字 13–15",
+      "words": 3,
+      "group": "数字 Numbers",
+      "badge": "13-15",
+      "seq": 204,
+      "level": "K1"
+    },
+    {
+      "id": "k1-color-red",
+      "title": "Colors · Red / Yellow / Blue",
+      "words": 3,
+      "group": "颜色 Colors",
+      "badge": "红黄蓝",
+      "seq": 301,
+      "level": "K1"
+    },
+    {
+      "id": "k1-color-orange",
+      "title": "Colors · Orange / Green / Purple",
+      "words": 3,
+      "group": "颜色 Colors",
+      "badge": "橙绿紫",
+      "seq": 302,
+      "level": "K1"
+    },
+    {
+      "id": "k1-color-black",
+      "title": "Colors · Black / White / Gray",
+      "words": 3,
+      "group": "颜色 Colors",
+      "badge": "黑白灰",
+      "seq": 303,
+      "level": "K1"
+    },
+    {
+      "id": "k1-color-pink",
+      "title": "Colors · Pink / Brown",
+      "words": 2,
+      "group": "颜色 Colors",
+      "badge": "粉棕",
+      "seq": 304,
+      "level": "K1"
+    },
+    {
+      "id": "k1-animal-farm",
+      "title": "Animals · Farm Animals 农场动物",
+      "words": 4,
+      "group": "动物 Animals",
+      "badge": "农场",
+      "seq": 401,
+      "level": "K1"
+    },
+    {
+      "id": "k1-animal-pets",
+      "title": "Animals · Pets 宠物",
+      "words": 3,
+      "group": "动物 Animals",
+      "badge": "宠物",
+      "seq": 402,
+      "level": "K1"
+    },
+    {
+      "id": "k1-animal-jungle",
+      "title": "Animals · Jungle Animals 丛林动物",
+      "words": 4,
+      "group": "动物 Animals",
+      "badge": "丛林",
+      "seq": 403,
+      "level": "K1"
+    },
+    {
+      "id": "k1-animal-birds",
+      "title": "Animals · Birds 鸟类",
+      "words": 3,
+      "group": "动物 Animals",
+      "badge": "鸟",
+      "seq": 404,
+      "level": "K1"
+    },
+    {
+      "id": "k1-animal-ocean",
+      "title": "Animals · Ocean Animals 海洋动物",
+      "words": 3,
+      "group": "动物 Animals",
+      "badge": "海洋",
+      "seq": 405,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-eyes",
+      "title": "Body · Eyes & Ears 眼睛和耳朵",
+      "words": 2,
+      "group": "身体 Body",
+      "badge": "eyes",
+      "seq": 501,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-nose",
+      "title": "Body · Nose & Mouth 鼻子和嘴巴",
+      "words": 2,
+      "group": "身体 Body",
+      "badge": "nose",
+      "seq": 502,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-hair",
+      "title": "Body · Hair & Face 头发和脸",
+      "words": 2,
+      "group": "身体 Body",
+      "badge": "hair",
+      "seq": 503,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-head",
+      "title": "Body · Head & Neck & Shoulders 头颈肩",
+      "words": 3,
+      "group": "身体 Body",
+      "badge": "head",
+      "seq": 504,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-arms",
+      "title": "Body · Arms & Hands & Fingers 手臂手指",
+      "words": 3,
+      "group": "身体 Body",
+      "badge": "arms",
+      "seq": 505,
+      "level": "K1"
+    },
+    {
+      "id": "k1-body-legs",
+      "title": "Body · Legs & Feet & Toes 腿脚趾",
+      "words": 3,
+      "group": "身体 Body",
+      "badge": "legs",
+      "seq": 506,
+      "level": "K1"
+    },
+    {
+      "id": "k1-action-wash",
+      "title": "Actions · Wash & Brush 洗和刷",
+      "words": 4,
+      "group": "动作 Actions",
+      "badge": "wash",
+      "seq": 601,
+      "level": "K1"
+    },
+    {
+      "id": "k1-action-eat",
+      "title": "Actions · Eat & Drink 吃和喝",
+      "words": 2,
+      "group": "动作 Actions",
+      "badge": "eat",
+      "seq": 602,
+      "level": "K1"
+    },
+    {
+      "id": "k1-action-walk",
+      "title": "Actions · Walk & Jump & Run 走跳跑",
+      "words": 3,
+      "group": "动作 Actions",
+      "badge": "walk",
+      "seq": 603,
+      "level": "K1"
+    },
+    {
+      "id": "k1-action-help",
+      "title": "Actions · Help & Care & Play & Share 帮助分享",
+      "words": 4,
+      "group": "动作 Actions",
+      "badge": "help",
+      "seq": 604,
+      "level": "K1"
+    },
+    {
+      "id": "k1-action-read",
+      "title": "Actions · Read & Draw & Sing & Dance 读画唱跳",
+      "words": 4,
+      "group": "动作 Actions",
+      "badge": "read",
+      "seq": 605,
+      "level": "K1"
+    },
+    {
+      "id": "k1-job-police",
+      "title": "Jobs · Policeman & Firefighter 警察和消防员",
+      "words": 4,
+      "group": "职业 Jobs",
+      "badge": "police",
+      "seq": 701,
+      "level": "K1"
+    },
+    {
+      "id": "k1-job-doctor",
+      "title": "Jobs · Doctor & Nurse 医生和护士",
+      "words": 4,
+      "group": "职业 Jobs",
+      "badge": "doctor",
+      "seq": 702,
+      "level": "K1"
+    },
+    {
+      "id": "k1-job-pilot",
+      "title": "Jobs · Pilot & Astronaut 飞行员和宇航员",
+      "words": 4,
+      "group": "职业 Jobs",
+      "badge": "pilot",
+      "seq": 703,
+      "level": "K1"
+    },
+    {
+      "id": "k1-job-engineer",
+      "title": "Jobs · Engineer & Artist 工程师和画家",
+      "words": 2,
+      "group": "职业 Jobs",
+      "badge": "engineer",
+      "seq": 704,
+      "level": "K1"
+    },
+    {
+      "id": "k1-weather-hot",
+      "title": "Weather · Hot / Cool / Cold / Warm 冷热感受",
+      "words": 4,
+      "group": "天气 Weather",
+      "badge": "感受",
+      "seq": 801,
+      "level": "K1"
+    },
+    {
+      "id": "k1-pattern-number",
+      "title": "Number Pattern · 数字规律",
+      "words": 2,
+      "group": "规律 Patterns",
+      "badge": "数字",
+      "seq": 802,
+      "level": "K1"
+    },
+    {
+      "id": "k1-weather-sunny",
+      "title": "Weather · Sunny & Cloudy 晴天和阴天",
+      "words": 2,
+      "group": "天气 Weather",
+      "badge": "晴阴",
+      "seq": 802,
+      "level": "K1"
+    },
+    {
+      "id": "k1-pattern-color",
+      "title": "Color Pattern · 颜色规律",
+      "words": 2,
+      "group": "规律 Patterns",
+      "badge": "颜色",
+      "seq": 803,
+      "level": "K1"
+    },
+    {
+      "id": "k1-weather-rainy",
+      "title": "Weather · Rainy & Snowy 雨天和雪天",
+      "words": 2,
+      "group": "天气 Weather",
+      "badge": "雨雪",
+      "seq": 803,
+      "level": "K1"
+    },
+    {
+      "id": "k1-pattern-shape",
+      "title": "Shape Pattern · 形状规律",
+      "words": 2,
+      "group": "规律 Patterns",
+      "badge": "形状",
+      "seq": 804,
+      "level": "K1"
+    },
+    {
+      "id": "k1-weather-windy",
+      "title": "Weather · Windy & Stormy 刮风和雷雨",
+      "words": 2,
+      "group": "天气 Weather",
+      "badge": "风暴",
+      "seq": 804,
+      "level": "K1"
+    },
+    {
+      "id": "k1-pattern-symbol",
+      "title": "Symbol Pattern · 符号规律",
+      "words": 2,
+      "group": "规律 Patterns",
+      "badge": "符号",
+      "seq": 805,
+      "level": "K1"
+    },
+    {
+      "id": "k1-weather-spring",
+      "title": "Seasons · Spring / Summer / Fall / Winter 四季",
+      "words": 4,
+      "group": "天气 Weather",
+      "badge": "季节",
+      "seq": 805,
+      "level": "K1"
+    },
+    {
+      "id": "k1-shape-circle",
+      "title": "Shapes · Circle & Oval 圆形和椭圆",
+      "words": 2,
+      "group": "形状 Shapes",
+      "badge": "圆",
+      "seq": 901,
+      "level": "K1"
+    },
+    {
+      "id": "k1-shape-square",
+      "title": "Shapes · Square & Rectangle 正方形和长方形",
+      "words": 2,
+      "group": "形状 Shapes",
+      "badge": "方",
+      "seq": 902,
+      "level": "K1"
+    },
+    {
+      "id": "k1-shape-more",
+      "title": "Shapes · Triangle / Diamond / Trapezoid 三角菱形梯形",
+      "words": 3,
+      "group": "形状 Shapes",
+      "badge": "△",
+      "seq": 903,
+      "level": "K1"
+    },
+    {
+      "id": "k1-pattern-letter",
+      "title": "Letter Pattern · 字母规律",
+      "words": 2,
+      "group": "规律 Patterns",
+      "badge": "字母",
+      "seq": 1001,
+      "level": "K1"
+    },
+    {
+      "id": "k1-instruments",
+      "title": "Musical Instruments · 乐器",
+      "words": 5,
+      "group": "乐器 Instruments",
+      "badge": "🎹",
+      "seq": 1101,
+      "level": "K1"
+    },
+    {
+      "id": "k1-holiday-christmas",
+      "title": "Holidays · Christmas 圣诞节",
+      "words": 3,
+      "group": "节日 Holidays",
+      "badge": "🎄",
+      "seq": 1201,
+      "level": "K1"
+    },
+    {
+      "id": "k1-holiday-easter",
+      "title": "Holidays · Easter 复活节",
+      "words": 4,
+      "group": "节日 Holidays",
+      "badge": "🐰",
+      "seq": 1202,
+      "level": "K1"
+    },
+    {
+      "id": "k1-holiday-thanksgiving",
+      "title": "Holidays · Thanksgiving 感恩节",
+      "words": 2,
+      "group": "节日 Holidays",
+      "badge": "🦃",
+      "seq": 1203,
+      "level": "K1"
+    },
+    {
+      "id": "k1-holiday-halloween",
+      "title": "Holidays · Halloween 万圣节",
+      "words": 3,
+      "group": "节日 Holidays",
+      "badge": "🎃",
+      "seq": 1204,
+      "level": "K1"
+    },
+    {
+      "id": "k1-holiday-spring-festival",
+      "title": "Holidays · Spring Festival 春节",
+      "words": 4,
+      "group": "节日 Holidays",
+      "badge": "🧧",
+      "seq": 1205,
+      "level": "K1"
+    },
+    {
       "id": "k2-letter-s",
       "title": "Letter S · /s/",
       "words": 6,
@@ -255,7 +732,7 @@
     {
       "id": "k2-zoo",
       "title": "At the Zoo · 动物园",
-      "words": 8,
+      "words": 9,
       "group": "主题 Topics",
       "badge": "🦁",
       "seq": 501,
@@ -310,19 +787,5 @@
       "level": "K2"
     }
   ],
-  "days": [
-    {
-      "date": "2026-08-31",
-      "cards": 8,
-      "lessons": [
-        "k2-sw-all",
-        "k2-sw-here-is",
-        "k2-sw-on-the-go",
-        "k2-sw-to-and",
-        "k2-wf-ad",
-        "k2-wf-id",
-        "k2-wf-ot"
-      ]
-    }
-  ]
+  "days": []
 }

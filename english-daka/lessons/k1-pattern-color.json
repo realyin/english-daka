@@ -1,0 +1,139 @@
+{
+  "seq": 1003,
+  "level": "K1",
+  "group": "规律 Patterns",
+  "badge": "颜色",
+  "title": "Color Pattern · 颜色规律",
+  "cards": [
+    {
+      "word": "red yellow blue pattern",
+      "cn": "红黄蓝规律",
+      "tag": "pattern",
+      "pattern": [
+        "#red",
+        "#yellow",
+        "#blue",
+        "#red",
+        "#yellow",
+        "#blue",
+        "?"
+      ],
+      "dialog": [
+        {
+          "q": "What's this pattern?",
+          "a": [
+            "The pattern is red yellow blue, red yellow blue."
+          ],
+          "key": [
+            "red"
+          ],
+          "q_cn": "这个规律是什么？",
+          "a_cn": [
+            "这个规律是 红 黄 蓝，红 黄 蓝。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-color/q-what-s-this-pattern-355a28.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-color/a-the-pattern-is-red-yellow-blue-red-y-9f9580.mp3"
+          ]
+        },
+        {
+          "q": "What comes next?",
+          "a": [
+            "Red comes next."
+          ],
+          "key": [
+            "red"
+          ],
+          "q_cn": "下一个是什么？",
+          "a_cn": [
+            "下一个是红色。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-color/q-what-comes-next-f91e92.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-color/a-red-comes-next-c68550.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-pattern-color/q-which-one-is-red-yellow-blue-pattern-9905d8.mp3"
+    },
+    {
+      "word": "yellow green purple pattern",
+      "cn": "黄绿紫规律",
+      "tag": "pattern",
+      "pattern": [
+        "#yellow",
+        "#green",
+        "#purple",
+        "#yellow",
+        "#green",
+        "#purple",
+        "?"
+      ],
+      "dialog": [
+        {
+          "q": "What's this pattern?",
+          "a": [
+            "The pattern is yellow green purple, yellow green purple."
+          ],
+          "key": [
+            "yellow"
+          ],
+          "q_cn": "这个规律是什么？",
+          "a_cn": [
+            "这个规律是 黄 绿 紫，黄 绿 紫。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-color/q-what-s-this-pattern-355a28.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-color/a-the-pattern-is-yellow-green-purple-y-6d1374.mp3"
+          ]
+        },
+        {
+          "q": "What comes next?",
+          "a": [
+            "Yellow comes next."
+          ],
+          "key": [
+            "yellow"
+          ],
+          "q_cn": "下一个是什么？",
+          "a_cn": [
+            "下一个是黄色。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-color/q-what-comes-next-f91e92.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-color/a-yellow-comes-next-06e03a.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-pattern-color/q-which-one-is-yellow-green-purple-pat-01cfe8.mp3"
+    }
+  ],
+  "word_audio": {
+    "blue": "audio/words/blue.mp3",
+    "comes": "audio/words/comes.mp3",
+    "green": "audio/words/green.mp3",
+    "is": "audio/words/is.mp3",
+    "next": "audio/words/next.mp3",
+    "pattern": "audio/words/pattern.mp3",
+    "purple": "audio/words/purple.mp3",
+    "red": "audio/words/red.mp3",
+    "red yellow blue pattern": "audio/words/red-yellow-blue-pattern.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "yellow": "audio/words/yellow.mp3",
+    "yellow green purple pattern": "audio/words/yellow-green-purple-pattern.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

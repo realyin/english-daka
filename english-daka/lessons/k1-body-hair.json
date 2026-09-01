@@ -1,0 +1,125 @@
+{
+  "seq": 503,
+  "level": "K1",
+  "group": "身体 Body",
+  "badge": "hair",
+  "title": "Body · Hair & Face 头发和脸",
+  "cards": [
+    {
+      "word": "hair",
+      "cn": "头发",
+      "tag": "word",
+      "image": "images/k1-body-hair.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is hair."
+          ],
+          "key": [
+            "hair"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是头发。"
+          ],
+          "q_audio": "audio/sentences/k1-body-hair/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-hair/a-this-is-hair-c979f2.mp3"
+          ]
+        },
+        {
+          "q": "What color is your hair?",
+          "a": [
+            "My hair is black."
+          ],
+          "key": [
+            "black"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我的头发是黑色的。"
+          ],
+          "q_audio": "audio/sentences/k1-body-hair/q-what-color-is-your-hair-17d8bf.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-hair/a-my-hair-is-black-5136c9.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-hair/q-which-one-is-hair-b8bcdc.mp3"
+    },
+    {
+      "word": "face",
+      "cn": "脸",
+      "tag": "word",
+      "image": "images/k1-body-face.webp",
+      "dialog": [
+        {
+          "q": "What's this body part?",
+          "a": [
+            "This is a face."
+          ],
+          "key": [
+            "face"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是脸。"
+          ],
+          "q_audio": "audio/sentences/k1-body-hair/q-what-s-this-body-part-cedc3c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-hair/a-this-is-a-face-68741b.mp3"
+          ]
+        },
+        {
+          "q": "Can you touch your face?",
+          "a": [
+            "I can touch my face."
+          ],
+          "key": [
+            "touch"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我能摸到我的脸。"
+          ],
+          "q_audio": "audio/sentences/k1-body-hair/q-can-you-touch-your-face-2c640c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-hair/a-i-can-touch-my-face-2583db.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-hair/q-which-one-is-face-f44037.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "black": "audio/words/black.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "color": "audio/words/color.mp3",
+    "face": "audio/words/face.mp3",
+    "hair": "audio/words/hair.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "my": "audio/words/my.mp3",
+    "part": "audio/words/part.mp3",
+    "this": "audio/words/this.mp3",
+    "touch": "audio/words/touch.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

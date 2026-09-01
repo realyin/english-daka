@@ -1,0 +1,137 @@
+{
+  "seq": 1002,
+  "level": "K1",
+  "group": "规律 Patterns",
+  "badge": "数字",
+  "title": "Number Pattern · 数字规律",
+  "cards": [
+    {
+      "word": "4 7 pattern",
+      "cn": "4 7 规律",
+      "tag": "pattern",
+      "pattern": [
+        "4",
+        "7",
+        "4",
+        "7",
+        "?"
+      ],
+      "dialog": [
+        {
+          "q": "What's this pattern?",
+          "a": [
+            "The pattern is four seven, four seven."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "这个规律是什么？",
+          "a_cn": [
+            "这个规律是 4 7，4 7。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-number/q-what-s-this-pattern-355a28.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-number/a-the-pattern-is-four-seven-four-seven-08fa2e.mp3"
+          ]
+        },
+        {
+          "q": "What comes next?",
+          "a": [
+            "Four comes next."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "下一个是什么？",
+          "a_cn": [
+            "下一个是四。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-number/q-what-comes-next-f91e92.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-number/a-four-comes-next-7fd9f2.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-pattern-number/q-which-one-is-4-7-pattern-bb38e1.mp3"
+    },
+    {
+      "word": "11 13 15 pattern",
+      "cn": "11 13 15 规律",
+      "tag": "pattern",
+      "pattern": [
+        "11",
+        "13",
+        "15",
+        "11",
+        "13",
+        "15",
+        "?"
+      ],
+      "dialog": [
+        {
+          "q": "What's this pattern?",
+          "a": [
+            "The pattern is eleven thirteen fifteen, eleven thirteen fifteen."
+          ],
+          "key": [
+            "eleven"
+          ],
+          "q_cn": "这个规律是什么？",
+          "a_cn": [
+            "这个规律是 11 13 15，11 13 15。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-number/q-what-s-this-pattern-355a28.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-number/a-the-pattern-is-eleven-thirteen-fifte-5dc962.mp3"
+          ]
+        },
+        {
+          "q": "What comes next?",
+          "a": [
+            "Eleven comes next."
+          ],
+          "key": [
+            "eleven"
+          ],
+          "q_cn": "下一个是什么？",
+          "a_cn": [
+            "下一个是十一。"
+          ],
+          "q_audio": "audio/sentences/k1-pattern-number/q-what-comes-next-f91e92.mp3",
+          "a_audio": [
+            "audio/sentences/k1-pattern-number/a-eleven-comes-next-161041.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-pattern-number/q-which-one-is-11-13-15-pattern-28e087.mp3"
+    }
+  ],
+  "word_audio": {
+    "11 13 15 pattern": "audio/words/11-13-15-pattern.mp3",
+    "4 7 pattern": "audio/words/4-7-pattern.mp3",
+    "comes": "audio/words/comes.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "fifteen": "audio/words/fifteen.mp3",
+    "four": "audio/words/four.mp3",
+    "is": "audio/words/is.mp3",
+    "next": "audio/words/next.mp3",
+    "pattern": "audio/words/pattern.mp3",
+    "seven": "audio/words/seven.mp3",
+    "the": "audio/words/the.mp3",
+    "thirteen": "audio/words/thirteen.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

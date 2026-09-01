@@ -1,0 +1,166 @@
+{
+  "seq": 405,
+  "level": "K1",
+  "group": "动物 Animals",
+  "badge": "海洋",
+  "title": "Animals · Ocean Animals 海洋动物",
+  "cards": [
+    {
+      "word": "shark",
+      "cn": "鲨鱼",
+      "tag": "word",
+      "image": "images/k1-animal-shark.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a shark."
+          ],
+          "key": [
+            "shark"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是鲨鱼。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-it-s-a-shark-071564.mp3"
+          ]
+        },
+        {
+          "q": "Where does a shark live?",
+          "a": [
+            "A shark lives in the ocean."
+          ],
+          "key": [
+            "ocean"
+          ],
+          "q_cn": "鲨鱼住在哪里？",
+          "a_cn": [
+            "鲨鱼住在海洋里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-where-does-a-shark-live-b815b9.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-a-shark-lives-in-the-ocean-9e4db7.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-ocean/q-which-one-is-shark-6a0220.mp3"
+    },
+    {
+      "word": "dolphin",
+      "cn": "海豚",
+      "tag": "word",
+      "image": "images/k1-animal-dolphin.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a dolphin."
+          ],
+          "key": [
+            "dolphin"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是海豚。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-it-s-a-dolphin-b88c0d.mp3"
+          ]
+        },
+        {
+          "q": "Where does a dolphin live?",
+          "a": [
+            "A dolphin lives in the ocean."
+          ],
+          "key": [
+            "ocean"
+          ],
+          "q_cn": "海豚住在哪里？",
+          "a_cn": [
+            "海豚住在海洋里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-where-does-a-dolphin-live-fb14aa.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-a-dolphin-lives-in-the-ocean-e60010.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-ocean/q-which-one-is-dolphin-1ef608.mp3"
+    },
+    {
+      "word": "whale",
+      "cn": "鲸鱼",
+      "tag": "word",
+      "image": "images/k1-animal-whale.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a whale."
+          ],
+          "key": [
+            "whale"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是鲸鱼。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-it-s-a-whale-9672b0.mp3"
+          ]
+        },
+        {
+          "q": "Where does a whale live?",
+          "a": [
+            "A whale lives in the ocean."
+          ],
+          "key": [
+            "ocean"
+          ],
+          "q_cn": "鲸鱼住在哪里？",
+          "a_cn": [
+            "鲸鱼住在海洋里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-ocean/q-where-does-a-whale-live-b2a17d.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-ocean/a-a-whale-lives-in-the-ocean-83c7cd.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-ocean/q-which-one-is-whale-a0533f.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "animal": "audio/words/animal.mp3",
+    "does": "audio/words/does.mp3",
+    "dolphin": "audio/words/dolphin.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "ocean": "audio/words/ocean.mp3",
+    "shark": "audio/words/shark.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "whale": "audio/words/whale.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

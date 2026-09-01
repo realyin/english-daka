@@ -1,0 +1,124 @@
+{
+  "seq": 704,
+  "level": "K1",
+  "group": "职业 Jobs",
+  "badge": "engineer",
+  "title": "Jobs · Engineer & Artist 工程师和画家",
+  "cards": [
+    {
+      "word": "engineer",
+      "cn": "工程师",
+      "tag": "word",
+      "image": "images/k1-job-engineer.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is an engineer."
+          ],
+          "key": [
+            "engineer"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是工程师。"
+          ],
+          "q_audio": "audio/sentences/k1-job-engineer/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-engineer/a-this-is-an-engineer-721a94.mp3"
+          ]
+        },
+        {
+          "q": "What can engineers do?",
+          "a": [
+            "Engineers can build houses."
+          ],
+          "key": [
+            "houses"
+          ],
+          "q_cn": "工程师能做什么？",
+          "a_cn": [
+            "工程师能修建房屋。"
+          ],
+          "q_audio": "audio/sentences/k1-job-engineer/q-what-can-engineers-do-7d899a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-engineer/a-engineers-can-build-houses-534089.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-engineer/q-which-one-is-engineer-db3d26.mp3"
+    },
+    {
+      "word": "artist",
+      "cn": "画家",
+      "tag": "word",
+      "image": "images/k1-job-artist.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is an artist."
+          ],
+          "key": [
+            "artist"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是画家。"
+          ],
+          "q_audio": "audio/sentences/k1-job-engineer/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-engineer/a-this-is-an-artist-1c8d45.mp3"
+          ]
+        },
+        {
+          "q": "What can artists do?",
+          "a": [
+            "Artists can draw pictures."
+          ],
+          "key": [
+            "pictures"
+          ],
+          "q_cn": "画家能做什么？",
+          "a_cn": [
+            "画家会画画。"
+          ],
+          "q_audio": "audio/sentences/k1-job-engineer/q-what-can-artists-do-742374.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-engineer/a-artists-can-draw-pictures-fbc39f.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-engineer/q-which-one-is-artist-12e891.mp3"
+    }
+  ],
+  "word_audio": {
+    "an": "audio/words/an.mp3",
+    "artist": "audio/words/artist.mp3",
+    "artists": "audio/words/artists.mp3",
+    "build": "audio/words/build.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "draw": "audio/words/draw.mp3",
+    "engineer": "audio/words/engineer.mp3",
+    "engineers": "audio/words/engineers.mp3",
+    "houses": "audio/words/houses.mp3",
+    "is": "audio/words/is.mp3",
+    "job": "audio/words/job.mp3",
+    "pictures": "audio/words/pictures.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "seq": 701,
+  "level": "K1",
+  "group": "职业 Jobs",
+  "badge": "police",
+  "title": "Jobs · Policeman & Firefighter 警察和消防员",
+  "cards": [
+    {
+      "word": "policeman",
+      "cn": "警察",
+      "tag": "word",
+      "image": "images/k1-job-policeman.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a policeman."
+          ],
+          "key": [
+            "policeman"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是警察。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-this-is-a-policeman-5554cb.mp3"
+          ]
+        },
+        {
+          "q": "What can policemen do?",
+          "a": [
+            "Policemen can catch bad people."
+          ],
+          "key": [
+            "catch"
+          ],
+          "q_cn": "警察能做什么？",
+          "a_cn": [
+            "警察能抓坏人。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-can-policemen-do-25f163.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-policemen-can-catch-bad-people-89ef30.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-police/q-which-one-is-policeman-ee980f.mp3"
+    },
+    {
+      "word": "police car",
+      "cn": "警车",
+      "tag": "word",
+      "image": "images/k1-job-police-car.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "This is a police car."
+          ],
+          "key": [
+            "car"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是警车。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-this-is-a-police-car-d53fdf.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-police/q-which-one-is-police-car-2dd85b.mp3"
+    },
+    {
+      "word": "firefighter",
+      "cn": "消防员",
+      "tag": "word",
+      "image": "images/k1-job-firefighter.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a firefighter."
+          ],
+          "key": [
+            "firefighter"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是消防员。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-this-is-a-firefighter-adf8ae.mp3"
+          ]
+        },
+        {
+          "q": "What can firefighters do?",
+          "a": [
+            "Firefighters can put out fires."
+          ],
+          "key": [
+            "fires"
+          ],
+          "q_cn": "消防员能做什么？",
+          "a_cn": [
+            "消防员能灭火。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-can-firefighters-do-548c00.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-firefighters-can-put-out-fires-e0b79c.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-police/q-which-one-is-firefighter-2fa58a.mp3"
+    },
+    {
+      "word": "fire truck",
+      "cn": "消防车",
+      "tag": "word",
+      "image": "images/k1-job-fire-truck.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "This is a fire truck."
+          ],
+          "key": [
+            "truck"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是消防车。"
+          ],
+          "q_audio": "audio/sentences/k1-job-police/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-police/a-this-is-a-fire-truck-620b0a.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-police/q-which-one-is-fire-truck-062871.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "bad": "audio/words/bad.mp3",
+    "can": "audio/words/can.mp3",
+    "car": "audio/words/car.mp3",
+    "catch": "audio/words/catch.mp3",
+    "do": "audio/words/do.mp3",
+    "fire": "audio/words/fire.mp3",
+    "fire truck": "audio/words/fire-truck.mp3",
+    "firefighter": "audio/words/firefighter.mp3",
+    "firefighters": "audio/words/firefighters.mp3",
+    "fires": "audio/words/fires.mp3",
+    "is": "audio/words/is.mp3",
+    "job": "audio/words/job.mp3",
+    "out": "audio/words/out.mp3",
+    "people": "audio/words/people.mp3",
+    "police": "audio/words/police.mp3",
+    "police car": "audio/words/police-car.mp3",
+    "policeman": "audio/words/policeman.mp3",
+    "policemen": "audio/words/policemen.mp3",
+    "put": "audio/words/put.mp3",
+    "this": "audio/words/this.mp3",
+    "truck": "audio/words/truck.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}
