@@ -464,6 +464,17 @@
      而且每次进去内容都不一样,当成"课"会误导 */
   /* text-align:center 显式写出来:它以前是从 header 继承的,
      而 header 的 text-align 只服务标题,不该被按钮的居中依赖着 */
+  /* 级别切换器:K1 导入前只有一个级别,整条 hidden,页面无变化 */
+  .lv-bar{
+    max-width:720px;margin:18px auto -6px;padding:0 16px;
+    display:flex;gap:8px;
+  }
+  .lv-tab{
+    padding:7px 22px;border:none;border-radius:999px;cursor:pointer;
+    font-size:14px;font-weight:900;color:#7A879E;background:#E7EDF6;
+  }
+  .lv-tab.on{background:var(--blue);color:#fff;}
+  .lv-tab:focus-visible{outline:3px solid var(--blue);outline-offset:2px;}
   .review-btn{
     /* flex 而不是 block:并排时会被 stretch 拉到和主按钮同高(52px),
        block 的文字会贴在顶上,竖向也要居中 */
@@ -592,6 +603,7 @@
     </div>
   </div>
 </header>
+<div id="lvBar" class="lv-bar" hidden></div>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
 
@@ -1567,7 +1579,8 @@ function enableMouseDrag(row){
   row.addEventListener("dragstart", e => e.preventDefault());
 }
 
-function buildShelf(group, lessons){
+function buildShelf(group, lessons, memKey){
+  memKey = memKey || group;      // 多级别后 K1/K2 都有「字母 Letters」,记忆键要带级别
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
@@ -1615,7 +1628,7 @@ function buildShelf(group, lessons){
   row.setAttribute("aria-label", group);
 
   // 跳转走 <a> 的默认行为,这里只顺手记下滚到哪儿了(处理器在导航之前跑完)
-  row.addEventListener("click", () => saveShelfMem(group, row.scrollLeft));
+  row.addEventListener("click", () => saveShelfMem(memKey, row.scrollLeft));
   enableMouseDrag(row);                          // 桌面鼠标也能拖着滚
 
   return wrap;
@@ -1626,7 +1639,7 @@ function buildShelf(group, lessons){
    ⚠️ 不用 scrollIntoView():它会连带把整页竖向滚一段 —— 一进目录页就被拽到
    第三个货架那儿去了。两张卡的 offsetLeft 之差不受 offsetParent 是谁的影响,
    正好等于要滚的距离(第一张停在 scrollLeft=0 时左缘正对标题)。 */
-function restoreShelfPos(group, wrap, lessons){
+function restoreShelfPos(group, wrap, lessons){   // group 这里已是记忆键(级别|组)
   const row = wrap.querySelector(".shelf-row");
   const covers = row.children;
   const mem = shelfMem();
@@ -1647,6 +1660,64 @@ function restoreShelfPos(group, wrap, lessons){
 /* 清单还没回来时先占住版面(见 CSS 的「骨架屏」)。
    ⚠️ 两条出路都要记得撤掉它:成功时被真架子换掉,失败时在 catch 里清空。
    漏了失败那条,页面就是"错误提示 + 底下三个灰块还在呼吸",自相矛盾。 */
+/* ── 级别切换器 + 分级货架 ─────────────────────────────────────────
+   目录只显示一个级别的货架:K1 全套导入后课程翻倍,平铺的话孩子每天要
+   滚过一整屏已学完的旧课才摸到正在学的。只有一个级别时切换器不渲染,
+   页面和从前一个像素都不差。
+   默认停在"当前级别"(手里排位最高的那个 —— 导入跟着孩子进度走,K1 学完
+   才会有 K2);手动切换记在 localStorage(设备本地的浏览习惯,不进存档信封)。 */
+var LV_KEY = "daka-level";
+function pickLevel(levels){
+  try{
+    var m = localStorage.getItem(LV_KEY);
+    if(m && levels.indexOf(m) >= 0) return m;
+  }catch(e){}
+  return levels[levels.length - 1];          // levels 已按 LV_ORDER 排,末位=当前级别
+}
+function renderLevels(lessons){
+  var levels = [];
+  lessons.forEach(function(l){
+    if(levels.indexOf(lvOf(l)) < 0) levels.push(lvOf(l));
+  });
+  levels.sort(function(a, b){ return lvRank(a) - lvRank(b); });
+  var bar = document.getElementById("lvBar");
+  if(levels.length > 1){
+    var cur = pickLevel(levels);
+    bar.hidden = false;
+    bar.innerHTML = levels.map(function(lv){
+      return '<button type="button" class="lv-tab' + (lv === cur ? " on" : "") +
+             '" data-lv="' + lv + '">' + lv + "</button>";
+    }).join("");
+    bar.onclick = function(e){
+      var b = e.target.closest(".lv-tab");
+      if(!b || b.classList.contains("on")) return;
+      try{ localStorage.setItem(LV_KEY, b.dataset.lv); }catch(err){}
+      renderLevels(lessons);                 // 重画切换器高亮 + 货架
+    };
+    renderShelves(lessons.filter(function(l){ return lvOf(l) === cur; }), cur);
+  }else{
+    bar.hidden = true;
+    renderShelves(lessons, levels[0] || "K2");
+  }
+}
+function renderShelves(lessons, lv){
+  const shelves = document.getElementById("shelves");
+  shelves.innerHTML = "";
+  const order = [], byGroup = new Map();
+  lessons.forEach(l => {
+    const g = l.group || "其他 Others";
+    if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
+    byGroup.get(g).push(l);
+  });
+  order.forEach(g => {
+    const ls = byGroup.get(g);
+    const key = lv + "|" + g;                // 记忆键带级别,K1/K2 同名组不串位
+    const wrap = buildShelf(g, ls, key);
+    shelves.appendChild(wrap);
+    restoreShelfPos(key, wrap, ls);          // 先上树再定位,理由见函数注释
+  });
+}
+
 function showSkeleton(){
   var box = document.getElementById("shelves");
   box.innerHTML =
@@ -1664,22 +1735,9 @@ function showSkeleton(){
     const r = await fetch("lessons/index.json", {cache:"no-store"});
     if(!r.ok) throw new Error();
     const data = await r.json();
-    const shelves = document.getElementById("shelves");
-    shelves.innerHTML = "";      // 骨架下岗,真架子上台
-    const order = [], byGroup = new Map();
-    data.lessons.forEach(l => {
-      const g = l.group || "其他 Others";
-      if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
-      byGroup.get(g).push(l);
-    });
-    renderContinue(data.lessons);
+    renderContinue(data.lessons);            // 继续学/按课堂复习看全部级别
     renderDayPicker(data);
-    order.forEach(g => {
-      const ls = byGroup.get(g);
-      const wrap = buildShelf(g, ls);
-      shelves.appendChild(wrap);
-      restoreShelfPos(g, wrap, ls);            // 先上树再定位,理由见函数注释
-    });
+    renderLevels(data.lessons);              // 货架按级别渲染(单级别时没有切换器)
   }catch(e){
     // 骨架必须撤掉:留着它就是"永远在加载",而下面明明写着加载失败了
     document.getElementById("shelves").innerHTML = "";

@@ -108,6 +108,12 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
     cards = d.get("cards") or []
 
     # ---- 顶层
+    lv = d.get("level")
+    if not lv:
+        r.e("顶层", "缺 level(K1/K2/…)—— 目录页按它分级,混合复习按它给新卡排队；"
+                    "老课回填 K2,新课由 new_lesson.py --level 写入")
+    elif lv not in ("K1", "K2", "K3", "S1", "S2", "S3"):
+        r.w("顶层", f"level「{lv}」不在已知级别表里(K1/K2/K3/S1/S2/S3)")
     for k in ("seq", "group", "badge", "title", "cards"):
         if k not in d:
             r.e("顶层", f"缺字段 {k}（目录页靠 seq/group/badge 分组和排序）")
