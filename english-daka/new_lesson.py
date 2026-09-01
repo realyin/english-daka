@@ -53,13 +53,15 @@ PROMPTS = ROOT / "docs" / "prompts"
 
 TODO = "待填"          # 骨架里等人填的地方，check_lesson.py 会挑出来
 
-# 课型 → (目录页分组, seq 段, 课程 id 前缀, 配图文件名前缀模板)
+LEVELS = ["k1", "k2", "k3", "s1", "s2", "s3"]     # 学习路径顺序,id 前缀用小写
+
+# 课型 → (目录页分组, seq 段)。课程 id 前缀 = <级别>-<课型缩写>-,由 --level 决定
 TYPES = OrderedDict([
-    ("letter",      ("字母 Letters",       100, "k2-letter-")),
-    ("word-family", ("词族 Word Family",   200, "k2-wf-")),
-    ("cvc",         ("拼读 Phonics",       300, "k2-cvc-")),
-    ("sight-word",  ("常见词 Sight Words", 400, "k2-sw-")),
-    ("topic",       (None,                 500, "k2-")),      # 分组由 --group 指定
+    ("letter",      ("字母 Letters",       100, "letter-")),
+    ("word-family", ("词族 Word Family",   200, "wf-")),
+    ("cvc",         ("拼读 Phonics",       300, "cvc-")),
+    ("sight-word",  ("常见词 Sight Words", 400, "sw-")),
+    ("topic",       (None,                 500, "")),         # 分组由 --group 指定
 ])
 # topic 类课程可以落在这几段
 TOPIC_BANDS = {"主题 Topics": 500, "数学 Math": 600, "科学 Science": 700}
@@ -115,7 +117,7 @@ def next_seq(band: int, group: str) -> int:
     if not idx_path.exists():
         return band + 1
     used = [l.get("seq", 0) for l in json.loads(idx_path.read_text(encoding="utf-8"))["lessons"]
-            if l.get("group") == group]
+            if l.get("group") == group and l.get("level", "K2") == LEVEL]
     return max(used) + 1 if used else band + 1
 
 
@@ -170,7 +172,7 @@ def build_letter(args, lib):
     snd = args.sound or LETTER_SOUND.get(low, low)     # 音标记号，不一定等于字母
     marker = f"/{snd}/"
     title = f"Letter {L} · {ipa_of(snd, lib)}"
-    lesson_id = f"k2-letter-{low}"
+    lesson_id = f"{PREFIX}letter-{low}"
     cards = [card(
         f"letter {L}", f"字母 {L}", "letter", f"images/{low}-letter.webp",
         [qa(f"What's this letter?", f"It's letter {L}.", [low],
@@ -193,7 +195,7 @@ def build_letter(args, lib):
 def build_word_family(args, lib):
     rime = args.rime.strip().lower()
     title = f"Word Family · -{rime} 词族"
-    lesson_id = f"k2-wf-{rime}"
+    lesson_id = f"{PREFIX}wf-{rime}"
     marker = f"/{rime}/"
     cards = [card(
         f"-{rime} family", f"-{rime} 词族", "CVC", f"images/wf-{rime}.webp",
@@ -221,7 +223,7 @@ def build_word_family(args, lib):
 def build_cvc(args, lib):
     v = args.vowel.strip().lower()
     title = f"Short {v} · 短元音 {v} 拼读"
-    lesson_id = f"k2-cvc-{v}"
+    lesson_id = f"{PREFIX}cvc-{v}"
     cards = []
     for w in args.words:
         ph = phonics_block(w, lib)
@@ -237,7 +239,7 @@ def build_cvc(args, lib):
 def build_sight_word(args, lib):
     sws = args.words
     title = "Sight Words · " + " / ".join(sws)
-    lesson_id = "k2-sw-" + "-".join(slug(w) for w in sws)
+    lesson_id = f"{PREFIX}sw-" + "-".join(slug(w) for w in sws)
     cards = []
     for w in sws:
         # 虚词画不出来 → quiz:false 挡住「哪一个是 X」。
@@ -257,7 +259,7 @@ def build_sight_word(args, lib):
 
 def build_topic(args, lib):
     title = args.title
-    lesson_id = "k2-" + slug(title.split(" · ")[0])
+    lesson_id = PREFIX + slug(title.split(" · ")[0])
     cards = [card(w, TODO, args.tag, f"images/{slug(lesson_id[3:])}-{slug(w)}.webp",
                   [qa(TODO, [TODO], [slug(w).replace("-", " ")], TODO, [TODO])])
              for w in args.words]
@@ -341,6 +343,9 @@ def main():
         description="按课型生成新课骨架 + 配图 prompt",
         formatter_class=argparse.RawDescriptionHelpFormatter, epilog=__doc__)
     p.add_argument("type", choices=list(TYPES), help="课型")
+    p.add_argument("--level", default="k2", choices=LEVELS,
+                   help="级别(默认 k2)。决定课程 id 前缀和目录页归属;"
+                        "级别间 seq 独立编号,组名可以同名")
     p.add_argument("--words", default="", help="词表，逗号分隔（来自线下课件，脚本不替你选词）")
     p.add_argument("--badge", default="", help="目录页封面上的大字：字母课填 C，主题课填 emoji")
     p.add_argument("--sound", default="",
@@ -363,6 +368,9 @@ def main():
         if not getattr(a, n):
             p.error(f"课型 {a.type} 需要 --{n}")
 
+    global LEVEL, PREFIX
+    LEVEL = a.level.upper()
+    PREFIX = a.level.lower() + "-"
     lib = load_phonics()
     lesson_id, title, badge, cards = BUILDERS[a.type](a, lib)
 
@@ -376,7 +384,8 @@ def main():
         print(f"❌ {out} 已存在，不覆盖")
         sys.exit(1)
 
-    lesson = OrderedDict([("seq", next_seq(band, group)), ("group", group),
+    lesson = OrderedDict([("seq", next_seq(band, group)), ("level", LEVEL),
+                          ("group", group),
                           ("badge", str(badge)), ("title", title), ("cards", cards)])
     out.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pf = write_prompts(lesson_id, title, cards)

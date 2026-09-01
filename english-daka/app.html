@@ -1049,7 +1049,8 @@ var CUR_ID = null;
    "day" = 按课堂复习(某天上课的卡,日期在 ?d=),null = 正常调度。
    CUR_ID 各变体下都是 "review" —— 记账、不建星罐、不存快照这些特例要照单全收 */
 var REVIEW_PICK = null;
-var REVIEW_DAY = null;   // pick=day 时的目标课堂日(YYYY-MM-DD,来自 URL 的 ?d=)
+var REVIEW_DAY = null;
+var REVIEW_CUR_LV = "K2";  // 当前级别(手里排位最高的),buildReviewLesson 里算   // pick=day 时的目标课堂日(YYYY-MM-DD,来自 URL 的 ?d=)
 let stars = 0;                                 // 语义:**本课**累计星数(不是总数)
 function addStars(n){
   stars += n;
@@ -3285,6 +3286,7 @@ async function buildReviewLesson(pick){
   const all = await Promise.all(metas.map(l =>
     fetch(LESSON_BASE + l.id + ".json").then(r => r.ok ? r.json() : null).catch(()=>null)));
   const pool = [], word_audio = {}, praise_audio = {};
+  REVIEW_CUR_LV = lvCurrent(metas);          // 混合复习的"当前级别",抽新卡时用
   all.forEach((d, i) => {
     if(!d) return;
     Object.assign(word_audio, d.word_audio || {});
@@ -3302,7 +3304,8 @@ async function buildReviewLesson(pick){
       const keep = qs.length ? qs[Math.floor(Math.random() * qs.length)] : null;
       const dialog = (c.dialog || []).map(t =>
         (t === keep || t.practice === false) ? t : Object.assign({}, t, {practice: false}));
-      pool.push(Object.assign({}, c, {dialog: dialog, _src: metas[i].id}));
+      pool.push(Object.assign({}, c, {dialog: dialog, _src: metas[i].id,
+                                      _lv: lvOf(metas[i])}));
     });
   });
   if(pick === "day")
@@ -3357,7 +3360,17 @@ function pickReviewRound(pool){
   rest = shuffle(rest).sort(function(a, b){
     return revRec(o, revKey(a)).b - revRec(o, revKey(b)).b;
   });
-  fresh = shuffle(fresh);
+  /* 新卡桶分两截:当前级别的新卡(昨天刚上完课的)排前面,旧级别的
+     (K1 这类"孩子早学完、刚导入"的)排后面且每轮最多 3 张 ——
+     一次性导入几百张 K1 卡时,到期池空的头几周会从新卡桶大量借位,
+     不设上限整轮都是 K1,正在学的 K2 反而被挤出去。
+     3 张/轮的渗入速度让全套 K1 在一两个月里自然入账,入账后答对快速
+     升盒到 7/14 天档,账本自动把太熟的压稀 —— 不需要按级别设硬配额 */
+  var freshCur = [], freshOld = [];
+  fresh.forEach(function(c){
+    ((c._lv || "K2") === REVIEW_CUR_LV ? freshCur : freshOld).push(c);
+  });
+  fresh = shuffle(freshCur).concat(shuffle(freshOld).slice(0, 3));
   var dueW = function(c){
     var r = revRec(o, revKey(c));
     return 1 + Math.min(dayDiff(r.t, t) - REV_GAP[r.b], 7) + 2 * r.w;

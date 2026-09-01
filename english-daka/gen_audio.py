@@ -77,6 +77,7 @@ PRAISES = ["Great job!", "Well done!", "Awesome!", "Excellent!", "Perfect!",
            "You did it! See you tomorrow!"]
 
 AUDIO_DIR = "audio"
+LEVEL_ORDER = ["K1", "K2", "K3", "S1", "S2", "S3"]   # 目录页级别切换器同序
 
 
 def slug(t: str) -> str:
@@ -363,7 +364,7 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
         if index_file.exists() else {"lessons": []}
     entry = {"id": lesson_id, "title": lesson["title"],
              "words": len(lesson["cards"])}
-    for k in ("num", "group", "badge", "badge_sub", "seq"):
+    for k in ("num", "group", "badge", "badge_sub", "seq", "level"):
         if lesson.get(k) is not None:
             entry[k] = lesson[k]
     index["lessons"] = [x for x in index["lessons"] if x["id"] != lesson_id]
@@ -374,8 +375,11 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
     numbered = sorted([x for x in index["lessons"]
                        if not has(x, "group") and has(x, "num")],
                       key=lambda x: x["num"], reverse=True)
+    # 级别优先(K1→K2→K3→S1→S2→S3),级内按 seq;没标 level 的老条目按 K2
     grouped = sorted([x for x in index["lessons"] if has(x, "group")],
-                     key=lambda x: x.get("seq", x.get("num", 0)))
+                     key=lambda x: (LEVEL_ORDER.index(x.get("level", "K2"))
+                                    if x.get("level", "K2") in LEVEL_ORDER else 99,
+                                    x.get("seq", x.get("num", 0))))
     dated = sorted([x for x in index["lessons"]
                     if not has(x, "group") and not has(x, "num")],
                    key=lambda x: x["id"], reverse=True)
@@ -399,7 +403,10 @@ async def main(lesson_path: str, class_date: str = None):
         if card.get("image") == "":
             del card["image"]
 
-    stamped = stamp_added(lesson, class_date or date.today().isoformat())
+    # 补录历史内容(--backfill)不盖课堂日戳:K1 这类"孩子早学完、现在才导入"的课,
+    # 盖上今天的戳会让「按课堂复习」冒出一条"今天的课 · 几百张卡"
+    stamped = 0 if class_date == "--backfill" else \
+        stamp_added(lesson, class_date or date.today().isoformat())
 
     lint_lesson(lesson, lesson_id)
 
@@ -452,6 +459,9 @@ async def main(lesson_path: str, class_date: str = None):
 if __name__ == "__main__":
     argv = sys.argv[1:]
     class_date = None
+    if "--backfill" in argv:
+        argv.remove("--backfill")
+        class_date = "--backfill"          # 哨兵:main 里跳过盖戳
     if "--date" in argv:
         i = argv.index("--date")
         class_date = argv[i + 1] if i + 1 < len(argv) else ""
@@ -460,6 +470,6 @@ if __name__ == "__main__":
             print("--date 要求 YYYY-MM-DD,例如 --date 2026-08-30")
             sys.exit(1)
     if len(argv) != 1:
-        print("用法: python gen_audio.py lessons/2026-08-29.json [--date 2026-08-30]")
+        print("用法: python gen_audio.py lessons/x.json [--date 2026-08-30 | --backfill]")
         sys.exit(1)
     asyncio.run(main(argv[0], class_date))
