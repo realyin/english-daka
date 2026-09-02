@@ -468,7 +468,12 @@
   .pat .triangle  i{width:0;height:0;background:none;border-left:.55em solid transparent;
                     border-right:.55em solid transparent;border-bottom:.95em solid currentColor;}
   .pat .diamond   i{width:.78em;height:.78em;transform:rotate(45deg);border-radius:.08em;}
-  .pat .trapezoid i{width:.62em;height:0;background:none;border-left:.3em solid transparent;
+  /* 梯形靠「内容宽 + 左右透明边框」画:上边 = 内容宽,下边 = 内容宽 + 左右边框。
+     ⚠️ 必须单独写回 content-box —— 全局 *{box-sizing:border-box} 会把边框算进
+     width,内容宽变成 .62-.3-.3=.02em,上边塌成一个点,梯形直接画成三角形。
+     (三角形那条 width:0 反而不受影响:内容宽本来就是 0) */
+  .pat .trapezoid i{box-sizing:content-box;
+                    width:.62em;height:0;background:none;border-left:.3em solid transparent;
                     border-right:.3em solid transparent;border-bottom:.85em solid currentColor;}
   .pat-box{text-align:center;margin:16px 0 6px;}
   .pat.solo{font-size:96px;}         /* 只有一格时是「字形卡」,要够大 */
