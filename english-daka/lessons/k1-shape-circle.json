@@ -28,6 +28,18 @@
           "q_audio": "audio/sentences/k1-shape-circle/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sandwich",
+              "text": "It's a sandwich.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-a-sandwich-194397.mp3"
+            },
+            {
+              "key": "goldfish",
+              "text": "It's a goldfish.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-a-goldfish-d7c91d.mp3"
+            }
           ]
         },
         {
@@ -46,6 +58,18 @@
           "q_audio": "audio/sentences/k1-shape-circle/q-what-is-like-a-circle-c6a630.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-circle/a-the-pizza-is-like-a-circle-793ba0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "egg",
+              "text": "The egg is like an oval.",
+              "audio": "audio/sentences/k1-shape-circle/a-the-egg-is-like-an-oval-3d849a.mp3"
+            },
+            {
+              "key": "circle",
+              "text": "It's a circle.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+            }
           ]
         }
       ],
@@ -74,6 +98,18 @@
           "q_audio": "audio/sentences/k1-shape-circle/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-circle/a-it-s-an-oval-61cad6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-an-alligator-700c75.mp3"
+            },
+            {
+              "key": "ocean",
+              "text": "It's an ocean.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-an-ocean-134d1a.mp3"
+            }
           ]
         },
         {
@@ -92,6 +128,18 @@
           "q_audio": "audio/sentences/k1-shape-circle/q-what-is-like-an-oval-a46176.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-circle/a-the-egg-is-like-an-oval-3d849a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pizza",
+              "text": "The pizza is like a circle.",
+              "audio": "audio/sentences/k1-shape-circle/a-the-pizza-is-like-a-circle-793ba0.mp3"
+            },
+            {
+              "key": "circle",
+              "text": "It's a circle.",
+              "audio": "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+            }
           ]
         }
       ],
@@ -100,15 +148,19 @@
   ],
   "word_audio": {
     "a": "audio/words/a.mp3",
+    "alligator": "audio/words/alligator.mp3",
     "an": "audio/words/an.mp3",
     "circle": "audio/words/circle.mp3",
     "egg": "audio/words/egg.mp3",
+    "goldfish": "audio/words/goldfish.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
     "like": "audio/words/like.mp3",
+    "ocean": "audio/words/ocean.mp3",
     "oval": "audio/words/oval.mp3",
     "pizza": "audio/words/pizza.mp3",
+    "sandwich": "audio/words/sandwich.mp3",
     "shape": "audio/words/shape.mp3",
     "the": "audio/words/the.mp3",
     "what": "audio/words/what.mp3"

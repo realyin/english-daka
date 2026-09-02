@@ -497,11 +497,27 @@
   .heard b{color:var(--ink);}
   .p-hint{margin-top:14px;font-size:13px;color:#5E6E8C;font-weight:700;text-align:center;}
   .ans-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:10px;}
+  /* 整句选项改竖排一列:三句都长,横排会各自折行、长短参差,读起来像一团。
+     .sent 由 renderQuestion 按选项是不是整句加上 */
+  .ans-chips.sent{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:8px;}
   .ans-chip{
     border:2px solid var(--line);border-radius:16px;background:#FFF3D6;
     padding:12px 18px;font-size:20px;font-weight:900;color:var(--ink);
     box-shadow:var(--shadow);cursor:pointer;transition:transform var(--dur-fast,.15s);
   }
+  /* 整句那款:字号收到 17、左对齐、行高放开,给左侧的喇叭让出位置 */
+  .ans-chips.sent .ans-chip{
+    display:flex;align-items:center;gap:10px;text-align:left;
+    font-size:17px;line-height:1.35;padding:11px 14px;width:100%;
+  }
+  .ans-chip .say{
+    flex:none;width:34px;height:34px;border-radius:50%;border:0;
+    background:#fff;box-shadow:var(--shadow-sm);cursor:pointer;
+    display:flex;align-items:center;justify-content:center;color:var(--blue);
+  }
+  .ans-chip .say .ic{width:19px;height:19px;}
+  .ans-chip .say:active{transform:scale(.92);}
+  .ans-chip .stxt{flex:1;min-width:0;}
   .ans-chip:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   /* 正在念到的那个选项高亮 —— 孩子靠"哪个在响"把声音和字对上 */
   .ans-chip.speaking{background:var(--yellow,#FFD34D);transform:scale(1.08);}
@@ -1856,6 +1872,14 @@ function hasArt(c){ return !!(c.image || c.eq || c.emoji || c.pattern); }
    两种都用 quiz:false 或缺少可视内容排除掉,课程可用题不足 2 张就整个隐藏考一考。 */
 /* 一轮打卡的题量上限(闯关和考一考各自计) */
 const ROUND_MAX = 12;
+/* 一轮里同一张卡最多抽几问、同一个答案最多出现几次。
+   两个上限都是实测立下的:
+   - 每卡上限:拼读卡扩到 8 问后,整卡整卡地拿会让第一张就占满 12 题的额度
+     (8 + 8 > 12,后面全跳过)—— 一轮只练一个词、还只出得了 8 题。
+   - 同答案上限:动物课每张卡都问「住在哪里」,一轮里 62% 的题答 ocean,
+     孩子两次就摸出"不用听、点 ocean",后面几题白送。 */
+const ROUND_PER_CARD = 3;
+const ROUND_PER_KEY  = 3;
 
 function quizCards(){
   return (lesson.cards || []).filter(
@@ -2501,8 +2525,11 @@ function chipAudio(k){
 function readChips(){
   const btns = [...document.querySelectorAll("#ansChips .ans-chip")];
   if(!btns.length) return;
-  playSeq(btns.map(b=>({text: b.dataset.k, role: "w",
-                        audio: chipAudio(b.dataset.k), el: b})));
+  // 整句选项用答句音色(a=Jenny)整条念;单词选项还是走 words/ 的点读音
+  const sent = document.getElementById("ansChips").classList.contains("sent");
+  playSeq(btns.map(b=>({text: b.dataset.text || b.dataset.k,
+                        role: sent ? "a" : "w",
+                        audio: b.dataset.audio || chipAudio(b.dataset.k), el: b})));
 }
 
 /* 闯关只收「能出成三选一」的问。
@@ -2520,12 +2547,36 @@ function startPractice(){
   // 混合复习(ordered)例外:卡序出自调度器,同课已排开,别再洗回去
   const bag = lesson.ordered ? lesson.cards.slice()
                              : lesson.cards.slice().sort(()=>Math.random()-0.5);
+  // 每张卡只抽 ROUND_PER_CARD 问、同一个答案全轮不超过 ROUND_PER_KEY 次。
+  // 挑中的那几问挂在卡的浅克隆上(_qs),整轮都以它为准 —— 见 roundQs。
+  // 原来是整卡整卡地拿,8 问的拼读卡一张就把 12 题占满(见 ROUND_PER_CARD 的注释)
   pOrder = []; let n = 0;
+  const keyN = {};
+  // 同答案限额按**本课实际有几种答案**放宽:letter-b 整课只有 b 和 /b/ 两种,
+  // 死守 3 次会把一轮砍到 6 题 —— 没有别的答案可换的时候,限额只是把轮次
+  // 变短,并不能增加变化。答案够多的课(动物园 8 种)照常吃 ROUND_PER_KEY
+  const kinds = new Set();
+  for(const c of lesson.cards)
+    for(const t of askable(c)) kinds.add(t.key.join(" "));
+  const perKey = Math.max(ROUND_PER_KEY, Math.ceil(ROUND_MAX / Math.max(1, kinds.size)));
   for(const c of bag){
-    const k = askable(c).length;
-    if(!k) continue;                             // 整张卡的问都不进闯关
-    if(pOrder.length && n + k > ROUND_MAX) continue;
-    pOrder.push(c); n += k;
+    let qs = askable(c);
+    if(!qs.length) continue;                     // 整张卡的问都不进闯关
+    if(qs.length > ROUND_PER_CARD)
+      qs = qs.slice().sort(()=>Math.random()-0.5).slice(0, ROUND_PER_CARD);
+    // 同答案限额:先看还能放几问,再截 —— 边过滤边计数会把后面被
+    // ROUND_MAX 截掉的那几问也算进去,额度白白吃掉
+    const take = [];
+    for(const t of qs){
+      if(n + take.length >= ROUND_MAX) break;
+      const k = t.key.join(" ");
+      if((keyN[k] || 0) >= perKey) continue;
+      keyN[k] = (keyN[k] || 0) + 1;
+      take.push(t);
+    }
+    if(!take.length) continue;
+    pOrder.push(Object.assign({}, c, {_qs: take, _src: lesson.cards.indexOf(c)}));
+    n += take.length;
     if(n >= ROUND_MAX) break;
   }
   // 一张能出的卡都没有(错题本练空了,或临时课全是虚词卡)——
@@ -2552,13 +2603,16 @@ function emptyRoundHTML(){
   return `<div class="done"><div class="big">🤔</div>这一课没有可以出题的卡片</div>`;
 }
 function curCard(){ return pOrder[pc]; }
-function curQA(){ return askable(curCard())[pq]; }
+/* 这张卡在**本轮**要问的那几问。startPractice 挑完之后挂在卡的浅克隆上;
+   没有 _qs 的(老快照恢复、回炉卡)退回整卡,行为和以前一样 */
+function roundQs(c){ return (c && c._qs) ? c._qs : askable(c); }
+function curQA(){ return roundQs(curCard())[pq]; }
 /* 本轮的问数 / 已完成问数 / 进度条百分比。
    恢复快照时也要用它把 pBarPct 预置成当前位置,否则 growBar 会从 0 涨过去,
    刷新回来第一眼是进度条"倒回起点再冲上来",看着像进度丢了 */
 function pTotals(){
-  var total = pOrder.reduce(function(s,x){ return s + askable(x).length; }, 0);
-  var doneN = pOrder.slice(0, pc).reduce(function(s,x){ return s + askable(x).length; }, 0) + pq;
+  var total = pOrder.reduce(function(s,x){ return s + roundQs(x).length; }, 0);
+  var doneN = pOrder.slice(0, pc).reduce(function(s,x){ return s + roundQs(x).length; }, 0) + pq;
   return {total: total, doneN: doneN, pct: total ? doneN / total * 100 : 0};
 }
 
@@ -2643,11 +2697,41 @@ function renderQuestion(){
   // disabled 生效之前就已经排进队列的那一下照样会进来 —— 没有哨兵就是
   // 两次 SFX.star + 两次 flyStar(星 +4)+ 两遍夸奖叠着播,出口按钮也画两回
   let answered = false;
-  shuffle([correct, ...pool]).forEach(k=>{
+  /* 选项优先用**整句**:数据里预置了 qa.opts(两条干扰句,见 build_opts.py)。
+     只给单词太好蒙 —— 抓住题面里那个词、或者认出三个里哪个"像答案"就完了;
+     三句都长,就必须听完整句才分得出。孩子不认字,所以每条自带一个喇叭,
+     点喇叭只念不判分(冒泡要掐掉,否则听一下就等于选了)。
+     没有 opts 的题(29 道退不出整句的)照旧出单词选项。 */
+  const sent = Array.isArray(qa.opts) && qa.opts.length >= 2;
+  chipsBox.classList.toggle("sent", sent);
+  const items = sent
+    ? shuffle([{k: correct, text: qa.a[0], audio: (qa.a_audio || [])[0]},
+               ...qa.opts.map(o=>({k: o.key, text: o.text, audio: o.audio}))])
+    : shuffle([correct, ...pool]).map(k=>({k: k, text: k, audio: chipAudio(k)}));
+  items.forEach(it=>{
+    const k = it.k;
     const b = document.createElement("button");
     b.className = "ans-chip";
-    b.textContent = k;
     b.dataset.k = k;
+    b.dataset.text = it.text;
+    if(it.audio) b.dataset.audio = it.audio;
+    if(sent){
+      const say = document.createElement("button");
+      say.className = "say"; say.type = "button";
+      say.setAttribute("aria-label", "听这一句");
+      say.innerHTML = IC_SPEAKER;
+      say.onclick = e=>{
+        e.stopPropagation();          // 光听不算选,别冒泡到判分
+        stopAllSound();
+        chipsBox.querySelectorAll(".speaking").forEach(x=>x.classList.remove("speaking"));
+        playSeq([{text: it.text, role: "a", audio: it.audio, el: b}]);
+      };
+      const tx = document.createElement("span");
+      tx.className = "stxt"; tx.textContent = it.text;
+      b.appendChild(say); b.appendChild(tx);
+    }else{
+      b.textContent = it.text;
+    }
     b.onclick = ()=>{
       if(answered) return;
       /* 一点即判。曾试过两段式(第一下听音、再点同一个才判分,防不识字盲选),
@@ -2695,23 +2779,48 @@ function renderQuestion(){
    (review 课临时拼的卡就是这样)整轮不存,免得存一份恢复不了的 */
 function savePracticeRound(){
   if(!roundSnapshotOK()) return;
-  var cards = [], i, at;
+  /* ⚠️ pOrder 里放的是**卡的浅克隆**(带本轮选中的 _qs),不是 lesson.cards
+     里那个对象 —— indexOf 找不着。用 _src 记原始下标,再把本轮那几问
+     在 dialog 里的位置一并存下来;不存 qs 的话恢复回来会变成整卡,
+     和存档时那一轮对不上(题数、进度条分母全变) */
+  var cards = [], qs = [], i, j, at, c, dlg, idx;
   for(i = 0; i < pOrder.length; i++){
-    at = lesson.cards.indexOf(pOrder[i]);
-    if(at < 0) return;
+    c = pOrder[i];
+    at = (typeof c._src === "number") ? c._src : lesson.cards.indexOf(c);
+    if(at < 0 || !lesson.cards[at]) return;
     cards.push(at);
+    dlg = lesson.cards[at].dialog || [];
+    idx = [];
+    for(j = 0; j < roundQs(c).length; j++){
+      var k = dlg.indexOf(roundQs(c)[j]);
+      if(k < 0) return;                    // 对不上就整份不存,别留半份坏快照
+      idx.push(k);
+    }
+    qs.push(idx);
   }
-  saveRound("practice", {cards: cards, pc: pc, pq: pq});
+  saveRound("practice", {cards: cards, qs: qs, pc: pc, pq: pq});
 }
 /* 按下标把 pOrder 拼回来。任何一张卡对不上(课程数据改过了、
    换的是别的课)就返回 null,调用方丢弃整份快照 */
-function restorePOrder(idxs){
+function restorePOrder(idxs, qsList){
   if(!(idxs instanceof Array) || !idxs.length) return null;
-  var out = [], i, c;
+  var out = [], i, j, c, dlg, picked, t;
   for(i = 0; i < idxs.length; i++){
     c = (lesson.cards || [])[idxs[i]];
     if(!c || !askable(c).length) return null;
-    out.push(c);
+    // 没有 qs 的是改动之前存的老快照 —— 退回整卡,和当时的行为一致
+    if(!(qsList instanceof Array) || !(qsList[i] instanceof Array)){
+      out.push(Object.assign({}, c, {_src: idxs[i]}));
+      continue;
+    }
+    dlg = c.dialog || []; picked = [];
+    for(j = 0; j < qsList[i].length; j++){
+      t = dlg[qsList[i][j]];
+      if(!t || t.practice === false) return null;   // 课程数据改过了,整份作废
+      picked.push(t);
+    }
+    if(!picked.length) return null;
+    out.push(Object.assign({}, c, {_src: idxs[i], _qs: picked}));
   }
   return out;
 }
@@ -2755,7 +2864,7 @@ function nextQA(){
   if(!lockAdvance()) return;     // 连点三下只算一下,见 lockAdvance
   stopAllSound();
   pq++;
-  if(pq >= askable(curCard()).length){ pq = 0; pc++; }
+  if(pq >= roundQs(curCard()).length){ pq = 0; pc++; }
   if(pc >= pOrder.length){ return finishPractice(); }
   SFX.flip();                    // 翻页音只在真的还有下一题时响,收尾走 win
   askQuestion();
@@ -3185,11 +3294,11 @@ function restoreRound(){
     return resumeQuiz(s.quiz);
 }
 function resumePractice(d){
-  var order = restorePOrder(d.cards);
+  var order = restorePOrder(d.cards, d.qs);
   if(!order) return clearRound("practice");
   var at = d.pc, sub = d.pq;
   if(!(at >= 0 && at < order.length)) return clearRound("practice");
-  if(!(sub >= 0 && sub < askable(order[at]).length)) return clearRound("practice");
+  if(!(sub >= 0 && sub < roundQs(order[at]).length)) return clearRound("practice");
   pOrder = order; pc = at; pq = sub;
   pBarPct = pTotals().pct;       // 预置成当前位置,进度条才不会从 0 闪着涨上来
   showPage("practice", true);

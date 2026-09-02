@@ -1,679 +1,1048 @@
 {
- "seq": 106,
- "level": "K2",
- "group": "字母 Letters",
- "badge": "O",
- "cover": "images/o-letter.webp",
- "title": "Letter O · /ɑ/",
- "cards": [
-  {
-   "word": "letter O",
-   "cn": "字母 O",
-   "tag": "letter",
-   "image": "images/o-letter.webp",
-   "dialog": [
+  "seq": 106,
+  "level": "K2",
+  "group": "字母 Letters",
+  "badge": "O",
+  "cover": "images/o-letter.webp",
+  "title": "Letter O · /ɑ/",
+  "cards": [
     {
-     "q": "What's this letter?",
-     "a": [
-      "It's letter O."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "这是什么字母？",
-     "a_cn": [
-      "这是字母 O。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-letter-ab944e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-letter-o-2df967.mp3"
-     ]
+      "word": "letter O",
+      "cn": "字母 O",
+      "tag": "letter",
+      "image": "images/o-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter O."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-letter-o-2df967.mp3"
+          ],
+          "opts": [
+            {
+              "key": "z",
+              "text": "It's letter Z.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-letter-z-489bf1.mp3"
+            },
+            {
+              "key": "g",
+              "text": "It's letter G.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-letter-g-78323f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does letter O make?",
+          "a": [
+            "O makes the sound /o/."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "字母 O 发什么音？",
+          "a_cn": [
+            "O 发 /ɑ/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-letter-o-make-a3c481.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-o-makes-the-sound-o-437137.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ks/",
+              "text": "O makes the sound /ks/.",
+              "audio": "audio/sentences/k2-letter-o/a-o-makes-the-sound-ks-a4b601.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "O makes the sound /p/.",
+              "audio": "audio/sentences/k2-letter-o/a-o-makes-the-sound-p-0d753b.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-letter-o-1f6aa4.mp3"
     },
     {
-     "q": "What sound does letter O make?",
-     "a": [
-      "O makes the sound /o/."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "字母 O 发什么音？",
-     "a_cn": [
-      "O 发 /ɑ/ 的音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-letter-o-make-a3c481.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-o-makes-the-sound-o-437137.mp3"
-     ]
+      "word": "orange",
+      "cn": "橙色",
+      "tag": "word",
+      "image": "images/m-words-2-orange.webp",
+      "dialog": [
+        {
+          "q": "What sound does orange begin with?",
+          "a": [
+            "Orange begins with the sound /o/."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "orange 以什么音开头？",
+          "a_cn": [
+            "orange 以 /ɑ/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-orange-begin-with-5ee610.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-orange-begins-with-the-sound-o-859f80.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Orange begins with the sound /n/.",
+              "audio": "audio/sentences/k2-letter-o/a-orange-begins-with-the-sound-n-f2cf89.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Orange begins with the sound /eye/.",
+              "audio": "audio/sentences/k2-letter-o/a-orange-begins-with-the-sound-eye-1c8208.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does orange begin with?",
+          "a": [
+            "Orange begins with letter O."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "orange 以哪个字母开头？",
+          "a_cn": [
+            "orange 以字母 O 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-orange-begin-with-a8fe5b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-orange-begins-with-letter-o-628bce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "y",
+              "text": "Orange begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-o/a-orange-begins-with-letter-y-58a771.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Orange begins with letter T.",
+              "audio": "audio/sentences/k2-letter-o/a-orange-begins-with-letter-t-b982e6.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-orange-a874ca.mp3"
+    },
+    {
+      "word": "on",
+      "cn": "在……上面",
+      "tag": "sight word",
+      "image": "images/o-on.webp",
+      "dialog": [
+        {
+          "q": "Where is the book?",
+          "a": [
+            "It's on the table."
+          ],
+          "key": [
+            "table"
+          ],
+          "q_cn": "书在哪里？",
+          "a_cn": [
+            "书在桌子上。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-book-6a1e80.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-on-the-table-58dd3c.mp3"
+          ],
+          "image": "images/on-table-book.webp",
+          "opts": [
+            {
+              "key": "o",
+              "text": "On begins with letter O.",
+              "audio": "audio/sentences/k2-letter-o/a-on-begins-with-letter-o-d445d8.mp3"
+            },
+            {
+              "key": "box",
+              "text": "It's a box.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can we run on the street?",
+          "a": [
+            "No, we should walk on the street."
+          ],
+          "key": [
+            "walk"
+          ],
+          "q_cn": "我们可以在街上跑吗？",
+          "a_cn": [
+            "不可以，我们在街上应该走路。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-can-we-run-on-the-street-ca50bf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-no-we-should-walk-on-the-street-35d675.mp3"
+          ],
+          "image": "images/walk-on-street.webp",
+          "opts": [
+            {
+              "key": "o",
+              "text": "Clock has letter O in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-letter-o-in-the-middle-cdc02b.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Fox has letter O in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-fox-has-letter-o-in-the-middle-8a45ed.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does on begin with?",
+          "a": [
+            "On begins with letter O."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "on 以哪个字母开头？",
+          "a_cn": [
+            "on 以字母 O 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-on-begin-with-282e7d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-on-begins-with-letter-o-d445d8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "On begins with letter K.",
+              "audio": "audio/sentences/k2-letter-o/a-on-begins-with-letter-k-324757.mp3"
+            },
+            {
+              "key": "u",
+              "text": "On begins with letter U.",
+              "audio": "audio/sentences/k2-letter-o/a-on-begins-with-letter-u-89b891.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does on begin with?",
+          "a": [
+            "On begins with the sound /o/."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "on 的开头是什么音？",
+          "a_cn": [
+            "on 开头是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-on-begin-with-922498.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-on-begins-with-the-sound-o-d3c983.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "On begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-o/a-on-begins-with-the-sound-g-330b85.mp3"
+            },
+            {
+              "key": "/j/",
+              "text": "On begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-o/a-on-begins-with-the-sound-j-b630d1.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-on-bcec31.mp3"
+    },
+    {
+      "word": "box",
+      "cn": "盒子",
+      "tag": "word",
+      "image": "images/o-box.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a box."
+          ],
+          "key": [
+            "box"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是盒子。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
+          ],
+          "image": "images/rec-cardboard-box.webp",
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "clock",
+              "text": "It's a clock.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-clock-33fa9b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What is in the box?",
+          "image": "images/o-box.webp",
+          "a": [
+            "A fox is in the box."
+          ],
+          "key": [
+            "fox"
+          ],
+          "q_cn": "盒子里有什么？",
+          "a_cn": [
+            "盒子里有一只狐狸。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-is-in-the-box-6735a2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-a-fox-is-in-the-box-786ec5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "box",
+              "text": "The fox is on a box.",
+              "audio": "audio/sentences/k2-letter-o/a-the-fox-is-on-a-box-80dba5.mp3"
+            },
+            {
+              "key": "log",
+              "text": "The clock is on a log.",
+              "audio": "audio/sentences/k2-letter-o/a-the-clock-is-on-a-log-d605a4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does box have in the middle?",
+          "a": [
+            "Box has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "box 中间是什么音？",
+          "a_cn": [
+            "box 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-box-have-in-the-midd-9c20ef.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-box-has-the-sound-o-in-the-middle-87a766.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Box has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-box-has-the-sound-n-in-the-middle-c6af66.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Box has the sound /eye/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-box-has-the-sound-eye-in-the-middle-620da1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does box have in the middle?",
+          "a": [
+            "Box has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "box 中间是哪个字母？",
+          "a_cn": [
+            "box 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-box-have-in-the-mi-767430.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-box-has-letter-o-in-the-middle-0c19a3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Box has letter G in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-box-has-letter-g-in-the-middle-6ad61e.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Box has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-box-has-letter-s-in-the-middle-6dae42.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-box-95852a.mp3"
+    },
+    {
+      "word": "clock",
+      "cn": "时钟",
+      "tag": "word",
+      "image": "images/o-clock.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a clock."
+          ],
+          "key": [
+            "clock"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是时钟。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-a-clock-33fa9b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "mop",
+              "text": "It's a mop.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-mop-3e57a1.mp3"
+            },
+            {
+              "key": "box",
+              "text": "It's a box.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where is the clock?",
+          "a": [
+            "The clock is on a log."
+          ],
+          "key": [
+            "log"
+          ],
+          "q_cn": "时钟在哪里？",
+          "a_cn": [
+            "时钟在木头上。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-clock-4ad7e8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-the-clock-is-on-a-log-d605a4.mp3"
+          ],
+          "image": "images/o-clock-log.webp",
+          "opts": [
+            {
+              "key": "box",
+              "text": "The fox is on a box.",
+              "audio": "audio/sentences/k2-letter-o/a-the-fox-is-on-a-box-80dba5.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "A fox is in the box.",
+              "audio": "audio/sentences/k2-letter-o/a-a-fox-is-in-the-box-786ec5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you spell clock?",
+          "a": [
+            "I can spell it. C, L, O, C, K, clock."
+          ],
+          "key": [
+            "clock"
+          ],
+          "q_cn": "你会拼 clock 吗？",
+          "a_cn": [
+            "我会拼：C-L-O-C-K，clock。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-clock-a1db6c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-i-can-spell-it-c-l-o-c-k-clock-4287f3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "mop",
+              "text": "I can spell it. M, O, P, mop.",
+              "audio": "audio/sentences/k2-letter-o/a-i-can-spell-it-m-o-p-mop-dd323d.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "I can spell it. F, O, X, fox.",
+              "audio": "audio/sentences/k2-letter-o/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does clock have in the middle?",
+          "a": [
+            "Clock has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "clock 中间是什么音？",
+          "a_cn": [
+            "clock 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-clock-have-in-the-mi-f15d75.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-clock-has-the-sound-o-in-the-middle-d231dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/p/",
+              "text": "Clock has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-the-sound-p-in-the-middle-44689e.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Clock has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-the-sound-h-in-the-middle-1aecc6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does clock have in the middle?",
+          "a": [
+            "Clock has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "clock 中间是哪个字母？",
+          "a_cn": [
+            "clock 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-clock-have-in-the--7667b4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-clock-has-letter-o-in-the-middle-cdc02b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Clock has letter R in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-letter-r-in-the-middle-c0c278.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Clock has letter H in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-letter-h-in-the-middle-452b8a.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-clock-fcd087.mp3"
+    },
+    {
+      "word": "fox",
+      "cn": "狐狸",
+      "tag": "word",
+      "image": "images/o-fox.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a fox."
+          ],
+          "key": [
+            "fox"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是狐狸。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-a-fox-e460b7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "clock",
+              "text": "It's a clock.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-clock-33fa9b.mp3"
+            },
+            {
+              "key": "mop",
+              "text": "It's a mop.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-mop-3e57a1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where is the fox?",
+          "image": "images/o-fox-on-box.webp",
+          "a": [
+            "The fox is on a box."
+          ],
+          "key": [
+            "box"
+          ],
+          "q_cn": "狐狸在哪里？",
+          "a_cn": [
+            "狐狸在盒子上。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-fox-cef8d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-the-fox-is-on-a-box-80dba5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "log",
+              "text": "The clock is on a log.",
+              "audio": "audio/sentences/k2-letter-o/a-the-clock-is-on-a-log-d605a4.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "A fox is in the box.",
+              "audio": "audio/sentences/k2-letter-o/a-a-fox-is-in-the-box-786ec5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you spell fox?",
+          "a": [
+            "I can spell it. F, O, X, fox."
+          ],
+          "key": [
+            "fox"
+          ],
+          "q_cn": "你会拼 fox 吗？",
+          "a_cn": [
+            "我会拼：F-O-X，fox。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-fox-896714.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "mop",
+              "text": "I can spell it. M, O, P, mop.",
+              "audio": "audio/sentences/k2-letter-o/a-i-can-spell-it-m-o-p-mop-dd323d.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Clock has letter O in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-letter-o-in-the-middle-cdc02b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fox have in the middle?",
+          "a": [
+            "Fox has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "fox 中间是什么音？",
+          "a_cn": [
+            "fox 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-fox-have-in-the-midd-f3c4cf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-fox-has-the-sound-o-in-the-middle-5205dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ks/",
+              "text": "Fox has the sound /ks/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-fox-has-the-sound-ks-in-the-middle-17d717.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Fox has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-fox-has-the-sound-p-in-the-middle-cce02e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fox have in the middle?",
+          "a": [
+            "Fox has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "fox 中间是哪个字母？",
+          "a_cn": [
+            "fox 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-fox-have-in-the-mi-8996cb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-fox-has-letter-o-in-the-middle-8a45ed.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Fox has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-fox-has-letter-s-in-the-middle-14bf81.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Fox has letter R in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-fox-has-letter-r-in-the-middle-93cb95.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-fox-899921.mp3"
+    },
+    {
+      "word": "mop",
+      "cn": "拖把",
+      "tag": "word",
+      "image": "images/o-mop.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a mop."
+          ],
+          "key": [
+            "mop"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是拖把。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-it-s-a-mop-3e57a1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "box",
+              "text": "It's a box.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-o/a-it-s-a-fox-e460b7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does mop have in the middle?",
+          "a": [
+            "Mop has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "mop 中间是哪个字母？",
+          "a_cn": [
+            "mop 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-mop-have-in-the-mi-6a8180.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-mop-has-letter-o-in-the-middle-970460.mp3"
+          ],
+          "opts": [
+            {
+              "key": "u",
+              "text": "Mop has letter U in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-mop-has-letter-u-in-the-middle-92fd1a.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Mop has letter I in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-mop-has-letter-i-in-the-middle-baa599.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you spell mop?",
+          "a": [
+            "I can spell it. M, O, P, mop."
+          ],
+          "key": [
+            "mop"
+          ],
+          "q_cn": "你会拼 mop 吗？",
+          "a_cn": [
+            "我会拼：M-O-P，mop。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-mop-e1347d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-i-can-spell-it-m-o-p-mop-dd323d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "I can spell it. F, O, X, fox.",
+              "audio": "audio/sentences/k2-letter-o/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Clock has letter O in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-clock-has-letter-o-in-the-middle-cdc02b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does mop have in the middle?",
+          "a": [
+            "Mop has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "mop 中间是什么音？",
+          "a_cn": [
+            "mop 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-mop-have-in-the-midd-9dbbe3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-mop-has-the-sound-o-in-the-middle-97c60a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Mop has the sound /j/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-mop-has-the-sound-j-in-the-middle-50d989.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Mop has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-letter-o/a-mop-has-the-sound-s-in-the-middle-a7e163.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-mop-da8b87.mp3"
+    },
+    {
+      "word": "sound it out",
+      "cn": "拼读练习 -ot（含假词）",
+      "tag": "CVC",
+      "dialog": [
+        {
+          "q": "How do you sound out s, o, t?",
+          "a": [
+            "S says /s/, O says /o/, T says /t/, sot."
+          ],
+          "key": [
+            "sot"
+          ],
+          "q_cn": "s-o-t 怎么拼读？",
+          "a_cn": [
+            "S 发 /s/，O 发 /ɑ/，T 发 /t/，sot。（sot、mot、fot 是假词，只用来练拼读）"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-s-o-t-d633a6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-s-says-s-o-says-o-t-says-t-sot-166a6b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "not",
+              "text": "N says /n/, O says /o/, T says /t/, not.",
+              "audio": "audio/sentences/k2-letter-o/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+            },
+            {
+              "key": "mot",
+              "text": "M says /m/, O says /o/, T says /t/, mot.",
+              "audio": "audio/sentences/k2-letter-o/a-m-says-m-o-says-o-t-says-t-mot-b408bc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you sound out m, o, t?",
+          "a": [
+            "M says /m/, O says /o/, T says /t/, mot."
+          ],
+          "key": [
+            "mot"
+          ],
+          "q_cn": "m-o-t 怎么拼读？",
+          "a_cn": [
+            "M 发 /m/，O 发 /ɑ/，T 发 /t/，mot。（sot、mot、fot 是假词，只用来练拼读）"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-m-o-t-5b8d9a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-m-says-m-o-says-o-t-says-t-mot-b408bc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tot",
+              "text": "T says /t/, O says /o/, T says /t/, tot.",
+              "audio": "audio/sentences/k2-letter-o/a-t-says-t-o-says-o-t-says-t-tot-ee5079.mp3"
+            },
+            {
+              "key": "sot",
+              "text": "S says /s/, O says /o/, T says /t/, sot.",
+              "audio": "audio/sentences/k2-letter-o/a-s-says-s-o-says-o-t-says-t-sot-166a6b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you sound out t, o, t?",
+          "a": [
+            "T says /t/, O says /o/, T says /t/, tot."
+          ],
+          "key": [
+            "tot"
+          ],
+          "q_cn": "t-o-t 怎么拼读？",
+          "a_cn": [
+            "T 发 /t/，O 发 /ɑ/，T 发 /t/，tot。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-t-o-t-cd14f4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-t-says-t-o-says-o-t-says-t-tot-ee5079.mp3"
+          ],
+          "image": "images/wf-ot-tot.webp",
+          "opts": [
+            {
+              "key": "sot",
+              "text": "S says /s/, O says /o/, T says /t/, sot.",
+              "audio": "audio/sentences/k2-letter-o/a-s-says-s-o-says-o-t-says-t-sot-166a6b.mp3"
+            },
+            {
+              "key": "not",
+              "text": "N says /n/, O says /o/, T says /t/, not.",
+              "audio": "audio/sentences/k2-letter-o/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you sound out n, o, t?",
+          "a": [
+            "N says /n/, O says /o/, T says /t/, not."
+          ],
+          "key": [
+            "not"
+          ],
+          "q_cn": "n-o-t 怎么拼读？",
+          "a_cn": [
+            "N 发 /n/，O 发 /ɑ/，T 发 /t/，not。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-n-o-t-7cc33f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-o/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sot",
+              "text": "S says /s/, O says /o/, T says /t/, sot.",
+              "audio": "audio/sentences/k2-letter-o/a-s-says-s-o-says-o-t-says-t-sot-166a6b.mp3"
+            },
+            {
+              "key": "mot",
+              "text": "M says /m/, O says /o/, T says /t/, mot.",
+              "audio": "audio/sentences/k2-letter-o/a-m-says-m-o-says-o-t-says-t-mot-b408bc.mp3"
+            }
+          ]
+        }
+      ],
+      "emoji": "🔤",
+      "quiz": false,
+      "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-sound-it-out-84f8fe.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-letter-o-1f6aa4.mp3"
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
-  {
-   "word": "orange",
-   "cn": "橙色",
-   "tag": "word",
-   "image": "images/m-words-2-orange.webp",
-   "dialog": [
-    {
-     "q": "What sound does orange begin with?",
-     "a": [
-      "Orange begins with the sound /o/."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "orange 以什么音开头？",
-     "a_cn": [
-      "orange 以 /ɑ/ 音开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-orange-begin-with-5ee610.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-orange-begins-with-the-sound-o-859f80.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does orange begin with?",
-     "a": [
-      "Orange begins with letter O."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "orange 以哪个字母开头？",
-     "a_cn": [
-      "orange 以字母 O 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-orange-begin-with-a8fe5b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-orange-begins-with-letter-o-628bce.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-orange-a874ca.mp3"
-  },
-  {
-   "word": "on",
-   "cn": "在……上面",
-   "tag": "sight word",
-   "image": "images/o-on.webp",
-   "dialog": [
-    {
-     "q": "Where is the book?",
-     "a": [
-      "It's on the table."
-     ],
-     "key": [
-      "table"
-     ],
-     "q_cn": "书在哪里？",
-     "a_cn": [
-      "书在桌子上。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-book-6a1e80.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-on-the-table-58dd3c.mp3"
-     ],
-     "image": "images/on-table-book.webp"
-    },
-    {
-     "q": "Can we run on the street?",
-     "a": [
-      "No, we should walk on the street."
-     ],
-     "key": [
-      "walk"
-     ],
-     "q_cn": "我们可以在街上跑吗？",
-     "a_cn": [
-      "不可以，我们在街上应该走路。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-can-we-run-on-the-street-ca50bf.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-no-we-should-walk-on-the-street-35d675.mp3"
-     ],
-     "image": "images/walk-on-street.webp"
-    },
-    {
-     "q": "Which letter does on begin with?",
-     "a": [
-      "On begins with letter O."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "on 以哪个字母开头？",
-     "a_cn": [
-      "on 以字母 O 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-on-begin-with-282e7d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-on-begins-with-letter-o-d445d8.mp3"
-     ]
-    },
-    {
-     "q": "What sound does on begin with?",
-     "a": [
-      "On begins with the sound /o/."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "on 的开头是什么音？",
-     "a_cn": [
-      "on 开头是 /ɑ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-on-begin-with-922498.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-on-begins-with-the-sound-o-d3c983.mp3"
-     ]
-    }
-   ],
-   "quiz": false,
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-on-bcec31.mp3"
-  },
-  {
-   "word": "box",
-   "cn": "盒子",
-   "tag": "word",
-   "image": "images/o-box.webp",
-   "quiz": false,
-   "dialog": [
-    {
-     "q": "What's this?",
-     "a": [
-      "It's a box."
-     ],
-     "key": [
-      "box"
-     ],
-     "q_cn": "这是什么？",
-     "a_cn": [
-      "这是盒子。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
-     ],
-     "image": "images/rec-cardboard-box.webp"
-    },
-    {
-     "q": "What is in the box?",
-     "image": "images/o-box.webp",
-     "a": [
-      "A fox is in the box."
-     ],
-     "key": [
-      "fox"
-     ],
-     "q_cn": "盒子里有什么？",
-     "a_cn": [
-      "盒子里有一只狐狸。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-is-in-the-box-6735a2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-a-fox-is-in-the-box-786ec5.mp3"
-     ]
-    },
-    {
-     "q": "What sound does box have in the middle?",
-     "a": [
-      "Box has the sound /o/ in the middle."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "box 中间是什么音？",
-     "a_cn": [
-      "box 中间是 /ɑ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-box-have-in-the-midd-9c20ef.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-box-has-the-sound-o-in-the-middle-87a766.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does box have in the middle?",
-     "a": [
-      "Box has letter O in the middle."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "box 中间是哪个字母？",
-     "a_cn": [
-      "box 中间是字母 O。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-box-have-in-the-mi-767430.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-box-has-letter-o-in-the-middle-0c19a3.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-box-95852a.mp3"
-  },
-  {
-   "word": "clock",
-   "cn": "时钟",
-   "tag": "word",
-   "image": "images/o-clock.webp",
-   "dialog": [
-    {
-     "q": "What's this?",
-     "a": [
-      "It's a clock."
-     ],
-     "key": [
-      "clock"
-     ],
-     "q_cn": "这是什么？",
-     "a_cn": [
-      "这是时钟。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-a-clock-33fa9b.mp3"
-     ]
-    },
-    {
-     "q": "Where is the clock?",
-     "a": [
-      "The clock is on a log."
-     ],
-     "key": [
-      "log"
-     ],
-     "q_cn": "时钟在哪里？",
-     "a_cn": [
-      "时钟在木头上。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-clock-4ad7e8.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-the-clock-is-on-a-log-d605a4.mp3"
-     ],
-     "image": "images/o-clock-log.webp"
-    },
-    {
-     "q": "Can you spell clock?",
-     "a": [
-      "I can spell it. C, L, O, C, K, clock."
-     ],
-     "key": [
-      "clock"
-     ],
-     "q_cn": "你会拼 clock 吗？",
-     "a_cn": [
-      "我会拼：C-L-O-C-K，clock。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-clock-a1db6c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-i-can-spell-it-c-l-o-c-k-clock-4287f3.mp3"
-     ]
-    },
-    {
-     "q": "What sound does clock have in the middle?",
-     "a": [
-      "Clock has the sound /o/ in the middle."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "clock 中间是什么音？",
-     "a_cn": [
-      "clock 中间是 /ɑ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-clock-have-in-the-mi-f15d75.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-clock-has-the-sound-o-in-the-middle-d231dd.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does clock have in the middle?",
-     "a": [
-      "Clock has letter O in the middle."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "clock 中间是哪个字母？",
-     "a_cn": [
-      "clock 中间是字母 O。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-clock-have-in-the--7667b4.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-clock-has-letter-o-in-the-middle-cdc02b.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-clock-fcd087.mp3"
-  },
-  {
-   "word": "fox",
-   "cn": "狐狸",
-   "tag": "word",
-   "image": "images/o-fox.webp",
-   "quiz": false,
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's a fox."
-     ],
-     "key": [
-      "fox"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是狐狸。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-a-fox-e460b7.mp3"
-     ]
-    },
-    {
-     "q": "Where is the fox?",
-     "image": "images/o-fox-on-box.webp",
-     "a": [
-      "The fox is on a box."
-     ],
-     "key": [
-      "box"
-     ],
-     "q_cn": "狐狸在哪里？",
-     "a_cn": [
-      "狐狸在盒子上。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-where-is-the-fox-cef8d1.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-the-fox-is-on-a-box-80dba5.mp3"
-     ]
-    },
-    {
-     "q": "Can you spell fox?",
-     "a": [
-      "I can spell it. F, O, X, fox."
-     ],
-     "key": [
-      "fox"
-     ],
-     "q_cn": "你会拼 fox 吗？",
-     "a_cn": [
-      "我会拼：F-O-X，fox。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-fox-896714.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fox have in the middle?",
-     "a": [
-      "Fox has the sound /o/ in the middle."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "fox 中间是什么音？",
-     "a_cn": [
-      "fox 中间是 /ɑ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-fox-have-in-the-midd-f3c4cf.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-fox-has-the-sound-o-in-the-middle-5205dd.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fox have in the middle?",
-     "a": [
-      "Fox has letter O in the middle."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "fox 中间是哪个字母？",
-     "a_cn": [
-      "fox 中间是字母 O。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-fox-have-in-the-mi-8996cb.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-fox-has-letter-o-in-the-middle-8a45ed.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-fox-899921.mp3"
-  },
-  {
-   "word": "mop",
-   "cn": "拖把",
-   "tag": "word",
-   "image": "images/o-mop.webp",
-   "dialog": [
-    {
-     "q": "What's this?",
-     "a": [
-      "It's a mop."
-     ],
-     "key": [
-      "mop"
-     ],
-     "q_cn": "这是什么？",
-     "a_cn": [
-      "这是拖把。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-it-s-a-mop-3e57a1.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does mop have in the middle?",
-     "a": [
-      "Mop has letter O in the middle."
-     ],
-     "key": [
-      "o"
-     ],
-     "q_cn": "mop 中间是哪个字母？",
-     "a_cn": [
-      "mop 中间是字母 O。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-which-letter-does-mop-have-in-the-mi-6a8180.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-mop-has-letter-o-in-the-middle-970460.mp3"
-     ]
-    },
-    {
-     "q": "Can you spell mop?",
-     "a": [
-      "I can spell it. M, O, P, mop."
-     ],
-     "key": [
-      "mop"
-     ],
-     "q_cn": "你会拼 mop 吗？",
-     "a_cn": [
-      "我会拼：M-O-P，mop。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-can-you-spell-mop-e1347d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-i-can-spell-it-m-o-p-mop-dd323d.mp3"
-     ]
-    },
-    {
-     "q": "What sound does mop have in the middle?",
-     "a": [
-      "Mop has the sound /o/ in the middle."
-     ],
-     "key": [
-      "/o/"
-     ],
-     "q_cn": "mop 中间是什么音？",
-     "a_cn": [
-      "mop 中间是 /ɑ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-what-sound-does-mop-have-in-the-midd-9dbbe3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-mop-has-the-sound-o-in-the-middle-97c60a.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-mop-da8b87.mp3"
-  },
-  {
-   "word": "sound it out",
-   "cn": "拼读练习 -ot（含假词）",
-   "tag": "CVC",
-   "dialog": [
-    {
-     "q": "How do you sound out s, o, t?",
-     "a": [
-      "S says /s/, O says /o/, T says /t/, sot."
-     ],
-     "key": [
-      "sot"
-     ],
-     "q_cn": "s-o-t 怎么拼读？",
-     "a_cn": [
-      "S 发 /s/，O 发 /ɑ/，T 发 /t/，sot。（sot、mot、fot 是假词，只用来练拼读）"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-s-o-t-d633a6.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-s-says-s-o-says-o-t-says-t-sot-166a6b.mp3"
-     ]
-    },
-    {
-     "q": "How do you sound out m, o, t?",
-     "a": [
-      "M says /m/, O says /o/, T says /t/, mot."
-     ],
-     "key": [
-      "mot"
-     ],
-     "q_cn": "m-o-t 怎么拼读？",
-     "a_cn": [
-      "M 发 /m/，O 发 /ɑ/，T 发 /t/，mot。（sot、mot、fot 是假词，只用来练拼读）"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-m-o-t-5b8d9a.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-m-says-m-o-says-o-t-says-t-mot-b408bc.mp3"
-     ]
-    },
-    {
-     "q": "How do you sound out t, o, t?",
-     "a": [
-      "T says /t/, O says /o/, T says /t/, tot."
-     ],
-     "key": [
-      "tot"
-     ],
-     "q_cn": "t-o-t 怎么拼读？",
-     "a_cn": [
-      "T 发 /t/，O 发 /ɑ/，T 发 /t/，tot。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-t-o-t-cd14f4.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-t-says-t-o-says-o-t-says-t-tot-ee5079.mp3"
-     ],
-     "image": "images/wf-ot-tot.webp"
-    },
-    {
-     "q": "How do you sound out n, o, t?",
-     "a": [
-      "N says /n/, O says /o/, T says /t/, not."
-     ],
-     "key": [
-      "not"
-     ],
-     "q_cn": "n-o-t 怎么拼读？",
-     "a_cn": [
-      "N 发 /n/，O 发 /ɑ/，T 发 /t/，not。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-o/q-how-do-you-sound-out-n-o-t-7cc33f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-o/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
-     ]
-    }
-   ],
-   "emoji": "🔤",
-   "quiz": false,
-   "quiz_audio": "audio/sentences/k2-letter-o/q-which-one-is-sound-it-out-84f8fe.mp3"
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "animal": "audio/words/animal.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "book": "audio/words/book.mp3",
+    "box": "audio/words/box.mp3",
+    "c": "audio/words/c.mp3",
+    "can": "audio/words/can.mp3",
+    "clock": "audio/words/clock.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "eye": "audio/words/eye.mp3",
+    "f": "audio/words/f.mp3",
+    "fox": "audio/words/fox.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "j": "audio/words/j.mp3",
+    "k": "audio/words/k.mp3",
+    "ks": "audio/words/ks.mp3",
+    "l": "audio/words/l.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter o": "audio/words/letter-o.mp3",
+    "log": "audio/words/log.mp3",
+    "m": "audio/words/m.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "middle": "audio/words/middle.mp3",
+    "mop": "audio/words/mop.mp3",
+    "mot": "audio/words/mot.mp3",
+    "n": "audio/words/n.mp3",
+    "no": "audio/words/no.mp3",
+    "not": "audio/words/not.mp3",
+    "o": "audio/words/o.mp3",
+    "on": "audio/words/on.mp3",
+    "orange": "audio/words/orange.mp3",
+    "out": "audio/words/out.mp3",
+    "p": "audio/words/p.mp3",
+    "r": "audio/words/r.mp3",
+    "run": "audio/words/run.mp3",
+    "s": "audio/words/s.mp3",
+    "says": "audio/words/says.mp3",
+    "should": "audio/words/should.mp3",
+    "sot": "audio/words/sot.mp3",
+    "sound": "audio/words/sound.mp3",
+    "sound it out": "audio/words/sound-it-out.mp3",
+    "spell": "audio/words/spell.mp3",
+    "street": "audio/words/street.mp3",
+    "t": "audio/words/t.mp3",
+    "table": "audio/words/table.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "tot": "audio/words/tot.mp3",
+    "u": "audio/words/u.mp3",
+    "walk": "audio/words/walk.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "x": "audio/words/x.mp3",
+    "y": "audio/words/y.mp3",
+    "you": "audio/words/you.mp3",
+    "z": "audio/words/z.mp3"
   }
- ],
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- },
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "animal": "audio/words/animal.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "book": "audio/words/book.mp3",
-  "box": "audio/words/box.mp3",
-  "c": "audio/words/c.mp3",
-  "can": "audio/words/can.mp3",
-  "clock": "audio/words/clock.mp3",
-  "do": "audio/words/do.mp3",
-  "does": "audio/words/does.mp3",
-  "f": "audio/words/f.mp3",
-  "fox": "audio/words/fox.mp3",
-  "has": "audio/words/has.mp3",
-  "have": "audio/words/have.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "in": "audio/words/in.mp3",
-  "is": "audio/words/is.mp3",
-  "it": "audio/words/it.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "k": "audio/words/k.mp3",
-  "l": "audio/words/l.mp3",
-  "letter": "audio/words/letter.mp3",
-  "letter o": "audio/words/letter-o.mp3",
-  "log": "audio/words/log.mp3",
-  "m": "audio/words/m.mp3",
-  "make": "audio/words/make.mp3",
-  "makes": "audio/words/makes.mp3",
-  "middle": "audio/words/middle.mp3",
-  "mop": "audio/words/mop.mp3",
-  "mot": "audio/words/mot.mp3",
-  "n": "audio/words/n.mp3",
-  "no": "audio/words/no.mp3",
-  "not": "audio/words/not.mp3",
-  "o": "audio/words/o.mp3",
-  "on": "audio/words/on.mp3",
-  "orange": "audio/words/orange.mp3",
-  "out": "audio/words/out.mp3",
-  "p": "audio/words/p.mp3",
-  "run": "audio/words/run.mp3",
-  "s": "audio/words/s.mp3",
-  "says": "audio/words/says.mp3",
-  "should": "audio/words/should.mp3",
-  "sot": "audio/words/sot.mp3",
-  "sound": "audio/words/sound.mp3",
-  "sound it out": "audio/words/sound-it-out.mp3",
-  "spell": "audio/words/spell.mp3",
-  "street": "audio/words/street.mp3",
-  "t": "audio/words/t.mp3",
-  "table": "audio/words/table.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "tot": "audio/words/tot.mp3",
-  "walk": "audio/words/walk.mp3",
-  "we": "audio/words/we.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "where": "audio/words/where.mp3",
-  "which": "audio/words/which.mp3",
-  "with": "audio/words/with.mp3",
-  "x": "audio/words/x.mp3",
-  "you": "audio/words/you.mp3"
- }
 }

@@ -28,6 +28,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-it-s-a-triangle-e6b316.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sandwich",
+              "text": "It's a sandwich.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-sandwich-194397.mp3"
+            },
+            {
+              "key": "trapezoid",
+              "text": "It's a trapezoid.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-trapezoid-d23901.mp3"
+            }
           ]
         },
         {
@@ -46,6 +58,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-triangle-09cce2.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-the-sandwich-is-like-a-triangle-18dbc5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "kite",
+              "text": "The kite is like a diamond.",
+              "audio": "audio/sentences/k1-shape-more/a-the-kite-is-like-a-diamond-375a4f.mp3"
+            },
+            {
+              "key": "flowerpot",
+              "text": "The flowerpot is like a trapezoid.",
+              "audio": "audio/sentences/k1-shape-more/a-the-flowerpot-is-like-a-trapezoid-3fbeaf.mp3"
+            }
           ]
         },
         {
@@ -63,6 +87,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-triangle-have-a51630.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-triangle-has-three-sides-e0e69f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "A triangle has four sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-triangle-has-four-sides-442b8b.mp3"
+            },
+            {
+              "key": "one",
+              "text": "A triangle has one sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-triangle-has-one-sides-4128b2.mp3"
+            }
           ]
         },
         {
@@ -80,6 +116,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-how-many-corners-does-a-triangle-hav-397864.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-triangle-has-three-corners-23d09b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "A triangle has four corners.",
+              "audio": "audio/sentences/k1-shape-more/a-a-triangle-has-four-corners-ad50d8.mp3"
+            },
+            {
+              "key": "thirteen",
+              "text": "A triangle has thirteen corners.",
+              "audio": "audio/sentences/k1-shape-more/a-a-triangle-has-thirteen-corners-e079eb.mp3"
+            }
           ]
         }
       ],
@@ -108,6 +156,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-it-s-a-diamond-eb0eea.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sandwich",
+              "text": "It's a sandwich.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-sandwich-194397.mp3"
+            },
+            {
+              "key": "trapezoid",
+              "text": "It's a trapezoid.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-trapezoid-d23901.mp3"
+            }
           ]
         },
         {
@@ -126,6 +186,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-diamond-e1fd13.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-the-kite-is-like-a-diamond-375a4f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "flowerpot",
+              "text": "The flowerpot is like a trapezoid.",
+              "audio": "audio/sentences/k1-shape-more/a-the-flowerpot-is-like-a-trapezoid-3fbeaf.mp3"
+            },
+            {
+              "key": "sandwich",
+              "text": "The sandwich is like a triangle.",
+              "audio": "audio/sentences/k1-shape-more/a-the-sandwich-is-like-a-triangle-18dbc5.mp3"
+            }
           ]
         },
         {
@@ -143,6 +215,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-diamond-have-70a65a.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-diamond-has-four-sides-d7d0d9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "A diamond has three sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-diamond-has-three-sides-379339.mp3"
+            },
+            {
+              "key": "fourteen",
+              "text": "A diamond has fourteen sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-diamond-has-fourteen-sides-f757ed.mp3"
+            }
           ]
         }
       ],
@@ -171,6 +255,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-it-s-a-trapezoid-d23901.mp3"
+          ],
+          "opts": [
+            {
+              "key": "triangle",
+              "text": "It's a triangle.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-triangle-e6b316.mp3"
+            },
+            {
+              "key": "diamond",
+              "text": "It's a diamond.",
+              "audio": "audio/sentences/k1-shape-more/a-it-s-a-diamond-eb0eea.mp3"
+            }
           ]
         },
         {
@@ -189,6 +285,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-what-is-like-a-trapezoid-7a0591.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-the-flowerpot-is-like-a-trapezoid-3fbeaf.mp3"
+          ],
+          "opts": [
+            {
+              "key": "kite",
+              "text": "The kite is like a diamond.",
+              "audio": "audio/sentences/k1-shape-more/a-the-kite-is-like-a-diamond-375a4f.mp3"
+            },
+            {
+              "key": "sandwich",
+              "text": "The sandwich is like a triangle.",
+              "audio": "audio/sentences/k1-shape-more/a-the-sandwich-is-like-a-triangle-18dbc5.mp3"
+            }
           ]
         },
         {
@@ -206,6 +314,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-how-many-sides-does-a-trapezoid-have-f3c075.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-trapezoid-has-four-sides-3e0765.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "A trapezoid has three sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-trapezoid-has-three-sides-93bbe4.mp3"
+            },
+            {
+              "key": "thirteen",
+              "text": "A trapezoid has thirteen sides.",
+              "audio": "audio/sentences/k1-shape-more/a-a-trapezoid-has-thirteen-sides-2c04f8.mp3"
+            }
           ]
         },
         {
@@ -223,6 +343,18 @@
           "q_audio": "audio/sentences/k1-shape-more/q-how-many-corners-does-a-trapezoid-ha-1adc80.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-trapezoid-has-four-corners-0c5ce8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "A trapezoid has three corners.",
+              "audio": "audio/sentences/k1-shape-more/a-a-trapezoid-has-three-corners-d9739d.mp3"
+            },
+            {
+              "key": "seven",
+              "text": "A trapezoid has seven corners.",
+              "audio": "audio/sentences/k1-shape-more/a-a-trapezoid-has-seven-corners-b33a39.mp3"
+            }
           ]
         }
       ],
@@ -236,6 +368,7 @@
     "does": "audio/words/does.mp3",
     "flowerpot": "audio/words/flowerpot.mp3",
     "four": "audio/words/four.mp3",
+    "fourteen": "audio/words/fourteen.mp3",
     "has": "audio/words/has.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
@@ -245,10 +378,13 @@
     "kite": "audio/words/kite.mp3",
     "like": "audio/words/like.mp3",
     "many": "audio/words/many.mp3",
+    "one": "audio/words/one.mp3",
     "sandwich": "audio/words/sandwich.mp3",
+    "seven": "audio/words/seven.mp3",
     "shape": "audio/words/shape.mp3",
     "sides": "audio/words/sides.mp3",
     "the": "audio/words/the.mp3",
+    "thirteen": "audio/words/thirteen.mp3",
     "three": "audio/words/three.mp3",
     "trapezoid": "audio/words/trapezoid.mp3",
     "triangle": "audio/words/triangle.mp3",

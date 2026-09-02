@@ -362,6 +362,35 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
                     r.e(f"卡「{c.get('word')}」第{i+1}问", "没有 q_audio，跑 gen_audio.py")
                 if len(t.get("a_audio") or []) != len(t.get("a") or []):
                     r.e(f"卡「{c.get('word')}」第{i+1}问", "a_audio 条数和 a 对不上")
+                # 闯关的整句选项(build_opts.py 预造)。孩子不认字,三条都要能点着念,
+                # 少一条音频这道题就变成"看字选"——对他等于抓阄
+                where = f"卡「{c.get('word')}」第{i+1}问"
+                opts = t.get("opts")
+                if opts is not None:
+                    if t.get("practice") is False:
+                        r.e(where, "标了 practice:false 却还留着 opts —— 它不进闯关，"
+                                   "这两条干扰句白生成音频")
+                    if len(opts) != 2:
+                        r.e(where, f"opts 有 {len(opts)} 条，闯关要正好 2 条干扰句")
+                    ck = " ".join(t["key"])
+                    seen_o = set()
+                    for o in opts:
+                        ot = (o or {}).get("text"); ok_ = (o or {}).get("key")
+                        if not ot or not ok_:
+                            r.e(where, "opts 里有条目缺 text 或 key"); continue
+                        if ok_ == ck:
+                            r.e(where, f"干扰句「{ot}」的答案和正确答案一样（{ck}）—— "
+                                       f"两条都对，孩子点哪个都可能被判错")
+                        if ot == (t.get("a") or [""])[0]:
+                            r.e(where, f"干扰句和正确答句一字不差：{ot}")
+                        if ot in seen_o:
+                            r.e(where, f"两条干扰句重复：{ot}")
+                        seen_o.add(ot)
+                        au = o.get("audio")
+                        if not au:
+                            r.e(where, f"干扰句「{ot}」没有音频，跑 gen_audio.py")
+                        elif not (LESSONS / au).exists():
+                            r.e(where, f"干扰句「{ot}」的音频文件不存在：{au}")
         for k in {kk for c in cards for t in c.get("dialog", []) for kk in t["key"]}:
             m = PHONEME_RE.fullmatch(k)
             f = (LESSONS / "audio" / "phonics" /

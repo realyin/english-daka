@@ -34,6 +34,18 @@
           "q_audio": "audio/sentences/k1-pattern-shape/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-shape/a-the-pattern-is-rectangle-oval-triang-940d0a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "The pattern is square circle trapezoid, square circle trapezoid.",
+              "audio": "audio/sentences/k1-pattern-shape/a-the-pattern-is-square-circle-trapezo-6c1d6c.mp3"
+            },
+            {
+              "key": "square",
+              "text": "Square comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+            }
           ]
         },
         {
@@ -51,6 +63,18 @@
           "q_audio": "audio/sentences/k1-pattern-shape/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "Square comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "Eleven comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-eleven-comes-next-161041.mp3"
+            }
           ]
         }
       ],
@@ -85,6 +109,18 @@
           "q_audio": "audio/sentences/k1-pattern-shape/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-shape/a-the-pattern-is-square-circle-trapezo-6c1d6c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "rectangle",
+              "text": "The pattern is rectangle oval triangle, rectangle oval triangle.",
+              "audio": "audio/sentences/k1-pattern-shape/a-the-pattern-is-rectangle-oval-triang-940d0a.mp3"
+            },
+            {
+              "key": "rectangle",
+              "text": "Rectangle comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+            }
           ]
         },
         {
@@ -102,6 +138,18 @@
           "q_audio": "audio/sentences/k1-pattern-shape/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+          ],
+          "opts": [
+            {
+              "key": "rectangle",
+              "text": "Rectangle comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+            },
+            {
+              "key": "fish",
+              "text": "Fish comes next.",
+              "audio": "audio/sentences/k1-pattern-shape/a-fish-comes-next-888ff0.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +159,8 @@
   "word_audio": {
     "circle": "audio/words/circle.mp3",
     "comes": "audio/words/comes.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "fish": "audio/words/fish.mp3",
     "is": "audio/words/is.mp3",
     "next": "audio/words/next.mp3",
     "oval": "audio/words/oval.mp3",

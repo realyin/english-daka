@@ -1,194 +1,268 @@
 {
- "seq": 506,
- "level": "K1",
- "group": "身体 Body",
- "badge": "legs",
- "cover": "images/k1-body-legs.webp",
- "title": "Body · Legs & Feet & Toes 腿脚趾",
- "cards": [
-  {
-   "word": "legs",
-   "cn": "腿",
-   "tag": "word",
-   "image": "images/k1-body-legs.webp",
-   "dialog": [
+  "seq": 506,
+  "level": "K1",
+  "group": "身体 Body",
+  "badge": "legs",
+  "cover": "images/k1-body-legs.webp",
+  "title": "Body · Legs & Feet & Toes 腿脚趾",
+  "cards": [
     {
-     "q": "What are these body parts?",
-     "a": [
-      "These are legs."
-     ],
-     "key": [
-      "legs"
-     ],
-     "q_cn": "这是身体的什么部位？",
-     "a_cn": [
-      "这是腿。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-these-are-legs-b6fd76.mp3"
-     ]
+      "word": "legs",
+      "cn": "腿",
+      "tag": "word",
+      "image": "images/k1-body-legs.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are legs."
+          ],
+          "key": [
+            "legs"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是腿。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-these-are-legs-b6fd76.mp3"
+          ],
+          "opts": [
+            {
+              "key": "feet",
+              "text": "These are feet.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-feet-45366b.mp3"
+            },
+            {
+              "key": "toes",
+              "text": "These are toes.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-toes-94601b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many legs do you have?",
+          "a": [
+            "I have two legs."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几个腿？",
+          "a_cn": [
+            "我有两条腿。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-how-many-legs-do-you-have-834b0d.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-i-have-two-legs-4d5032.mp3"
+          ],
+          "image": "images/k1-two-legs.webp",
+          "opts": [
+            {
+              "key": "ten",
+              "text": "I have ten legs.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-ten-legs-00763f.mp3"
+            },
+            {
+              "key": "seven",
+              "text": "I have seven legs.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-seven-legs-2343be.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-legs-ffadcd.mp3"
     },
     {
-     "q": "How many legs do you have?",
-     "a": [
-      "I have two legs."
-     ],
-     "key": [
-      "two"
-     ],
-     "q_cn": "你有几个腿？",
-     "a_cn": [
-      "我有两条腿。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-how-many-legs-do-you-have-834b0d.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-i-have-two-legs-4d5032.mp3"
-     ],
-     "image": "images/k1-two-legs.webp"
+      "word": "feet",
+      "cn": "脚",
+      "tag": "word",
+      "image": "images/k1-body-feet.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are feet."
+          ],
+          "key": [
+            "feet"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是脚。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-these-are-feet-45366b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "toes",
+              "text": "These are toes.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-toes-94601b.mp3"
+            },
+            {
+              "key": "legs",
+              "text": "These are legs.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-legs-b6fd76.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many feet do you have?",
+          "a": [
+            "I have two feet."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几只脚？",
+          "a_cn": [
+            "我有两只脚。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-how-many-feet-do-you-have-8c7920.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-i-have-two-feet-eb0fdf.mp3"
+          ],
+          "image": "images/k1-two-feet.webp",
+          "opts": [
+            {
+              "key": "ten",
+              "text": "I have ten feet.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-ten-feet-a00fc0.mp3"
+            },
+            {
+              "key": "twelve",
+              "text": "I have twelve feet.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-twelve-feet-0d663a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you touch your feet?",
+          "a": [
+            "I can touch my feet."
+          ],
+          "key": [
+            "touch"
+          ],
+          "practice": false,
+          "q_cn": "你能摸到脚吗？",
+          "a_cn": [
+            "我能摸到我的脚。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-can-you-touch-your-feet-183b98.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-i-can-touch-my-feet-824f5a.mp3"
+          ],
+          "image": "images/k1-touch-feet.webp"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-feet-c3fa1d.mp3"
+    },
+    {
+      "word": "toes",
+      "cn": "脚趾",
+      "tag": "word",
+      "image": "images/k1-body-toes.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are toes."
+          ],
+          "key": [
+            "toes"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是脚趾。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-these-are-toes-94601b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "feet",
+              "text": "These are feet.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-feet-45366b.mp3"
+            },
+            {
+              "key": "legs",
+              "text": "These are legs.",
+              "audio": "audio/sentences/k1-body-legs/a-these-are-legs-b6fd76.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many toes do you have?",
+          "a": [
+            "I have ten toes."
+          ],
+          "key": [
+            "ten"
+          ],
+          "q_cn": "你有几个脚趾？",
+          "a_cn": [
+            "我有十个脚趾。"
+          ],
+          "q_audio": "audio/sentences/k1-body-legs/q-how-many-toes-do-you-have-51b1c2.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-legs/a-i-have-ten-toes-b03dd9.mp3"
+          ],
+          "image": "images/k1-ten-toes.webp",
+          "opts": [
+            {
+              "key": "two",
+              "text": "I have two toes.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-two-toes-b012ee.mp3"
+            },
+            {
+              "key": "twelve",
+              "text": "I have twelve toes.",
+              "audio": "audio/sentences/k1-body-legs/a-i-have-twelve-toes-9a6149.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-toes-44ecb0.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-legs-ffadcd.mp3"
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "feet": "audio/words/feet.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "legs": "audio/words/legs.mp3",
+    "many": "audio/words/many.mp3",
+    "my": "audio/words/my.mp3",
+    "parts": "audio/words/parts.mp3",
+    "seven": "audio/words/seven.mp3",
+    "ten": "audio/words/ten.mp3",
+    "these": "audio/words/these.mp3",
+    "toes": "audio/words/toes.mp3",
+    "touch": "audio/words/touch.mp3",
+    "twelve": "audio/words/twelve.mp3",
+    "two": "audio/words/two.mp3",
+    "what": "audio/words/what.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
   },
-  {
-   "word": "feet",
-   "cn": "脚",
-   "tag": "word",
-   "image": "images/k1-body-feet.webp",
-   "dialog": [
-    {
-     "q": "What are these body parts?",
-     "a": [
-      "These are feet."
-     ],
-     "key": [
-      "feet"
-     ],
-     "q_cn": "这是身体的什么部位？",
-     "a_cn": [
-      "这是脚。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-these-are-feet-45366b.mp3"
-     ]
-    },
-    {
-     "q": "How many feet do you have?",
-     "a": [
-      "I have two feet."
-     ],
-     "key": [
-      "two"
-     ],
-     "q_cn": "你有几只脚？",
-     "a_cn": [
-      "我有两只脚。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-how-many-feet-do-you-have-8c7920.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-i-have-two-feet-eb0fdf.mp3"
-     ],
-     "image": "images/k1-two-feet.webp"
-    },
-    {
-     "q": "Can you touch your feet?",
-     "a": [
-      "I can touch my feet."
-     ],
-     "key": [
-      "touch"
-     ],
-     "practice": false,
-     "q_cn": "你能摸到脚吗？",
-     "a_cn": [
-      "我能摸到我的脚。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-can-you-touch-your-feet-183b98.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-i-can-touch-my-feet-824f5a.mp3"
-     ],
-     "image": "images/k1-touch-feet.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-feet-c3fa1d.mp3"
-  },
-  {
-   "word": "toes",
-   "cn": "脚趾",
-   "tag": "word",
-   "image": "images/k1-body-toes.webp",
-   "dialog": [
-    {
-     "q": "What are these body parts?",
-     "a": [
-      "These are toes."
-     ],
-     "key": [
-      "toes"
-     ],
-     "q_cn": "这是身体的什么部位？",
-     "a_cn": [
-      "这是脚趾。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-what-are-these-body-parts-5b86ae.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-these-are-toes-94601b.mp3"
-     ]
-    },
-    {
-     "q": "How many toes do you have?",
-     "a": [
-      "I have ten toes."
-     ],
-     "key": [
-      "ten"
-     ],
-     "q_cn": "你有几个脚趾？",
-     "a_cn": [
-      "我有十个脚趾。"
-     ],
-     "q_audio": "audio/sentences/k1-body-legs/q-how-many-toes-do-you-have-51b1c2.mp3",
-     "a_audio": [
-      "audio/sentences/k1-body-legs/a-i-have-ten-toes-b03dd9.mp3"
-     ],
-     "image": "images/k1-ten-toes.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-body-legs/q-which-one-is-toes-44ecb0.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "are": "audio/words/are.mp3",
-  "body": "audio/words/body.mp3",
-  "can": "audio/words/can.mp3",
-  "do": "audio/words/do.mp3",
-  "feet": "audio/words/feet.mp3",
-  "have": "audio/words/have.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "legs": "audio/words/legs.mp3",
-  "many": "audio/words/many.mp3",
-  "my": "audio/words/my.mp3",
-  "parts": "audio/words/parts.mp3",
-  "ten": "audio/words/ten.mp3",
-  "these": "audio/words/these.mp3",
-  "toes": "audio/words/toes.mp3",
-  "touch": "audio/words/touch.mp3",
-  "two": "audio/words/two.mp3",
-  "what": "audio/words/what.mp3",
-  "you": "audio/words/you.mp3",
-  "your": "audio/words/your.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

@@ -1,170 +1,230 @@
 {
- "seq": 1205,
- "level": "K1",
- "group": "节日 Holidays",
- "badge": "🧧",
- "cover": "images/hol-spring-festival.webp",
- "title": "Holidays · Spring Festival 春节",
- "cards": [
-  {
-   "word": "Spring Festival",
-   "cn": "春节",
-   "tag": "word",
-   "image": "images/hol-spring-festival.webp",
-   "dialog": [
+  "seq": 1205,
+  "level": "K1",
+  "group": "节日 Holidays",
+  "badge": "🧧",
+  "cover": "images/hol-spring-festival.webp",
+  "title": "Holidays · Spring Festival 春节",
+  "cards": [
     {
-     "q": "What's this holiday?",
-     "a": [
-      "It's Spring Festival."
-     ],
-     "key": [
-      "spring"
-     ],
-     "q_cn": "这是什么节日？",
-     "a_cn": [
-      "这是春节。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-s-this-holiday-518c80.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-spring-festival/a-it-s-spring-festival-a85ed0.mp3"
-     ]
+      "word": "Spring Festival",
+      "cn": "春节",
+      "tag": "word",
+      "image": "images/hol-spring-festival.webp",
+      "dialog": [
+        {
+          "q": "What's this holiday?",
+          "a": [
+            "It's Spring Festival."
+          ],
+          "key": [
+            "spring"
+          ],
+          "q_cn": "这是什么节日？",
+          "a_cn": [
+            "这是春节。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-s-this-holiday-518c80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-spring-festival/a-it-s-spring-festival-a85ed0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "new",
+              "text": "Happy New Year!",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-happy-new-year-917d5f.mp3"
+            },
+            {
+              "key": "dumplings",
+              "text": "We can eat dumplings.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say during Spring Festival?",
+          "a": [
+            "Happy New Year!"
+          ],
+          "key": [
+            "new"
+          ],
+          "q_cn": "春节我们说什么？",
+          "a_cn": [
+            "新年快乐！"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-do-we-say-during-spring-festiva-3f6be9.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-spring-festival/a-happy-new-year-917d5f.mp3"
+          ],
+          "image": "images/k1-say-happy-new-year.webp",
+          "opts": [
+            {
+              "key": "spring",
+              "text": "It's Spring Festival.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-it-s-spring-festival-a85ed0.mp3"
+            },
+            {
+              "key": "dumplings",
+              "text": "We can eat dumplings.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-spring-festival-acdd92.mp3"
     },
     {
-     "q": "What do we say during Spring Festival?",
-     "a": [
-      "Happy New Year!"
-     ],
-     "key": [
-      "new"
-     ],
-     "q_cn": "春节我们说什么？",
-     "a_cn": [
-      "新年快乐！"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-do-we-say-during-spring-festiva-3f6be9.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-spring-festival/a-happy-new-year-917d5f.mp3"
-     ],
-     "image": "images/k1-say-happy-new-year.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-spring-festival-acdd92.mp3"
-  },
-  {
-   "word": "lucky money",
-   "cn": "压岁钱",
-   "tag": "word",
-   "image": "images/hol-lucky-money.webp",
-   "dialog": [
+      "word": "lucky money",
+      "cn": "压岁钱",
+      "tag": "word",
+      "image": "images/hol-lucky-money.webp",
+      "dialog": [
+        {
+          "q": "What can we do during Spring Festival?",
+          "a": [
+            "We can get lucky money."
+          ],
+          "key": [
+            "money"
+          ],
+          "q_cn": "春节我们可以做什么？",
+          "a_cn": [
+            "我们可以收压岁钱。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-can-we-do-during-spring-festiva-6a7125.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-spring-festival/a-we-can-get-lucky-money-e1cd81.mp3"
+          ],
+          "opts": [
+            {
+              "key": "couplets",
+              "text": "We can put up couplets.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-put-up-couplets-4a5469.mp3"
+            },
+            {
+              "key": "dumplings",
+              "text": "We can eat dumplings.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-lucky-money-2037fe.mp3"
+    },
     {
-     "q": "What can we do during Spring Festival?",
-     "a": [
-      "We can get lucky money."
-     ],
-     "key": [
-      "money"
-     ],
-     "q_cn": "春节我们可以做什么？",
-     "a_cn": [
-      "我们可以收压岁钱。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-can-we-do-during-spring-festiva-6a7125.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-spring-festival/a-we-can-get-lucky-money-e1cd81.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-lucky-money-2037fe.mp3"
-  },
-  {
-   "word": "dumplings",
-   "cn": "饺子",
-   "tag": "word",
-   "image": "images/hol-dumplings.webp",
-   "dialog": [
+      "word": "dumplings",
+      "cn": "饺子",
+      "tag": "word",
+      "image": "images/hol-dumplings.webp",
+      "dialog": [
+        {
+          "q": "What do we eat during Spring Festival?",
+          "a": [
+            "We can eat dumplings."
+          ],
+          "key": [
+            "dumplings"
+          ],
+          "q_cn": "春节我们吃什么？",
+          "a_cn": [
+            "我们吃饺子。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-do-we-eat-during-spring-festiva-313caf.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
+          ],
+          "opts": [
+            {
+              "key": "money",
+              "text": "We can get lucky money.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-get-lucky-money-e1cd81.mp3"
+            },
+            {
+              "key": "couplets",
+              "text": "We can put up couplets.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-put-up-couplets-4a5469.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-dumplings-e2bc97.mp3"
+    },
     {
-     "q": "What do we eat during Spring Festival?",
-     "a": [
-      "We can eat dumplings."
-     ],
-     "key": [
-      "dumplings"
-     ],
-     "q_cn": "春节我们吃什么？",
-     "a_cn": [
-      "我们吃饺子。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-do-we-eat-during-spring-festiva-313caf.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
-     ]
+      "word": "couplets",
+      "cn": "对联",
+      "tag": "word",
+      "image": "images/hol-couplets.webp",
+      "dialog": [
+        {
+          "q": "What can we do during Spring Festival?",
+          "a": [
+            "We can put up couplets."
+          ],
+          "key": [
+            "couplets"
+          ],
+          "q_cn": "春节我们可以做什么？",
+          "a_cn": [
+            "我们可以贴对联。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-can-we-do-during-spring-festiva-6a7125.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-spring-festival/a-we-can-put-up-couplets-4a5469.mp3"
+          ],
+          "opts": [
+            {
+              "key": "money",
+              "text": "We can get lucky money.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-get-lucky-money-e1cd81.mp3"
+            },
+            {
+              "key": "dumplings",
+              "text": "We can eat dumplings.",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-eat-dumplings-8d4898.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-couplets-bd6893.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-dumplings-e2bc97.mp3"
+  ],
+  "word_audio": {
+    "can": "audio/words/can.mp3",
+    "couplets": "audio/words/couplets.mp3",
+    "do": "audio/words/do.mp3",
+    "dumplings": "audio/words/dumplings.mp3",
+    "during": "audio/words/during.mp3",
+    "eat": "audio/words/eat.mp3",
+    "festival": "audio/words/festival.mp3",
+    "get": "audio/words/get.mp3",
+    "happy": "audio/words/happy.mp3",
+    "holiday": "audio/words/holiday.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "lucky": "audio/words/lucky.mp3",
+    "lucky money": "audio/words/lucky-money.mp3",
+    "money": "audio/words/money.mp3",
+    "new": "audio/words/new.mp3",
+    "put": "audio/words/put.mp3",
+    "say": "audio/words/say.mp3",
+    "spring": "audio/words/spring.mp3",
+    "spring festival": "audio/words/spring-festival.mp3",
+    "this": "audio/words/this.mp3",
+    "up": "audio/words/up.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "year": "audio/words/year.mp3"
   },
-  {
-   "word": "couplets",
-   "cn": "对联",
-   "tag": "word",
-   "image": "images/hol-couplets.webp",
-   "dialog": [
-    {
-     "q": "What can we do during Spring Festival?",
-     "a": [
-      "We can put up couplets."
-     ],
-     "key": [
-      "couplets"
-     ],
-     "q_cn": "春节我们可以做什么？",
-     "a_cn": [
-      "我们可以贴对联。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-spring-festival/q-what-can-we-do-during-spring-festiva-6a7125.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-spring-festival/a-we-can-put-up-couplets-4a5469.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-spring-festival/q-which-one-is-couplets-bd6893.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "can": "audio/words/can.mp3",
-  "couplets": "audio/words/couplets.mp3",
-  "do": "audio/words/do.mp3",
-  "dumplings": "audio/words/dumplings.mp3",
-  "during": "audio/words/during.mp3",
-  "eat": "audio/words/eat.mp3",
-  "festival": "audio/words/festival.mp3",
-  "get": "audio/words/get.mp3",
-  "happy": "audio/words/happy.mp3",
-  "holiday": "audio/words/holiday.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "lucky": "audio/words/lucky.mp3",
-  "lucky money": "audio/words/lucky-money.mp3",
-  "money": "audio/words/money.mp3",
-  "new": "audio/words/new.mp3",
-  "put": "audio/words/put.mp3",
-  "say": "audio/words/say.mp3",
-  "spring": "audio/words/spring.mp3",
-  "spring festival": "audio/words/spring-festival.mp3",
-  "this": "audio/words/this.mp3",
-  "up": "audio/words/up.mp3",
-  "we": "audio/words/we.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "year": "audio/words/year.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

@@ -34,6 +34,18 @@
           "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "The pattern is P B R, P B R.",
+              "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
+            },
+            {
+              "key": "p",
+              "text": "P comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+            }
           ]
         },
         {
@@ -51,6 +63,18 @@
           "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "P comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+            },
+            {
+              "key": "square",
+              "text": "Square comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-square-comes-next-4bad71.mp3"
+            }
           ]
         }
       ],
@@ -85,6 +109,18 @@
           "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "The pattern is L M N, L M N.",
+              "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
+            },
+            {
+              "key": "l",
+              "text": "L comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+            }
           ]
         },
         {
@@ -102,6 +138,18 @@
           "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "L comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-four-comes-next-7fd9f2.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +159,7 @@
   "word_audio": {
     "b": "audio/words/b.mp3",
     "comes": "audio/words/comes.mp3",
+    "four": "audio/words/four.mp3",
     "is": "audio/words/is.mp3",
     "l": "audio/words/l.mp3",
     "lmn pattern": "audio/words/lmn-pattern.mp3",
@@ -121,6 +170,7 @@
     "pattern": "audio/words/pattern.mp3",
     "pbr pattern": "audio/words/pbr-pattern.mp3",
     "r": "audio/words/r.mp3",
+    "square": "audio/words/square.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "what": "audio/words/what.mp3",

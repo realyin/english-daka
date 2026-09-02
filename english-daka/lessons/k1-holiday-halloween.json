@@ -1,142 +1,192 @@
 {
- "seq": 1204,
- "level": "K1",
- "group": "节日 Holidays",
- "badge": "🎃",
- "cover": "images/hol-halloween.webp",
- "title": "Holidays · Halloween 万圣节",
- "cards": [
-  {
-   "word": "Halloween",
-   "cn": "万圣节",
-   "tag": "word",
-   "image": "images/hol-halloween.webp",
-   "dialog": [
+  "seq": 1204,
+  "level": "K1",
+  "group": "节日 Holidays",
+  "badge": "🎃",
+  "cover": "images/hol-halloween.webp",
+  "title": "Holidays · Halloween 万圣节",
+  "cards": [
     {
-     "q": "What's this holiday?",
-     "a": [
-      "It's Halloween."
-     ],
-     "key": [
-      "halloween"
-     ],
-     "q_cn": "这是什么节日？",
-     "a_cn": [
-      "这是万圣节。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-halloween/q-what-s-this-holiday-518c80.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-halloween/a-it-s-halloween-307295.mp3"
-     ]
+      "word": "Halloween",
+      "cn": "万圣节",
+      "tag": "word",
+      "image": "images/hol-halloween.webp",
+      "dialog": [
+        {
+          "q": "What's this holiday?",
+          "a": [
+            "It's Halloween."
+          ],
+          "key": [
+            "halloween"
+          ],
+          "q_cn": "这是什么节日？",
+          "a_cn": [
+            "这是万圣节。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-halloween/q-what-s-this-holiday-518c80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-halloween/a-it-s-halloween-307295.mp3"
+          ],
+          "opts": [
+            {
+              "key": "orange",
+              "text": "It's orange.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-it-s-orange-587e78.mp3"
+            },
+            {
+              "key": "dig",
+              "text": "It's dig.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-it-s-dig-c21923.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Halloween?",
+          "a": [
+            "Happy Halloween!",
+            "Trick or treat!"
+          ],
+          "key": [
+            "happy"
+          ],
+          "q_cn": "万圣节我们说什么？",
+          "a_cn": [
+            "万圣节快乐！",
+            "不给糖就捣蛋！"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-halloween/q-what-do-we-say-on-halloween-bdacd1.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-halloween/a-happy-halloween-db218d.mp3",
+            "audio/sentences/k1-holiday-halloween/a-trick-or-treat-cf199d.mp3"
+          ],
+          "image": "images/k1-say-happy-halloween.webp",
+          "opts": [
+            {
+              "key": "halloween",
+              "text": "It's Halloween.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-it-s-halloween-307295.mp3"
+            },
+            {
+              "key": "dress",
+              "text": "On Halloween, we dress up.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-on-halloween-we-dress-up-90ec05.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-halloween-7689f2.mp3"
     },
     {
-     "q": "What do we say on Halloween?",
-     "a": [
-      "Happy Halloween!",
-      "Trick or treat!"
-     ],
-     "key": [
-      "happy"
-     ],
-     "q_cn": "万圣节我们说什么？",
-     "a_cn": [
-      "万圣节快乐！",
-      "不给糖就捣蛋！"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-halloween/q-what-do-we-say-on-halloween-bdacd1.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-halloween/a-happy-halloween-db218d.mp3",
-      "audio/sentences/k1-holiday-halloween/a-trick-or-treat-cf199d.mp3"
-     ],
-     "image": "images/k1-say-happy-halloween.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-halloween-7689f2.mp3"
-  },
-  {
-   "word": "dress up",
-   "cn": "盛装打扮",
-   "tag": "word",
-   "image": "images/hol-halloween-dressup.webp",
-   "dialog": [
+      "word": "dress up",
+      "cn": "盛装打扮",
+      "tag": "word",
+      "image": "images/hol-halloween-dressup.webp",
+      "dialog": [
+        {
+          "q": "What do we do on Halloween?",
+          "a": [
+            "On Halloween, we dress up."
+          ],
+          "key": [
+            "dress"
+          ],
+          "q_cn": "万圣节我们做什么？",
+          "a_cn": [
+            "万圣节我们盛装打扮。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-halloween/q-what-do-we-do-on-halloween-fd9104.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-halloween/a-on-halloween-we-dress-up-90ec05.mp3"
+          ],
+          "opts": [
+            {
+              "key": "candies",
+              "text": "We can get candies on Halloween.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-we-can-get-candies-on-halloween-c7200c.mp3"
+            },
+            {
+              "key": "happy",
+              "text": "Happy Halloween!",
+              "audio": "audio/sentences/k1-holiday-halloween/a-happy-halloween-db218d.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-dress-up-3befba.mp3"
+    },
     {
-     "q": "What do we do on Halloween?",
-     "a": [
-      "On Halloween, we dress up."
-     ],
-     "key": [
-      "dress"
-     ],
-     "q_cn": "万圣节我们做什么？",
-     "a_cn": [
-      "万圣节我们盛装打扮。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-halloween/q-what-do-we-do-on-halloween-fd9104.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-halloween/a-on-halloween-we-dress-up-90ec05.mp3"
-     ]
+      "word": "candies",
+      "cn": "糖果",
+      "tag": "word",
+      "image": "images/hol-halloween-candies.webp",
+      "dialog": [
+        {
+          "q": "What can we get on Halloween?",
+          "a": [
+            "We can get candies on Halloween."
+          ],
+          "key": [
+            "candies"
+          ],
+          "q_cn": "万圣节我们能得到什么？",
+          "a_cn": [
+            "万圣节我们能得到糖果。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-halloween/q-what-can-we-get-on-halloween-6203ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-halloween/a-we-can-get-candies-on-halloween-c7200c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dress",
+              "text": "On Halloween, we dress up.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-on-halloween-we-dress-up-90ec05.mp3"
+            },
+            {
+              "key": "halloween",
+              "text": "It's Halloween.",
+              "audio": "audio/sentences/k1-holiday-halloween/a-it-s-halloween-307295.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-candies-887556.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-dress-up-3befba.mp3"
+  ],
+  "word_audio": {
+    "can": "audio/words/can.mp3",
+    "candies": "audio/words/candies.mp3",
+    "dig": "audio/words/dig.mp3",
+    "do": "audio/words/do.mp3",
+    "dress": "audio/words/dress.mp3",
+    "dress up": "audio/words/dress-up.mp3",
+    "get": "audio/words/get.mp3",
+    "halloween": "audio/words/halloween.mp3",
+    "happy": "audio/words/happy.mp3",
+    "holiday": "audio/words/holiday.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "on": "audio/words/on.mp3",
+    "or": "audio/words/or.mp3",
+    "orange": "audio/words/orange.mp3",
+    "say": "audio/words/say.mp3",
+    "this": "audio/words/this.mp3",
+    "treat": "audio/words/treat.mp3",
+    "trick": "audio/words/trick.mp3",
+    "up": "audio/words/up.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
   },
-  {
-   "word": "candies",
-   "cn": "糖果",
-   "tag": "word",
-   "image": "images/hol-halloween-candies.webp",
-   "dialog": [
-    {
-     "q": "What can we get on Halloween?",
-     "a": [
-      "We can get candies on Halloween."
-     ],
-     "key": [
-      "candies"
-     ],
-     "q_cn": "万圣节我们能得到什么？",
-     "a_cn": [
-      "万圣节我们能得到糖果。"
-     ],
-     "q_audio": "audio/sentences/k1-holiday-halloween/q-what-can-we-get-on-halloween-6203ae.mp3",
-     "a_audio": [
-      "audio/sentences/k1-holiday-halloween/a-we-can-get-candies-on-halloween-c7200c.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-holiday-halloween/q-which-one-is-candies-887556.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "can": "audio/words/can.mp3",
-  "candies": "audio/words/candies.mp3",
-  "do": "audio/words/do.mp3",
-  "dress": "audio/words/dress.mp3",
-  "dress up": "audio/words/dress-up.mp3",
-  "get": "audio/words/get.mp3",
-  "halloween": "audio/words/halloween.mp3",
-  "happy": "audio/words/happy.mp3",
-  "holiday": "audio/words/holiday.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "on": "audio/words/on.mp3",
-  "or": "audio/words/or.mp3",
-  "say": "audio/words/say.mp3",
-  "this": "audio/words/this.mp3",
-  "treat": "audio/words/treat.mp3",
-  "trick": "audio/words/trick.mp3",
-  "up": "audio/words/up.mp3",
-  "we": "audio/words/we.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

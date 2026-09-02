@@ -1,641 +1,955 @@
 {
- "seq": 205,
- "level": "K2",
- "group": "词族 Word Family",
- "badge": "-ad",
- "cover": "images/wf-ad-dad.webp",
- "title": "Word Family · -ad 词族",
- "cards": [
-  {
-   "word": "-ad family",
-   "cn": "-ad 词族",
-   "tag": "CVC",
-   "image": "images/wf-ad.webp",
-   "collage": true,
-   "quiz": false,
-   "dialog": [
+  "seq": 205,
+  "level": "K2",
+  "group": "词族 Word Family",
+  "badge": "-ad",
+  "cover": "images/wf-ad-dad.webp",
+  "title": "Word Family · -ad 词族",
+  "cards": [
     {
-     "q": "What sound does -ad make?",
-     "a": [
-      "Ad makes the sound /ad/."
-     ],
-     "key": [
-      "/ad/"
-     ],
-     "q_cn": "-ad 发什么音？",
-     "a_cn": [
-      "-ad 发 /æd/ 的音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-ad-make-570eaf.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-ad-ea2591.mp3"
-     ]
+      "word": "-ad family",
+      "cn": "-ad 词族",
+      "tag": "CVC",
+      "image": "images/wf-ad.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -ad make?",
+          "a": [
+            "Ad makes the sound /ad/."
+          ],
+          "key": [
+            "/ad/"
+          ],
+          "q_cn": "-ad 发什么音？",
+          "a_cn": [
+            "-ad 发 /æd/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-ad-make-570eaf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-ad-ea2591.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/id/",
+              "text": "Ad makes the sound /id/.",
+              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-id-e42a9a.mp3"
+            },
+            {
+              "key": "/ot/",
+              "text": "Ad makes the sound /ot/.",
+              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-ot-edf460.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -ad family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -ad 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-it-s-ad-family-8ed62f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Dad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-ad-family-c77708.mp3"
     },
     {
-     "q": "What's this family?",
-     "a": [
-      "It's -ad family."
-     ],
-     "key": [
-      "family"
-     ],
-     "q_cn": "这是什么词族？",
-     "a_cn": [
-      "这是 -ad 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-s-this-family-fc4ac3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-it-s-ad-family-8ed62f.mp3"
-     ]
+      "word": "dad",
+      "cn": "爸爸",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/dæd/",
+        "parts": [
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "d",
+          "sound": "d"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-dad.mp3"
+      },
+      "image": "images/wf-ad-dad.webp",
+      "dialog": [
+        {
+          "q": "How do you read d, a, d?",
+          "a": [
+            "/d/ /a/ /d/, dad.",
+            "This is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "d-a-d 怎么拼读？",
+          "a_cn": [
+            "/d/ /æ/ /d/，dad。",
+            "这是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-d-a-d-d6714d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3",
+            "audio/sentences/k2-wf-ad/a-this-is-my-dad-b8089e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bad",
+              "text": "/b/ /a/ /d/, bad.",
+              "audio": "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3"
+            },
+            {
+              "key": "sad",
+              "text": "/s/ /a/ /d/, sad.",
+              "audio": "audio/sentences/k2-wf-ad/a-s-a-d-sad-cb7140.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dad begin with?",
+          "a": [
+            "Dad begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dad 的开头是什么音？",
+          "a_cn": [
+            "dad 开头是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-begin-with-02509e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-d-e0a079.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Dad begins with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-b-1be501.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Dad begins with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-a-594220.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dad begin with?",
+          "a": [
+            "Dad begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dad 以哪个字母开头？",
+          "a_cn": [
+            "dad 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-begin-with-0a7ab7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Dad begins with letter S.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-s-97b0ac.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Dad begins with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-a-0fee51.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dad have in the middle?",
+          "a": [
+            "Dad has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "dad 中间是什么音？",
+          "a_cn": [
+            "dad 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-have-in-the-midd-dabcbd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-has-the-sound-a-in-the-middle-c4dfc5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Dad has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-the-sound-b-in-the-middle-e83e85.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Dad has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-the-sound-d-in-the-middle-848a48.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dad have in the middle?",
+          "a": [
+            "Dad has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "dad 中间是哪个字母？",
+          "a_cn": [
+            "dad 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-have-in-the-mi-dddf01.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-has-letter-a-in-the-middle-206c58.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dad has letter D in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-d-in-the-middle-c05346.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dad has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-b-in-the-middle-4b91ef.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dad end with?",
+          "a": [
+            "Dad ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dad 的结尾是什么音？",
+          "a_cn": [
+            "dad 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-end-with-b6051e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-d-5d1745.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Dad ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-a-e5603f.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Dad ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-s-f6c2db.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dad end with?",
+          "a": [
+            "Dad ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dad 以哪个字母结尾？",
+          "a_cn": [
+            "dad 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-end-with-5e8a7e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Dad ends with letter S.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-s-d04e11.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Dad ends with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-a-3ab627.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is dad in?",
+          "a": [
+            "Dad is in the -ad family."
+          ],
+          "key": [
+            "/ad/"
+          ],
+          "q_cn": "dad 属于哪个词族？",
+          "a_cn": [
+            "dad 属于 -ad 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-dad-in-9a1455.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-dad-is-in-the-ad-family-6e974e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Dad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-dad-78b10b.mp3"
+    },
+    {
+      "word": "sad",
+      "cn": "伤心的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/sæd/",
+        "parts": [
+          {
+            "text": "s",
+            "sound": "s",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "s",
+          "sound": "s"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-sad.mp3"
+      },
+      "image": "images/wf-ad-sad.webp",
+      "dialog": [
+        {
+          "q": "How do you read s, a, d?",
+          "a": [
+            "/s/ /a/ /d/, sad.",
+            "I am sad."
+          ],
+          "key": [
+            "sad"
+          ],
+          "q_cn": "s-a-d 怎么拼读？",
+          "a_cn": [
+            "/s/ /æ/ /d/，sad。",
+            "我很难过。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-s-a-d-8aacfb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-s-a-d-sad-cb7140.mp3",
+            "audio/sentences/k2-wf-ad/a-i-am-sad-394a59.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dad",
+              "text": "/d/ /a/ /d/, dad.",
+              "audio": "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3"
+            },
+            {
+              "key": "bad",
+              "text": "/b/ /a/ /d/, bad.",
+              "audio": "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sad begin with?",
+          "a": [
+            "Sad begins with the sound /s/."
+          ],
+          "key": [
+            "/s/"
+          ],
+          "q_cn": "sad 的开头是什么音？",
+          "a_cn": [
+            "sad 开头是 /s/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-begin-with-b89108.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-begins-with-the-sound-s-da7cd5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Sad begins with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-begins-with-the-sound-b-a4833a.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Sad begins with the sound /d/.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-begins-with-the-sound-d-ee4293.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sad begin with?",
+          "a": [
+            "Sad begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "sad 以哪个字母开头？",
+          "a_cn": [
+            "sad 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-begin-with-9da1b8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-begins-with-letter-s-ae91ba.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Sad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-begins-with-letter-d-cf908f.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Sad begins with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-begins-with-letter-a-d0f49f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sad have in the middle?",
+          "a": [
+            "Sad has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "sad 中间是什么音？",
+          "a_cn": [
+            "sad 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-have-in-the-midd-004097.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-has-the-sound-a-in-the-middle-f9f6b1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Sad has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-the-sound-s-in-the-middle-a54681.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Sad has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-the-sound-b-in-the-middle-77f889.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sad have in the middle?",
+          "a": [
+            "Sad has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "sad 中间是哪个字母？",
+          "a_cn": [
+            "sad 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-have-in-the-mi-b87621.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-has-letter-a-in-the-middle-6bebd8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Sad has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-letter-s-in-the-middle-5b9745.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Sad has letter D in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-letter-d-in-the-middle-351599.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sad end with?",
+          "a": [
+            "Sad ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "sad 的结尾是什么音？",
+          "a_cn": [
+            "sad 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-end-with-4b6730.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-d-b4506b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Sad ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-s-1b6044.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Sad ends with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-b-e8970e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sad end with?",
+          "a": [
+            "Sad ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "sad 以哪个字母结尾？",
+          "a_cn": [
+            "sad 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-end-with-8ab2e4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-d-e716ac.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Sad ends with letter S.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-s-9ac0ff.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Sad ends with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-a-59ba43.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is sad in?",
+          "a": [
+            "Sad is in the -ad family."
+          ],
+          "key": [
+            "/ad/"
+          ],
+          "q_cn": "sad 属于哪个词族？",
+          "a_cn": [
+            "sad 属于 -ad 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-sad-in-38ff05.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-sad-is-in-the-ad-family-8a0696.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Dad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-sad-ec83f0.mp3"
+    },
+    {
+      "word": "bad",
+      "cn": "坏的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -ad 词族",
+        "ipa": "/bæd/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "d",
+            "sound": "d",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "ad",
+          "sound": "ad"
+        },
+        "blend_audio": "audio/phonics/blend-bad.mp3"
+      },
+      "image": "images/wf-ad-bad.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, a, d?",
+          "a": [
+            "/b/ /a/ /d/, bad.",
+            "It is bad."
+          ],
+          "key": [
+            "bad"
+          ],
+          "q_cn": "b-a-d 怎么拼读？",
+          "a_cn": [
+            "/b/ /æ/ /d/，bad。",
+            "这是不好的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-b-a-d-69fb8c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3",
+            "audio/sentences/k2-wf-ad/a-it-is-bad-541d0a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sad",
+              "text": "/s/ /a/ /d/, sad.",
+              "audio": "audio/sentences/k2-wf-ad/a-s-a-d-sad-cb7140.mp3"
+            },
+            {
+              "key": "dad",
+              "text": "/d/ /a/ /d/, dad.",
+              "audio": "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bad begin with?",
+          "a": [
+            "Bad begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bad 的开头是什么音？",
+          "a_cn": [
+            "bad 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-begin-with-de57f5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-b-984259.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Bad begins with the sound /d/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-d-2943bd.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Bad begins with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-a-1f65f2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bad begin with?",
+          "a": [
+            "Bad begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bad 以哪个字母开头？",
+          "a_cn": [
+            "bad 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-begin-with-60bd7d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-b-57e335.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Bad begins with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-a-0e7d60.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Bad begins with letter S.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-s-4c2892.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bad have in the middle?",
+          "a": [
+            "Bad has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "bad 中间是什么音？",
+          "a_cn": [
+            "bad 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-have-in-the-midd-284e5a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-has-the-sound-a-in-the-middle-ad67dc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Bad has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-the-sound-b-in-the-middle-129319.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Bad has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-the-sound-d-in-the-middle-d04a93.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bad have in the middle?",
+          "a": [
+            "Bad has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "bad 中间是哪个字母？",
+          "a_cn": [
+            "bad 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-have-in-the-mi-3cfaa7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-has-letter-a-in-the-middle-d84843.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Bad has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-letter-s-in-the-middle-4d62d3.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bad has letter D in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-letter-d-in-the-middle-c4fbb9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bad end with?",
+          "a": [
+            "Bad ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "bad 的结尾是什么音？",
+          "a_cn": [
+            "bad 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-end-with-c1536b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-d-30b424.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Bad ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-a-9ebcfd.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Bad ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-s-f90107.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bad end with?",
+          "a": [
+            "Bad ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "bad 以哪个字母结尾？",
+          "a_cn": [
+            "bad 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-end-with-5cb22d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-d-a7be24.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Bad ends with letter A.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-a-e13a33.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bad ends with letter B.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-b-904485.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is bad in?",
+          "a": [
+            "Bad is in the -ad family."
+          ],
+          "key": [
+            "/ad/"
+          ],
+          "q_cn": "bad 属于哪个词族？",
+          "a_cn": [
+            "bad 属于 -ad 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-bad-in-775dde.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-ad/a-bad-is-in-the-ad-family-9f6b8e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Dad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-bad-bcae35.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-ad-family-c77708.mp3"
+  ],
+  "word_audio": {
+    "-ad family": "audio/words/ad-family.mp3",
+    "a": "audio/words/a.mp3",
+    "ad": "audio/words/ad.mp3",
+    "am": "audio/words/am.mp3",
+    "b": "audio/words/b.mp3",
+    "bad": "audio/words/bad.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "d": "audio/words/d.mp3",
+    "dad": "audio/words/dad.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "family": "audio/words/family.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "middle": "audio/words/middle.mp3",
+    "my": "audio/words/my.mp3",
+    "ot": "audio/words/ot.mp3",
+    "read": "audio/words/read.mp3",
+    "s": "audio/words/s.mp3",
+    "sad": "audio/words/sad.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "dad",
-   "cn": "爸爸",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -ad 词族",
-    "ipa": "/dæd/",
-    "parts": [
-     {
-      "text": "d",
-      "sound": "d",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "d",
-      "sound": "d",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "d",
-     "sound": "d"
-    },
-    "rime": {
-     "text": "ad",
-     "sound": "ad"
-    },
-    "blend_audio": "audio/phonics/blend-dad.mp3"
-   },
-   "image": "images/wf-ad-dad.webp",
-   "dialog": [
-    {
-     "q": "How do you read d, a, d?",
-     "a": [
-      "/d/ /a/ /d/, dad.",
-      "This is my dad."
-     ],
-     "key": [
-      "dad"
-     ],
-     "q_cn": "d-a-d 怎么拼读？",
-     "a_cn": [
-      "/d/ /æ/ /d/，dad。",
-      "这是我爸爸。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-d-a-d-d6714d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3",
-      "audio/sentences/k2-wf-ad/a-this-is-my-dad-b8089e.mp3"
-     ]
-    },
-    {
-     "q": "What sound does dad begin with?",
-     "a": [
-      "Dad begins with the sound /d/."
-     ],
-     "key": [
-      "/d/"
-     ],
-     "q_cn": "dad 的开头是什么音？",
-     "a_cn": [
-      "dad 开头是 /d/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-begin-with-02509e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-d-e0a079.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does dad begin with?",
-     "a": [
-      "Dad begins with letter D."
-     ],
-     "key": [
-      "d"
-     ],
-     "q_cn": "dad 以哪个字母开头？",
-     "a_cn": [
-      "dad 以字母 D 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-begin-with-0a7ab7.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
-     ]
-    },
-    {
-     "q": "What sound does dad have in the middle?",
-     "a": [
-      "Dad has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "dad 中间是什么音？",
-     "a_cn": [
-      "dad 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-have-in-the-midd-dabcbd.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-has-the-sound-a-in-the-middle-c4dfc5.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does dad have in the middle?",
-     "a": [
-      "Dad has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "dad 中间是哪个字母？",
-     "a_cn": [
-      "dad 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-have-in-the-mi-dddf01.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-has-letter-a-in-the-middle-206c58.mp3"
-     ]
-    },
-    {
-     "q": "What sound does dad end with?",
-     "a": [
-      "Dad ends with the sound /d/."
-     ],
-     "key": [
-      "/d/"
-     ],
-     "q_cn": "dad 的结尾是什么音？",
-     "a_cn": [
-      "dad 结尾是 /d/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-dad-end-with-b6051e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-d-5d1745.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does dad end with?",
-     "a": [
-      "Dad ends with letter D."
-     ],
-     "key": [
-      "d"
-     ],
-     "q_cn": "dad 以哪个字母结尾？",
-     "a_cn": [
-      "dad 以字母 D 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-dad-end-with-5e8a7e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
-     ]
-    },
-    {
-     "q": "What family is dad in?",
-     "a": [
-      "Dad is in the -ad family."
-     ],
-     "key": [
-      "/ad/"
-     ],
-     "q_cn": "dad 属于哪个词族？",
-     "a_cn": [
-      "dad 属于 -ad 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-dad-in-9a1455.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-dad-is-in-the-ad-family-6e974e.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-dad-78b10b.mp3"
-  },
-  {
-   "word": "sad",
-   "cn": "伤心的",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -ad 词族",
-    "ipa": "/sæd/",
-    "parts": [
-     {
-      "text": "s",
-      "sound": "s",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "d",
-      "sound": "d",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "s",
-     "sound": "s"
-    },
-    "rime": {
-     "text": "ad",
-     "sound": "ad"
-    },
-    "blend_audio": "audio/phonics/blend-sad.mp3"
-   },
-   "image": "images/wf-ad-sad.webp",
-   "dialog": [
-    {
-     "q": "How do you read s, a, d?",
-     "a": [
-      "/s/ /a/ /d/, sad.",
-      "I am sad."
-     ],
-     "key": [
-      "sad"
-     ],
-     "q_cn": "s-a-d 怎么拼读？",
-     "a_cn": [
-      "/s/ /æ/ /d/，sad。",
-      "我很难过。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-s-a-d-8aacfb.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-s-a-d-sad-cb7140.mp3",
-      "audio/sentences/k2-wf-ad/a-i-am-sad-394a59.mp3"
-     ]
-    },
-    {
-     "q": "What sound does sad begin with?",
-     "a": [
-      "Sad begins with the sound /s/."
-     ],
-     "key": [
-      "/s/"
-     ],
-     "q_cn": "sad 的开头是什么音？",
-     "a_cn": [
-      "sad 开头是 /s/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-begin-with-b89108.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-begins-with-the-sound-s-da7cd5.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does sad begin with?",
-     "a": [
-      "Sad begins with letter S."
-     ],
-     "key": [
-      "s"
-     ],
-     "q_cn": "sad 以哪个字母开头？",
-     "a_cn": [
-      "sad 以字母 S 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-begin-with-9da1b8.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-begins-with-letter-s-ae91ba.mp3"
-     ]
-    },
-    {
-     "q": "What sound does sad have in the middle?",
-     "a": [
-      "Sad has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "sad 中间是什么音？",
-     "a_cn": [
-      "sad 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-have-in-the-midd-004097.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-has-the-sound-a-in-the-middle-f9f6b1.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does sad have in the middle?",
-     "a": [
-      "Sad has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "sad 中间是哪个字母？",
-     "a_cn": [
-      "sad 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-have-in-the-mi-b87621.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-has-letter-a-in-the-middle-6bebd8.mp3"
-     ]
-    },
-    {
-     "q": "What sound does sad end with?",
-     "a": [
-      "Sad ends with the sound /d/."
-     ],
-     "key": [
-      "/d/"
-     ],
-     "q_cn": "sad 的结尾是什么音？",
-     "a_cn": [
-      "sad 结尾是 /d/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-sad-end-with-4b6730.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-d-b4506b.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does sad end with?",
-     "a": [
-      "Sad ends with letter D."
-     ],
-     "key": [
-      "d"
-     ],
-     "q_cn": "sad 以哪个字母结尾？",
-     "a_cn": [
-      "sad 以字母 D 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-sad-end-with-8ab2e4.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-d-e716ac.mp3"
-     ]
-    },
-    {
-     "q": "What family is sad in?",
-     "a": [
-      "Sad is in the -ad family."
-     ],
-     "key": [
-      "/ad/"
-     ],
-     "q_cn": "sad 属于哪个词族？",
-     "a_cn": [
-      "sad 属于 -ad 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-sad-in-38ff05.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-sad-is-in-the-ad-family-8a0696.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-sad-ec83f0.mp3"
-  },
-  {
-   "word": "bad",
-   "cn": "坏的",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -ad 词族",
-    "ipa": "/bæd/",
-    "parts": [
-     {
-      "text": "b",
-      "sound": "b",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "d",
-      "sound": "d",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "b",
-     "sound": "b"
-    },
-    "rime": {
-     "text": "ad",
-     "sound": "ad"
-    },
-    "blend_audio": "audio/phonics/blend-bad.mp3"
-   },
-   "image": "images/wf-ad-bad.webp",
-   "dialog": [
-    {
-     "q": "How do you read b, a, d?",
-     "a": [
-      "/b/ /a/ /d/, bad.",
-      "It is bad."
-     ],
-     "key": [
-      "bad"
-     ],
-     "q_cn": "b-a-d 怎么拼读？",
-     "a_cn": [
-      "/b/ /æ/ /d/，bad。",
-      "这是不好的。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-how-do-you-read-b-a-d-69fb8c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3",
-      "audio/sentences/k2-wf-ad/a-it-is-bad-541d0a.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bad begin with?",
-     "a": [
-      "Bad begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "bad 的开头是什么音？",
-     "a_cn": [
-      "bad 开头是 /b/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-begin-with-de57f5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-b-984259.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bad begin with?",
-     "a": [
-      "Bad begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "bad 以哪个字母开头？",
-     "a_cn": [
-      "bad 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-begin-with-60bd7d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-b-57e335.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bad have in the middle?",
-     "a": [
-      "Bad has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "bad 中间是什么音？",
-     "a_cn": [
-      "bad 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-have-in-the-midd-284e5a.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-has-the-sound-a-in-the-middle-ad67dc.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bad have in the middle?",
-     "a": [
-      "Bad has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "bad 中间是哪个字母？",
-     "a_cn": [
-      "bad 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-have-in-the-mi-3cfaa7.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-has-letter-a-in-the-middle-d84843.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bad end with?",
-     "a": [
-      "Bad ends with the sound /d/."
-     ],
-     "key": [
-      "/d/"
-     ],
-     "q_cn": "bad 的结尾是什么音？",
-     "a_cn": [
-      "bad 结尾是 /d/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-sound-does-bad-end-with-c1536b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-d-30b424.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bad end with?",
-     "a": [
-      "Bad ends with letter D."
-     ],
-     "key": [
-      "d"
-     ],
-     "q_cn": "bad 以哪个字母结尾？",
-     "a_cn": [
-      "bad 以字母 D 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-which-letter-does-bad-end-with-5cb22d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-d-a7be24.mp3"
-     ]
-    },
-    {
-     "q": "What family is bad in?",
-     "a": [
-      "Bad is in the -ad family."
-     ],
-     "key": [
-      "/ad/"
-     ],
-     "q_cn": "bad 属于哪个词族？",
-     "a_cn": [
-      "bad 属于 -ad 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-ad/q-what-family-is-bad-in-775dde.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-ad/a-bad-is-in-the-ad-family-9f6b8e.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-ad/q-which-one-is-bad-bcae35.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "-ad family": "audio/words/ad-family.mp3",
-  "a": "audio/words/a.mp3",
-  "ad": "audio/words/ad.mp3",
-  "am": "audio/words/am.mp3",
-  "b": "audio/words/b.mp3",
-  "bad": "audio/words/bad.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "d": "audio/words/d.mp3",
-  "dad": "audio/words/dad.mp3",
-  "do": "audio/words/do.mp3",
-  "does": "audio/words/does.mp3",
-  "end": "audio/words/end.mp3",
-  "ends": "audio/words/ends.mp3",
-  "family": "audio/words/family.mp3",
-  "has": "audio/words/has.mp3",
-  "have": "audio/words/have.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "in": "audio/words/in.mp3",
-  "is": "audio/words/is.mp3",
-  "it": "audio/words/it.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "letter": "audio/words/letter.mp3",
-  "make": "audio/words/make.mp3",
-  "makes": "audio/words/makes.mp3",
-  "middle": "audio/words/middle.mp3",
-  "my": "audio/words/my.mp3",
-  "read": "audio/words/read.mp3",
-  "s": "audio/words/s.mp3",
-  "sad": "audio/words/sad.mp3",
-  "sound": "audio/words/sound.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "which": "audio/words/which.mp3",
-  "with": "audio/words/with.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

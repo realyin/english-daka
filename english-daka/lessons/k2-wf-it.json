@@ -1,645 +1,959 @@
 {
- "seq": 203,
- "level": "K2",
- "group": "词族 Word Family",
- "badge": "-it",
- "cover": "images/wf-it-hit.webp",
- "title": "Word Family · -it 词族",
- "cards": [
-  {
-   "word": "-it family",
-   "cn": "-it 词族",
-   "tag": "CVC",
-   "image": "images/wf-it.webp",
-   "collage": true,
-   "quiz": false,
-   "dialog": [
+  "seq": 203,
+  "level": "K2",
+  "group": "词族 Word Family",
+  "badge": "-it",
+  "cover": "images/wf-it-hit.webp",
+  "title": "Word Family · -it 词族",
+  "cards": [
     {
-     "q": "What sound does -it make?",
-     "a": [
-      "It makes the sound /it/."
-     ],
-     "key": [
-      "/it/"
-     ],
-     "q_cn": "-it 发什么音？",
-     "a_cn": [
-      "-it 发 /ɪt/ 的音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-it-make-9edd70.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-it-makes-the-sound-it-16ebe5.mp3"
-     ]
+      "word": "-it family",
+      "cn": "-it 词族",
+      "tag": "CVC",
+      "image": "images/wf-it.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -it make?",
+          "a": [
+            "It makes the sound /it/."
+          ],
+          "key": [
+            "/it/"
+          ],
+          "q_cn": "-it 发什么音？",
+          "a_cn": [
+            "-it 发 /ɪt/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-it-make-9edd70.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-it-makes-the-sound-it-16ebe5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/at/",
+              "text": "It makes the sound /at/.",
+              "audio": "audio/sentences/k2-wf-it/a-it-makes-the-sound-at-94b5d1.mp3"
+            },
+            {
+              "key": "/id/",
+              "text": "It makes the sound /id/.",
+              "audio": "audio/sentences/k2-wf-it/a-it-makes-the-sound-id-1e5969.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which family do hit, bit and lit belong to?",
+          "a": [
+            "Hit, bit and lit belong to -it family."
+          ],
+          "key": [
+            "it"
+          ],
+          "q_cn": "hit、bit、lit 属于哪个词族？",
+          "a_cn": [
+            "它们属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-family-do-hit-bit-and-lit-belo-292877.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-bit-and-lit-belong-to-it-family-a1c6b2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "i",
+              "text": "Lit has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-i-in-the-middle-63fded.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Hit has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-letter-i-in-the-middle-218d09.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-it-family-c9ed81.mp3"
     },
     {
-     "q": "Which family do hit, bit and lit belong to?",
-     "a": [
-      "Hit, bit and lit belong to -it family."
-     ],
-     "key": [
-      "it"
-     ],
-     "q_cn": "hit、bit、lit 属于哪个词族？",
-     "a_cn": [
-      "它们属于 -it 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-family-do-hit-bit-and-lit-belo-292877.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-bit-and-lit-belong-to-it-family-a1c6b2.mp3"
-     ]
+      "word": "hit",
+      "cn": "打",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/hɪt/",
+        "parts": [
+          {
+            "text": "h",
+            "sound": "h",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "h",
+          "sound": "h"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-hit.mp3"
+      },
+      "image": "images/wf-it-hit.webp",
+      "dialog": [
+        {
+          "q": "How do you read h, i, t?",
+          "a": [
+            "/h/ /i/ /t/, hit.",
+            "I can hit the ball."
+          ],
+          "key": [
+            "hit"
+          ],
+          "q_cn": "h-i-t 怎么拼读？",
+          "a_cn": [
+            "/h/ /ɪ/ /t/，hit。",
+            "我能击球。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-h-i-t-6282d2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3",
+            "audio/sentences/k2-wf-it/a-i-can-hit-the-ball-20ba50.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bit",
+              "text": "/b/ /i/ /t/, bit.",
+              "audio": "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3"
+            },
+            {
+              "key": "lit",
+              "text": "/l/ /i/ /t/, lit.",
+              "audio": "audio/sentences/k2-wf-it/a-l-i-t-lit-952c03.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hit begin with?",
+          "a": [
+            "Hit begins with the sound /h/."
+          ],
+          "key": [
+            "/h/"
+          ],
+          "q_cn": "hit 的开头是什么音？",
+          "a_cn": [
+            "hit 开头是 /h/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-begin-with-f1c71d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-h-51c655.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Hit begins with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-t-bed4fa.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Hit begins with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-l-62d9e3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hit begin with?",
+          "a": [
+            "Hit begins with letter H."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "hit 以哪个字母开头？",
+          "a_cn": [
+            "hit 以字母 H 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-begin-with-8415ed.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-begins-with-letter-h-537a0b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Hit begins with letter L.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-l-fa7d45.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Hit begins with letter I.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-i-68b596.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hit have in the middle?",
+          "a": [
+            "Hit has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "hit 中间是什么音？",
+          "a_cn": [
+            "hit 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-have-in-the-midd-96fa7e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-has-the-sound-i-in-the-middle-39df95.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Hit has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-the-sound-b-in-the-middle-20c18c.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Hit has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-the-sound-h-in-the-middle-c6a81e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hit have in the middle?",
+          "a": [
+            "Hit has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "hit 中间是哪个字母？",
+          "a_cn": [
+            "hit 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-have-in-the-mi-dcd2b5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-has-letter-i-in-the-middle-218d09.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Hit has letter L in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-letter-l-in-the-middle-02dfe7.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hit has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-letter-h-in-the-middle-2bf554.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hit end with?",
+          "a": [
+            "Hit ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "hit 的结尾是什么音？",
+          "a_cn": [
+            "hit 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-end-with-8b83d6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-t-495548.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Hit ends with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-l-6c7c7e.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Hit ends with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-i-adc173.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hit end with?",
+          "a": [
+            "Hit ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "hit 以哪个字母结尾？",
+          "a_cn": [
+            "hit 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-end-with-ee7b5f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Hit ends with letter L.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-l-a32655.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hit ends with letter H.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-h-1447c0.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is hit in?",
+          "a": [
+            "Hit is in the -it family."
+          ],
+          "key": [
+            "/it/"
+          ],
+          "q_cn": "hit 属于哪个词族？",
+          "a_cn": [
+            "hit 属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-hit-in-8f18a2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-hit-is-in-the-it-family-a8ca44.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Bit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Hit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-hit-1b9f2a.mp3"
+    },
+    {
+      "word": "bit",
+      "cn": "一小块",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/bɪt/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-bit.mp3"
+      },
+      "image": "images/wf-it-bit.webp",
+      "dialog": [
+        {
+          "q": "How do you read b, i, t?",
+          "a": [
+            "/b/ /i/ /t/, bit.",
+            "I want a bit of cake."
+          ],
+          "key": [
+            "bit"
+          ],
+          "q_cn": "b-i-t 怎么拼读？",
+          "a_cn": [
+            "/b/ /ɪ/ /t/，bit。",
+            "我想要一小块蛋糕。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-b-i-t-1176fd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3",
+            "audio/sentences/k2-wf-it/a-i-want-a-bit-of-cake-5e5277.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hit",
+              "text": "/h/ /i/ /t/, hit.",
+              "audio": "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3"
+            },
+            {
+              "key": "lit",
+              "text": "/l/ /i/ /t/, lit.",
+              "audio": "audio/sentences/k2-wf-it/a-l-i-t-lit-952c03.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bit begin with?",
+          "a": [
+            "Bit begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bit 的开头是什么音？",
+          "a_cn": [
+            "bit 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-begin-with-20d88c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-b-197ed0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Bit begins with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-t-e1b464.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Bit begins with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-l-5df3e5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bit begin with?",
+          "a": [
+            "Bit begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bit 以哪个字母开头？",
+          "a_cn": [
+            "bit 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-begin-with-068a88.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-begins-with-letter-b-37a4b7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Bit begins with letter L.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-l-685767.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Bit begins with letter H.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-h-341442.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bit have in the middle?",
+          "a": [
+            "Bit has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "bit 中间是什么音？",
+          "a_cn": [
+            "bit 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-have-in-the-midd-3554ee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-has-the-sound-i-in-the-middle-d75907.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Bit has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-the-sound-l-in-the-middle-44d971.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Bit has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-the-sound-b-in-the-middle-030653.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bit have in the middle?",
+          "a": [
+            "Bit has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "bit 中间是哪个字母？",
+          "a_cn": [
+            "bit 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-have-in-the-mi-8ab941.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-has-letter-i-in-the-middle-48c8a6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Bit has letter T in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-letter-t-in-the-middle-88b82d.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bit has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-letter-b-in-the-middle-c3417c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bit end with?",
+          "a": [
+            "Bit ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "bit 的结尾是什么音？",
+          "a_cn": [
+            "bit 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-end-with-f4fade.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-t-f8583a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Bit ends with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-l-bb8f23.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Bit ends with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-i-ca1bc6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bit end with?",
+          "a": [
+            "Bit ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "bit 以哪个字母结尾？",
+          "a_cn": [
+            "bit 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-end-with-f8dc11.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "i",
+              "text": "Bit ends with letter I.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-i-0136bb.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bit ends with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-b-da3bcc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is bit in?",
+          "a": [
+            "Bit is in the -it family."
+          ],
+          "key": [
+            "/it/"
+          ],
+          "q_cn": "bit 属于哪个词族？",
+          "a_cn": [
+            "bit 属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-bit-in-3e3bcb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-bit-is-in-the-it-family-462a8e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Bit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Hit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-bit-406516.mp3"
+    },
+    {
+      "word": "lit",
+      "cn": "点亮的",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 i /ɪ/ · -it 词族",
+        "ipa": "/lɪt/",
+        "parts": [
+          {
+            "text": "l",
+            "sound": "l",
+            "kind": "consonant"
+          },
+          {
+            "text": "i",
+            "sound": "ih",
+            "kind": "vowel"
+          },
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "l",
+          "sound": "l"
+        },
+        "rime": {
+          "text": "it",
+          "sound": "it"
+        },
+        "blend_audio": "audio/phonics/blend-lit.mp3"
+      },
+      "image": "images/wf-it-lit.webp",
+      "dialog": [
+        {
+          "q": "How do you read l, i, t?",
+          "a": [
+            "/l/ /i/ /t/, lit.",
+            "The lamp is lit."
+          ],
+          "key": [
+            "lit"
+          ],
+          "q_cn": "l-i-t 怎么拼读？",
+          "a_cn": [
+            "/l/ /ɪ/ /t/，lit。",
+            "台灯亮了。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-l-i-t-67bd81.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-l-i-t-lit-952c03.mp3",
+            "audio/sentences/k2-wf-it/a-the-lamp-is-lit-39f71d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hit",
+              "text": "/h/ /i/ /t/, hit.",
+              "audio": "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3"
+            },
+            {
+              "key": "bit",
+              "text": "/b/ /i/ /t/, bit.",
+              "audio": "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does lit begin with?",
+          "a": [
+            "Lit begins with the sound /l/."
+          ],
+          "key": [
+            "/l/"
+          ],
+          "q_cn": "lit 的开头是什么音？",
+          "a_cn": [
+            "lit 开头是 /l/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-begin-with-6cb21a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-l-f3047c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Lit begins with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-t-dd8e4d.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Lit begins with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-i-358702.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does lit begin with?",
+          "a": [
+            "Lit begins with letter L."
+          ],
+          "key": [
+            "l"
+          ],
+          "q_cn": "lit 以哪个字母开头？",
+          "a_cn": [
+            "lit 以字母 L 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-begin-with-244a3c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-begins-with-letter-l-da5754.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Lit begins with letter H.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-letter-h-3134cc.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Lit begins with letter I.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-letter-i-a305f1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does lit have in the middle?",
+          "a": [
+            "Lit has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "lit 中间是什么音？",
+          "a_cn": [
+            "lit 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-have-in-the-midd-1536f2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-has-the-sound-i-in-the-middle-7d4ac1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Lit has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-the-sound-l-in-the-middle-4879fb.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Lit has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-the-sound-b-in-the-middle-3ce70c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does lit have in the middle?",
+          "a": [
+            "Lit has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "lit 中间是哪个字母？",
+          "a_cn": [
+            "lit 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-have-in-the-mi-809b28.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-has-letter-i-in-the-middle-63fded.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Lit has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-h-in-the-middle-5988a6.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Lit has letter T in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-t-in-the-middle-c7d4ab.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does lit end with?",
+          "a": [
+            "Lit ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "lit 的结尾是什么音？",
+          "a_cn": [
+            "lit 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-end-with-5bb6dd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-t-825bc8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Lit ends with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-l-a096b4.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Lit ends with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-i-47c460.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does lit end with?",
+          "a": [
+            "Lit ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "lit 以哪个字母结尾？",
+          "a_cn": [
+            "lit 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-end-with-ae4baf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-ends-with-letter-t-19d2f6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Lit ends with letter H.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-h-00996b.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Lit ends with letter I.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-i-8cb1ad.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is lit in?",
+          "a": [
+            "Lit is in the -it family."
+          ],
+          "key": [
+            "/it/"
+          ],
+          "q_cn": "lit 属于哪个词族？",
+          "a_cn": [
+            "lit 属于 -it 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-lit-in-d3a023.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-it/a-lit-is-in-the-it-family-84c6d2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Hit begins with letter H.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-h-537a0b.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Lit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-t-19d2f6.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-lit-8e2d9b.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-it-family-c9ed81.mp3"
+  ],
+  "word_audio": {
+    "-it family": "audio/words/it-family.mp3",
+    "a": "audio/words/a.mp3",
+    "and": "audio/words/and.mp3",
+    "at": "audio/words/at.mp3",
+    "b": "audio/words/b.mp3",
+    "ball": "audio/words/ball.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "belong": "audio/words/belong.mp3",
+    "bit": "audio/words/bit.mp3",
+    "cake": "audio/words/cake.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "family": "audio/words/family.mp3",
+    "h": "audio/words/h.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "hit": "audio/words/hit.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "l": "audio/words/l.mp3",
+    "lamp": "audio/words/lamp.mp3",
+    "letter": "audio/words/letter.mp3",
+    "lit": "audio/words/lit.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "middle": "audio/words/middle.mp3",
+    "of": "audio/words/of.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
+    "to": "audio/words/to.mp3",
+    "want": "audio/words/want.mp3",
+    "what": "audio/words/what.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "hit",
-   "cn": "打",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 i /ɪ/ · -it 词族",
-    "ipa": "/hɪt/",
-    "parts": [
-     {
-      "text": "h",
-      "sound": "h",
-      "kind": "consonant"
-     },
-     {
-      "text": "i",
-      "sound": "ih",
-      "kind": "vowel"
-     },
-     {
-      "text": "t",
-      "sound": "t",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "h",
-     "sound": "h"
-    },
-    "rime": {
-     "text": "it",
-     "sound": "it"
-    },
-    "blend_audio": "audio/phonics/blend-hit.mp3"
-   },
-   "image": "images/wf-it-hit.webp",
-   "dialog": [
-    {
-     "q": "How do you read h, i, t?",
-     "a": [
-      "/h/ /i/ /t/, hit.",
-      "I can hit the ball."
-     ],
-     "key": [
-      "hit"
-     ],
-     "q_cn": "h-i-t 怎么拼读？",
-     "a_cn": [
-      "/h/ /ɪ/ /t/，hit。",
-      "我能击球。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-h-i-t-6282d2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3",
-      "audio/sentences/k2-wf-it/a-i-can-hit-the-ball-20ba50.mp3"
-     ]
-    },
-    {
-     "q": "What sound does hit begin with?",
-     "a": [
-      "Hit begins with the sound /h/."
-     ],
-     "key": [
-      "/h/"
-     ],
-     "q_cn": "hit 的开头是什么音？",
-     "a_cn": [
-      "hit 开头是 /h/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-begin-with-f1c71d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-h-51c655.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does hit begin with?",
-     "a": [
-      "Hit begins with letter H."
-     ],
-     "key": [
-      "h"
-     ],
-     "q_cn": "hit 以哪个字母开头？",
-     "a_cn": [
-      "hit 以字母 H 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-begin-with-8415ed.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-begins-with-letter-h-537a0b.mp3"
-     ]
-    },
-    {
-     "q": "What sound does hit have in the middle?",
-     "a": [
-      "Hit has the sound /i/ in the middle."
-     ],
-     "key": [
-      "/i/"
-     ],
-     "q_cn": "hit 中间是什么音？",
-     "a_cn": [
-      "hit 中间是 /ɪ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-have-in-the-midd-96fa7e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-has-the-sound-i-in-the-middle-39df95.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does hit have in the middle?",
-     "a": [
-      "Hit has letter I in the middle."
-     ],
-     "key": [
-      "i"
-     ],
-     "q_cn": "hit 中间是哪个字母？",
-     "a_cn": [
-      "hit 中间是字母 I。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-have-in-the-mi-dcd2b5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-has-letter-i-in-the-middle-218d09.mp3"
-     ]
-    },
-    {
-     "q": "What sound does hit end with?",
-     "a": [
-      "Hit ends with the sound /t/."
-     ],
-     "key": [
-      "/t/"
-     ],
-     "q_cn": "hit 的结尾是什么音？",
-     "a_cn": [
-      "hit 结尾是 /t/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-hit-end-with-8b83d6.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-t-495548.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does hit end with?",
-     "a": [
-      "Hit ends with letter T."
-     ],
-     "key": [
-      "t"
-     ],
-     "q_cn": "hit 以哪个字母结尾？",
-     "a_cn": [
-      "hit 以字母 T 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-hit-end-with-ee7b5f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
-     ]
-    },
-    {
-     "q": "What family is hit in?",
-     "a": [
-      "Hit is in the -it family."
-     ],
-     "key": [
-      "/it/"
-     ],
-     "q_cn": "hit 属于哪个词族？",
-     "a_cn": [
-      "hit 属于 -it 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-hit-in-8f18a2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-hit-is-in-the-it-family-a8ca44.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-hit-1b9f2a.mp3"
-  },
-  {
-   "word": "bit",
-   "cn": "一小块",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 i /ɪ/ · -it 词族",
-    "ipa": "/bɪt/",
-    "parts": [
-     {
-      "text": "b",
-      "sound": "b",
-      "kind": "consonant"
-     },
-     {
-      "text": "i",
-      "sound": "ih",
-      "kind": "vowel"
-     },
-     {
-      "text": "t",
-      "sound": "t",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "b",
-     "sound": "b"
-    },
-    "rime": {
-     "text": "it",
-     "sound": "it"
-    },
-    "blend_audio": "audio/phonics/blend-bit.mp3"
-   },
-   "image": "images/wf-it-bit.webp",
-   "dialog": [
-    {
-     "q": "How do you read b, i, t?",
-     "a": [
-      "/b/ /i/ /t/, bit.",
-      "I want a bit of cake."
-     ],
-     "key": [
-      "bit"
-     ],
-     "q_cn": "b-i-t 怎么拼读？",
-     "a_cn": [
-      "/b/ /ɪ/ /t/，bit。",
-      "我想要一小块蛋糕。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-b-i-t-1176fd.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3",
-      "audio/sentences/k2-wf-it/a-i-want-a-bit-of-cake-5e5277.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bit begin with?",
-     "a": [
-      "Bit begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "bit 的开头是什么音？",
-     "a_cn": [
-      "bit 开头是 /b/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-begin-with-20d88c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-b-197ed0.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bit begin with?",
-     "a": [
-      "Bit begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "bit 以哪个字母开头？",
-     "a_cn": [
-      "bit 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-begin-with-068a88.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-begins-with-letter-b-37a4b7.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bit have in the middle?",
-     "a": [
-      "Bit has the sound /i/ in the middle."
-     ],
-     "key": [
-      "/i/"
-     ],
-     "q_cn": "bit 中间是什么音？",
-     "a_cn": [
-      "bit 中间是 /ɪ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-have-in-the-midd-3554ee.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-has-the-sound-i-in-the-middle-d75907.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bit have in the middle?",
-     "a": [
-      "Bit has letter I in the middle."
-     ],
-     "key": [
-      "i"
-     ],
-     "q_cn": "bit 中间是哪个字母？",
-     "a_cn": [
-      "bit 中间是字母 I。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-have-in-the-mi-8ab941.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-has-letter-i-in-the-middle-48c8a6.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bit end with?",
-     "a": [
-      "Bit ends with the sound /t/."
-     ],
-     "key": [
-      "/t/"
-     ],
-     "q_cn": "bit 的结尾是什么音？",
-     "a_cn": [
-      "bit 结尾是 /t/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-bit-end-with-f4fade.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-t-f8583a.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bit end with?",
-     "a": [
-      "Bit ends with letter T."
-     ],
-     "key": [
-      "t"
-     ],
-     "q_cn": "bit 以哪个字母结尾？",
-     "a_cn": [
-      "bit 以字母 T 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-bit-end-with-f8dc11.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
-     ]
-    },
-    {
-     "q": "What family is bit in?",
-     "a": [
-      "Bit is in the -it family."
-     ],
-     "key": [
-      "/it/"
-     ],
-     "q_cn": "bit 属于哪个词族？",
-     "a_cn": [
-      "bit 属于 -it 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-bit-in-3e3bcb.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-bit-is-in-the-it-family-462a8e.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-bit-406516.mp3"
-  },
-  {
-   "word": "lit",
-   "cn": "点亮的",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 i /ɪ/ · -it 词族",
-    "ipa": "/lɪt/",
-    "parts": [
-     {
-      "text": "l",
-      "sound": "l",
-      "kind": "consonant"
-     },
-     {
-      "text": "i",
-      "sound": "ih",
-      "kind": "vowel"
-     },
-     {
-      "text": "t",
-      "sound": "t",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "l",
-     "sound": "l"
-    },
-    "rime": {
-     "text": "it",
-     "sound": "it"
-    },
-    "blend_audio": "audio/phonics/blend-lit.mp3"
-   },
-   "image": "images/wf-it-lit.webp",
-   "dialog": [
-    {
-     "q": "How do you read l, i, t?",
-     "a": [
-      "/l/ /i/ /t/, lit.",
-      "The lamp is lit."
-     ],
-     "key": [
-      "lit"
-     ],
-     "q_cn": "l-i-t 怎么拼读？",
-     "a_cn": [
-      "/l/ /ɪ/ /t/，lit。",
-      "台灯亮了。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-how-do-you-read-l-i-t-67bd81.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-l-i-t-lit-952c03.mp3",
-      "audio/sentences/k2-wf-it/a-the-lamp-is-lit-39f71d.mp3"
-     ]
-    },
-    {
-     "q": "What sound does lit begin with?",
-     "a": [
-      "Lit begins with the sound /l/."
-     ],
-     "key": [
-      "/l/"
-     ],
-     "q_cn": "lit 的开头是什么音？",
-     "a_cn": [
-      "lit 开头是 /l/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-begin-with-6cb21a.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-l-f3047c.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does lit begin with?",
-     "a": [
-      "Lit begins with letter L."
-     ],
-     "key": [
-      "l"
-     ],
-     "q_cn": "lit 以哪个字母开头？",
-     "a_cn": [
-      "lit 以字母 L 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-begin-with-244a3c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-begins-with-letter-l-da5754.mp3"
-     ]
-    },
-    {
-     "q": "What sound does lit have in the middle?",
-     "a": [
-      "Lit has the sound /i/ in the middle."
-     ],
-     "key": [
-      "/i/"
-     ],
-     "q_cn": "lit 中间是什么音？",
-     "a_cn": [
-      "lit 中间是 /ɪ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-have-in-the-midd-1536f2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-has-the-sound-i-in-the-middle-7d4ac1.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does lit have in the middle?",
-     "a": [
-      "Lit has letter I in the middle."
-     ],
-     "key": [
-      "i"
-     ],
-     "q_cn": "lit 中间是哪个字母？",
-     "a_cn": [
-      "lit 中间是字母 I。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-have-in-the-mi-809b28.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-has-letter-i-in-the-middle-63fded.mp3"
-     ]
-    },
-    {
-     "q": "What sound does lit end with?",
-     "a": [
-      "Lit ends with the sound /t/."
-     ],
-     "key": [
-      "/t/"
-     ],
-     "q_cn": "lit 的结尾是什么音？",
-     "a_cn": [
-      "lit 结尾是 /t/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-sound-does-lit-end-with-5bb6dd.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-t-825bc8.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does lit end with?",
-     "a": [
-      "Lit ends with letter T."
-     ],
-     "key": [
-      "t"
-     ],
-     "q_cn": "lit 以哪个字母结尾？",
-     "a_cn": [
-      "lit 以字母 T 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-which-letter-does-lit-end-with-ae4baf.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-ends-with-letter-t-19d2f6.mp3"
-     ]
-    },
-    {
-     "q": "What family is lit in?",
-     "a": [
-      "Lit is in the -it family."
-     ],
-     "key": [
-      "/it/"
-     ],
-     "q_cn": "lit 属于哪个词族？",
-     "a_cn": [
-      "lit 属于 -it 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-it/q-what-family-is-lit-in-d3a023.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-it/a-lit-is-in-the-it-family-84c6d2.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-it/q-which-one-is-lit-8e2d9b.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "-it family": "audio/words/it-family.mp3",
-  "a": "audio/words/a.mp3",
-  "and": "audio/words/and.mp3",
-  "b": "audio/words/b.mp3",
-  "ball": "audio/words/ball.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "belong": "audio/words/belong.mp3",
-  "bit": "audio/words/bit.mp3",
-  "cake": "audio/words/cake.mp3",
-  "can": "audio/words/can.mp3",
-  "do": "audio/words/do.mp3",
-  "does": "audio/words/does.mp3",
-  "end": "audio/words/end.mp3",
-  "ends": "audio/words/ends.mp3",
-  "family": "audio/words/family.mp3",
-  "h": "audio/words/h.mp3",
-  "has": "audio/words/has.mp3",
-  "have": "audio/words/have.mp3",
-  "hit": "audio/words/hit.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "in": "audio/words/in.mp3",
-  "is": "audio/words/is.mp3",
-  "it": "audio/words/it.mp3",
-  "l": "audio/words/l.mp3",
-  "lamp": "audio/words/lamp.mp3",
-  "letter": "audio/words/letter.mp3",
-  "lit": "audio/words/lit.mp3",
-  "make": "audio/words/make.mp3",
-  "makes": "audio/words/makes.mp3",
-  "middle": "audio/words/middle.mp3",
-  "of": "audio/words/of.mp3",
-  "read": "audio/words/read.mp3",
-  "sound": "audio/words/sound.mp3",
-  "t": "audio/words/t.mp3",
-  "the": "audio/words/the.mp3",
-  "to": "audio/words/to.mp3",
-  "want": "audio/words/want.mp3",
-  "what": "audio/words/what.mp3",
-  "which": "audio/words/which.mp3",
-  "with": "audio/words/with.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

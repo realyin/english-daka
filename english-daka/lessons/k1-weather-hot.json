@@ -1,181 +1,253 @@
 {
- "seq": 801,
- "level": "K1",
- "group": "天气 Weather",
- "badge": "感受",
- "cover": "images/k1-wx-hot.webp",
- "title": "Weather · Hot / Cool / Cold / Warm 冷热感受",
- "cards": [
-  {
-   "word": "hot",
-   "cn": "热",
-   "tag": "word",
-   "image": "images/k1-wx-hot.webp",
-   "dialog": [
+  "seq": 801,
+  "level": "K1",
+  "group": "天气 Weather",
+  "badge": "感受",
+  "cover": "images/k1-wx-hot.webp",
+  "title": "Weather · Hot / Cool / Cold / Warm 冷热感受",
+  "cards": [
     {
-     "q": "How do you feel?",
-     "a": [
-      "I feel hot."
-     ],
-     "key": [
-      "hot"
-     ],
-     "q_cn": "你感觉怎么样？",
-     "a_cn": [
-      "我觉得热。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-feel-hot-fcc018.mp3"
-     ]
+      "word": "hot",
+      "cn": "热",
+      "tag": "word",
+      "image": "images/k1-wx-hot.webp",
+      "dialog": [
+        {
+          "q": "How do you feel?",
+          "a": [
+            "I feel hot."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "你感觉怎么样？",
+          "a_cn": [
+            "我觉得热。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-feel-hot-fcc018.mp3"
+          ],
+          "opts": [
+            {
+              "key": "warm",
+              "text": "I feel warm.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+            },
+            {
+              "key": "cold",
+              "text": "I feel cold.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you need when you feel hot?",
+          "a": [
+            "I need a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "觉得热的时候需要什么？",
+          "a_cn": [
+            "我需要一把扇子。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-need-a-fan-c7d290.mp3"
+          ],
+          "image": "images/k1-need-fan.webp",
+          "opts": [
+            {
+              "key": "warm",
+              "text": "I feel warm.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+            },
+            {
+              "key": "cool",
+              "text": "I feel cool.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-hot-c419d5.mp3"
     },
     {
-     "q": "What do you need when you feel hot?",
-     "a": [
-      "I need a fan."
-     ],
-     "key": [
-      "fan"
-     ],
-     "q_cn": "觉得热的时候需要什么？",
-     "a_cn": [
-      "我需要一把扇子。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-need-a-fan-c7d290.mp3"
-     ],
-     "image": "images/k1-need-fan.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-hot-c419d5.mp3"
-  },
-  {
-   "word": "cool",
-   "cn": "凉爽",
-   "tag": "word",
-   "image": "images/k1-wx-cool.webp",
-   "dialog": [
-    {
-     "q": "How do you feel?",
-     "a": [
-      "I feel cool."
-     ],
-     "key": [
-      "cool"
-     ],
-     "q_cn": "你感觉怎么样？",
-     "a_cn": [
-      "我觉得凉爽。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-cool-a06503.mp3"
-  },
-  {
-   "word": "cold",
-   "cn": "冷",
-   "tag": "word",
-   "image": "images/k1-wx-cold.webp",
-   "dialog": [
-    {
-     "q": "How do you feel?",
-     "a": [
-      "I feel cold."
-     ],
-     "key": [
-      "cold"
-     ],
-     "q_cn": "你感觉怎么样？",
-     "a_cn": [
-      "我觉得冷。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
-     ]
+      "word": "cool",
+      "cn": "凉爽",
+      "tag": "word",
+      "image": "images/k1-wx-cool.webp",
+      "dialog": [
+        {
+          "q": "How do you feel?",
+          "a": [
+            "I feel cool."
+          ],
+          "key": [
+            "cool"
+          ],
+          "q_cn": "你感觉怎么样？",
+          "a_cn": [
+            "我觉得凉爽。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hot",
+              "text": "I feel hot.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-hot-fcc018.mp3"
+            },
+            {
+              "key": "warm",
+              "text": "I feel warm.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-cool-a06503.mp3"
     },
     {
-     "q": "What do you need to wear when you feel cold?",
-     "a": [
-      "I need to wear a down jacket."
-     ],
-     "key": [
-      "jacket"
-     ],
-     "q_cn": "觉得冷的时候要穿什么？",
-     "a_cn": [
-      "我要穿羽绒服。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-what-do-you-need-to-wear-when-you-fe-a6ed70.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-need-to-wear-a-down-jacket-8997d8.mp3"
-     ],
-     "image": "images/k1-need-down-jacket.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-cold-d8a6d9.mp3"
-  },
-  {
-   "word": "warm",
-   "cn": "温暖",
-   "tag": "word",
-   "image": "images/k1-wx-warm.webp",
-   "dialog": [
+      "word": "cold",
+      "cn": "冷",
+      "tag": "word",
+      "image": "images/k1-wx-cold.webp",
+      "dialog": [
+        {
+          "q": "How do you feel?",
+          "a": [
+            "I feel cold."
+          ],
+          "key": [
+            "cold"
+          ],
+          "q_cn": "你感觉怎么样？",
+          "a_cn": [
+            "我觉得冷。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "warm",
+              "text": "I feel warm.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+            },
+            {
+              "key": "cool",
+              "text": "I feel cool.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you need to wear when you feel cold?",
+          "a": [
+            "I need to wear a down jacket."
+          ],
+          "key": [
+            "jacket"
+          ],
+          "q_cn": "觉得冷的时候要穿什么？",
+          "a_cn": [
+            "我要穿羽绒服。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-what-do-you-need-to-wear-when-you-fe-a6ed70.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-need-to-wear-a-down-jacket-8997d8.mp3"
+          ],
+          "image": "images/k1-need-down-jacket.webp",
+          "opts": [
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-need-a-fan-c7d290.mp3"
+            },
+            {
+              "key": "cool",
+              "text": "I feel cool.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-cold-d8a6d9.mp3"
+    },
     {
-     "q": "How do you feel?",
-     "a": [
-      "I feel warm."
-     ],
-     "key": [
-      "warm"
-     ],
-     "q_cn": "你感觉怎么样？",
-     "a_cn": [
-      "我觉得温暖。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
-     ]
+      "word": "warm",
+      "cn": "温暖",
+      "tag": "word",
+      "image": "images/k1-wx-warm.webp",
+      "dialog": [
+        {
+          "q": "How do you feel?",
+          "a": [
+            "I feel warm."
+          ],
+          "key": [
+            "warm"
+          ],
+          "q_cn": "你感觉怎么样？",
+          "a_cn": [
+            "我觉得温暖。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-hot/q-how-do-you-feel-267511.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "cold",
+              "text": "I feel cold.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
+            },
+            {
+              "key": "cool",
+              "text": "I feel cool.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cool-9ce47f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-warm-7c0619.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-hot/q-which-one-is-warm-7c0619.mp3"
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "cold": "audio/words/cold.mp3",
+    "cool": "audio/words/cool.mp3",
+    "do": "audio/words/do.mp3",
+    "down": "audio/words/down.mp3",
+    "fan": "audio/words/fan.mp3",
+    "feel": "audio/words/feel.mp3",
+    "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "jacket": "audio/words/jacket.mp3",
+    "need": "audio/words/need.mp3",
+    "to": "audio/words/to.mp3",
+    "warm": "audio/words/warm.mp3",
+    "wear": "audio/words/wear.mp3",
+    "what": "audio/words/what.mp3",
+    "when": "audio/words/when.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "cold": "audio/words/cold.mp3",
-  "cool": "audio/words/cool.mp3",
-  "do": "audio/words/do.mp3",
-  "down": "audio/words/down.mp3",
-  "fan": "audio/words/fan.mp3",
-  "feel": "audio/words/feel.mp3",
-  "hot": "audio/words/hot.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "jacket": "audio/words/jacket.mp3",
-  "need": "audio/words/need.mp3",
-  "to": "audio/words/to.mp3",
-  "warm": "audio/words/warm.mp3",
-  "wear": "audio/words/wear.mp3",
-  "what": "audio/words/what.mp3",
-  "when": "audio/words/when.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

@@ -1,755 +1,1129 @@
 {
- "seq": 201,
- "level": "K2",
- "group": "词族 Word Family",
- "badge": "-an",
- "cover": "images/wf-an-1-man.webp",
- "title": "Word Family · -an 词族",
- "cards": [
-  {
-   "word": "-an family",
-   "cn": "-an 词族",
-   "tag": "CVC",
-   "image": "images/wf-an-1.webp",
-   "collage": true,
-   "quiz": false,
-   "dialog": [
+  "seq": 201,
+  "level": "K2",
+  "group": "词族 Word Family",
+  "badge": "-an",
+  "cover": "images/wf-an-1-man.webp",
+  "title": "Word Family · -an 词族",
+  "cards": [
     {
-     "q": "What sound does -an make?",
-     "a": [
-      "An makes the sound /an/."
-     ],
-     "key": [
-      "/an/"
-     ],
-     "q_cn": "-an 发什么音？",
-     "a_cn": [
-      "-an 发 /æn/ 的音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-an-make-0d14ae.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-an-makes-the-sound-an-8ed09c.mp3"
-     ]
+      "word": "-an family",
+      "cn": "-an 词族",
+      "tag": "CVC",
+      "image": "images/wf-an-1.webp",
+      "collage": true,
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What sound does -an make?",
+          "a": [
+            "An makes the sound /an/."
+          ],
+          "key": [
+            "/an/"
+          ],
+          "q_cn": "-an 发什么音？",
+          "a_cn": [
+            "-an 发 /æn/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-an-make-0d14ae.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-an-makes-the-sound-an-8ed09c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/at/",
+              "text": "An makes the sound /at/.",
+              "audio": "audio/sentences/k2-wf-an/a-an-makes-the-sound-at-48448d.mp3"
+            },
+            {
+              "key": "/id/",
+              "text": "An makes the sound /id/.",
+              "audio": "audio/sentences/k2-wf-an/a-an-makes-the-sound-id-860ee6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What's this family?",
+          "a": [
+            "It's -an family."
+          ],
+          "key": [
+            "family"
+          ],
+          "q_cn": "这是什么词族？",
+          "a_cn": [
+            "这是 -an 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-s-this-family-fc4ac3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-it-s-an-family-f1bc7a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "man",
+              "text": "Dan is a man.",
+              "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-an-family-0a5387.mp3"
     },
     {
-     "q": "What's this family?",
-     "a": [
-      "It's -an family."
-     ],
-     "key": [
-      "family"
-     ],
-     "q_cn": "这是什么词族？",
-     "a_cn": [
-      "这是 -an 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-s-this-family-fc4ac3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-it-s-an-family-f1bc7a.mp3"
-     ]
+      "word": "man",
+      "cn": "男人",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/mæn/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-man.mp3"
+      },
+      "image": "images/wf-an-1-man.webp",
+      "dialog": [
+        {
+          "q": "How do you read: m — an?",
+          "image": "images/wf-an-1-man.webp",
+          "a": [
+            "/m/ /an/, man.",
+            "This is a man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "m 加 an 怎么读？",
+          "a_cn": [
+            "/m/ /æn/，man。",
+            "这是一个男人。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3",
+            "audio/sentences/k2-wf-an/a-this-is-a-man-0ac957.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-m-an-d41730.mp3",
+          "opts": [
+            {
+              "key": "tan",
+              "text": "/t/ /an/, tan.",
+              "audio": "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Who is the man?",
+          "image": "images/wf-an-2-man.webp",
+          "a": [
+            "The man is my dad."
+          ],
+          "key": [
+            "dad"
+          ],
+          "q_cn": "这个男人是谁？",
+          "a_cn": [
+            "这个男人是我爸爸。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-who-is-the-man-825365.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Fan ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fan begins with letter F.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-f-33fc5a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Who is Dan?",
+          "image": "images/sw-cvc-dan-man.webp",
+          "a": [
+            "Dan is a man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "丹是谁？",
+          "a_cn": [
+            "丹是一个男人。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-who-is-dan-c8522a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+            },
+            {
+              "key": "fly",
+              "text": "Yes, birds can fly.",
+              "audio": "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man begin with?",
+          "a": [
+            "Man begins with the sound /m/."
+          ],
+          "key": [
+            "/m/"
+          ],
+          "q_cn": "man 的开头是什么音？",
+          "a_cn": [
+            "man 开头是 /m/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-begin-with-289348.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-m-2532ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Man begins with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-a-e9313e.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Man begins with the sound /n/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-n-ed58b4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man begin with?",
+          "a": [
+            "Man begins with letter M."
+          ],
+          "key": [
+            "m"
+          ],
+          "q_cn": "man 以哪个字母开头？",
+          "a_cn": [
+            "man 以字母 M 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-begin-with-a8db31.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-begins-with-letter-m-684617.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Man begins with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-a-15d5e6.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Man begins with letter F.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-f-a7f637.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man have in the middle?",
+          "a": [
+            "Man has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "man 中间是什么音？",
+          "a_cn": [
+            "man 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-have-in-the-midd-dbbba3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-has-the-sound-a-in-the-middle-22f8d4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Man has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-the-sound-t-in-the-middle-5c34f6.mp3"
+            },
+            {
+              "key": "/m/",
+              "text": "Man has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-the-sound-m-in-the-middle-fcd493.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man have in the middle?",
+          "a": [
+            "Man has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "man 中间是哪个字母？",
+          "a_cn": [
+            "man 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-have-in-the-mi-1b4f2f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-has-letter-a-in-the-middle-fe60c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Man has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-letter-m-in-the-middle-bb523e.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Man has letter F in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-letter-f-in-the-middle-9a9198.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man end with?",
+          "a": [
+            "Man ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "man 的结尾是什么音？",
+          "a_cn": [
+            "man 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-end-with-440470.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-n-5e99a5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Man ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-f-e73740.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Man ends with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-t-e6f7d9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man end with?",
+          "a": [
+            "Man ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "man 以哪个字母结尾？",
+          "a_cn": [
+            "man 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-end-with-20d909.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-ends-with-letter-n-c585f9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Man ends with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-a-a43e07.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Man ends with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-m-f2a3fb.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is man in?",
+          "a": [
+            "Man is in the -an family."
+          ],
+          "key": [
+            "/an/"
+          ],
+          "q_cn": "man 属于哪个词族？",
+          "a_cn": [
+            "man 属于 -an 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-man-in-5dc876.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-man-is-in-the-an-family-ccd05f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Man begins with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-m-684617.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Tan ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
+    },
+    {
+      "word": "fan",
+      "cn": "风扇",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/fæn/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-fan.mp3"
+      },
+      "image": "images/wf-an-1-fan.webp",
+      "dialog": [
+        {
+          "q": "How do you read: f — an?",
+          "image": "images/wf-an-1-fan.webp",
+          "a": [
+            "/f/ /an/, fan.",
+            "It's a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "f 加 an 怎么读？",
+          "a_cn": [
+            "/f/ /æn/，fan。",
+            "这是风扇。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3",
+            "audio/sentences/k2-wf-an/a-it-s-a-fan-85775b.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-f-an-503659.mp3",
+          "opts": [
+            {
+              "key": "man",
+              "text": "/m/ /an/, man.",
+              "audio": "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3"
+            },
+            {
+              "key": "tan",
+              "text": "/t/ /an/, tan.",
+              "audio": "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you need when you feel hot?",
+          "image": "images/wf-an-2-fan.webp",
+          "a": [
+            "I need a fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "你觉得热的时候需要什么？",
+          "a_cn": [
+            "我需要风扇。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+          ],
+          "opts": [
+            {
+              "key": "man",
+              "text": "Dan is a man.",
+              "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+            },
+            {
+              "key": "fly",
+              "text": "Yes, birds can fly.",
+              "audio": "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan begin with?",
+          "a": [
+            "Fan begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fan 的开头是什么音？",
+          "a_cn": [
+            "fan 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-begin-with-8f7a3c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-begins-with-the-sound-f-fbae31.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Fan begins with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-the-sound-m-a15a64.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Fan begins with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-the-sound-a-5b2116.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan begin with?",
+          "a": [
+            "Fan begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fan 以哪个字母开头？",
+          "a_cn": [
+            "fan 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-begin-with-fec9d0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-begins-with-letter-f-33fc5a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Fan begins with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-n-1d0018.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Fan begins with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-a-c6fd77.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan have in the middle?",
+          "a": [
+            "Fan has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "fan 中间是什么音？",
+          "a_cn": [
+            "fan 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-have-in-the-midd-be6fd0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-has-the-sound-a-in-the-middle-91dbce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Fan has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-n-in-the-middle-44f39f.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Fan has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-f-in-the-middle-5791f9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan have in the middle?",
+          "a": [
+            "Fan has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "fan 中间是哪个字母？",
+          "a_cn": [
+            "fan 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-have-in-the-mi-299361.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Fan has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-m-in-the-middle-ca1a98.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fan has letter F in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-f-in-the-middle-b2e10d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan end with?",
+          "a": [
+            "Fan ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "fan 的结尾是什么音？",
+          "a_cn": [
+            "fan 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-end-with-3f68ba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-n-014cef.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Fan ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-f-36d319.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Fan ends with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-t-aeaf59.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan end with?",
+          "a": [
+            "Fan ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "fan 以哪个字母结尾？",
+          "a_cn": [
+            "fan 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-end-with-593a60.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Fan ends with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-a-f05601.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Fan ends with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-m-e7106d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is fan in?",
+          "a": [
+            "Fan is in the -an family."
+          ],
+          "key": [
+            "/an/"
+          ],
+          "q_cn": "fan 属于哪个词族？",
+          "a_cn": [
+            "fan 属于 -an 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-fan-in-a003f2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-fan-is-in-the-an-family-c504b9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Tan begins with letter T.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-t-e3ed8d.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Man ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-n-c585f9.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
+    },
+    {
+      "word": "tan",
+      "cn": "浅棕色",
+      "tag": "word",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/tæn/",
+        "parts": [
+          {
+            "text": "t",
+            "sound": "t",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "t",
+          "sound": "t"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-tan.mp3"
+      },
+      "image": "images/wf-an-1-tan.webp",
+      "dialog": [
+        {
+          "q": "How do you read: t — an?",
+          "image": "images/wf-an-1-tan.webp",
+          "a": [
+            "/t/ /an/, tan.",
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "t 加 an 怎么读？",
+          "a_cn": [
+            "/t/ /æn/，tan。",
+            "这只狗是浅棕色的。"
+          ],
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3",
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3",
+          "opts": [
+            {
+              "key": "man",
+              "text": "/m/ /an/, man.",
+              "audio": "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What color is the dog?",
+          "image": "images/wf-an-2-tan.webp",
+          "a": [
+            "The dog is tan."
+          ],
+          "key": [
+            "tan"
+          ],
+          "q_cn": "这只狗是什么颜色的？",
+          "a_cn": [
+            "这只狗是浅棕色的。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-color-is-the-dog-0a389b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "man",
+              "text": "Dan is a man.",
+              "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tan begin with?",
+          "a": [
+            "Tan begins with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "tan 的开头是什么音？",
+          "a_cn": [
+            "tan 开头是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-begin-with-6090bf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-t-e6b74f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Tan begins with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-m-157e56.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Tan begins with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-a-bd0815.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tan begin with?",
+          "a": [
+            "Tan begins with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "tan 以哪个字母开头？",
+          "a_cn": [
+            "tan 以字母 T 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-begin-with-6dea83.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-begins-with-letter-t-e3ed8d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Tan begins with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-n-eb552b.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Tan begins with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-a-88a392.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tan have in the middle?",
+          "a": [
+            "Tan has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "tan 中间是什么音？",
+          "a_cn": [
+            "tan 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-have-in-the-midd-1f4f17.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-has-the-sound-a-in-the-middle-9ec05d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Tan has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-the-sound-t-in-the-middle-7fcde5.mp3"
+            },
+            {
+              "key": "/m/",
+              "text": "Tan has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-the-sound-m-in-the-middle-06b9e6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tan have in the middle?",
+          "a": [
+            "Tan has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "tan 中间是哪个字母？",
+          "a_cn": [
+            "tan 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-have-in-the-mi-f49032.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-has-letter-a-in-the-middle-6878ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Tan has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-letter-m-in-the-middle-3ddb57.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Tan has letter F in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-letter-f-in-the-middle-7a682f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tan end with?",
+          "a": [
+            "Tan ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "tan 的结尾是什么音？",
+          "a_cn": [
+            "tan 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-end-with-ddd8da.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-n-95904c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Tan ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-f-28c4fe.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Tan ends with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-t-61037f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tan end with?",
+          "a": [
+            "Tan ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "tan 以哪个字母结尾？",
+          "a_cn": [
+            "tan 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-end-with-bfebc0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Tan ends with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-m-1603f3.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Tan ends with letter F.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-f-632dce.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is tan in?",
+          "a": [
+            "Tan is in the -an family."
+          ],
+          "key": [
+            "/an/"
+          ],
+          "q_cn": "tan 属于哪个词族？",
+          "a_cn": [
+            "tan 属于 -an 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-tan-in-44d95a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-tan-is-in-the-an-family-990e01.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Fan has letter A in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Fan ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
+    },
+    {
+      "word": "birds",
+      "cn": "鸟",
+      "tag": "CVC",
+      "image": "images/sw-all-birds-wings.webp",
+      "dialog": [
+        {
+          "q": "Can birds fly?",
+          "a": [
+            "Yes, birds can fly."
+          ],
+          "key": [
+            "fly"
+          ],
+          "q_cn": "鸟会飞吗？",
+          "a_cn": [
+            "会，鸟会飞。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-an/q-can-birds-fly-346972.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
+          ],
+          "image": "images/k2-an-birds-fly.webp",
+          "opts": [
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+            },
+            {
+              "key": "tan",
+              "text": "The dog is tan.",
+              "audio": "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-birds-be030e.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-an-family-0a5387.mp3"
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
-  {
-   "word": "man",
-   "cn": "男人",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/mæn/",
-    "parts": [
-     {
-      "text": "m",
-      "sound": "m",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "m",
-     "sound": "m"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-man.mp3"
-   },
-   "image": "images/wf-an-1-man.webp",
-   "dialog": [
-    {
-     "q": "How do you read: m — an?",
-     "image": "images/wf-an-1-man.webp",
-     "a": [
-      "/m/ /an/, man.",
-      "This is a man."
-     ],
-     "key": [
-      "man"
-     ],
-     "q_cn": "m 加 an 怎么读？",
-     "a_cn": [
-      "/m/ /æn/，man。",
-      "这是一个男人。"
-     ],
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3",
-      "audio/sentences/k2-wf-an/a-this-is-a-man-0ac957.mp3"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-m-an-d41730.mp3"
-    },
-    {
-     "q": "Who is the man?",
-     "image": "images/wf-an-2-man.webp",
-     "a": [
-      "The man is my dad."
-     ],
-     "key": [
-      "dad"
-     ],
-     "q_cn": "这个男人是谁？",
-     "a_cn": [
-      "这个男人是我爸爸。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-who-is-the-man-825365.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
-     ]
-    },
-    {
-     "q": "Who is Dan?",
-     "image": "images/sw-cvc-dan-man.webp",
-     "a": [
-      "Dan is a man."
-     ],
-     "key": [
-      "man"
-     ],
-     "q_cn": "丹是谁？",
-     "a_cn": [
-      "丹是一个男人。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-who-is-dan-c8522a.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
-     ]
-    },
-    {
-     "q": "What sound does man begin with?",
-     "a": [
-      "Man begins with the sound /m/."
-     ],
-     "key": [
-      "/m/"
-     ],
-     "q_cn": "man 的开头是什么音？",
-     "a_cn": [
-      "man 开头是 /m/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-begin-with-289348.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-m-2532ca.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does man begin with?",
-     "a": [
-      "Man begins with letter M."
-     ],
-     "key": [
-      "m"
-     ],
-     "q_cn": "man 以哪个字母开头？",
-     "a_cn": [
-      "man 以字母 M 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-begin-with-a8db31.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-begins-with-letter-m-684617.mp3"
-     ]
-    },
-    {
-     "q": "What sound does man have in the middle?",
-     "a": [
-      "Man has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "man 中间是什么音？",
-     "a_cn": [
-      "man 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-have-in-the-midd-dbbba3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-has-the-sound-a-in-the-middle-22f8d4.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does man have in the middle?",
-     "a": [
-      "Man has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "man 中间是哪个字母？",
-     "a_cn": [
-      "man 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-have-in-the-mi-1b4f2f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-has-letter-a-in-the-middle-fe60c6.mp3"
-     ]
-    },
-    {
-     "q": "What sound does man end with?",
-     "a": [
-      "Man ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "man 的结尾是什么音？",
-     "a_cn": [
-      "man 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-man-end-with-440470.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-n-5e99a5.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does man end with?",
-     "a": [
-      "Man ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "man 以哪个字母结尾？",
-     "a_cn": [
-      "man 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-man-end-with-20d909.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-ends-with-letter-n-c585f9.mp3"
-     ]
-    },
-    {
-     "q": "What family is man in?",
-     "a": [
-      "Man is in the -an family."
-     ],
-     "key": [
-      "/an/"
-     ],
-     "q_cn": "man 属于哪个词族？",
-     "a_cn": [
-      "man 属于 -an 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-man-in-5dc876.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-man-is-in-the-an-family-ccd05f.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-man-0afdad.mp3"
-  },
-  {
-   "word": "fan",
-   "cn": "风扇",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/fæn/",
-    "parts": [
-     {
-      "text": "f",
-      "sound": "f",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "f",
-     "sound": "f"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-fan.mp3"
-   },
-   "image": "images/wf-an-1-fan.webp",
-   "dialog": [
-    {
-     "q": "How do you read: f — an?",
-     "image": "images/wf-an-1-fan.webp",
-     "a": [
-      "/f/ /an/, fan.",
-      "It's a fan."
-     ],
-     "key": [
-      "fan"
-     ],
-     "q_cn": "f 加 an 怎么读？",
-     "a_cn": [
-      "/f/ /æn/，fan。",
-      "这是风扇。"
-     ],
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3",
-      "audio/sentences/k2-wf-an/a-it-s-a-fan-85775b.mp3"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-f-an-503659.mp3"
-    },
-    {
-     "q": "What do you need when you feel hot?",
-     "image": "images/wf-an-2-fan.webp",
-     "a": [
-      "I need a fan."
-     ],
-     "key": [
-      "fan"
-     ],
-     "q_cn": "你觉得热的时候需要什么？",
-     "a_cn": [
-      "我需要风扇。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan begin with?",
-     "a": [
-      "Fan begins with the sound /f/."
-     ],
-     "key": [
-      "/f/"
-     ],
-     "q_cn": "fan 的开头是什么音？",
-     "a_cn": [
-      "fan 开头是 /f/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-begin-with-8f7a3c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-begins-with-the-sound-f-fbae31.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan begin with?",
-     "a": [
-      "Fan begins with letter F."
-     ],
-     "key": [
-      "f"
-     ],
-     "q_cn": "fan 以哪个字母开头？",
-     "a_cn": [
-      "fan 以字母 F 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-begin-with-fec9d0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-begins-with-letter-f-33fc5a.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan have in the middle?",
-     "a": [
-      "Fan has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "fan 中间是什么音？",
-     "a_cn": [
-      "fan 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-have-in-the-midd-be6fd0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-has-the-sound-a-in-the-middle-91dbce.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan have in the middle?",
-     "a": [
-      "Fan has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "fan 中间是哪个字母？",
-     "a_cn": [
-      "fan 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-have-in-the-mi-299361.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan end with?",
-     "a": [
-      "Fan ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "fan 的结尾是什么音？",
-     "a_cn": [
-      "fan 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-fan-end-with-3f68ba.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-n-014cef.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan end with?",
-     "a": [
-      "Fan ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "fan 以哪个字母结尾？",
-     "a_cn": [
-      "fan 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-fan-end-with-593a60.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
-     ]
-    },
-    {
-     "q": "What family is fan in?",
-     "a": [
-      "Fan is in the -an family."
-     ],
-     "key": [
-      "/an/"
-     ],
-     "q_cn": "fan 属于哪个词族？",
-     "a_cn": [
-      "fan 属于 -an 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-fan-in-a003f2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-fan-is-in-the-an-family-c504b9.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-fan-146707.mp3"
-  },
-  {
-   "word": "tan",
-   "cn": "浅棕色",
-   "tag": "word",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/tæn/",
-    "parts": [
-     {
-      "text": "t",
-      "sound": "t",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "t",
-     "sound": "t"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-tan.mp3"
-   },
-   "image": "images/wf-an-1-tan.webp",
-   "dialog": [
-    {
-     "q": "How do you read: t — an?",
-     "image": "images/wf-an-1-tan.webp",
-     "a": [
-      "/t/ /an/, tan.",
-      "The dog is tan."
-     ],
-     "key": [
-      "tan"
-     ],
-     "q_cn": "t 加 an 怎么读？",
-     "a_cn": [
-      "/t/ /æn/，tan。",
-      "这只狗是浅棕色的。"
-     ],
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-t-an-tan-568920.mp3",
-      "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3"
-    },
-    {
-     "q": "What color is the dog?",
-     "image": "images/wf-an-2-tan.webp",
-     "a": [
-      "The dog is tan."
-     ],
-     "key": [
-      "tan"
-     ],
-     "q_cn": "这只狗是什么颜色的？",
-     "a_cn": [
-      "这只狗是浅棕色的。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-color-is-the-dog-0a389b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
-     ]
-    },
-    {
-     "q": "What sound does tan begin with?",
-     "a": [
-      "Tan begins with the sound /t/."
-     ],
-     "key": [
-      "/t/"
-     ],
-     "q_cn": "tan 的开头是什么音？",
-     "a_cn": [
-      "tan 开头是 /t/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-begin-with-6090bf.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-t-e6b74f.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does tan begin with?",
-     "a": [
-      "Tan begins with letter T."
-     ],
-     "key": [
-      "t"
-     ],
-     "q_cn": "tan 以哪个字母开头？",
-     "a_cn": [
-      "tan 以字母 T 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-begin-with-6dea83.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-begins-with-letter-t-e3ed8d.mp3"
-     ]
-    },
-    {
-     "q": "What sound does tan have in the middle?",
-     "a": [
-      "Tan has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "tan 中间是什么音？",
-     "a_cn": [
-      "tan 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-have-in-the-midd-1f4f17.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-has-the-sound-a-in-the-middle-9ec05d.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does tan have in the middle?",
-     "a": [
-      "Tan has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "tan 中间是哪个字母？",
-     "a_cn": [
-      "tan 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-have-in-the-mi-f49032.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-has-letter-a-in-the-middle-6878ca.mp3"
-     ]
-    },
-    {
-     "q": "What sound does tan end with?",
-     "a": [
-      "Tan ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "tan 的结尾是什么音？",
-     "a_cn": [
-      "tan 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-sound-does-tan-end-with-ddd8da.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-n-95904c.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does tan end with?",
-     "a": [
-      "Tan ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "tan 以哪个字母结尾？",
-     "a_cn": [
-      "tan 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-which-letter-does-tan-end-with-bfebc0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
-     ]
-    },
-    {
-     "q": "What family is tan in?",
-     "a": [
-      "Tan is in the -an family."
-     ],
-     "key": [
-      "/an/"
-     ],
-     "q_cn": "tan 属于哪个词族？",
-     "a_cn": [
-      "tan 属于 -an 词族。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-what-family-is-tan-in-44d95a.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-tan-is-in-the-an-family-990e01.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-tan-ff8afc.mp3"
-  },
-  {
-   "word": "birds",
-   "cn": "鸟",
-   "tag": "CVC",
-   "image": "images/sw-all-birds-wings.webp",
-   "dialog": [
-    {
-     "q": "Can birds fly?",
-     "a": [
-      "Yes, birds can fly."
-     ],
-     "key": [
-      "fly"
-     ],
-     "q_cn": "鸟会飞吗？",
-     "a_cn": [
-      "会，鸟会飞。"
-     ],
-     "q_audio": "audio/sentences/k2-wf-an/q-can-birds-fly-346972.mp3",
-     "a_audio": [
-      "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
-     ],
-     "image": "images/k2-an-birds-fly.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-wf-an/q-which-one-is-birds-be030e.mp3"
+  "word_audio": {
+    "-an family": "audio/words/an-family.mp3",
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "at": "audio/words/at.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "birds": "audio/words/birds.mp3",
+    "can": "audio/words/can.mp3",
+    "color": "audio/words/color.mp3",
+    "dad": "audio/words/dad.mp3",
+    "dan": "audio/words/dan.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "dog": "audio/words/dog.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "f": "audio/words/f.mp3",
+    "family": "audio/words/family.mp3",
+    "fan": "audio/words/fan.mp3",
+    "feel": "audio/words/feel.mp3",
+    "fly": "audio/words/fly.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "m": "audio/words/m.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "man": "audio/words/man.mp3",
+    "middle": "audio/words/middle.mp3",
+    "my": "audio/words/my.mp3",
+    "n": "audio/words/n.mp3",
+    "need": "audio/words/need.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "tan": "audio/words/tan.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "when": "audio/words/when.mp3",
+    "which": "audio/words/which.mp3",
+    "who": "audio/words/who.mp3",
+    "with": "audio/words/with.mp3",
+    "yes": "audio/words/yes.mp3",
+    "you": "audio/words/you.mp3"
   }
- ],
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- },
- "word_audio": {
-  "-an family": "audio/words/an-family.mp3",
-  "a": "audio/words/a.mp3",
-  "an": "audio/words/an.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "birds": "audio/words/birds.mp3",
-  "can": "audio/words/can.mp3",
-  "color": "audio/words/color.mp3",
-  "dad": "audio/words/dad.mp3",
-  "dan": "audio/words/dan.mp3",
-  "do": "audio/words/do.mp3",
-  "does": "audio/words/does.mp3",
-  "dog": "audio/words/dog.mp3",
-  "end": "audio/words/end.mp3",
-  "ends": "audio/words/ends.mp3",
-  "f": "audio/words/f.mp3",
-  "family": "audio/words/family.mp3",
-  "fan": "audio/words/fan.mp3",
-  "feel": "audio/words/feel.mp3",
-  "fly": "audio/words/fly.mp3",
-  "has": "audio/words/has.mp3",
-  "have": "audio/words/have.mp3",
-  "hot": "audio/words/hot.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "in": "audio/words/in.mp3",
-  "is": "audio/words/is.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "letter": "audio/words/letter.mp3",
-  "m": "audio/words/m.mp3",
-  "make": "audio/words/make.mp3",
-  "makes": "audio/words/makes.mp3",
-  "man": "audio/words/man.mp3",
-  "middle": "audio/words/middle.mp3",
-  "my": "audio/words/my.mp3",
-  "n": "audio/words/n.mp3",
-  "need": "audio/words/need.mp3",
-  "read": "audio/words/read.mp3",
-  "sound": "audio/words/sound.mp3",
-  "t": "audio/words/t.mp3",
-  "tan": "audio/words/tan.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "when": "audio/words/when.mp3",
-  "which": "audio/words/which.mp3",
-  "who": "audio/words/who.mp3",
-  "with": "audio/words/with.mp3",
-  "yes": "audio/words/yes.mp3",
-  "you": "audio/words/you.mp3"
- }
 }

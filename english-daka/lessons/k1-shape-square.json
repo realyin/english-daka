@@ -28,6 +28,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-it-s-a-square-1bce58.mp3"
+          ],
+          "opts": [
+            {
+              "key": "rectangle",
+              "text": "It's a rectangle.",
+              "audio": "audio/sentences/k1-shape-square/a-it-s-a-rectangle-9f01d5.mp3"
+            },
+            {
+              "key": "whale",
+              "text": "It's a whale.",
+              "audio": "audio/sentences/k1-shape-square/a-it-s-a-whale-9672b0.mp3"
+            }
           ]
         },
         {
@@ -46,6 +58,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-what-is-like-a-square-dd347c.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-the-toast-is-like-a-square-eaefcd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bus",
+              "text": "The bus is like a rectangle.",
+              "audio": "audio/sentences/k1-shape-square/a-the-bus-is-like-a-rectangle-c62189.mp3"
+            },
+            {
+              "key": "four",
+              "text": "A square has four corners.",
+              "audio": "audio/sentences/k1-shape-square/a-a-square-has-four-corners-b0f457.mp3"
+            }
           ]
         },
         {
@@ -63,6 +87,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-how-many-sides-does-a-square-have-9cc79e.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-square-has-four-sides-ab9f34.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "A square has seven sides.",
+              "audio": "audio/sentences/k1-shape-square/a-a-square-has-seven-sides-ca7e84.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "A square has eleven sides.",
+              "audio": "audio/sentences/k1-shape-square/a-a-square-has-eleven-sides-995bdd.mp3"
+            }
           ]
         },
         {
@@ -80,6 +116,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-how-many-corners-does-a-square-have-a9ddd4.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-square-has-four-corners-b0f457.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "A square has seven corners.",
+              "audio": "audio/sentences/k1-shape-square/a-a-square-has-seven-corners-4a1114.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "A square has eleven corners.",
+              "audio": "audio/sentences/k1-shape-square/a-a-square-has-eleven-corners-14dbf2.mp3"
+            }
           ]
         }
       ],
@@ -108,6 +156,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-what-shape-is-it-ada0c8.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-it-s-a-rectangle-9f01d5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "It's a square.",
+              "audio": "audio/sentences/k1-shape-square/a-it-s-a-square-1bce58.mp3"
+            },
+            {
+              "key": "circle",
+              "text": "It's a circle.",
+              "audio": "audio/sentences/k1-shape-square/a-it-s-a-circle-a9f70a.mp3"
+            }
           ]
         },
         {
@@ -126,6 +186,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-what-is-like-a-rectangle-127318.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-the-bus-is-like-a-rectangle-c62189.mp3"
+          ],
+          "opts": [
+            {
+              "key": "toast",
+              "text": "The toast is like a square.",
+              "audio": "audio/sentences/k1-shape-square/a-the-toast-is-like-a-square-eaefcd.mp3"
+            },
+            {
+              "key": "four",
+              "text": "A rectangle has four sides.",
+              "audio": "audio/sentences/k1-shape-square/a-a-rectangle-has-four-sides-38df80.mp3"
+            }
           ]
         },
         {
@@ -143,6 +215,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-how-many-sides-does-a-rectangle-have-751ad2.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-rectangle-has-four-sides-38df80.mp3"
+          ],
+          "opts": [
+            {
+              "key": "thirteen",
+              "text": "A rectangle has thirteen sides.",
+              "audio": "audio/sentences/k1-shape-square/a-a-rectangle-has-thirteen-sides-e05a0e.mp3"
+            },
+            {
+              "key": "zero",
+              "text": "A rectangle has zero sides.",
+              "audio": "audio/sentences/k1-shape-square/a-a-rectangle-has-zero-sides-38daba.mp3"
+            }
           ]
         },
         {
@@ -160,6 +244,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-how-many-corners-does-a-rectangle-ha-2c27f4.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-rectangle-has-four-corners-00831f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "twelve",
+              "text": "A rectangle has twelve corners.",
+              "audio": "audio/sentences/k1-shape-square/a-a-rectangle-has-twelve-corners-986abb.mp3"
+            },
+            {
+              "key": "fifteen",
+              "text": "A rectangle has fifteen corners.",
+              "audio": "audio/sentences/k1-shape-square/a-a-rectangle-has-fifteen-corners-39c656.mp3"
+            }
           ]
         },
         {
@@ -177,6 +273,18 @@
           "q_audio": "audio/sentences/k1-shape-square/q-which-is-taller-a-rectangle-or-a-squ-022d5f.mp3",
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-rectangle-is-taller-than-a-square-118bda.mp3"
+          ],
+          "opts": [
+            {
+              "key": "trapezoid",
+              "text": "A trapezoid is taller than a square.",
+              "audio": "audio/sentences/k1-shape-square/a-a-trapezoid-is-taller-than-a-square-185c8e.mp3"
+            },
+            {
+              "key": "circle",
+              "text": "A circle is taller than a square.",
+              "audio": "audio/sentences/k1-shape-square/a-a-circle-is-taller-than-a-square-15ce0e.mp3"
+            }
           ]
         }
       ],
@@ -186,8 +294,11 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "bus": "audio/words/bus.mp3",
+    "circle": "audio/words/circle.mp3",
     "corners": "audio/words/corners.mp3",
     "does": "audio/words/does.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "fifteen": "audio/words/fifteen.mp3",
     "four": "audio/words/four.mp3",
     "has": "audio/words/has.mp3",
     "have": "audio/words/have.mp3",
@@ -199,15 +310,21 @@
     "many": "audio/words/many.mp3",
     "or": "audio/words/or.mp3",
     "rectangle": "audio/words/rectangle.mp3",
+    "seven": "audio/words/seven.mp3",
     "shape": "audio/words/shape.mp3",
     "sides": "audio/words/sides.mp3",
     "square": "audio/words/square.mp3",
     "taller": "audio/words/taller.mp3",
     "than": "audio/words/than.mp3",
     "the": "audio/words/the.mp3",
+    "thirteen": "audio/words/thirteen.mp3",
     "toast": "audio/words/toast.mp3",
+    "trapezoid": "audio/words/trapezoid.mp3",
+    "twelve": "audio/words/twelve.mp3",
+    "whale": "audio/words/whale.mp3",
     "what": "audio/words/what.mp3",
-    "which": "audio/words/which.mp3"
+    "which": "audio/words/which.mp3",
+    "zero": "audio/words/zero.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

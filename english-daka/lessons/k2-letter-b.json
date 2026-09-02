@@ -1,338 +1,506 @@
 {
- "seq": 110,
- "level": "K2",
- "group": "字母 Letters",
- "badge": "B",
- "cover": "images/b-letter.webp",
- "title": "Letter B · /b/",
- "cards": [
-  {
-   "word": "letter B",
-   "cn": "字母 B",
-   "tag": "letter",
-   "image": "images/b-letter.webp",
-   "dialog": [
+  "seq": 110,
+  "level": "K2",
+  "group": "字母 Letters",
+  "badge": "B",
+  "cover": "images/b-letter.webp",
+  "title": "Letter B · /b/",
+  "cards": [
     {
-     "q": "What's this letter?",
-     "a": [
-      "It's letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "这是什么字母？",
-     "a_cn": [
-      "这是字母 B。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-s-this-letter-ab944e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-it-s-letter-b-328ea7.mp3"
-     ]
+      "word": "letter B",
+      "cn": "字母 B",
+      "tag": "letter",
+      "image": "images/b-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 B。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-it-s-letter-b-328ea7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "It's letter R.",
+              "audio": "audio/sentences/k2-letter-b/a-it-s-letter-r-804942.mp3"
+            },
+            {
+              "key": "h",
+              "text": "It's letter H.",
+              "audio": "audio/sentences/k2-letter-b/a-it-s-letter-h-2a680c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does letter B make?",
+          "a": [
+            "B makes the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "字母 B 发什么音？",
+          "a_cn": [
+            "B 发 /b/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-letter-b-make-fdba10.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-b-makes-the-sound-b-313900.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "B makes the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-b/a-b-makes-the-sound-yoo-2e5fcb.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "B makes the sound /d/.",
+              "audio": "audio/sentences/k2-letter-b/a-b-makes-the-sound-d-ceb387.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-letter-b-d5043a.mp3"
     },
     {
-     "q": "What sound does letter B make?",
-     "a": [
-      "B makes the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "字母 B 发什么音？",
-     "a_cn": [
-      "B 发 /b/ 的音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-letter-b-make-fdba10.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-b-makes-the-sound-b-313900.mp3"
-     ]
+      "word": "ball",
+      "cn": "球",
+      "tag": "word",
+      "image": "images/b-ball.webp",
+      "dialog": [
+        {
+          "q": "What sound does ball begin with?",
+          "a": [
+            "Ball begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "ball 以什么音开头？",
+          "a_cn": [
+            "ball 以 /b/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-ball-begin-with-37a7d2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-ball-begins-with-the-sound-b-9ee4ab.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Ball begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-b/a-ball-begins-with-the-sound-d-d8e3a7.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Ball begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-b/a-ball-begins-with-the-sound-r-1eed78.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ball begin with?",
+          "a": [
+            "Ball begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "ball 以哪个字母开头？",
+          "a_cn": [
+            "ball 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-ball-begin-with-e75809.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-ball-begins-with-letter-b-ee16a7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "o",
+              "text": "Ball begins with letter O.",
+              "audio": "audio/sentences/k2-letter-b/a-ball-begins-with-letter-o-56e3df.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Ball begins with letter E.",
+              "audio": "audio/sentences/k2-letter-b/a-ball-begins-with-letter-e-f53233.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-ball-a54918.mp3"
+    },
+    {
+      "word": "bed",
+      "cn": "床",
+      "tag": "word",
+      "image": "images/d-ends-bed.webp",
+      "dialog": [
+        {
+          "q": "What sound does bed begin with?",
+          "a": [
+            "Bed begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bed 以什么音开头？",
+          "a_cn": [
+            "bed 以 /b/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bed-begin-with-c4d10f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bed-begins-with-the-sound-b-ab4ec6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Bed begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-b/a-bed-begins-with-the-sound-yoo-b13e40.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Bed begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-b/a-bed-begins-with-the-sound-d-38ef54.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bed begin with?",
+          "a": [
+            "Bed begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bed 以哪个字母开头？",
+          "a_cn": [
+            "bed 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bed-begin-with-96a262.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bed-begins-with-letter-b-50e206.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Bed begins with letter R.",
+              "audio": "audio/sentences/k2-letter-b/a-bed-begins-with-letter-r-0ce020.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Bed begins with letter H.",
+              "audio": "audio/sentences/k2-letter-b/a-bed-begins-with-letter-h-560b0e.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-bed-3dff5d.mp3"
+    },
+    {
+      "word": "web",
+      "cn": "蜘蛛网",
+      "tag": "word",
+      "image": "images/b-ends-web.webp",
+      "dialog": [
+        {
+          "q": "What sound does web end with?",
+          "a": [
+            "Web ends with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "web 以什么音结尾？",
+          "a_cn": [
+            "web（蜘蛛网）以 /b/ 音结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-web-end-with-9f24a7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-web-ends-with-the-sound-b-186c7e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Web ends with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-b/a-web-ends-with-the-sound-t-46a053.mp3"
+            },
+            {
+              "key": "/yoo/",
+              "text": "Web ends with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-b/a-web-ends-with-the-sound-yoo-491706.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does web end with?",
+          "a": [
+            "Web ends with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "web 以哪个字母结尾？",
+          "a_cn": [
+            "web 以字母 B 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-web-end-with-89c72d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-web-ends-with-letter-b-b150ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Web ends with letter D.",
+              "audio": "audio/sentences/k2-letter-b/a-web-ends-with-letter-d-6ffab2.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Web ends with letter O.",
+              "audio": "audio/sentences/k2-letter-b/a-web-ends-with-letter-o-9abb7a.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-web-fe47fa.mp3"
+    },
+    {
+      "word": "bib",
+      "cn": "围嘴",
+      "tag": "word",
+      "image": "images/b-ends-bib.webp",
+      "dialog": [
+        {
+          "q": "What sound does bib end with?",
+          "a": [
+            "Bib ends with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bib 以什么音结尾？",
+          "a_cn": [
+            "bib（围兜）以 /b/ 音结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bib-end-with-ed9b03.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bib-ends-with-the-sound-b-557e67.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ks/",
+              "text": "Bib ends with the sound /ks/.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-ends-with-the-sound-ks-df6a7f.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Bib ends with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-ends-with-the-sound-p-713a00.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bib begin with?",
+          "a": [
+            "Bib begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bib 的开头是什么音？",
+          "a_cn": [
+            "bib 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bib-begin-with-92c09d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bib-begins-with-the-sound-b-5b6fa5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Bib begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-begins-with-the-sound-oh-82785f.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Bib begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-begins-with-the-sound-u-486855.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bib begin with?",
+          "a": [
+            "Bib begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bib 以哪个字母开头？",
+          "a_cn": [
+            "bib 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bib-begin-with-d6d8f6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bib-begins-with-letter-b-ef22d4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Bib begins with letter G.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-begins-with-letter-g-53132d.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Bib begins with letter S.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-begins-with-letter-s-a19497.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bib end with?",
+          "a": [
+            "Bib ends with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bib 以哪个字母结尾？",
+          "a_cn": [
+            "bib 以字母 B 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bib-end-with-c33b59.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-bib-ends-with-letter-b-339281.mp3"
+          ],
+          "opts": [
+            {
+              "key": "x",
+              "text": "Bib ends with letter X.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-ends-with-letter-x-fc0747.mp3"
+            },
+            {
+              "key": "l",
+              "text": "Bib ends with letter L.",
+              "audio": "audio/sentences/k2-letter-b/a-bib-ends-with-letter-l-ccb2cb.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-bib-eaa30b.mp3"
+    },
+    {
+      "word": "cub",
+      "cn": "幼崽",
+      "tag": "word",
+      "image": "images/b-ends-cub.webp",
+      "dialog": [
+        {
+          "q": "What sound does cub end with?",
+          "a": [
+            "Cub ends with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "cub 以什么音结尾？",
+          "a_cn": [
+            "cub（幼兽）以 /b/ 音结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-cub-end-with-c68b56.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-cub-ends-with-the-sound-b-0c62bd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Cub ends with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-b/a-cub-ends-with-the-sound-j-dfe489.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Cub ends with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-b/a-cub-ends-with-the-sound-s-ff0cfb.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cub end with?",
+          "a": [
+            "Cub ends with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "cub 以哪个字母结尾？",
+          "a_cn": [
+            "cub 以字母 B 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-cub-end-with-73c6d8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-b/a-cub-ends-with-letter-b-d2a5c8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "Cub ends with letter P.",
+              "audio": "audio/sentences/k2-letter-b/a-cub-ends-with-letter-p-12c847.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Cub ends with letter N.",
+              "audio": "audio/sentences/k2-letter-b/a-cub-ends-with-letter-n-77640d.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-cub-89f7df.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-letter-b-d5043a.mp3"
+  ],
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
-  {
-   "word": "ball",
-   "cn": "球",
-   "tag": "word",
-   "image": "images/b-ball.webp",
-   "dialog": [
-    {
-     "q": "What sound does ball begin with?",
-     "a": [
-      "Ball begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "ball 以什么音开头？",
-     "a_cn": [
-      "ball 以 /b/ 音开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-ball-begin-with-37a7d2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-ball-begins-with-the-sound-b-9ee4ab.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does ball begin with?",
-     "a": [
-      "Ball begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "ball 以哪个字母开头？",
-     "a_cn": [
-      "ball 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-ball-begin-with-e75809.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-ball-begins-with-letter-b-ee16a7.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-ball-a54918.mp3"
-  },
-  {
-   "word": "bed",
-   "cn": "床",
-   "tag": "word",
-   "image": "images/d-ends-bed.webp",
-   "dialog": [
-    {
-     "q": "What sound does bed begin with?",
-     "a": [
-      "Bed begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "bed 以什么音开头？",
-     "a_cn": [
-      "bed 以 /b/ 音开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bed-begin-with-c4d10f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bed-begins-with-the-sound-b-ab4ec6.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bed begin with?",
-     "a": [
-      "Bed begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "bed 以哪个字母开头？",
-     "a_cn": [
-      "bed 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bed-begin-with-96a262.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bed-begins-with-letter-b-50e206.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-bed-3dff5d.mp3"
-  },
-  {
-   "word": "web",
-   "cn": "蜘蛛网",
-   "tag": "word",
-   "image": "images/b-ends-web.webp",
-   "dialog": [
-    {
-     "q": "What sound does web end with?",
-     "a": [
-      "Web ends with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "web 以什么音结尾？",
-     "a_cn": [
-      "web（蜘蛛网）以 /b/ 音结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-web-end-with-9f24a7.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-web-ends-with-the-sound-b-186c7e.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does web end with?",
-     "a": [
-      "Web ends with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "web 以哪个字母结尾？",
-     "a_cn": [
-      "web 以字母 B 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-web-end-with-89c72d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-web-ends-with-letter-b-b150ca.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-web-fe47fa.mp3"
-  },
-  {
-   "word": "bib",
-   "cn": "围嘴",
-   "tag": "word",
-   "image": "images/b-ends-bib.webp",
-   "dialog": [
-    {
-     "q": "What sound does bib end with?",
-     "a": [
-      "Bib ends with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "bib 以什么音结尾？",
-     "a_cn": [
-      "bib（围兜）以 /b/ 音结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bib-end-with-ed9b03.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bib-ends-with-the-sound-b-557e67.mp3"
-     ]
-    },
-    {
-     "q": "What sound does bib begin with?",
-     "a": [
-      "Bib begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "bib 的开头是什么音？",
-     "a_cn": [
-      "bib 开头是 /b/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-bib-begin-with-92c09d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bib-begins-with-the-sound-b-5b6fa5.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bib begin with?",
-     "a": [
-      "Bib begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "bib 以哪个字母开头？",
-     "a_cn": [
-      "bib 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bib-begin-with-d6d8f6.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bib-begins-with-letter-b-ef22d4.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does bib end with?",
-     "a": [
-      "Bib ends with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "bib 以哪个字母结尾？",
-     "a_cn": [
-      "bib 以字母 B 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-bib-end-with-c33b59.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-bib-ends-with-letter-b-339281.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-bib-eaa30b.mp3"
-  },
-  {
-   "word": "cub",
-   "cn": "幼崽",
-   "tag": "word",
-   "image": "images/b-ends-cub.webp",
-   "dialog": [
-    {
-     "q": "What sound does cub end with?",
-     "a": [
-      "Cub ends with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "cub 以什么音结尾？",
-     "a_cn": [
-      "cub（幼兽）以 /b/ 音结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-what-sound-does-cub-end-with-c68b56.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-cub-ends-with-the-sound-b-0c62bd.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does cub end with?",
-     "a": [
-      "Cub ends with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "cub 以哪个字母结尾？",
-     "a_cn": [
-      "cub 以字母 B 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-letter-b/q-which-letter-does-cub-end-with-73c6d8.mp3",
-     "a_audio": [
-      "audio/sentences/k2-letter-b/a-cub-ends-with-letter-b-d2a5c8.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-letter-b/q-which-one-is-cub-89f7df.mp3"
+  "word_audio": {
+    "b": "audio/words/b.mp3",
+    "ball": "audio/words/ball.mp3",
+    "bed": "audio/words/bed.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "bib": "audio/words/bib.mp3",
+    "cub": "audio/words/cub.mp3",
+    "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter b": "audio/words/letter-b.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "web": "audio/words/web.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3"
   }
- ],
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- },
- "word_audio": {
-  "b": "audio/words/b.mp3",
-  "ball": "audio/words/ball.mp3",
-  "bed": "audio/words/bed.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "bib": "audio/words/bib.mp3",
-  "cub": "audio/words/cub.mp3",
-  "does": "audio/words/does.mp3",
-  "end": "audio/words/end.mp3",
-  "ends": "audio/words/ends.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "letter": "audio/words/letter.mp3",
-  "letter b": "audio/words/letter-b.mp3",
-  "make": "audio/words/make.mp3",
-  "makes": "audio/words/makes.mp3",
-  "sound": "audio/words/sound.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "web": "audio/words/web.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "which": "audio/words/which.mp3",
-  "with": "audio/words/with.mp3"
- }
 }
