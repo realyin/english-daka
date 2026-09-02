@@ -1,408 +1,462 @@
 {
-  "seq": 602,
-  "level": "K2",
-  "group": "数学 Math",
-  "badge": "6-10",
-  "title": "Numbers · Six to Ten",
-  "cards": [
+ "seq": 602,
+ "level": "K2",
+ "group": "数学 Math",
+ "badge": "6-10",
+ "cover": "images/math-six.webp",
+ "title": "Numbers · Six to Ten",
+ "cards": [
+  {
+   "word": "six",
+   "cn": "六",
+   "tag": "number",
+   "image": "images/math-six.webp",
+   "dialog": [
     {
-      "word": "six",
-      "cn": "六",
-      "tag": "number",
-      "image": "images/math-six.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number six."
-          ],
-          "key": [
-            "six"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字六。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-it-s-number-six-ff0755.mp3"
-          ]
-        },
-        {
-          "q": "How many chickens are there?",
-          "a": [
-            "There are six chickens."
-          ],
-          "key": [
-            "six"
-          ],
-          "q_cn": "有几只小鸡？",
-          "a_cn": [
-            "有六只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-there-are-six-chickens-907203.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-six-b2c869.mp3"
+     "q": "What's this number?",
+     "a": [
+      "It's number six."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字六。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-it-s-number-six-ff0755.mp3"
+     ]
     },
     {
-      "word": "seven",
-      "cn": "七",
-      "tag": "number",
-      "image": "images/math-seven.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number seven."
-          ],
-          "key": [
-            "seven"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字七。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
-          ]
-        },
-        {
-          "q": "How many chickens are there?",
-          "a": [
-            "There are seven chickens."
-          ],
-          "key": [
-            "seven"
-          ],
-          "q_cn": "有几只小鸡？",
-          "a_cn": [
-            "有七只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-seven-ba7e49.mp3"
+     "q": "How many chickens are there?",
+     "a": [
+      "There are six chickens."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "有几只小鸡？",
+     "a_cn": [
+      "有六只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-there-are-six-chickens-907203.mp3"
+     ]
     },
     {
-      "word": "eight",
-      "cn": "八",
-      "tag": "number",
-      "image": "images/math-eight.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number eight."
-          ],
-          "key": [
-            "eight"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字八。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-it-s-number-eight-c7674b.mp3"
-          ]
-        },
-        {
-          "q": "How many chickens are there?",
-          "a": [
-            "There are eight chickens."
-          ],
-          "key": [
-            "eight"
-          ],
-          "q_cn": "有几只小鸡？",
-          "a_cn": [
-            "有八只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-there-are-eight-chickens-2d77fc.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-eight-633ac5.mp3"
-    },
-    {
-      "word": "nine",
-      "cn": "九",
-      "tag": "number",
-      "image": "images/math-nine.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number nine."
-          ],
-          "key": [
-            "nine"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字九。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-it-s-number-nine-7a9de2.mp3"
-          ]
-        },
-        {
-          "q": "How many chickens are there?",
-          "a": [
-            "There are nine chickens."
-          ],
-          "key": [
-            "nine"
-          ],
-          "q_cn": "有几只小鸡？",
-          "a_cn": [
-            "有九只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-there-are-nine-chickens-9a82d5.mp3"
-          ]
-        },
-        {
-          "q": "How many chips can show nine chickens?",
-          "image": "images/math-nine-chips.webp",
-          "a": [
-            "Nine chips can show nine chickens."
-          ],
-          "key": [
-            "nine"
-          ],
-          "q_cn": "几个圆片可以表示九只小鸡？",
-          "a_cn": [
-            "九个圆片可以表示九只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-nine-chicken-09512f.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-nine-chips-can-show-nine-chickens-ac593d.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-nine-2c49cf.mp3"
-    },
-    {
-      "word": "ten",
-      "cn": "十",
-      "tag": "number",
-      "image": "images/math-ten.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number ten."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字十。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
-          ]
-        },
-        {
-          "q": "How many chickens are there?",
-          "a": [
-            "There are ten chickens."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "有几只小鸡？",
-          "a_cn": [
-            "有十只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
-          ]
-        },
-        {
-          "q": "How many chips can show ten chickens?",
-          "image": "images/math-ten-chips.webp",
-          "a": [
-            "Ten chips can show ten chickens."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "几个圆片可以表示十只小鸡？",
-          "a_cn": [
-            "十个圆片可以表示十只小鸡。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-ten-chickens-e7abfd.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-ten-chips-can-show-ten-chickens-2f5e76.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-ten-8e942d.mp3"
-    },
-    {
-      "word": "ten fingers",
-      "cn": "十根手指",
-      "tag": "number",
-      "image": "images/math-fingers.webp",
-      "quiz": false,
-      "dialog": [
-        {
-          "q": "Show me five fingers.",
-          "a": [
-            "One, two, three, four, five. Five fingers."
-          ],
-          "key": [
-            "five"
-          ],
-          "q_cn": "伸出五根手指。",
-          "a_cn": [
-            "一、二、三、四、五，五根手指。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-show-me-five-fingers-b9ce70.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-one-two-three-four-five-five-fingers-eeb85b.mp3"
-          ],
-          "image": "images/math-five-fingers.webp"
-        },
-        {
-          "q": "Show me ten fingers.",
-          "a": [
-            "One, two, three, four, five, six, seven, eight, nine, ten. Ten fingers."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "伸出十根手指。",
-          "a_cn": [
-            "从一数到十，十根手指。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-show-me-ten-fingers-3b8ed3.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-one-two-three-four-five-six-seven-ei-b50104.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-ten-fingers-9c542a.mp3"
-    },
-    {
-      "word": "two and three",
-      "cn": "二加三",
-      "tag": "number",
-      "image": "images/math-two-plus-three.webp",
-      "dialog": [
-        {
-          "q": "I have two apples. You have three apples. How many apples altogether?",
-          "a": [
-            "Two and three makes five. Five apples."
-          ],
-          "key": [
-            "five"
-          ],
-          "q_cn": "我有两个苹果，你有三个苹果，一共有几个苹果？",
-          "a_cn": [
-            "二加三等于五，五个苹果。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-i-have-two-apples-you-have-three-app-1d6850.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-two-and-three-makes-five-five-apples-77d53a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-two-and-three-ecffdc.mp3",
-      "quiz": false
-    },
-    {
-      "word": "five and five",
-      "cn": "五加五",
-      "tag": "number",
-      "image": "images/math-five-plus-five.webp",
-      "dialog": [
-        {
-          "q": "I have five fingers on this hand, and five on this hand. How many fingers altogether?",
-          "a": [
-            "Five and five makes ten. Ten fingers."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "这只手有五根手指，那只手也有五根，一共有几根？",
-          "a_cn": [
-            "五加五等于十，十根手指。"
-          ],
-          "q_audio": "audio/sentences/k2-math-6-10/q-i-have-five-fingers-on-this-hand-and-369027.mp3",
-          "a_audio": [
-            "audio/sentences/k2-math-6-10/a-five-and-five-makes-ten-ten-fingers-1c2cec.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-five-and-five-09d7dd.mp3",
-      "quiz": false
+     "q": "How many chips can show six chickens?",
+     "a": [
+      "Six chips can show six chickens."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "几个筹码能表示 六 只小鸡？",
+     "a_cn": [
+      "六 个筹码能表示 六 只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-six-chickens-5ea045.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+     ]
     }
-  ],
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-six-b2c869.mp3"
   },
-  "word_audio": {
-    "altogether": "audio/words/altogether.mp3",
-    "and": "audio/words/and.mp3",
-    "apples": "audio/words/apples.mp3",
-    "are": "audio/words/are.mp3",
-    "can": "audio/words/can.mp3",
-    "chickens": "audio/words/chickens.mp3",
-    "chips": "audio/words/chips.mp3",
-    "eight": "audio/words/eight.mp3",
-    "fingers": "audio/words/fingers.mp3",
-    "five": "audio/words/five.mp3",
-    "five and five": "audio/words/five-and-five.mp3",
-    "four": "audio/words/four.mp3",
-    "hand": "audio/words/hand.mp3",
-    "have": "audio/words/have.mp3",
-    "how": "audio/words/how.mp3",
-    "i": "audio/words/i.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "makes": "audio/words/makes.mp3",
-    "many": "audio/words/many.mp3",
-    "me": "audio/words/me.mp3",
-    "nine": "audio/words/nine.mp3",
-    "number": "audio/words/number.mp3",
-    "on": "audio/words/on.mp3",
-    "one": "audio/words/one.mp3",
-    "seven": "audio/words/seven.mp3",
-    "show": "audio/words/show.mp3",
-    "six": "audio/words/six.mp3",
-    "ten": "audio/words/ten.mp3",
-    "ten fingers": "audio/words/ten-fingers.mp3",
-    "there": "audio/words/there.mp3",
-    "this": "audio/words/this.mp3",
-    "three": "audio/words/three.mp3",
-    "two": "audio/words/two.mp3",
-    "two and three": "audio/words/two-and-three.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "you": "audio/words/you.mp3"
+  {
+   "word": "seven",
+   "cn": "七",
+   "tag": "number",
+   "image": "images/math-seven.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number seven."
+     ],
+     "key": [
+      "seven"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字七。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
+     ]
+    },
+    {
+     "q": "How many chickens are there?",
+     "a": [
+      "There are seven chickens."
+     ],
+     "key": [
+      "seven"
+     ],
+     "q_cn": "有几只小鸡？",
+     "a_cn": [
+      "有七只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
+     ]
+    },
+    {
+     "q": "How many chips can show seven chickens?",
+     "a": [
+      "Seven chips can show seven chickens."
+     ],
+     "key": [
+      "seven"
+     ],
+     "q_cn": "几个筹码能表示 七 只小鸡？",
+     "a_cn": [
+      "七 个筹码能表示 七 只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-seven-chicke-f4a81f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-seven-chips-can-show-seven-chickens-8ffc99.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-seven-ba7e49.mp3"
+  },
+  {
+   "word": "eight",
+   "cn": "八",
+   "tag": "number",
+   "image": "images/math-eight.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number eight."
+     ],
+     "key": [
+      "eight"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字八。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-it-s-number-eight-c7674b.mp3"
+     ]
+    },
+    {
+     "q": "How many chickens are there?",
+     "a": [
+      "There are eight chickens."
+     ],
+     "key": [
+      "eight"
+     ],
+     "q_cn": "有几只小鸡？",
+     "a_cn": [
+      "有八只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-there-are-eight-chickens-2d77fc.mp3"
+     ]
+    },
+    {
+     "q": "How many chips can show eight chickens?",
+     "a": [
+      "Eight chips can show eight chickens."
+     ],
+     "key": [
+      "eight"
+     ],
+     "q_cn": "几个筹码能表示 八 只小鸡？",
+     "a_cn": [
+      "八 个筹码能表示 八 只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-eight-chicke-ecfb48.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-eight-chips-can-show-eight-chickens-100f4c.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-eight-633ac5.mp3"
+  },
+  {
+   "word": "nine",
+   "cn": "九",
+   "tag": "number",
+   "image": "images/math-nine.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number nine."
+     ],
+     "key": [
+      "nine"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字九。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-it-s-number-nine-7a9de2.mp3"
+     ]
+    },
+    {
+     "q": "How many chickens are there?",
+     "a": [
+      "There are nine chickens."
+     ],
+     "key": [
+      "nine"
+     ],
+     "q_cn": "有几只小鸡？",
+     "a_cn": [
+      "有九只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-there-are-nine-chickens-9a82d5.mp3"
+     ]
+    },
+    {
+     "q": "How many chips can show nine chickens?",
+     "image": "images/math-nine-chips.webp",
+     "a": [
+      "Nine chips can show nine chickens."
+     ],
+     "key": [
+      "nine"
+     ],
+     "q_cn": "几个圆片可以表示九只小鸡？",
+     "a_cn": [
+      "九个圆片可以表示九只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-nine-chicken-09512f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-nine-chips-can-show-nine-chickens-ac593d.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-nine-2c49cf.mp3"
+  },
+  {
+   "word": "ten",
+   "cn": "十",
+   "tag": "number",
+   "image": "images/math-ten.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number ten."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字十。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+     ]
+    },
+    {
+     "q": "How many chickens are there?",
+     "a": [
+      "There are ten chickens."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "有几只小鸡？",
+     "a_cn": [
+      "有十只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
+     ]
+    },
+    {
+     "q": "How many chips can show ten chickens?",
+     "image": "images/math-ten-chips.webp",
+     "a": [
+      "Ten chips can show ten chickens."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "几个圆片可以表示十只小鸡？",
+     "a_cn": [
+      "十个圆片可以表示十只小鸡。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-ten-chickens-e7abfd.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-ten-chips-can-show-ten-chickens-2f5e76.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-ten-8e942d.mp3"
+  },
+  {
+   "word": "ten fingers",
+   "cn": "十根手指",
+   "tag": "number",
+   "image": "images/math-fingers.webp",
+   "quiz": false,
+   "dialog": [
+    {
+     "q": "Show me five fingers.",
+     "a": [
+      "One, two, three, four, five. Five fingers."
+     ],
+     "key": [
+      "five"
+     ],
+     "q_cn": "伸出五根手指。",
+     "a_cn": [
+      "一、二、三、四、五，五根手指。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-show-me-five-fingers-b9ce70.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-one-two-three-four-five-five-fingers-eeb85b.mp3"
+     ],
+     "image": "images/math-five-fingers.webp"
+    },
+    {
+     "q": "Show me ten fingers.",
+     "a": [
+      "One, two, three, four, five, six, seven, eight, nine, ten. Ten fingers."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "伸出十根手指。",
+     "a_cn": [
+      "从一数到十，十根手指。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-show-me-ten-fingers-3b8ed3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-one-two-three-four-five-six-seven-ei-b50104.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-ten-fingers-9c542a.mp3"
+  },
+  {
+   "word": "two and three",
+   "cn": "二加三",
+   "tag": "number",
+   "image": "images/math-two-plus-three.webp",
+   "dialog": [
+    {
+     "q": "I have two apples. You have three apples. How many apples altogether?",
+     "a": [
+      "Two and three makes five. Five apples."
+     ],
+     "key": [
+      "five"
+     ],
+     "q_cn": "我有两个苹果，你有三个苹果，一共有几个苹果？",
+     "a_cn": [
+      "二加三等于五，五个苹果。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-i-have-two-apples-you-have-three-app-1d6850.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-two-and-three-makes-five-five-apples-77d53a.mp3"
+     ],
+     "image": "images/k2-two-plus-three.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-two-and-three-ecffdc.mp3",
+   "quiz": false
+  },
+  {
+   "word": "five and five",
+   "cn": "五加五",
+   "tag": "number",
+   "image": "images/math-five-plus-five.webp",
+   "dialog": [
+    {
+     "q": "I have five fingers on this hand, and five on this hand. How many fingers altogether?",
+     "a": [
+      "Five and five makes ten. Ten fingers."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "这只手有五根手指，那只手也有五根，一共有几根？",
+     "a_cn": [
+      "五加五等于十，十根手指。"
+     ],
+     "q_audio": "audio/sentences/k2-math-6-10/q-i-have-five-fingers-on-this-hand-and-369027.mp3",
+     "a_audio": [
+      "audio/sentences/k2-math-6-10/a-five-and-five-makes-ten-ten-fingers-1c2cec.mp3"
+     ],
+     "image": "images/k2-five-plus-five.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-math-6-10/q-which-one-is-five-and-five-09d7dd.mp3",
+   "quiz": false
   }
+ ],
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ },
+ "word_audio": {
+  "altogether": "audio/words/altogether.mp3",
+  "and": "audio/words/and.mp3",
+  "apples": "audio/words/apples.mp3",
+  "are": "audio/words/are.mp3",
+  "can": "audio/words/can.mp3",
+  "chickens": "audio/words/chickens.mp3",
+  "chips": "audio/words/chips.mp3",
+  "eight": "audio/words/eight.mp3",
+  "fingers": "audio/words/fingers.mp3",
+  "five": "audio/words/five.mp3",
+  "five and five": "audio/words/five-and-five.mp3",
+  "four": "audio/words/four.mp3",
+  "hand": "audio/words/hand.mp3",
+  "have": "audio/words/have.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "makes": "audio/words/makes.mp3",
+  "many": "audio/words/many.mp3",
+  "me": "audio/words/me.mp3",
+  "nine": "audio/words/nine.mp3",
+  "number": "audio/words/number.mp3",
+  "on": "audio/words/on.mp3",
+  "one": "audio/words/one.mp3",
+  "seven": "audio/words/seven.mp3",
+  "show": "audio/words/show.mp3",
+  "six": "audio/words/six.mp3",
+  "ten": "audio/words/ten.mp3",
+  "ten fingers": "audio/words/ten-fingers.mp3",
+  "there": "audio/words/there.mp3",
+  "this": "audio/words/this.mp3",
+  "three": "audio/words/three.mp3",
+  "two": "audio/words/two.mp3",
+  "two and three": "audio/words/two-and-three.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "you": "audio/words/you.mp3"
+ }
 }

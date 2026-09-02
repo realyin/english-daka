@@ -119,6 +119,12 @@
     display:flex;align-items:center;gap:10px;
     margin:26px var(--sp-3,16px) 6px;font-size:15px;font-weight:900;color:var(--ink);
   }
+  /* 组图标:每组一张水彩图,圆形裁切放在组名前面,给每条货架一个视觉身份。
+     图 404 时 onerror 把 <img> 摘掉,标题回落成原来的纯文字,外观无损 */
+  .shelf-head .ico{
+    width:30px;height:30px;border-radius:50%;object-fit:cover;display:block;
+    flex:none;box-shadow:0 1px 3px rgba(30,60,110,.18);
+  }
   .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
   .shelf-head .count{font-size:12px;font-weight:700;color:#5E6E8C;}
 
@@ -158,6 +164,12 @@
     flex:1;display:flex;align-items:center;justify-content:center;
     background:var(--c);
     position:relative;                         /* 星数角标的定位基准 */
+    /* ⚠️ 圆角和裁剪必须写在 .art 自己身上,不能只靠 .cover 的 overflow:hidden。
+       .cover 是 position:static,封面图是 position:absolute —— Safari/iPad 上
+       合成层会忽略这种"隔着一层、又不是包含块"的祖先圆角裁剪,图片四角照方的画,
+       在卡片的圆角外露出直角(Chromium 上看不出来,只在平板上现形)。
+       让直接父元素自己裁,哪个内核都不会漏。*/
+    border-radius:16px 16px 0 0;overflow:hidden;
   }
   /* 字号跟着卡宽走,卡片缩到 120px 时字形也要仍然是"一眼认出的那个字母";
      比例比通栏时期略提(.42→.46),小卡上字形周围的留白本来就少不了 */
@@ -180,6 +192,20 @@
   .cover .cn{font-size:11px;color:#5E6E8C;font-weight:700;margin-top:2px;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
+  /* 封面图是按 3:4 画的,而 .art 原来是近正方(160×156)—— object-fit:cover
+     要上下各裁掉 13%,人头猫头全切在外面。让 .art 自己按 3:4 撑开、卡高跟着走,
+     图就按画出来的样子完整显示。
+     ⚠️ 必须用 @supports 包住:老 Safari(15 以下)不认 aspect-ratio,而 .art 是
+     flex:none,不兜底会塌成 0 高度、整排封面消失。回落走原来的固定高度 —— 
+     还是裁,但和以前一模一样,不算退步。
+     .skel-card 要跟着一起变,否则骨架屏 205px、真卡片 266px,加载完跳一下。
+     49px 是 .label 的实测高度(8+10 内边距 + 两行定死字号,不会换行)*/
+  @supports (aspect-ratio: 3 / 4){
+    .cover{height:auto;}
+    .cover .art{flex:none;aspect-ratio:3 / 4;}
+    .skel-card{height:calc(var(--cw) * 4 / 3 + 49px);}
+  }
 
   /* ===== 打卡条 ===== */
   /* 本周(周一起)到今天,一天一个点。天天来的孩子看的就是这一行 ——
@@ -1590,12 +1616,33 @@ function enableMouseDrag(row){
   row.addEventListener("dragstart", e => e.preventDefault());
 }
 
+/* 每组一张的组图标。键取组名的中文段(「字母 Letters」→「字母」),
+   K1/K2 同名组共用一张 —— 教的东西是一回事,不必分级各出一张。
+   没登记的组不画图标,标题就是原来的纯文字 */
+var SHELF_ICO = {
+  "字母":"k1-cover-letters", "数字":"k1-cover-numbers", "颜色":"k1-cover-colors",
+  "动物":"k1-cover-animals", "身体":"k1-cover-body",   "动作":"k1-cover-actions",
+  "职业":"k1-cover-jobs",    "天气":"k1-cover-weather", "形状":"k1-cover-shapes",
+  "规律":"k1-cover-patterns","乐器":"k1-cover-instruments", "节日":"k1-cover-holidays",
+  "词族":"k2-cover-word-family", "拼读":"k2-cover-phonics", "常见词":"k2-cover-sight-words",
+  "主题":"k2-cover-topics",      "数学":"k2-cover-math",    "科学":"k2-cover-science"
+};
+
+/* 组名 → 图标 <img>。取组名第一段(空格前)去查表;查不到返回空串 */
+function shelfIco(group){
+  var key = String(group || "").split(" ")[0];
+  var slug = SHELF_ICO[key];
+  if(!slug) return "";
+  return '<img class="ico" src="lessons/images/' + slug + '.webp" alt="" ' +
+         'loading="lazy" onerror="this.parentNode&&this.parentNode.removeChild(this)">';
+}
+
 function buildShelf(group, lessons, memKey){
   memKey = memKey || group;      // 多级别后 K1/K2 都有「字母 Letters」,记忆键要带级别
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
-    `<div class="shelf-head"><span>${group}</span>` +
+    `<div class="shelf-head">` + shelfIco(group) + `<span>${group}</span>` +
     `<span class="count">${lessons.length} 节</span><span class="rule"></span></div>` +
     `<div class="shelf-row"></div>`;
   const row = wrap.querySelector(".shelf-row");

@@ -1,292 +1,355 @@
 {
-  "seq": 103,
-  "level": "K1",
-  "group": "字母 Letters",
-  "badge": "I",
-  "title": "Letters · I/J/K/L 认字母",
-  "cards": [
+ "seq": 103,
+ "level": "K1",
+ "group": "字母 Letters",
+ "badge": "I",
+ "cover": "images/k1-letter-i.webp",
+ "title": "Letters · I/J/K/L 认字母",
+ "cards": [
+  {
+   "word": "letter I",
+   "cn": "字母 I",
+   "tag": "letter",
+   "dialog": [
     {
-      "word": "letter I",
-      "cn": "字母 I",
-      "tag": "letter",
-      "pattern": [
-        "I"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter I."
-          ],
-          "key": [
-            "i"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 I。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-letter-i-d4a773.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter I?",
-          "a": [
-            "I can show you letter I."
-          ],
-          "key": [
-            "i"
-          ],
-          "q_cn": "你能做出字母 I 吗？",
-          "a_cn": [
-            "我能做出字母 I。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-i-13ac34.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-i-7a8dd3.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big I or a small i?",
-          "a": [
-            "It's a big I."
-          ],
-          "key": [
-            "big"
-          ],
-          "q_cn": "这是大写 I 还是小写 i？",
-          "a_cn": [
-            "这是大写 I。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-i-or-a-small-i-f97d23.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-a-big-i-3d19ec.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-i-354267.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 I。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-letter-i-d4a773.mp3"
+     ]
     },
     {
-      "word": "letter J",
-      "cn": "字母 J",
-      "tag": "letter",
-      "pattern": [
-        "j"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter J."
-          ],
-          "key": [
-            "j"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 J。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-letter-j-51bfeb.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter J?",
-          "a": [
-            "I can show you letter J."
-          ],
-          "key": [
-            "j"
-          ],
-          "q_cn": "你能做出字母 J 吗？",
-          "a_cn": [
-            "我能做出字母 J。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-j-0aa47a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-j-7ddcdd.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big J or a small j?",
-          "a": [
-            "It's a small j."
-          ],
-          "key": [
-            "small"
-          ],
-          "q_cn": "这是大写 J 还是小写 j？",
-          "a_cn": [
-            "这是小写 j。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-j-or-a-small-j-42a684.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-a-small-j-83cdca.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-j-a15263.mp3"
+     "q": "Can you show me letter I?",
+     "a": [
+      "I can show you letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "你能做出字母 I 吗？",
+     "a_cn": [
+      "我能做出字母 I。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-i-13ac34.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-i-7a8dd3.mp3"
+     ]
     },
     {
-      "word": "letter K",
-      "cn": "字母 K",
-      "tag": "letter",
-      "pattern": [
-        "K"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter K."
-          ],
-          "key": [
-            "k"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 K。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-letter-k-a2fba9.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter K?",
-          "a": [
-            "I can show you letter K."
-          ],
-          "key": [
-            "k"
-          ],
-          "q_cn": "你能做出字母 K 吗？",
-          "a_cn": [
-            "我能做出字母 K。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-k-d5055e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-k-0f28ef.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big K or a small k?",
-          "a": [
-            "It's a big K."
-          ],
-          "key": [
-            "big"
-          ],
-          "q_cn": "这是大写 K 还是小写 k？",
-          "a_cn": [
-            "这是大写 K。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-k-or-a-small-k-a9e699.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-a-big-k-01a5a6.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-k-0e719a.mp3"
-    },
-    {
-      "word": "letter L",
-      "cn": "字母 L",
-      "tag": "letter",
-      "pattern": [
-        "l"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter L."
-          ],
-          "key": [
-            "l"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 L。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-letter-l-d8a962.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter L?",
-          "a": [
-            "I can show you letter L."
-          ],
-          "key": [
-            "l"
-          ],
-          "q_cn": "你能做出字母 L 吗？",
-          "a_cn": [
-            "我能做出字母 L。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-l-abf6ec.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-l-b0b5dd.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big L or a small l?",
-          "a": [
-            "It's a small l."
-          ],
-          "key": [
-            "small"
-          ],
-          "q_cn": "这是大写 L 还是小写 l？",
-          "a_cn": [
-            "这是小写 l。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-l-or-a-small-l-11c07e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-ijkl/a-it-s-a-small-l-dec76c.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-l-5ac12b.mp3"
+     "q": "Is it a big I or a small i?",
+     "a": [
+      "It's a big I."
+     ],
+     "key": [
+      "big"
+     ],
+     "q_cn": "这是大写 I 还是小写 i？",
+     "a_cn": [
+      "这是大写 I。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-i-or-a-small-i-f97d23.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-a-big-i-3d19ec.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "big": "audio/words/big.mp3",
-    "can": "audio/words/can.mp3",
-    "i": "audio/words/i.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "j": "audio/words/j.mp3",
-    "k": "audio/words/k.mp3",
-    "l": "audio/words/l.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter i": "audio/words/letter-i.mp3",
-    "letter j": "audio/words/letter-j.mp3",
-    "letter k": "audio/words/letter-k.mp3",
-    "letter l": "audio/words/letter-l.mp3",
-    "me": "audio/words/me.mp3",
-    "or": "audio/words/or.mp3",
-    "show": "audio/words/show.mp3",
-    "small": "audio/words/small.mp3",
-    "this": "audio/words/this.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-i-354267.mp3",
+   "image": "images/k1-letter-i.webp"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "letter J",
+   "cn": "字母 J",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter J."
+     ],
+     "key": [
+      "j"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 J。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-letter-j-51bfeb.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter J?",
+     "a": [
+      "I can show you letter J."
+     ],
+     "key": [
+      "j"
+     ],
+     "q_cn": "你能做出字母 J 吗？",
+     "a_cn": [
+      "我能做出字母 J。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-j-0aa47a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-j-7ddcdd.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big J or a small j?",
+     "a": [
+      "It's a small j."
+     ],
+     "key": [
+      "small"
+     ],
+     "q_cn": "这是大写 J 还是小写 j？",
+     "a_cn": [
+      "这是小写 j。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-j-or-a-small-j-42a684.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-a-small-j-83cdca.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-j-a15263.mp3",
+   "image": "images/k1-letter-j.webp"
+  },
+  {
+   "word": "letter K",
+   "cn": "字母 K",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter K."
+     ],
+     "key": [
+      "k"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 K。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-letter-k-a2fba9.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter K?",
+     "a": [
+      "I can show you letter K."
+     ],
+     "key": [
+      "k"
+     ],
+     "q_cn": "你能做出字母 K 吗？",
+     "a_cn": [
+      "我能做出字母 K。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-k-d5055e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-k-0f28ef.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big K or a small k?",
+     "a": [
+      "It's a big K."
+     ],
+     "key": [
+      "big"
+     ],
+     "q_cn": "这是大写 K 还是小写 k？",
+     "a_cn": [
+      "这是大写 K。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-k-or-a-small-k-a9e699.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-a-big-k-01a5a6.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-k-0e719a.mp3",
+   "image": "images/k1-letter-k.webp"
+  },
+  {
+   "word": "letter L",
+   "cn": "字母 L",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter L."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 L。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-letter-l-d8a962.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter L?",
+     "a": [
+      "I can show you letter L."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "你能做出字母 L 吗？",
+     "a_cn": [
+      "我能做出字母 L。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-can-you-show-me-letter-l-abf6ec.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-i-can-show-you-letter-l-b0b5dd.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big L or a small l?",
+     "a": [
+      "It's a small l."
+     ],
+     "key": [
+      "small"
+     ],
+     "q_cn": "这是大写 L 还是小写 l？",
+     "a_cn": [
+      "这是小写 l。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-is-it-a-big-l-or-a-small-l-11c07e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-it-s-a-small-l-dec76c.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-l-5ac12b.mp3",
+   "image": "images/k1-letter-l.webp"
+  },
+  {
+   "word": "letter order",
+   "cn": "字母排序",
+   "tag": "letter",
+   "pattern": [
+    "I",
+    "J",
+    "?",
+    "L"
+   ],
+   "quiz": false,
+   "dialog": [
+    {
+     "q": "Which letter is missing?",
+     "a": [
+      "Letter K is missing."
+     ],
+     "key": [
+      "k"
+     ],
+     "q_cn": "哪个字母不见了？",
+     "a_cn": [
+      "字母 K 不见了。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-which-letter-is-missing-9a0a7c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-letter-k-is-missing-cfc42a.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-letter-order-05af72.mp3"
+  },
+  {
+   "word": "what comes next",
+   "cn": "下一个字母",
+   "tag": "letter",
+   "pattern": [
+    "I",
+    "J",
+    "K",
+    "?"
+   ],
+   "quiz": false,
+   "dialog": [
+    {
+     "q": "Which letter comes next?",
+     "a": [
+      "Letter L comes next."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "下一个是哪个字母？",
+     "a_cn": [
+      "下一个是字母 L。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-ijkl/q-which-letter-comes-next-8c625e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-ijkl/a-letter-l-comes-next-bb9c03.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-ijkl/q-which-one-is-what-comes-next-cd9e23.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "big": "audio/words/big.mp3",
+  "can": "audio/words/can.mp3",
+  "comes": "audio/words/comes.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "j": "audio/words/j.mp3",
+  "k": "audio/words/k.mp3",
+  "l": "audio/words/l.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter i": "audio/words/letter-i.mp3",
+  "letter j": "audio/words/letter-j.mp3",
+  "letter k": "audio/words/letter-k.mp3",
+  "letter l": "audio/words/letter-l.mp3",
+  "letter order": "audio/words/letter-order.mp3",
+  "me": "audio/words/me.mp3",
+  "missing": "audio/words/missing.mp3",
+  "next": "audio/words/next.mp3",
+  "or": "audio/words/or.mp3",
+  "show": "audio/words/show.mp3",
+  "small": "audio/words/small.mp3",
+  "this": "audio/words/this.mp3",
+  "what comes next": "audio/words/what-comes-next.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "which": "audio/words/which.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

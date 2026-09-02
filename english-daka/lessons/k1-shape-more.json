@@ -64,6 +64,23 @@
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-triangle-has-three-sides-e0e69f.mp3"
           ]
+        },
+        {
+          "q": "How many corners does a triangle have?",
+          "a": [
+            "A triangle has three corners."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "三角形有几个角？",
+          "a_cn": [
+            "三角形有三个角。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-how-many-corners-does-a-triangle-hav-397864.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-a-triangle-has-three-corners-23d09b.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k1-shape-more/q-which-one-is-triangle-1915d2.mp3"
@@ -190,6 +207,23 @@
           "a_audio": [
             "audio/sentences/k1-shape-more/a-a-trapezoid-has-four-sides-3e0765.mp3"
           ]
+        },
+        {
+          "q": "How many corners does a trapezoid have?",
+          "a": [
+            "A trapezoid has four corners."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "梯形有几个角？",
+          "a_cn": [
+            "梯形有四个角。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-more/q-how-many-corners-does-a-trapezoid-ha-1adc80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-more/a-a-trapezoid-has-four-corners-0c5ce8.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k1-shape-more/q-which-one-is-trapezoid-eab2a8.mp3"
@@ -197,6 +231,7 @@
   ],
   "word_audio": {
     "a": "audio/words/a.mp3",
+    "corners": "audio/words/corners.mp3",
     "diamond": "audio/words/diamond.mp3",
     "does": "audio/words/does.mp3",
     "flowerpot": "audio/words/flowerpot.mp3",

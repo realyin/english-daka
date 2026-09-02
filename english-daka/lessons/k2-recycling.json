@@ -3,6 +3,7 @@
   "level": "K2",
   "group": "科学 Science",
   "badge": "♻️",
+  "cover": "images/recycling-bin-paper.webp",
   "title": "Recycling · 垃圾分类回收",
   "cards": [
     {
@@ -157,6 +158,23 @@
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-paper-item-should-go-to-the-pape-bb65e1.mp3"
           ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the paper item."
+          ],
+          "key": [
+            "paper"
+          ],
+          "q_cn": "这是什么材料？",
+          "a_cn": [
+            "这是纸类材料。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-paper-a18070.mp3"
@@ -182,6 +200,23 @@
           "q_audio": "audio/sentences/k2-recycling/q-where-should-the-metal-item-go-fdca71.mp3",
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
+          ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the metal item."
+          ],
+          "key": [
+            "metal"
+          ],
+          "q_cn": "这是什么材料？",
+          "a_cn": [
+            "这是金属材料。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-metal-item-48ea69.mp3"
           ]
         }
       ],
@@ -209,6 +244,23 @@
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
           ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the plastic item."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "这是什么材料？",
+          "a_cn": [
+            "这是塑料材料。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-56173b.mp3"
@@ -235,6 +287,23 @@
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
           ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the glass item."
+          ],
+          "key": [
+            "glass"
+          ],
+          "q_cn": "这是什么材料？",
+          "a_cn": [
+            "这是玻璃材料。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-glass-item-cfa647.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-glass-3e4a40.mp3"
@@ -260,6 +329,24 @@
           "q_audio": "audio/sentences/k2-recycling/q-where-should-the-apple-core-go-ae57d4.mp3",
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-apple-core-should-go-to-the-comp-7c5ca2.mp3"
+          ],
+          "image": "images/k2-rec-apple-core-compost.webp"
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is the apple core."
+          ],
+          "key": [
+            "apple"
+          ],
+          "q_cn": "这是什么材料？",
+          "a_cn": [
+            "这是苹果核。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-the-apple-core-5ccba4.mp3"
           ]
         }
       ],
@@ -316,6 +403,23 @@
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-newspaper-should-go-to-the-paper-61729d.mp3"
           ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a newspaper."
+          ],
+          "key": [
+            "newspaper"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一份报纸。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-newspaper-dfd2e9.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-newspaper-a7dfc7.mp3"
@@ -341,6 +445,24 @@
           "q_audio": "audio/sentences/k2-recycling/q-where-should-the-soda-can-go-4bf603.mp3",
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+          ],
+          "image": "images/k2-rec-can-metal-bin.webp"
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a soda can."
+          ],
+          "key": [
+            "can"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个易拉罐。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-soda-can-7ebd14.mp3"
           ]
         }
       ],
@@ -368,6 +490,23 @@
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-plastic-bottle-should-go-to-the--1a6bba.mp3"
           ]
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a plastic bottle."
+          ],
+          "key": [
+            "bottle"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个塑料瓶。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-bottle-d41733.mp3"
@@ -393,10 +532,157 @@
           "q_audio": "audio/sentences/k2-recycling/q-where-should-the-banana-peel-go-a7b281.mp3",
           "a_audio": [
             "audio/sentences/k2-recycling/a-the-banana-peel-should-go-to-the-com-d8928b.mp3"
+          ],
+          "image": "images/k2-rec-peel-compost.webp"
+        },
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a banana peel."
+          ],
+          "key": [
+            "peel"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一块香蕉皮。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-banana-peel-60885b.mp3"
           ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-banana-peel-3e8130.mp3"
+    },
+    {
+      "word": "cardboard box",
+      "cn": "纸箱",
+      "tag": "word",
+      "image": "images/rec-cardboard-box.webp",
+      "dialog": [
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a cardboard box."
+          ],
+          "key": [
+            "box"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个纸箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-cardboard-box-277d5f.mp3"
+          ]
+        },
+        {
+          "q": "Where should the cardboard box go?",
+          "a": [
+            "The cardboard box should go to the paper recycling bin."
+          ],
+          "key": [
+            "paper"
+          ],
+          "q_cn": "一个纸箱应该放到哪里？",
+          "a_cn": [
+            "一个纸箱应该放到纸类回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-cardboard-box-go-d6981f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-cardboard-box-should-go-to-the-p-f93c3e.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-cardboard-box-0df567.mp3"
+    },
+    {
+      "word": "plastic bag",
+      "cn": "塑料袋",
+      "tag": "word",
+      "image": "images/rec-plastic-bag.webp",
+      "dialog": [
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a plastic bag."
+          ],
+          "key": [
+            "bag"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个塑料袋。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-plastic-bag-560f4f.mp3"
+          ]
+        },
+        {
+          "q": "Where should the plastic bag go?",
+          "a": [
+            "The plastic bag should go to the plastic recycling bin."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "一个塑料袋应该放到哪里？",
+          "a_cn": [
+            "一个塑料袋应该放到塑料回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-plastic-bag-go-df56f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-plastic-bag-should-go-to-the-pla-616ca0.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-bag-f77a13.mp3"
+    },
+    {
+      "word": "plastic cup",
+      "cn": "塑料杯",
+      "tag": "word",
+      "image": "images/rec-plastic-cup.webp",
+      "dialog": [
+        {
+          "q": "What's this item?",
+          "a": [
+            "This is a plastic cup."
+          ],
+          "key": [
+            "cup"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个塑料杯。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-what-s-this-item-4b5aee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-this-is-a-plastic-cup-5f8702.mp3"
+          ]
+        },
+        {
+          "q": "Where should the plastic cup go?",
+          "a": [
+            "The plastic cup should go to the plastic recycling bin."
+          ],
+          "key": [
+            "plastic"
+          ],
+          "q_cn": "一个塑料杯应该放到哪里？",
+          "a_cn": [
+            "一个塑料杯应该放到塑料回收箱。"
+          ],
+          "q_audio": "audio/sentences/k2-recycling/q-where-should-the-plastic-cup-go-85fe9a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-recycling/a-the-plastic-cup-should-go-to-the-pla-d60058.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-recycling/q-which-one-is-plastic-cup-22e864.mp3"
     }
   ],
   "praise_audio": {
@@ -411,15 +697,21 @@
     "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
   "word_audio": {
+    "a": "audio/words/a.mp3",
     "apple": "audio/words/apple.mp3",
     "apple core": "audio/words/apple-core.mp3",
+    "bag": "audio/words/bag.mp3",
     "banana": "audio/words/banana.mp3",
     "banana peel": "audio/words/banana-peel.mp3",
     "bin": "audio/words/bin.mp3",
     "bottle": "audio/words/bottle.mp3",
+    "box": "audio/words/box.mp3",
     "can": "audio/words/can.mp3",
+    "cardboard": "audio/words/cardboard.mp3",
+    "cardboard box": "audio/words/cardboard-box.mp3",
     "compost": "audio/words/compost.mp3",
     "core": "audio/words/core.mp3",
+    "cup": "audio/words/cup.mp3",
     "glass": "audio/words/glass.mp3",
     "glass bin": "audio/words/glass-bin.mp3",
     "go": "audio/words/go.mp3",
@@ -433,8 +725,10 @@
     "peel": "audio/words/peel.mp3",
     "pile": "audio/words/pile.mp3",
     "plastic": "audio/words/plastic.mp3",
+    "plastic bag": "audio/words/plastic-bag.mp3",
     "plastic bin": "audio/words/plastic-bin.mp3",
     "plastic bottle": "audio/words/plastic-bottle.mp3",
+    "plastic cup": "audio/words/plastic-cup.mp3",
     "recycling": "audio/words/recycling.mp3",
     "should": "audio/words/should.mp3",
     "soda": "audio/words/soda.mp3",

@@ -1,495 +1,856 @@
 {
-  "seq": 102,
-  "level": "K2",
-  "group": "字母 Letters",
-  "badge": "T",
-  "title": "Letter T · /t/",
-  "cards": [
+ "seq": 102,
+ "level": "K2",
+ "group": "字母 Letters",
+ "badge": "T",
+ "cover": "images/t-letter.webp",
+ "title": "Letter T · /t/",
+ "cards": [
+  {
+   "word": "letter T",
+   "cn": "字母 T",
+   "tag": "letter",
+   "image": "images/t-letter.webp",
+   "dialog": [
     {
-      "word": "letter T",
-      "cn": "字母 T",
-      "tag": "letter",
-      "image": "images/t-letter.webp",
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter T."
-          ],
-          "key": [
-            "t"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 T。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-it-s-letter-t-f0e81f.mp3"
-          ]
-        },
-        {
-          "q": "What sound does letter T make?",
-          "a": [
-            "T makes the sound /t/."
-          ],
-          "key": [
-            "/t/"
-          ],
-          "q_cn": "字母 T 发什么音？",
-          "a_cn": [
-            "T 发 /t/ 的音。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-letter-t-make-964448.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-t-makes-the-sound-t-b6f1f4.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-letter-t-527e64.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 T。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-it-s-letter-t-f0e81f.mp3"
+     ]
     },
     {
-      "word": "taxi",
-      "cn": "出租车",
-      "tag": "word",
-      "image": "images/t-taxi.webp",
-      "dialog": [
-        {
-          "q": "What sound does taxi begin with?",
-          "a": [
-            "Taxi begins with the sound /t/."
-          ],
-          "key": [
-            "/t/"
-          ],
-          "q_cn": "taxi 以什么音开头？",
-          "a_cn": [
-            "taxi 以 /t/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-taxi-begin-with-f0f4ad.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-taxi-begins-with-the-sound-t-e78973.mp3"
-          ]
-        },
-        {
-          "q": "Which letter does taxi begin with?",
-          "a": [
-            "Taxi begins with letter T."
-          ],
-          "key": [
-            "t"
-          ],
-          "q_cn": "taxi 以哪个字母开头？",
-          "a_cn": [
-            "taxi 以字母 T 开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-taxi-begin-with-18d9ce.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-taxi-begins-with-letter-t-5ad804.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-taxi-cb8519.mp3"
-    },
-    {
-      "word": "turtle",
-      "cn": "乌龟",
-      "tag": "word",
-      "image": "images/t-words-1-turtle.webp",
-      "dialog": [
-        {
-          "q": "What's this animal?",
-          "a": [
-            "It's a turtle."
-          ],
-          "key": [
-            "turtle"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是乌龟。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-animal-ac42e5.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-it-s-a-turtle-505865.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-turtle-c1e80d.mp3"
-    },
-    {
-      "word": "toast",
-      "cn": "吐司",
-      "tag": "word",
-      "image": "images/t-words-1-toast.webp",
-      "dialog": [
-        {
-          "q": "What shape is the toast like?",
-          "a": [
-            "The toast is like a square."
-          ],
-          "key": [
-            "square"
-          ],
-          "q_cn": "吐司像什么形状？",
-          "a_cn": [
-            "吐司像正方形。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-shape-is-the-toast-like-47eea1.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-the-toast-is-like-a-square-eaefcd.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-toast-b08d69.mp3"
-    },
-    {
-      "word": "brush",
-      "cn": "刷牙",
-      "tag": "word",
-      "image": "images/t-words-1-brush.webp",
-      "dialog": [
-        {
-          "q": "What can you do with your teeth?",
-          "a": [
-            "I can brush my teeth."
-          ],
-          "key": [
-            "brush"
-          ],
-          "q_cn": "你的牙齿能做什么？",
-          "a_cn": [
-            "我可以刷牙。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-can-you-do-with-your-teeth-70042e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-i-can-brush-my-teeth-75ec82.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-brush-7dd6ea.mp3"
-    },
-    {
-      "word": "ten",
-      "cn": "十",
-      "tag": "word",
-      "image": "images/t-words-1-ten.webp",
-      "dialog": [
-        {
-          "q": "How many fingers do you have?",
-          "a": [
-            "I have ten fingers."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "你有几根手指？",
-          "a_cn": [
-            "我有十根手指。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-how-many-fingers-do-you-have-a3d9a9.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-i-have-ten-fingers-1501e2.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-ten-8e942d.mp3"
-    },
-    {
-      "word": "trumpet",
-      "cn": "小号",
-      "tag": "word",
-      "image": "images/t-words-2-trumpet.webp",
-      "dialog": [
-        {
-          "q": "What's this musical instrument?",
-          "a": [
-            "It's a trumpet.",
-            "I can play the trumpet with my mouth."
-          ],
-          "key": [
-            "trumpet"
-          ],
-          "q_cn": "这是什么乐器？",
-          "a_cn": [
-            "这是小号。",
-            "我可以用嘴吹小号。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-musical-instrument-4ac65f.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3",
-            "audio/sentences/k2-letter-t/a-i-can-play-the-trumpet-with-my-mouth-da6ae3.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-trumpet-467e0e.mp3"
-    },
-    {
-      "word": "tree",
-      "cn": "树",
-      "tag": "word",
-      "image": "images/t-words-2-tree.webp",
-      "dialog": [
-        {
-          "q": "What's this?",
-          "a": [
-            "It's a Christmas tree."
-          ],
-          "key": [
-            "tree"
-          ],
-          "q_cn": "这是什么？",
-          "a_cn": [
-            "这是圣诞树。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-it-s-a-christmas-tree-0edfc3.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-tree-60e7a8.mp3"
-    },
-    {
-      "word": "teacher",
-      "cn": "老师",
-      "tag": "word",
-      "image": "images/t-words-2-teacher.webp",
-      "dialog": [
-        {
-          "q": "What do you want to be?",
-          "a": [
-            "I want to be a teacher."
-          ],
-          "key": [
-            "teacher"
-          ],
-          "q_cn": "你想成为什么？",
-          "a_cn": [
-            "我想当老师。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-do-you-want-to-be-222838.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-i-want-to-be-a-teacher-23ae80.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-teacher-de59e1.mp3"
-    },
-    {
-      "word": "tank",
-      "cn": "鱼缸",
-      "tag": "word",
-      "image": "images/t-words-2-tank.webp",
-      "dialog": [
-        {
-          "q": "Where does a turtle live?",
-          "a": [
-            "A turtle lives in the tank."
-          ],
-          "key": [
-            "tank"
-          ],
-          "q_cn": "乌龟住在哪里？",
-          "a_cn": [
-            "乌龟住在水箱里。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-where-does-a-turtle-live-1d9182.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-tank-38b4ed.mp3"
-    },
-    {
-      "word": "triangle",
-      "cn": "三角形",
-      "tag": "word",
-      "image": "images/t-words-3-triangle.webp",
-      "dialog": [
-        {
-          "q": "What's this shape?",
-          "a": [
-            "It's a triangle.",
-            "A triangle has three sides."
-          ],
-          "key": [
-            "triangle"
-          ],
-          "q_cn": "这是什么形状？",
-          "a_cn": [
-            "这是三角形。",
-            "三角形有三条边。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-shape-6b1ce1.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-it-s-a-triangle-e6b316.mp3",
-            "audio/sentences/k2-letter-t/a-a-triangle-has-three-sides-e0e69f.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-triangle-1915d2.mp3"
-    },
-    {
-      "word": "touch",
-      "cn": "触摸",
-      "tag": "word",
-      "image": "images/t-words-3-touch.webp",
-      "dialog": [
-        {
-          "q": "Can you touch your face?",
-          "a": [
-            "I can touch my face."
-          ],
-          "key": [
-            "touch"
-          ],
-          "q_cn": "你能摸摸你的脸吗？",
-          "a_cn": [
-            "我可以摸我的脸。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-can-you-touch-your-face-2c640c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-i-can-touch-my-face-2583db.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-touch-a214bb.mp3"
-    },
-    {
-      "word": "rectangle",
-      "cn": "长方形",
-      "tag": "word",
-      "image": "images/t-words-3-rectangle.webp",
-      "dialog": [
-        {
-          "q": "Which one is taller, the rectangle or the square?",
-          "a": [
-            "The rectangle is taller."
-          ],
-          "key": [
-            "rectangle"
-          ],
-          "q_cn": "长方形和正方形，哪个更高？",
-          "a_cn": [
-            "长方形更高。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-which-one-is-taller-the-rectangle-or-bf4884.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-the-rectangle-is-taller-78b69a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-rectangle-93886d.mp3"
-    },
-    {
-      "word": "Thanksgiving",
-      "cn": "感恩节",
-      "tag": "word",
-      "image": "images/t-words-3-thanksgiving.webp",
-      "dialog": [
-        {
-          "q": "What do we say on Thanksgiving?",
-          "a": [
-            "Happy Thanksgiving!"
-          ],
-          "key": [
-            "thanksgiving"
-          ],
-          "q_cn": "感恩节我们说什么？",
-          "a_cn": [
-            "感恩节快乐！"
-          ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-do-we-say-on-thanksgiving-4711b9.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-t/a-happy-thanksgiving-d2e8ff.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-thanksgiving-232700.mp3"
+     "q": "What sound does letter T make?",
+     "a": [
+      "T makes the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "字母 T 发什么音？",
+     "a_cn": [
+      "T 发 /t/ 的音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-letter-t-make-964448.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-t-makes-the-sound-t-b6f1f4.mp3"
+     ]
     }
-  ],
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-letter-t-527e64.mp3"
   },
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "animal": "audio/words/animal.mp3",
-    "be": "audio/words/be.mp3",
-    "begin": "audio/words/begin.mp3",
-    "begins": "audio/words/begins.mp3",
-    "brush": "audio/words/brush.mp3",
-    "can": "audio/words/can.mp3",
-    "christmas": "audio/words/christmas.mp3",
-    "do": "audio/words/do.mp3",
-    "does": "audio/words/does.mp3",
-    "face": "audio/words/face.mp3",
-    "fingers": "audio/words/fingers.mp3",
-    "happy": "audio/words/happy.mp3",
-    "has": "audio/words/has.mp3",
-    "have": "audio/words/have.mp3",
-    "how": "audio/words/how.mp3",
-    "i": "audio/words/i.mp3",
-    "in": "audio/words/in.mp3",
-    "instrument": "audio/words/instrument.mp3",
-    "is": "audio/words/is.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter t": "audio/words/letter-t.mp3",
-    "like": "audio/words/like.mp3",
-    "live": "audio/words/live.mp3",
-    "lives": "audio/words/lives.mp3",
-    "make": "audio/words/make.mp3",
-    "makes": "audio/words/makes.mp3",
-    "many": "audio/words/many.mp3",
-    "mouth": "audio/words/mouth.mp3",
-    "musical": "audio/words/musical.mp3",
-    "my": "audio/words/my.mp3",
-    "on": "audio/words/on.mp3",
-    "one": "audio/words/one.mp3",
-    "or": "audio/words/or.mp3",
-    "play": "audio/words/play.mp3",
-    "rectangle": "audio/words/rectangle.mp3",
-    "say": "audio/words/say.mp3",
-    "shape": "audio/words/shape.mp3",
-    "sides": "audio/words/sides.mp3",
-    "sound": "audio/words/sound.mp3",
-    "square": "audio/words/square.mp3",
-    "t": "audio/words/t.mp3",
-    "taller": "audio/words/taller.mp3",
-    "tank": "audio/words/tank.mp3",
-    "taxi": "audio/words/taxi.mp3",
-    "teacher": "audio/words/teacher.mp3",
-    "teeth": "audio/words/teeth.mp3",
-    "ten": "audio/words/ten.mp3",
-    "thanksgiving": "audio/words/thanksgiving.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "three": "audio/words/three.mp3",
-    "to": "audio/words/to.mp3",
-    "toast": "audio/words/toast.mp3",
-    "touch": "audio/words/touch.mp3",
-    "tree": "audio/words/tree.mp3",
-    "triangle": "audio/words/triangle.mp3",
-    "trumpet": "audio/words/trumpet.mp3",
-    "turtle": "audio/words/turtle.mp3",
-    "want": "audio/words/want.mp3",
-    "we": "audio/words/we.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "where": "audio/words/where.mp3",
-    "which": "audio/words/which.mp3",
-    "with": "audio/words/with.mp3",
-    "you": "audio/words/you.mp3",
-    "your": "audio/words/your.mp3"
+  {
+   "word": "taxi",
+   "cn": "出租车",
+   "tag": "word",
+   "image": "images/t-taxi.webp",
+   "dialog": [
+    {
+     "q": "What sound does taxi begin with?",
+     "a": [
+      "Taxi begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "taxi 以什么音开头？",
+     "a_cn": [
+      "taxi 以 /t/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-taxi-begin-with-f0f4ad.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-taxi-begins-with-the-sound-t-e78973.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does taxi begin with?",
+     "a": [
+      "Taxi begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "taxi 以哪个字母开头？",
+     "a_cn": [
+      "taxi 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-taxi-begin-with-18d9ce.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-taxi-begins-with-letter-t-5ad804.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-taxi-cb8519.mp3"
+  },
+  {
+   "word": "turtle",
+   "cn": "乌龟",
+   "tag": "word",
+   "image": "images/t-words-1-turtle.webp",
+   "dialog": [
+    {
+     "q": "What's this animal?",
+     "a": [
+      "It's a turtle."
+     ],
+     "key": [
+      "turtle"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是乌龟。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-animal-ac42e5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-it-s-a-turtle-505865.mp3"
+     ]
+    },
+    {
+     "q": "What sound does turtle begin with?",
+     "a": [
+      "Turtle begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "turtle 的开头是什么音？",
+     "a_cn": [
+      "turtle 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-turtle-begin-with-3cf807.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-turtle-begins-with-the-sound-t-d5d1c3.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does turtle begin with?",
+     "a": [
+      "Turtle begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "turtle 以哪个字母开头？",
+     "a_cn": [
+      "turtle 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-turtle-begin-with-c64265.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-turtle-begins-with-letter-t-2b5376.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-turtle-c1e80d.mp3"
+  },
+  {
+   "word": "toast",
+   "cn": "吐司",
+   "tag": "word",
+   "image": "images/t-words-1-toast.webp",
+   "dialog": [
+    {
+     "q": "What shape is the toast like?",
+     "a": [
+      "The toast is like a square."
+     ],
+     "key": [
+      "square"
+     ],
+     "q_cn": "吐司像什么形状？",
+     "a_cn": [
+      "吐司像正方形。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-shape-is-the-toast-like-47eea1.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-the-toast-is-like-a-square-eaefcd.mp3"
+     ],
+     "image": "images/k2-t-toast-square.webp"
+    },
+    {
+     "q": "What sound does toast begin with?",
+     "a": [
+      "Toast begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "toast 的开头是什么音？",
+     "a_cn": [
+      "toast 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-toast-begin-with-f6a69a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-toast-begins-with-the-sound-t-b50a8c.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does toast begin with?",
+     "a": [
+      "Toast begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "toast 以哪个字母开头？",
+     "a_cn": [
+      "toast 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-toast-begin-with-721405.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-toast-begins-with-letter-t-3fcbac.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-toast-b08d69.mp3"
+  },
+  {
+   "word": "brush",
+   "cn": "刷牙",
+   "tag": "word",
+   "image": "images/t-words-1-brush.webp",
+   "dialog": [
+    {
+     "q": "What can you do with your teeth?",
+     "a": [
+      "I can brush my teeth."
+     ],
+     "key": [
+      "brush"
+     ],
+     "q_cn": "你的牙齿能做什么？",
+     "a_cn": [
+      "我可以刷牙。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-can-you-do-with-your-teeth-70042e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-i-can-brush-my-teeth-75ec82.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does brush begin with?",
+     "a": [
+      "Brush begins with letter B."
+     ],
+     "key": [
+      "b"
+     ],
+     "q_cn": "brush 以哪个字母开头？",
+     "a_cn": [
+      "brush 以字母 B 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-brush-begin-with-3c5b97.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-brush-begins-with-letter-b-3100e3.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-brush-7dd6ea.mp3"
+  },
+  {
+   "word": "ten",
+   "cn": "十",
+   "tag": "word",
+   "image": "images/t-words-1-ten.webp",
+   "dialog": [
+    {
+     "q": "How many fingers do you have?",
+     "a": [
+      "I have ten fingers."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "你有几根手指？",
+     "a_cn": [
+      "我有十根手指。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-how-many-fingers-do-you-have-a3d9a9.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-i-have-ten-fingers-1501e2.mp3"
+     ]
+    },
+    {
+     "q": "What sound does ten begin with?",
+     "a": [
+      "Ten begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "ten 的开头是什么音？",
+     "a_cn": [
+      "ten 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-ten-begin-with-c111d1.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-ten-begins-with-the-sound-t-ee533f.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does ten begin with?",
+     "a": [
+      "Ten begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "ten 以哪个字母开头？",
+     "a_cn": [
+      "ten 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-ten-begin-with-092177.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-ten-begins-with-letter-t-dd4afc.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-ten-8e942d.mp3"
+  },
+  {
+   "word": "trumpet",
+   "cn": "小号",
+   "tag": "word",
+   "image": "images/t-words-2-trumpet.webp",
+   "dialog": [
+    {
+     "q": "What's this musical instrument?",
+     "a": [
+      "It's a trumpet.",
+      "I can play the trumpet with my mouth."
+     ],
+     "key": [
+      "trumpet"
+     ],
+     "q_cn": "这是什么乐器？",
+     "a_cn": [
+      "这是小号。",
+      "我可以用嘴吹小号。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-musical-instrument-4ac65f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3",
+      "audio/sentences/k2-letter-t/a-i-can-play-the-trumpet-with-my-mouth-da6ae3.mp3"
+     ]
+    },
+    {
+     "q": "What sound does trumpet begin with?",
+     "a": [
+      "Trumpet begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "trumpet 的开头是什么音？",
+     "a_cn": [
+      "trumpet 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-trumpet-begin-with-8c4e33.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-trumpet-begins-with-the-sound-t-b28f05.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does trumpet begin with?",
+     "a": [
+      "Trumpet begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "trumpet 以哪个字母开头？",
+     "a_cn": [
+      "trumpet 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-trumpet-begin-with-e7f4c0.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-trumpet-begins-with-letter-t-3fcafe.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-trumpet-467e0e.mp3"
+  },
+  {
+   "word": "tree",
+   "cn": "树",
+   "tag": "word",
+   "image": "images/t-words-2-tree.webp",
+   "dialog": [
+    {
+     "q": "What's this?",
+     "a": [
+      "It's a Christmas tree."
+     ],
+     "key": [
+      "tree"
+     ],
+     "q_cn": "这是什么？",
+     "a_cn": [
+      "这是圣诞树。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-it-s-a-christmas-tree-0edfc3.mp3"
+     ]
+    },
+    {
+     "q": "What sound does tree begin with?",
+     "a": [
+      "Tree begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "tree 的开头是什么音？",
+     "a_cn": [
+      "tree 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tree-begin-with-d64103.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-tree-begins-with-the-sound-t-d4cafb.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does tree begin with?",
+     "a": [
+      "Tree begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "tree 以哪个字母开头？",
+     "a_cn": [
+      "tree 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tree-begin-with-c2bca8.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-tree-begins-with-letter-t-0ea563.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-tree-60e7a8.mp3"
+  },
+  {
+   "word": "teacher",
+   "cn": "老师",
+   "tag": "word",
+   "image": "images/t-words-2-teacher.webp",
+   "dialog": [
+    {
+     "q": "What do you want to be?",
+     "a": [
+      "I want to be a teacher."
+     ],
+     "key": [
+      "teacher"
+     ],
+     "q_cn": "你想成为什么？",
+     "a_cn": [
+      "我想当老师。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-do-you-want-to-be-222838.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-i-want-to-be-a-teacher-23ae80.mp3"
+     ]
+    },
+    {
+     "q": "What sound does teacher begin with?",
+     "a": [
+      "Teacher begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "teacher 的开头是什么音？",
+     "a_cn": [
+      "teacher 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-teacher-begin-with-3e205a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-teacher-begins-with-the-sound-t-bfbf22.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does teacher begin with?",
+     "a": [
+      "Teacher begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "teacher 以哪个字母开头？",
+     "a_cn": [
+      "teacher 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-teacher-begin-with-c03491.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-teacher-begins-with-letter-t-e4207e.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-teacher-de59e1.mp3"
+  },
+  {
+   "word": "tank",
+   "cn": "鱼缸",
+   "tag": "word",
+   "image": "images/t-words-2-tank.webp",
+   "dialog": [
+    {
+     "q": "Where does a turtle live?",
+     "a": [
+      "A turtle lives in the tank."
+     ],
+     "key": [
+      "tank"
+     ],
+     "q_cn": "乌龟住在哪里？",
+     "a_cn": [
+      "乌龟住在水箱里。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-where-does-a-turtle-live-1d9182.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
+     ]
+    },
+    {
+     "q": "What sound does tank begin with?",
+     "a": [
+      "Tank begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "tank 的开头是什么音？",
+     "a_cn": [
+      "tank 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tank-begin-with-86465d.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-tank-begins-with-the-sound-t-5ee03d.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does tank begin with?",
+     "a": [
+      "Tank begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "tank 以哪个字母开头？",
+     "a_cn": [
+      "tank 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tank-begin-with-ca5834.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-tank-begins-with-letter-t-4fa4e9.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-tank-38b4ed.mp3"
+  },
+  {
+   "word": "triangle",
+   "cn": "三角形",
+   "tag": "word",
+   "image": "images/t-words-3-triangle.webp",
+   "dialog": [
+    {
+     "q": "What's this shape?",
+     "a": [
+      "It's a triangle.",
+      "A triangle has three sides."
+     ],
+     "key": [
+      "triangle"
+     ],
+     "q_cn": "这是什么形状？",
+     "a_cn": [
+      "这是三角形。",
+      "三角形有三条边。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-shape-6b1ce1.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-it-s-a-triangle-e6b316.mp3",
+      "audio/sentences/k2-letter-t/a-a-triangle-has-three-sides-e0e69f.mp3"
+     ]
+    },
+    {
+     "q": "What sound does triangle begin with?",
+     "a": [
+      "Triangle begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "triangle 的开头是什么音？",
+     "a_cn": [
+      "triangle 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-triangle-begin-with-162aa9.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-triangle-begins-with-the-sound-t-112d45.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does triangle begin with?",
+     "a": [
+      "Triangle begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "triangle 以哪个字母开头？",
+     "a_cn": [
+      "triangle 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-triangle-begin-wit-df1e76.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-triangle-begins-with-letter-t-df1088.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-triangle-1915d2.mp3"
+  },
+  {
+   "word": "touch",
+   "cn": "触摸",
+   "tag": "word",
+   "image": "images/t-words-3-touch.webp",
+   "dialog": [
+    {
+     "q": "Can you touch your face?",
+     "a": [
+      "I can touch my face."
+     ],
+     "key": [
+      "touch"
+     ],
+     "q_cn": "你能摸摸你的脸吗？",
+     "a_cn": [
+      "我可以摸我的脸。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-can-you-touch-your-face-2c640c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-i-can-touch-my-face-2583db.mp3"
+     ]
+    },
+    {
+     "q": "What sound does touch begin with?",
+     "a": [
+      "Touch begins with the sound /t/."
+     ],
+     "key": [
+      "/t/"
+     ],
+     "q_cn": "touch 的开头是什么音？",
+     "a_cn": [
+      "touch 开头是 /t/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-touch-begin-with-c5e0ae.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-touch-begins-with-the-sound-t-959cc2.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does touch begin with?",
+     "a": [
+      "Touch begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "touch 以哪个字母开头？",
+     "a_cn": [
+      "touch 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-touch-begin-with-1f2001.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-touch-begins-with-letter-t-692e96.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-touch-a214bb.mp3"
+  },
+  {
+   "word": "rectangle",
+   "cn": "长方形",
+   "tag": "word",
+   "image": "images/t-words-3-rectangle.webp",
+   "dialog": [
+    {
+     "q": "Which one is taller, the rectangle or the square?",
+     "a": [
+      "The rectangle is taller."
+     ],
+     "key": [
+      "rectangle"
+     ],
+     "q_cn": "长方形和正方形，哪个更高？",
+     "a_cn": [
+      "长方形更高。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-one-is-taller-the-rectangle-or-bf4884.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-the-rectangle-is-taller-78b69a.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does rectangle begin with?",
+     "a": [
+      "Rectangle begins with letter R."
+     ],
+     "key": [
+      "r"
+     ],
+     "q_cn": "rectangle 以哪个字母开头？",
+     "a_cn": [
+      "rectangle 以字母 R 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-rectangle-begin-wi-5070e7.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-rectangle-begins-with-letter-r-806069.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-rectangle-93886d.mp3"
+  },
+  {
+   "word": "Thanksgiving",
+   "cn": "感恩节",
+   "tag": "word",
+   "image": "images/t-words-3-thanksgiving.webp",
+   "dialog": [
+    {
+     "q": "What do we say on Thanksgiving?",
+     "a": [
+      "Happy Thanksgiving!"
+     ],
+     "key": [
+      "thanksgiving"
+     ],
+     "q_cn": "感恩节我们说什么？",
+     "a_cn": [
+      "感恩节快乐！"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-what-do-we-say-on-thanksgiving-4711b9.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-happy-thanksgiving-d2e8ff.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does Thanksgiving begin with?",
+     "a": [
+      "Thanksgiving begins with letter T."
+     ],
+     "key": [
+      "t"
+     ],
+     "q_cn": "Thanksgiving 以哪个字母开头？",
+     "a_cn": [
+      "Thanksgiving 以字母 T 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-thanksgiving-begin-65c1fa.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-t/a-thanksgiving-begins-with-letter-t-fa19e7.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-t/q-which-one-is-thanksgiving-232700.mp3"
   }
+ ],
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ },
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "animal": "audio/words/animal.mp3",
+  "b": "audio/words/b.mp3",
+  "be": "audio/words/be.mp3",
+  "begin": "audio/words/begin.mp3",
+  "begins": "audio/words/begins.mp3",
+  "brush": "audio/words/brush.mp3",
+  "can": "audio/words/can.mp3",
+  "christmas": "audio/words/christmas.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "face": "audio/words/face.mp3",
+  "fingers": "audio/words/fingers.mp3",
+  "happy": "audio/words/happy.mp3",
+  "has": "audio/words/has.mp3",
+  "have": "audio/words/have.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "in": "audio/words/in.mp3",
+  "instrument": "audio/words/instrument.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter t": "audio/words/letter-t.mp3",
+  "like": "audio/words/like.mp3",
+  "live": "audio/words/live.mp3",
+  "lives": "audio/words/lives.mp3",
+  "make": "audio/words/make.mp3",
+  "makes": "audio/words/makes.mp3",
+  "many": "audio/words/many.mp3",
+  "mouth": "audio/words/mouth.mp3",
+  "musical": "audio/words/musical.mp3",
+  "my": "audio/words/my.mp3",
+  "on": "audio/words/on.mp3",
+  "one": "audio/words/one.mp3",
+  "or": "audio/words/or.mp3",
+  "play": "audio/words/play.mp3",
+  "r": "audio/words/r.mp3",
+  "rectangle": "audio/words/rectangle.mp3",
+  "say": "audio/words/say.mp3",
+  "shape": "audio/words/shape.mp3",
+  "sides": "audio/words/sides.mp3",
+  "sound": "audio/words/sound.mp3",
+  "square": "audio/words/square.mp3",
+  "t": "audio/words/t.mp3",
+  "taller": "audio/words/taller.mp3",
+  "tank": "audio/words/tank.mp3",
+  "taxi": "audio/words/taxi.mp3",
+  "teacher": "audio/words/teacher.mp3",
+  "teeth": "audio/words/teeth.mp3",
+  "ten": "audio/words/ten.mp3",
+  "thanksgiving": "audio/words/thanksgiving.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "three": "audio/words/three.mp3",
+  "to": "audio/words/to.mp3",
+  "toast": "audio/words/toast.mp3",
+  "touch": "audio/words/touch.mp3",
+  "tree": "audio/words/tree.mp3",
+  "triangle": "audio/words/triangle.mp3",
+  "trumpet": "audio/words/trumpet.mp3",
+  "turtle": "audio/words/turtle.mp3",
+  "want": "audio/words/want.mp3",
+  "we": "audio/words/we.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "where": "audio/words/where.mp3",
+  "which": "audio/words/which.mp3",
+  "with": "audio/words/with.mp3",
+  "you": "audio/words/you.mp3",
+  "your": "audio/words/your.mp3"
+ }
 }

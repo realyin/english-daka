@@ -1,181 +1,242 @@
 {
-  "seq": 405,
-  "level": "K2",
-  "group": "常见词 Sight Words",
-  "badge": "all",
-  "title": "Sight Words · all",
-  "cards": [
+ "seq": 405,
+ "level": "K2",
+ "group": "常见词 Sight Words",
+ "badge": "all",
+ "cover": "images/sw-all.webp",
+ "title": "Sight Words · all",
+ "cards": [
+  {
+   "word": "all",
+   "cn": "全部",
+   "tag": "sight word",
+   "image": "images/sw-all.webp",
+   "quiz": false,
+   "dialog": [
     {
-      "word": "all",
-      "cn": "全部",
-      "tag": "sight word",
-      "image": "images/sw-all.webp",
-      "quiz": false,
-      "dialog": [
-        {
-          "q": "What's this sight word?",
-          "a": [
-            "It's sight word all."
-          ],
-          "key": [
-            "all"
-          ],
-          "q_cn": "这是什么常见词？",
-          "a_cn": [
-            "是常见词 all。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-all/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-all/a-it-s-sight-word-all-b38dd2.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-all-0bb38f.mp3"
-    },
-    {
-      "word": "birds",
-      "cn": "鸟",
-      "tag": "word",
-      "image": "images/sw-all-birds-wings.webp",
-      "dialog": [
-        {
-          "q": "Do all the birds have wings?",
-          "a": [
-            "Yes, all the birds have wings."
-          ],
-          "key": [
-            "wings"
-          ],
-          "q_cn": "所有的鸟都有翅膀吗？",
-          "a_cn": [
-            "是的，所有的鸟都有翅膀。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-all/q-do-all-the-birds-have-wings-1bac92.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-birds-be030e.mp3"
-    },
-    {
-      "word": "play",
-      "cn": "玩",
-      "tag": "word",
-      "image": "images/sw-all-play.webp",
-      "dialog": [
-        {
-          "q": "What do Dan and Cam do?",
-          "a": [
-            "Dan and Cam play all day."
-          ],
-          "key": [
-            "play"
-          ],
-          "q_cn": "丹和卡姆做什么？",
-          "a_cn": [
-            "丹和卡姆玩了一整天。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-all/q-what-do-dan-and-cam-do-7a6478.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-all/a-dan-and-cam-play-all-day-778ca8.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-play-6eb441.mp3"
-    },
-    {
-      "word": "questions",
-      "cn": "提问",
-      "tag": "word",
-      "image": "images/sw-all-questions.webp",
-      "dialog": [
-        {
-          "q": "What's your hobby?",
-          "a": [
-            "My hobby is asking questions."
-          ],
-          "key": [
-            "questions"
-          ],
-          "q_cn": "你的爱好是什么？",
-          "a_cn": [
-            "我的爱好是提问题。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-all/q-what-s-your-hobby-e5908a.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-all/a-my-hobby-is-asking-questions-c75d3b.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-questions-9ed691.mp3"
-    },
-    {
-      "word": "skip",
-      "cn": "跳",
-      "tag": "word",
-      "image": "images/sw-cvc-skip.webp",
-      "dialog": [
-        {
-          "q": "Can you skip?",
-          "a": [
-            "Yes, I can skip."
-          ],
-          "key": [
-            "skip"
-          ],
-          "q_cn": "你会跳绳吗？",
-          "a_cn": [
-            "会，我会跳绳。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-all/q-can-you-skip-3ab62f.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-all/a-yes-i-can-skip-e29bc2.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-skip-a92071.mp3"
+     "q": "What's this sight word?",
+     "a": [
+      "It's sight word all."
+     ],
+     "key": [
+      "all"
+     ],
+     "q_cn": "这是什么常见词？",
+     "a_cn": [
+      "是常见词 all。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-what-s-this-sight-word-51830e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-it-s-sight-word-all-b38dd2.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "all": "audio/words/all.mp3",
-    "and": "audio/words/and.mp3",
-    "asking": "audio/words/asking.mp3",
-    "birds": "audio/words/birds.mp3",
-    "cam": "audio/words/cam.mp3",
-    "can": "audio/words/can.mp3",
-    "dan": "audio/words/dan.mp3",
-    "day": "audio/words/day.mp3",
-    "do": "audio/words/do.mp3",
-    "have": "audio/words/have.mp3",
-    "hobby": "audio/words/hobby.mp3",
-    "i": "audio/words/i.mp3",
-    "is": "audio/words/is.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "my": "audio/words/my.mp3",
-    "play": "audio/words/play.mp3",
-    "questions": "audio/words/questions.mp3",
-    "sight": "audio/words/sight.mp3",
-    "skip": "audio/words/skip.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "wings": "audio/words/wings.mp3",
-    "word": "audio/words/word.mp3",
-    "yes": "audio/words/yes.mp3",
-    "you": "audio/words/you.mp3",
-    "your": "audio/words/your.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-all-0bb38f.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "birds",
+   "cn": "鸟",
+   "tag": "word",
+   "image": "images/sw-all-birds-wings.webp",
+   "dialog": [
+    {
+     "q": "Do all the birds have wings?",
+     "a": [
+      "Yes, all the birds have wings."
+     ],
+     "key": [
+      "wings"
+     ],
+     "q_cn": "所有的鸟都有翅膀吗？",
+     "a_cn": [
+      "是的，所有的鸟都有翅膀。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-do-all-the-birds-have-wings-1bac92.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
+     ],
+     "image": "images/k2-all-birds-wings.webp"
+    },
+    {
+     "q": "Can all the birds fly?",
+     "a": [
+      "Yes, all the birds can fly."
+     ],
+     "key": [
+      "fly"
+     ],
+     "q_cn": "所有的鸟都会飞吗？",
+     "a_cn": [
+      "是的，所有的鸟都会飞。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-can-all-the-birds-fly-ff7a8f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-yes-all-the-birds-can-fly-531e1c.mp3"
+     ],
+     "image": "images/k2-all-birds-fly.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-birds-be030e.mp3"
+  },
+  {
+   "word": "play",
+   "cn": "玩",
+   "tag": "word",
+   "image": "images/sw-all-play.webp",
+   "dialog": [
+    {
+     "q": "What do Dan and Cam do?",
+     "a": [
+      "Dan and Cam play all day."
+     ],
+     "key": [
+      "play"
+     ],
+     "q_cn": "丹和卡姆做什么？",
+     "a_cn": [
+      "丹和卡姆玩了一整天。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-what-do-dan-and-cam-do-7a6478.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-dan-and-cam-play-all-day-778ca8.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-play-6eb441.mp3"
+  },
+  {
+   "word": "questions",
+   "cn": "提问",
+   "tag": "word",
+   "image": "images/sw-all-questions.webp",
+   "dialog": [
+    {
+     "q": "What's your hobby?",
+     "a": [
+      "My hobby is asking questions."
+     ],
+     "key": [
+      "questions"
+     ],
+     "q_cn": "你的爱好是什么？",
+     "a_cn": [
+      "我的爱好是提问题。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-what-s-your-hobby-e5908a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-my-hobby-is-asking-questions-c75d3b.mp3"
+     ]
+    },
+    {
+     "q": "What is dad's hobby?",
+     "a": [
+      "Dad's hobby is running."
+     ],
+     "key": [
+      "running"
+     ],
+     "q_cn": "爸爸的爱好是什么？",
+     "a_cn": [
+      "爸爸的爱好是跑步。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-what-is-dad-s-hobby-cec206.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-dad-s-hobby-is-running-0c93f0.mp3"
+     ],
+     "image": "images/k2-dad-running.webp"
+    },
+    {
+     "q": "What is mom's hobby?",
+     "a": [
+      "Mom's hobby is eating."
+     ],
+     "key": [
+      "eating"
+     ],
+     "q_cn": "妈妈的爱好是什么？",
+     "a_cn": [
+      "妈妈的爱好是吃东西。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-what-is-mom-s-hobby-75c54f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-mom-s-hobby-is-eating-b108fe.mp3"
+     ],
+     "image": "images/k2-mom-eating.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-questions-9ed691.mp3"
+  },
+  {
+   "word": "skip",
+   "cn": "跳",
+   "tag": "word",
+   "image": "images/sw-cvc-skip.webp",
+   "dialog": [
+    {
+     "q": "Can you skip?",
+     "a": [
+      "Yes, I can skip."
+     ],
+     "key": [
+      "skip"
+     ],
+     "q_cn": "你会跳绳吗？",
+     "a_cn": [
+      "会，我会跳绳。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-all/q-can-you-skip-3ab62f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-all/a-yes-i-can-skip-e29bc2.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-skip-a92071.mp3"
   }
+ ],
+ "word_audio": {
+  "all": "audio/words/all.mp3",
+  "and": "audio/words/and.mp3",
+  "asking": "audio/words/asking.mp3",
+  "birds": "audio/words/birds.mp3",
+  "cam": "audio/words/cam.mp3",
+  "can": "audio/words/can.mp3",
+  "dad's": "audio/words/dad-s.mp3",
+  "dan": "audio/words/dan.mp3",
+  "day": "audio/words/day.mp3",
+  "do": "audio/words/do.mp3",
+  "eating": "audio/words/eating.mp3",
+  "fly": "audio/words/fly.mp3",
+  "have": "audio/words/have.mp3",
+  "hobby": "audio/words/hobby.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "mom's": "audio/words/mom-s.mp3",
+  "my": "audio/words/my.mp3",
+  "play": "audio/words/play.mp3",
+  "questions": "audio/words/questions.mp3",
+  "running": "audio/words/running.mp3",
+  "sight": "audio/words/sight.mp3",
+  "skip": "audio/words/skip.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "wings": "audio/words/wings.mp3",
+  "word": "audio/words/word.mp3",
+  "yes": "audio/words/yes.mp3",
+  "you": "audio/words/you.mp3",
+  "your": "audio/words/your.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

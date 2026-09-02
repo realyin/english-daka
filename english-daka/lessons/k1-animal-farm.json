@@ -1,210 +1,272 @@
 {
-  "seq": 401,
-  "level": "K1",
-  "group": "动物 Animals",
-  "badge": "农场",
-  "title": "Animals · Farm Animals 农场动物",
-  "cards": [
+ "seq": 401,
+ "level": "K1",
+ "group": "动物 Animals",
+ "badge": "农场",
+ "cover": "images/k1-place-farm.webp",
+ "title": "Animals · Farm Animals 农场动物",
+ "cards": [
+  {
+   "word": "farm",
+   "cn": "农场",
+   "tag": "word",
+   "image": "images/k1-place-farm.webp",
+   "dialog": [
     {
-      "word": "cow",
-      "cn": "奶牛",
-      "tag": "word",
-      "image": "images/k1-animal-cow.webp",
-      "dialog": [
-        {
-          "q": "What's this farm animal?",
-          "a": [
-            "It's a cow."
-          ],
-          "key": [
-            "cow"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是奶牛。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
-          ]
-        },
-        {
-          "q": "Where does a cow live?",
-          "a": [
-            "A cow lives on the farm."
-          ],
-          "key": [
-            "farm"
-          ],
-          "q_cn": "奶牛住在哪里？",
-          "a_cn": [
-            "奶牛住在农场。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-cow-live-5d4b5f.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-a-cow-lives-on-the-farm-4b5f40.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-cow-af08c8.mp3"
-    },
-    {
-      "word": "sheep",
-      "cn": "绵羊",
-      "tag": "word",
-      "image": "images/k1-animal-sheep.webp",
-      "dialog": [
-        {
-          "q": "What's this farm animal?",
-          "a": [
-            "It's a sheep."
-          ],
-          "key": [
-            "sheep"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是绵羊。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
-          ]
-        },
-        {
-          "q": "Where does a sheep live?",
-          "a": [
-            "A sheep lives on the farm."
-          ],
-          "key": [
-            "farm"
-          ],
-          "q_cn": "绵羊住在哪里？",
-          "a_cn": [
-            "绵羊住在农场。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-sheep-live-7f8c3c.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-a-sheep-lives-on-the-farm-fd4df8.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-sheep-7b6c78.mp3"
-    },
-    {
-      "word": "chicken",
-      "cn": "小鸡",
-      "tag": "word",
-      "image": "images/k1-animal-chicken.webp",
-      "dialog": [
-        {
-          "q": "What's this farm animal?",
-          "a": [
-            "It's a chicken."
-          ],
-          "key": [
-            "chicken"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是小鸡。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
-          ]
-        },
-        {
-          "q": "Where does a chicken live?",
-          "a": [
-            "A chicken lives on the farm."
-          ],
-          "key": [
-            "farm"
-          ],
-          "q_cn": "小鸡住在哪里？",
-          "a_cn": [
-            "小鸡住在农场。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-chicken-live-ea5132.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-a-chicken-lives-on-the-farm-c75f75.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-chicken-2f1724.mp3"
-    },
-    {
-      "word": "horse",
-      "cn": "马",
-      "tag": "word",
-      "image": "images/k1-animal-horse.webp",
-      "dialog": [
-        {
-          "q": "What's this farm animal?",
-          "a": [
-            "It's a horse."
-          ],
-          "key": [
-            "horse"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是马。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
-          ]
-        },
-        {
-          "q": "Where does a horse live?",
-          "a": [
-            "A horse lives on the farm."
-          ],
-          "key": [
-            "farm"
-          ],
-          "q_cn": "马住在哪里？",
-          "a_cn": [
-            "马住在农场。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-horse-live-03d024.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-farm/a-a-horse-lives-on-the-farm-7f71d7.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-horse-b80088.mp3"
+     "q": "What's this place?",
+     "a": [
+      "It's a farm."
+     ],
+     "key": [
+      "farm"
+     ],
+     "q_cn": "这是什么地方？",
+     "a_cn": [
+      "这是农场。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-place-a3f797.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-it-s-a-farm-349ae8.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "animal": "audio/words/animal.mp3",
-    "chicken": "audio/words/chicken.mp3",
-    "cow": "audio/words/cow.mp3",
-    "does": "audio/words/does.mp3",
-    "farm": "audio/words/farm.mp3",
-    "horse": "audio/words/horse.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "live": "audio/words/live.mp3",
-    "lives": "audio/words/lives.mp3",
-    "on": "audio/words/on.mp3",
-    "sheep": "audio/words/sheep.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "where": "audio/words/where.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-farm-4f1857.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "cow",
+   "cn": "奶牛",
+   "tag": "word",
+   "image": "images/k1-animal-cow.webp",
+   "dialog": [
+    {
+     "q": "What's this farm animal?",
+     "a": [
+      "It's a cow."
+     ],
+     "key": [
+      "cow"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是奶牛。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
+     ]
+    },
+    {
+     "q": "Where does a cow live?",
+     "a": [
+      "A cow lives on the farm."
+     ],
+     "key": [
+      "farm"
+     ],
+     "q_cn": "奶牛住在哪里？",
+     "a_cn": [
+      "奶牛住在农场。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-cow-live-5d4b5f.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-a-cow-lives-on-the-farm-4b5f40.mp3"
+     ],
+     "image": "images/k1-farm-cow.webp"
+    },
+    {
+     "q": "What farm animal do you like? Why?",
+     "a": [
+      "I like the cow, because we can get milk from the cow."
+     ],
+     "key": [
+      "cow"
+     ],
+     "practice": false,
+     "q_cn": "你喜欢哪种农场动物？为什么？",
+     "a_cn": [
+      "我喜欢奶牛，因为奶牛能产牛奶。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-farm-animal-do-you-like-why-263f69.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-i-like-the-cow-because-we-can-get-mi-eab200.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-cow-af08c8.mp3"
+  },
+  {
+   "word": "sheep",
+   "cn": "绵羊",
+   "tag": "word",
+   "image": "images/k1-animal-sheep.webp",
+   "dialog": [
+    {
+     "q": "What's this farm animal?",
+     "a": [
+      "It's a sheep."
+     ],
+     "key": [
+      "sheep"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是绵羊。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
+     ]
+    },
+    {
+     "q": "Where does a sheep live?",
+     "a": [
+      "A sheep lives on the farm."
+     ],
+     "key": [
+      "farm"
+     ],
+     "q_cn": "绵羊住在哪里？",
+     "a_cn": [
+      "绵羊住在农场。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-sheep-live-7f8c3c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-a-sheep-lives-on-the-farm-fd4df8.mp3"
+     ],
+     "image": "images/k1-farm-sheep.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-sheep-7b6c78.mp3"
+  },
+  {
+   "word": "chicken",
+   "cn": "小鸡",
+   "tag": "word",
+   "image": "images/k1-animal-chicken.webp",
+   "dialog": [
+    {
+     "q": "What's this farm animal?",
+     "a": [
+      "It's a chicken."
+     ],
+     "key": [
+      "chicken"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是小鸡。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
+     ]
+    },
+    {
+     "q": "Where does a chicken live?",
+     "a": [
+      "A chicken lives on the farm."
+     ],
+     "key": [
+      "farm"
+     ],
+     "q_cn": "小鸡住在哪里？",
+     "a_cn": [
+      "小鸡住在农场。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-chicken-live-ea5132.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-a-chicken-lives-on-the-farm-c75f75.mp3"
+     ],
+     "image": "images/k1-farm-chicken.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-chicken-2f1724.mp3"
+  },
+  {
+   "word": "horse",
+   "cn": "马",
+   "tag": "word",
+   "image": "images/k1-animal-horse.webp",
+   "dialog": [
+    {
+     "q": "What's this farm animal?",
+     "a": [
+      "It's a horse."
+     ],
+     "key": [
+      "horse"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是马。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-what-s-this-farm-animal-fba350.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
+     ]
+    },
+    {
+     "q": "Where does a horse live?",
+     "a": [
+      "A horse lives on the farm."
+     ],
+     "key": [
+      "farm"
+     ],
+     "q_cn": "马住在哪里？",
+     "a_cn": [
+      "马住在农场。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-farm/q-where-does-a-horse-live-03d024.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-farm/a-a-horse-lives-on-the-farm-7f71d7.mp3"
+     ],
+     "image": "images/k1-farm-horse.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-farm/q-which-one-is-horse-b80088.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "animal": "audio/words/animal.mp3",
+  "because": "audio/words/because.mp3",
+  "can": "audio/words/can.mp3",
+  "chicken": "audio/words/chicken.mp3",
+  "cow": "audio/words/cow.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "farm": "audio/words/farm.mp3",
+  "from": "audio/words/from.mp3",
+  "get": "audio/words/get.mp3",
+  "horse": "audio/words/horse.mp3",
+  "i": "audio/words/i.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "live": "audio/words/live.mp3",
+  "lives": "audio/words/lives.mp3",
+  "milk": "audio/words/milk.mp3",
+  "on": "audio/words/on.mp3",
+  "place": "audio/words/place.mp3",
+  "sheep": "audio/words/sheep.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "we": "audio/words/we.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "where": "audio/words/where.mp3",
+  "why": "audio/words/why.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

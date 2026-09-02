@@ -1,179 +1,205 @@
 {
-  "seq": 703,
-  "level": "K1",
-  "group": "职业 Jobs",
-  "badge": "pilot",
-  "title": "Jobs · Pilot & Astronaut 飞行员和宇航员",
-  "cards": [
+ "seq": 703,
+ "level": "K1",
+ "group": "职业 Jobs",
+ "badge": "pilot",
+ "cover": "images/k1-job-pilot.webp",
+ "title": "Jobs · Pilot & Astronaut 飞行员和宇航员",
+ "cards": [
+  {
+   "word": "pilot",
+   "cn": "飞行员",
+   "tag": "word",
+   "image": "images/k1-job-pilot.webp",
+   "dialog": [
     {
-      "word": "pilot",
-      "cn": "飞行员",
-      "tag": "word",
-      "image": "images/k1-job-pilot.webp",
-      "dialog": [
-        {
-          "q": "What's this job?",
-          "a": [
-            "This is a pilot."
-          ],
-          "key": [
-            "pilot"
-          ],
-          "q_cn": "这是什么职业？",
-          "a_cn": [
-            "这是飞行员。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-job-078604.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-this-is-a-pilot-693a93.mp3"
-          ]
-        },
-        {
-          "q": "What can pilots do?",
-          "a": [
-            "Pilots can fly airplanes."
-          ],
-          "key": [
-            "airplanes"
-          ],
-          "q_cn": "飞行员能做什么？",
-          "a_cn": [
-            "飞行员会开飞机。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-can-pilots-do-b2b757.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-pilots-can-fly-airplanes-819a61.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-pilot-7dcb4b.mp3"
+     "q": "What's this job?",
+     "a": [
+      "This is a pilot."
+     ],
+     "key": [
+      "pilot"
+     ],
+     "q_cn": "这是什么职业？",
+     "a_cn": [
+      "这是飞行员。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-job-078604.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-this-is-a-pilot-693a93.mp3"
+     ]
     },
     {
-      "word": "airport",
-      "cn": "机场",
-      "tag": "word",
-      "image": "images/k1-job-airport.webp",
-      "dialog": [
-        {
-          "q": "What's this?",
-          "a": [
-            "This is an airport."
-          ],
-          "key": [
-            "airport"
-          ],
-          "q_cn": "这是什么？",
-          "a_cn": [
-            "这是机场。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-9a86f3.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-this-is-an-airport-40458d.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-airport-9e0465.mp3"
+     "q": "What can pilots do?",
+     "a": [
+      "Pilots can fly airplanes."
+     ],
+     "key": [
+      "airplanes"
+     ],
+     "q_cn": "飞行员能做什么？",
+     "a_cn": [
+      "飞行员会开飞机。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-can-pilots-do-b2b757.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-pilots-can-fly-airplanes-819a61.mp3"
+     ],
+     "image": "images/k1-pilot-fly.webp"
     },
     {
-      "word": "astronaut",
-      "cn": "宇航员",
-      "tag": "word",
-      "image": "images/k1-job-astronaut.webp",
-      "dialog": [
-        {
-          "q": "What's this job?",
-          "a": [
-            "This is an astronaut."
-          ],
-          "key": [
-            "astronaut"
-          ],
-          "q_cn": "这是什么职业？",
-          "a_cn": [
-            "这是宇航员。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-job-078604.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-this-is-an-astronaut-40f59b.mp3"
-          ]
-        },
-        {
-          "q": "What can astronauts do?",
-          "a": [
-            "Astronauts can fly into space."
-          ],
-          "key": [
-            "space"
-          ],
-          "q_cn": "宇航员能做什么？",
-          "a_cn": [
-            "宇航员会飞到太空。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-can-astronauts-do-e6c43a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-astronauts-can-fly-into-space-088dcc.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-astronaut-734a86.mp3"
-    },
-    {
-      "word": "spaceship",
-      "cn": "太空飞船",
-      "tag": "word",
-      "image": "images/k1-job-spaceship.webp",
-      "dialog": [
-        {
-          "q": "What's this?",
-          "a": [
-            "This is a spaceship."
-          ],
-          "key": [
-            "spaceship"
-          ],
-          "q_cn": "这是什么？",
-          "a_cn": [
-            "这是太空飞船。"
-          ],
-          "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-9a86f3.mp3",
-          "a_audio": [
-            "audio/sentences/k1-job-pilot/a-this-is-a-spaceship-2004c5.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-spaceship-b07c39.mp3"
+     "q": "What do you want to be?",
+     "a": [
+      "I want to be a pilot."
+     ],
+     "key": [
+      "pilot"
+     ],
+     "practice": false,
+     "q_cn": "你想成为什么？",
+     "a_cn": [
+      "我想成为一名飞行员。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-do-you-want-to-be-222838.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-i-want-to-be-a-pilot-f9cd52.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "airplanes": "audio/words/airplanes.mp3",
-    "airport": "audio/words/airport.mp3",
-    "an": "audio/words/an.mp3",
-    "astronaut": "audio/words/astronaut.mp3",
-    "astronauts": "audio/words/astronauts.mp3",
-    "can": "audio/words/can.mp3",
-    "do": "audio/words/do.mp3",
-    "fly": "audio/words/fly.mp3",
-    "into": "audio/words/into.mp3",
-    "is": "audio/words/is.mp3",
-    "job": "audio/words/job.mp3",
-    "pilot": "audio/words/pilot.mp3",
-    "pilots": "audio/words/pilots.mp3",
-    "space": "audio/words/space.mp3",
-    "spaceship": "audio/words/spaceship.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-pilot-7dcb4b.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "airport",
+   "cn": "机场",
+   "tag": "word",
+   "image": "images/k1-job-airport.webp",
+   "dialog": [
+    {
+     "q": "What's this?",
+     "a": [
+      "This is an airport."
+     ],
+     "key": [
+      "airport"
+     ],
+     "q_cn": "这是什么？",
+     "a_cn": [
+      "这是机场。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-9a86f3.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-this-is-an-airport-40458d.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-airport-9e0465.mp3"
+  },
+  {
+   "word": "astronaut",
+   "cn": "宇航员",
+   "tag": "word",
+   "image": "images/k1-job-astronaut.webp",
+   "dialog": [
+    {
+     "q": "What's this job?",
+     "a": [
+      "This is an astronaut."
+     ],
+     "key": [
+      "astronaut"
+     ],
+     "q_cn": "这是什么职业？",
+     "a_cn": [
+      "这是宇航员。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-job-078604.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-this-is-an-astronaut-40f59b.mp3"
+     ]
+    },
+    {
+     "q": "What can astronauts do?",
+     "a": [
+      "Astronauts can fly into space."
+     ],
+     "key": [
+      "space"
+     ],
+     "q_cn": "宇航员能做什么？",
+     "a_cn": [
+      "宇航员会飞到太空。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-can-astronauts-do-e6c43a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-astronauts-can-fly-into-space-088dcc.mp3"
+     ],
+     "image": "images/k1-astronaut-space.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-astronaut-734a86.mp3"
+  },
+  {
+   "word": "spaceship",
+   "cn": "太空飞船",
+   "tag": "word",
+   "image": "images/k1-job-spaceship.webp",
+   "dialog": [
+    {
+     "q": "What's this?",
+     "a": [
+      "This is a spaceship."
+     ],
+     "key": [
+      "spaceship"
+     ],
+     "q_cn": "这是什么？",
+     "a_cn": [
+      "这是太空飞船。"
+     ],
+     "q_audio": "audio/sentences/k1-job-pilot/q-what-s-this-9a86f3.mp3",
+     "a_audio": [
+      "audio/sentences/k1-job-pilot/a-this-is-a-spaceship-2004c5.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-job-pilot/q-which-one-is-spaceship-b07c39.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "airplanes": "audio/words/airplanes.mp3",
+  "airport": "audio/words/airport.mp3",
+  "an": "audio/words/an.mp3",
+  "astronaut": "audio/words/astronaut.mp3",
+  "astronauts": "audio/words/astronauts.mp3",
+  "be": "audio/words/be.mp3",
+  "can": "audio/words/can.mp3",
+  "do": "audio/words/do.mp3",
+  "fly": "audio/words/fly.mp3",
+  "i": "audio/words/i.mp3",
+  "into": "audio/words/into.mp3",
+  "is": "audio/words/is.mp3",
+  "job": "audio/words/job.mp3",
+  "pilot": "audio/words/pilot.mp3",
+  "pilots": "audio/words/pilots.mp3",
+  "space": "audio/words/space.mp3",
+  "spaceship": "audio/words/spaceship.mp3",
+  "this": "audio/words/this.mp3",
+  "to": "audio/words/to.mp3",
+  "want": "audio/words/want.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

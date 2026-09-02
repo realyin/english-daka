@@ -1,233 +1,285 @@
 {
-  "seq": 101,
-  "level": "K2",
-  "group": "字母 Letters",
-  "badge": "S",
-  "title": "Letter S · /s/",
-  "cards": [
+ "seq": 101,
+ "level": "K2",
+ "group": "字母 Letters",
+ "badge": "S",
+ "cover": "images/s-letter.webp",
+ "title": "Letter S · /s/",
+ "cards": [
+  {
+   "word": "letter S",
+   "cn": "字母 S",
+   "tag": "letter",
+   "image": "images/s-letter.webp",
+   "dialog": [
     {
-      "word": "letter S",
-      "cn": "字母 S",
-      "tag": "letter",
-      "image": "images/s-letter.webp",
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter S."
-          ],
-          "key": [
-            "s"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 S。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-it-s-letter-s-8d994f.mp3"
-          ]
-        },
-        {
-          "q": "What sound does letter S make?",
-          "a": [
-            "S makes the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "字母 S 发什么音？",
-          "a_cn": [
-            "S 发 /s/ 的音。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-letter-s-make-b8aaf8.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-s-makes-the-sound-s-371a5a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-letter-s-b35240.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 S。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-it-s-letter-s-8d994f.mp3"
+     ]
     },
     {
-      "word": "sea",
-      "cn": "大海",
-      "tag": "word",
-      "image": "images/s-sea.webp",
-      "dialog": [
-        {
-          "q": "What sound does sea begin with?",
-          "a": [
-            "Sea begins with the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "sea 以什么音开头？",
-          "a_cn": [
-            "sea 以 /s/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-sea-begin-with-09903a.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-sea-begins-with-the-sound-s-512134.mp3"
-          ]
-        },
-        {
-          "q": "Which letter does sea begin with?",
-          "a": [
-            "Sea begins with letter S."
-          ],
-          "key": [
-            "s"
-          ],
-          "q_cn": "sea 以哪个字母开头？",
-          "a_cn": [
-            "sea 以字母 S 开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-sea-begin-with-00b91c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-sea-begins-with-letter-s-40fba5.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sea-43761b.mp3"
-    },
-    {
-      "word": "sheep",
-      "cn": "绵羊",
-      "tag": "word",
-      "image": "images/s-words-sheep.webp",
-      "dialog": [
-        {
-          "q": "What sound does sheep begin with?",
-          "a": [
-            "Sheep begins with the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "sheep 以什么音开头？",
-          "a_cn": [
-            "sheep 以 /s/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-sheep-begin-with-1a8458.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-sheep-begins-with-the-sound-s-04aa4c.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sheep-7b6c78.mp3"
-    },
-    {
-      "word": "snake",
-      "cn": "蛇",
-      "tag": "word",
-      "image": "images/s-words-snake.webp",
-      "dialog": [
-        {
-          "q": "What sound does snake begin with?",
-          "a": [
-            "Snake begins with the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "snake 以什么音开头？",
-          "a_cn": [
-            "snake 以 /s/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-snake-begin-with-a8870b.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-s-e36696.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-snake-522028.mp3"
-    },
-    {
-      "word": "school",
-      "cn": "学校",
-      "tag": "word",
-      "image": "images/s-words-school.webp",
-      "dialog": [
-        {
-          "q": "What sound does school begin with?",
-          "a": [
-            "School begins with the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "school 以什么音开头？",
-          "a_cn": [
-            "school 以 /s/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-school-begin-with-f4fcd1.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-s-573a1d.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-school-515ed2.mp3"
-    },
-    {
-      "word": "sun",
-      "cn": "太阳",
-      "tag": "word",
-      "image": "images/s-words-sun.webp",
-      "dialog": [
-        {
-          "q": "What sound does sun begin with?",
-          "a": [
-            "Sun begins with the sound /s/."
-          ],
-          "key": [
-            "/s/"
-          ],
-          "q_cn": "sun 以什么音开头？",
-          "a_cn": [
-            "sun 以 /s/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-sun-begin-with-1dcffc.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-s-133725.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sun-46bf64.mp3"
+     "q": "What sound does letter S make?",
+     "a": [
+      "S makes the sound /s/."
+     ],
+     "key": [
+      "/s/"
+     ],
+     "q_cn": "字母 S 发什么音？",
+     "a_cn": [
+      "S 发 /s/ 的音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-letter-s-make-b8aaf8.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-s-makes-the-sound-s-371a5a.mp3"
+     ]
     }
-  ],
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-letter-s-b35240.mp3"
   },
-  "word_audio": {
-    "begin": "audio/words/begin.mp3",
-    "begins": "audio/words/begins.mp3",
-    "does": "audio/words/does.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter s": "audio/words/letter-s.mp3",
-    "make": "audio/words/make.mp3",
-    "makes": "audio/words/makes.mp3",
-    "s": "audio/words/s.mp3",
-    "school": "audio/words/school.mp3",
-    "sea": "audio/words/sea.mp3",
-    "sheep": "audio/words/sheep.mp3",
-    "snake": "audio/words/snake.mp3",
-    "sound": "audio/words/sound.mp3",
-    "sun": "audio/words/sun.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "which": "audio/words/which.mp3",
-    "with": "audio/words/with.mp3"
+  {
+   "word": "sea",
+   "cn": "大海",
+   "tag": "word",
+   "image": "images/s-sea.webp",
+   "dialog": [
+    {
+     "q": "What sound does sea begin with?",
+     "a": [
+      "Sea begins with the sound /s/."
+     ],
+     "key": [
+      "/s/"
+     ],
+     "q_cn": "sea 以什么音开头？",
+     "a_cn": [
+      "sea 以 /s/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-sea-begin-with-09903a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-sea-begins-with-the-sound-s-512134.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does sea begin with?",
+     "a": [
+      "Sea begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "sea 以哪个字母开头？",
+     "a_cn": [
+      "sea 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-sea-begin-with-00b91c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-sea-begins-with-letter-s-40fba5.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sea-43761b.mp3"
+  },
+  {
+   "word": "sheep",
+   "cn": "绵羊",
+   "tag": "word",
+   "image": "images/s-words-sheep.webp",
+   "dialog": [
+    {
+     "q": "Which letter does sheep begin with?",
+     "a": [
+      "Sheep begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "sheep 以哪个字母开头？",
+     "a_cn": [
+      "sheep 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-sheep-begin-with-336bf9.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-sheep-begins-with-letter-s-7c92fd.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sheep-7b6c78.mp3"
+  },
+  {
+   "word": "snake",
+   "cn": "蛇",
+   "tag": "word",
+   "image": "images/s-words-snake.webp",
+   "dialog": [
+    {
+     "q": "What sound does snake begin with?",
+     "a": [
+      "Snake begins with the sound /s/."
+     ],
+     "key": [
+      "/s/"
+     ],
+     "q_cn": "snake 以什么音开头？",
+     "a_cn": [
+      "snake 以 /s/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-snake-begin-with-a8870b.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-s-e36696.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does snake begin with?",
+     "a": [
+      "Snake begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "snake 以哪个字母开头？",
+     "a_cn": [
+      "snake 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-snake-begin-with-608064.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-snake-begins-with-letter-s-ff3468.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-snake-522028.mp3"
+  },
+  {
+   "word": "school",
+   "cn": "学校",
+   "tag": "word",
+   "image": "images/s-words-school.webp",
+   "dialog": [
+    {
+     "q": "What sound does school begin with?",
+     "a": [
+      "School begins with the sound /s/."
+     ],
+     "key": [
+      "/s/"
+     ],
+     "q_cn": "school 以什么音开头？",
+     "a_cn": [
+      "school 以 /s/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-school-begin-with-f4fcd1.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-s-573a1d.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does school begin with?",
+     "a": [
+      "School begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "school 以哪个字母开头？",
+     "a_cn": [
+      "school 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-school-begin-with-3903aa.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-school-begins-with-letter-s-12bffa.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-school-515ed2.mp3"
+  },
+  {
+   "word": "sun",
+   "cn": "太阳",
+   "tag": "word",
+   "image": "images/s-words-sun.webp",
+   "dialog": [
+    {
+     "q": "What sound does sun begin with?",
+     "a": [
+      "Sun begins with the sound /s/."
+     ],
+     "key": [
+      "/s/"
+     ],
+     "q_cn": "sun 以什么音开头？",
+     "a_cn": [
+      "sun 以 /s/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-what-sound-does-sun-begin-with-1dcffc.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-s-133725.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does sun begin with?",
+     "a": [
+      "Sun begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "sun 以哪个字母开头？",
+     "a_cn": [
+      "sun 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-s/q-which-letter-does-sun-begin-with-f5f2e5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-s/a-sun-begins-with-letter-s-65f590.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-s/q-which-one-is-sun-46bf64.mp3"
   }
+ ],
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ },
+ "word_audio": {
+  "begin": "audio/words/begin.mp3",
+  "begins": "audio/words/begins.mp3",
+  "does": "audio/words/does.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter s": "audio/words/letter-s.mp3",
+  "make": "audio/words/make.mp3",
+  "makes": "audio/words/makes.mp3",
+  "s": "audio/words/s.mp3",
+  "school": "audio/words/school.mp3",
+  "sea": "audio/words/sea.mp3",
+  "sheep": "audio/words/sheep.mp3",
+  "snake": "audio/words/snake.mp3",
+  "sound": "audio/words/sound.mp3",
+  "sun": "audio/words/sun.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "which": "audio/words/which.mp3",
+  "with": "audio/words/with.mp3"
+ }
 }

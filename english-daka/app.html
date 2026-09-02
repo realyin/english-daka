@@ -2443,7 +2443,14 @@ let pOrder = [], pc = 0, pq = 0;
 /* 「这一栏正有一轮没做完」—— 横滑换课要据此收紧阈值,见文件底部的手势 */
 let pActive = false, qActive = false;
 /* 音标类答案的干扰项池:已教的 11 个字母音 + 已教的词族韵脚 */
-const PHONEME_CHIPS = ["/s/","/t/","/m/","/a/","/n/","/o/","/f/","/i/","/r/","/b/","/d/"];
+// 池子只放**课程里真实出现过**的音 —— 多放一个,闯关的干扰项就会
+// 冒出孩子没学过的音。长短元音同池是有意的:「code 中间是什么音」
+// 抽到 /o/(短 o)正是 magic-e 要辨的那一对。改课程后用
+// check_lesson.py 复核,别手动往里塞
+const PHONEME_CHIPS = ["/a/","/e/","/i/","/o/","/u/",
+                      "/ay/","/eye/","/oh/","/yoo/",
+                      "/b/","/d/","/f/","/g/","/h/","/j/","/k/","/l/","/m/",
+                      "/n/","/p/","/r/","/s/","/t/","/v/","/ks/"];
 const RIME_CHIPS    = ["/an/","/at/","/ot/","/ad/","/id/","/it/"];
 /* 同类干扰项池:问颜色就给颜色,问数字就给数字。
    只收 audio/words/ 里真有音频的词 —— 选项要能点读,没音频的词(blue/green/
@@ -2464,7 +2471,9 @@ const CASE_CHIPS   = ["big","small"];
 
 /* 这个 key 属于哪一类?返回同类词池;普通名词返回 null(改用同课的词做干扰项) */
 function chipFamily(k){
-  if(/^\/[a-z]+\/$/.test(k)) return k.length > 3 ? RIME_CHIPS : PHONEME_CHIPS;
+  // 先查表再回退:/sh/ 这类双字母音素长度也是 4,按长度判会被当成韵脚
+  if(/^\/[a-z]+\/$/.test(k))
+    return PHONEME_CHIPS.indexOf(k) >= 0 ? PHONEME_CHIPS : RIME_CHIPS;
   if(COLOR_CHIPS.includes(k))  return COLOR_CHIPS;
   if(NUM_CHIPS.includes(k))    return NUM_CHIPS;
   if(LETTER_CHIPS.includes(k)) return LETTER_CHIPS;

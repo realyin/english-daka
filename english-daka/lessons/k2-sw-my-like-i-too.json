@@ -1,160 +1,161 @@
 {
-  "seq": 401,
-  "level": "K2",
-  "group": "常见词 Sight Words",
-  "badge": "my",
-  "title": "Sight Words · my / like / I / too",
-  "cards": [
+ "seq": 401,
+ "level": "K2",
+ "group": "常见词 Sight Words",
+ "badge": "my",
+ "cover": "images/sw-my.webp",
+ "title": "Sight Words · my / like / I / too",
+ "cards": [
+  {
+   "word": "my",
+   "cn": "我的",
+   "tag": "sight word",
+   "image": "images/sw-my.webp",
+   "dialog": [
     {
-      "word": "my",
-      "cn": "我的",
-      "tag": "sight word",
-      "image": "images/sw-my.webp",
-      "dialog": [
-        {
-          "q": "What's this sight word?",
-          "a": [
-            "It's sight word my.",
-            "This is my toy."
-          ],
-          "key": [
-            "my"
-          ],
-          "q_cn": "这是什么常见词？",
-          "a_cn": [
-            "是常见词 my。",
-            "这是我的玩具。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-my-79286e.mp3",
-            "audio/sentences/k2-sw-my-like-i-too/a-this-is-my-toy-ba0a1a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-my-88ef5a.mp3",
-      "quiz": false
-    },
-    {
-      "word": "like",
-      "cn": "喜欢",
-      "tag": "sight word",
-      "image": "images/sw-like.webp",
-      "dialog": [
-        {
-          "q": "What's this sight word?",
-          "a": [
-            "It's sight word like.",
-            "I like ice cream."
-          ],
-          "key": [
-            "like"
-          ],
-          "q_cn": "这是什么常见词？",
-          "a_cn": [
-            "是常见词 like。",
-            "我喜欢冰淇淋。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-like-8b0a6b.mp3",
-            "audio/sentences/k2-sw-my-like-i-too/a-i-like-ice-cream-7a3a0a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-like-71ca2f.mp3",
-      "quiz": false
-    },
-    {
-      "word": "I",
-      "cn": "我",
-      "tag": "sight word",
-      "image": "images/sw-i.webp",
-      "dialog": [
-        {
-          "q": "What's this sight word?",
-          "a": [
-            "It's sight word I.",
-            "I am a girl."
-          ],
-          "key": [
-            "i"
-          ],
-          "q_cn": "这是什么常见词？",
-          "a_cn": [
-            "是常见词 I。",
-            "我是一个女孩。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-i-2cad5d.mp3",
-            "audio/sentences/k2-sw-my-like-i-too/a-i-am-a-girl-9bd643.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-i-75a185.mp3",
-      "quiz": false
-    },
-    {
-      "word": "too",
-      "cn": "也",
-      "tag": "sight word",
-      "image": "images/sw-too.webp",
-      "dialog": [
-        {
-          "q": "What's this sight word?",
-          "a": [
-            "It's sight word too.",
-            "I like the balloon too."
-          ],
-          "key": [
-            "too"
-          ],
-          "q_cn": "这是什么常见词？",
-          "a_cn": [
-            "是常见词 too。",
-            "我也喜欢这个气球。"
-          ],
-          "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-too-47590f.mp3",
-            "audio/sentences/k2-sw-my-like-i-too/a-i-like-the-balloon-too-6f06ae.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-too-ce5076.mp3",
-      "quiz": false
+     "q": "What's this sight word?",
+     "a": [
+      "It's sight word my.",
+      "This is my toy."
+     ],
+     "key": [
+      "my"
+     ],
+     "q_cn": "这是什么常见词？",
+     "a_cn": [
+      "是常见词 my。",
+      "这是我的玩具。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-my-79286e.mp3",
+      "audio/sentences/k2-sw-my-like-i-too/a-this-is-my-toy-ba0a1a.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "am": "audio/words/am.mp3",
-    "balloon": "audio/words/balloon.mp3",
-    "cream": "audio/words/cream.mp3",
-    "girl": "audio/words/girl.mp3",
-    "i": "audio/words/i.mp3",
-    "ice": "audio/words/ice.mp3",
-    "is": "audio/words/is.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "like": "audio/words/like.mp3",
-    "my": "audio/words/my.mp3",
-    "sight": "audio/words/sight.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "too": "audio/words/too.mp3",
-    "toy": "audio/words/toy.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "word": "audio/words/word.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-my-88ef5a.mp3",
+   "quiz": false
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "like",
+   "cn": "喜欢",
+   "tag": "sight word",
+   "image": "images/sw-like.webp",
+   "dialog": [
+    {
+     "q": "What's this sight word?",
+     "a": [
+      "It's sight word like.",
+      "I like ice cream."
+     ],
+     "key": [
+      "like"
+     ],
+     "q_cn": "这是什么常见词？",
+     "a_cn": [
+      "是常见词 like。",
+      "我喜欢冰淇淋。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-like-8b0a6b.mp3",
+      "audio/sentences/k2-sw-my-like-i-too/a-i-like-ice-cream-7a3a0a.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-like-71ca2f.mp3",
+   "quiz": false
+  },
+  {
+   "word": "I",
+   "cn": "我",
+   "tag": "sight word",
+   "image": "images/sw-i.webp",
+   "dialog": [
+    {
+     "q": "What's this sight word?",
+     "a": [
+      "It's sight word I.",
+      "I am a girl."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "这是什么常见词？",
+     "a_cn": [
+      "是常见词 I。",
+      "我是一个女孩。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-i-2cad5d.mp3",
+      "audio/sentences/k2-sw-my-like-i-too/a-i-am-a-girl-9bd643.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-i-75a185.mp3",
+   "quiz": false
+  },
+  {
+   "word": "too",
+   "cn": "也",
+   "tag": "sight word",
+   "image": "images/sw-too.webp",
+   "dialog": [
+    {
+     "q": "What's this sight word?",
+     "a": [
+      "It's sight word too.",
+      "I like the balloon too."
+     ],
+     "key": [
+      "too"
+     ],
+     "q_cn": "这是什么常见词？",
+     "a_cn": [
+      "是常见词 too。",
+      "我也喜欢这个气球。"
+     ],
+     "q_audio": "audio/sentences/k2-sw-my-like-i-too/q-what-s-this-sight-word-51830e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-too-47590f.mp3",
+      "audio/sentences/k2-sw-my-like-i-too/a-i-like-the-balloon-too-6f06ae.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-sw-my-like-i-too/q-which-one-is-too-ce5076.mp3",
+   "quiz": false
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "am": "audio/words/am.mp3",
+  "balloon": "audio/words/balloon.mp3",
+  "cream": "audio/words/cream.mp3",
+  "girl": "audio/words/girl.mp3",
+  "i": "audio/words/i.mp3",
+  "ice": "audio/words/ice.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "my": "audio/words/my.mp3",
+  "sight": "audio/words/sight.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "too": "audio/words/too.mp3",
+  "toy": "audio/words/toy.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "word": "audio/words/word.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

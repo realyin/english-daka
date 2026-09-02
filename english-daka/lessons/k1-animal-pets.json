@@ -1,168 +1,227 @@
 {
-  "seq": 402,
-  "level": "K1",
-  "group": "动物 Animals",
-  "badge": "宠物",
-  "title": "Animals · Pets 宠物",
-  "cards": [
+ "seq": 402,
+ "level": "K1",
+ "group": "动物 Animals",
+ "badge": "宠物",
+ "cover": "images/k1-place-pets.webp",
+ "title": "Animals · Pets 宠物",
+ "cards": [
+  {
+   "word": "pets",
+   "cn": "宠物",
+   "tag": "word",
+   "image": "images/k1-place-pets.webp",
+   "dialog": [
     {
-      "word": "hamster",
-      "cn": "仓鼠",
-      "tag": "word",
-      "image": "images/k1-animal-hamster.webp",
-      "dialog": [
-        {
-          "q": "What pet is it?",
-          "a": [
-            "It's a hamster."
-          ],
-          "key": [
-            "hamster"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是仓鼠。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-it-s-a-hamster-56987f.mp3"
-          ]
-        },
-        {
-          "q": "Where does a hamster live?",
-          "a": [
-            "A hamster lives in the cage."
-          ],
-          "key": [
-            "cage"
-          ],
-          "q_cn": "仓鼠住在哪里？",
-          "a_cn": [
-            "仓鼠住在笼子里。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-hamster-live-d367ce.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-a-hamster-lives-in-the-cage-3fa579.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-hamster-199a1c.mp3"
-    },
-    {
-      "word": "turtle",
-      "cn": "乌龟",
-      "tag": "word",
-      "image": "images/k1-animal-turtle.webp",
-      "dialog": [
-        {
-          "q": "What pet is it?",
-          "a": [
-            "It's a turtle."
-          ],
-          "key": [
-            "turtle"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是乌龟。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-it-s-a-turtle-505865.mp3"
-          ]
-        },
-        {
-          "q": "Where does a turtle live?",
-          "a": [
-            "A turtle lives in the tank."
-          ],
-          "key": [
-            "tank"
-          ],
-          "q_cn": "乌龟住在哪里？",
-          "a_cn": [
-            "乌龟住在水缸里。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-turtle-live-1d9182.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-turtle-c1e80d.mp3"
-    },
-    {
-      "word": "goldfish",
-      "cn": "金鱼",
-      "tag": "word",
-      "image": "images/k1-animal-goldfish.webp",
-      "dialog": [
-        {
-          "q": "What pet is it?",
-          "a": [
-            "It's a goldfish."
-          ],
-          "key": [
-            "goldfish"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是金鱼。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-it-s-a-goldfish-d7c91d.mp3"
-          ]
-        },
-        {
-          "q": "Where does a goldfish live?",
-          "a": [
-            "A goldfish lives in the tank."
-          ],
-          "key": [
-            "tank"
-          ],
-          "q_cn": "金鱼住在哪里？",
-          "a_cn": [
-            "金鱼住在水缸里。"
-          ],
-          "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-goldfish-live-c4d7c0.mp3",
-          "a_audio": [
-            "audio/sentences/k1-animal-pets/a-a-goldfish-lives-in-the-tank-cf9f57.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-goldfish-47da56.mp3"
+     "q": "What are they?",
+     "a": [
+      "They are pets."
+     ],
+     "key": [
+      "pets"
+     ],
+     "q_cn": "它们是什么？",
+     "a_cn": [
+      "它们是宠物。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-what-are-they-3a01e9.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-they-are-pets-fffe79.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "cage": "audio/words/cage.mp3",
-    "does": "audio/words/does.mp3",
-    "goldfish": "audio/words/goldfish.mp3",
-    "hamster": "audio/words/hamster.mp3",
-    "in": "audio/words/in.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "live": "audio/words/live.mp3",
-    "lives": "audio/words/lives.mp3",
-    "pet": "audio/words/pet.mp3",
-    "tank": "audio/words/tank.mp3",
-    "the": "audio/words/the.mp3",
-    "turtle": "audio/words/turtle.mp3",
-    "what": "audio/words/what.mp3",
-    "where": "audio/words/where.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-pets-d19c48.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "hamster",
+   "cn": "仓鼠",
+   "tag": "word",
+   "image": "images/k1-animal-hamster.webp",
+   "dialog": [
+    {
+     "q": "What pet is it?",
+     "a": [
+      "It's a hamster."
+     ],
+     "key": [
+      "hamster"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是仓鼠。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-it-s-a-hamster-56987f.mp3"
+     ]
+    },
+    {
+     "q": "Where does a hamster live?",
+     "a": [
+      "A hamster lives in the cage."
+     ],
+     "key": [
+      "cage"
+     ],
+     "q_cn": "仓鼠住在哪里？",
+     "a_cn": [
+      "仓鼠住在笼子里。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-hamster-live-d367ce.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-a-hamster-lives-in-the-cage-3fa579.mp3"
+     ],
+     "image": "images/k1-pet-hamster-cage.webp"
+    },
+    {
+     "q": "What pet do you like? Why?",
+     "a": [
+      "I like the hamster, because it's so cute."
+     ],
+     "key": [
+      "hamster"
+     ],
+     "practice": false,
+     "q_cn": "你喜欢哪种宠物？为什么？",
+     "a_cn": [
+      "我喜欢仓鼠，因为它很可爱。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-do-you-like-why-30aeb2.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-i-like-the-hamster-because-it-s-so-c-50cad6.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-hamster-199a1c.mp3"
+  },
+  {
+   "word": "turtle",
+   "cn": "乌龟",
+   "tag": "word",
+   "image": "images/k1-animal-turtle.webp",
+   "dialog": [
+    {
+     "q": "What pet is it?",
+     "a": [
+      "It's a turtle."
+     ],
+     "key": [
+      "turtle"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是乌龟。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-it-s-a-turtle-505865.mp3"
+     ]
+    },
+    {
+     "q": "Where does a turtle live?",
+     "a": [
+      "A turtle lives in the tank."
+     ],
+     "key": [
+      "tank"
+     ],
+     "q_cn": "乌龟住在哪里？",
+     "a_cn": [
+      "乌龟住在水缸里。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-turtle-live-1d9182.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
+     ],
+     "image": "images/k1-pet-turtle-tank.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-turtle-c1e80d.mp3"
+  },
+  {
+   "word": "goldfish",
+   "cn": "金鱼",
+   "tag": "word",
+   "image": "images/k1-animal-goldfish.webp",
+   "dialog": [
+    {
+     "q": "What pet is it?",
+     "a": [
+      "It's a goldfish."
+     ],
+     "key": [
+      "goldfish"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是金鱼。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-what-pet-is-it-c2ad9e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-it-s-a-goldfish-d7c91d.mp3"
+     ]
+    },
+    {
+     "q": "Where does a goldfish live?",
+     "a": [
+      "A goldfish lives in the tank."
+     ],
+     "key": [
+      "tank"
+     ],
+     "q_cn": "金鱼住在哪里？",
+     "a_cn": [
+      "金鱼住在水缸里。"
+     ],
+     "q_audio": "audio/sentences/k1-animal-pets/q-where-does-a-goldfish-live-c4d7c0.mp3",
+     "a_audio": [
+      "audio/sentences/k1-animal-pets/a-a-goldfish-lives-in-the-tank-cf9f57.mp3"
+     ],
+     "image": "images/k1-pet-goldfish-tank.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-animal-pets/q-which-one-is-goldfish-47da56.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "are": "audio/words/are.mp3",
+  "because": "audio/words/because.mp3",
+  "cage": "audio/words/cage.mp3",
+  "cute": "audio/words/cute.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "goldfish": "audio/words/goldfish.mp3",
+  "hamster": "audio/words/hamster.mp3",
+  "i": "audio/words/i.mp3",
+  "in": "audio/words/in.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "live": "audio/words/live.mp3",
+  "lives": "audio/words/lives.mp3",
+  "pet": "audio/words/pet.mp3",
+  "pets": "audio/words/pets.mp3",
+  "so": "audio/words/so.mp3",
+  "tank": "audio/words/tank.mp3",
+  "the": "audio/words/the.mp3",
+  "they": "audio/words/they.mp3",
+  "turtle": "audio/words/turtle.mp3",
+  "what": "audio/words/what.mp3",
+  "where": "audio/words/where.mp3",
+  "why": "audio/words/why.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

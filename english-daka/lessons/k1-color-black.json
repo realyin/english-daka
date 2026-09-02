@@ -1,172 +1,196 @@
 {
-  "seq": 303,
-  "level": "K1",
-  "group": "颜色 Colors",
-  "badge": "黑白灰",
-  "title": "Colors · Black / White / Gray",
-  "cards": [
+ "seq": 303,
+ "level": "K1",
+ "group": "颜色 Colors",
+ "badge": "黑白灰",
+ "title": "Colors · Black / White / Gray",
+ "cards": [
+  {
+   "word": "black",
+   "cn": "黑色",
+   "tag": "color",
+   "pattern": [
+    "#black"
+   ],
+   "dialog": [
     {
-      "word": "black",
-      "cn": "黑色",
-      "tag": "color",
-      "pattern": [
-        "#black"
-      ],
-      "dialog": [
-        {
-          "q": "What color is it?",
-          "a": [
-            "It's black."
-          ],
-          "key": [
-            "black"
-          ],
-          "q_cn": "这是什么颜色？",
-          "a_cn": [
-            "这是黑色。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-it-s-black-99da81.mp3"
-          ]
-        },
-        {
-          "q": "What is black?",
-          "image": "images/k1-color-black.webp",
-          "a": [
-            "The crow is black."
-          ],
-          "key": [
-            "crow"
-          ],
-          "q_cn": "什么是黑色的？",
-          "a_cn": [
-            "乌鸦是黑色的。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-is-black-bdafbc.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-the-crow-is-black-bb9dcd.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-black-1aa674.mp3"
+     "q": "What color is it?",
+     "a": [
+      "It's black."
+     ],
+     "key": [
+      "black"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是黑色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-it-s-black-99da81.mp3"
+     ]
     },
     {
-      "word": "white",
-      "cn": "白色",
-      "tag": "color",
-      "pattern": [
-        "#white"
-      ],
-      "dialog": [
-        {
-          "q": "What color is it?",
-          "a": [
-            "It's white."
-          ],
-          "key": [
-            "white"
-          ],
-          "q_cn": "这是什么颜色？",
-          "a_cn": [
-            "这是白色。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-it-s-white-530452.mp3"
-          ]
-        },
-        {
-          "q": "What is white?",
-          "image": "images/k1-color-white.webp",
-          "a": [
-            "The snow is white."
-          ],
-          "key": [
-            "snow"
-          ],
-          "q_cn": "什么是白色的？",
-          "a_cn": [
-            "雪是白色的。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-is-white-64cf82.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-the-snow-is-white-1f5584.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-white-ae42d3.mp3"
-    },
-    {
-      "word": "gray",
-      "cn": "灰色",
-      "tag": "color",
-      "pattern": [
-        "#gray"
-      ],
-      "dialog": [
-        {
-          "q": "What color is it?",
-          "a": [
-            "It's gray."
-          ],
-          "key": [
-            "gray"
-          ],
-          "q_cn": "这是什么颜色？",
-          "a_cn": [
-            "这是灰色。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-it-s-gray-04f47b.mp3"
-          ]
-        },
-        {
-          "q": "What is gray?",
-          "image": "images/k1-color-gray.webp",
-          "a": [
-            "The mouse is gray."
-          ],
-          "key": [
-            "mouse"
-          ],
-          "q_cn": "什么是灰色的？",
-          "a_cn": [
-            "老鼠是灰色的。"
-          ],
-          "q_audio": "audio/sentences/k1-color-black/q-what-is-gray-e63e60.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-black/a-the-mouse-is-gray-8eb2d4.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-gray-bda0a4.mp3"
+     "q": "What is black?",
+     "image": "images/k1-color-black.webp",
+     "a": [
+      "The crow is black."
+     ],
+     "key": [
+      "crow"
+     ],
+     "q_cn": "什么是黑色的？",
+     "a_cn": [
+      "乌鸦是黑色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-is-black-bdafbc.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-the-crow-is-black-bb9dcd.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "black": "audio/words/black.mp3",
-    "color": "audio/words/color.mp3",
-    "crow": "audio/words/crow.mp3",
-    "gray": "audio/words/gray.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "mouse": "audio/words/mouse.mp3",
-    "snow": "audio/words/snow.mp3",
-    "the": "audio/words/the.mp3",
-    "what": "audio/words/what.mp3",
-    "white": "audio/words/white.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-black-1aa674.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "white",
+   "cn": "白色",
+   "tag": "color",
+   "pattern": [
+    "#white"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's white."
+     ],
+     "key": [
+      "white"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是白色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-it-s-white-530452.mp3"
+     ]
+    },
+    {
+     "q": "What is white?",
+     "image": "images/k1-color-white.webp",
+     "a": [
+      "The snow is white."
+     ],
+     "key": [
+      "snow"
+     ],
+     "q_cn": "什么是白色的？",
+     "a_cn": [
+      "雪是白色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-is-white-64cf82.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-the-snow-is-white-1f5584.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-white-ae42d3.mp3"
+  },
+  {
+   "word": "gray",
+   "cn": "灰色",
+   "tag": "color",
+   "pattern": [
+    "#gray"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's gray."
+     ],
+     "key": [
+      "gray"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是灰色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-it-s-gray-04f47b.mp3"
+     ]
+    },
+    {
+     "q": "What is gray?",
+     "image": "images/k1-color-gray.webp",
+     "a": [
+      "The mouse is gray."
+     ],
+     "key": [
+      "mouse"
+     ],
+     "q_cn": "什么是灰色的？",
+     "a_cn": [
+      "老鼠是灰色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-what-is-gray-e63e60.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-the-mouse-is-gray-8eb2d4.mp3"
+     ]
+    },
+    {
+     "q": "Which two colors can make gray?",
+     "a": [
+      "Black and white can make gray."
+     ],
+     "key": [
+      "black"
+     ],
+     "q_cn": "哪两种颜色能调出灰色？",
+     "a_cn": [
+      "黑色和白色能调出灰色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-black/q-which-two-colors-can-make-gray-2223a4.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-black/a-black-and-white-can-make-gray-1b6db0.mp3"
+     ],
+     "image": "images/k1-mix-gray.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-black/q-which-one-is-gray-bda0a4.mp3"
   }
+ ],
+ "word_audio": {
+  "and": "audio/words/and.mp3",
+  "black": "audio/words/black.mp3",
+  "can": "audio/words/can.mp3",
+  "color": "audio/words/color.mp3",
+  "colors": "audio/words/colors.mp3",
+  "crow": "audio/words/crow.mp3",
+  "gray": "audio/words/gray.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "make": "audio/words/make.mp3",
+  "mouse": "audio/words/mouse.mp3",
+  "snow": "audio/words/snow.mp3",
+  "the": "audio/words/the.mp3",
+  "two": "audio/words/two.mp3",
+  "what": "audio/words/what.mp3",
+  "which": "audio/words/which.mp3",
+  "white": "audio/words/white.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

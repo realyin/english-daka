@@ -390,7 +390,9 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
         if index_file.exists() else {"lessons": []}
     entry = {"id": lesson_id, "title": lesson["title"],
              "words": len(lesson["cards"])}
-    for k in ("num", "group", "badge", "badge_sub", "seq", "level"):
+    # cover 是课程 JSON 顶层字段,必须在这儿带上 —— 只写进 index.json
+    # 的话,下次对这一课跑 gen_audio 就会被这个重建函数抹掉
+    for k in ("num", "group", "badge", "badge_sub", "seq", "level", "cover"):
         if lesson.get(k) is not None:
             entry[k] = lesson[k]
     index["lessons"] = [x for x in index["lessons"] if x["id"] != lesson_id]

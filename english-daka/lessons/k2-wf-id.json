@@ -1,271 +1,641 @@
 {
-  "seq": 206,
-  "level": "K2",
-  "group": "词族 Word Family",
-  "badge": "-id",
-  "title": "Word Family · -id 词族",
-  "cards": [
+ "seq": 206,
+ "level": "K2",
+ "group": "词族 Word Family",
+ "badge": "-id",
+ "cover": "images/wf-id-did.webp",
+ "title": "Word Family · -id 词族",
+ "cards": [
+  {
+   "word": "-id family",
+   "cn": "-id 词族",
+   "tag": "CVC",
+   "image": "images/wf-id.webp",
+   "collage": true,
+   "quiz": false,
+   "dialog": [
     {
-      "word": "-id family",
-      "cn": "-id 词族",
-      "tag": "CVC",
-      "image": "images/wf-id.webp",
-      "collage": true,
-      "quiz": false,
-      "dialog": [
-        {
-          "q": "What sound does -id make?",
-          "a": [
-            "Id makes the sound /id/."
-          ],
-          "key": [
-            "/id/"
-          ],
-          "q_cn": "-id 发什么音？",
-          "a_cn": [
-            "-id 发 /ɪd/ 的音。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-id-make-6c497a.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-id/a-id-makes-the-sound-id-74576d.mp3"
-          ]
-        },
-        {
-          "q": "What's this family?",
-          "a": [
-            "It's -id family."
-          ],
-          "key": [
-            "family"
-          ],
-          "q_cn": "这是什么词族？",
-          "a_cn": [
-            "这是 -id 词族。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-id/q-what-s-this-family-fc4ac3.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-id/a-it-s-id-family-06d606.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-id-family-faa9ca.mp3"
+     "q": "What sound does -id make?",
+     "a": [
+      "Id makes the sound /id/."
+     ],
+     "key": [
+      "/id/"
+     ],
+     "q_cn": "-id 发什么音？",
+     "a_cn": [
+      "-id 发 /ɪd/ 的音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-id-make-6c497a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-id-makes-the-sound-id-74576d.mp3"
+     ]
     },
     {
-      "word": "did",
-      "cn": "做",
-      "tag": "word",
-      "phonics": {
-        "group": "短音 i /ɪ/ · -id 词族",
-        "ipa": "/dɪd/",
-        "parts": [
-          {
-            "text": "d",
-            "sound": "d",
-            "kind": "consonant"
-          },
-          {
-            "text": "i",
-            "sound": "ih",
-            "kind": "vowel"
-          },
-          {
-            "text": "d",
-            "sound": "d",
-            "kind": "consonant"
-          }
-        ],
-        "onset": {
-          "text": "d",
-          "sound": "d"
-        },
-        "rime": {
-          "text": "id",
-          "sound": "id"
-        },
-        "blend_audio": "audio/phonics/blend-did.mp3"
-      },
-      "image": "images/wf-id-did.webp",
-      "dialog": [
-        {
-          "q": "How do you read d, i, d?",
-          "a": [
-            "/d/ /i/ /d/, did.",
-            "I did it."
-          ],
-          "key": [
-            "did"
-          ],
-          "q_cn": "d-i-d 怎么拼读？",
-          "a_cn": [
-            "/d/ /ɪ/ /d/，did。",
-            "我做到了。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-d-i-d-fbaff8.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-id/a-d-i-d-did-af807c.mp3",
-            "audio/sentences/k2-wf-id/a-i-did-it-8ebe73.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-did-f26a53.mp3"
-    },
-    {
-      "word": "hid",
-      "cn": "躲藏",
-      "tag": "word",
-      "phonics": {
-        "group": "短音 i /ɪ/ · -id 词族",
-        "ipa": "/hɪd/",
-        "parts": [
-          {
-            "text": "h",
-            "sound": "h",
-            "kind": "consonant"
-          },
-          {
-            "text": "i",
-            "sound": "ih",
-            "kind": "vowel"
-          },
-          {
-            "text": "d",
-            "sound": "d",
-            "kind": "consonant"
-          }
-        ],
-        "onset": {
-          "text": "h",
-          "sound": "h"
-        },
-        "rime": {
-          "text": "id",
-          "sound": "id"
-        },
-        "blend_audio": "audio/phonics/blend-hid.mp3"
-      },
-      "image": "images/wf-id-hid.webp",
-      "dialog": [
-        {
-          "q": "How do you read h, i, d?",
-          "a": [
-            "/h/ /i/ /d/, hid.",
-            "The cat hid."
-          ],
-          "key": [
-            "hid"
-          ],
-          "q_cn": "h-i-d 怎么拼读？",
-          "a_cn": [
-            "/h/ /ɪ/ /d/，hid。",
-            "猫藏起来了。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-h-i-d-18112e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-id/a-h-i-d-hid-67ac3f.mp3",
-            "audio/sentences/k2-wf-id/a-the-cat-hid-0960c3.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-hid-3db63c.mp3"
-    },
-    {
-      "word": "lid",
-      "cn": "盖子",
-      "tag": "word",
-      "phonics": {
-        "group": "短音 i /ɪ/ · -id 词族",
-        "ipa": "/lɪd/",
-        "parts": [
-          {
-            "text": "l",
-            "sound": "l",
-            "kind": "consonant"
-          },
-          {
-            "text": "i",
-            "sound": "ih",
-            "kind": "vowel"
-          },
-          {
-            "text": "d",
-            "sound": "d",
-            "kind": "consonant"
-          }
-        ],
-        "onset": {
-          "text": "l",
-          "sound": "l"
-        },
-        "rime": {
-          "text": "id",
-          "sound": "id"
-        },
-        "blend_audio": "audio/phonics/blend-lid.mp3"
-      },
-      "image": "images/wf-id-lid.webp",
-      "dialog": [
-        {
-          "q": "How do you read l, i, d?",
-          "a": [
-            "/l/ /i/ /d/, lid.",
-            "Put on the lid."
-          ],
-          "key": [
-            "lid"
-          ],
-          "q_cn": "l-i-d 怎么拼读？",
-          "a_cn": [
-            "/l/ /ɪ/ /d/，lid。",
-            "盖上盖子。"
-          ],
-          "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-l-i-d-321de5.mp3",
-          "a_audio": [
-            "audio/sentences/k2-wf-id/a-l-i-d-lid-6be09b.mp3",
-            "audio/sentences/k2-wf-id/a-put-on-the-lid-806727.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-lid-db3cfa.mp3"
+     "q": "What's this family?",
+     "a": [
+      "It's -id family."
+     ],
+     "key": [
+      "family"
+     ],
+     "q_cn": "这是什么词族？",
+     "a_cn": [
+      "这是 -id 词族。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-s-this-family-fc4ac3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-it-s-id-family-06d606.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "-id family": "audio/words/id-family.mp3",
-    "cat": "audio/words/cat.mp3",
-    "d": "audio/words/d.mp3",
-    "did": "audio/words/did.mp3",
-    "do": "audio/words/do.mp3",
-    "does": "audio/words/does.mp3",
-    "family": "audio/words/family.mp3",
-    "h": "audio/words/h.mp3",
-    "hid": "audio/words/hid.mp3",
-    "how": "audio/words/how.mp3",
-    "i": "audio/words/i.mp3",
-    "id": "audio/words/id.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "l": "audio/words/l.mp3",
-    "lid": "audio/words/lid.mp3",
-    "make": "audio/words/make.mp3",
-    "makes": "audio/words/makes.mp3",
-    "on": "audio/words/on.mp3",
-    "put": "audio/words/put.mp3",
-    "read": "audio/words/read.mp3",
-    "sound": "audio/words/sound.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-id-family-faa9ca.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "did",
+   "cn": "做",
+   "tag": "word",
+   "phonics": {
+    "group": "短音 i /ɪ/ · -id 词族",
+    "ipa": "/dɪd/",
+    "parts": [
+     {
+      "text": "d",
+      "sound": "d",
+      "kind": "consonant"
+     },
+     {
+      "text": "i",
+      "sound": "ih",
+      "kind": "vowel"
+     },
+     {
+      "text": "d",
+      "sound": "d",
+      "kind": "consonant"
+     }
+    ],
+    "onset": {
+     "text": "d",
+     "sound": "d"
+    },
+    "rime": {
+     "text": "id",
+     "sound": "id"
+    },
+    "blend_audio": "audio/phonics/blend-did.mp3"
+   },
+   "image": "images/wf-id-did.webp",
+   "dialog": [
+    {
+     "q": "How do you read d, i, d?",
+     "a": [
+      "/d/ /i/ /d/, did.",
+      "I did it."
+     ],
+     "key": [
+      "did"
+     ],
+     "q_cn": "d-i-d 怎么拼读？",
+     "a_cn": [
+      "/d/ /ɪ/ /d/，did。",
+      "我做到了。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-d-i-d-fbaff8.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-d-i-d-did-af807c.mp3",
+      "audio/sentences/k2-wf-id/a-i-did-it-8ebe73.mp3"
+     ]
+    },
+    {
+     "q": "What sound does did begin with?",
+     "a": [
+      "Did begins with the sound /d/."
+     ],
+     "key": [
+      "/d/"
+     ],
+     "q_cn": "did 的开头是什么音？",
+     "a_cn": [
+      "did 开头是 /d/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-did-begin-with-c75cf3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-begins-with-the-sound-d-67ec5f.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does did begin with?",
+     "a": [
+      "Did begins with letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "did 以哪个字母开头？",
+     "a_cn": [
+      "did 以字母 D 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-did-begin-with-c16a42.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-begins-with-letter-d-5f0b10.mp3"
+     ]
+    },
+    {
+     "q": "What sound does did have in the middle?",
+     "a": [
+      "Did has the sound /i/ in the middle."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "did 中间是什么音？",
+     "a_cn": [
+      "did 中间是 /ɪ/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-did-have-in-the-midd-f5c669.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-has-the-sound-i-in-the-middle-29a561.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does did have in the middle?",
+     "a": [
+      "Did has letter I in the middle."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "did 中间是哪个字母？",
+     "a_cn": [
+      "did 中间是字母 I。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-did-have-in-the-mi-daff90.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-has-letter-i-in-the-middle-b6ebe1.mp3"
+     ]
+    },
+    {
+     "q": "What sound does did end with?",
+     "a": [
+      "Did ends with the sound /d/."
+     ],
+     "key": [
+      "/d/"
+     ],
+     "q_cn": "did 的结尾是什么音？",
+     "a_cn": [
+      "did 结尾是 /d/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-did-end-with-5dd56e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-ends-with-the-sound-d-54d725.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does did end with?",
+     "a": [
+      "Did ends with letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "did 以哪个字母结尾？",
+     "a_cn": [
+      "did 以字母 D 结尾。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-did-end-with-a3e92a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-ends-with-letter-d-e2ab94.mp3"
+     ]
+    },
+    {
+     "q": "What family is did in?",
+     "a": [
+      "Did is in the -id family."
+     ],
+     "key": [
+      "/id/"
+     ],
+     "q_cn": "did 属于哪个词族？",
+     "a_cn": [
+      "did 属于 -id 词族。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-family-is-did-in-57c7ee.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-did-is-in-the-id-family-d49ca1.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-did-f26a53.mp3"
+  },
+  {
+   "word": "hid",
+   "cn": "躲藏",
+   "tag": "word",
+   "phonics": {
+    "group": "短音 i /ɪ/ · -id 词族",
+    "ipa": "/hɪd/",
+    "parts": [
+     {
+      "text": "h",
+      "sound": "h",
+      "kind": "consonant"
+     },
+     {
+      "text": "i",
+      "sound": "ih",
+      "kind": "vowel"
+     },
+     {
+      "text": "d",
+      "sound": "d",
+      "kind": "consonant"
+     }
+    ],
+    "onset": {
+     "text": "h",
+     "sound": "h"
+    },
+    "rime": {
+     "text": "id",
+     "sound": "id"
+    },
+    "blend_audio": "audio/phonics/blend-hid.mp3"
+   },
+   "image": "images/wf-id-hid.webp",
+   "dialog": [
+    {
+     "q": "How do you read h, i, d?",
+     "a": [
+      "/h/ /i/ /d/, hid.",
+      "The cat hid."
+     ],
+     "key": [
+      "hid"
+     ],
+     "q_cn": "h-i-d 怎么拼读？",
+     "a_cn": [
+      "/h/ /ɪ/ /d/，hid。",
+      "猫藏起来了。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-h-i-d-18112e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-h-i-d-hid-67ac3f.mp3",
+      "audio/sentences/k2-wf-id/a-the-cat-hid-0960c3.mp3"
+     ]
+    },
+    {
+     "q": "What sound does hid begin with?",
+     "a": [
+      "Hid begins with the sound /h/."
+     ],
+     "key": [
+      "/h/"
+     ],
+     "q_cn": "hid 的开头是什么音？",
+     "a_cn": [
+      "hid 开头是 /h/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-hid-begin-with-4f65c6.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-begins-with-the-sound-h-1aed2f.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does hid begin with?",
+     "a": [
+      "Hid begins with letter H."
+     ],
+     "key": [
+      "h"
+     ],
+     "q_cn": "hid 以哪个字母开头？",
+     "a_cn": [
+      "hid 以字母 H 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-hid-begin-with-f3169d.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-begins-with-letter-h-643ccd.mp3"
+     ]
+    },
+    {
+     "q": "What sound does hid have in the middle?",
+     "a": [
+      "Hid has the sound /i/ in the middle."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "hid 中间是什么音？",
+     "a_cn": [
+      "hid 中间是 /ɪ/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-hid-have-in-the-midd-bad996.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-has-the-sound-i-in-the-middle-d0e9cd.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does hid have in the middle?",
+     "a": [
+      "Hid has letter I in the middle."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "hid 中间是哪个字母？",
+     "a_cn": [
+      "hid 中间是字母 I。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-hid-have-in-the-mi-2632a3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-has-letter-i-in-the-middle-a828da.mp3"
+     ]
+    },
+    {
+     "q": "What sound does hid end with?",
+     "a": [
+      "Hid ends with the sound /d/."
+     ],
+     "key": [
+      "/d/"
+     ],
+     "q_cn": "hid 的结尾是什么音？",
+     "a_cn": [
+      "hid 结尾是 /d/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-hid-end-with-5fcfd6.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-ends-with-the-sound-d-a5d5c3.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does hid end with?",
+     "a": [
+      "Hid ends with letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "hid 以哪个字母结尾？",
+     "a_cn": [
+      "hid 以字母 D 结尾。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-hid-end-with-e95c44.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-ends-with-letter-d-a0a875.mp3"
+     ]
+    },
+    {
+     "q": "What family is hid in?",
+     "a": [
+      "Hid is in the -id family."
+     ],
+     "key": [
+      "/id/"
+     ],
+     "q_cn": "hid 属于哪个词族？",
+     "a_cn": [
+      "hid 属于 -id 词族。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-family-is-hid-in-2fa575.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-hid-is-in-the-id-family-387733.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-hid-3db63c.mp3"
+  },
+  {
+   "word": "lid",
+   "cn": "盖子",
+   "tag": "word",
+   "phonics": {
+    "group": "短音 i /ɪ/ · -id 词族",
+    "ipa": "/lɪd/",
+    "parts": [
+     {
+      "text": "l",
+      "sound": "l",
+      "kind": "consonant"
+     },
+     {
+      "text": "i",
+      "sound": "ih",
+      "kind": "vowel"
+     },
+     {
+      "text": "d",
+      "sound": "d",
+      "kind": "consonant"
+     }
+    ],
+    "onset": {
+     "text": "l",
+     "sound": "l"
+    },
+    "rime": {
+     "text": "id",
+     "sound": "id"
+    },
+    "blend_audio": "audio/phonics/blend-lid.mp3"
+   },
+   "image": "images/wf-id-lid.webp",
+   "dialog": [
+    {
+     "q": "How do you read l, i, d?",
+     "a": [
+      "/l/ /i/ /d/, lid.",
+      "Put on the lid."
+     ],
+     "key": [
+      "lid"
+     ],
+     "q_cn": "l-i-d 怎么拼读？",
+     "a_cn": [
+      "/l/ /ɪ/ /d/，lid。",
+      "盖上盖子。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-how-do-you-read-l-i-d-321de5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-l-i-d-lid-6be09b.mp3",
+      "audio/sentences/k2-wf-id/a-put-on-the-lid-806727.mp3"
+     ]
+    },
+    {
+     "q": "What sound does lid begin with?",
+     "a": [
+      "Lid begins with the sound /l/."
+     ],
+     "key": [
+      "/l/"
+     ],
+     "q_cn": "lid 的开头是什么音？",
+     "a_cn": [
+      "lid 开头是 /l/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-lid-begin-with-4244b7.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-begins-with-the-sound-l-ad0d6f.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does lid begin with?",
+     "a": [
+      "Lid begins with letter L."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "lid 以哪个字母开头？",
+     "a_cn": [
+      "lid 以字母 L 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-lid-begin-with-a28567.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-begins-with-letter-l-322fa6.mp3"
+     ]
+    },
+    {
+     "q": "What sound does lid have in the middle?",
+     "a": [
+      "Lid has the sound /i/ in the middle."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "lid 中间是什么音？",
+     "a_cn": [
+      "lid 中间是 /ɪ/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-lid-have-in-the-midd-659ea3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-has-the-sound-i-in-the-middle-489ade.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does lid have in the middle?",
+     "a": [
+      "Lid has letter I in the middle."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "lid 中间是哪个字母？",
+     "a_cn": [
+      "lid 中间是字母 I。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-lid-have-in-the-mi-2cb833.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-has-letter-i-in-the-middle-8d3827.mp3"
+     ]
+    },
+    {
+     "q": "What sound does lid end with?",
+     "a": [
+      "Lid ends with the sound /d/."
+     ],
+     "key": [
+      "/d/"
+     ],
+     "q_cn": "lid 的结尾是什么音？",
+     "a_cn": [
+      "lid 结尾是 /d/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-sound-does-lid-end-with-e12712.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-ends-with-the-sound-d-fd3673.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does lid end with?",
+     "a": [
+      "Lid ends with letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "lid 以哪个字母结尾？",
+     "a_cn": [
+      "lid 以字母 D 结尾。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-which-letter-does-lid-end-with-df668c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-ends-with-letter-d-c9c5d9.mp3"
+     ]
+    },
+    {
+     "q": "What family is lid in?",
+     "a": [
+      "Lid is in the -id family."
+     ],
+     "key": [
+      "/id/"
+     ],
+     "q_cn": "lid 属于哪个词族？",
+     "a_cn": [
+      "lid 属于 -id 词族。"
+     ],
+     "q_audio": "audio/sentences/k2-wf-id/q-what-family-is-lid-in-9bd9f4.mp3",
+     "a_audio": [
+      "audio/sentences/k2-wf-id/a-lid-is-in-the-id-family-3d1cd0.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-wf-id/q-which-one-is-lid-db3cfa.mp3"
   }
+ ],
+ "word_audio": {
+  "-id family": "audio/words/id-family.mp3",
+  "begin": "audio/words/begin.mp3",
+  "begins": "audio/words/begins.mp3",
+  "cat": "audio/words/cat.mp3",
+  "d": "audio/words/d.mp3",
+  "did": "audio/words/did.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "end": "audio/words/end.mp3",
+  "ends": "audio/words/ends.mp3",
+  "family": "audio/words/family.mp3",
+  "h": "audio/words/h.mp3",
+  "has": "audio/words/has.mp3",
+  "have": "audio/words/have.mp3",
+  "hid": "audio/words/hid.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "id": "audio/words/id.mp3",
+  "in": "audio/words/in.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "l": "audio/words/l.mp3",
+  "letter": "audio/words/letter.mp3",
+  "lid": "audio/words/lid.mp3",
+  "make": "audio/words/make.mp3",
+  "makes": "audio/words/makes.mp3",
+  "middle": "audio/words/middle.mp3",
+  "on": "audio/words/on.mp3",
+  "put": "audio/words/put.mp3",
+  "read": "audio/words/read.mp3",
+  "sound": "audio/words/sound.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "which": "audio/words/which.mp3",
+  "with": "audio/words/with.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

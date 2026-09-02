@@ -1,225 +1,226 @@
 {
-  "seq": 502,
-  "level": "K2",
-  "group": "主题 Topics",
-  "badge": "🚏",
-  "title": "Signs · 生活中的标识",
-  "cards": [
+ "seq": 502,
+ "level": "K2",
+ "group": "主题 Topics",
+ "badge": "🚏",
+ "cover": "images/street.webp",
+ "title": "Signs · 生活中的标识",
+ "cards": [
+  {
+   "word": "street",
+   "cn": "街道",
+   "tag": "sign",
+   "dialog": [
     {
-      "word": "street",
-      "cn": "街道",
-      "tag": "sign",
-      "dialog": [
-        {
-          "q": "What's this sign?",
-          "a": [
-            "It's the street."
-          ],
-          "key": [
-            "street"
-          ],
-          "q_cn": "这是什么标识？",
-          "a_cn": [
-            "这是街道。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
-          ]
-        },
-        {
-          "q": "Can we run on the street?",
-          "a": [
-            "No, we should walk on the street."
-          ],
-          "key": [
-            "walk"
-          ],
-          "q_cn": "我们可以在街道上跑吗？",
-          "a_cn": [
-            "不可以，我们在街道上应该走路。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-can-we-run-on-the-street-ca50bf.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-no-we-should-walk-on-the-street-35d675.mp3"
-          ],
-          "image": "images/walk-on-street.webp"
-        }
-      ],
-      "image": "images/street.webp",
-      "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-street-8be1fc.mp3"
+     "q": "What's this sign?",
+     "a": [
+      "It's the street."
+     ],
+     "key": [
+      "street"
+     ],
+     "q_cn": "这是什么标识？",
+     "a_cn": [
+      "这是街道。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
+     ]
     },
     {
-      "word": "bus stop",
-      "cn": "公交车站",
-      "tag": "sign",
-      "dialog": [
-        {
-          "q": "What's this sign?",
-          "a": [
-            "It's the bus stop."
-          ],
-          "key": [
-            "bus",
-            "stop"
-          ],
-          "q_cn": "这是什么标识？",
-          "a_cn": [
-            "这是公交车站。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
-          ]
-        },
-        {
-          "q": "Where should we get on the bus?",
-          "a": [
-            "We should get on the bus at the bus stop."
-          ],
-          "key": [
-            "bus",
-            "stop"
-          ],
-          "q_cn": "我们应该在哪里上公交车？",
-          "a_cn": [
-            "我们应该在公交车站上车。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-where-should-we-get-on-the-bus-73d9e3.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-we-should-get-on-the-bus-at-the-bus--253e82.mp3"
-          ]
-        }
-      ],
-      "image": "images/bus-stop.webp",
-      "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-bus-stop-d70dc1.mp3"
-    },
-    {
-      "word": "market",
-      "cn": "市场",
-      "tag": "sign",
-      "dialog": [
-        {
-          "q": "What's this sign?",
-          "a": [
-            "It's the market."
-          ],
-          "key": [
-            "market"
-          ],
-          "q_cn": "这是什么标识？",
-          "a_cn": [
-            "这是市场。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-it-s-the-market-abdf40.mp3"
-          ]
-        },
-        {
-          "q": "Where can we buy apples and bananas?",
-          "a": [
-            "We can buy apples and bananas in the market."
-          ],
-          "key": [
-            "market"
-          ],
-          "q_cn": "我们可以在哪里买苹果和香蕉？",
-          "a_cn": [
-            "我们可以在市场买苹果和香蕉。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
-          ]
-        }
-      ],
-      "image": "images/market.webp",
-      "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-market-82bcf9.mp3"
-    },
-    {
-      "word": "zoo",
-      "cn": "动物园",
-      "tag": "sign",
-      "dialog": [
-        {
-          "q": "What's this sign?",
-          "a": [
-            "It's the zoo."
-          ],
-          "key": [
-            "zoo"
-          ],
-          "q_cn": "这是什么标识？",
-          "a_cn": [
-            "这是动物园。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-it-s-the-zoo-312b57.mp3"
-          ]
-        },
-        {
-          "q": "Where can we see animals?",
-          "a": [
-            "We can see animals at the zoo."
-          ],
-          "key": [
-            "zoo"
-          ],
-          "q_cn": "我们在哪里可以看到动物？",
-          "a_cn": [
-            "我们可以在动物园看到动物。"
-          ],
-          "q_audio": "audio/sentences/k2-signs/q-where-can-we-see-animals-b91fca.mp3",
-          "a_audio": [
-            "audio/sentences/k2-signs/a-we-can-see-animals-at-the-zoo-e314e9.mp3"
-          ]
-        }
-      ],
-      "image": "images/zoo.webp",
-      "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-zoo-cfce4e.mp3"
+     "q": "Can we run on the street?",
+     "a": [
+      "No, we should walk on the street."
+     ],
+     "key": [
+      "walk"
+     ],
+     "q_cn": "我们可以在街道上跑吗？",
+     "a_cn": [
+      "不可以，我们在街道上应该走路。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-can-we-run-on-the-street-ca50bf.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-no-we-should-walk-on-the-street-35d675.mp3"
+     ],
+     "image": "images/walk-on-street.webp"
     }
-  ],
-  "word_audio": {
-    "and": "audio/words/and.mp3",
-    "animals": "audio/words/animals.mp3",
-    "apples": "audio/words/apples.mp3",
-    "at": "audio/words/at.mp3",
-    "bananas": "audio/words/bananas.mp3",
-    "bus": "audio/words/bus.mp3",
-    "bus stop": "audio/words/bus-stop.mp3",
-    "buy": "audio/words/buy.mp3",
-    "can": "audio/words/can.mp3",
-    "get": "audio/words/get.mp3",
-    "in": "audio/words/in.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "market": "audio/words/market.mp3",
-    "no": "audio/words/no.mp3",
-    "on": "audio/words/on.mp3",
-    "run": "audio/words/run.mp3",
-    "see": "audio/words/see.mp3",
-    "should": "audio/words/should.mp3",
-    "sign": "audio/words/sign.mp3",
-    "stop": "audio/words/stop.mp3",
-    "street": "audio/words/street.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "walk": "audio/words/walk.mp3",
-    "we": "audio/words/we.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "where": "audio/words/where.mp3",
-    "zoo": "audio/words/zoo.mp3"
+   ],
+   "image": "images/street.webp",
+   "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-street-8be1fc.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "bus stop",
+   "cn": "公交车站",
+   "tag": "sign",
+   "dialog": [
+    {
+     "q": "What's this sign?",
+     "a": [
+      "It's the bus stop."
+     ],
+     "key": [
+      "bus",
+      "stop"
+     ],
+     "q_cn": "这是什么标识？",
+     "a_cn": [
+      "这是公交车站。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
+     ]
+    },
+    {
+     "q": "Where should we get on the bus?",
+     "a": [
+      "We should get on the bus at the bus stop."
+     ],
+     "key": [
+      "bus",
+      "stop"
+     ],
+     "q_cn": "我们应该在哪里上公交车？",
+     "a_cn": [
+      "我们应该在公交车站上车。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-where-should-we-get-on-the-bus-73d9e3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-we-should-get-on-the-bus-at-the-bus--253e82.mp3"
+     ]
+    }
+   ],
+   "image": "images/bus-stop.webp",
+   "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-bus-stop-d70dc1.mp3"
+  },
+  {
+   "word": "market",
+   "cn": "市场",
+   "tag": "sign",
+   "dialog": [
+    {
+     "q": "What's this sign?",
+     "a": [
+      "It's the market."
+     ],
+     "key": [
+      "market"
+     ],
+     "q_cn": "这是什么标识？",
+     "a_cn": [
+      "这是市场。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-it-s-the-market-abdf40.mp3"
+     ]
+    },
+    {
+     "q": "Where can we buy apples and bananas?",
+     "a": [
+      "We can buy apples and bananas in the market."
+     ],
+     "key": [
+      "market"
+     ],
+     "q_cn": "我们可以在哪里买苹果和香蕉？",
+     "a_cn": [
+      "我们可以在市场买苹果和香蕉。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+     ]
+    }
+   ],
+   "image": "images/market.webp",
+   "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-market-82bcf9.mp3"
+  },
+  {
+   "word": "zoo",
+   "cn": "动物园",
+   "tag": "sign",
+   "dialog": [
+    {
+     "q": "What's this sign?",
+     "a": [
+      "It's the zoo."
+     ],
+     "key": [
+      "zoo"
+     ],
+     "q_cn": "这是什么标识？",
+     "a_cn": [
+      "这是动物园。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-it-s-the-zoo-312b57.mp3"
+     ]
+    },
+    {
+     "q": "Where can we see animals?",
+     "a": [
+      "We can see animals at the zoo."
+     ],
+     "key": [
+      "zoo"
+     ],
+     "q_cn": "我们在哪里可以看到动物？",
+     "a_cn": [
+      "我们可以在动物园看到动物。"
+     ],
+     "q_audio": "audio/sentences/k2-signs/q-where-can-we-see-animals-b91fca.mp3",
+     "a_audio": [
+      "audio/sentences/k2-signs/a-we-can-see-animals-at-the-zoo-e314e9.mp3"
+     ]
+    }
+   ],
+   "image": "images/zoo.webp",
+   "quiz_audio": "audio/sentences/k2-signs/q-which-one-is-zoo-cfce4e.mp3"
   }
+ ],
+ "word_audio": {
+  "and": "audio/words/and.mp3",
+  "animals": "audio/words/animals.mp3",
+  "apples": "audio/words/apples.mp3",
+  "at": "audio/words/at.mp3",
+  "bananas": "audio/words/bananas.mp3",
+  "bus": "audio/words/bus.mp3",
+  "bus stop": "audio/words/bus-stop.mp3",
+  "buy": "audio/words/buy.mp3",
+  "can": "audio/words/can.mp3",
+  "get": "audio/words/get.mp3",
+  "in": "audio/words/in.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "market": "audio/words/market.mp3",
+  "no": "audio/words/no.mp3",
+  "on": "audio/words/on.mp3",
+  "run": "audio/words/run.mp3",
+  "see": "audio/words/see.mp3",
+  "should": "audio/words/should.mp3",
+  "sign": "audio/words/sign.mp3",
+  "stop": "audio/words/stop.mp3",
+  "street": "audio/words/street.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "walk": "audio/words/walk.mp3",
+  "we": "audio/words/we.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "where": "audio/words/where.mp3",
+  "zoo": "audio/words/zoo.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }
