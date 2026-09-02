@@ -1,193 +1,194 @@
 {
-  "seq": 1005,
-  "level": "K1",
-  "group": "规律 Patterns",
-  "badge": "符号",
-  "title": "Symbol Pattern · 符号规律",
-  "cards": [
+ "seq": 1005,
+ "level": "K1",
+ "group": "规律 Patterns",
+ "badge": "符号",
+ "cover": "images/k1-pattern-symbol.webp",
+ "title": "Symbol Pattern · 符号规律",
+ "cards": [
+  {
+   "word": "fruit pattern",
+   "cn": "水果规律",
+   "tag": "pattern",
+   "pattern": [
+    "🍌",
+    "🍓",
+    "🍊",
+    "🍎",
+    "🍌",
+    "🍓",
+    "🍊",
+    "🍎",
+    "?"
+   ],
+   "dialog": [
     {
-      "word": "fruit pattern",
-      "cn": "水果规律",
-      "tag": "pattern",
-      "pattern": [
-        "🍌",
-        "🍓",
-        "🍊",
-        "🍎",
-        "🍌",
-        "🍓",
-        "🍊",
-        "🍎",
-        "?"
-      ],
-      "dialog": [
-        {
-          "q": "What's this pattern?",
-          "a": [
-            "The pattern is banana strawberry orange apple, banana strawberry orange apple."
-          ],
-          "key": [
-            "banana"
-          ],
-          "q_cn": "这个规律是什么？",
-          "a_cn": [
-            "这个规律是 香蕉 草莓 橙子 苹果，香蕉 草莓 橙子 苹果。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-symbol/q-what-s-this-pattern-355a28.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-symbol/a-the-pattern-is-banana-strawberry-ora-1b4901.mp3"
-          ],
-          "opts": [
-            {
-              "key": "fish",
-              "text": "The pattern is pig monkey fish, pig monkey fish.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-the-pattern-is-pig-monkey-fish-pig-m-2b658c.mp3"
-            },
-            {
-              "key": "fish",
-              "text": "Fish comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
-            }
-          ]
-        },
-        {
-          "q": "What comes next?",
-          "a": [
-            "Banana comes next."
-          ],
-          "key": [
-            "banana"
-          ],
-          "q_cn": "下一个是什么？",
-          "a_cn": [
-            "下一个是香蕉。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-symbol/q-what-comes-next-f91e92.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
-          ],
-          "opts": [
-            {
-              "key": "fish",
-              "text": "Fish comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
-            },
-            {
-              "key": "l",
-              "text": "L comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-l-comes-next-1fed2b.mp3"
-            }
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-pattern-symbol/q-which-one-is-fruit-pattern-7fb1e5.mp3"
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is banana strawberry orange apple, banana strawberry orange apple."
+     ],
+     "key": [
+      "banana"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 香蕉 草莓 橙子 苹果，香蕉 草莓 橙子 苹果。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-symbol/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-symbol/a-the-pattern-is-banana-strawberry-ora-1b4901.mp3"
+     ],
+     "opts": [
+      {
+       "key": "fish",
+       "text": "The pattern is pig monkey fish, pig monkey fish.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-the-pattern-is-pig-monkey-fish-pig-m-2b658c.mp3"
+      },
+      {
+       "key": "fish",
+       "text": "Fish comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
+      }
+     ]
     },
     {
-      "word": "animal pattern",
-      "cn": "动物规律",
-      "tag": "pattern",
-      "pattern": [
-        "🐷",
-        "🐵",
-        "🐟",
-        "🐷",
-        "🐵",
-        "🐟",
-        "?"
-      ],
-      "dialog": [
-        {
-          "q": "What's this pattern?",
-          "a": [
-            "The pattern is pig monkey fish, pig monkey fish."
-          ],
-          "key": [
-            "fish"
-          ],
-          "q_cn": "这个规律是什么？",
-          "a_cn": [
-            "这个规律是 猪 猴子 鱼，猪 猴子 鱼。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-symbol/q-what-s-this-pattern-355a28.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-symbol/a-the-pattern-is-pig-monkey-fish-pig-m-2b658c.mp3"
-          ],
-          "opts": [
-            {
-              "key": "banana",
-              "text": "The pattern is banana strawberry orange apple, banana strawberry orange apple.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-the-pattern-is-banana-strawberry-ora-1b4901.mp3"
-            },
-            {
-              "key": "banana",
-              "text": "Banana comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
-            }
-          ]
-        },
-        {
-          "q": "What comes next?",
-          "a": [
-            "Fish comes next."
-          ],
-          "key": [
-            "fish"
-          ],
-          "q_cn": "下一个是什么？",
-          "a_cn": [
-            "下一个是鱼。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-symbol/q-what-comes-next-f91e92.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
-          ],
-          "opts": [
-            {
-              "key": "banana",
-              "text": "Banana comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
-            },
-            {
-              "key": "rectangle",
-              "text": "Rectangle comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-rectangle-comes-next-f102a7.mp3"
-            }
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-pattern-symbol/q-which-one-is-animal-pattern-260f1c.mp3"
+     "q": "What comes next?",
+     "a": [
+      "Banana comes next."
+     ],
+     "key": [
+      "banana"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是香蕉。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-symbol/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
+     ],
+     "opts": [
+      {
+       "key": "fish",
+       "text": "Fish comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
+      },
+      {
+       "key": "l",
+       "text": "L comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-l-comes-next-1fed2b.mp3"
+      }
+     ]
     }
-  ],
-  "word_audio": {
-    "animal pattern": "audio/words/animal-pattern.mp3",
-    "apple": "audio/words/apple.mp3",
-    "banana": "audio/words/banana.mp3",
-    "comes": "audio/words/comes.mp3",
-    "fish": "audio/words/fish.mp3",
-    "fruit pattern": "audio/words/fruit-pattern.mp3",
-    "is": "audio/words/is.mp3",
-    "l": "audio/words/l.mp3",
-    "monkey": "audio/words/monkey.mp3",
-    "next": "audio/words/next.mp3",
-    "orange": "audio/words/orange.mp3",
-    "pattern": "audio/words/pattern.mp3",
-    "pig": "audio/words/pig.mp3",
-    "rectangle": "audio/words/rectangle.mp3",
-    "strawberry": "audio/words/strawberry.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-symbol/q-which-one-is-fruit-pattern-7fb1e5.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "animal pattern",
+   "cn": "动物规律",
+   "tag": "pattern",
+   "pattern": [
+    "🐷",
+    "🐵",
+    "🐟",
+    "🐷",
+    "🐵",
+    "🐟",
+    "?"
+   ],
+   "dialog": [
+    {
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is pig monkey fish, pig monkey fish."
+     ],
+     "key": [
+      "fish"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 猪 猴子 鱼，猪 猴子 鱼。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-symbol/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-symbol/a-the-pattern-is-pig-monkey-fish-pig-m-2b658c.mp3"
+     ],
+     "opts": [
+      {
+       "key": "banana",
+       "text": "The pattern is banana strawberry orange apple, banana strawberry orange apple.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-the-pattern-is-banana-strawberry-ora-1b4901.mp3"
+      },
+      {
+       "key": "banana",
+       "text": "Banana comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What comes next?",
+     "a": [
+      "Fish comes next."
+     ],
+     "key": [
+      "fish"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是鱼。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-symbol/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
+     ],
+     "opts": [
+      {
+       "key": "banana",
+       "text": "Banana comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
+      },
+      {
+       "key": "rectangle",
+       "text": "Rectangle comes next.",
+       "audio": "audio/sentences/k1-pattern-symbol/a-rectangle-comes-next-f102a7.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-symbol/q-which-one-is-animal-pattern-260f1c.mp3"
   }
+ ],
+ "word_audio": {
+  "animal pattern": "audio/words/animal-pattern.mp3",
+  "apple": "audio/words/apple.mp3",
+  "banana": "audio/words/banana.mp3",
+  "comes": "audio/words/comes.mp3",
+  "fish": "audio/words/fish.mp3",
+  "fruit pattern": "audio/words/fruit-pattern.mp3",
+  "is": "audio/words/is.mp3",
+  "l": "audio/words/l.mp3",
+  "monkey": "audio/words/monkey.mp3",
+  "next": "audio/words/next.mp3",
+  "orange": "audio/words/orange.mp3",
+  "pattern": "audio/words/pattern.mp3",
+  "pig": "audio/words/pig.mp3",
+  "rectangle": "audio/words/rectangle.mp3",
+  "strawberry": "audio/words/strawberry.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }
