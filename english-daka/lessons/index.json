@@ -521,7 +521,7 @@
     {
       "id": "k2-letter-s",
       "title": "Letter S · /s/",
-      "words": 6,
+      "words": 17,
       "group": "字母 Letters",
       "badge": "S",
       "seq": 101,
@@ -531,7 +531,7 @@
     {
       "id": "k2-letter-t",
       "title": "Letter T · /t/",
-      "words": 14,
+      "words": 23,
       "group": "字母 Letters",
       "badge": "T",
       "seq": 102,
@@ -541,7 +541,7 @@
     {
       "id": "k2-letter-m",
       "title": "Letter M · /m/",
-      "words": 10,
+      "words": 13,
       "group": "字母 Letters",
       "badge": "M",
       "seq": 103,
@@ -551,7 +551,7 @@
     {
       "id": "k2-letter-a",
       "title": "Letter A · /æ/",
-      "words": 13,
+      "words": 22,
       "group": "字母 Letters",
       "badge": "A",
       "seq": 104,

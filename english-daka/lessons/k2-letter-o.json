@@ -194,7 +194,8 @@
      "q_audio": "audio/sentences/k2-letter-o/q-what-s-this-9a86f3.mp3",
      "a_audio": [
       "audio/sentences/k2-letter-o/a-it-s-a-box-07bfaa.mp3"
-     ]
+     ],
+     "image": "images/rec-cardboard-box.webp"
     },
     {
      "q": "What is in the box?",
@@ -372,7 +373,7 @@
     },
     {
      "q": "Where is the fox?",
-     "image": "images/o-fox.webp",
+     "image": "images/o-fox-on-box.webp",
      "a": [
       "The fox is on a box."
      ],
