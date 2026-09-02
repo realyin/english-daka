@@ -1,0 +1,151 @@
+{
+  "seq": 112,
+  "level": "K2",
+  "group": "字母 Letters",
+  "badge": "U",
+  "title": "Letter U · /ʌ/",
+  "cards": [
+    {
+      "word": "letter U",
+      "cn": "字母 U",
+      "tag": "letter",
+      "image": "images/u-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 U。"
+          ]
+        },
+        {
+          "q": "What sound does letter U make?",
+          "a": [
+            "U makes the sound /u/."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "字母 U 发什么音？",
+          "a_cn": [
+            "U 发 /ʌ/ 的音。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "uncle",
+      "cn": "叔叔",
+      "tag": "word",
+      "image": "images/u-uncle.webp",
+      "dialog": [
+        {
+          "q": "Which letter does uncle begin with?",
+          "a": [
+            "Uncle begins with letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "uncle 以哪个字母开头？",
+          "a_cn": [
+            "uncle 以字母 U 开头。"
+          ]
+        },
+        {
+          "q": "What sound does uncle begin with?",
+          "a": [
+            "Uncle begins with the sound /u/.",
+            "/u/ /u/ /u/, uncle."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "uncle 以什么音开头？",
+          "a_cn": [
+            "uncle 以 /ʌ/ 音开头。",
+            "/ʌ/ /ʌ/ /ʌ/，uncle。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "umbrella",
+      "cn": "雨伞",
+      "tag": "word",
+      "image": "images/u-umbrella.webp",
+      "dialog": [
+        {
+          "q": "Which letter does umbrella begin with?",
+          "a": [
+            "Umbrella begins with letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "umbrella 以哪个字母开头？",
+          "a_cn": [
+            "umbrella 以字母 U 开头。"
+          ]
+        },
+        {
+          "q": "What sound does umbrella begin with?",
+          "a": [
+            "Umbrella begins with the sound /u/.",
+            "/u/ /u/ /u/, umbrella."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "umbrella 以什么音开头？",
+          "a_cn": [
+            "umbrella 以 /ʌ/ 音开头。",
+            "/ʌ/ /ʌ/ /ʌ/，umbrella。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "bug",
+      "cn": "小虫子",
+      "tag": "word",
+      "image": "images/cvc-bug.webp",
+      "dialog": [
+        {
+          "q": "What sound does bug have in the middle?",
+          "a": [
+            "Bug has the sound /u/ in the middle.",
+            "/b/ /u/ /g/, bug."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "bug 中间是什么音？",
+          "a_cn": [
+            "bug 中间是 /ʌ/ 音。",
+            "/b/ /ʌ/ /g/，bug。"
+          ]
+        },
+        {
+          "q": "Which letter does bug have in the middle?",
+          "a": [
+            "Bug has letter U in the middle."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "bug 中间是哪个字母？",
+          "a_cn": [
+            "bug 中间是字母 U。"
+          ]
+        }
+      ]
+    }
+  ]
+}

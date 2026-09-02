@@ -1,0 +1,148 @@
+{
+  "seq": 407,
+  "level": "K2",
+  "group": "常见词 Sight Words",
+  "badge": "what",
+  "title": "Sight Words · what / do / you / see",
+  "cards": [
+    {
+      "word": "what",
+      "cn": "什么",
+      "tag": "sight word",
+      "image": "images/sw-what.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word what.",
+            "What do you see?"
+          ],
+          "key": [
+            "what"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 what。",
+            "你看见了什么？"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "do",
+      "cn": "做",
+      "tag": "sight word",
+      "image": "images/sw-do.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word do.",
+            "I do my homework."
+          ],
+          "key": [
+            "do"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 do。",
+            "我做作业。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "you",
+      "cn": "你",
+      "tag": "sight word",
+      "image": "images/sw-you.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word you.",
+            "I see you!"
+          ],
+          "key": [
+            "you"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 you。",
+            "我看见你啦！"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "see",
+      "cn": "看见",
+      "tag": "sight word",
+      "image": "images/sw-see.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word see.",
+            "I see a bird."
+          ],
+          "key": [
+            "see"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 see。",
+            "我看见一只鸟。"
+          ],
+          "image": "images/sw-see.webp"
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see my uncle."
+          ],
+          "key": [
+            "uncle"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见我的叔叔。"
+          ],
+          "image": "images/sw-see-uncle.webp"
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see my uncle's umbrella."
+          ],
+          "key": [
+            "umbrella"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见我叔叔的雨伞。"
+          ],
+          "image": "images/sw-see-umbrella.webp"
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see a bug on my uncle's umbrella."
+          ],
+          "key": [
+            "bug"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见叔叔的雨伞上有一只小虫子。"
+          ],
+          "image": "images/sw-see-bug.webp"
+        }
+      ]
+    }
+  ]
+}
