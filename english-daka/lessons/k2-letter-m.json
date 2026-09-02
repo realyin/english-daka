@@ -1,373 +1,582 @@
 {
-  "seq": 103,
-  "level": "K2",
-  "group": "字母 Letters",
-  "badge": "M",
-  "title": "Letter M · /m/",
-  "cards": [
+ "seq": 103,
+ "level": "K2",
+ "group": "字母 Letters",
+ "badge": "M",
+ "cover": "images/m-letter.webp",
+ "title": "Letter M · /m/",
+ "cards": [
+  {
+   "word": "letter M",
+   "cn": "字母 M",
+   "tag": "letter",
+   "image": "images/m-letter.webp",
+   "dialog": [
     {
-      "word": "letter M",
-      "cn": "字母 M",
-      "tag": "letter",
-      "image": "images/m-letter.webp",
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter M."
-          ],
-          "key": [
-            "m"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 M。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-it-s-letter-m-66d20a.mp3"
-          ]
-        },
-        {
-          "q": "What sound does letter M make?",
-          "a": [
-            "M makes the sound /m/."
-          ],
-          "key": [
-            "/m/"
-          ],
-          "q_cn": "字母 M 发什么音？",
-          "a_cn": [
-            "M 发 /m/ 的音。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-letter-m-make-9a53f2.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-m-makes-the-sound-m-982760.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-letter-m-3a6dae.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 M。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-it-s-letter-m-66d20a.mp3"
+     ]
     },
     {
-      "word": "mom",
-      "cn": "妈妈",
-      "tag": "word",
-      "image": "images/m-mom.webp",
-      "dialog": [
-        {
-          "q": "Which letter does mom begin with?",
-          "a": [
-            "Mom begins with letter M."
-          ],
-          "key": [
-            "m"
-          ],
-          "q_cn": "mom 以哪个字母开头？",
-          "a_cn": [
-            "mom 以字母 M 开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-mom-begin-with-2064e6.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-mom-begins-with-letter-m-19f985.mp3"
-          ]
-        },
-        {
-          "q": "What sound does mom begin with?",
-          "a": [
-            "Mom begins with the sound /m/."
-          ],
-          "key": [
-            "/m/"
-          ],
-          "q_cn": "mom 以什么音开头？",
-          "a_cn": [
-            "mom 以 /m/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-mom-begin-with-95611b.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-m-75dffc.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mom-f4bb5e.mp3"
-    },
-    {
-      "word": "monkey",
-      "cn": "猴子",
-      "tag": "word",
-      "image": "images/m-words-1-monkey.webp",
-      "dialog": [
-        {
-          "q": "What's this animal?",
-          "a": [
-            "It's a monkey."
-          ],
-          "key": [
-            "monkey"
-          ],
-          "q_cn": "这是什么动物？",
-          "a_cn": [
-            "这是猴子。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-animal-ac42e5.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-it-s-a-monkey-0bf444.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-monkey-c6a4a2.mp3"
-    },
-    {
-      "word": "mouse",
-      "cn": "老鼠",
-      "tag": "word",
-      "image": "images/m-words-1-mouse.webp",
-      "dialog": [
-        {
-          "q": "What color is the mouse?",
-          "a": [
-            "The mouse is gray."
-          ],
-          "key": [
-            "gray"
-          ],
-          "q_cn": "老鼠是什么颜色的？",
-          "a_cn": [
-            "老鼠是灰色的。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-color-is-the-mouse-f0b8f9.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-the-mouse-is-gray-8eb2d4.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mouse-00aedb.mp3"
-    },
-    {
-      "word": "milk",
-      "cn": "牛奶",
-      "tag": "word",
-      "image": "images/m-words-1-milk.webp",
-      "dialog": [
-        {
-          "q": "Do you like to drink milk?",
-          "a": [
-            "Yes, I like to drink milk."
-          ],
-          "key": [
-            "milk"
-          ],
-          "q_cn": "你喜欢喝牛奶吗？",
-          "a_cn": [
-            "是的，我喜欢喝牛奶。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-do-you-like-to-drink-milk-822940.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-yes-i-like-to-drink-milk-094718.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-milk-5c370f.mp3"
-    },
-    {
-      "word": "mouth",
-      "cn": "嘴巴",
-      "tag": "word",
-      "image": "images/m-words-1-mouth.webp",
-      "dialog": [
-        {
-          "q": "What's this?",
-          "a": [
-            "This is my mouth."
-          ],
-          "key": [
-            "mouth"
-          ],
-          "q_cn": "这是什么？",
-          "a_cn": [
-            "这是我的嘴巴。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-9a86f3.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-this-is-my-mouth-85b986.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mouth-caaf8e.mp3"
-    },
-    {
-      "word": "orange",
-      "cn": "橙色的",
-      "tag": "review",
-      "image": "images/m-words-2-orange.webp",
-      "dialog": [
-        {
-          "q": "What can red and yellow make?",
-          "a": [
-            "Red and yellow can make orange."
-          ],
-          "key": [
-            "orange"
-          ],
-          "q_cn": "红色和黄色能调出什么颜色？",
-          "a_cn": [
-            "红色和黄色能调出橙色。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-can-red-and-yellow-make-6cff25.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-orange-fdcdbe.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-orange-a874ca.mp3"
-    },
-    {
-      "word": "market",
-      "cn": "市场",
-      "tag": "word",
-      "image": "images/m-words-2-market.webp",
-      "dialog": [
-        {
-          "q": "Where can we buy apples and bananas?",
-          "a": [
-            "We can buy apples and bananas in the market."
-          ],
-          "key": [
-            "market"
-          ],
-          "q_cn": "我们可以在哪里买苹果和香蕉？",
-          "a_cn": [
-            "我们可以在市场买苹果和香蕉。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-market-82bcf9.mp3"
-    },
-    {
-      "word": "Christmas",
-      "cn": "圣诞节",
-      "tag": "word",
-      "image": "images/m-words-2-christmas.webp",
-      "dialog": [
-        {
-          "q": "What do we say on Christmas?",
-          "a": [
-            "Merry Christmas!"
-          ],
-          "key": [
-            "christmas"
-          ],
-          "q_cn": "圣诞节我们说什么？",
-          "a_cn": [
-            "圣诞快乐！"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-what-do-we-say-on-christmas-dbb299.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-merry-christmas-4757e7.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-christmas-05f623.mp3"
-    },
-    {
-      "word": "fan",
-      "cn": "风扇",
-      "tag": "review",
-      "image": "images/m-words-2-fans.webp",
-      "dialog": [
-        {
-          "q": "How many fans are there?",
-          "a": [
-            "There are four fans."
-          ],
-          "key": [
-            "four"
-          ],
-          "q_cn": "有几台风扇？",
-          "a_cn": [
-            "有四台风扇。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-m/q-how-many-fans-are-there-74de1f.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-m/a-there-are-four-fans-f09e2e.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-fan-146707.mp3"
+     "q": "What sound does letter M make?",
+     "a": [
+      "M makes the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "字母 M 发什么音？",
+     "a_cn": [
+      "M 发 /m/ 的音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-letter-m-make-9a53f2.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-m-makes-the-sound-m-982760.mp3"
+     ]
     }
-  ],
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-letter-m-3a6dae.mp3"
   },
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "and": "audio/words/and.mp3",
-    "animal": "audio/words/animal.mp3",
-    "apples": "audio/words/apples.mp3",
-    "are": "audio/words/are.mp3",
-    "bananas": "audio/words/bananas.mp3",
-    "begin": "audio/words/begin.mp3",
-    "begins": "audio/words/begins.mp3",
-    "buy": "audio/words/buy.mp3",
-    "can": "audio/words/can.mp3",
-    "christmas": "audio/words/christmas.mp3",
-    "color": "audio/words/color.mp3",
-    "do": "audio/words/do.mp3",
-    "does": "audio/words/does.mp3",
-    "drink": "audio/words/drink.mp3",
-    "fan": "audio/words/fan.mp3",
-    "fans": "audio/words/fans.mp3",
-    "four": "audio/words/four.mp3",
-    "gray": "audio/words/gray.mp3",
-    "how": "audio/words/how.mp3",
-    "i": "audio/words/i.mp3",
-    "in": "audio/words/in.mp3",
-    "is": "audio/words/is.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter m": "audio/words/letter-m.mp3",
-    "like": "audio/words/like.mp3",
-    "m": "audio/words/m.mp3",
-    "make": "audio/words/make.mp3",
-    "makes": "audio/words/makes.mp3",
-    "many": "audio/words/many.mp3",
-    "market": "audio/words/market.mp3",
-    "merry": "audio/words/merry.mp3",
-    "milk": "audio/words/milk.mp3",
-    "mom": "audio/words/mom.mp3",
-    "monkey": "audio/words/monkey.mp3",
-    "mouse": "audio/words/mouse.mp3",
-    "mouth": "audio/words/mouth.mp3",
-    "my": "audio/words/my.mp3",
-    "on": "audio/words/on.mp3",
-    "orange": "audio/words/orange.mp3",
-    "red": "audio/words/red.mp3",
-    "say": "audio/words/say.mp3",
-    "sound": "audio/words/sound.mp3",
-    "the": "audio/words/the.mp3",
-    "there": "audio/words/there.mp3",
-    "this": "audio/words/this.mp3",
-    "to": "audio/words/to.mp3",
-    "we": "audio/words/we.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "where": "audio/words/where.mp3",
-    "which": "audio/words/which.mp3",
-    "with": "audio/words/with.mp3",
-    "yellow": "audio/words/yellow.mp3",
-    "yes": "audio/words/yes.mp3",
-    "you": "audio/words/you.mp3"
+  {
+   "word": "mom",
+   "cn": "妈妈",
+   "tag": "word",
+   "image": "images/m-mom.webp",
+   "dialog": [
+    {
+     "q": "Which letter does mom begin with?",
+     "a": [
+      "Mom begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "mom 以哪个字母开头？",
+     "a_cn": [
+      "mom 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-mom-begin-with-2064e6.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mom-begins-with-letter-m-19f985.mp3"
+     ]
+    },
+    {
+     "q": "What sound does mom begin with?",
+     "a": [
+      "Mom begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "mom 以什么音开头？",
+     "a_cn": [
+      "mom 以 /m/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-mom-begin-with-95611b.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-m-75dffc.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mom-f4bb5e.mp3"
+  },
+  {
+   "word": "monkey",
+   "cn": "猴子",
+   "tag": "word",
+   "image": "images/m-words-1-monkey.webp",
+   "dialog": [
+    {
+     "q": "What's this animal?",
+     "a": [
+      "It's a monkey."
+     ],
+     "key": [
+      "monkey"
+     ],
+     "q_cn": "这是什么动物？",
+     "a_cn": [
+      "这是猴子。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-animal-ac42e5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-it-s-a-monkey-0bf444.mp3"
+     ]
+    },
+    {
+     "q": "What sound does monkey begin with?",
+     "a": [
+      "Monkey begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "monkey 的开头是什么音？",
+     "a_cn": [
+      "monkey 开头是 /m/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-monkey-begin-with-42251f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-monkey-begins-with-the-sound-m-c6aa55.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does monkey begin with?",
+     "a": [
+      "Monkey begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "monkey 以哪个字母开头？",
+     "a_cn": [
+      "monkey 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-monkey-begin-with-664754.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-monkey-begins-with-letter-m-510473.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-monkey-c6a4a2.mp3"
+  },
+  {
+   "word": "mouse",
+   "cn": "老鼠",
+   "tag": "word",
+   "image": "images/m-words-1-mouse.webp",
+   "dialog": [
+    {
+     "q": "What color is the mouse?",
+     "a": [
+      "The mouse is gray."
+     ],
+     "key": [
+      "gray"
+     ],
+     "q_cn": "老鼠是什么颜色的？",
+     "a_cn": [
+      "老鼠是灰色的。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-color-is-the-mouse-f0b8f9.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-the-mouse-is-gray-8eb2d4.mp3"
+     ],
+     "image": "images/k2-m-mouse-gray.webp"
+    },
+    {
+     "q": "What sound does mouse begin with?",
+     "a": [
+      "Mouse begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "mouse 的开头是什么音？",
+     "a_cn": [
+      "mouse 开头是 /m/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-mouse-begin-with-2ba692.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mouse-begins-with-the-sound-m-21e7fc.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does mouse begin with?",
+     "a": [
+      "Mouse begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "mouse 以哪个字母开头？",
+     "a_cn": [
+      "mouse 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-mouse-begin-with-04a09b.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mouse-begins-with-letter-m-335ae5.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mouse-00aedb.mp3"
+  },
+  {
+   "word": "milk",
+   "cn": "牛奶",
+   "tag": "word",
+   "image": "images/m-words-1-milk.webp",
+   "dialog": [
+    {
+     "q": "Do you like to drink milk?",
+     "a": [
+      "Yes, I like to drink milk."
+     ],
+     "key": [
+      "milk"
+     ],
+     "q_cn": "你喜欢喝牛奶吗？",
+     "a_cn": [
+      "是的，我喜欢喝牛奶。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-do-you-like-to-drink-milk-822940.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-yes-i-like-to-drink-milk-094718.mp3"
+     ]
+    },
+    {
+     "q": "What sound does milk begin with?",
+     "a": [
+      "Milk begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "milk 的开头是什么音？",
+     "a_cn": [
+      "milk 开头是 /m/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-milk-begin-with-4fc66f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-milk-begins-with-the-sound-m-e85b71.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does milk begin with?",
+     "a": [
+      "Milk begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "milk 以哪个字母开头？",
+     "a_cn": [
+      "milk 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-milk-begin-with-22ce86.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-milk-begins-with-letter-m-078c39.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-milk-5c370f.mp3"
+  },
+  {
+   "word": "mouth",
+   "cn": "嘴巴",
+   "tag": "word",
+   "image": "images/m-words-1-mouth.webp",
+   "dialog": [
+    {
+     "q": "What's this?",
+     "a": [
+      "This is my mouth."
+     ],
+     "key": [
+      "mouth"
+     ],
+     "q_cn": "这是什么？",
+     "a_cn": [
+      "这是我的嘴巴。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-s-this-9a86f3.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-this-is-my-mouth-85b986.mp3"
+     ]
+    },
+    {
+     "q": "What sound does mouth begin with?",
+     "a": [
+      "Mouth begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "mouth 的开头是什么音？",
+     "a_cn": [
+      "mouth 开头是 /m/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-mouth-begin-with-0c3931.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mouth-begins-with-the-sound-m-b77349.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does mouth begin with?",
+     "a": [
+      "Mouth begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "mouth 以哪个字母开头？",
+     "a_cn": [
+      "mouth 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-mouth-begin-with-78a059.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-mouth-begins-with-letter-m-a2375b.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-mouth-caaf8e.mp3"
+  },
+  {
+   "word": "orange",
+   "cn": "橙色的",
+   "tag": "review",
+   "image": "images/m-words-2-orange.webp",
+   "dialog": [
+    {
+     "q": "What can red and yellow make?",
+     "a": [
+      "Red and yellow can make orange."
+     ],
+     "key": [
+      "orange"
+     ],
+     "q_cn": "红色和黄色能调出什么颜色？",
+     "a_cn": [
+      "红色和黄色能调出橙色。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-can-red-and-yellow-make-6cff25.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-orange-fdcdbe.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does orange begin with?",
+     "a": [
+      "Orange begins with letter O."
+     ],
+     "key": [
+      "o"
+     ],
+     "q_cn": "orange 以哪个字母开头？",
+     "a_cn": [
+      "orange 以字母 O 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-orange-begin-with-a8fe5b.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-orange-begins-with-letter-o-628bce.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-orange-a874ca.mp3"
+  },
+  {
+   "word": "market",
+   "cn": "市场",
+   "tag": "word",
+   "image": "images/m-words-2-market.webp",
+   "dialog": [
+    {
+     "q": "Where can we buy apples and bananas?",
+     "a": [
+      "We can buy apples and bananas in the market."
+     ],
+     "key": [
+      "market"
+     ],
+     "q_cn": "我们可以在哪里买苹果和香蕉？",
+     "a_cn": [
+      "我们可以在市场买苹果和香蕉。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+     ]
+    },
+    {
+     "q": "What sound does market begin with?",
+     "a": [
+      "Market begins with the sound /m/."
+     ],
+     "key": [
+      "/m/"
+     ],
+     "q_cn": "market 的开头是什么音？",
+     "a_cn": [
+      "market 开头是 /m/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-sound-does-market-begin-with-dd0eff.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-market-begins-with-the-sound-m-a56324.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does market begin with?",
+     "a": [
+      "Market begins with letter M."
+     ],
+     "key": [
+      "m"
+     ],
+     "q_cn": "market 以哪个字母开头？",
+     "a_cn": [
+      "market 以字母 M 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-market-begin-with-bf6339.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-market-begins-with-letter-m-f95aa7.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-market-82bcf9.mp3"
+  },
+  {
+   "word": "Christmas",
+   "cn": "圣诞节",
+   "tag": "word",
+   "image": "images/m-words-2-christmas.webp",
+   "dialog": [
+    {
+     "q": "What do we say on Christmas?",
+     "a": [
+      "Merry Christmas!"
+     ],
+     "key": [
+      "christmas"
+     ],
+     "q_cn": "圣诞节我们说什么？",
+     "a_cn": [
+      "圣诞快乐！"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-what-do-we-say-on-christmas-dbb299.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-merry-christmas-4757e7.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-christmas-05f623.mp3"
+  },
+  {
+   "word": "fan",
+   "cn": "风扇",
+   "tag": "review",
+   "image": "images/m-words-2-fans.webp",
+   "dialog": [
+    {
+     "q": "How many fans are there?",
+     "a": [
+      "There are four fans."
+     ],
+     "key": [
+      "four"
+     ],
+     "q_cn": "有几台风扇？",
+     "a_cn": [
+      "有四台风扇。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-how-many-fans-are-there-74de1f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-there-are-four-fans-f09e2e.mp3"
+     ],
+     "image": "images/k2-four-fans.webp"
+    },
+    {
+     "q": "Which letter does fan begin with?",
+     "a": [
+      "Fan begins with letter F."
+     ],
+     "key": [
+      "f"
+     ],
+     "q_cn": "fan 以哪个字母开头？",
+     "a_cn": [
+      "fan 以字母 F 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-m/q-which-letter-does-fan-begin-with-fec9d0.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-m/a-fan-begins-with-letter-f-33fc5a.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-m/q-which-one-is-fan-146707.mp3"
   }
+ ],
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ },
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "and": "audio/words/and.mp3",
+  "animal": "audio/words/animal.mp3",
+  "apples": "audio/words/apples.mp3",
+  "are": "audio/words/are.mp3",
+  "bananas": "audio/words/bananas.mp3",
+  "begin": "audio/words/begin.mp3",
+  "begins": "audio/words/begins.mp3",
+  "buy": "audio/words/buy.mp3",
+  "can": "audio/words/can.mp3",
+  "christmas": "audio/words/christmas.mp3",
+  "color": "audio/words/color.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "drink": "audio/words/drink.mp3",
+  "f": "audio/words/f.mp3",
+  "fan": "audio/words/fan.mp3",
+  "fans": "audio/words/fans.mp3",
+  "four": "audio/words/four.mp3",
+  "gray": "audio/words/gray.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "in": "audio/words/in.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter m": "audio/words/letter-m.mp3",
+  "like": "audio/words/like.mp3",
+  "m": "audio/words/m.mp3",
+  "make": "audio/words/make.mp3",
+  "makes": "audio/words/makes.mp3",
+  "many": "audio/words/many.mp3",
+  "market": "audio/words/market.mp3",
+  "merry": "audio/words/merry.mp3",
+  "milk": "audio/words/milk.mp3",
+  "mom": "audio/words/mom.mp3",
+  "monkey": "audio/words/monkey.mp3",
+  "mouse": "audio/words/mouse.mp3",
+  "mouth": "audio/words/mouth.mp3",
+  "my": "audio/words/my.mp3",
+  "o": "audio/words/o.mp3",
+  "on": "audio/words/on.mp3",
+  "orange": "audio/words/orange.mp3",
+  "red": "audio/words/red.mp3",
+  "say": "audio/words/say.mp3",
+  "sound": "audio/words/sound.mp3",
+  "the": "audio/words/the.mp3",
+  "there": "audio/words/there.mp3",
+  "this": "audio/words/this.mp3",
+  "to": "audio/words/to.mp3",
+  "we": "audio/words/we.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "where": "audio/words/where.mp3",
+  "which": "audio/words/which.mp3",
+  "with": "audio/words/with.mp3",
+  "yellow": "audio/words/yellow.mp3",
+  "yes": "audio/words/yes.mp3",
+  "you": "audio/words/you.mp3"
+ }
 }

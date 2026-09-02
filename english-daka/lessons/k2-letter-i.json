@@ -1,301 +1,389 @@
 {
-  "seq": 108,
-  "level": "K2",
-  "group": "字母 Letters",
-  "badge": "I",
-  "title": "Letter I · /ɪ/",
-  "cards": [
+ "seq": 108,
+ "level": "K2",
+ "group": "字母 Letters",
+ "badge": "I",
+ "cover": "images/i-letter.webp",
+ "title": "Letter I · /ɪ/",
+ "cards": [
+  {
+   "word": "letter I",
+   "cn": "字母 I",
+   "tag": "letter",
+   "image": "images/i-letter.webp",
+   "dialog": [
     {
-      "word": "letter I",
-      "cn": "字母 I",
-      "tag": "letter",
-      "image": "images/i-letter.webp",
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter I."
-          ],
-          "key": [
-            "i"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 I。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-it-s-letter-i-d4a773.mp3"
-          ]
-        },
-        {
-          "q": "What sound does letter I make?",
-          "a": [
-            "Letter I makes the sound /i/."
-          ],
-          "key": [
-            "/i/"
-          ],
-          "q_cn": "字母 I 发什么音？",
-          "a_cn": [
-            "I 发 /ɪ/ 的音。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-letter-i-make-c96daf.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-letter-i-makes-the-sound-i-eac8e8.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-letter-i-354267.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 I。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-it-s-letter-i-d4a773.mp3"
+     ]
     },
     {
-      "word": "igloo",
-      "cn": "冰屋",
-      "tag": "word",
-      "image": "images/i-igloo.webp",
-      "dialog": [
-        {
-          "q": "What sound does igloo begin with?",
-          "a": [
-            "Igloo begins with the sound /i/."
-          ],
-          "key": [
-            "/i/"
-          ],
-          "q_cn": "igloo 以什么音开头？",
-          "a_cn": [
-            "igloo（冰屋）以 /ɪ/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-igloo-begin-with-40ca07.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-igloo-begins-with-the-sound-i-d0bfa7.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-igloo-c9839c.mp3"
-    },
-    {
-      "word": "insect",
-      "cn": "昆虫",
-      "tag": "word",
-      "image": "images/i-insect.webp",
-      "dialog": [
-        {
-          "q": "What sound does insect begin with?",
-          "a": [
-            "Insect begins with the sound /i/."
-          ],
-          "key": [
-            "/i/"
-          ],
-          "q_cn": "insect 以什么音开头？",
-          "a_cn": [
-            "insect（昆虫）以 /ɪ/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-insect-begin-with-adadc1.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-insect-begins-with-the-sound-i-a5e9eb.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-insect-1372ee.mp3"
-    },
-    {
-      "word": "ink",
-      "cn": "墨水",
-      "tag": "word",
-      "image": "images/i-ink.webp",
-      "dialog": [
-        {
-          "q": "What sound does ink begin with?",
-          "a": [
-            "Ink begins with the sound /i/."
-          ],
-          "key": [
-            "/i/"
-          ],
-          "q_cn": "ink 以什么音开头？",
-          "a_cn": [
-            "ink（墨水）以 /ɪ/ 音开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-ink-begin-with-702028.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-ink-begins-with-the-sound-i-1b95db.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-ink-315dac.mp3"
-    },
-    {
-      "word": "iguana",
-      "cn": "鬣蜥",
-      "tag": "word",
-      "image": "images/i-iguana-iguana.webp",
-      "dialog": [
-        {
-          "q": "Which letter does iguana begin with?",
-          "a": [
-            "Iguana begins with letter I."
-          ],
-          "key": [
-            "i"
-          ],
-          "q_cn": "iguana 以哪个字母开头？",
-          "a_cn": [
-            "iguana 以字母 I 开头。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-iguana-begin-with-38bc5e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-iguana-begins-with-letter-i-ad37c2.mp3"
-          ]
-        },
-        {
-          "q": "Do iguanas have long tails?",
-          "a": [
-            "Yes, iguanas have long tails."
-          ],
-          "key": [
-            "tails"
-          ],
-          "q_cn": "鬣蜥有长尾巴吗？",
-          "a_cn": [
-            "有，鬣蜥有长长的尾巴。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-do-iguanas-have-long-tails-2afa22.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-yes-iguanas-have-long-tails-ef2bfa.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-iguana-d57a3e.mp3"
-    },
-    {
-      "word": "egg",
-      "cn": "蛋",
-      "tag": "word",
-      "image": "images/i-iguana-eggs.webp",
-      "dialog": [
-        {
-          "q": "Where do iguanas hatch from?",
-          "a": [
-            "Iguanas hatch from eggs."
-          ],
-          "key": [
-            "eggs"
-          ],
-          "q_cn": "鬣蜥从哪里孵出来？",
-          "a_cn": [
-            "鬣蜥从蛋里孵出来。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-where-do-iguanas-hatch-from-096b21.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-iguanas-hatch-from-eggs-37b03e.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-egg-17947c.mp3"
-    },
-    {
-      "word": "plant",
-      "cn": "植物",
-      "tag": "word",
-      "image": "images/i-iguana-plants.webp",
-      "dialog": [
-        {
-          "q": "What do iguanas eat?",
-          "a": [
-            "Iguanas eat plants."
-          ],
-          "key": [
-            "plants"
-          ],
-          "q_cn": "鬣蜥吃什么？",
-          "a_cn": [
-            "鬣蜥吃植物。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-what-do-iguanas-eat-37b117.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-iguanas-eat-plants-965fd6.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-plant-54cd71.mp3"
-    },
-    {
-      "word": "sun",
-      "cn": "太阳",
-      "tag": "word",
-      "image": "images/i-iguana-sun.webp",
-      "dialog": [
-        {
-          "q": "Where do iguanas sleep?",
-          "a": [
-            "Iguanas sleep in the sun."
-          ],
-          "key": [
-            "sun"
-          ],
-          "q_cn": "鬣蜥在哪里睡觉？",
-          "a_cn": [
-            "鬣蜥在太阳下睡觉。"
-          ],
-          "q_audio": "audio/sentences/k2-letter-i/q-where-do-iguanas-sleep-c5d7a5.mp3",
-          "a_audio": [
-            "audio/sentences/k2-letter-i/a-iguanas-sleep-in-the-sun-cb979c.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-sun-46bf64.mp3"
+     "q": "What sound does letter I make?",
+     "a": [
+      "Letter I makes the sound /i/."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "字母 I 发什么音？",
+     "a_cn": [
+      "I 发 /ɪ/ 的音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-letter-i-make-c96daf.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-letter-i-makes-the-sound-i-eac8e8.mp3"
+     ]
     }
-  ],
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-letter-i-354267.mp3"
   },
-  "word_audio": {
-    "begin": "audio/words/begin.mp3",
-    "begins": "audio/words/begins.mp3",
-    "do": "audio/words/do.mp3",
-    "does": "audio/words/does.mp3",
-    "eat": "audio/words/eat.mp3",
-    "egg": "audio/words/egg.mp3",
-    "eggs": "audio/words/eggs.mp3",
-    "from": "audio/words/from.mp3",
-    "hatch": "audio/words/hatch.mp3",
-    "have": "audio/words/have.mp3",
-    "i": "audio/words/i.mp3",
-    "igloo": "audio/words/igloo.mp3",
-    "iguana": "audio/words/iguana.mp3",
-    "iguanas": "audio/words/iguanas.mp3",
-    "in": "audio/words/in.mp3",
-    "ink": "audio/words/ink.mp3",
-    "insect": "audio/words/insect.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter i": "audio/words/letter-i.mp3",
-    "long": "audio/words/long.mp3",
-    "make": "audio/words/make.mp3",
-    "makes": "audio/words/makes.mp3",
-    "plant": "audio/words/plant.mp3",
-    "plants": "audio/words/plants.mp3",
-    "sleep": "audio/words/sleep.mp3",
-    "sound": "audio/words/sound.mp3",
-    "sun": "audio/words/sun.mp3",
-    "tails": "audio/words/tails.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "where": "audio/words/where.mp3",
-    "which": "audio/words/which.mp3",
-    "with": "audio/words/with.mp3",
-    "yes": "audio/words/yes.mp3"
+  {
+   "word": "igloo",
+   "cn": "冰屋",
+   "tag": "word",
+   "image": "images/i-igloo.webp",
+   "dialog": [
+    {
+     "q": "What sound does igloo begin with?",
+     "a": [
+      "Igloo begins with the sound /i/."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "igloo 以什么音开头？",
+     "a_cn": [
+      "igloo（冰屋）以 /ɪ/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-igloo-begin-with-40ca07.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-igloo-begins-with-the-sound-i-d0bfa7.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does igloo begin with?",
+     "a": [
+      "Igloo begins with letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "igloo 以哪个字母开头？",
+     "a_cn": [
+      "igloo 以字母 I 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-igloo-begin-with-da6d5f.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-igloo-begins-with-letter-i-28159f.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-igloo-c9839c.mp3"
+  },
+  {
+   "word": "insect",
+   "cn": "昆虫",
+   "tag": "word",
+   "image": "images/i-insect.webp",
+   "dialog": [
+    {
+     "q": "What sound does insect begin with?",
+     "a": [
+      "Insect begins with the sound /i/."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "insect 以什么音开头？",
+     "a_cn": [
+      "insect（昆虫）以 /ɪ/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-insect-begin-with-adadc1.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-insect-begins-with-the-sound-i-a5e9eb.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does insect begin with?",
+     "a": [
+      "Insect begins with letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "insect 以哪个字母开头？",
+     "a_cn": [
+      "insect 以字母 I 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-insect-begin-with-1b8b1b.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-insect-begins-with-letter-i-915ba4.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-insect-1372ee.mp3"
+  },
+  {
+   "word": "ink",
+   "cn": "墨水",
+   "tag": "word",
+   "image": "images/i-ink.webp",
+   "dialog": [
+    {
+     "q": "What sound does ink begin with?",
+     "a": [
+      "Ink begins with the sound /i/."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "ink 以什么音开头？",
+     "a_cn": [
+      "ink（墨水）以 /ɪ/ 音开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-ink-begin-with-702028.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-ink-begins-with-the-sound-i-1b95db.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does ink begin with?",
+     "a": [
+      "Ink begins with letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "ink 以哪个字母开头？",
+     "a_cn": [
+      "ink 以字母 I 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-ink-begin-with-fc4dd6.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-ink-begins-with-letter-i-7a6467.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-ink-315dac.mp3"
+  },
+  {
+   "word": "iguana",
+   "cn": "鬣蜥",
+   "tag": "word",
+   "image": "images/i-iguana-iguana.webp",
+   "dialog": [
+    {
+     "q": "Which letter does iguana begin with?",
+     "a": [
+      "Iguana begins with letter I."
+     ],
+     "key": [
+      "i"
+     ],
+     "q_cn": "iguana 以哪个字母开头？",
+     "a_cn": [
+      "iguana 以字母 I 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-iguana-begin-with-38bc5e.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-iguana-begins-with-letter-i-ad37c2.mp3"
+     ]
+    },
+    {
+     "q": "Do iguanas have long tails?",
+     "a": [
+      "Yes, iguanas have long tails."
+     ],
+     "key": [
+      "tails"
+     ],
+     "q_cn": "鬣蜥有长尾巴吗？",
+     "a_cn": [
+      "有，鬣蜥有长长的尾巴。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-do-iguanas-have-long-tails-2afa22.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-yes-iguanas-have-long-tails-ef2bfa.mp3"
+     ],
+     "image": "images/k2-i-iguana-tail.webp"
+    },
+    {
+     "q": "What sound does iguana begin with?",
+     "a": [
+      "Iguana begins with the sound /i/."
+     ],
+     "key": [
+      "/i/"
+     ],
+     "q_cn": "iguana 的开头是什么音？",
+     "a_cn": [
+      "iguana 开头是 /ɪ/ 音。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-sound-does-iguana-begin-with-aa386a.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-iguana-begins-with-the-sound-i-89fbf1.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-iguana-d57a3e.mp3"
+  },
+  {
+   "word": "egg",
+   "cn": "蛋",
+   "tag": "word",
+   "image": "images/i-iguana-eggs.webp",
+   "dialog": [
+    {
+     "q": "Where do iguanas hatch from?",
+     "a": [
+      "Iguanas hatch from eggs."
+     ],
+     "key": [
+      "eggs"
+     ],
+     "q_cn": "鬣蜥从哪里孵出来？",
+     "a_cn": [
+      "鬣蜥从蛋里孵出来。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-where-do-iguanas-hatch-from-096b21.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-iguanas-hatch-from-eggs-37b03e.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-egg-17947c.mp3"
+  },
+  {
+   "word": "plant",
+   "cn": "植物",
+   "tag": "word",
+   "image": "images/i-iguana-plants.webp",
+   "dialog": [
+    {
+     "q": "What do iguanas eat?",
+     "a": [
+      "Iguanas eat plants."
+     ],
+     "key": [
+      "plants"
+     ],
+     "q_cn": "鬣蜥吃什么？",
+     "a_cn": [
+      "鬣蜥吃植物。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-what-do-iguanas-eat-37b117.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-iguanas-eat-plants-965fd6.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-plant-54cd71.mp3"
+  },
+  {
+   "word": "sun",
+   "cn": "太阳",
+   "tag": "word",
+   "image": "images/i-iguana-sun.webp",
+   "dialog": [
+    {
+     "q": "Where do iguanas sleep?",
+     "a": [
+      "Iguanas sleep in the sun."
+     ],
+     "key": [
+      "sun"
+     ],
+     "q_cn": "鬣蜥在哪里睡觉？",
+     "a_cn": [
+      "鬣蜥在太阳下睡觉。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-where-do-iguanas-sleep-c5d7a5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-iguanas-sleep-in-the-sun-cb979c.mp3"
+     ]
+    },
+    {
+     "q": "Which letter does sun begin with?",
+     "a": [
+      "Sun begins with letter S."
+     ],
+     "key": [
+      "s"
+     ],
+     "q_cn": "sun 以哪个字母开头？",
+     "a_cn": [
+      "sun 以字母 S 开头。"
+     ],
+     "q_audio": "audio/sentences/k2-letter-i/q-which-letter-does-sun-begin-with-f5f2e5.mp3",
+     "a_audio": [
+      "audio/sentences/k2-letter-i/a-sun-begins-with-letter-s-65f590.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k2-letter-i/q-which-one-is-sun-46bf64.mp3"
   }
+ ],
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ },
+ "word_audio": {
+  "begin": "audio/words/begin.mp3",
+  "begins": "audio/words/begins.mp3",
+  "do": "audio/words/do.mp3",
+  "does": "audio/words/does.mp3",
+  "eat": "audio/words/eat.mp3",
+  "egg": "audio/words/egg.mp3",
+  "eggs": "audio/words/eggs.mp3",
+  "from": "audio/words/from.mp3",
+  "hatch": "audio/words/hatch.mp3",
+  "have": "audio/words/have.mp3",
+  "i": "audio/words/i.mp3",
+  "igloo": "audio/words/igloo.mp3",
+  "iguana": "audio/words/iguana.mp3",
+  "iguanas": "audio/words/iguanas.mp3",
+  "in": "audio/words/in.mp3",
+  "ink": "audio/words/ink.mp3",
+  "insect": "audio/words/insect.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter i": "audio/words/letter-i.mp3",
+  "long": "audio/words/long.mp3",
+  "make": "audio/words/make.mp3",
+  "makes": "audio/words/makes.mp3",
+  "plant": "audio/words/plant.mp3",
+  "plants": "audio/words/plants.mp3",
+  "s": "audio/words/s.mp3",
+  "sleep": "audio/words/sleep.mp3",
+  "sound": "audio/words/sound.mp3",
+  "sun": "audio/words/sun.mp3",
+  "tails": "audio/words/tails.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "where": "audio/words/where.mp3",
+  "which": "audio/words/which.mp3",
+  "with": "audio/words/with.mp3",
+  "yes": "audio/words/yes.mp3"
+ }
 }

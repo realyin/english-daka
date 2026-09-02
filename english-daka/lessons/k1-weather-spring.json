@@ -1,217 +1,362 @@
 {
-  "seq": 805,
-  "level": "K1",
-  "group": "天气 Weather",
-  "badge": "季节",
-  "title": "Seasons · Spring / Summer / Fall / Winter 四季",
-  "cards": [
+ "seq": 805,
+ "level": "K1",
+ "group": "天气 Weather",
+ "badge": "季节",
+ "cover": "images/k1-wx-spring.webp",
+ "title": "Seasons · Spring / Summer / Fall / Winter 四季",
+ "cards": [
+  {
+   "word": "spring",
+   "cn": "春天",
+   "tag": "word",
+   "image": "images/k1-wx-spring.webp",
+   "dialog": [
     {
-      "word": "spring",
-      "cn": "春天",
-      "tag": "word",
-      "image": "images/k1-wx-spring.webp",
-      "dialog": [
-        {
-          "q": "What season is it?",
-          "a": [
-            "It's spring."
-          ],
-          "key": [
-            "spring"
-          ],
-          "q_cn": "这是什么季节？",
-          "a_cn": [
-            "这是春天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-it-s-spring-675c21.mp3"
-          ]
-        },
-        {
-          "q": "What can you see in spring?",
-          "a": [
-            "I can see flowers in spring."
-          ],
-          "key": [
-            "flowers"
-          ],
-          "q_cn": "春天能看到什么？",
-          "a_cn": [
-            "春天我能看到花。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-see-in-spring-9e4710.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-i-can-see-flowers-in-spring-12f7be.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-spring-0fb392.mp3"
+     "q": "What season is it?",
+     "a": [
+      "It's spring."
+     ],
+     "key": [
+      "spring"
+     ],
+     "q_cn": "这是什么季节？",
+     "a_cn": [
+      "这是春天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-it-s-spring-675c21.mp3"
+     ]
     },
     {
-      "word": "summer",
-      "cn": "夏天",
-      "tag": "word",
-      "image": "images/k1-wx-summer.webp",
-      "dialog": [
-        {
-          "q": "What season is it?",
-          "a": [
-            "It's summer."
-          ],
-          "key": [
-            "summer"
-          ],
-          "q_cn": "这是什么季节？",
-          "a_cn": [
-            "这是夏天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-it-s-summer-723917.mp3"
-          ]
-        },
-        {
-          "q": "What can you do in summer?",
-          "a": [
-            "I can go swimming in summer."
-          ],
-          "key": [
-            "swimming"
-          ],
-          "q_cn": "夏天可以做什么？",
-          "a_cn": [
-            "夏天我可以去游泳。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-do-in-summer-6d7c89.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-i-can-go-swimming-in-summer-3ec8cb.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-summer-c4108a.mp3"
+     "q": "What can you see in spring?",
+     "a": [
+      "I can see flowers in spring."
+     ],
+     "key": [
+      "flowers"
+     ],
+     "q_cn": "春天能看到什么？",
+     "a_cn": [
+      "春天我能看到花。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-see-in-spring-9e4710.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-see-flowers-in-spring-12f7be.mp3"
+     ],
+     "image": "images/k1-spring-flowers.webp"
     },
     {
-      "word": "fall",
-      "cn": "秋天",
-      "tag": "word",
-      "image": "images/k1-wx-fall.webp",
-      "dialog": [
-        {
-          "q": "What season is it?",
-          "a": [
-            "It's fall."
-          ],
-          "key": [
-            "fall"
-          ],
-          "q_cn": "这是什么季节？",
-          "a_cn": [
-            "这是秋天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-it-s-fall-253907.mp3"
-          ]
-        },
-        {
-          "q": "What can you see in fall?",
-          "a": [
-            "I can see yellow trees in fall."
-          ],
-          "key": [
-            "trees"
-          ],
-          "q_cn": "秋天能看到什么？",
-          "a_cn": [
-            "秋天我能看到黄色的树。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-see-in-fall-d87ce8.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-i-can-see-yellow-trees-in-fall-072443.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-fall-b243aa.mp3"
+     "q": "How do you feel in spring?",
+     "a": [
+      "I feel warm in spring."
+     ],
+     "key": [
+      "warm"
+     ],
+     "q_cn": "春天你觉得怎么样？",
+     "a_cn": [
+      "春天我觉得温暖。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-how-do-you-feel-in-spring-c3ab29.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-feel-warm-in-spring-0704f7.mp3"
+     ],
+     "image": "images/k1-spring-warm.webp"
     },
     {
-      "word": "winter",
-      "cn": "冬天",
-      "tag": "word",
-      "image": "images/k1-wx-winter.webp",
-      "dialog": [
-        {
-          "q": "What season is it?",
-          "a": [
-            "It's winter."
-          ],
-          "key": [
-            "winter"
-          ],
-          "q_cn": "这是什么季节？",
-          "a_cn": [
-            "这是冬天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-it-s-winter-785a59.mp3"
-          ]
-        },
-        {
-          "q": "What do you need in winter?",
-          "a": [
-            "I need a scarf in winter."
-          ],
-          "key": [
-            "scarf"
-          ],
-          "q_cn": "冬天需要什么？",
-          "a_cn": [
-            "冬天我需要一条围巾。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-spring/q-what-do-you-need-in-winter-e8de41.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-spring/a-i-need-a-scarf-in-winter-37afd0.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-winter-43beec.mp3"
+     "q": "What can you do in spring?",
+     "a": [
+      "I can fly a kite in spring."
+     ],
+     "key": [
+      "kite"
+     ],
+     "q_cn": "春天可以做什么？",
+     "a_cn": [
+      "春天我可以放风筝。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-do-in-spring-fdbe9a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-fly-a-kite-in-spring-7e71fb.mp3"
+     ],
+     "image": "images/k1-spring-kite.webp"
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "can": "audio/words/can.mp3",
-    "do": "audio/words/do.mp3",
-    "fall": "audio/words/fall.mp3",
-    "flowers": "audio/words/flowers.mp3",
-    "go": "audio/words/go.mp3",
-    "i": "audio/words/i.mp3",
-    "in": "audio/words/in.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "need": "audio/words/need.mp3",
-    "scarf": "audio/words/scarf.mp3",
-    "season": "audio/words/season.mp3",
-    "see": "audio/words/see.mp3",
-    "spring": "audio/words/spring.mp3",
-    "summer": "audio/words/summer.mp3",
-    "swimming": "audio/words/swimming.mp3",
-    "trees": "audio/words/trees.mp3",
-    "what": "audio/words/what.mp3",
-    "winter": "audio/words/winter.mp3",
-    "yellow": "audio/words/yellow.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-spring-0fb392.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "summer",
+   "cn": "夏天",
+   "tag": "word",
+   "image": "images/k1-wx-summer.webp",
+   "dialog": [
+    {
+     "q": "What season is it?",
+     "a": [
+      "It's summer."
+     ],
+     "key": [
+      "summer"
+     ],
+     "q_cn": "这是什么季节？",
+     "a_cn": [
+      "这是夏天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-it-s-summer-723917.mp3"
+     ]
+    },
+    {
+     "q": "What can you do in summer?",
+     "a": [
+      "I can go swimming in summer."
+     ],
+     "key": [
+      "swimming"
+     ],
+     "q_cn": "夏天可以做什么？",
+     "a_cn": [
+      "夏天我可以去游泳。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-do-in-summer-6d7c89.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-go-swimming-in-summer-3ec8cb.mp3"
+     ],
+     "image": "images/k1-summer-swimming.webp"
+    },
+    {
+     "q": "How do you feel in summer?",
+     "a": [
+      "I feel hot in summer."
+     ],
+     "key": [
+      "hot"
+     ],
+     "q_cn": "夏天你觉得怎么样？",
+     "a_cn": [
+      "夏天我觉得热。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-how-do-you-feel-in-summer-795ebb.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-feel-hot-in-summer-b97de3.mp3"
+     ],
+     "image": "images/k1-summer-hot.webp"
+    },
+    {
+     "q": "What else can you do in summer?",
+     "a": [
+      "I can eat ice cream in summer."
+     ],
+     "key": [
+      "cream"
+     ],
+     "q_cn": "夏天还能做什么？",
+     "a_cn": [
+      "夏天我可以吃冰激凌。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-else-can-you-do-in-summer-63d0c1.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-eat-ice-cream-in-summer-dab5d4.mp3"
+     ],
+     "image": "images/k1-summer-icecream.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-summer-c4108a.mp3"
+  },
+  {
+   "word": "fall",
+   "cn": "秋天",
+   "tag": "word",
+   "image": "images/k1-wx-fall.webp",
+   "dialog": [
+    {
+     "q": "What season is it?",
+     "a": [
+      "It's fall."
+     ],
+     "key": [
+      "fall"
+     ],
+     "q_cn": "这是什么季节？",
+     "a_cn": [
+      "这是秋天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-it-s-fall-253907.mp3"
+     ]
+    },
+    {
+     "q": "What can you see in fall?",
+     "a": [
+      "I can see yellow trees in fall."
+     ],
+     "key": [
+      "trees"
+     ],
+     "q_cn": "秋天能看到什么？",
+     "a_cn": [
+      "秋天我能看到黄色的树。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-see-in-fall-d87ce8.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-see-yellow-trees-in-fall-072443.mp3"
+     ],
+     "image": "images/k1-fall-yellow-trees.webp"
+    },
+    {
+     "q": "How do you feel in fall?",
+     "a": [
+      "I feel cool in fall."
+     ],
+     "key": [
+      "cool"
+     ],
+     "q_cn": "秋天你觉得怎么样？",
+     "a_cn": [
+      "秋天我觉得凉爽。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-how-do-you-feel-in-fall-4a9ff9.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-feel-cool-in-fall-182c65.mp3"
+     ],
+     "image": "images/k1-fall-cool.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-fall-b243aa.mp3"
+  },
+  {
+   "word": "winter",
+   "cn": "冬天",
+   "tag": "word",
+   "image": "images/k1-wx-winter.webp",
+   "dialog": [
+    {
+     "q": "What season is it?",
+     "a": [
+      "It's winter."
+     ],
+     "key": [
+      "winter"
+     ],
+     "q_cn": "这是什么季节？",
+     "a_cn": [
+      "这是冬天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-season-is-it-c04642.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-it-s-winter-785a59.mp3"
+     ]
+    },
+    {
+     "q": "What do you need in winter?",
+     "a": [
+      "I need a scarf in winter."
+     ],
+     "key": [
+      "scarf"
+     ],
+     "q_cn": "冬天需要什么？",
+     "a_cn": [
+      "冬天我需要一条围巾。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-do-you-need-in-winter-e8de41.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-need-a-scarf-in-winter-37afd0.mp3"
+     ],
+     "image": "images/k1-winter-scarf.webp"
+    },
+    {
+     "q": "How do you feel in winter?",
+     "a": [
+      "I feel cold in winter."
+     ],
+     "key": [
+      "cold"
+     ],
+     "q_cn": "冬天你觉得怎么样？",
+     "a_cn": [
+      "冬天我觉得冷。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-how-do-you-feel-in-winter-21c514.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-feel-cold-in-winter-fac0ea.mp3"
+     ],
+     "image": "images/k1-winter-cold.webp"
+    },
+    {
+     "q": "What can you do in winter?",
+     "a": [
+      "I can build a snowman in winter."
+     ],
+     "key": [
+      "snowman"
+     ],
+     "q_cn": "冬天可以做什么？",
+     "a_cn": [
+      "冬天我可以堆雪人。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-spring/q-what-can-you-do-in-winter-6b6d59.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-spring/a-i-can-build-a-snowman-in-winter-39210f.mp3"
+     ],
+     "image": "images/k1-winter-snowman.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-spring/q-which-one-is-winter-43beec.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "build": "audio/words/build.mp3",
+  "can": "audio/words/can.mp3",
+  "cold": "audio/words/cold.mp3",
+  "cool": "audio/words/cool.mp3",
+  "cream": "audio/words/cream.mp3",
+  "do": "audio/words/do.mp3",
+  "eat": "audio/words/eat.mp3",
+  "else": "audio/words/else.mp3",
+  "fall": "audio/words/fall.mp3",
+  "feel": "audio/words/feel.mp3",
+  "flowers": "audio/words/flowers.mp3",
+  "fly": "audio/words/fly.mp3",
+  "go": "audio/words/go.mp3",
+  "hot": "audio/words/hot.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "ice": "audio/words/ice.mp3",
+  "in": "audio/words/in.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "kite": "audio/words/kite.mp3",
+  "need": "audio/words/need.mp3",
+  "scarf": "audio/words/scarf.mp3",
+  "season": "audio/words/season.mp3",
+  "see": "audio/words/see.mp3",
+  "snowman": "audio/words/snowman.mp3",
+  "spring": "audio/words/spring.mp3",
+  "summer": "audio/words/summer.mp3",
+  "swimming": "audio/words/swimming.mp3",
+  "trees": "audio/words/trees.mp3",
+  "warm": "audio/words/warm.mp3",
+  "what": "audio/words/what.mp3",
+  "winter": "audio/words/winter.mp3",
+  "yellow": "audio/words/yellow.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

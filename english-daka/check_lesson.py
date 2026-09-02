@@ -95,7 +95,7 @@ def blendable(word):
 def chip_family(k, pools):
     """复刻 app.html 的 chipFamily()：这个 key 属于哪个闭合词池，不属于就返回 None"""
     if PHONEME_RE.fullmatch(k):
-        return pools["RIME_CHIPS"] if len(k) > 3 else pools["PHONEME_CHIPS"]
+        return pools["PHONEME_CHIPS"] if k in pools["PHONEME_CHIPS"] else pools["RIME_CHIPS"]
     for name in ("COLOR_CHIPS", "NUM_CHIPS", "LETTER_CHIPS", "SHAPE_CHIPS", "CASE_CHIPS"):
         if k in pools[name]:
             return pools[name]
@@ -311,7 +311,7 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
                                 f"key 是孩子要说出来的那个词")
                     # 干扰项同类：key 属于某个词池就必须在池子里
                     if PHONEME_RE.fullmatch(k):
-                        pool = "RIME_CHIPS" if len(k) > 3 else "PHONEME_CHIPS"
+                        pool = "PHONEME_CHIPS" if k in pools["PHONEME_CHIPS"] else "RIME_CHIPS"
                         if k not in pools[pool]:
                             r.e(qw, f"key「{k}」不在 app.html 的 {pool} 里 —— "
                                     f"闯关会掉进普通名词池，变成「听音选名词」的送分题")

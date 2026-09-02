@@ -47,6 +47,24 @@
           "a_audio": [
             "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
           ]
+        },
+        {
+          "q": "What color do you like? Why?",
+          "a": [
+            "I like red. Because the apple is red, I like to eat apples."
+          ],
+          "key": [
+            "red"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢什么颜色？为什么？",
+          "a_cn": [
+            "我喜欢红色，因为苹果是红色的，我喜欢吃苹果。"
+          ],
+          "q_audio": "audio/sentences/k1-color-red/q-what-color-do-you-like-why-e3957c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-color-red/a-i-like-red-because-the-apple-is-red--daa3d8.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k1-color-red/q-which-one-is-red-dd6cee.mp3"
@@ -146,17 +164,26 @@
   ],
   "word_audio": {
     "apple": "audio/words/apple.mp3",
+    "apples": "audio/words/apples.mp3",
     "banana": "audio/words/banana.mp3",
+    "because": "audio/words/because.mp3",
     "blue": "audio/words/blue.mp3",
     "color": "audio/words/color.mp3",
+    "do": "audio/words/do.mp3",
+    "eat": "audio/words/eat.mp3",
+    "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
+    "like": "audio/words/like.mp3",
     "red": "audio/words/red.mp3",
     "sky": "audio/words/sky.mp3",
     "the": "audio/words/the.mp3",
+    "to": "audio/words/to.mp3",
     "what": "audio/words/what.mp3",
-    "yellow": "audio/words/yellow.mp3"
+    "why": "audio/words/why.mp3",
+    "yellow": "audio/words/yellow.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

@@ -1,124 +1,195 @@
 {
-  "seq": 304,
-  "level": "K1",
-  "group": "颜色 Colors",
-  "badge": "粉棕",
-  "title": "Colors · Pink / Brown",
-  "cards": [
+ "seq": 304,
+ "level": "K1",
+ "group": "颜色 Colors",
+ "badge": "粉棕",
+ "title": "Colors · Pink / Brown",
+ "cards": [
+  {
+   "word": "pink",
+   "cn": "粉色",
+   "tag": "color",
+   "pattern": [
+    "#pink"
+   ],
+   "dialog": [
     {
-      "word": "pink",
-      "cn": "粉色",
-      "tag": "color",
-      "pattern": [
-        "#pink"
-      ],
-      "dialog": [
-        {
-          "q": "What color is it?",
-          "a": [
-            "It's pink."
-          ],
-          "key": [
-            "pink"
-          ],
-          "q_cn": "这是什么颜色？",
-          "a_cn": [
-            "这是粉色。"
-          ],
-          "q_audio": "audio/sentences/k1-color-pink/q-what-color-is-it-33e73a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-pink/a-it-s-pink-f51f9a.mp3"
-          ]
-        },
-        {
-          "q": "What is pink?",
-          "image": "images/k1-color-pink.webp",
-          "a": [
-            "The flower is pink."
-          ],
-          "key": [
-            "flower"
-          ],
-          "q_cn": "什么是粉色的？",
-          "a_cn": [
-            "花是粉色的。"
-          ],
-          "q_audio": "audio/sentences/k1-color-pink/q-what-is-pink-45a5b1.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-pink/a-the-flower-is-pink-6cb36c.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-color-pink/q-which-one-is-pink-22e86a.mp3"
+     "q": "What color is it?",
+     "a": [
+      "It's pink."
+     ],
+     "key": [
+      "pink"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是粉色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-it-s-pink-f51f9a.mp3"
+     ]
     },
     {
-      "word": "brown",
-      "cn": "棕色",
-      "tag": "color",
-      "pattern": [
-        "#brown"
-      ],
-      "dialog": [
-        {
-          "q": "What color is it?",
-          "a": [
-            "It's brown."
-          ],
-          "key": [
-            "brown"
-          ],
-          "q_cn": "这是什么颜色？",
-          "a_cn": [
-            "这是棕色。"
-          ],
-          "q_audio": "audio/sentences/k1-color-pink/q-what-color-is-it-33e73a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-pink/a-it-s-brown-ed7c04.mp3"
-          ]
-        },
-        {
-          "q": "What is brown?",
-          "image": "images/k1-color-brown.webp",
-          "a": [
-            "The monkey is brown."
-          ],
-          "key": [
-            "monkey"
-          ],
-          "q_cn": "什么是棕色的？",
-          "a_cn": [
-            "猴子是棕色的。"
-          ],
-          "q_audio": "audio/sentences/k1-color-pink/q-what-is-brown-0c672f.mp3",
-          "a_audio": [
-            "audio/sentences/k1-color-pink/a-the-monkey-is-brown-8c57a1.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-color-pink/q-which-one-is-brown-349ccb.mp3"
+     "q": "What is pink?",
+     "image": "images/k1-color-pink.webp",
+     "a": [
+      "The flower is pink."
+     ],
+     "key": [
+      "flower"
+     ],
+     "q_cn": "什么是粉色的？",
+     "a_cn": [
+      "花是粉色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-what-is-pink-45a5b1.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-the-flower-is-pink-6cb36c.mp3"
+     ]
+    },
+    {
+     "q": "Which two colors can make pink?",
+     "a": [
+      "Red and white can make pink."
+     ],
+     "key": [
+      "red"
+     ],
+     "q_cn": "哪两种颜色能调出粉色？",
+     "a_cn": [
+      "红色和白色能调出粉色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-which-two-colors-can-make-pink-91c196.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-red-and-white-can-make-pink-8d4c0b.mp3"
+     ],
+     "image": "images/k1-mix-pink.webp"
+    },
+    {
+     "q": "Which color do you like? Why?",
+     "a": [
+      "I like pink. Because the flower is pink, I like flowers."
+     ],
+     "key": [
+      "pink"
+     ],
+     "practice": false,
+     "q_cn": "你喜欢什么颜色？为什么？",
+     "a_cn": [
+      "我喜欢粉色，因为花是粉色的，我喜欢花。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-which-color-do-you-like-why-3a2442.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-i-like-pink-because-the-flower-is-pi-bd0ae8.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "brown": "audio/words/brown.mp3",
-    "color": "audio/words/color.mp3",
-    "flower": "audio/words/flower.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "monkey": "audio/words/monkey.mp3",
-    "pink": "audio/words/pink.mp3",
-    "the": "audio/words/the.mp3",
-    "what": "audio/words/what.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-color-pink/q-which-one-is-pink-22e86a.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "brown",
+   "cn": "棕色",
+   "tag": "color",
+   "pattern": [
+    "#brown"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's brown."
+     ],
+     "key": [
+      "brown"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是棕色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-it-s-brown-ed7c04.mp3"
+     ]
+    },
+    {
+     "q": "What is brown?",
+     "image": "images/k1-color-brown.webp",
+     "a": [
+      "The monkey is brown."
+     ],
+     "key": [
+      "monkey"
+     ],
+     "q_cn": "什么是棕色的？",
+     "a_cn": [
+      "猴子是棕色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-what-is-brown-0c672f.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-the-monkey-is-brown-8c57a1.mp3"
+     ]
+    },
+    {
+     "q": "Which two colors can make brown?",
+     "a": [
+      "Black and yellow can make brown."
+     ],
+     "key": [
+      "black"
+     ],
+     "q_cn": "哪两种颜色能调出棕色？",
+     "a_cn": [
+      "黑色和黄色能调出棕色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-pink/q-which-two-colors-can-make-brown-e26ded.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-pink/a-black-and-yellow-can-make-brown-a9ca43.mp3"
+     ],
+     "image": "images/k1-mix-brown.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-pink/q-which-one-is-brown-349ccb.mp3"
   }
+ ],
+ "word_audio": {
+  "and": "audio/words/and.mp3",
+  "because": "audio/words/because.mp3",
+  "black": "audio/words/black.mp3",
+  "brown": "audio/words/brown.mp3",
+  "can": "audio/words/can.mp3",
+  "color": "audio/words/color.mp3",
+  "colors": "audio/words/colors.mp3",
+  "do": "audio/words/do.mp3",
+  "flower": "audio/words/flower.mp3",
+  "flowers": "audio/words/flowers.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "make": "audio/words/make.mp3",
+  "monkey": "audio/words/monkey.mp3",
+  "pink": "audio/words/pink.mp3",
+  "red": "audio/words/red.mp3",
+  "the": "audio/words/the.mp3",
+  "two": "audio/words/two.mp3",
+  "what": "audio/words/what.mp3",
+  "which": "audio/words/which.mp3",
+  "white": "audio/words/white.mp3",
+  "why": "audio/words/why.mp3",
+  "yellow": "audio/words/yellow.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

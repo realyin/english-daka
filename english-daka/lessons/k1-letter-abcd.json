@@ -1,292 +1,355 @@
 {
-  "seq": 101,
-  "level": "K1",
-  "group": "字母 Letters",
-  "badge": "A",
-  "title": "Letters · A/B/C/D 认字母",
-  "cards": [
+ "seq": 101,
+ "level": "K1",
+ "group": "字母 Letters",
+ "badge": "A",
+ "cover": "images/k1-letter-a.webp",
+ "title": "Letters · A/B/C/D 认字母",
+ "cards": [
+  {
+   "word": "letter A",
+   "cn": "字母 A",
+   "tag": "letter",
+   "dialog": [
     {
-      "word": "letter A",
-      "cn": "字母 A",
-      "tag": "letter",
-      "pattern": [
-        "A"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter A."
-          ],
-          "key": [
-            "a"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 A。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-letter-a-3ee564.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter A?",
-          "a": [
-            "I can show you letter A."
-          ],
-          "key": [
-            "a"
-          ],
-          "q_cn": "你能做出字母 A 吗？",
-          "a_cn": [
-            "我能做出字母 A。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-a-b083d7.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-a-ca45ae.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big A or a small a?",
-          "a": [
-            "It's a big A."
-          ],
-          "key": [
-            "big"
-          ],
-          "q_cn": "这是大写 A 还是小写 a？",
-          "a_cn": [
-            "这是大写 A。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-a-or-a-small-a-6110ce.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-a-big-a-e5e256.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-a-39a3dc.mp3"
+     "q": "What's this letter?",
+     "a": [
+      "It's letter A."
+     ],
+     "key": [
+      "a"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 A。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-letter-a-3ee564.mp3"
+     ]
     },
     {
-      "word": "letter B",
-      "cn": "字母 B",
-      "tag": "letter",
-      "pattern": [
-        "b"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter B."
-          ],
-          "key": [
-            "b"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 B。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-letter-b-328ea7.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter B?",
-          "a": [
-            "I can show you letter B."
-          ],
-          "key": [
-            "b"
-          ],
-          "q_cn": "你能做出字母 B 吗？",
-          "a_cn": [
-            "我能做出字母 B。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-b-5e8202.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-b-78cbac.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big B or a small b?",
-          "a": [
-            "It's a small b."
-          ],
-          "key": [
-            "small"
-          ],
-          "q_cn": "这是大写 B 还是小写 b？",
-          "a_cn": [
-            "这是小写 b。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-b-or-a-small-b-e6cc41.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-a-small-b-788156.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-b-d5043a.mp3"
+     "q": "Can you show me letter A?",
+     "a": [
+      "I can show you letter A."
+     ],
+     "key": [
+      "a"
+     ],
+     "q_cn": "你能做出字母 A 吗？",
+     "a_cn": [
+      "我能做出字母 A。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-a-b083d7.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-a-ca45ae.mp3"
+     ]
     },
     {
-      "word": "letter C",
-      "cn": "字母 C",
-      "tag": "letter",
-      "pattern": [
-        "C"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter C."
-          ],
-          "key": [
-            "c"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 C。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-letter-c-522e2e.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter C?",
-          "a": [
-            "I can show you letter C."
-          ],
-          "key": [
-            "c"
-          ],
-          "q_cn": "你能做出字母 C 吗？",
-          "a_cn": [
-            "我能做出字母 C。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-c-e53934.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-c-9a1ae6.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big C or a small c?",
-          "a": [
-            "It's a big C."
-          ],
-          "key": [
-            "big"
-          ],
-          "q_cn": "这是大写 C 还是小写 c？",
-          "a_cn": [
-            "这是大写 C。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-c-or-a-small-c-fe14be.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-a-big-c-32e040.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-c-80f578.mp3"
-    },
-    {
-      "word": "letter D",
-      "cn": "字母 D",
-      "tag": "letter",
-      "pattern": [
-        "d"
-      ],
-      "dialog": [
-        {
-          "q": "What's this letter?",
-          "a": [
-            "It's letter D."
-          ],
-          "key": [
-            "d"
-          ],
-          "q_cn": "这是什么字母？",
-          "a_cn": [
-            "这是字母 D。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-letter-d-9f52e9.mp3"
-          ]
-        },
-        {
-          "q": "Can you show me letter D?",
-          "a": [
-            "I can show you letter D."
-          ],
-          "key": [
-            "d"
-          ],
-          "q_cn": "你能做出字母 D 吗？",
-          "a_cn": [
-            "我能做出字母 D。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-d-66ddc5.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-d-5315b8.mp3"
-          ]
-        },
-        {
-          "q": "Is it a big D or a small d?",
-          "a": [
-            "It's a small d."
-          ],
-          "key": [
-            "small"
-          ],
-          "q_cn": "这是大写 D 还是小写 d？",
-          "a_cn": [
-            "这是小写 d。"
-          ],
-          "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-d-or-a-small-d-999a7a.mp3",
-          "a_audio": [
-            "audio/sentences/k1-letter-abcd/a-it-s-a-small-d-76f355.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-d-400dc3.mp3"
+     "q": "Is it a big A or a small a?",
+     "a": [
+      "It's a big A."
+     ],
+     "key": [
+      "big"
+     ],
+     "q_cn": "这是大写 A 还是小写 a？",
+     "a_cn": [
+      "这是大写 A。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-a-or-a-small-a-6110ce.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-a-big-a-e5e256.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "b": "audio/words/b.mp3",
-    "big": "audio/words/big.mp3",
-    "c": "audio/words/c.mp3",
-    "can": "audio/words/can.mp3",
-    "d": "audio/words/d.mp3",
-    "i": "audio/words/i.mp3",
-    "is": "audio/words/is.mp3",
-    "it": "audio/words/it.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "letter": "audio/words/letter.mp3",
-    "letter a": "audio/words/letter-a.mp3",
-    "letter b": "audio/words/letter-b.mp3",
-    "letter c": "audio/words/letter-c.mp3",
-    "letter d": "audio/words/letter-d.mp3",
-    "me": "audio/words/me.mp3",
-    "or": "audio/words/or.mp3",
-    "show": "audio/words/show.mp3",
-    "small": "audio/words/small.mp3",
-    "this": "audio/words/this.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-a-39a3dc.mp3",
+   "image": "images/k1-letter-a.webp"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "letter B",
+   "cn": "字母 B",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter B."
+     ],
+     "key": [
+      "b"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 B。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-letter-b-328ea7.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter B?",
+     "a": [
+      "I can show you letter B."
+     ],
+     "key": [
+      "b"
+     ],
+     "q_cn": "你能做出字母 B 吗？",
+     "a_cn": [
+      "我能做出字母 B。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-b-5e8202.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-b-78cbac.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big B or a small b?",
+     "a": [
+      "It's a small b."
+     ],
+     "key": [
+      "small"
+     ],
+     "q_cn": "这是大写 B 还是小写 b？",
+     "a_cn": [
+      "这是小写 b。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-b-or-a-small-b-e6cc41.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-a-small-b-788156.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-b-d5043a.mp3",
+   "image": "images/k1-letter-b.webp"
+  },
+  {
+   "word": "letter C",
+   "cn": "字母 C",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter C."
+     ],
+     "key": [
+      "c"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 C。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-letter-c-522e2e.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter C?",
+     "a": [
+      "I can show you letter C."
+     ],
+     "key": [
+      "c"
+     ],
+     "q_cn": "你能做出字母 C 吗？",
+     "a_cn": [
+      "我能做出字母 C。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-c-e53934.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-c-9a1ae6.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big C or a small c?",
+     "a": [
+      "It's a big C."
+     ],
+     "key": [
+      "big"
+     ],
+     "q_cn": "这是大写 C 还是小写 c？",
+     "a_cn": [
+      "这是大写 C。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-c-or-a-small-c-fe14be.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-a-big-c-32e040.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-c-80f578.mp3",
+   "image": "images/k1-letter-c.webp"
+  },
+  {
+   "word": "letter D",
+   "cn": "字母 D",
+   "tag": "letter",
+   "dialog": [
+    {
+     "q": "What's this letter?",
+     "a": [
+      "It's letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "这是什么字母？",
+     "a_cn": [
+      "这是字母 D。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-what-s-this-letter-ab944e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-letter-d-9f52e9.mp3"
+     ]
+    },
+    {
+     "q": "Can you show me letter D?",
+     "a": [
+      "I can show you letter D."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "你能做出字母 D 吗？",
+     "a_cn": [
+      "我能做出字母 D。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-can-you-show-me-letter-d-66ddc5.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-d-5315b8.mp3"
+     ]
+    },
+    {
+     "q": "Is it a big D or a small d?",
+     "a": [
+      "It's a small d."
+     ],
+     "key": [
+      "small"
+     ],
+     "q_cn": "这是大写 D 还是小写 d？",
+     "a_cn": [
+      "这是小写 d。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-is-it-a-big-d-or-a-small-d-999a7a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-it-s-a-small-d-76f355.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-d-400dc3.mp3",
+   "image": "images/k1-letter-d.webp"
+  },
+  {
+   "word": "letter order",
+   "cn": "字母排序",
+   "tag": "letter",
+   "pattern": [
+    "A",
+    "B",
+    "?",
+    "D"
+   ],
+   "quiz": false,
+   "dialog": [
+    {
+     "q": "Which letter is missing?",
+     "a": [
+      "Letter C is missing."
+     ],
+     "key": [
+      "c"
+     ],
+     "q_cn": "哪个字母不见了？",
+     "a_cn": [
+      "字母 C 不见了。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-which-letter-is-missing-9a0a7c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-letter-c-is-missing-9c9fc6.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-letter-order-05af72.mp3"
+  },
+  {
+   "word": "what comes next",
+   "cn": "下一个字母",
+   "tag": "letter",
+   "pattern": [
+    "A",
+    "B",
+    "C",
+    "?"
+   ],
+   "quiz": false,
+   "dialog": [
+    {
+     "q": "Which letter comes next?",
+     "a": [
+      "Letter D comes next."
+     ],
+     "key": [
+      "d"
+     ],
+     "q_cn": "下一个是哪个字母？",
+     "a_cn": [
+      "下一个是字母 D。"
+     ],
+     "q_audio": "audio/sentences/k1-letter-abcd/q-which-letter-comes-next-8c625e.mp3",
+     "a_audio": [
+      "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-letter-abcd/q-which-one-is-what-comes-next-cd9e23.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "b": "audio/words/b.mp3",
+  "big": "audio/words/big.mp3",
+  "c": "audio/words/c.mp3",
+  "can": "audio/words/can.mp3",
+  "comes": "audio/words/comes.mp3",
+  "d": "audio/words/d.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "letter": "audio/words/letter.mp3",
+  "letter a": "audio/words/letter-a.mp3",
+  "letter b": "audio/words/letter-b.mp3",
+  "letter c": "audio/words/letter-c.mp3",
+  "letter d": "audio/words/letter-d.mp3",
+  "letter order": "audio/words/letter-order.mp3",
+  "me": "audio/words/me.mp3",
+  "missing": "audio/words/missing.mp3",
+  "next": "audio/words/next.mp3",
+  "or": "audio/words/or.mp3",
+  "show": "audio/words/show.mp3",
+  "small": "audio/words/small.mp3",
+  "this": "audio/words/this.mp3",
+  "what comes next": "audio/words/what-comes-next.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "which": "audio/words/which.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

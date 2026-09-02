@@ -1,135 +1,178 @@
 {
-  "seq": 604,
-  "level": "K1",
-  "group": "动作 Actions",
-  "badge": "help",
-  "title": "Actions · Help & Care & Play & Share 帮助分享",
-  "cards": [
+ "seq": 604,
+ "level": "K1",
+ "group": "动作 Actions",
+ "badge": "help",
+ "cover": "images/k1-act-help.webp",
+ "title": "Actions · Help & Care & Play & Share 帮助分享",
+ "cards": [
+  {
+   "word": "help",
+   "cn": "帮忙",
+   "tag": "word",
+   "image": "images/k1-act-help.webp",
+   "dialog": [
     {
-      "word": "help",
-      "cn": "帮忙",
-      "tag": "word",
-      "image": "images/k1-act-help.webp",
-      "dialog": [
-        {
-          "q": "What can you do?",
-          "a": [
-            "I can help."
-          ],
-          "key": [
-            "help"
-          ],
-          "q_cn": "你会做什么？",
-          "a_cn": [
-            "我会帮忙。"
-          ],
-          "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
-          "a_audio": [
-            "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-help-195e24.mp3"
-    },
-    {
-      "word": "care",
-      "cn": "关心",
-      "tag": "word",
-      "image": "images/k1-act-care.webp",
-      "dialog": [
-        {
-          "q": "What can you do?",
-          "a": [
-            "I can care."
-          ],
-          "key": [
-            "care"
-          ],
-          "q_cn": "你会做什么？",
-          "a_cn": [
-            "我会关心。"
-          ],
-          "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
-          "a_audio": [
-            "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-care-b9a944.mp3"
-    },
-    {
-      "word": "play",
-      "cn": "玩",
-      "tag": "word",
-      "image": "images/k1-act-play.webp",
-      "dialog": [
-        {
-          "q": "What can you do?",
-          "a": [
-            "I can play."
-          ],
-          "key": [
-            "play"
-          ],
-          "q_cn": "你会做什么？",
-          "a_cn": [
-            "我会玩。"
-          ],
-          "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
-          "a_audio": [
-            "audio/sentences/k1-action-help/a-i-can-play-dffe0e.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-play-6eb441.mp3"
-    },
-    {
-      "word": "share",
-      "cn": "分享",
-      "tag": "word",
-      "image": "images/k1-act-share.webp",
-      "dialog": [
-        {
-          "q": "What can you do?",
-          "a": [
-            "I can share."
-          ],
-          "key": [
-            "share"
-          ],
-          "q_cn": "你会做什么？",
-          "a_cn": [
-            "我会分享。"
-          ],
-          "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
-          "a_audio": [
-            "audio/sentences/k1-action-help/a-i-can-share-53fb04.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-share-7e5d7b.mp3"
+     "q": "What can you do?",
+     "a": [
+      "I can help."
+     ],
+     "key": [
+      "help"
+     ],
+     "q_cn": "你会做什么？",
+     "a_cn": [
+      "我会帮忙。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "can": "audio/words/can.mp3",
-    "care": "audio/words/care.mp3",
-    "do": "audio/words/do.mp3",
-    "help": "audio/words/help.mp3",
-    "i": "audio/words/i.mp3",
-    "play": "audio/words/play.mp3",
-    "share": "audio/words/share.mp3",
-    "what": "audio/words/what.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-help-195e24.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "care",
+   "cn": "关心",
+   "tag": "word",
+   "image": "images/k1-act-care.webp",
+   "dialog": [
+    {
+     "q": "What can you do?",
+     "a": [
+      "I can care."
+     ],
+     "key": [
+      "care"
+     ],
+     "q_cn": "你会做什么？",
+     "a_cn": [
+      "我会关心。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
+     ]
+    },
+    {
+     "q": "What can you care for?",
+     "a": [
+      "I can care for animals."
+     ],
+     "key": [
+      "animals"
+     ],
+     "q_cn": "你能照顾什么？",
+     "a_cn": [
+      "我能照顾小动物。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-can-you-care-for-d71dd3.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-can-care-for-animals-332c15.mp3"
+     ],
+     "image": "images/k1-care-animals.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-care-b9a944.mp3"
+  },
+  {
+   "word": "play",
+   "cn": "玩",
+   "tag": "word",
+   "image": "images/k1-act-play.webp",
+   "dialog": [
+    {
+     "q": "What can you do?",
+     "a": [
+      "I can play."
+     ],
+     "key": [
+      "play"
+     ],
+     "q_cn": "你会做什么？",
+     "a_cn": [
+      "我会玩。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-can-play-dffe0e.mp3"
+     ]
+    },
+    {
+     "q": "What do you like to play?",
+     "a": [
+      "I like to play games."
+     ],
+     "key": [
+      "games"
+     ],
+     "practice": false,
+     "q_cn": "你喜欢玩什么？",
+     "a_cn": [
+      "我喜欢玩游戏。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-do-you-like-to-play-799cdf.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-like-to-play-games-a72ea8.mp3"
+     ],
+     "image": "images/k1-play-games.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-play-6eb441.mp3"
+  },
+  {
+   "word": "share",
+   "cn": "分享",
+   "tag": "word",
+   "image": "images/k1-act-share.webp",
+   "dialog": [
+    {
+     "q": "What can you do?",
+     "a": [
+      "I can share."
+     ],
+     "key": [
+      "share"
+     ],
+     "q_cn": "你会做什么？",
+     "a_cn": [
+      "我会分享。"
+     ],
+     "q_audio": "audio/sentences/k1-action-help/q-what-can-you-do-2d2dcc.mp3",
+     "a_audio": [
+      "audio/sentences/k1-action-help/a-i-can-share-53fb04.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-action-help/q-which-one-is-share-7e5d7b.mp3"
   }
+ ],
+ "word_audio": {
+  "animals": "audio/words/animals.mp3",
+  "can": "audio/words/can.mp3",
+  "care": "audio/words/care.mp3",
+  "do": "audio/words/do.mp3",
+  "for": "audio/words/for.mp3",
+  "games": "audio/words/games.mp3",
+  "help": "audio/words/help.mp3",
+  "i": "audio/words/i.mp3",
+  "like": "audio/words/like.mp3",
+  "play": "audio/words/play.mp3",
+  "share": "audio/words/share.mp3",
+  "to": "audio/words/to.mp3",
+  "what": "audio/words/what.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

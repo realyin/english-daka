@@ -1,129 +1,211 @@
 {
-  "seq": 803,
-  "level": "K1",
-  "group": "天气 Weather",
-  "badge": "雨雪",
-  "title": "Weather · Rainy & Snowy 雨天和雪天",
-  "cards": [
+ "seq": 803,
+ "level": "K1",
+ "group": "天气 Weather",
+ "badge": "雨雪",
+ "cover": "images/k1-wx-rainy.webp",
+ "title": "Weather · Rainy & Snowy 雨天和雪天",
+ "cards": [
+  {
+   "word": "rainy",
+   "cn": "雨天",
+   "tag": "word",
+   "image": "images/k1-wx-rainy.webp",
+   "dialog": [
     {
-      "word": "rainy",
-      "cn": "雨天",
-      "tag": "word",
-      "image": "images/k1-wx-rainy.webp",
-      "dialog": [
-        {
-          "q": "What's the weather like?",
-          "a": [
-            "It's a rainy day."
-          ],
-          "key": [
-            "rainy"
-          ],
-          "q_cn": "天气怎么样？",
-          "a_cn": [
-            "是雨天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-rainy/q-what-s-the-weather-like-84a760.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-rainy/a-it-s-a-rainy-day-c5589e.mp3"
-          ]
-        },
-        {
-          "q": "What do you need on rainy days?",
-          "a": [
-            "I need an umbrella on rainy days."
-          ],
-          "key": [
-            "umbrella"
-          ],
-          "q_cn": "雨天需要什么？",
-          "a_cn": [
-            "雨天我需要一把雨伞。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-rainy/q-what-do-you-need-on-rainy-days-34d46f.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-rainy/q-which-one-is-rainy-79c0db.mp3"
+     "q": "What's the weather like?",
+     "a": [
+      "It's a rainy day."
+     ],
+     "key": [
+      "rainy"
+     ],
+     "q_cn": "天气怎么样？",
+     "a_cn": [
+      "是雨天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-s-the-weather-like-84a760.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-it-s-a-rainy-day-c5589e.mp3"
+     ]
     },
     {
-      "word": "snowy",
-      "cn": "雪天",
-      "tag": "word",
-      "image": "images/k1-wx-snowy.webp",
-      "dialog": [
-        {
-          "q": "What's the weather like?",
-          "a": [
-            "It's a snowy day."
-          ],
-          "key": [
-            "snowy"
-          ],
-          "q_cn": "天气怎么样？",
-          "a_cn": [
-            "是雪天。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-rainy/q-what-s-the-weather-like-84a760.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-rainy/a-it-s-a-snowy-day-33e3e5.mp3"
-          ]
-        },
-        {
-          "q": "What can you do on snowy days?",
-          "a": [
-            "I can build a snowman on snowy days."
-          ],
-          "key": [
-            "snowman"
-          ],
-          "q_cn": "雪天可以做什么？",
-          "a_cn": [
-            "雪天我可以堆雪人。"
-          ],
-          "q_audio": "audio/sentences/k1-weather-rainy/q-what-can-you-do-on-snowy-days-71f130.mp3",
-          "a_audio": [
-            "audio/sentences/k1-weather-rainy/a-i-can-build-a-snowman-on-snowy-days-d89bc1.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-weather-rainy/q-which-one-is-snowy-a78e20.mp3"
+     "q": "What do you need on rainy days?",
+     "a": [
+      "I need an umbrella on rainy days."
+     ],
+     "key": [
+      "umbrella"
+     ],
+     "q_cn": "雨天需要什么？",
+     "a_cn": [
+      "雨天我需要一把雨伞。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-do-you-need-on-rainy-days-34d46f.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
+     ],
+     "image": "images/k1-rainy-umbrella.webp"
+    },
+    {
+     "q": "How do you feel on rainy days?",
+     "a": [
+      "I feel cool on rainy days."
+     ],
+     "key": [
+      "cool"
+     ],
+     "q_cn": "雨天你觉得怎么样？",
+     "a_cn": [
+      "雨天我觉得凉爽。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-how-do-you-feel-on-rainy-days-4b8afb.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-feel-cool-on-rainy-days-309820.mp3"
+     ],
+     "image": "images/k1-rainy-cool.webp"
+    },
+    {
+     "q": "What else do you need on rainy days?",
+     "a": [
+      "I need a raincoat on rainy days."
+     ],
+     "key": [
+      "raincoat"
+     ],
+     "q_cn": "雨天还需要什么？",
+     "a_cn": [
+      "雨天我还需要一件雨衣。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-else-do-you-need-on-rainy-days-7a87c5.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-need-a-raincoat-on-rainy-days-c44fef.mp3"
+     ],
+     "image": "images/k1-rainy-raincoat.webp"
     }
-  ],
-  "word_audio": {
-    "a": "audio/words/a.mp3",
-    "an": "audio/words/an.mp3",
-    "build": "audio/words/build.mp3",
-    "can": "audio/words/can.mp3",
-    "day": "audio/words/day.mp3",
-    "days": "audio/words/days.mp3",
-    "do": "audio/words/do.mp3",
-    "i": "audio/words/i.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "like": "audio/words/like.mp3",
-    "need": "audio/words/need.mp3",
-    "on": "audio/words/on.mp3",
-    "rainy": "audio/words/rainy.mp3",
-    "snowman": "audio/words/snowman.mp3",
-    "snowy": "audio/words/snowy.mp3",
-    "the": "audio/words/the.mp3",
-    "umbrella": "audio/words/umbrella.mp3",
-    "weather": "audio/words/weather.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "you": "audio/words/you.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-rainy/q-which-one-is-rainy-79c0db.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "snowy",
+   "cn": "雪天",
+   "tag": "word",
+   "image": "images/k1-wx-snowy.webp",
+   "dialog": [
+    {
+     "q": "What's the weather like?",
+     "a": [
+      "It's a snowy day."
+     ],
+     "key": [
+      "snowy"
+     ],
+     "q_cn": "天气怎么样？",
+     "a_cn": [
+      "是雪天。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-s-the-weather-like-84a760.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-it-s-a-snowy-day-33e3e5.mp3"
+     ]
+    },
+    {
+     "q": "What can you do on snowy days?",
+     "a": [
+      "I can build a snowman on snowy days."
+     ],
+     "key": [
+      "snowman"
+     ],
+     "q_cn": "雪天可以做什么？",
+     "a_cn": [
+      "雪天我可以堆雪人。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-can-you-do-on-snowy-days-71f130.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-can-build-a-snowman-on-snowy-days-d89bc1.mp3"
+     ],
+     "image": "images/k1-snowy-snowman.webp"
+    },
+    {
+     "q": "How do you feel on snowy days?",
+     "a": [
+      "I feel cold on snowy days."
+     ],
+     "key": [
+      "cold"
+     ],
+     "q_cn": "雪天你觉得怎么样？",
+     "a_cn": [
+      "雪天我觉得冷。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-how-do-you-feel-on-snowy-days-8c8c80.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-feel-cold-on-snowy-days-a2ebf7.mp3"
+     ],
+     "image": "images/k1-snowy-cold.webp"
+    },
+    {
+     "q": "What do you need on snowy days?",
+     "a": [
+      "I need a scarf on snowy days."
+     ],
+     "key": [
+      "scarf"
+     ],
+     "q_cn": "雪天需要什么？",
+     "a_cn": [
+      "雪天我需要一条围巾。"
+     ],
+     "q_audio": "audio/sentences/k1-weather-rainy/q-what-do-you-need-on-snowy-days-eb8483.mp3",
+     "a_audio": [
+      "audio/sentences/k1-weather-rainy/a-i-need-a-scarf-on-snowy-days-d64f53.mp3"
+     ],
+     "image": "images/k1-snowy-scarf.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-weather-rainy/q-which-one-is-snowy-a78e20.mp3"
   }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "an": "audio/words/an.mp3",
+  "build": "audio/words/build.mp3",
+  "can": "audio/words/can.mp3",
+  "cold": "audio/words/cold.mp3",
+  "cool": "audio/words/cool.mp3",
+  "day": "audio/words/day.mp3",
+  "days": "audio/words/days.mp3",
+  "do": "audio/words/do.mp3",
+  "else": "audio/words/else.mp3",
+  "feel": "audio/words/feel.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "need": "audio/words/need.mp3",
+  "on": "audio/words/on.mp3",
+  "raincoat": "audio/words/raincoat.mp3",
+  "rainy": "audio/words/rainy.mp3",
+  "scarf": "audio/words/scarf.mp3",
+  "snowman": "audio/words/snowman.mp3",
+  "snowy": "audio/words/snowy.mp3",
+  "the": "audio/words/the.mp3",
+  "umbrella": "audio/words/umbrella.mp3",
+  "weather": "audio/words/weather.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

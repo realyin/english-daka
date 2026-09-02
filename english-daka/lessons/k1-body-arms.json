@@ -1,188 +1,213 @@
 {
-  "seq": 505,
-  "level": "K1",
-  "group": "身体 Body",
-  "badge": "arms",
-  "title": "Body · Arms & Hands & Fingers 手臂手指",
-  "cards": [
+ "seq": 505,
+ "level": "K1",
+ "group": "身体 Body",
+ "badge": "arms",
+ "cover": "images/k1-body-arms.webp",
+ "title": "Body · Arms & Hands & Fingers 手臂手指",
+ "cards": [
+  {
+   "word": "arms",
+   "cn": "手臂",
+   "tag": "word",
+   "image": "images/k1-body-arms.webp",
+   "dialog": [
     {
-      "word": "arms",
-      "cn": "手臂",
-      "tag": "word",
-      "image": "images/k1-body-arms.webp",
-      "dialog": [
-        {
-          "q": "What are these body parts?",
-          "a": [
-            "These are arms."
-          ],
-          "key": [
-            "arms"
-          ],
-          "q_cn": "这是身体的什么部位？",
-          "a_cn": [
-            "这是手臂。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-these-are-arms-6580c9.mp3"
-          ]
-        },
-        {
-          "q": "How many arms do you have?",
-          "a": [
-            "I have two arms."
-          ],
-          "key": [
-            "two"
-          ],
-          "q_cn": "你有几个手臂？",
-          "a_cn": [
-            "我有两条手臂。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-how-many-arms-do-you-have-9160af.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-i-have-two-arms-c46b47.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-arms-487e63.mp3"
+     "q": "What are these body parts?",
+     "a": [
+      "These are arms."
+     ],
+     "key": [
+      "arms"
+     ],
+     "q_cn": "这是身体的什么部位？",
+     "a_cn": [
+      "这是手臂。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-these-are-arms-6580c9.mp3"
+     ]
     },
     {
-      "word": "hands",
-      "cn": "手",
-      "tag": "word",
-      "image": "images/k1-body-hands.webp",
-      "dialog": [
-        {
-          "q": "What are these body parts?",
-          "a": [
-            "These are hands."
-          ],
-          "key": [
-            "hands"
-          ],
-          "q_cn": "这是身体的什么部位？",
-          "a_cn": [
-            "这是手。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
-          ]
-        },
-        {
-          "q": "How many hands do you have?",
-          "a": [
-            "I have two hands."
-          ],
-          "key": [
-            "two"
-          ],
-          "q_cn": "你有几只手？",
-          "a_cn": [
-            "我有两只手。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-how-many-hands-do-you-have-73098c.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-i-have-two-hands-5ccb94.mp3"
-          ]
-        },
-        {
-          "q": "Can you clap your hands?",
-          "a": [
-            "I can clap my hands."
-          ],
-          "key": [
-            "clap"
-          ],
-          "q_cn": "你能做什么？",
-          "a_cn": [
-            "我能拍手。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-can-you-clap-your-hands-bae16c.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-i-can-clap-my-hands-b50ef9.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-hands-36fc1b.mp3"
+     "q": "How many arms do you have?",
+     "a": [
+      "I have two arms."
+     ],
+     "key": [
+      "two"
+     ],
+     "q_cn": "你有几个手臂？",
+     "a_cn": [
+      "我有两条手臂。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-how-many-arms-do-you-have-9160af.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-i-have-two-arms-c46b47.mp3"
+     ],
+     "image": "images/k1-two-arms.webp"
     },
     {
-      "word": "fingers",
-      "cn": "手指",
-      "tag": "word",
-      "image": "images/k1-body-fingers.webp",
-      "dialog": [
-        {
-          "q": "What are these body parts?",
-          "a": [
-            "These are fingers."
-          ],
-          "key": [
-            "fingers"
-          ],
-          "q_cn": "这是身体的什么部位？",
-          "a_cn": [
-            "这是手指。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-these-are-fingers-442612.mp3"
-          ]
-        },
-        {
-          "q": "How many fingers do you have?",
-          "a": [
-            "I have ten fingers."
-          ],
-          "key": [
-            "ten"
-          ],
-          "q_cn": "你有几个手指？",
-          "a_cn": [
-            "我有十根手指。"
-          ],
-          "q_audio": "audio/sentences/k1-body-arms/q-how-many-fingers-do-you-have-a3d9a9.mp3",
-          "a_audio": [
-            "audio/sentences/k1-body-arms/a-i-have-ten-fingers-1501e2.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-fingers-696a0f.mp3"
+     "q": "Can you touch your arms?",
+     "a": [
+      "I can touch my arms."
+     ],
+     "key": [
+      "touch"
+     ],
+     "practice": false,
+     "q_cn": "你能摸到手臂吗？",
+     "a_cn": [
+      "我能摸到我的手臂。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-can-you-touch-your-arms-8de3df.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-i-can-touch-my-arms-b2c7cf.mp3"
+     ],
+     "image": "images/k1-touch-arms.webp"
     }
-  ],
-  "word_audio": {
-    "are": "audio/words/are.mp3",
-    "arms": "audio/words/arms.mp3",
-    "body": "audio/words/body.mp3",
-    "can": "audio/words/can.mp3",
-    "clap": "audio/words/clap.mp3",
-    "do": "audio/words/do.mp3",
-    "fingers": "audio/words/fingers.mp3",
-    "hands": "audio/words/hands.mp3",
-    "have": "audio/words/have.mp3",
-    "how": "audio/words/how.mp3",
-    "i": "audio/words/i.mp3",
-    "many": "audio/words/many.mp3",
-    "my": "audio/words/my.mp3",
-    "parts": "audio/words/parts.mp3",
-    "ten": "audio/words/ten.mp3",
-    "these": "audio/words/these.mp3",
-    "two": "audio/words/two.mp3",
-    "what": "audio/words/what.mp3",
-    "you": "audio/words/you.mp3",
-    "your": "audio/words/your.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-arms-487e63.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "hands",
+   "cn": "手",
+   "tag": "word",
+   "image": "images/k1-body-hands.webp",
+   "dialog": [
+    {
+     "q": "What are these body parts?",
+     "a": [
+      "These are hands."
+     ],
+     "key": [
+      "hands"
+     ],
+     "q_cn": "这是身体的什么部位？",
+     "a_cn": [
+      "这是手。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
+     ]
+    },
+    {
+     "q": "How many hands do you have?",
+     "a": [
+      "I have two hands."
+     ],
+     "key": [
+      "two"
+     ],
+     "q_cn": "你有几只手？",
+     "a_cn": [
+      "我有两只手。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-how-many-hands-do-you-have-73098c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-i-have-two-hands-5ccb94.mp3"
+     ],
+     "image": "images/k1-two-hands.webp"
+    },
+    {
+     "q": "Can you clap your hands?",
+     "a": [
+      "I can clap my hands."
+     ],
+     "key": [
+      "clap"
+     ],
+     "q_cn": "你能做什么？",
+     "a_cn": [
+      "我能拍手。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-can-you-clap-your-hands-bae16c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-i-can-clap-my-hands-b50ef9.mp3"
+     ],
+     "image": "images/k1-clap-hands.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-hands-36fc1b.mp3"
+  },
+  {
+   "word": "fingers",
+   "cn": "手指",
+   "tag": "word",
+   "image": "images/k1-body-fingers.webp",
+   "dialog": [
+    {
+     "q": "What are these body parts?",
+     "a": [
+      "These are fingers."
+     ],
+     "key": [
+      "fingers"
+     ],
+     "q_cn": "这是身体的什么部位？",
+     "a_cn": [
+      "这是手指。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-what-are-these-body-parts-5b86ae.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-these-are-fingers-442612.mp3"
+     ]
+    },
+    {
+     "q": "How many fingers do you have?",
+     "a": [
+      "I have ten fingers."
+     ],
+     "key": [
+      "ten"
+     ],
+     "q_cn": "你有几个手指？",
+     "a_cn": [
+      "我有十根手指。"
+     ],
+     "q_audio": "audio/sentences/k1-body-arms/q-how-many-fingers-do-you-have-a3d9a9.mp3",
+     "a_audio": [
+      "audio/sentences/k1-body-arms/a-i-have-ten-fingers-1501e2.mp3"
+     ],
+     "image": "images/k1-ten-fingers.webp"
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-body-arms/q-which-one-is-fingers-696a0f.mp3"
   }
+ ],
+ "word_audio": {
+  "are": "audio/words/are.mp3",
+  "arms": "audio/words/arms.mp3",
+  "body": "audio/words/body.mp3",
+  "can": "audio/words/can.mp3",
+  "clap": "audio/words/clap.mp3",
+  "do": "audio/words/do.mp3",
+  "fingers": "audio/words/fingers.mp3",
+  "hands": "audio/words/hands.mp3",
+  "have": "audio/words/have.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "many": "audio/words/many.mp3",
+  "my": "audio/words/my.mp3",
+  "parts": "audio/words/parts.mp3",
+  "ten": "audio/words/ten.mp3",
+  "these": "audio/words/these.mp3",
+  "touch": "audio/words/touch.mp3",
+  "two": "audio/words/two.mp3",
+  "what": "audio/words/what.mp3",
+  "you": "audio/words/you.mp3",
+  "your": "audio/words/your.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

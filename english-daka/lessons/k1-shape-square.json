@@ -64,6 +64,23 @@
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-square-has-four-sides-ab9f34.mp3"
           ]
+        },
+        {
+          "q": "How many corners does a square have?",
+          "a": [
+            "A square has four corners."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "正方形有几个角？",
+          "a_cn": [
+            "正方形有四个角。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-how-many-corners-does-a-square-have-a9ddd4.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-a-square-has-four-corners-b0f457.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k1-shape-square/q-which-one-is-square-ebea8c.mp3"
@@ -127,6 +144,40 @@
           "a_audio": [
             "audio/sentences/k1-shape-square/a-a-rectangle-has-four-sides-38df80.mp3"
           ]
+        },
+        {
+          "q": "How many corners does a rectangle have?",
+          "a": [
+            "A rectangle has four corners."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "长方形有几个角？",
+          "a_cn": [
+            "长方形有四个角。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-how-many-corners-does-a-rectangle-ha-2c27f4.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-a-rectangle-has-four-corners-00831f.mp3"
+          ]
+        },
+        {
+          "q": "Which is taller, a rectangle or a square?",
+          "a": [
+            "A rectangle is taller than a square."
+          ],
+          "key": [
+            "rectangle"
+          ],
+          "q_cn": "长方形和正方形，哪个更高？",
+          "a_cn": [
+            "长方形比正方形更高。"
+          ],
+          "q_audio": "audio/sentences/k1-shape-square/q-which-is-taller-a-rectangle-or-a-squ-022d5f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-shape-square/a-a-rectangle-is-taller-than-a-square-118bda.mp3"
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k1-shape-square/q-which-one-is-rectangle-93886d.mp3"
@@ -135,6 +186,7 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "bus": "audio/words/bus.mp3",
+    "corners": "audio/words/corners.mp3",
     "does": "audio/words/does.mp3",
     "four": "audio/words/four.mp3",
     "has": "audio/words/has.mp3",
@@ -145,13 +197,17 @@
     "it's": "audio/words/it-s.mp3",
     "like": "audio/words/like.mp3",
     "many": "audio/words/many.mp3",
+    "or": "audio/words/or.mp3",
     "rectangle": "audio/words/rectangle.mp3",
     "shape": "audio/words/shape.mp3",
     "sides": "audio/words/sides.mp3",
     "square": "audio/words/square.mp3",
+    "taller": "audio/words/taller.mp3",
+    "than": "audio/words/than.mp3",
     "the": "audio/words/the.mp3",
     "toast": "audio/words/toast.mp3",
-    "what": "audio/words/what.mp3"
+    "what": "audio/words/what.mp3",
+    "which": "audio/words/which.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

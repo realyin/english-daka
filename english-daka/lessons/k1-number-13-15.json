@@ -1,165 +1,213 @@
 {
-  "seq": 204,
-  "level": "K1",
-  "group": "数字 Numbers",
-  "badge": "13-15",
-  "title": "Numbers 13–15 · 数字 13–15",
-  "cards": [
+ "seq": 204,
+ "level": "K1",
+ "group": "数字 Numbers",
+ "badge": "13-15",
+ "cover": "images/k1-num-thirteen.webp",
+ "title": "Numbers 13–15 · 数字 13–15",
+ "cards": [
+  {
+   "word": "thirteen",
+   "cn": "十三",
+   "tag": "number",
+   "image": "images/k1-num-thirteen.webp",
+   "dialog": [
     {
-      "word": "thirteen",
-      "cn": "十三",
-      "tag": "number",
-      "image": "images/k1-num-thirteen.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number thirteen."
-          ],
-          "key": [
-            "thirteen"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字十三。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-it-s-number-thirteen-108aec.mp3"
-          ]
-        },
-        {
-          "q": "How many plates are there?",
-          "a": [
-            "There are thirteen plates."
-          ],
-          "key": [
-            "thirteen"
-          ],
-          "q_cn": "这里有几个盘子？",
-          "a_cn": [
-            "这里有十三个盘子。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-how-many-plates-are-there-3d45b0.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-there-are-thirteen-plates-b49688.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-thirteen-c5b4ca.mp3"
+     "q": "What's this number?",
+     "a": [
+      "It's number thirteen."
+     ],
+     "key": [
+      "thirteen"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字十三。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-it-s-number-thirteen-108aec.mp3"
+     ]
     },
     {
-      "word": "fourteen",
-      "cn": "十四",
-      "tag": "number",
-      "image": "images/k1-num-fourteen.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number fourteen."
-          ],
-          "key": [
-            "fourteen"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字十四。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-it-s-number-fourteen-35bd69.mp3"
-          ]
-        },
-        {
-          "q": "How many suns are there?",
-          "a": [
-            "There are fourteen suns."
-          ],
-          "key": [
-            "fourteen"
-          ],
-          "q_cn": "这里有几个太阳？",
-          "a_cn": [
-            "这里有十四个太阳。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-how-many-suns-are-there-552fca.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-there-are-fourteen-suns-fbe434.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-fourteen-e28a2e.mp3"
-    },
-    {
-      "word": "fifteen",
-      "cn": "十五",
-      "tag": "number",
-      "image": "images/k1-num-fifteen.webp",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number fifteen."
-          ],
-          "key": [
-            "fifteen"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字十五。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-it-s-number-fifteen-270e39.mp3"
-          ]
-        },
-        {
-          "q": "How many clouds are there?",
-          "a": [
-            "There are fifteen clouds."
-          ],
-          "key": [
-            "fifteen"
-          ],
-          "q_cn": "这里有几朵云？",
-          "a_cn": [
-            "这里有十五朵云。"
-          ],
-          "q_audio": "audio/sentences/k1-number-13-15/q-how-many-clouds-are-there-b6448c.mp3",
-          "a_audio": [
-            "audio/sentences/k1-number-13-15/a-there-are-fifteen-clouds-5af009.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-fifteen-79bb3a.mp3"
+     "q": "How many plates are there?",
+     "a": [
+      "There are thirteen plates."
+     ],
+     "key": [
+      "thirteen"
+     ],
+     "q_cn": "这里有几个盘子？",
+     "a_cn": [
+      "这里有十三个盘子。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-how-many-plates-are-there-3d45b0.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-there-are-thirteen-plates-b49688.mp3"
+     ]
     }
-  ],
-  "word_audio": {
-    "are": "audio/words/are.mp3",
-    "clouds": "audio/words/clouds.mp3",
-    "fifteen": "audio/words/fifteen.mp3",
-    "fourteen": "audio/words/fourteen.mp3",
-    "how": "audio/words/how.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "many": "audio/words/many.mp3",
-    "number": "audio/words/number.mp3",
-    "plates": "audio/words/plates.mp3",
-    "suns": "audio/words/suns.mp3",
-    "there": "audio/words/there.mp3",
-    "thirteen": "audio/words/thirteen.mp3",
-    "this": "audio/words/this.mp3",
-    "what's": "audio/words/what-s.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-thirteen-c5b4ca.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "fourteen",
+   "cn": "十四",
+   "tag": "number",
+   "image": "images/k1-num-fourteen.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number fourteen."
+     ],
+     "key": [
+      "fourteen"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字十四。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-it-s-number-fourteen-35bd69.mp3"
+     ]
+    },
+    {
+     "q": "How many suns are there?",
+     "a": [
+      "There are fourteen suns."
+     ],
+     "key": [
+      "fourteen"
+     ],
+     "q_cn": "这里有几个太阳？",
+     "a_cn": [
+      "这里有十四个太阳。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-how-many-suns-are-there-552fca.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-there-are-fourteen-suns-fbe434.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-fourteen-e28a2e.mp3"
+  },
+  {
+   "word": "fifteen",
+   "cn": "十五",
+   "tag": "number",
+   "image": "images/k1-num-fifteen.webp",
+   "dialog": [
+    {
+     "q": "What's this number?",
+     "a": [
+      "It's number fifteen."
+     ],
+     "key": [
+      "fifteen"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字十五。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-it-s-number-fifteen-270e39.mp3"
+     ]
+    },
+    {
+     "q": "How many clouds are there?",
+     "a": [
+      "There are fifteen clouds."
+     ],
+     "key": [
+      "fifteen"
+     ],
+     "q_cn": "这里有几朵云？",
+     "a_cn": [
+      "这里有十五朵云。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-how-many-clouds-are-there-b6448c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-there-are-fifteen-clouds-5af009.mp3"
+     ]
+    },
+    {
+     "q": "Which number is missing?",
+     "a": [
+      "Number twelve is missing."
+     ],
+     "key": [
+      "twelve"
+     ],
+     "q_cn": "哪个数字不见了？",
+     "a_cn": [
+      "数字十二不见了。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-which-number-is-missing-cf66d3.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-number-twelve-is-missing-24e868.mp3"
+     ]
+    },
+    {
+     "q": "Can you clap your hands fifteen times?",
+     "a": [
+      "I can clap my hands fifteen times."
+     ],
+     "key": [
+      "fifteen"
+     ],
+     "practice": false,
+     "q_cn": "你能拍十五下手吗？",
+     "a_cn": [
+      "我能拍十五下手。"
+     ],
+     "q_audio": "audio/sentences/k1-number-13-15/q-can-you-clap-your-hands-fifteen-time-c215bf.mp3",
+     "a_audio": [
+      "audio/sentences/k1-number-13-15/a-i-can-clap-my-hands-fifteen-times-75580a.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-number-13-15/q-which-one-is-fifteen-79bb3a.mp3"
   }
+ ],
+ "word_audio": {
+  "are": "audio/words/are.mp3",
+  "can": "audio/words/can.mp3",
+  "clap": "audio/words/clap.mp3",
+  "clouds": "audio/words/clouds.mp3",
+  "fifteen": "audio/words/fifteen.mp3",
+  "fourteen": "audio/words/fourteen.mp3",
+  "hands": "audio/words/hands.mp3",
+  "how": "audio/words/how.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "many": "audio/words/many.mp3",
+  "missing": "audio/words/missing.mp3",
+  "my": "audio/words/my.mp3",
+  "number": "audio/words/number.mp3",
+  "plates": "audio/words/plates.mp3",
+  "suns": "audio/words/suns.mp3",
+  "there": "audio/words/there.mp3",
+  "thirteen": "audio/words/thirteen.mp3",
+  "this": "audio/words/this.mp3",
+  "times": "audio/words/times.mp3",
+  "twelve": "audio/words/twelve.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "which": "audio/words/which.mp3",
+  "you": "audio/words/you.mp3",
+  "your": "audio/words/your.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }
