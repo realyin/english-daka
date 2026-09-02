@@ -186,6 +186,23 @@
   .cover .art img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
   }
+  /* 有封面画的卡:图不再铺满 .art,四边留一圈边、带自己的圆角,垫在浅色衬底上 ——
+     像一张贴在卡片上的画。铺满的版本家长实测反馈"把卡片撑得太满,反而不美观"。
+     内缩量跟卡宽走(160px 卡约 10px),窄屏小卡自动收窄。
+     衬底不用 var(--c):那是组色,饱和度高,围着水彩图一圈会很吵。
+     字形只是藏起来不删 —— 图 404 时 onerror 把 has-cover 摘掉,字形原样回来。 */
+  .cover .art.has-cover{background:#F4F7FC;}
+  .cover .art.has-cover .glyph{visibility:hidden;}
+  /* ⚠️ 宽高必须显式算出来,不能写 auto:<img> 是替换元素,绝对定位下
+     left/right 同时给定也不会把它撑开,auto 只取固有尺寸 —— 实测缩成左上角
+     40×53 的一小块。--inset 算一次,四边和宽高共用。 */
+  .cover .art.has-cover img{
+    --inset:calc(var(--cw) * 0.062);
+    inset:var(--inset);
+    width:calc(100% - var(--inset) * 2);height:calc(100% - var(--inset) * 2);
+    border-radius:calc(var(--cw) * 0.07);
+  }
+  .cover .art.has-cover .cover-stars{top:calc(var(--cw) * 0.062 + 5px);right:calc(var(--cw) * 0.062 + 5px);}
   .cover .label{padding:8px 10px 10px;background:#fff;}
   .cover .en{font-size:14px;font-weight:900;line-height:1.2;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -1663,12 +1680,14 @@ function buildShelf(group, lessons, memKey){
     const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
     // 封面画(可选):有 cover 字段就铺一张图盖住字形徽章;图还没入库时 onerror
     // 把 <img> 摘掉,露出底下照常渲染的 glyph —— 404 下外观和以前完全一样
+    // onerror 要把 has-cover 一起摘掉:类名留着的话字形还是藏的、衬底还是浅色,
+    // 404 退回来的就不是"原来那个字形封面"而是一块空白
     const cover = l.cover
       ? `<img src="lessons/${l.cover}" alt="" loading="lazy"` +
-        ` onerror="this.parentNode&&this.parentNode.removeChild(this)">`
+        ` onerror="var p=this.parentNode;if(p){p.classList.remove('has-cover');p.removeChild(this);}">`
       : ``;
     a.innerHTML =
-      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
+      `<div class="art${l.cover ? " has-cover" : ""}"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
       cover +
       (got > 0 ? `<span class="cover-stars"><svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
