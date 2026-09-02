@@ -52,6 +52,10 @@
           "q_cn": "这是什么单词？",
           "a_cn": [
             "这是 hut。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-it-s-hut-093258.mp3"
           ]
         },
         {
@@ -67,6 +71,11 @@
           "a_cn": [
             "H 发 /h/，U 发 /ʌ/，T 发 /t/，/h/ /ʌ/ /t/，hut。",
             "这间小屋很小。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-how-do-you-read-h-u-t-66877b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-h-says-h-u-says-u-t-says-t-h-u-t-hut-7f7c6e.mp3",
+            "audio/sentences/k2-cvc-u/a-the-hut-is-small-c13498.mp3"
           ]
         },
         {
@@ -80,6 +89,10 @@
           "q_cn": "hut 以什么音开头？",
           "a_cn": [
             "hut 以 /h/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-hut-begin-with-0869b3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-hut-begins-with-the-sound-h-ef9d5e.mp3"
           ]
         },
         {
@@ -93,9 +106,15 @@
           "q_cn": "hut 中间是什么音？",
           "a_cn": [
             "hut 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-hut-have-in-the-midd-377b72.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-hut-has-the-sound-u-in-the-middle-dbddbb.mp3"
           ]
         }
-      ]
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-cvc-u/q-which-one-is-hut-f77163.mp3"
     },
     {
       "word": "bug",
@@ -144,6 +163,10 @@
           "q_cn": "这是什么单词？",
           "a_cn": [
             "这是 bug。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-it-s-bug-0ce030.mp3"
           ]
         },
         {
@@ -159,6 +182,11 @@
           "a_cn": [
             "B 发 /b/，U 发 /ʌ/，G 发 /g/，/b/ /ʌ/ /g/，bug。",
             "小虫子在叶子上。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-how-do-you-read-b-u-g-e11958.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-b-says-b-u-says-u-g-says-g-b-u-g-bug-976138.mp3",
+            "audio/sentences/k2-cvc-u/a-the-bug-is-on-a-leaf-c5ae47.mp3"
           ]
         },
         {
@@ -172,6 +200,10 @@
           "q_cn": "bug 以什么音开头？",
           "a_cn": [
             "bug 以 /b/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-bug-begin-with-afe263.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-bug-begins-with-the-sound-b-dbc2e0.mp3"
           ]
         },
         {
@@ -185,9 +217,15 @@
           "q_cn": "bug 中间是什么音？",
           "a_cn": [
             "bug 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-bug-have-in-the-midd-1931a0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-bug-has-the-sound-u-in-the-middle-ce535d.mp3"
           ]
         }
-      ]
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-cvc-u/q-which-one-is-bug-a88aab.mp3"
     },
     {
       "word": "tub",
@@ -236,13 +274,17 @@
           "q_cn": "这是什么单词？",
           "a_cn": [
             "这是 tub。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-it-s-tub-b848ea.mp3"
           ]
         },
         {
           "q": "How do you read t, u, b?",
           "a": [
             "T says /t/, U says /u/, B says /b/, /t/ /u/ /b/, tub.",
-            "The duck is in the tub."
+            "The tub is full of bubbles."
           ],
           "key": [
             "tub"
@@ -250,7 +292,12 @@
           "q_cn": "t, u, b 连起来怎么读？",
           "a_cn": [
             "T 发 /t/，U 发 /ʌ/，B 发 /b/，/t/ /ʌ/ /b/，tub。",
-            "鸭子在浴缸里。"
+            "浴缸里全是泡泡。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-how-do-you-read-t-u-b-8be010.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-t-says-t-u-says-u-b-says-b-t-u-b-tub-943979.mp3",
+            "audio/sentences/k2-cvc-u/a-the-tub-is-full-of-bubbles-3539e8.mp3"
           ]
         },
         {
@@ -264,6 +311,10 @@
           "q_cn": "tub 以什么音开头？",
           "a_cn": [
             "tub 以 /t/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-tub-begin-with-f16647.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-tub-begins-with-the-sound-t-1f606f.mp3"
           ]
         },
         {
@@ -277,9 +328,15 @@
           "q_cn": "tub 中间是什么音？",
           "a_cn": [
             "tub 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-tub-have-in-the-midd-9b4eaa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-tub-has-the-sound-u-in-the-middle-dd3017.mp3"
           ]
         }
-      ]
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-cvc-u/q-which-one-is-tub-b62794.mp3"
     },
     {
       "word": "nut",
@@ -328,6 +385,10 @@
           "q_cn": "这是什么单词？",
           "a_cn": [
             "这是 nut。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-it-s-nut-6a5be7.mp3"
           ]
         },
         {
@@ -343,6 +404,11 @@
           "a_cn": [
             "N 发 /n/，U 发 /ʌ/，T 发 /t/，/n/ /ʌ/ /t/，nut。",
             "松鼠有一颗坚果。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-how-do-you-read-n-u-t-9b23e8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-n-says-n-u-says-u-t-says-t-n-u-t-nut-d2a34f.mp3",
+            "audio/sentences/k2-cvc-u/a-the-squirrel-has-a-nut-bcebd9.mp3"
           ]
         },
         {
@@ -356,6 +422,10 @@
           "q_cn": "nut 以什么音开头？",
           "a_cn": [
             "nut 以 /n/ 音开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-nut-begin-with-97191d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-nut-begins-with-the-sound-n-b988ea.mp3"
           ]
         },
         {
@@ -369,9 +439,66 @@
           "q_cn": "nut 中间是什么音？",
           "a_cn": [
             "nut 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-nut-have-in-the-midd-f7068f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-u/a-nut-has-the-sound-u-in-the-middle-0dba22.mp3"
           ]
         }
-      ]
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-cvc-u/q-which-one-is-nut-070d07.mp3"
     }
-  ]
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "b": "audio/words/b.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "bubbles": "audio/words/bubbles.mp3",
+    "bug": "audio/words/bug.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "full": "audio/words/full.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "hut": "audio/words/hut.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "leaf": "audio/words/leaf.mp3",
+    "middle": "audio/words/middle.mp3",
+    "n": "audio/words/n.mp3",
+    "nut": "audio/words/nut.mp3",
+    "of": "audio/words/of.mp3",
+    "on": "audio/words/on.mp3",
+    "read": "audio/words/read.mp3",
+    "says": "audio/words/says.mp3",
+    "small": "audio/words/small.mp3",
+    "sound": "audio/words/sound.mp3",
+    "squirrel": "audio/words/squirrel.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "tub": "audio/words/tub.mp3",
+    "u": "audio/words/u.mp3",
+    "what": "audio/words/what.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
 }
