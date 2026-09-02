@@ -29,14 +29,14 @@
           ],
           "opts": [
             {
+              "key": "n",
+              "text": "It's letter N.",
+              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-n-ba8f15.mp3"
+            },
+            {
               "key": "o",
               "text": "It's letter O.",
               "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-o-2df967.mp3"
-            },
-            {
-              "key": "p",
-              "text": "It's letter P.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-p-39352f.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           "image": "images/k1-pose-m.webp",
           "opts": [
             {
+              "key": "o",
+              "text": "I can show you letter O.",
+              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-o-5df44b.mp3"
+            },
+            {
               "key": "p",
               "text": "I can show you letter P.",
               "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-p-34fccc.mp3"
-            },
-            {
-              "key": "n",
-              "text": "I can show you letter N.",
-              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-n-d901f0.mp3"
             }
           ]
         },
@@ -88,9 +88,9 @@
           ],
           "opts": [
             {
-              "key": "big",
-              "text": "It's a big N.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-a-big-n-c26537.mp3"
+              "key": "p",
+              "text": "Letter P comes next.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-p-comes-next-506e58.mp3"
             },
             {
               "key": "o",
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "o",
-              "text": "It's letter O.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-o-2df967.mp3"
-            },
-            {
               "key": "m",
               "text": "It's letter M.",
               "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-m-66d20a.mp3"
+            },
+            {
+              "key": "o",
+              "text": "It's letter O.",
+              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-o-2df967.mp3"
             }
           ]
         },
@@ -156,14 +156,14 @@
           "image": "images/k1-pose-n.webp",
           "opts": [
             {
-              "key": "o",
-              "text": "I can show you letter O.",
-              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-o-5df44b.mp3"
-            },
-            {
               "key": "m",
               "text": "I can show you letter M.",
               "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-m-5f2341.mp3"
+            },
+            {
+              "key": "o",
+              "text": "I can show you letter O.",
+              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-o-5df44b.mp3"
             }
           ]
         },
@@ -190,9 +190,9 @@
               "audio": "audio/sentences/k1-letter-mnop/a-it-s-a-small-m-a8f948.mp3"
             },
             {
-              "key": "o",
-              "text": "Letter O is missing.",
-              "audio": "audio/sentences/k1-letter-mnop/a-letter-o-is-missing-48378a.mp3"
+              "key": "small",
+              "text": "It's a small o.",
+              "audio": "audio/sentences/k1-letter-mnop/a-it-s-a-small-o-b202fc.mp3"
             }
           ]
         }
@@ -223,14 +223,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "It's letter M.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-m-66d20a.mp3"
-            },
-            {
               "key": "p",
               "text": "It's letter P.",
               "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-p-39352f.mp3"
+            },
+            {
+              "key": "n",
+              "text": "It's letter N.",
+              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-n-ba8f15.mp3"
             }
           ]
         },
@@ -253,14 +253,14 @@
           "image": "images/k1-pose-o.webp",
           "opts": [
             {
+              "key": "n",
+              "text": "I can show you letter N.",
+              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-n-d901f0.mp3"
+            },
+            {
               "key": "m",
               "text": "I can show you letter M.",
               "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-m-5f2341.mp3"
-            },
-            {
-              "key": "p",
-              "text": "I can show you letter P.",
-              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-p-34fccc.mp3"
             }
           ]
         },
@@ -282,14 +282,14 @@
           ],
           "opts": [
             {
-              "key": "big",
-              "text": "It's a big P.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-a-big-p-d38d98.mp3"
-            },
-            {
               "key": "p",
               "text": "Letter P comes next.",
               "audio": "audio/sentences/k1-letter-mnop/a-letter-p-comes-next-506e58.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Letter O is missing.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-o-is-missing-48378a.mp3"
             }
           ]
         }
@@ -320,9 +320,9 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "It's letter N.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-n-ba8f15.mp3"
+              "key": "m",
+              "text": "It's letter M.",
+              "audio": "audio/sentences/k1-letter-mnop/a-it-s-letter-m-66d20a.mp3"
             },
             {
               "key": "o",
@@ -350,14 +350,14 @@
           "image": "images/k1-pose-p.webp",
           "opts": [
             {
-              "key": "m",
-              "text": "I can show you letter M.",
-              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-m-5f2341.mp3"
-            },
-            {
               "key": "n",
               "text": "I can show you letter N.",
               "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-n-d901f0.mp3"
+            },
+            {
+              "key": "m",
+              "text": "I can show you letter M.",
+              "audio": "audio/sentences/k1-letter-mnop/a-i-can-show-you-letter-m-5f2341.mp3"
             }
           ]
         },
@@ -379,14 +379,14 @@
           ],
           "opts": [
             {
-              "key": "small",
-              "text": "It's a small o.",
-              "audio": "audio/sentences/k1-letter-mnop/a-it-s-a-small-o-b202fc.mp3"
-            },
-            {
               "key": "p",
               "text": "Letter P comes next.",
               "audio": "audio/sentences/k1-letter-mnop/a-letter-p-comes-next-506e58.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Letter O is missing.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-o-is-missing-48378a.mp3"
             }
           ]
         }
@@ -429,9 +429,9 @@
               "audio": "audio/sentences/k1-letter-mnop/a-letter-r-is-missing-a60940.mp3"
             },
             {
-              "key": "k",
-              "text": "Letter K is missing.",
-              "audio": "audio/sentences/k1-letter-mnop/a-letter-k-is-missing-cfc42a.mp3"
+              "key": "x",
+              "text": "Letter X is missing.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-x-is-missing-287af3.mp3"
             }
           ]
         }
@@ -468,14 +468,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Letter L comes next.",
-              "audio": "audio/sentences/k1-letter-mnop/a-letter-l-comes-next-bb9c03.mp3"
+              "key": "d",
+              "text": "Letter D comes next.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-d-comes-next-bcf738.mp3"
             },
             {
-              "key": "z",
-              "text": "Letter Z comes next.",
-              "audio": "audio/sentences/k1-letter-mnop/a-letter-z-comes-next-a40cde.mp3"
+              "key": "u",
+              "text": "Letter U comes next.",
+              "audio": "audio/sentences/k1-letter-mnop/a-letter-u-comes-next-78b242.mp3"
             }
           ]
         }
@@ -488,12 +488,11 @@
     "big": "audio/words/big.mp3",
     "can": "audio/words/can.mp3",
     "comes": "audio/words/comes.mp3",
+    "d": "audio/words/d.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
-    "k": "audio/words/k.mp3",
-    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter m": "audio/words/letter-m.mp3",
     "letter n": "audio/words/letter-n.mp3",
@@ -512,11 +511,12 @@
     "show": "audio/words/show.mp3",
     "small": "audio/words/small.mp3",
     "this": "audio/words/this.mp3",
+    "u": "audio/words/u.mp3",
     "what comes next": "audio/words/what-comes-next.mp3",
     "what's": "audio/words/what-s.mp3",
     "which": "audio/words/which.mp3",
-    "you": "audio/words/you.mp3",
-    "z": "audio/words/z.mp3"
+    "x": "audio/words/x.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

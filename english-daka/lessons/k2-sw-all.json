@@ -31,14 +31,14 @@
           ],
           "opts": [
             {
-              "key": "i",
-              "text": "It's sight word I.",
-              "audio": "audio/sentences/k2-sw-all/a-it-s-sight-word-i-2cad5d.mp3"
+              "key": "and",
+              "text": "It's sight word and.",
+              "audio": "audio/sentences/k2-sw-all/a-it-s-sight-word-and-9c3d0b.mp3"
             },
             {
-              "key": "sleep",
-              "text": "It's sight word sleep.",
-              "audio": "audio/sentences/k2-sw-all/a-it-s-sight-word-sleep-0313cc.mp3"
+              "key": "too",
+              "text": "It's sight word too.",
+              "audio": "audio/sentences/k2-sw-all/a-it-s-sight-word-too-47590f.mp3"
             }
           ]
         }
@@ -70,14 +70,14 @@
           "image": "images/k2-all-birds-wings.webp",
           "opts": [
             {
-              "key": "play",
-              "text": "Dan and Cam play all day.",
-              "audio": "audio/sentences/k2-sw-all/a-dan-and-cam-play-all-day-778ca8.mp3"
-            },
-            {
               "key": "fly",
               "text": "Yes, all the birds can fly.",
               "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-can-fly-531e1c.mp3"
+            },
+            {
+              "key": "play",
+              "text": "Dan and Cam play all day.",
+              "audio": "audio/sentences/k2-sw-all/a-dan-and-cam-play-all-day-778ca8.mp3"
             }
           ]
         },
@@ -100,14 +100,14 @@
           "image": "images/k2-all-birds-fly.webp",
           "opts": [
             {
-              "key": "wings",
-              "text": "Yes, all the birds have wings.",
-              "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
-            },
-            {
               "key": "play",
               "text": "Dan and Cam play all day.",
               "audio": "audio/sentences/k2-sw-all/a-dan-and-cam-play-all-day-778ca8.mp3"
+            },
+            {
+              "key": "wings",
+              "text": "Yes, all the birds have wings.",
+              "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
             }
           ]
         }
@@ -138,14 +138,14 @@
           ],
           "opts": [
             {
-              "key": "wings",
-              "text": "Yes, all the birds have wings.",
-              "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
-            },
-            {
               "key": "fly",
               "text": "Yes, all the birds can fly.",
               "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-can-fly-531e1c.mp3"
+            },
+            {
+              "key": "wings",
+              "text": "Yes, all the birds have wings.",
+              "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
             }
           ]
         }
@@ -176,14 +176,14 @@
           ],
           "opts": [
             {
-              "key": "eating",
-              "text": "Mom's hobby is eating.",
-              "audio": "audio/sentences/k2-sw-all/a-mom-s-hobby-is-eating-b108fe.mp3"
-            },
-            {
               "key": "wings",
               "text": "Yes, all the birds have wings.",
               "audio": "audio/sentences/k2-sw-all/a-yes-all-the-birds-have-wings-8011fe.mp3"
+            },
+            {
+              "key": "skip",
+              "text": "Yes, I can skip.",
+              "audio": "audio/sentences/k2-sw-all/a-yes-i-can-skip-e29bc2.mp3"
             }
           ]
         },
@@ -236,14 +236,14 @@
           "image": "images/k2-mom-eating.webp",
           "opts": [
             {
-              "key": "running",
-              "text": "Dad's hobby is running.",
-              "audio": "audio/sentences/k2-sw-all/a-dad-s-hobby-is-running-0c93f0.mp3"
-            },
-            {
               "key": "skip",
               "text": "Yes, I can skip.",
               "audio": "audio/sentences/k2-sw-all/a-yes-i-can-skip-e29bc2.mp3"
+            },
+            {
+              "key": "running",
+              "text": "Dad's hobby is running.",
+              "audio": "audio/sentences/k2-sw-all/a-dad-s-hobby-is-running-0c93f0.mp3"
             }
           ]
         }
@@ -274,14 +274,14 @@
           ],
           "opts": [
             {
+              "key": "running",
+              "text": "Dad's hobby is running.",
+              "audio": "audio/sentences/k2-sw-all/a-dad-s-hobby-is-running-0c93f0.mp3"
+            },
+            {
               "key": "all",
               "text": "It's sight word all.",
               "audio": "audio/sentences/k2-sw-all/a-it-s-sight-word-all-b38dd2.mp3"
-            },
-            {
-              "key": "eating",
-              "text": "Mom's hobby is eating.",
-              "audio": "audio/sentences/k2-sw-all/a-mom-s-hobby-is-eating-b108fe.mp3"
             }
           ]
         }
@@ -314,9 +314,9 @@
     "running": "audio/words/running.mp3",
     "sight": "audio/words/sight.mp3",
     "skip": "audio/words/skip.mp3",
-    "sleep": "audio/words/sleep.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "too": "audio/words/too.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "wings": "audio/words/wings.mp3",

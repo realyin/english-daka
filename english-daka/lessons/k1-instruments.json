@@ -30,9 +30,9 @@
           ],
           "opts": [
             {
-              "key": "guitar",
-              "text": "It's a guitar.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-guitar-c0bded.mp3"
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-trumpet-f848f7.mp3"
             },
             {
               "key": "violin",
@@ -90,14 +90,14 @@
           "image": "images/k1-piano-black-white.webp",
           "opts": [
             {
-              "key": "blue",
-              "text": "A piano is blue and white.",
-              "audio": "audio/sentences/k1-instruments/a-a-piano-is-blue-and-white-0690d0.mp3"
+              "key": "orange",
+              "text": "A piano is orange and white.",
+              "audio": "audio/sentences/k1-instruments/a-a-piano-is-orange-and-white-298e6a.mp3"
             },
             {
-              "key": "yellow",
-              "text": "A piano is yellow and white.",
-              "audio": "audio/sentences/k1-instruments/a-a-piano-is-yellow-and-white-2a8f44.mp3"
+              "key": "red",
+              "text": "A piano is red and white.",
+              "audio": "audio/sentences/k1-instruments/a-a-piano-is-red-and-white-3a2531.mp3"
             }
           ]
         },
@@ -146,9 +146,9 @@
           ],
           "opts": [
             {
-              "key": "piano",
-              "text": "It's a piano.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-piano-8300b6.mp3"
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-trumpet-f848f7.mp3"
             },
             {
               "key": "violin",
@@ -251,14 +251,14 @@
           ],
           "opts": [
             {
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-trumpet-f848f7.mp3"
+            },
+            {
               "key": "piano",
               "text": "It's a piano.",
               "audio": "audio/sentences/k1-instruments/a-it-s-a-piano-8300b6.mp3"
-            },
-            {
-              "key": "guitar",
-              "text": "It's a guitar.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-guitar-c0bded.mp3"
             }
           ]
         },
@@ -311,14 +311,14 @@
           "image": "images/k1-violin-bow.webp",
           "opts": [
             {
-              "key": "drumsticks",
-              "text": "I need drumsticks.",
-              "audio": "audio/sentences/k1-instruments/a-i-need-drumsticks-c257ee.mp3"
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-trumpet-f848f7.mp3"
             },
             {
-              "key": "violin",
-              "text": "It's a violin.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-violin-ae75c9.mp3"
+              "key": "drums",
+              "text": "They are drums.",
+              "audio": "audio/sentences/k1-instruments/a-they-are-drums-b38d54.mp3"
             }
           ]
         }
@@ -349,14 +349,14 @@
           ],
           "opts": [
             {
+              "key": "piano",
+              "text": "It's a piano.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-piano-8300b6.mp3"
+            },
+            {
               "key": "guitar",
               "text": "It's a guitar.",
               "audio": "audio/sentences/k1-instruments/a-it-s-a-guitar-c0bded.mp3"
-            },
-            {
-              "key": "violin",
-              "text": "It's a violin.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-violin-ae75c9.mp3"
             }
           ]
         },
@@ -465,14 +465,14 @@
           "image": "images/k1-play-drums-hands.webp",
           "opts": [
             {
-              "key": "black",
-              "text": "A piano is black and white.",
-              "audio": "audio/sentences/k1-instruments/a-a-piano-is-black-and-white-848cb1.mp3"
+              "key": "fingers",
+              "text": "I can play the violin with my hands and fingers.",
+              "audio": "audio/sentences/k1-instruments/a-i-can-play-the-violin-with-my-hands--2899f9.mp3"
             },
             {
               "key": "fingers",
-              "text": "I can play the piano with my hands and fingers.",
-              "audio": "audio/sentences/k1-instruments/a-i-can-play-the-piano-with-my-hands-a-b644fb.mp3"
+              "text": "I can play the guitar with my hands and fingers.",
+              "audio": "audio/sentences/k1-instruments/a-i-can-play-the-guitar-with-my-hands--3f585f.mp3"
             }
           ]
         },
@@ -495,14 +495,14 @@
           "image": "images/k1-drumsticks.webp",
           "opts": [
             {
+              "key": "guitar",
+              "text": "It's a guitar.",
+              "audio": "audio/sentences/k1-instruments/a-it-s-a-guitar-c0bded.mp3"
+            },
+            {
               "key": "violin",
               "text": "It's a violin.",
               "audio": "audio/sentences/k1-instruments/a-it-s-a-violin-ae75c9.mp3"
-            },
-            {
-              "key": "piano",
-              "text": "It's a piano.",
-              "audio": "audio/sentences/k1-instruments/a-it-s-a-piano-8300b6.mp3"
             }
           ]
         }
@@ -515,7 +515,6 @@
     "and": "audio/words/and.mp3",
     "are": "audio/words/are.mp3",
     "black": "audio/words/black.mp3",
-    "blue": "audio/words/blue.mp3",
     "body": "audio/words/body.mp3",
     "bow": "audio/words/bow.mp3",
     "can": "audio/words/can.mp3",
@@ -535,10 +534,12 @@
     "musical": "audio/words/musical.mp3",
     "my": "audio/words/my.mp3",
     "need": "audio/words/need.mp3",
+    "orange": "audio/words/orange.mp3",
     "parts": "audio/words/parts.mp3",
     "pets": "audio/words/pets.mp3",
     "piano": "audio/words/piano.mp3",
     "play": "audio/words/play.mp3",
+    "red": "audio/words/red.mp3",
     "students": "audio/words/students.mp3",
     "the": "audio/words/the.mp3",
     "they": "audio/words/they.mp3",
@@ -552,7 +553,6 @@
     "which": "audio/words/which.mp3",
     "white": "audio/words/white.mp3",
     "with": "audio/words/with.mp3",
-    "yellow": "audio/words/yellow.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3"
   },

@@ -33,9 +33,9 @@
           ],
           "opts": [
             {
-              "key": "too",
-              "text": "It's sight word too.",
-              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-too-47590f.mp3"
+              "key": "i",
+              "text": "It's sight word I.",
+              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-i-2cad5d.mp3"
             },
             {
               "key": "like",
@@ -75,14 +75,14 @@
           ],
           "opts": [
             {
+              "key": "i",
+              "text": "It's sight word I.",
+              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-i-2cad5d.mp3"
+            },
+            {
               "key": "my",
               "text": "It's sight word my.",
               "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-my-79286e.mp3"
-            },
-            {
-              "key": "too",
-              "text": "It's sight word too.",
-              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-too-47590f.mp3"
             }
           ]
         }
@@ -117,14 +117,14 @@
           ],
           "opts": [
             {
+              "key": "like",
+              "text": "It's sight word like.",
+              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-like-8b0a6b.mp3"
+            },
+            {
               "key": "my",
               "text": "It's sight word my.",
               "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-my-79286e.mp3"
-            },
-            {
-              "key": "too",
-              "text": "It's sight word too.",
-              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-too-47590f.mp3"
             }
           ]
         }
@@ -159,9 +159,9 @@
           ],
           "opts": [
             {
-              "key": "my",
-              "text": "It's sight word my.",
-              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-my-79286e.mp3"
+              "key": "i",
+              "text": "It's sight word I.",
+              "audio": "audio/sentences/k2-sw-my-like-i-too/a-it-s-sight-word-i-2cad5d.mp3"
             },
             {
               "key": "like",

@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "winter",
-              "text": "It's winter.",
-              "audio": "audio/sentences/k1-weather-spring/a-it-s-winter-785a59.mp3"
-            },
-            {
               "key": "hot",
               "text": "It's hot.",
               "audio": "audio/sentences/k1-weather-spring/a-it-s-hot-1dda03.mp3"
+            },
+            {
+              "key": "summer",
+              "text": "It's summer.",
+              "audio": "audio/sentences/k1-weather-spring/a-it-s-summer-723917.mp3"
             }
           ]
         },
@@ -90,14 +90,14 @@
           "image": "images/k1-spring-warm.webp",
           "opts": [
             {
+              "key": "cold",
+              "text": "I feel cold in winter.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-feel-cold-in-winter-fac0ea.mp3"
+            },
+            {
               "key": "cool",
               "text": "I feel cool in fall.",
               "audio": "audio/sentences/k1-weather-spring/a-i-feel-cool-in-fall-182c65.mp3"
-            },
-            {
-              "key": "hot",
-              "text": "I feel hot in summer.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-feel-hot-in-summer-b97de3.mp3"
             }
           ]
         },
@@ -120,14 +120,14 @@
           "image": "images/k1-spring-kite.webp",
           "opts": [
             {
+              "key": "cream",
+              "text": "I can eat ice cream in summer.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-can-eat-ice-cream-in-summer-dab5d4.mp3"
+            },
+            {
               "key": "snowman",
               "text": "I can build a snowman in winter.",
               "audio": "audio/sentences/k1-weather-spring/a-i-can-build-a-snowman-in-winter-39210f.mp3"
-            },
-            {
-              "key": "trees",
-              "text": "I can see yellow trees in fall.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-can-see-yellow-trees-in-fall-072443.mp3"
             }
           ]
         }
@@ -158,14 +158,14 @@
           ],
           "opts": [
             {
-              "key": "winter",
-              "text": "It's winter.",
-              "audio": "audio/sentences/k1-weather-spring/a-it-s-winter-785a59.mp3"
+              "key": "spring",
+              "text": "It's spring.",
+              "audio": "audio/sentences/k1-weather-spring/a-it-s-spring-675c21.mp3"
             },
             {
-              "key": "hot",
-              "text": "It's hot.",
-              "audio": "audio/sentences/k1-weather-spring/a-it-s-hot-1dda03.mp3"
+              "key": "kite",
+              "text": "It's kite.",
+              "audio": "audio/sentences/k1-weather-spring/a-it-s-kite-393325.mp3"
             }
           ]
         },
@@ -218,9 +218,9 @@
           "image": "images/k1-summer-hot.webp",
           "opts": [
             {
-              "key": "cool",
-              "text": "I feel cool in fall.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-feel-cool-in-fall-182c65.mp3"
+              "key": "warm",
+              "text": "I feel warm in spring.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-feel-warm-in-spring-0704f7.mp3"
             },
             {
               "key": "cold",
@@ -248,14 +248,14 @@
           "image": "images/k1-summer-icecream.webp",
           "opts": [
             {
+              "key": "snowman",
+              "text": "I can build a snowman in winter.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-can-build-a-snowman-in-winter-39210f.mp3"
+            },
+            {
               "key": "trees",
               "text": "I can see yellow trees in fall.",
               "audio": "audio/sentences/k1-weather-spring/a-i-can-see-yellow-trees-in-fall-072443.mp3"
-            },
-            {
-              "key": "kite",
-              "text": "I can fly a kite in spring.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-can-fly-a-kite-in-spring-7e71fb.mp3"
             }
           ]
         }
@@ -316,14 +316,14 @@
           "image": "images/k1-fall-yellow-trees.webp",
           "opts": [
             {
-              "key": "snowman",
-              "text": "I can build a snowman in winter.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-can-build-a-snowman-in-winter-39210f.mp3"
-            },
-            {
               "key": "cream",
               "text": "I can eat ice cream in summer.",
               "audio": "audio/sentences/k1-weather-spring/a-i-can-eat-ice-cream-in-summer-dab5d4.mp3"
+            },
+            {
+              "key": "snowman",
+              "text": "I can build a snowman in winter.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-can-build-a-snowman-in-winter-39210f.mp3"
             }
           ]
         },
@@ -346,14 +346,14 @@
           "image": "images/k1-fall-cool.webp",
           "opts": [
             {
-              "key": "warm",
-              "text": "I feel warm in spring.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-feel-warm-in-spring-0704f7.mp3"
-            },
-            {
               "key": "hot",
               "text": "I feel hot in summer.",
               "audio": "audio/sentences/k1-weather-spring/a-i-feel-hot-in-summer-b97de3.mp3"
+            },
+            {
+              "key": "warm",
+              "text": "I feel warm in spring.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-feel-warm-in-spring-0704f7.mp3"
             }
           ]
         }
@@ -384,14 +384,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "It's hot.",
-              "audio": "audio/sentences/k1-weather-spring/a-it-s-hot-1dda03.mp3"
-            },
-            {
               "key": "summer",
               "text": "It's summer.",
               "audio": "audio/sentences/k1-weather-spring/a-it-s-summer-723917.mp3"
+            },
+            {
+              "key": "spring",
+              "text": "It's spring.",
+              "audio": "audio/sentences/k1-weather-spring/a-it-s-spring-675c21.mp3"
             }
           ]
         },
@@ -414,14 +414,14 @@
           "image": "images/k1-winter-scarf.webp",
           "opts": [
             {
-              "key": "flowers",
-              "text": "I can see flowers in spring.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-can-see-flowers-in-spring-12f7be.mp3"
-            },
-            {
               "key": "swimming",
               "text": "I can go swimming in summer.",
               "audio": "audio/sentences/k1-weather-spring/a-i-can-go-swimming-in-summer-3ec8cb.mp3"
+            },
+            {
+              "key": "flowers",
+              "text": "I can see flowers in spring.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-can-see-flowers-in-spring-12f7be.mp3"
             }
           ]
         },
@@ -444,14 +444,14 @@
           "image": "images/k1-winter-cold.webp",
           "opts": [
             {
+              "key": "hot",
+              "text": "I feel hot in summer.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-feel-hot-in-summer-b97de3.mp3"
+            },
+            {
               "key": "warm",
               "text": "I feel warm in spring.",
               "audio": "audio/sentences/k1-weather-spring/a-i-feel-warm-in-spring-0704f7.mp3"
-            },
-            {
-              "key": "cool",
-              "text": "I feel cool in fall.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-feel-cool-in-fall-182c65.mp3"
             }
           ]
         },
@@ -474,9 +474,9 @@
           "image": "images/k1-winter-snowman.webp",
           "opts": [
             {
-              "key": "cream",
-              "text": "I can eat ice cream in summer.",
-              "audio": "audio/sentences/k1-weather-spring/a-i-can-eat-ice-cream-in-summer-dab5d4.mp3"
+              "key": "trees",
+              "text": "I can see yellow trees in fall.",
+              "audio": "audio/sentences/k1-weather-spring/a-i-can-see-yellow-trees-in-fall-072443.mp3"
             },
             {
               "key": "kite",

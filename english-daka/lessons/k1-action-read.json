@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "sing",
-              "text": "I can sing a song.",
-              "audio": "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
-            },
-            {
               "key": "draw",
               "text": "I can draw a picture.",
               "audio": "audio/sentences/k1-action-read/a-i-can-draw-a-picture-6a8f19.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I can sing a song.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
             }
           ]
         }
@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
-              "key": "read",
-              "text": "I can read a book.",
-              "audio": "audio/sentences/k1-action-read/a-i-can-read-a-book-413618.mp3"
-            },
-            {
               "key": "sing",
               "text": "I can sing a song.",
               "audio": "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
+            },
+            {
+              "key": "read",
+              "text": "I can read a book.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-read-a-book-413618.mp3"
             }
           ]
         }
@@ -167,9 +167,9 @@
               "audio": "audio/sentences/k1-action-read/a-i-can-share-53fb04.mp3"
             },
             {
-              "key": "stand",
-              "text": "I can stand.",
-              "audio": "audio/sentences/k1-action-read/a-i-can-stand-d1d72f.mp3"
+              "key": "play",
+              "text": "I can play.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-play-dffe0e.mp3"
             }
           ]
         }
@@ -188,13 +188,13 @@
     "i": "audio/words/i.mp3",
     "like": "audio/words/like.mp3",
     "picture": "audio/words/picture.mp3",
+    "play": "audio/words/play.mp3",
     "read": "audio/words/read.mp3",
     "read a book": "audio/words/read-a-book.mp3",
     "share": "audio/words/share.mp3",
     "sing": "audio/words/sing.mp3",
     "sing a song": "audio/words/sing-a-song.mp3",
     "song": "audio/words/song.mp3",
-    "stand": "audio/words/stand.mp3",
     "to": "audio/words/to.mp3",
     "what": "audio/words/what.mp3",
     "you": "audio/words/you.mp3"

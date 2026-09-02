@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "head",
-              "text": "This is a head.",
-              "audio": "audio/sentences/k1-animal-birds/a-this-is-a-head-66cd58.mp3"
-            },
-            {
               "key": "hospital",
               "text": "This is a hospital.",
               "audio": "audio/sentences/k1-animal-birds/a-this-is-a-hospital-82e78f.mp3"
+            },
+            {
+              "key": "mouth",
+              "text": "This is a mouth.",
+              "audio": "audio/sentences/k1-animal-birds/a-this-is-a-mouth-155fd0.mp3"
             }
           ]
         }
@@ -73,9 +73,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
             },
             {
-              "key": "oval",
-              "text": "It's an oval.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-oval-61cad6.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-elephant-ed3297.mp3"
             }
           ]
         },
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
             },
             {
-              "key": "fly",
-              "text": "Birds can fly.",
-              "audio": "audio/sentences/k1-animal-birds/a-birds-can-fly-394fdc.mp3"
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
             }
           ]
         },
@@ -146,14 +146,14 @@
           "image": "images/k1-birds-fly.webp",
           "opts": [
             {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+            },
+            {
               "key": "crow",
               "text": "It's a crow.",
               "audio": "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
-            },
-            {
-              "key": "eagle",
-              "text": "It's an eagle.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
             }
           ]
         }
@@ -189,9 +189,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-it-s-a-nest-181566.mp3"
             },
             {
-              "key": "camel",
-              "text": "It's a camel.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-camel-8477c1.mp3"
+              "key": "hippo",
+              "text": "It's a hippo.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-hippo-1ba264.mp3"
             }
           ]
         },
@@ -219,9 +219,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
             },
             {
-              "key": "owl",
-              "text": "It's an owl.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+              "key": "eagle",
+              "text": "It's an eagle.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
             }
           ]
         },
@@ -287,9 +287,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
             },
             {
-              "key": "oval",
-              "text": "It's an oval.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-oval-61cad6.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-elephant-ed3297.mp3"
             }
           ]
         },
@@ -317,9 +317,9 @@
               "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
             },
             {
-              "key": "owl",
-              "text": "It's an owl.",
-              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+              "key": "crow",
+              "text": "It's a crow.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
             }
           ]
         }
@@ -334,16 +334,16 @@
     "because": "audio/words/because.mp3",
     "bird": "audio/words/bird.mp3",
     "birds": "audio/words/birds.mp3",
-    "camel": "audio/words/camel.mp3",
     "can": "audio/words/can.mp3",
     "crow": "audio/words/crow.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "eagle": "audio/words/eagle.mp3",
+    "elephant": "audio/words/elephant.mp3",
     "fast": "audio/words/fast.mp3",
     "flies": "audio/words/flies.mp3",
     "fly": "audio/words/fly.mp3",
-    "head": "audio/words/head.mp3",
+    "hippo": "audio/words/hippo.mp3",
     "hospital": "audio/words/hospital.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
@@ -354,9 +354,9 @@
     "like": "audio/words/like.mp3",
     "live": "audio/words/live.mp3",
     "lives": "audio/words/lives.mp3",
+    "mouth": "audio/words/mouth.mp3",
     "nest": "audio/words/nest.mp3",
     "of": "audio/words/of.mp3",
-    "oval": "audio/words/oval.mp3",
     "owl": "audio/words/owl.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",

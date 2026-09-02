@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-job-pilot/a-this-is-a-spaceship-2004c5.mp3"
             },
             {
-              "key": "nest",
-              "text": "This is a nest.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-nest-0f98f0.mp3"
+              "key": "nose",
+              "text": "This is a nose.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-nose-db83ee.mp3"
             }
           ]
         },
@@ -60,14 +60,14 @@
           "image": "images/k1-pilot-fly.webp",
           "opts": [
             {
-              "key": "airport",
-              "text": "This is an airport.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-an-airport-40458d.mp3"
+              "key": "astronaut",
+              "text": "This is an astronaut.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-an-astronaut-40f59b.mp3"
             },
             {
-              "key": "pilot",
-              "text": "This is a pilot.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-pilot-693a93.mp3"
+              "key": "spaceship",
+              "text": "This is a spaceship.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-spaceship-2004c5.mp3"
             }
           ]
         },
@@ -159,9 +159,9 @@
               "audio": "audio/sentences/k1-job-pilot/a-this-is-an-airport-40458d.mp3"
             },
             {
-              "key": "artist",
-              "text": "This is an artist.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-an-artist-1c8d45.mp3"
+              "key": "ambulance",
+              "text": "This is an ambulance.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-an-ambulance-8f46da.mp3"
             }
           ]
         },
@@ -189,9 +189,9 @@
               "audio": "audio/sentences/k1-job-pilot/a-this-is-an-astronaut-40f59b.mp3"
             },
             {
-              "key": "airport",
-              "text": "This is an airport.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-an-airport-40458d.mp3"
+              "key": "spaceship",
+              "text": "This is a spaceship.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-spaceship-2004c5.mp3"
             }
           ]
         }
@@ -227,9 +227,9 @@
               "audio": "audio/sentences/k1-job-pilot/a-this-is-a-pilot-693a93.mp3"
             },
             {
-              "key": "nest",
-              "text": "This is a nest.",
-              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-nest-0f98f0.mp3"
+              "key": "nose",
+              "text": "This is a nose.",
+              "audio": "audio/sentences/k1-job-pilot/a-this-is-a-nose-db83ee.mp3"
             }
           ]
         }
@@ -241,8 +241,8 @@
     "a": "audio/words/a.mp3",
     "airplanes": "audio/words/airplanes.mp3",
     "airport": "audio/words/airport.mp3",
+    "ambulance": "audio/words/ambulance.mp3",
     "an": "audio/words/an.mp3",
-    "artist": "audio/words/artist.mp3",
     "astronaut": "audio/words/astronaut.mp3",
     "astronauts": "audio/words/astronauts.mp3",
     "be": "audio/words/be.mp3",
@@ -254,7 +254,7 @@
     "into": "audio/words/into.mp3",
     "is": "audio/words/is.mp3",
     "job": "audio/words/job.mp3",
-    "nest": "audio/words/nest.mp3",
+    "nose": "audio/words/nose.mp3",
     "pilot": "audio/words/pilot.mp3",
     "pilots": "audio/words/pilots.mp3",
     "space": "audio/words/space.mp3",

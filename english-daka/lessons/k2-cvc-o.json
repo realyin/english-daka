@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
             },
             {
-              "key": "got",
-              "text": "It's got.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
             }
           ]
         },
@@ -89,14 +89,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "/h/ /ot/, hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
-            },
-            {
               "key": "job",
               "text": "/j/ /ob/, job.",
               "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+            },
+            {
+              "key": "dot",
+              "text": "/d/ /ot/, dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-ot-dot-377816.mp3"
             }
           ]
         },
@@ -118,14 +118,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Top begins with the sound /l/.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-l-6b8907.mp3"
+              "key": "/o/",
+              "text": "Top begins with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-o-4830fc.mp3"
             },
             {
-              "key": "/b/",
-              "text": "Top begins with the sound /b/.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-b-c531a7.mp3"
+              "key": "/g/",
+              "text": "Top begins with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-g-c4c9ec.mp3"
             }
           ]
         },
@@ -147,14 +147,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Top begins with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-h-196d7f.mp3"
+              "key": "o",
+              "text": "Top begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-o-16dc36.mp3"
             },
             {
-              "key": "d",
-              "text": "Top begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-d-8d2dc8.mp3"
+              "key": "p",
+              "text": "Top begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-p-aeb2a6.mp3"
             }
           ]
         },
@@ -176,14 +176,14 @@
           ],
           "opts": [
             {
-              "key": "/p/",
-              "text": "Top has the sound /p/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-p-in-the-middle-009823.mp3"
+              "key": "/d/",
+              "text": "Top has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-d-in-the-middle-ded792.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Top has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-h-in-the-middle-be26bf.mp3"
+              "key": "/l/",
+              "text": "Top has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-l-in-the-middle-f76c6e.mp3"
             }
           ]
         },
@@ -205,14 +205,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Top has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-letter-b-in-the-middle-fd40f2.mp3"
+            },
+            {
               "key": "h",
               "text": "Top has letter H in the middle.",
               "audio": "audio/sentences/k2-cvc-o/a-top-has-letter-h-in-the-middle-7f6b23.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Top has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-has-letter-d-in-the-middle-ab7407.mp3"
             }
           ]
         },
@@ -234,14 +234,14 @@
           ],
           "opts": [
             {
-              "key": "/o/",
-              "text": "Top ends with the sound /o/.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-o-107bbb.mp3"
+              "key": "/d/",
+              "text": "Top ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-d-672824.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Top ends with the sound /h/.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-h-16d3c1.mp3"
+              "key": "/l/",
+              "text": "Top ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-l-917580.mp3"
             }
           ]
         },
@@ -263,14 +263,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Top ends with letter T.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-t-ef4627.mp3"
+              "key": "l",
+              "text": "Top ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-l-51e0fd.mp3"
             },
             {
-              "key": "b",
-              "text": "Top ends with letter B.",
-              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-b-968b7e.mp3"
+              "key": "g",
+              "text": "Top ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-g-0748fb.mp3"
             }
           ]
         }
@@ -332,9 +332,9 @@
           ],
           "opts": [
             {
-              "key": "log",
-              "text": "It's log.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
             },
             {
               "key": "hot",
@@ -361,14 +361,14 @@
           ],
           "opts": [
             {
+              "key": "job",
+              "text": "/j/ /ob/, job.",
+              "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+            },
+            {
               "key": "top",
               "text": "/t/ /op/, top.",
               "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
-            },
-            {
-              "key": "hot",
-              "text": "/h/ /ot/, hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
             }
           ]
         },
@@ -395,9 +395,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-b-f6d8fe.mp3"
             },
             {
-              "key": "/o/",
-              "text": "Dot begins with the sound /o/.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-o-03bcde.mp3"
+              "key": "/h/",
+              "text": "Dot begins with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-h-d8f6cf.mp3"
             }
           ]
         },
@@ -419,14 +419,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Dot begins with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-h-9095b3.mp3"
-            },
-            {
               "key": "o",
               "text": "Dot begins with letter O.",
               "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-o-a690f3.mp3"
+            },
+            {
+              "key": "p",
+              "text": "Dot begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-p-af2570.mp3"
             }
           ]
         },
@@ -448,14 +448,14 @@
           ],
           "opts": [
             {
+              "key": "/p/",
+              "text": "Dot has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-the-sound-p-in-the-middle-b0d57a.mp3"
+            },
+            {
               "key": "/j/",
               "text": "Dot has the sound /j/ in the middle.",
               "audio": "audio/sentences/k2-cvc-o/a-dot-has-the-sound-j-in-the-middle-1cf7d2.mp3"
-            },
-            {
-              "key": "/l/",
-              "text": "Dot has the sound /l/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-has-the-sound-l-in-the-middle-0fe898.mp3"
             }
           ]
         },
@@ -477,9 +477,9 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dot has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-has-letter-d-in-the-middle-5fdf13.mp3"
+              "key": "h",
+              "text": "Dot has letter H in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-letter-h-in-the-middle-3c814a.mp3"
             },
             {
               "key": "t",
@@ -506,14 +506,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Dot ends with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-g-9d5a92.mp3"
+              "key": "/d/",
+              "text": "Dot ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-d-ddab5f.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Dot ends with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-j-0f9ea3.mp3"
+              "key": "/l/",
+              "text": "Dot ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-l-d99b0d.mp3"
             }
           ]
         },
@@ -535,14 +535,14 @@
           ],
           "opts": [
             {
-              "key": "b",
-              "text": "Dot ends with letter B.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-b-42961a.mp3"
+              "key": "l",
+              "text": "Dot ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-l-db5fd4.mp3"
             },
             {
-              "key": "p",
-              "text": "Dot ends with letter P.",
-              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-p-6874b7.mp3"
+              "key": "g",
+              "text": "Dot ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-g-d2d299.mp3"
             }
           ]
         }
@@ -604,14 +604,14 @@
           ],
           "opts": [
             {
-              "key": "log",
-              "text": "It's log.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
             },
             {
-              "key": "dot",
-              "text": "It's dot.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
             }
           ]
         },
@@ -638,9 +638,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
             },
             {
-              "key": "hot",
-              "text": "/h/ /ot/, hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
             }
           ]
         },
@@ -662,14 +662,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Got begins with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-j-0d2bda.mp3"
-            },
-            {
               "key": "/l/",
               "text": "Got begins with the sound /l/.",
               "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-l-eea6f6.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Got begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-p-b180bc.mp3"
             }
           ]
         },
@@ -691,14 +691,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Got begins with letter L.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-l-82b0f7.mp3"
+              "key": "j",
+              "text": "Got begins with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-j-fad7f9.mp3"
             },
             {
-              "key": "h",
-              "text": "Got begins with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-h-aed431.mp3"
+              "key": "o",
+              "text": "Got begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-o-c9076c.mp3"
             }
           ]
         },
@@ -720,14 +720,14 @@
           ],
           "opts": [
             {
-              "key": "/p/",
-              "text": "Got has the sound /p/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-p-in-the-middle-79c8bc.mp3"
+              "key": "/d/",
+              "text": "Got has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-d-in-the-middle-f902c2.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Got has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-h-in-the-middle-b15120.mp3"
+              "key": "/l/",
+              "text": "Got has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-l-in-the-middle-f1103a.mp3"
             }
           ]
         },
@@ -749,14 +749,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Got has letter G in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-g-in-the-middle-1833d4.mp3"
+              "key": "p",
+              "text": "Got has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-p-in-the-middle-ef67a2.mp3"
             },
             {
-              "key": "h",
-              "text": "Got has letter H in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-h-in-the-middle-f1555e.mp3"
+              "key": "d",
+              "text": "Got has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-d-in-the-middle-fd6b90.mp3"
             }
           ]
         },
@@ -778,14 +778,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Got ends with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-j-c74994.mp3"
+              "key": "/o/",
+              "text": "Got ends with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-o-cd9c1c.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Got ends with the sound /l/.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-l-9366a6.mp3"
+              "key": "/g/",
+              "text": "Got ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-g-6b7b3c.mp3"
             }
           ]
         },
@@ -807,14 +807,14 @@
           ],
           "opts": [
             {
-              "key": "b",
-              "text": "Got ends with letter B.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-b-106d78.mp3"
+              "key": "l",
+              "text": "Got ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-l-9fcab6.mp3"
             },
             {
-              "key": "p",
-              "text": "Got ends with letter P.",
-              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-p-eb43bd.mp3"
+              "key": "g",
+              "text": "Got ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-g-aaf5ec.mp3"
             }
           ]
         }
@@ -876,14 +876,14 @@
           ],
           "opts": [
             {
-              "key": "got",
-              "text": "It's got.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
             },
             {
-              "key": "job",
-              "text": "It's job.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
+              "key": "log",
+              "text": "It's log.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
             }
           ]
         },
@@ -910,9 +910,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
             },
             {
-              "key": "job",
-              "text": "/j/ /ob/, job.",
-              "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
             }
           ]
         },
@@ -934,14 +934,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Hot begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-g-a51f88.mp3"
+              "key": "/d/",
+              "text": "Hot begins with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-d-b42884.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Hot begins with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-j-2bbe47.mp3"
+              "key": "/l/",
+              "text": "Hot begins with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-l-403c56.mp3"
             }
           ]
         },
@@ -963,14 +963,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Hot begins with letter G.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-g-482fab.mp3"
+              "key": "j",
+              "text": "Hot begins with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-j-d541df.mp3"
             },
             {
-              "key": "d",
-              "text": "Hot begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-d-df9fc5.mp3"
+              "key": "o",
+              "text": "Hot begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-o-e90134.mp3"
             }
           ]
         },
@@ -992,14 +992,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Hot has the sound /l/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-l-in-the-middle-cc2dc4.mp3"
+              "key": "/g/",
+              "text": "Hot has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-g-in-the-middle-9be178.mp3"
             },
             {
-              "key": "/b/",
-              "text": "Hot has the sound /b/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-b-in-the-middle-b6660d.mp3"
+              "key": "/t/",
+              "text": "Hot has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-t-in-the-middle-ec97ad.mp3"
             }
           ]
         },
@@ -1021,14 +1021,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Hot has letter G in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-g-in-the-middle-4160d5.mp3"
+              "key": "p",
+              "text": "Hot has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-p-in-the-middle-bcc602.mp3"
             },
             {
-              "key": "h",
-              "text": "Hot has letter H in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-h-in-the-middle-1302cc.mp3"
+              "key": "d",
+              "text": "Hot has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-d-in-the-middle-b6b763.mp3"
             }
           ]
         },
@@ -1050,14 +1050,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Hot ends with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-j-5d4ba7.mp3"
+              "key": "/o/",
+              "text": "Hot ends with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-o-73cfc4.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Hot ends with the sound /l/.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-l-012a54.mp3"
+              "key": "/g/",
+              "text": "Hot ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-g-2a4b62.mp3"
             }
           ]
         },
@@ -1079,14 +1079,14 @@
           ],
           "opts": [
             {
-              "key": "b",
-              "text": "Hot ends with letter B.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-b-dacf97.mp3"
+              "key": "l",
+              "text": "Hot ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-l-46d13b.mp3"
             },
             {
-              "key": "p",
-              "text": "Hot ends with letter P.",
-              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-p-418162.mp3"
+              "key": "g",
+              "text": "Hot ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-g-b48ddd.mp3"
             }
           ]
         }
@@ -1148,14 +1148,14 @@
           ],
           "opts": [
             {
-              "key": "dot",
-              "text": "It's dot.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+              "key": "got",
+              "text": "It's got.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
             },
             {
-              "key": "hot",
-              "text": "It's hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
             }
           ]
         },
@@ -1177,14 +1177,14 @@
           ],
           "opts": [
             {
-              "key": "got",
-              "text": "/g/ /ot/, got.",
-              "audio": "audio/sentences/k2-cvc-o/a-g-ot-got-433187.mp3"
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
             },
             {
-              "key": "dot",
-              "text": "/d/ /ot/, dot.",
-              "audio": "audio/sentences/k2-cvc-o/a-d-ot-dot-377816.mp3"
+              "key": "hot",
+              "text": "/h/ /ot/, hot.",
+              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
             }
           ]
         },
@@ -1211,9 +1211,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-d-d06db1.mp3"
             },
             {
-              "key": "/g/",
-              "text": "Log begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-g-9a81b9.mp3"
+              "key": "/p/",
+              "text": "Log begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-p-03dbfc.mp3"
             }
           ]
         },
@@ -1235,14 +1235,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Log begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-letter-b-09269b.mp3"
+            },
+            {
               "key": "h",
               "text": "Log begins with letter H.",
               "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-letter-h-210edf.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Log begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-letter-d-0ddf53.mp3"
             }
           ]
         },
@@ -1264,14 +1264,14 @@
           ],
           "opts": [
             {
-              "key": "/p/",
-              "text": "Log has the sound /p/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-p-in-the-middle-ca7d1c.mp3"
+              "key": "/d/",
+              "text": "Log has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-d-in-the-middle-3a9d65.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Log has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-h-in-the-middle-995921.mp3"
+              "key": "/l/",
+              "text": "Log has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-l-in-the-middle-63b7ba.mp3"
             }
           ]
         },
@@ -1293,14 +1293,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Log has letter G in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-g-in-the-middle-529ba5.mp3"
+              "key": "p",
+              "text": "Log has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-p-in-the-middle-23c2a0.mp3"
             },
             {
-              "key": "h",
-              "text": "Log has letter H in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-h-in-the-middle-7dd4fc.mp3"
+              "key": "d",
+              "text": "Log has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-d-in-the-middle-1ce102.mp3"
             }
           ]
         },
@@ -1322,14 +1322,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Log ends with the sound /j/.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-j-41026d.mp3"
-            },
-            {
               "key": "/l/",
               "text": "Log ends with the sound /l/.",
               "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-l-a05aa6.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Log ends with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-p-789061.mp3"
             }
           ]
         },
@@ -1351,14 +1351,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Log ends with letter L.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-l-90fe00.mp3"
+              "key": "j",
+              "text": "Log ends with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-j-c6a11f.mp3"
             },
             {
-              "key": "h",
-              "text": "Log ends with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-h-b21b06.mp3"
+              "key": "o",
+              "text": "Log ends with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-o-d464b7.mp3"
             }
           ]
         }
@@ -1420,14 +1420,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "It's hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+              "key": "log",
+              "text": "It's log.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
             },
             {
-              "key": "got",
-              "text": "It's got.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+              "key": "dog",
+              "text": "It's dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dog-c6655e.mp3"
             }
           ]
         },
@@ -1449,14 +1449,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "/h/ /ot/, hot.",
-              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
             },
             {
-              "key": "log",
-              "text": "/l/ /og/, log.",
-              "audio": "audio/sentences/k2-cvc-o/a-l-og-log-fb19b2.mp3"
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
             }
           ]
         },
@@ -1478,14 +1478,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Job begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-g-08f6fe.mp3"
-            },
-            {
               "key": "/l/",
               "text": "Job begins with the sound /l/.",
               "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-l-5e09ba.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Job begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-p-94edbc.mp3"
             }
           ]
         },
@@ -1507,14 +1507,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Job begins with letter L.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-letter-l-79efaf.mp3"
-            },
-            {
               "key": "g",
               "text": "Job begins with letter G.",
               "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-letter-g-e8b76f.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Job begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-letter-o-baae9d.mp3"
             }
           ]
         },
@@ -1536,14 +1536,14 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Job has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-has-the-sound-t-in-the-middle-092b00.mp3"
-            },
-            {
               "key": "/d/",
               "text": "Job has the sound /d/ in the middle.",
               "audio": "audio/sentences/k2-cvc-o/a-job-has-the-sound-d-in-the-middle-118e83.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Job has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-the-sound-l-in-the-middle-db5aaf.mp3"
             }
           ]
         },
@@ -1565,14 +1565,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Job has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-letter-b-in-the-middle-41df99.mp3"
+            },
+            {
               "key": "h",
               "text": "Job has letter H in the middle.",
               "audio": "audio/sentences/k2-cvc-o/a-job-has-letter-h-in-the-middle-fe5d2d.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Job has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-has-letter-d-in-the-middle-b63c85.mp3"
             }
           ]
         },
@@ -1594,14 +1594,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "Job ends with the sound /h/.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-h-2634f1.mp3"
+              "key": "/d/",
+              "text": "Job ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-d-cb5423.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Job ends with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-t-97634b.mp3"
+              "key": "/l/",
+              "text": "Job ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-l-cd2e5d.mp3"
             }
           ]
         },
@@ -1623,9 +1623,9 @@
           ],
           "opts": [
             {
-              "key": "p",
-              "text": "Job ends with letter P.",
-              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-letter-p-464c49.mp3"
+              "key": "g",
+              "text": "Job ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-letter-g-1509fd.mp3"
             },
             {
               "key": "j",
@@ -1692,14 +1692,14 @@
           ],
           "opts": [
             {
-              "key": "log",
-              "text": "It's log.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
             },
             {
-              "key": "dot",
-              "text": "It's dot.",
-              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+              "key": "got",
+              "text": "It's got.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
             }
           ]
         },
@@ -1721,14 +1721,14 @@
           ],
           "opts": [
             {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            },
+            {
               "key": "hot",
               "text": "/h/ /ot/, hot.",
               "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
-            },
-            {
-              "key": "job",
-              "text": "/j/ /ob/, job.",
-              "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
             }
           ]
         },
@@ -1750,14 +1750,14 @@
           ],
           "opts": [
             {
+              "key": "/t/",
+              "text": "Dog begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-t-aca288.mp3"
+            },
+            {
               "key": "/b/",
               "text": "Dog begins with the sound /b/.",
               "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-b-3294b1.mp3"
-            },
-            {
-              "key": "/o/",
-              "text": "Dog begins with the sound /o/.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-o-55f2bb.mp3"
             }
           ]
         },
@@ -1779,14 +1779,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dog begins with letter G.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-g-ed999a.mp3"
+              "key": "o",
+              "text": "Dog begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-o-72f488.mp3"
             },
             {
-              "key": "h",
-              "text": "Dog begins with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-h-994907.mp3"
+              "key": "p",
+              "text": "Dog begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-p-b4a89d.mp3"
             }
           ]
         },
@@ -1808,14 +1808,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "Dog has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-h-in-the-middle-41a7b8.mp3"
+              "key": "/d/",
+              "text": "Dog has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-d-in-the-middle-8da9ee.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Dog has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-t-in-the-middle-086252.mp3"
+              "key": "/l/",
+              "text": "Dog has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-l-in-the-middle-53ea80.mp3"
             }
           ]
         },
@@ -1837,14 +1837,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Dog has letter T in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-t-in-the-middle-dbab30.mp3"
+              "key": "l",
+              "text": "Dog has letter L in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-l-in-the-middle-d60f5f.mp3"
             },
             {
-              "key": "b",
-              "text": "Dog has letter B in the middle.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-b-in-the-middle-975c7b.mp3"
+              "key": "g",
+              "text": "Dog has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-g-in-the-middle-55570e.mp3"
             }
           ]
         },
@@ -1871,9 +1871,9 @@
               "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-b-6d8976.mp3"
             },
             {
-              "key": "/o/",
-              "text": "Dog ends with the sound /o/.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-o-f95f77.mp3"
+              "key": "/h/",
+              "text": "Dog ends with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-h-0ff3d6.mp3"
             }
           ]
         },
@@ -1895,14 +1895,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Dog ends with letter H.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-h-680ce0.mp3"
+              "key": "o",
+              "text": "Dog ends with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-o-b424e6.mp3"
             },
             {
-              "key": "d",
-              "text": "Dog ends with letter D.",
-              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-d-6936aa.mp3"
+              "key": "p",
+              "text": "Dog ends with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-p-eda814.mp3"
             }
           ]
         }

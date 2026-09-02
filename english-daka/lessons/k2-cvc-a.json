@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
             },
             {
-              "key": "fan",
-              "text": "It's fan.",
-              "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+              "key": "ban",
+              "text": "It's ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-ban-11273d.mp3"
             }
           ]
         },
@@ -94,9 +94,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
             },
             {
-              "key": "ban",
-              "text": "/b/ /an/, ban.",
-              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
             }
           ]
         },
@@ -118,9 +118,9 @@
           ],
           "opts": [
             {
-              "key": "/a/",
-              "text": "Man begins with the sound /a/.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-a-e9313e.mp3"
+              "key": "/f/",
+              "text": "Man begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-f-4caac7.mp3"
             },
             {
               "key": "/k/",
@@ -147,14 +147,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Man begins with letter A.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-a-15d5e6.mp3"
+              "key": "v",
+              "text": "Man begins with letter V.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-v-b0a850.mp3"
             },
             {
-              "key": "f",
-              "text": "Man begins with letter F.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-f-a7f637.mp3"
+              "key": "n",
+              "text": "Man begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-n-b3ed28.mp3"
             }
           ]
         },
@@ -176,14 +176,14 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Man has the sound /b/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-b-in-the-middle-ec85e8.mp3"
+              "key": "/f/",
+              "text": "Man has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-f-in-the-middle-fdaa3b.mp3"
             },
             {
-              "key": "/m/",
-              "text": "Man has the sound /m/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-m-in-the-middle-fcd493.mp3"
+              "key": "/k/",
+              "text": "Man has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-k-in-the-middle-cd97ca.mp3"
             }
           ]
         },
@@ -210,9 +210,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-man-has-letter-m-in-the-middle-bb523e.mp3"
             },
             {
-              "key": "f",
-              "text": "Man has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-has-letter-f-in-the-middle-9a9198.mp3"
+              "key": "b",
+              "text": "Man has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-letter-b-in-the-middle-c06219.mp3"
             }
           ]
         },
@@ -234,14 +234,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Man ends with the sound /k/.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-k-aac03b.mp3"
+              "key": "/m/",
+              "text": "Man ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-m-384ec1.mp3"
             },
             {
-              "key": "/f/",
-              "text": "Man ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-f-e73740.mp3"
+              "key": "/a/",
+              "text": "Man ends with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-a-8ce9ad.mp3"
             }
           ]
         },
@@ -268,9 +268,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-letter-a-a43e07.mp3"
             },
             {
-              "key": "m",
-              "text": "Man ends with letter M.",
-              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-letter-m-f2a3fb.mp3"
+              "key": "b",
+              "text": "Man ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-letter-b-e75e81.mp3"
             }
           ]
         }
@@ -332,14 +332,14 @@
           ],
           "opts": [
             {
-              "key": "man",
-              "text": "It's man.",
-              "audio": "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
+              "key": "can",
+              "text": "It's can.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
             },
             {
-              "key": "van",
-              "text": "It's van.",
-              "audio": "audio/sentences/k2-cvc-a/a-it-s-van-054c0a.mp3"
+              "key": "ban",
+              "text": "It's ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-ban-11273d.mp3"
             }
           ]
         },
@@ -361,14 +361,14 @@
           ],
           "opts": [
             {
-              "key": "ban",
-              "text": "/b/ /an/, ban.",
-              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+              "key": "can",
+              "text": "/k/ /an/, can.",
+              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
             },
             {
-              "key": "man",
-              "text": "/m/ /an/, man.",
-              "audio": "audio/sentences/k2-cvc-a/a-m-an-man-d346e0.mp3"
+              "key": "van",
+              "text": "/v/ /an/, van.",
+              "audio": "audio/sentences/k2-cvc-a/a-v-an-van-7fb3f5.mp3"
             }
           ]
         },
@@ -390,14 +390,14 @@
           ],
           "opts": [
             {
+              "key": "/k/",
+              "text": "Fan begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-k-d70c04.mp3"
+            },
+            {
               "key": "/m/",
               "text": "Fan begins with the sound /m/.",
               "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-m-a15a64.mp3"
-            },
-            {
-              "key": "/a/",
-              "text": "Fan begins with the sound /a/.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-a-5b2116.mp3"
             }
           ]
         },
@@ -419,9 +419,9 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Fan begins with letter N.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-n-1d0018.mp3"
+              "key": "m",
+              "text": "Fan begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-m-a70434.mp3"
             },
             {
               "key": "a",
@@ -448,14 +448,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Fan has the sound /k/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-k-in-the-middle-c94eac.mp3"
+              "key": "/m/",
+              "text": "Fan has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-m-in-the-middle-c597bf.mp3"
             },
             {
-              "key": "/n/",
-              "text": "Fan has the sound /n/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-n-in-the-middle-44f39f.mp3"
+              "key": "/v/",
+              "text": "Fan has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-v-in-the-middle-3d59bf.mp3"
             }
           ]
         },
@@ -477,14 +477,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Fan has letter M in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-m-in-the-middle-ca1a98.mp3"
+              "key": "v",
+              "text": "Fan has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-v-in-the-middle-54c6f8.mp3"
             },
             {
-              "key": "f",
-              "text": "Fan has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-f-in-the-middle-b2e10d.mp3"
+              "key": "n",
+              "text": "Fan has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-n-in-the-middle-bc17e4.mp3"
             }
           ]
         },
@@ -506,14 +506,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Fan ends with the sound /k/.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-k-f8e827.mp3"
+              "key": "/a/",
+              "text": "Fan ends with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-a-878d62.mp3"
             },
             {
-              "key": "/f/",
-              "text": "Fan ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-f-36d319.mp3"
+              "key": "/v/",
+              "text": "Fan ends with the sound /v/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-v-51d40e.mp3"
             }
           ]
         },
@@ -535,14 +535,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Fan ends with letter A.",
-              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-a-f05601.mp3"
-            },
-            {
               "key": "m",
               "text": "Fan ends with letter M.",
               "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-m-e7106d.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Fan ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-a-f05601.mp3"
             }
           ]
         }
@@ -633,9 +633,9 @@
           ],
           "opts": [
             {
-              "key": "fan",
-              "text": "/f/ /an/, fan.",
-              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
+              "key": "man",
+              "text": "/m/ /an/, man.",
+              "audio": "audio/sentences/k2-cvc-a/a-m-an-man-d346e0.mp3"
             },
             {
               "key": "can",
@@ -662,14 +662,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Ban begins with the sound /k/.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-k-c735c4.mp3"
+              "key": "/m/",
+              "text": "Ban begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-m-cb039e.mp3"
             },
             {
-              "key": "/n/",
-              "text": "Ban begins with the sound /n/.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-n-830f53.mp3"
+              "key": "/a/",
+              "text": "Ban begins with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-a-be72de.mp3"
             }
           ]
         },
@@ -691,14 +691,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Ban begins with letter M.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-m-5f9770.mp3"
+              "key": "v",
+              "text": "Ban begins with letter V.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-v-ebbbf9.mp3"
             },
             {
-              "key": "f",
-              "text": "Ban begins with letter F.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-f-b09242.mp3"
+              "key": "n",
+              "text": "Ban begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-n-f96a07.mp3"
             }
           ]
         },
@@ -720,14 +720,14 @@
           ],
           "opts": [
             {
+              "key": "/v/",
+              "text": "Ban has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-the-sound-v-in-the-middle-eac9fb.mp3"
+            },
+            {
               "key": "/n/",
               "text": "Ban has the sound /n/ in the middle.",
               "audio": "audio/sentences/k2-cvc-a/a-ban-has-the-sound-n-in-the-middle-08b187.mp3"
-            },
-            {
-              "key": "/f/",
-              "text": "Ban has the sound /f/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-has-the-sound-f-in-the-middle-f526dc.mp3"
             }
           ]
         },
@@ -749,14 +749,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Ban has letter M in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-m-in-the-middle-7da0a7.mp3"
+              "key": "v",
+              "text": "Ban has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-v-in-the-middle-b439a6.mp3"
             },
             {
-              "key": "f",
-              "text": "Ban has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-f-in-the-middle-0ba51a.mp3"
+              "key": "n",
+              "text": "Ban has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-n-in-the-middle-431cd3.mp3"
             }
           ]
         },
@@ -778,14 +778,14 @@
           ],
           "opts": [
             {
-              "key": "/m/",
-              "text": "Ban ends with the sound /m/.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-m-1f8654.mp3"
+              "key": "/f/",
+              "text": "Ban ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-f-e0c18a.mp3"
             },
             {
-              "key": "/a/",
-              "text": "Ban ends with the sound /a/.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-a-26840b.mp3"
+              "key": "/k/",
+              "text": "Ban ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-k-691e7c.mp3"
             }
           ]
         },
@@ -812,9 +812,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-a-057427.mp3"
             },
             {
-              "key": "m",
-              "text": "Ban ends with letter M.",
-              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-m-0c9d15.mp3"
+              "key": "b",
+              "text": "Ban ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-b-d51389.mp3"
             }
           ]
         }
@@ -876,9 +876,9 @@
           ],
           "opts": [
             {
-              "key": "fan",
-              "text": "It's fan.",
-              "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+              "key": "ban",
+              "text": "It's ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-ban-11273d.mp3"
             },
             {
               "key": "man",
@@ -905,14 +905,14 @@
           ],
           "opts": [
             {
-              "key": "fan",
-              "text": "/f/ /an/, fan.",
-              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
-            },
-            {
               "key": "ban",
               "text": "/b/ /an/, ban.",
               "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
             }
           ]
         },
@@ -934,9 +934,9 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Can begins with the sound /b/.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-b-d42c48.mp3"
+              "key": "/f/",
+              "text": "Can begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-f-c4a342.mp3"
             },
             {
               "key": "/m/",
@@ -963,9 +963,9 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Can begins with letter N.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-letter-n-b24f89.mp3"
+              "key": "m",
+              "text": "Can begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-letter-m-cacd40.mp3"
             },
             {
               "key": "a",
@@ -992,9 +992,9 @@
           ],
           "opts": [
             {
-              "key": "/m/",
-              "text": "Can has the sound /m/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-has-the-sound-m-in-the-middle-019805.mp3"
+              "key": "/f/",
+              "text": "Can has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-the-sound-f-in-the-middle-664977.mp3"
             },
             {
               "key": "/k/",
@@ -1021,14 +1021,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Can has letter M in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-m-in-the-middle-f06504.mp3"
+              "key": "v",
+              "text": "Can has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-v-in-the-middle-d8ba80.mp3"
             },
             {
-              "key": "f",
-              "text": "Can has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-f-in-the-middle-0c9549.mp3"
+              "key": "n",
+              "text": "Can has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-n-in-the-middle-135994.mp3"
             }
           ]
         },
@@ -1050,14 +1050,14 @@
           ],
           "opts": [
             {
-              "key": "/m/",
-              "text": "Can ends with the sound /m/.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-m-db027d.mp3"
+              "key": "/f/",
+              "text": "Can ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-f-08a72f.mp3"
             },
             {
-              "key": "/a/",
-              "text": "Can ends with the sound /a/.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-a-55257d.mp3"
+              "key": "/k/",
+              "text": "Can ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-k-c05f55.mp3"
             }
           ]
         },
@@ -1079,14 +1079,14 @@
           ],
           "opts": [
             {
-              "key": "c",
-              "text": "Can ends with letter C.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-c-0d045a.mp3"
+              "key": "m",
+              "text": "Can ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-m-7f35e5.mp3"
             },
             {
-              "key": "v",
-              "text": "Can ends with letter V.",
-              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-v-d58acd.mp3"
+              "key": "a",
+              "text": "Can ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-a-b5e89a.mp3"
             }
           ]
         }
@@ -1149,14 +1149,14 @@
           ],
           "opts": [
             {
-              "key": "can",
-              "text": "It's can.",
-              "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
-            },
-            {
               "key": "fan",
               "text": "It's fan.",
               "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+            },
+            {
+              "key": "can",
+              "text": "It's can.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
             }
           ]
         },
@@ -1178,14 +1178,14 @@
           ],
           "opts": [
             {
-              "key": "can",
-              "text": "/k/ /an/, can.",
-              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
-            },
-            {
               "key": "ban",
               "text": "/b/ /an/, ban.",
               "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            },
+            {
+              "key": "can",
+              "text": "/k/ /an/, can.",
+              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
             }
           ]
         },
@@ -1207,14 +1207,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Van begins with the sound /k/.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-k-8933d2.mp3"
+              "key": "/m/",
+              "text": "Van begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-m-e19bbe.mp3"
             },
             {
-              "key": "/n/",
-              "text": "Van begins with the sound /n/.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-n-c31dbe.mp3"
+              "key": "/a/",
+              "text": "Van begins with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-a-99253a.mp3"
             }
           ]
         },
@@ -1236,14 +1236,14 @@
           ],
           "opts": [
             {
-              "key": "b",
-              "text": "Van begins with letter B.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-b-5099b3.mp3"
+              "key": "m",
+              "text": "Van begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-m-94b983.mp3"
             },
             {
-              "key": "c",
-              "text": "Van begins with letter C.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-c-e90082.mp3"
+              "key": "a",
+              "text": "Van begins with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-a-04d652.mp3"
             }
           ]
         },
@@ -1265,9 +1265,9 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Van has the sound /k/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-has-the-sound-k-in-the-middle-0a9cb8.mp3"
+              "key": "/v/",
+              "text": "Van has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-the-sound-v-in-the-middle-892e87.mp3"
             },
             {
               "key": "/n/",
@@ -1294,9 +1294,9 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Van has letter M in the middle.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-has-letter-m-in-the-middle-e055ad.mp3"
+              "key": "b",
+              "text": "Van has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-letter-b-in-the-middle-d7a311.mp3"
             },
             {
               "key": "f",
@@ -1323,14 +1323,14 @@
           ],
           "opts": [
             {
-              "key": "/m/",
-              "text": "Van ends with the sound /m/.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-m-c12338.mp3"
+              "key": "/f/",
+              "text": "Van ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-f-ecd708.mp3"
             },
             {
-              "key": "/a/",
-              "text": "Van ends with the sound /a/.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-a-77a38c.mp3"
+              "key": "/k/",
+              "text": "Van ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-k-0610d6.mp3"
             }
           ]
         },
@@ -1357,9 +1357,9 @@
               "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-letter-a-64991a.mp3"
             },
             {
-              "key": "m",
-              "text": "Van ends with letter M.",
-              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-letter-m-ed27ad.mp3"
+              "key": "b",
+              "text": "Van ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-letter-b-6b284d.mp3"
             }
           ]
         }

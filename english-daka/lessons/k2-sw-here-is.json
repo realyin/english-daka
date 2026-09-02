@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-is-c3c8c1.mp3"
             },
             {
-              "key": "all",
-              "text": "It's sight word all.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-all-b38dd2.mp3"
+              "key": "and",
+              "text": "It's sight word and.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-and-9c3d0b.mp3"
             }
           ]
         },
@@ -64,9 +64,9 @@
               "audio": "audio/sentences/k2-sw-here-is/a-it-is-a-circle-124171.mp3"
             },
             {
-              "key": "pilot",
-              "text": "This is a pilot.",
-              "audio": "audio/sentences/k2-sw-here-is/a-this-is-a-pilot-693a93.mp3"
+              "key": "come",
+              "text": "Yes, I come here.",
+              "audio": "audio/sentences/k2-sw-here-is/a-yes-i-come-here-f39e03.mp3"
             }
           ]
         },
@@ -90,13 +90,13 @@
           "opts": [
             {
               "key": "here",
-              "text": "It's sight word here.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-here-522a28.mp3"
-            },
-            {
-              "key": "here",
               "text": "Here is a fox.",
               "audio": "audio/sentences/k2-sw-here-is/a-here-is-a-fox-08b888.mp3"
+            },
+            {
+              "key": "circle",
+              "text": "It is a circle.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-is-a-circle-124171.mp3"
             }
           ]
         }
@@ -135,9 +135,9 @@
               "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-here-522a28.mp3"
             },
             {
-              "key": "on",
-              "text": "It's sight word on.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-on-846e47.mp3"
+              "key": "my",
+              "text": "It's sight word my.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-s-sight-word-my-79286e.mp3"
             }
           ]
         }
@@ -168,14 +168,14 @@
           ],
           "opts": [
             {
-              "key": "nest",
-              "text": "This is a nest.",
-              "audio": "audio/sentences/k2-sw-here-is/a-this-is-a-nest-0f98f0.mp3"
+              "key": "nose",
+              "text": "This is a nose.",
+              "audio": "audio/sentences/k2-sw-here-is/a-this-is-a-nose-db83ee.mp3"
             },
             {
-              "key": "doctor",
-              "text": "This is a doctor.",
-              "audio": "audio/sentences/k2-sw-here-is/a-this-is-a-doctor-7c8317.mp3"
+              "key": "policeman",
+              "text": "This is a policeman.",
+              "audio": "audio/sentences/k2-sw-here-is/a-this-is-a-policeman-5554cb.mp3"
             }
           ]
         }
@@ -206,14 +206,14 @@
           ],
           "opts": [
             {
-              "key": "square",
-              "text": "It is a square.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-is-a-square-8fd578.mp3"
-            },
-            {
               "key": "triangle",
               "text": "It is a triangle.",
               "audio": "audio/sentences/k2-sw-here-is/a-it-is-a-triangle-71836e.mp3"
+            },
+            {
+              "key": "trapezoid",
+              "text": "It is a trapezoid.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-is-a-trapezoid-fbd0e5.mp3"
             }
           ]
         }
@@ -244,14 +244,14 @@
           ],
           "opts": [
             {
-              "key": "winter",
-              "text": "It's winter.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-s-winter-785a59.mp3"
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-s-tub-b848ea.mp3"
             },
             {
-              "key": "space",
-              "text": "It's space.",
-              "audio": "audio/sentences/k2-sw-here-is/a-it-s-space-053088.mp3"
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k2-sw-here-is/a-it-s-easter-8a859f.mp3"
             }
           ]
         }
@@ -261,11 +261,11 @@
   ],
   "word_audio": {
     "a": "audio/words/a.mp3",
-    "all": "audio/words/all.mp3",
+    "and": "audio/words/and.mp3",
     "can": "audio/words/can.mp3",
     "circle": "audio/words/circle.mp3",
     "come": "audio/words/come.mp3",
-    "doctor": "audio/words/doctor.mp3",
+    "easter": "audio/words/easter.mp3",
     "fox": "audio/words/fox.mp3",
     "here": "audio/words/here.mp3",
     "i": "audio/words/i.mp3",
@@ -273,22 +273,22 @@
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
     "job": "audio/words/job.mp3",
-    "nest": "audio/words/nest.mp3",
-    "on": "audio/words/on.mp3",
+    "my": "audio/words/my.mp3",
+    "nose": "audio/words/nose.mp3",
     "pilot": "audio/words/pilot.mp3",
+    "policeman": "audio/words/policeman.mp3",
     "season": "audio/words/season.mp3",
     "shape": "audio/words/shape.mp3",
     "sight": "audio/words/sight.mp3",
-    "space": "audio/words/space.mp3",
-    "square": "audio/words/square.mp3",
     "summer": "audio/words/summer.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "trapezoid": "audio/words/trapezoid.mp3",
     "triangle": "audio/words/triangle.mp3",
+    "tub": "audio/words/tub.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
-    "winter": "audio/words/winter.mp3",
     "word": "audio/words/word.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3"

@@ -30,9 +30,9 @@
           ],
           "opts": [
             {
-              "key": "sheep",
-              "text": "It's a sheep.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
+              "key": "cow",
+              "text": "It's a cow.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
             },
             {
               "key": "horse",
@@ -73,9 +73,9 @@
               "audio": "audio/sentences/k1-animal-farm/a-it-s-a-farm-349ae8.mp3"
             },
             {
-              "key": "chicken",
-              "text": "It's a chicken.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
+              "key": "horse",
+              "text": "It's a horse.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
             }
           ]
         },
@@ -98,14 +98,14 @@
           "image": "images/k1-farm-cow.webp",
           "opts": [
             {
-              "key": "chicken",
-              "text": "It's a chicken.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
+              "key": "sheep",
+              "text": "It's a sheep.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
             },
             {
-              "key": "horse",
-              "text": "It's a horse.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
+              "key": "cow",
+              "text": "It's a cow.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
             }
           ]
         },
@@ -154,14 +154,14 @@
           ],
           "opts": [
             {
+              "key": "cow",
+              "text": "It's a cow.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
+            },
+            {
               "key": "farm",
               "text": "It's a farm.",
               "audio": "audio/sentences/k1-animal-farm/a-it-s-a-farm-349ae8.mp3"
-            },
-            {
-              "key": "chicken",
-              "text": "It's a chicken.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
             }
           ]
         },
@@ -189,9 +189,9 @@
               "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
             },
             {
-              "key": "chicken",
-              "text": "It's a chicken.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
+              "key": "cow",
+              "text": "It's a cow.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
             }
           ]
         }
@@ -222,14 +222,14 @@
           ],
           "opts": [
             {
+              "key": "farm",
+              "text": "It's a farm.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-farm-349ae8.mp3"
+            },
+            {
               "key": "horse",
               "text": "It's a horse.",
               "audio": "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
-            },
-            {
-              "key": "cow",
-              "text": "It's a cow.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
             }
           ]
         },
@@ -252,14 +252,14 @@
           "image": "images/k1-farm-chicken.webp",
           "opts": [
             {
-              "key": "chicken",
-              "text": "It's a chicken.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-chicken-9bb659.mp3"
+              "key": "sheep",
+              "text": "It's a sheep.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
             },
             {
-              "key": "horse",
-              "text": "It's a horse.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
+              "key": "cow",
+              "text": "It's a cow.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
             }
           ]
         }
@@ -290,14 +290,14 @@
           ],
           "opts": [
             {
-              "key": "cow",
-              "text": "It's a cow.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-cow-aa4734.mp3"
-            },
-            {
               "key": "farm",
               "text": "It's a farm.",
               "audio": "audio/sentences/k1-animal-farm/a-it-s-a-farm-349ae8.mp3"
+            },
+            {
+              "key": "sheep",
+              "text": "It's a sheep.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
             }
           ]
         },
@@ -320,9 +320,9 @@
           "image": "images/k1-farm-horse.webp",
           "opts": [
             {
-              "key": "horse",
-              "text": "It's a horse.",
-              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-horse-04659c.mp3"
+              "key": "sheep",
+              "text": "It's a sheep.",
+              "audio": "audio/sentences/k1-animal-farm/a-it-s-a-sheep-9a6d13.mp3"
             },
             {
               "key": "cow",

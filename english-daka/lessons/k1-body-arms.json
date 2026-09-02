@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "hands",
-              "text": "These are hands.",
-              "audio": "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
-            },
-            {
               "key": "fingers",
               "text": "These are fingers.",
               "audio": "audio/sentences/k1-body-arms/a-these-are-fingers-442612.mp3"
+            },
+            {
+              "key": "hands",
+              "text": "These are hands.",
+              "audio": "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
             }
           ]
         },
@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k1-body-arms/a-i-have-ten-arms-5aae6c.mp3"
             },
             {
-              "key": "four",
-              "text": "I have four arms.",
-              "audio": "audio/sentences/k1-body-arms/a-i-have-four-arms-fee587.mp3"
+              "key": "fifteen",
+              "text": "I have fifteen arms.",
+              "audio": "audio/sentences/k1-body-arms/a-i-have-fifteen-arms-daf892.mp3"
             }
           ]
         },
@@ -117,14 +117,14 @@
           ],
           "opts": [
             {
-              "key": "fingers",
-              "text": "These are fingers.",
-              "audio": "audio/sentences/k1-body-arms/a-these-are-fingers-442612.mp3"
-            },
-            {
               "key": "arms",
               "text": "These are arms.",
               "audio": "audio/sentences/k1-body-arms/a-these-are-arms-6580c9.mp3"
+            },
+            {
+              "key": "fingers",
+              "text": "These are fingers.",
+              "audio": "audio/sentences/k1-body-arms/a-these-are-fingers-442612.mp3"
             }
           ]
         },
@@ -152,9 +152,9 @@
               "audio": "audio/sentences/k1-body-arms/a-i-have-ten-hands-91c30a.mp3"
             },
             {
-              "key": "twelve",
-              "text": "I have twelve hands.",
-              "audio": "audio/sentences/k1-body-arms/a-i-have-twelve-hands-1a7d08.mp3"
+              "key": "eleven",
+              "text": "I have eleven hands.",
+              "audio": "audio/sentences/k1-body-arms/a-i-have-eleven-hands-3205f5.mp3"
             }
           ]
         },
@@ -215,14 +215,14 @@
           ],
           "opts": [
             {
-              "key": "hands",
-              "text": "These are hands.",
-              "audio": "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
-            },
-            {
               "key": "arms",
               "text": "These are arms.",
               "audio": "audio/sentences/k1-body-arms/a-these-are-arms-6580c9.mp3"
+            },
+            {
+              "key": "hands",
+              "text": "These are hands.",
+              "audio": "audio/sentences/k1-body-arms/a-these-are-hands-c2ffe8.mp3"
             }
           ]
         },
@@ -250,9 +250,9 @@
               "audio": "audio/sentences/k1-body-arms/a-i-have-two-fingers-62edcf.mp3"
             },
             {
-              "key": "twelve",
-              "text": "I have twelve fingers.",
-              "audio": "audio/sentences/k1-body-arms/a-i-have-twelve-fingers-70a306.mp3"
+              "key": "eleven",
+              "text": "I have eleven fingers.",
+              "audio": "audio/sentences/k1-body-arms/a-i-have-eleven-fingers-728871.mp3"
             }
           ]
         }
@@ -267,8 +267,9 @@
     "can": "audio/words/can.mp3",
     "clap": "audio/words/clap.mp3",
     "do": "audio/words/do.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "fifteen": "audio/words/fifteen.mp3",
     "fingers": "audio/words/fingers.mp3",
-    "four": "audio/words/four.mp3",
     "hands": "audio/words/hands.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
@@ -279,7 +280,6 @@
     "ten": "audio/words/ten.mp3",
     "these": "audio/words/these.mp3",
     "touch": "audio/words/touch.mp3",
-    "twelve": "audio/words/twelve.mp3",
     "two": "audio/words/two.mp3",
     "what": "audio/words/what.mp3",
     "you": "audio/words/you.mp3",

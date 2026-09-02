@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-it-s-a-stormy-day-a54799.mp3"
             },
             {
-              "key": "sunny",
-              "text": "It's a sunny day.",
-              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-sunny-day-03c74a.mp3"
+              "key": "cloudy",
+              "text": "It's a cloudy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-cloudy-day-e9a206.mp3"
             }
           ]
         },
@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-i-can-play-in-the-house-on-stormy-da-915872.mp3"
             },
             {
-              "key": "hot",
-              "text": "I feel hot on stormy days.",
-              "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+              "key": "cool",
+              "text": "I feel cool on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
             }
           ]
         },
@@ -95,9 +95,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
             },
             {
-              "key": "windy",
-              "text": "It's a windy day.",
-              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+              "key": "kite",
+              "text": "I can fly a kite on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
             }
           ]
         }
@@ -133,9 +133,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
             },
             {
-              "key": "sunny",
-              "text": "It's a sunny day.",
-              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-sunny-day-03c74a.mp3"
+              "key": "cloudy",
+              "text": "It's a cloudy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-cloudy-day-e9a206.mp3"
             }
           ]
         },
@@ -163,9 +163,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
             },
             {
-              "key": "hot",
-              "text": "I feel hot on stormy days.",
-              "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+              "key": "cool",
+              "text": "I feel cool on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
             }
           ]
         },
@@ -193,9 +193,9 @@
               "audio": "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
             },
             {
-              "key": "windy",
-              "text": "It's a windy day.",
-              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+              "key": "kite",
+              "text": "I can fly a kite on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
             }
           ]
         }
@@ -206,6 +206,7 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "can": "audio/words/can.mp3",
+    "cloudy": "audio/words/cloudy.mp3",
     "cool": "audio/words/cool.mp3",
     "day": "audio/words/day.mp3",
     "days": "audio/words/days.mp3",
@@ -223,7 +224,6 @@
     "on": "audio/words/on.mp3",
     "play": "audio/words/play.mp3",
     "stormy": "audio/words/stormy.mp3",
-    "sunny": "audio/words/sunny.mp3",
     "the": "audio/words/the.mp3",
     "weather": "audio/words/weather.mp3",
     "what": "audio/words/what.mp3",

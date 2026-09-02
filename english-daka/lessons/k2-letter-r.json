@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k2-letter-r/a-it-s-letter-t-f0e81f.mp3"
             },
             {
-              "key": "a",
-              "text": "It's letter A.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-letter-a-3ee564.mp3"
+              "key": "y",
+              "text": "It's letter Y.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-letter-y-dd08b8.mp3"
             }
           ]
         },
@@ -102,9 +102,9 @@
               "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
             },
             {
-              "key": "ring",
-              "text": "It's a ring.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+              "key": "city",
+              "text": "It's a city.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
             }
           ]
         },
@@ -131,9 +131,9 @@
               "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-j-1ebfb0.mp3"
             },
             {
-              "key": "/s/",
-              "text": "Raccoon begins with the sound /s/.",
-              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-s-358fed.mp3"
+              "key": "/a/",
+              "text": "Raccoon begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-a-4e9ec9.mp3"
             }
           ]
         },
@@ -155,14 +155,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Raccoon begins with letter T.",
-              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-t-2d2ac6.mp3"
-            },
-            {
               "key": "s",
               "text": "Raccoon begins with letter S.",
               "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-s-4f091b.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Raccoon begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-t-2d2ac6.mp3"
             }
           ]
         }
@@ -196,9 +196,9 @@
           ],
           "opts": [
             {
-              "key": "on",
-              "text": "It's sight word on.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-sight-word-on-846e47.mp3"
+              "key": "go",
+              "text": "It's sight word go.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-sight-word-go-0bdeca.mp3"
             },
             {
               "key": "and",
@@ -225,14 +225,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Sleep begins with letter T.",
-              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-t-2eec37.mp3"
-            },
-            {
               "key": "r",
               "text": "Sleep begins with letter R.",
               "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-r-d18ca9.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Sleep begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-t-2eec37.mp3"
             }
           ]
         }
@@ -270,8 +270,8 @@
             },
             {
               "key": "s",
-              "text": "Sing begins with letter S.",
-              "audio": "audio/sentences/k2-letter-r/a-sing-begins-with-letter-s-55d189.mp3"
+              "text": "Sleep begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-s-4e8e1b.mp3"
             }
           ]
         },
@@ -336,9 +336,9 @@
               "audio": "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
             },
             {
-              "key": "rat",
-              "text": "It's a rat.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
+              "key": "ring",
+              "text": "It's a ring.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
             }
           ]
         }
@@ -374,9 +374,9 @@
               "audio": "audio/sentences/k2-letter-r/a-yes-i-can-sing-a-song-1dcebd.mp3"
             },
             {
-              "key": "r",
-              "text": "Rat begins with letter R.",
-              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-letter-r-0c3a33.mp3"
+              "key": "s",
+              "text": "Sleep begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-s-4e8e1b.mp3"
             }
           ]
         },
@@ -398,14 +398,14 @@
           ],
           "opts": [
             {
-              "key": "/m/",
-              "text": "River begins with the sound /m/.",
-              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-m-738c5c.mp3"
+              "key": "/e/",
+              "text": "River begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-e-058230.mp3"
             },
             {
-              "key": "/a/",
-              "text": "River begins with the sound /a/.",
-              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-a-5f2b3c.mp3"
+              "key": "/d/",
+              "text": "River begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-d-b64904.mp3"
             }
           ]
         },
@@ -427,14 +427,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "River begins with letter T.",
-              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-letter-t-0a386a.mp3"
-            },
-            {
               "key": "s",
               "text": "River begins with letter S.",
               "audio": "audio/sentences/k2-letter-r/a-river-begins-with-letter-s-c527e8.mp3"
+            },
+            {
+              "key": "t",
+              "text": "River begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-letter-t-0a386a.mp3"
             }
           ]
         }
@@ -532,14 +532,14 @@
           ],
           "opts": [
             {
-              "key": "rat",
-              "text": "It's a rat.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
-            },
-            {
               "key": "crayfish",
               "text": "It's a crayfish.",
               "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+            },
+            {
+              "key": "rat",
+              "text": "It's a rat.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
             }
           ]
         }
@@ -570,14 +570,14 @@
           ],
           "opts": [
             {
-              "key": "city",
-              "text": "It's a city.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
-            },
-            {
               "key": "raccoon",
               "text": "It's a raccoon.",
               "audio": "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+            },
+            {
+              "key": "ring",
+              "text": "It's a ring.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
             }
           ]
         },
@@ -599,14 +599,14 @@
           ],
           "opts": [
             {
-              "key": "/yoo/",
-              "text": "Rat begins with the sound /yoo/.",
-              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-yoo-376dd6.mp3"
+              "key": "/f/",
+              "text": "Rat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-f-5998a2.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Rat begins with the sound /d/.",
-              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-d-e8751d.mp3"
+              "key": "/e/",
+              "text": "Rat begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-e-39a96f.mp3"
             }
           ]
         },
@@ -666,14 +666,14 @@
           ],
           "opts": [
             {
-              "key": "raccoon",
-              "text": "It's a raccoon.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+              "key": "crayfish",
+              "text": "It's a crayfish.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
             },
             {
-              "key": "rat",
-              "text": "It's a rat.",
-              "audio": "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
+              "key": "city",
+              "text": "It's a city.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
             }
           ]
         },
@@ -695,14 +695,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Ring begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-l-676ed6.mp3"
+              "key": "/g/",
+              "text": "Ring begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-g-39ab49.mp3"
             },
             {
-              "key": "/k/",
-              "text": "Ring begins with the sound /k/.",
-              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-k-df4ea1.mp3"
+              "key": "/v/",
+              "text": "Ring begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-v-fb89d0.mp3"
             }
           ]
         },
@@ -724,14 +724,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Ring begins with letter T.",
-              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-letter-t-027429.mp3"
-            },
-            {
               "key": "s",
               "text": "Ring begins with letter S.",
               "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-letter-s-d8b61c.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Ring begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-letter-t-027429.mp3"
             }
           ]
         }
@@ -762,23 +762,23 @@
     "crayfish": "audio/words/crayfish.mp3",
     "d": "audio/words/d.mp3",
     "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "f": "audio/words/f.mp3",
+    "g": "audio/words/g.mp3",
+    "go": "audio/words/go.mp3",
     "hollow": "audio/words/hollow.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
     "it's": "audio/words/it-s.mp3",
     "j": "audio/words/j.mp3",
-    "k": "audio/words/k.mp3",
-    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter r": "audio/words/letter-r.mp3",
     "live": "audio/words/live.mp3",
     "lives": "audio/words/lives.mp3",
-    "m": "audio/words/m.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
     "night": "audio/words/night.mp3",
     "oh": "audio/words/oh.mp3",
-    "on": "audio/words/on.mp3",
     "r": "audio/words/r.mp3",
     "raccoon": "audio/words/raccoon.mp3",
     "rat": "audio/words/rat.mp3",
@@ -795,14 +795,15 @@
     "this": "audio/words/this.mp3",
     "tree": "audio/words/tree.mp3",
     "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
     "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",
     "word": "audio/words/word.mp3",
+    "y": "audio/words/y.mp3",
     "yes": "audio/words/yes.mp3",
-    "yoo": "audio/words/yoo.mp3",
     "you": "audio/words/you.mp3"
   }
 }

@@ -73,9 +73,9 @@
               "audio": "audio/sentences/k1-pattern-symbol/a-fish-comes-next-888ff0.mp3"
             },
             {
-              "key": "four",
-              "text": "Four comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-four-comes-next-7fd9f2.mp3"
+              "key": "l",
+              "text": "L comes next.",
+              "audio": "audio/sentences/k1-pattern-symbol/a-l-comes-next-1fed2b.mp3"
             }
           ]
         }
@@ -148,9 +148,9 @@
               "audio": "audio/sentences/k1-pattern-symbol/a-banana-comes-next-8ff020.mp3"
             },
             {
-              "key": "square",
-              "text": "Square comes next.",
-              "audio": "audio/sentences/k1-pattern-symbol/a-square-comes-next-4bad71.mp3"
+              "key": "rectangle",
+              "text": "Rectangle comes next.",
+              "audio": "audio/sentences/k1-pattern-symbol/a-rectangle-comes-next-f102a7.mp3"
             }
           ]
         }
@@ -164,15 +164,15 @@
     "banana": "audio/words/banana.mp3",
     "comes": "audio/words/comes.mp3",
     "fish": "audio/words/fish.mp3",
-    "four": "audio/words/four.mp3",
     "fruit pattern": "audio/words/fruit-pattern.mp3",
     "is": "audio/words/is.mp3",
+    "l": "audio/words/l.mp3",
     "monkey": "audio/words/monkey.mp3",
     "next": "audio/words/next.mp3",
     "orange": "audio/words/orange.mp3",
     "pattern": "audio/words/pattern.mp3",
     "pig": "audio/words/pig.mp3",
-    "square": "audio/words/square.mp3",
+    "rectangle": "audio/words/rectangle.mp3",
     "strawberry": "audio/words/strawberry.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",

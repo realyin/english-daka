@@ -69,9 +69,9 @@
               "audio": "audio/sentences/k1-pattern-number/a-eleven-comes-next-161041.mp3"
             },
             {
-              "key": "l",
-              "text": "L comes next.",
-              "audio": "audio/sentences/k1-pattern-number/a-l-comes-next-1fed2b.mp3"
+              "key": "red",
+              "text": "Red comes next.",
+              "audio": "audio/sentences/k1-pattern-number/a-red-comes-next-c68550.mp3"
             }
           ]
         }
@@ -144,9 +144,9 @@
               "audio": "audio/sentences/k1-pattern-number/a-four-comes-next-7fd9f2.mp3"
             },
             {
-              "key": "square",
-              "text": "Square comes next.",
-              "audio": "audio/sentences/k1-pattern-number/a-square-comes-next-4bad71.mp3"
+              "key": "rectangle",
+              "text": "Rectangle comes next.",
+              "audio": "audio/sentences/k1-pattern-number/a-rectangle-comes-next-f102a7.mp3"
             }
           ]
         }
@@ -162,11 +162,11 @@
     "fifteen": "audio/words/fifteen.mp3",
     "four": "audio/words/four.mp3",
     "is": "audio/words/is.mp3",
-    "l": "audio/words/l.mp3",
     "next": "audio/words/next.mp3",
     "pattern": "audio/words/pattern.mp3",
+    "rectangle": "audio/words/rectangle.mp3",
+    "red": "audio/words/red.mp3",
     "seven": "audio/words/seven.mp3",
-    "square": "audio/words/square.mp3",
     "the": "audio/words/the.mp3",
     "thirteen": "audio/words/thirteen.mp3",
     "this": "audio/words/this.mp3",

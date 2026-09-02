@@ -30,9 +30,9 @@
           ],
           "opts": [
             {
-              "key": "glass",
-              "text": "This is the glass recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-glass-recycling-bin-1d8cc4.mp3"
+              "key": "plastic",
+              "text": "This is the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-recycling-bin-f3c3cb.mp3"
             },
             {
               "key": "metal",
@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
-              "key": "glass",
-              "text": "This is the glass recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-glass-recycling-bin-1d8cc4.mp3"
-            },
-            {
               "key": "paper",
               "text": "This is the paper recycling bin.",
               "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-recycling-bin-b85aad.mp3"
+            },
+            {
+              "key": "glass",
+              "text": "This is the glass recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-glass-recycling-bin-1d8cc4.mp3"
             }
           ]
         }
@@ -106,9 +106,9 @@
           ],
           "opts": [
             {
-              "key": "metal",
-              "text": "This is the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-metal-recycling-bin-33480d.mp3"
+              "key": "paper",
+              "text": "This is the paper recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-recycling-bin-b85aad.mp3"
             },
             {
               "key": "glass",
@@ -144,9 +144,9 @@
           ],
           "opts": [
             {
-              "key": "paper",
-              "text": "This is the paper recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-recycling-bin-b85aad.mp3"
+              "key": "plastic",
+              "text": "This is the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-recycling-bin-f3c3cb.mp3"
             },
             {
               "key": "metal",
@@ -182,14 +182,14 @@
           ],
           "opts": [
             {
-              "key": "apple",
-              "text": "This is the apple core.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-apple-core-5ccba4.mp3"
+              "key": "cup",
+              "text": "This is a plastic cup.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-cup-5f8702.mp3"
             },
             {
-              "key": "plastic",
-              "text": "This is the plastic item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
+              "key": "metal",
+              "text": "This is the metal item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-metal-item-48ea69.mp3"
             }
           ]
         }
@@ -225,9 +225,9 @@
               "audio": "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
             },
             {
-              "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "key": "plastic",
+              "text": "The plastic bag should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-bag-should-go-to-the-pla-616ca0.mp3"
             }
           ]
         },
@@ -249,14 +249,14 @@
           ],
           "opts": [
             {
-              "key": "plastic",
-              "text": "This is the plastic item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
-            },
-            {
               "key": "glass",
               "text": "This is the glass item.",
               "audio": "audio/sentences/k2-recycling/a-this-is-the-glass-item-cfa647.mp3"
+            },
+            {
+              "key": "plastic",
+              "text": "This is the plastic item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
             }
           ]
         }
@@ -287,9 +287,9 @@
           ],
           "opts": [
             {
-              "key": "plastic",
-              "text": "The plastic item should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
+              "key": "paper",
+              "text": "The cardboard box should go to the paper recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-cardboard-box-should-go-to-the-p-f93c3e.mp3"
             },
             {
               "key": "glass",
@@ -316,9 +316,9 @@
           ],
           "opts": [
             {
-              "key": "plastic",
-              "text": "This is the plastic item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
+              "key": "paper",
+              "text": "This is the paper item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
             },
             {
               "key": "glass",
@@ -360,8 +360,8 @@
             },
             {
               "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "text": "The metal item should go to the metal recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
             }
           ]
         },
@@ -383,9 +383,9 @@
           ],
           "opts": [
             {
-              "key": "metal",
-              "text": "This is the metal item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-metal-item-48ea69.mp3"
+              "key": "paper",
+              "text": "This is the paper item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
             },
             {
               "key": "glass",
@@ -421,14 +421,14 @@
           ],
           "opts": [
             {
-              "key": "plastic",
-              "text": "The plastic item should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
+              "key": "paper",
+              "text": "The cardboard box should go to the paper recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-cardboard-box-should-go-to-the-p-f93c3e.mp3"
             },
             {
-              "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "key": "plastic",
+              "text": "The plastic bag should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-bag-should-go-to-the-pla-616ca0.mp3"
             }
           ]
         },
@@ -450,9 +450,9 @@
           ],
           "opts": [
             {
-              "key": "paper",
-              "text": "This is the paper item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
+              "key": "plastic",
+              "text": "This is the plastic item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
             },
             {
               "key": "metal",
@@ -494,9 +494,9 @@
               "audio": "audio/sentences/k2-recycling/a-the-newspaper-should-go-to-the-paper-61729d.mp3"
             },
             {
-              "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "key": "plastic",
+              "text": "The plastic cup should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-cup-should-go-to-the-pla-d60058.mp3"
             }
           ]
         },
@@ -518,14 +518,14 @@
           ],
           "opts": [
             {
-              "key": "box",
-              "text": "This is a cardboard box.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-cardboard-box-277d5f.mp3"
+              "key": "paper",
+              "text": "This is the paper item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
             },
             {
-              "key": "can",
-              "text": "This is a soda can.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-soda-can-7ebd14.mp3"
+              "key": "bottle",
+              "text": "This is a plastic bottle.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
             }
           ]
         }
@@ -558,14 +558,14 @@
           "image": "images/recycling-sort-glass.webp",
           "opts": [
             {
-              "key": "plastic",
-              "text": "The plastic item should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
+              "key": "paper",
+              "text": "The cardboard box should go to the paper recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-cardboard-box-should-go-to-the-p-f93c3e.mp3"
             },
             {
-              "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "key": "plastic",
+              "text": "The plastic bag should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-bag-should-go-to-the-pla-616ca0.mp3"
             }
           ]
         }
@@ -627,14 +627,14 @@
           ],
           "opts": [
             {
-              "key": "pilot",
-              "text": "This is a pilot.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-pilot-693a93.mp3"
+              "key": "firefighter",
+              "text": "This is a firefighter.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-firefighter-adf8ae.mp3"
             },
             {
-              "key": "nose",
-              "text": "This is a nose.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-nose-db83ee.mp3"
+              "key": "head",
+              "text": "This is a head.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-head-66cd58.mp3"
             }
           ]
         }
@@ -666,14 +666,14 @@
           "image": "images/k2-rec-can-metal-bin.webp",
           "opts": [
             {
-              "key": "plastic",
-              "text": "The plastic cup should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-cup-should-go-to-the-pla-d60058.mp3"
+              "key": "glass",
+              "text": "The glass item should go to the glass recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
             },
             {
-              "key": "paper",
-              "text": "The paper item should go to the paper recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-paper-item-should-go-to-the-pape-bb65e1.mp3"
+              "key": "plastic",
+              "text": "The plastic bag should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-bag-should-go-to-the-pla-616ca0.mp3"
             }
           ]
         },
@@ -695,14 +695,14 @@
           ],
           "opts": [
             {
-              "key": "compost",
-              "text": "This is the compost pile.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-compost-pile-35161b.mp3"
+              "key": "peel",
+              "text": "This is a banana peel.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-banana-peel-60885b.mp3"
             },
             {
-              "key": "paper",
-              "text": "This is the paper item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-paper-item-f7a4b4.mp3"
+              "key": "plastic",
+              "text": "This is the plastic item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
             }
           ]
         }
@@ -734,14 +734,14 @@
           "image": "images/rec-bottle-to-plastic.webp",
           "opts": [
             {
+              "key": "paper",
+              "text": "The cardboard box should go to the paper recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-cardboard-box-should-go-to-the-p-f93c3e.mp3"
+            },
+            {
               "key": "glass",
               "text": "The glass item should go to the glass recycling bin.",
               "audio": "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
-            },
-            {
-              "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
             }
           ]
         },
@@ -808,8 +808,8 @@
             },
             {
               "key": "plastic",
-              "text": "The plastic cup should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-cup-should-go-to-the-pla-d60058.mp3"
+              "text": "The plastic item should go to the plastic recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-plastic-item-should-go-to-the-pl-426e4e.mp3"
             }
           ]
         },
@@ -831,14 +831,14 @@
           ],
           "opts": [
             {
-              "key": "bottle",
-              "text": "This is a plastic bottle.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
+              "key": "box",
+              "text": "This is a cardboard box.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-cardboard-box-277d5f.mp3"
             },
             {
-              "key": "metal",
-              "text": "This is the metal item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-metal-item-48ea69.mp3"
+              "key": "cup",
+              "text": "This is a plastic cup.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-cup-5f8702.mp3"
             }
           ]
         }
@@ -869,14 +869,14 @@
           ],
           "opts": [
             {
-              "key": "bottle",
-              "text": "This is a plastic bottle.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
+              "key": "plastic",
+              "text": "This is the plastic item.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-the-plastic-item-020a96.mp3"
             },
             {
-              "key": "metal",
-              "text": "This is the metal item.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-the-metal-item-48ea69.mp3"
+              "key": "cup",
+              "text": "This is a plastic cup.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-cup-5f8702.mp3"
             }
           ]
         },
@@ -899,14 +899,14 @@
           "image": "images/rec-cardboard-to-paper.webp",
           "opts": [
             {
-              "key": "plastic",
-              "text": "The plastic bottle should go to the plastic recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-plastic-bottle-should-go-to-the--1a6bba.mp3"
+              "key": "glass",
+              "text": "The glass bottle should go to the glass recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-glass-bottle-should-go-to-the-gl-15967d.mp3"
             },
             {
-              "key": "metal",
-              "text": "The metal item should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
+              "key": "glass",
+              "text": "The glass item should go to the glass recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-glass-item-should-go-to-the-glas-fbba2b.mp3"
             }
           ]
         }
@@ -937,14 +937,14 @@
           ],
           "opts": [
             {
-              "key": "bottle",
-              "text": "This is a plastic bottle.",
-              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
-            },
-            {
               "key": "cup",
               "text": "This is a plastic cup.",
               "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-cup-5f8702.mp3"
+            },
+            {
+              "key": "bottle",
+              "text": "This is a plastic bottle.",
+              "audio": "audio/sentences/k2-recycling/a-this-is-a-plastic-bottle-e15906.mp3"
             }
           ]
         },
@@ -967,14 +967,14 @@
           "image": "images/rec-bag-to-plastic.webp",
           "opts": [
             {
+              "key": "metal",
+              "text": "The soda can should go to the metal recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+            },
+            {
               "key": "glass",
               "text": "The glass bottle should go to the glass recycling bin.",
               "audio": "audio/sentences/k2-recycling/a-the-glass-bottle-should-go-to-the-gl-15967d.mp3"
-            },
-            {
-              "key": "metal",
-              "text": "The metal item should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
             }
           ]
         }
@@ -1036,8 +1036,8 @@
           "opts": [
             {
               "key": "metal",
-              "text": "The soda can should go to the metal recycling bin.",
-              "audio": "audio/sentences/k2-recycling/a-the-soda-can-should-go-to-the-metal--cc5464.mp3"
+              "text": "The metal item should go to the metal recycling bin.",
+              "audio": "audio/sentences/k2-recycling/a-the-metal-item-should-go-to-the-meta-e81612.mp3"
             },
             {
               "key": "paper",
@@ -1077,20 +1077,20 @@
     "compost": "audio/words/compost.mp3",
     "core": "audio/words/core.mp3",
     "cup": "audio/words/cup.mp3",
+    "firefighter": "audio/words/firefighter.mp3",
     "glass": "audio/words/glass.mp3",
     "glass bin": "audio/words/glass-bin.mp3",
     "go": "audio/words/go.mp3",
+    "head": "audio/words/head.mp3",
     "is": "audio/words/is.mp3",
     "item": "audio/words/item.mp3",
     "metal": "audio/words/metal.mp3",
     "metal bin": "audio/words/metal-bin.mp3",
     "newspaper": "audio/words/newspaper.mp3",
-    "nose": "audio/words/nose.mp3",
     "paper": "audio/words/paper.mp3",
     "paper bin": "audio/words/paper-bin.mp3",
     "peel": "audio/words/peel.mp3",
     "pile": "audio/words/pile.mp3",
-    "pilot": "audio/words/pilot.mp3",
     "plastic": "audio/words/plastic.mp3",
     "plastic bag": "audio/words/plastic-bag.mp3",
     "plastic bin": "audio/words/plastic-bin.mp3",

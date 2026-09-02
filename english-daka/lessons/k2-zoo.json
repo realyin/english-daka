@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
             },
             {
-              "key": "gorilla",
-              "text": "It's a gorilla.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
+              "key": "lion",
+              "text": "It's a lion.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
             }
           ]
         }
@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
+              "key": "lion",
+              "text": "It's a lion.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
+            },
+            {
               "key": "zoo",
               "text": "It's a zoo.",
               "audio": "audio/sentences/k2-zoo/a-it-s-a-zoo-bc8179.mp3"
-            },
-            {
-              "key": "gorilla",
-              "text": "It's a gorilla.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
             }
           ]
         },
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "rhino",
-              "text": "It's a rhinoceros.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-owl-269be9.mp3"
             }
           ]
         }
@@ -171,9 +171,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "rhino",
-              "text": "It's a rhinoceros.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-owl-269be9.mp3"
             }
           ]
         }
@@ -204,14 +204,14 @@
           ],
           "opts": [
             {
-              "key": "lion",
-              "text": "It's a lion.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
-            },
-            {
               "key": "camel",
               "text": "It's a camel.",
               "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            },
+            {
+              "key": "lion",
+              "text": "It's a lion.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
             }
           ]
         },
@@ -239,9 +239,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "alligator",
-              "text": "It's an alligator.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
             }
           ]
         }
@@ -275,14 +275,14 @@
           ],
           "opts": [
             {
-              "key": "lion",
-              "text": "It's a lion.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
-            },
-            {
               "key": "camel",
               "text": "It's a camel.",
               "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            },
+            {
+              "key": "gorilla",
+              "text": "It's a gorilla.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
             }
           ]
         },
@@ -378,9 +378,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "rhino",
-              "text": "It's a rhinoceros.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
             }
           ]
         }
@@ -446,9 +446,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "rhino",
-              "text": "It's a rhinoceros.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
             }
           ]
         }
@@ -480,13 +480,13 @@
           "opts": [
             {
               "key": "zoo",
-              "text": "The elephant lives in the zoo.",
-              "audio": "audio/sentences/k2-zoo/a-the-elephant-lives-in-the-zoo-dd56f9.mp3"
+              "text": "The alligator lives in the zoo.",
+              "audio": "audio/sentences/k2-zoo/a-the-alligator-lives-in-the-zoo-a63f27.mp3"
             },
             {
               "key": "zoo",
-              "text": "The rhino lives in the zoo.",
-              "audio": "audio/sentences/k2-zoo/a-the-rhino-lives-in-the-zoo-369b96.mp3"
+              "text": "The owl lives in the zoo.",
+              "audio": "audio/sentences/k2-zoo/a-the-owl-lives-in-the-zoo-16dba5.mp3"
             }
           ]
         },
@@ -514,9 +514,9 @@
               "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
             },
             {
-              "key": "alligator",
-              "text": "It's an alligator.",
-              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
             }
           ]
         }

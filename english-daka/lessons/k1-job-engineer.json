@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k1-job-engineer/a-this-is-an-engineer-721a94.mp3"
             },
             {
-              "key": "robots",
-              "text": "Engineers can make robots.",
-              "audio": "audio/sentences/k1-job-engineer/a-engineers-can-make-robots-ac94f1.mp3"
+              "key": "pictures",
+              "text": "Artists can draw pictures.",
+              "audio": "audio/sentences/k1-job-engineer/a-artists-can-draw-pictures-fbc39f.mp3"
             }
           ]
         },
@@ -90,14 +90,14 @@
           "image": "images/k1-engineer-robot.webp",
           "opts": [
             {
-              "key": "artist",
-              "text": "This is an artist.",
-              "audio": "audio/sentences/k1-job-engineer/a-this-is-an-artist-1c8d45.mp3"
-            },
-            {
               "key": "houses",
               "text": "Engineers can build houses.",
               "audio": "audio/sentences/k1-job-engineer/a-engineers-can-build-houses-534089.mp3"
+            },
+            {
+              "key": "artist",
+              "text": "This is an artist.",
+              "audio": "audio/sentences/k1-job-engineer/a-this-is-an-artist-1c8d45.mp3"
             }
           ]
         }
@@ -158,14 +158,14 @@
           "image": "images/k1-artist-draw.webp",
           "opts": [
             {
-              "key": "engineer",
-              "text": "This is an engineer.",
-              "audio": "audio/sentences/k1-job-engineer/a-this-is-an-engineer-721a94.mp3"
-            },
-            {
               "key": "robots",
               "text": "Engineers can make robots.",
               "audio": "audio/sentences/k1-job-engineer/a-engineers-can-make-robots-ac94f1.mp3"
+            },
+            {
+              "key": "engineer",
+              "text": "This is an engineer.",
+              "audio": "audio/sentences/k1-job-engineer/a-this-is-an-engineer-721a94.mp3"
             }
           ]
         },

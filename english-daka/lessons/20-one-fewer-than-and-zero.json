@@ -29,14 +29,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "It's number one.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-one-63c1c7.mp3"
+              "key": "two",
+              "text": "It's number two.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-two-e0a444.mp3"
             },
             {
-              "key": "six",
-              "text": "It's number six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-six-ff0755.mp3"
+              "key": "four",
+              "text": "It's number four.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-four-e275dc.mp3"
             }
           ]
         }
@@ -67,14 +67,14 @@
           ],
           "opts": [
             {
-              "key": "six",
-              "text": "One fewer than ten is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-six-5e7f3b.mp3"
+              "key": "zero",
+              "text": "One fewer than ten is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-zero-c07544.mp3"
             },
             {
-              "key": "three",
-              "text": "One fewer than ten is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-three-eeba6b.mp3"
+              "key": "seven",
+              "text": "One fewer than ten is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-seven-a7d0d6.mp3"
             }
           ]
         }
@@ -105,14 +105,14 @@
           ],
           "opts": [
             {
-              "key": "six",
-              "text": "One fewer than nine is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-six-e76e4d.mp3"
+              "key": "two",
+              "text": "One fewer than nine is two.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-two-d3fc4b.mp3"
             },
             {
-              "key": "three",
-              "text": "One fewer than nine is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-three-c2f777.mp3"
+              "key": "four",
+              "text": "One fewer than nine is four.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-four-2b39c8.mp3"
             }
           ]
         }
@@ -143,14 +143,14 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "One fewer than eight is nine.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-nine-d36257.mp3"
-            },
-            {
               "key": "five",
               "text": "One fewer than eight is five.",
               "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-five-fa19ad.mp3"
+            },
+            {
+              "key": "six",
+              "text": "One fewer than eight is six.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-six-a22b04.mp3"
             }
           ]
         }
@@ -181,14 +181,14 @@
           ],
           "opts": [
             {
-              "key": "three",
-              "text": "One fewer than seven is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-three-f8f60f.mp3"
+              "key": "zero",
+              "text": "One fewer than seven is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-zero-301554.mp3"
             },
             {
-              "key": "two",
-              "text": "One fewer than seven is two.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-two-71273d.mp3"
+              "key": "five",
+              "text": "One fewer than seven is five.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-five-bd6664.mp3"
             }
           ]
         }
@@ -219,14 +219,14 @@
           ],
           "opts": [
             {
-              "key": "three",
-              "text": "One fewer than six is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-three-4d6061.mp3"
+              "key": "seven",
+              "text": "One fewer than six is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-seven-312d4b.mp3"
             },
             {
-              "key": "two",
-              "text": "One fewer than six is two.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-two-09f23b.mp3"
+              "key": "eight",
+              "text": "One fewer than six is eight.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-eight-d7fcdb.mp3"
             }
           ]
         }
@@ -257,14 +257,14 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "One fewer than five is nine.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-nine-2cb2ef.mp3"
+              "key": "two",
+              "text": "One fewer than five is two.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-two-3bdc82.mp3"
             },
             {
-              "key": "six",
-              "text": "One fewer than five is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-six-241efc.mp3"
+              "key": "zero",
+              "text": "One fewer than five is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-zero-2710aa.mp3"
             }
           ]
         }
@@ -295,14 +295,14 @@
           ],
           "opts": [
             {
-              "key": "six",
-              "text": "One fewer than four is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-six-d0048c.mp3"
+              "key": "seven",
+              "text": "One fewer than four is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-seven-58ae74.mp3"
             },
             {
-              "key": "two",
-              "text": "One fewer than four is two.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-two-8b2395.mp3"
+              "key": "five",
+              "text": "One fewer than four is five.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-five-cd9a46.mp3"
             }
           ]
         }
@@ -333,14 +333,14 @@
           ],
           "opts": [
             {
-              "key": "six",
-              "text": "One fewer than three is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-six-bacbc9.mp3"
+              "key": "zero",
+              "text": "One fewer than three is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-zero-8ed04f.mp3"
             },
             {
-              "key": "four",
-              "text": "One fewer than three is four.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-four-88ca93.mp3"
+              "key": "seven",
+              "text": "One fewer than three is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-seven-903916.mp3"
             }
           ]
         }
@@ -376,9 +376,9 @@
               "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-two-71eebf.mp3"
             },
             {
-              "key": "zero",
-              "text": "One fewer than one is zero.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-zero-e7934b.mp3"
+              "key": "three",
+              "text": "One fewer than four is three.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-three-62caef.mp3"
             }
           ]
         }
@@ -409,14 +409,14 @@
           ],
           "opts": [
             {
-              "key": "six",
-              "text": "One fewer than one is six.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-six-34daaa.mp3"
+              "key": "four",
+              "text": "One fewer than one is four.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-four-86a47e.mp3"
             },
             {
-              "key": "three",
-              "text": "One fewer than one is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-three-3e3f2d.mp3"
+              "key": "seven",
+              "text": "One fewer than one is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-seven-237b1a.mp3"
             }
           ]
         }
@@ -447,14 +447,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "Three fewer than nine is one.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-one-6efa5a.mp3"
+              "key": "seven",
+              "text": "Three fewer than nine is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-seven-3fd62e.mp3"
             },
             {
-              "key": "two",
-              "text": "Three fewer than nine is two.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-two-02cfb1.mp3"
+              "key": "five",
+              "text": "Three fewer than nine is five.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-five-e7edc2.mp3"
             }
           ]
         }
@@ -485,14 +485,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "Two fewer than eight is one.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-one-9239ee.mp3"
+              "key": "four",
+              "text": "Two fewer than eight is four.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-four-4b0cec.mp3"
             },
             {
-              "key": "three",
-              "text": "Two fewer than eight is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-three-5bad94.mp3"
+              "key": "zero",
+              "text": "Two fewer than eight is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-zero-1feaba.mp3"
             }
           ]
         }
@@ -528,9 +528,9 @@
               "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-nine-728d5d.mp3"
             },
             {
-              "key": "one",
-              "text": "Five fewer than seven is one.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-one-57aff7.mp3"
+              "key": "three",
+              "text": "Five fewer than seven is three.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-three-d630ab.mp3"
             }
           ]
         }
@@ -561,14 +561,14 @@
           ],
           "opts": [
             {
-              "key": "seven",
-              "text": "Five fewer than five is seven.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-seven-d2696d.mp3"
-            },
-            {
               "key": "nine",
               "text": "Five fewer than five is nine.",
               "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-nine-9954aa.mp3"
+            },
+            {
+              "key": "three",
+              "text": "Five fewer than five is three.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-three-519716.mp3"
             }
           ]
         }
@@ -599,14 +599,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "Four fewer than six is one.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-one-0f1ff6.mp3"
+              "key": "zero",
+              "text": "Four fewer than six is zero.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-zero-dc61b7.mp3"
             },
             {
-              "key": "three",
-              "text": "Four fewer than six is three.",
-              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-three-5d0a6a.mp3"
+              "key": "seven",
+              "text": "Four fewer than six is seven.",
+              "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-seven-2517fe.mp3"
             }
           ]
         }

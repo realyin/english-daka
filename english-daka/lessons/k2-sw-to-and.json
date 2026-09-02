@@ -37,9 +37,9 @@
               "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3"
             },
             {
-              "key": "all",
-              "text": "It's sight word all.",
-              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-all-b38dd2.mp3"
+              "key": "too",
+              "text": "It's sight word too.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-too-47590f.mp3"
             }
           ]
         }
@@ -108,9 +108,9 @@
           ],
           "opts": [
             {
-              "key": "sing",
-              "text": "I like to sing a song.",
-              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
+              "key": "teacher",
+              "text": "I want to be a teacher.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
             },
             {
               "key": "black",
@@ -138,14 +138,14 @@
           "image": "images/k2-want-teacher.webp",
           "opts": [
             {
-              "key": "sing",
-              "text": "I like to sing a song.",
-              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
-            },
-            {
               "key": "black",
               "text": "A piano is black and white.",
               "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I like to sing a song.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
             }
           ]
         }
@@ -176,14 +176,14 @@
           ],
           "opts": [
             {
-              "key": "sing",
-              "text": "I like to sing a song.",
-              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
-            },
-            {
               "key": "black",
               "text": "A piano is black and white.",
               "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I like to sing a song.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
             }
           ]
         }
@@ -221,9 +221,9 @@
               "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3"
             },
             {
-              "key": "my",
-              "text": "It's sight word my.",
-              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-my-79286e.mp3"
+              "key": "sleep",
+              "text": "It's sight word sleep.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-sleep-0313cc.mp3"
             }
           ]
         }
@@ -255,14 +255,14 @@
           "image": "images/k2-piano-bw.webp",
           "opts": [
             {
-              "key": "blue",
-              "text": "A piano is blue and white.",
-              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-blue-and-white-0690d0.mp3"
+              "key": "orange",
+              "text": "A piano is orange and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-orange-and-white-298e6a.mp3"
             },
             {
-              "key": "yellow",
-              "text": "A piano is yellow and white.",
-              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-yellow-and-white-2a8f44.mp3"
+              "key": "red",
+              "text": "A piano is red and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-red-and-white-3a2531.mp3"
             }
           ]
         }
@@ -310,13 +310,11 @@
   ],
   "word_audio": {
     "a": "audio/words/a.mp3",
-    "all": "audio/words/all.mp3",
     "and": "audio/words/and.mp3",
     "apples": "audio/words/apples.mp3",
     "bananas": "audio/words/bananas.mp3",
     "be": "audio/words/be.mp3",
     "black": "audio/words/black.mp3",
-    "blue": "audio/words/blue.mp3",
     "buy": "audio/words/buy.mp3",
     "can": "audio/words/can.mp3",
     "color": "audio/words/color.mp3",
@@ -328,16 +326,19 @@
     "it's": "audio/words/it-s.mp3",
     "like": "audio/words/like.mp3",
     "market": "audio/words/market.mp3",
-    "my": "audio/words/my.mp3",
+    "orange": "audio/words/orange.mp3",
     "piano": "audio/words/piano.mp3",
     "play": "audio/words/play.mp3",
+    "red": "audio/words/red.mp3",
     "sight": "audio/words/sight.mp3",
     "sing": "audio/words/sing.mp3",
+    "sleep": "audio/words/sleep.mp3",
     "song": "audio/words/song.mp3",
     "teacher": "audio/words/teacher.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "to": "audio/words/to.mp3",
+    "too": "audio/words/too.mp3",
     "want": "audio/words/want.mp3",
     "we": "audio/words/we.mp3",
     "what": "audio/words/what.mp3",
@@ -345,7 +346,6 @@
     "where": "audio/words/where.mp3",
     "white": "audio/words/white.mp3",
     "word": "audio/words/word.mp3",
-    "yellow": "audio/words/yellow.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3"
   },

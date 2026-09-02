@@ -60,9 +60,9 @@
           "image": "images/k1-need-fan.webp",
           "opts": [
             {
-              "key": "warm",
-              "text": "I feel warm.",
-              "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+              "key": "cold",
+              "text": "I feel cold.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
             },
             {
               "key": "cool",
@@ -98,14 +98,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "I feel hot.",
-              "audio": "audio/sentences/k1-weather-hot/a-i-feel-hot-fcc018.mp3"
-            },
-            {
               "key": "warm",
               "text": "I feel warm.",
               "audio": "audio/sentences/k1-weather-hot/a-i-feel-warm-d591b9.mp3"
+            },
+            {
+              "key": "cold",
+              "text": "I feel cold.",
+              "audio": "audio/sentences/k1-weather-hot/a-i-feel-cold-ae4ff2.mp3"
             }
           ]
         }

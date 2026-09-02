@@ -32,14 +32,14 @@
           ],
           "opts": [
             {
+              "key": "/it/",
+              "text": "Id makes the sound /it/.",
+              "audio": "audio/sentences/k2-wf-id/a-id-makes-the-sound-it-b7569f.mp3"
+            },
+            {
               "key": "/at/",
               "text": "Id makes the sound /at/.",
               "audio": "audio/sentences/k2-wf-id/a-id-makes-the-sound-at-f71c3b.mp3"
-            },
-            {
-              "key": "/ot/",
-              "text": "Id makes the sound /ot/.",
-              "audio": "audio/sentences/k2-wf-id/a-id-makes-the-sound-ot-26a5dd.mp3"
             }
           ]
         },
@@ -49,7 +49,7 @@
             "It's -id family."
           ],
           "key": [
-            "family"
+            "id"
           ],
           "q_cn": "这是什么词族？",
           "a_cn": [
@@ -61,14 +61,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Lid begins with letter L.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-letter-l-322fa6.mp3"
+              "key": "an",
+              "text": "It's -an family.",
+              "audio": "audio/sentences/k2-wf-id/a-it-s-an-family-f1bc7a.mp3"
             },
             {
-              "key": "d",
-              "text": "Did ends with letter D.",
-              "audio": "audio/sentences/k2-wf-id/a-did-ends-with-letter-d-e2ab94.mp3"
+              "key": "ot",
+              "text": "It's -ot family.",
+              "audio": "audio/sentences/k2-wf-id/a-it-s-ot-family-485e6b.mp3"
             }
           ]
         }
@@ -132,14 +132,14 @@
           ],
           "opts": [
             {
-              "key": "lid",
-              "text": "/l/ /i/ /d/, lid.",
-              "audio": "audio/sentences/k2-wf-id/a-l-i-d-lid-6be09b.mp3"
-            },
-            {
               "key": "hid",
               "text": "/h/ /i/ /d/, hid.",
               "audio": "audio/sentences/k2-wf-id/a-h-i-d-hid-67ac3f.mp3"
+            },
+            {
+              "key": "lid",
+              "text": "/l/ /i/ /d/, lid.",
+              "audio": "audio/sentences/k2-wf-id/a-l-i-d-lid-6be09b.mp3"
             }
           ]
         },
@@ -161,14 +161,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Did begins with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-id/a-did-begins-with-the-sound-i-9581c7.mp3"
-            },
-            {
               "key": "/h/",
               "text": "Did begins with the sound /h/.",
               "audio": "audio/sentences/k2-wf-id/a-did-begins-with-the-sound-h-1839f9.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Did begins with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-id/a-did-begins-with-the-sound-i-9581c7.mp3"
             }
           ]
         },
@@ -190,14 +190,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Did begins with letter L.",
-              "audio": "audio/sentences/k2-wf-id/a-did-begins-with-letter-l-2bc19a.mp3"
-            },
-            {
               "key": "h",
               "text": "Did begins with letter H.",
               "audio": "audio/sentences/k2-wf-id/a-did-begins-with-letter-h-d99273.mp3"
+            },
+            {
+              "key": "l",
+              "text": "Did begins with letter L.",
+              "audio": "audio/sentences/k2-wf-id/a-did-begins-with-letter-l-2bc19a.mp3"
             }
           ]
         },
@@ -219,14 +219,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Did has the sound /l/ in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-did-has-the-sound-l-in-the-middle-cb35ee.mp3"
-            },
-            {
               "key": "/h/",
               "text": "Did has the sound /h/ in the middle.",
               "audio": "audio/sentences/k2-wf-id/a-did-has-the-sound-h-in-the-middle-ac65f7.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Did has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-did-has-the-sound-d-in-the-middle-1ec429.mp3"
             }
           ]
         },
@@ -253,9 +253,9 @@
               "audio": "audio/sentences/k2-wf-id/a-did-has-letter-l-in-the-middle-5e1df5.mp3"
             },
             {
-              "key": "h",
-              "text": "Did has letter H in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-did-has-letter-h-in-the-middle-a8065d.mp3"
+              "key": "d",
+              "text": "Did has letter D in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-did-has-letter-d-in-the-middle-1c8cc3.mp3"
             }
           ]
         },
@@ -277,14 +277,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Did ends with the sound /l/.",
-              "audio": "audio/sentences/k2-wf-id/a-did-ends-with-the-sound-l-eb5e0b.mp3"
-            },
-            {
               "key": "/i/",
               "text": "Did ends with the sound /i/.",
               "audio": "audio/sentences/k2-wf-id/a-did-ends-with-the-sound-i-1157ab.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Did ends with the sound /l/.",
+              "audio": "audio/sentences/k2-wf-id/a-did-ends-with-the-sound-l-eb5e0b.mp3"
             }
           ]
         },
@@ -306,14 +306,14 @@
           ],
           "opts": [
             {
-              "key": "i",
-              "text": "Did ends with letter I.",
-              "audio": "audio/sentences/k2-wf-id/a-did-ends-with-letter-i-af97bd.mp3"
-            },
-            {
               "key": "l",
               "text": "Did ends with letter L.",
               "audio": "audio/sentences/k2-wf-id/a-did-ends-with-letter-l-f9cf3b.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Did ends with letter I.",
+              "audio": "audio/sentences/k2-wf-id/a-did-ends-with-letter-i-af97bd.mp3"
             }
           ]
         },
@@ -336,13 +336,13 @@
           "opts": [
             {
               "key": "i",
-              "text": "Did has letter I in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-did-has-letter-i-in-the-middle-b6ebe1.mp3"
+              "text": "Lid has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-has-letter-i-in-the-middle-8d3827.mp3"
             },
             {
               "key": "d",
-              "text": "Lid ends with letter D.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-letter-d-c9c5d9.mp3"
+              "text": "Hid ends with letter D.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-letter-d-a0a875.mp3"
             }
           ]
         }
@@ -435,14 +435,14 @@
           ],
           "opts": [
             {
+              "key": "/i/",
+              "text": "Hid begins with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-begins-with-the-sound-i-4ed897.mp3"
+            },
+            {
               "key": "/d/",
               "text": "Hid begins with the sound /d/.",
               "audio": "audio/sentences/k2-wf-id/a-hid-begins-with-the-sound-d-383155.mp3"
-            },
-            {
-              "key": "/l/",
-              "text": "Hid begins with the sound /l/.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-begins-with-the-sound-l-3b5432.mp3"
             }
           ]
         },
@@ -464,9 +464,9 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Hid begins with letter L.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-begins-with-letter-l-510319.mp3"
+              "key": "i",
+              "text": "Hid begins with letter I.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-begins-with-letter-i-02bceb.mp3"
             },
             {
               "key": "d",
@@ -493,14 +493,14 @@
           ],
           "opts": [
             {
+              "key": "/d/",
+              "text": "Hid has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-has-the-sound-d-in-the-middle-a0c7e0.mp3"
+            },
+            {
               "key": "/l/",
               "text": "Hid has the sound /l/ in the middle.",
               "audio": "audio/sentences/k2-wf-id/a-hid-has-the-sound-l-in-the-middle-e38ba8.mp3"
-            },
-            {
-              "key": "/h/",
-              "text": "Hid has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-has-the-sound-h-in-the-middle-68dfa6.mp3"
             }
           ]
         },
@@ -527,9 +527,9 @@
               "audio": "audio/sentences/k2-wf-id/a-hid-has-letter-h-in-the-middle-5eae53.mp3"
             },
             {
-              "key": "d",
-              "text": "Hid has letter D in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-has-letter-d-in-the-middle-9ecefa.mp3"
+              "key": "l",
+              "text": "Hid has letter L in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-has-letter-l-in-the-middle-2f08de.mp3"
             }
           ]
         },
@@ -551,9 +551,9 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Hid ends with the sound /l/.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-the-sound-l-f6c6d1.mp3"
+              "key": "/h/",
+              "text": "Hid ends with the sound /h/.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-the-sound-h-6b68c2.mp3"
             },
             {
               "key": "/i/",
@@ -580,14 +580,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Hid ends with letter L.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-letter-l-2102fe.mp3"
-            },
-            {
               "key": "h",
               "text": "Hid ends with letter H.",
               "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-letter-h-9d963c.mp3"
+            },
+            {
+              "key": "l",
+              "text": "Hid ends with letter L.",
+              "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-letter-l-2102fe.mp3"
             }
           ]
         },
@@ -609,14 +609,14 @@
           ],
           "opts": [
             {
-              "key": "i",
-              "text": "Hid has letter I in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-hid-has-letter-i-in-the-middle-a828da.mp3"
-            },
-            {
               "key": "d",
               "text": "Hid ends with letter D.",
               "audio": "audio/sentences/k2-wf-id/a-hid-ends-with-letter-d-a0a875.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Did has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-did-has-letter-i-in-the-middle-b6ebe1.mp3"
             }
           ]
         }
@@ -714,9 +714,9 @@
               "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-the-sound-d-71738b.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Lid begins with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-the-sound-i-dab205.mp3"
+              "key": "/h/",
+              "text": "Lid begins with the sound /h/.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-the-sound-h-c612a5.mp3"
             }
           ]
         },
@@ -743,9 +743,9 @@
               "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-letter-h-7a7516.mp3"
             },
             {
-              "key": "d",
-              "text": "Lid begins with letter D.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-letter-d-2b9d3a.mp3"
+              "key": "i",
+              "text": "Lid begins with letter I.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-begins-with-letter-i-6503f0.mp3"
             }
           ]
         },
@@ -796,14 +796,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Lid has letter H in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-has-letter-h-in-the-middle-ad827f.mp3"
-            },
-            {
               "key": "d",
               "text": "Lid has letter D in the middle.",
               "audio": "audio/sentences/k2-wf-id/a-lid-has-letter-d-in-the-middle-71a9fc.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Lid has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-has-letter-h-in-the-middle-ad827f.mp3"
             }
           ]
         },
@@ -825,14 +825,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Lid ends with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-the-sound-i-8c14ce.mp3"
-            },
-            {
               "key": "/h/",
               "text": "Lid ends with the sound /h/.",
               "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-the-sound-h-ad57ae.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Lid ends with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-the-sound-i-8c14ce.mp3"
             }
           ]
         },
@@ -854,9 +854,9 @@
           ],
           "opts": [
             {
-              "key": "i",
-              "text": "Lid ends with letter I.",
-              "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-letter-i-a9e384.mp3"
+              "key": "h",
+              "text": "Lid ends with letter H.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-ends-with-letter-h-44fc8f.mp3"
             },
             {
               "key": "l",
@@ -889,8 +889,8 @@
             },
             {
               "key": "i",
-              "text": "Did has letter I in the middle.",
-              "audio": "audio/sentences/k2-wf-id/a-did-has-letter-i-in-the-middle-b6ebe1.mp3"
+              "text": "Lid has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-id/a-lid-has-letter-i-in-the-middle-8d3827.mp3"
             }
           ]
         }
@@ -900,6 +900,7 @@
   ],
   "word_audio": {
     "-id family": "audio/words/id-family.mp3",
+    "an": "audio/words/an.mp3",
     "at": "audio/words/at.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",

@@ -60,14 +60,14 @@
           ],
           "opts": [
             {
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+            },
+            {
               "key": "gum",
               "text": "It's gum.",
               "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
-            },
-            {
-              "key": "beg",
-              "text": "It's beg.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
             }
           ]
         },
@@ -89,14 +89,14 @@
           ],
           "opts": [
             {
-              "key": "vet",
-              "text": "/v/ /et/, vet.",
-              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
-            },
-            {
               "key": "tub",
               "text": "/t/ /ub/, tub.",
               "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+            },
+            {
+              "key": "vet",
+              "text": "/v/ /et/, vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
             }
           ]
         },
@@ -118,14 +118,14 @@
           ],
           "opts": [
             {
-              "key": "/v/",
-              "text": "Fed begins with the sound /v/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-v-18aba5.mp3"
+              "key": "/m/",
+              "text": "Fed begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-m-8b2b2e.mp3"
             },
             {
-              "key": "/b/",
-              "text": "Fed begins with the sound /b/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-b-d9d7ea.mp3"
+              "key": "/g/",
+              "text": "Fed begins with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-g-a63f56.mp3"
             }
           ]
         },
@@ -147,14 +147,14 @@
           ],
           "opts": [
             {
-              "key": "b",
-              "text": "Fed begins with letter B.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-b-98d036.mp3"
+              "key": "e",
+              "text": "Fed begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-e-ab7536.mp3"
             },
             {
-              "key": "v",
-              "text": "Fed begins with letter V.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-v-be078d.mp3"
+              "key": "g",
+              "text": "Fed begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-g-be3303.mp3"
             }
           ]
         },
@@ -181,9 +181,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-u-in-the-middle-a8a13a.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Fed has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-t-in-the-middle-aa1cfa.mp3"
+              "key": "/f/",
+              "text": "Fed has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-f-in-the-middle-58c248.mp3"
             }
           ]
         },
@@ -205,14 +205,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Fed has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-f-in-the-middle-c165dc.mp3"
+              "key": "v",
+              "text": "Fed has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-v-in-the-middle-60d1bd.mp3"
             },
             {
-              "key": "t",
-              "text": "Fed has letter T in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-t-in-the-middle-784439.mp3"
+              "key": "g",
+              "text": "Fed has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-g-in-the-middle-3d7984.mp3"
             }
           ]
         },
@@ -239,9 +239,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-u-1d6d40.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Fed ends with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-t-e8e441.mp3"
+              "key": "/f/",
+              "text": "Fed ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-f-473cea.mp3"
             }
           ]
         },
@@ -263,9 +263,9 @@
           ],
           "opts": [
             {
-              "key": "v",
-              "text": "Fed ends with letter V.",
-              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-letter-v-9a09fb.mp3"
+              "key": "e",
+              "text": "Fed ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-letter-e-12af88.mp3"
             },
             {
               "key": "g",
@@ -332,14 +332,14 @@
           ],
           "opts": [
             {
-              "key": "tub",
-              "text": "It's tub.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
             },
             {
-              "key": "fed",
-              "text": "It's fed.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+              "key": "gum",
+              "text": "It's gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
             }
           ]
         },
@@ -361,14 +361,14 @@
           ],
           "opts": [
             {
-              "key": "gum",
-              "text": "/g/ /um/, gum.",
-              "audio": "audio/sentences/k2-cvc-eu/a-g-um-gum-87c1d6.mp3"
+              "key": "tub",
+              "text": "/t/ /ub/, tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
             },
             {
-              "key": "vet",
-              "text": "/v/ /et/, vet.",
-              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
+              "key": "fed",
+              "text": "/f/ /ed/, fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
             }
           ]
         },
@@ -395,9 +395,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-u-0cd235.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Beg begins with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-t-b466c8.mp3"
+              "key": "/f/",
+              "text": "Beg begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-f-f5abf3.mp3"
             }
           ]
         },
@@ -419,14 +419,14 @@
           ],
           "opts": [
             {
+              "key": "e",
+              "text": "Beg begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-e-729060.mp3"
+            },
+            {
               "key": "g",
               "text": "Beg begins with letter G.",
               "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-g-811315.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Beg begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-d-2e4443.mp3"
             }
           ]
         },
@@ -448,14 +448,14 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Beg has the sound /b/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-b-in-the-middle-0dfc6f.mp3"
-            },
-            {
               "key": "/u/",
               "text": "Beg has the sound /u/ in the middle.",
               "audio": "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-u-in-the-middle-3206c3.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Beg has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-f-in-the-middle-ab7e12.mp3"
             }
           ]
         },
@@ -482,9 +482,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-beg-has-letter-g-in-the-middle-879956.mp3"
             },
             {
-              "key": "d",
-              "text": "Beg has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-letter-d-in-the-middle-3b1c5d.mp3"
+              "key": "m",
+              "text": "Beg has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-letter-m-in-the-middle-0b7ce2.mp3"
             }
           ]
         },
@@ -506,14 +506,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Beg ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-f-b331b0.mp3"
-            },
-            {
               "key": "/v/",
               "text": "Beg ends with the sound /v/.",
               "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-v-555b1f.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Beg ends with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-t-f07e56.mp3"
             }
           ]
         },
@@ -535,14 +535,14 @@
           ],
           "opts": [
             {
+              "key": "m",
+              "text": "Beg ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-m-6c9cc4.mp3"
+            },
+            {
               "key": "d",
               "text": "Beg ends with letter D.",
               "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-d-8b5a9b.mp3"
-            },
-            {
-              "key": "e",
-              "text": "Beg ends with letter E.",
-              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-e-ea393d.mp3"
             }
           ]
         }
@@ -604,9 +604,9 @@
           ],
           "opts": [
             {
-              "key": "beg",
-              "text": "It's beg.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
+              "key": "gum",
+              "text": "It's gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
             },
             {
               "key": "tub",
@@ -633,14 +633,14 @@
           ],
           "opts": [
             {
-              "key": "tub",
-              "text": "/t/ /ub/, tub.",
-              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+              "key": "gum",
+              "text": "/g/ /um/, gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-g-um-gum-87c1d6.mp3"
             },
             {
-              "key": "fed",
-              "text": "/f/ /ed/, fed.",
-              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+              "key": "beg",
+              "text": "/b/ /eg/, beg.",
+              "audio": "audio/sentences/k2-cvc-eu/a-b-eg-beg-af462c.mp3"
             }
           ]
         },
@@ -667,9 +667,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-b-ab2088.mp3"
             },
             {
-              "key": "/e/",
-              "text": "Vet begins with the sound /e/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-e-897af3.mp3"
+              "key": "/u/",
+              "text": "Vet begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-u-0df6f8.mp3"
             }
           ]
         },
@@ -691,14 +691,14 @@
           ],
           "opts": [
             {
+              "key": "e",
+              "text": "Vet begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-e-8e3b82.mp3"
+            },
+            {
               "key": "g",
               "text": "Vet begins with letter G.",
               "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-g-e7f55c.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Vet begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-d-bd5dd4.mp3"
             }
           ]
         },
@@ -720,14 +720,14 @@
           ],
           "opts": [
             {
+              "key": "/m/",
+              "text": "Vet has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-m-in-the-middle-ca12d3.mp3"
+            },
+            {
               "key": "/g/",
               "text": "Vet has the sound /g/ in the middle.",
               "audio": "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-g-in-the-middle-61b9c8.mp3"
-            },
-            {
-              "key": "/f/",
-              "text": "Vet has the sound /f/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-f-in-the-middle-36ea59.mp3"
             }
           ]
         },
@@ -749,14 +749,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Vet has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-f-in-the-middle-8137f4.mp3"
+              "key": "v",
+              "text": "Vet has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-v-in-the-middle-a18e0a.mp3"
             },
             {
-              "key": "t",
-              "text": "Vet has letter T in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-t-in-the-middle-96aacd.mp3"
+              "key": "g",
+              "text": "Vet has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-g-in-the-middle-f2727f.mp3"
             }
           ]
         },
@@ -778,14 +778,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Vet ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-f-6f33e9.mp3"
+              "key": "/m/",
+              "text": "Vet ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-m-fab761.mp3"
             },
             {
-              "key": "/v/",
-              "text": "Vet ends with the sound /v/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-v-24fc00.mp3"
+              "key": "/g/",
+              "text": "Vet ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-g-10c20c.mp3"
             }
           ]
         },
@@ -807,14 +807,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Vet ends with letter F.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-f-00cba6.mp3"
+              "key": "v",
+              "text": "Vet ends with letter V.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-v-c0f3fd.mp3"
             },
             {
-              "key": "b",
-              "text": "Vet ends with letter B.",
-              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-b-f9b05a.mp3"
+              "key": "e",
+              "text": "Vet ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-e-9539b3.mp3"
             }
           ]
         }
@@ -876,14 +876,14 @@
           ],
           "opts": [
             {
-              "key": "vet",
-              "text": "It's vet.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
-            },
-            {
               "key": "fed",
               "text": "It's fed.",
               "audio": "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+            },
+            {
+              "key": "beg",
+              "text": "It's beg.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
             }
           ]
         },
@@ -905,14 +905,14 @@
           ],
           "opts": [
             {
-              "key": "vet",
-              "text": "/v/ /et/, vet.",
-              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
-            },
-            {
               "key": "fed",
               "text": "/f/ /ed/, fed.",
               "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+            },
+            {
+              "key": "vet",
+              "text": "/v/ /et/, vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
             }
           ]
         },
@@ -934,14 +934,14 @@
           ],
           "opts": [
             {
-              "key": "/d/",
-              "text": "Tub begins with the sound /d/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-d-0b41db.mp3"
+              "key": "/f/",
+              "text": "Tub begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-f-c29fd0.mp3"
             },
             {
-              "key": "/m/",
-              "text": "Tub begins with the sound /m/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-m-21ec88.mp3"
+              "key": "/e/",
+              "text": "Tub begins with the sound /e/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-e-96b8b8.mp3"
             }
           ]
         },
@@ -963,14 +963,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Tub begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-d-f1966d.mp3"
+              "key": "b",
+              "text": "Tub begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-b-8aaa3b.mp3"
             },
             {
-              "key": "e",
-              "text": "Tub begins with letter E.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-e-d9d762.mp3"
+              "key": "u",
+              "text": "Tub begins with letter U.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-u-2b5497.mp3"
             }
           ]
         },
@@ -992,14 +992,14 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Tub has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-t-in-the-middle-f31de7.mp3"
+              "key": "/f/",
+              "text": "Tub has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-f-in-the-middle-808200.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Tub has the sound /d/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-d-in-the-middle-679a11.mp3"
+              "key": "/e/",
+              "text": "Tub has the sound /e/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-e-in-the-middle-9f4bbc.mp3"
             }
           ]
         },
@@ -1021,14 +1021,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Tub has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-d-in-the-middle-c8bf92.mp3"
+              "key": "b",
+              "text": "Tub has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-b-in-the-middle-ab812c.mp3"
             },
             {
-              "key": "e",
-              "text": "Tub has letter E in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-e-in-the-middle-170714.mp3"
+              "key": "t",
+              "text": "Tub has letter T in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-t-in-the-middle-5b0d4a.mp3"
             }
           ]
         },
@@ -1050,14 +1050,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Tub ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-f-53f1a2.mp3"
+              "key": "/m/",
+              "text": "Tub ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-m-420b05.mp3"
             },
             {
-              "key": "/v/",
-              "text": "Tub ends with the sound /v/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-v-d8c3fb.mp3"
+              "key": "/g/",
+              "text": "Tub ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-g-4e10f2.mp3"
             }
           ]
         },
@@ -1079,9 +1079,9 @@
           ],
           "opts": [
             {
-              "key": "v",
-              "text": "Tub ends with letter V.",
-              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-letter-v-8700d5.mp3"
+              "key": "e",
+              "text": "Tub ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-letter-e-a71131.mp3"
             },
             {
               "key": "g",
@@ -1148,14 +1148,14 @@
           ],
           "opts": [
             {
-              "key": "fed",
-              "text": "It's fed.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
             },
             {
-              "key": "beg",
-              "text": "It's beg.",
-              "audio": "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
             }
           ]
         },
@@ -1177,14 +1177,14 @@
           ],
           "opts": [
             {
-              "key": "beg",
-              "text": "/b/ /eg/, beg.",
-              "audio": "audio/sentences/k2-cvc-eu/a-b-eg-beg-af462c.mp3"
+              "key": "tub",
+              "text": "/t/ /ub/, tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
             },
             {
-              "key": "vet",
-              "text": "/v/ /et/, vet.",
-              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
+              "key": "fed",
+              "text": "/f/ /ed/, fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
             }
           ]
         },
@@ -1211,9 +1211,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-u-d98bb7.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Gum begins with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-t-194786.mp3"
+              "key": "/f/",
+              "text": "Gum begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-f-4ecd9f.mp3"
             }
           ]
         },
@@ -1235,14 +1235,14 @@
           ],
           "opts": [
             {
-              "key": "v",
-              "text": "Gum begins with letter V.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-v-41358d.mp3"
+              "key": "e",
+              "text": "Gum begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-e-c0a4ff.mp3"
             },
             {
-              "key": "d",
-              "text": "Gum begins with letter D.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-d-6a5069.mp3"
+              "key": "m",
+              "text": "Gum begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-m-fca435.mp3"
             }
           ]
         },
@@ -1264,9 +1264,9 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Gum has the sound /f/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-the-sound-f-in-the-middle-f8202d.mp3"
+              "key": "/g/",
+              "text": "Gum has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-the-sound-g-in-the-middle-d61341.mp3"
             },
             {
               "key": "/v/",
@@ -1298,9 +1298,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-gum-has-letter-d-in-the-middle-aab5a9.mp3"
             },
             {
-              "key": "e",
-              "text": "Gum has letter E in the middle.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-letter-e-in-the-middle-025393.mp3"
+              "key": "b",
+              "text": "Gum has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-letter-b-in-the-middle-e41e9e.mp3"
             }
           ]
         },
@@ -1327,9 +1327,9 @@
               "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-g-77496e.mp3"
             },
             {
-              "key": "/f/",
-              "text": "Gum ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-f-883cd8.mp3"
+              "key": "/v/",
+              "text": "Gum ends with the sound /v/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-v-1be7fa.mp3"
             }
           ]
         },
@@ -1351,14 +1351,14 @@
           ],
           "opts": [
             {
+              "key": "e",
+              "text": "Gum ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-e-561b07.mp3"
+            },
+            {
               "key": "g",
               "text": "Gum ends with letter G.",
               "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-g-184caf.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Gum ends with letter D.",
-              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-d-20560e.mp3"
             }
           ]
         }

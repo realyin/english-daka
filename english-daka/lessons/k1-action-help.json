@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "care",
-              "text": "I can care.",
-              "audio": "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
-            },
-            {
               "key": "share",
               "text": "I can share.",
               "audio": "audio/sentences/k1-action-help/a-i-can-share-53fb04.mp3"
+            },
+            {
+              "key": "play",
+              "text": "I can play.",
+              "audio": "audio/sentences/k1-action-help/a-i-can-play-dffe0e.mp3"
             }
           ]
         }
@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
-              "key": "play",
-              "text": "I can play.",
-              "audio": "audio/sentences/k1-action-help/a-i-can-play-dffe0e.mp3"
-            },
-            {
               "key": "help",
               "text": "I can help.",
               "audio": "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
+            },
+            {
+              "key": "share",
+              "text": "I can share.",
+              "audio": "audio/sentences/k1-action-help/a-i-can-share-53fb04.mp3"
             }
           ]
         },
@@ -98,14 +98,14 @@
           "image": "images/k1-care-animals.webp",
           "opts": [
             {
+              "key": "care",
+              "text": "I can care.",
+              "audio": "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
+            },
+            {
               "key": "play",
               "text": "I can play.",
               "audio": "audio/sentences/k1-action-help/a-i-can-play-dffe0e.mp3"
-            },
-            {
-              "key": "help",
-              "text": "I can help.",
-              "audio": "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
             }
           ]
         }
@@ -141,9 +141,9 @@
               "audio": "audio/sentences/k1-action-help/a-i-can-share-53fb04.mp3"
             },
             {
-              "key": "help",
-              "text": "I can help.",
-              "audio": "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
+              "key": "care",
+              "text": "I can care.",
+              "audio": "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
             }
           ]
         },
@@ -193,9 +193,9 @@
           ],
           "opts": [
             {
-              "key": "care",
-              "text": "I can care.",
-              "audio": "audio/sentences/k1-action-help/a-i-can-care-834d4b.mp3"
+              "key": "help",
+              "text": "I can help.",
+              "audio": "audio/sentences/k1-action-help/a-i-can-help-bdcf7b.mp3"
             },
             {
               "key": "play",

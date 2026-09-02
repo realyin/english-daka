@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "students",
-              "text": "They are students.",
-              "audio": "audio/sentences/k2-letter-s/a-they-are-students-8e0840.mp3"
-            },
-            {
               "key": "sandwich",
               "text": "It's a sandwich.",
               "audio": "audio/sentences/k2-letter-s/a-it-s-a-sandwich-194397.mp3"
+            },
+            {
+              "key": "students",
+              "text": "They are students.",
+              "audio": "audio/sentences/k2-letter-s/a-they-are-students-8e0840.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "S makes the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-s-makes-the-sound-l-253b9b.mp3"
+              "key": "/o/",
+              "text": "S makes the sound /o/.",
+              "audio": "audio/sentences/k2-letter-s/a-s-makes-the-sound-o-330bcf.mp3"
             },
             {
-              "key": "/k/",
-              "text": "S makes the sound /k/.",
-              "audio": "audio/sentences/k2-letter-s/a-s-makes-the-sound-k-b58782.mp3"
+              "key": "/g/",
+              "text": "S makes the sound /g/.",
+              "audio": "audio/sentences/k2-letter-s/a-s-makes-the-sound-g-4dc788.mp3"
             }
           ]
         }
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "o",
-              "text": "Sea begins with letter O.",
-              "audio": "audio/sentences/k2-letter-s/a-sea-begins-with-letter-o-0ea54c.mp3"
+              "key": "c",
+              "text": "Sea begins with letter C.",
+              "audio": "audio/sentences/k2-letter-s/a-sea-begins-with-letter-c-d18147.mp3"
             },
             {
-              "key": "e",
-              "text": "Sea begins with letter E.",
-              "audio": "audio/sentences/k2-letter-s/a-sea-begins-with-letter-e-b05416.mp3"
+              "key": "w",
+              "text": "Sea begins with letter W.",
+              "audio": "audio/sentences/k2-letter-s/a-sea-begins-with-letter-w-32c6cf.mp3"
             }
           ]
         }
@@ -164,14 +164,14 @@
           ],
           "opts": [
             {
-              "key": "i",
-              "text": "Sheep begins with letter I.",
-              "audio": "audio/sentences/k2-letter-s/a-sheep-begins-with-letter-i-d4329d.mp3"
+              "key": "y",
+              "text": "Sheep begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-s/a-sheep-begins-with-letter-y-ce0c3f.mp3"
             },
             {
-              "key": "m",
-              "text": "Sheep begins with letter M.",
-              "audio": "audio/sentences/k2-letter-s/a-sheep-begins-with-letter-m-7a4e7d.mp3"
+              "key": "v",
+              "text": "Sheep begins with letter V.",
+              "audio": "audio/sentences/k2-letter-s/a-sheep-begins-with-letter-v-cf2bcf.mp3"
             }
           ]
         }
@@ -202,14 +202,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Snake begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-j-fde07b.mp3"
+              "key": "/m/",
+              "text": "Snake begins with the sound /m/.",
+              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-m-1d62c5.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Snake begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-l-d6e65a.mp3"
+              "key": "/p/",
+              "text": "Snake begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-the-sound-p-5e0a74.mp3"
             }
           ]
         },
@@ -231,14 +231,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Snake begins with letter A.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-a-e3052f.mp3"
+              "key": "y",
+              "text": "Snake begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-y-c0c0e2.mp3"
             },
             {
-              "key": "k",
-              "text": "Snake begins with letter K.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-k-5f9cc7.mp3"
+              "key": "v",
+              "text": "Snake begins with letter V.",
+              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-v-d91b43.mp3"
             }
           ]
         }
@@ -269,14 +269,14 @@
           ],
           "opts": [
             {
-              "key": "/ks/",
-              "text": "School begins with the sound /ks/.",
-              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-ks-09bcff.mp3"
+              "key": "/oh/",
+              "text": "School begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-oh-d741dc.mp3"
             },
             {
-              "key": "/p/",
-              "text": "School begins with the sound /p/.",
-              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-p-2b58bc.mp3"
+              "key": "/u/",
+              "text": "School begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-the-sound-u-9923e4.mp3"
             }
           ]
         },
@@ -298,14 +298,14 @@
           ],
           "opts": [
             {
-              "key": "x",
-              "text": "School begins with letter X.",
-              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-letter-x-66a56e.mp3"
+              "key": "g",
+              "text": "School begins with letter G.",
+              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-letter-g-8c81cb.mp3"
             },
             {
-              "key": "l",
-              "text": "School begins with letter L.",
-              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-letter-l-680382.mp3"
+              "key": "m",
+              "text": "School begins with letter M.",
+              "audio": "audio/sentences/k2-letter-s/a-school-begins-with-letter-m-d9c078.mp3"
             }
           ]
         }
@@ -336,14 +336,14 @@
           ],
           "opts": [
             {
-              "key": "/r/",
-              "text": "Sun begins with the sound /r/.",
-              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-r-b664a9.mp3"
+              "key": "/f/",
+              "text": "Sun begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-f-83ff6a.mp3"
             },
             {
-              "key": "/m/",
-              "text": "Sun begins with the sound /m/.",
-              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-m-da57bc.mp3"
+              "key": "/e/",
+              "text": "Sun begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-the-sound-e-0d60d1.mp3"
             }
           ]
         },
@@ -365,14 +365,14 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Sun begins with letter N.",
-              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-n-8a5274.mp3"
+              "key": "e",
+              "text": "Sun begins with letter E.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-e-690c44.mp3"
             },
             {
-              "key": "j",
-              "text": "Sun begins with letter J.",
-              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-j-02b28c.mp3"
+              "key": "q",
+              "text": "Sun begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-q-94c588.mp3"
             }
           ]
         }
@@ -408,9 +408,9 @@
               "audio": "audio/sentences/k2-letter-s/a-it-s-a-station-05cc55.mp3"
             },
             {
-              "key": "horse",
-              "text": "It's a horse.",
-              "audio": "audio/sentences/k2-letter-s/a-it-s-a-horse-04659c.mp3"
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k2-letter-s/a-it-s-a-trumpet-f848f7.mp3"
             }
           ]
         },
@@ -432,14 +432,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Sandwich begins with the sound /f/.",
-              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-the-sound-f-cf6001.mp3"
+              "key": "/n/",
+              "text": "Sandwich begins with the sound /n/.",
+              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-the-sound-n-815f3c.mp3"
             },
             {
-              "key": "/v/",
-              "text": "Sandwich begins with the sound /v/.",
-              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-the-sound-v-d8ea11.mp3"
+              "key": "/b/",
+              "text": "Sandwich begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-the-sound-b-11c819.mp3"
             }
           ]
         },
@@ -461,14 +461,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Sandwich begins with letter F.",
-              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-letter-f-938ecd.mp3"
+              "key": "v",
+              "text": "Sandwich begins with letter V.",
+              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-letter-v-bdda53.mp3"
             },
             {
-              "key": "y",
-              "text": "Sandwich begins with letter Y.",
-              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-letter-y-cde6e6.mp3"
+              "key": "l",
+              "text": "Sandwich begins with letter L.",
+              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-letter-l-909407.mp3"
             }
           ]
         }
@@ -504,9 +504,9 @@
               "audio": "audio/sentences/k2-letter-s/a-it-s-space-053088.mp3"
             },
             {
-              "key": "man",
-              "text": "It's man.",
-              "audio": "audio/sentences/k2-letter-s/a-it-s-man-4f54a0.mp3"
+              "key": "orange",
+              "text": "It's orange.",
+              "audio": "audio/sentences/k2-letter-s/a-it-s-orange-587e78.mp3"
             }
           ]
         },
@@ -528,14 +528,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Snow begins with the sound /i/.",
-              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-the-sound-i-7526ba.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Snow begins with the sound /b/.",
               "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-the-sound-b-43075c.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Snow begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-the-sound-r-0555d3.mp3"
             }
           ]
         },
@@ -557,14 +557,14 @@
           ],
           "opts": [
             {
-              "key": "j",
-              "text": "Snow begins with letter J.",
-              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-letter-j-b2fd67.mp3"
+              "key": "q",
+              "text": "Snow begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-letter-q-27c73f.mp3"
             },
             {
-              "key": "x",
-              "text": "Snow begins with letter X.",
-              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-letter-x-b00840.mp3"
+              "key": "g",
+              "text": "Snow begins with letter G.",
+              "audio": "audio/sentences/k2-letter-s/a-snow-begins-with-letter-g-aed21b.mp3"
             }
           ]
         }
@@ -600,9 +600,9 @@
               "audio": "audio/sentences/k2-letter-s/a-it-s-a-sandwich-194397.mp3"
             },
             {
-              "key": "notebook",
-              "text": "It's a notebook.",
-              "audio": "audio/sentences/k2-letter-s/a-it-s-a-notebook-69977f.mp3"
+              "key": "nail",
+              "text": "It's a nail.",
+              "audio": "audio/sentences/k2-letter-s/a-it-s-a-nail-e62d6b.mp3"
             }
           ]
         },
@@ -624,14 +624,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Station begins with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-the-sound-g-271e75.mp3"
+              "key": "/m/",
+              "text": "Station begins with the sound /m/.",
+              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-the-sound-m-886c56.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Station begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-the-sound-j-ae3661.mp3"
+              "key": "/p/",
+              "text": "Station begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-the-sound-p-9379dc.mp3"
             }
           ]
         },
@@ -653,14 +653,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Station begins with letter M.",
-              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-letter-m-d14c81.mp3"
+              "key": "v",
+              "text": "Station begins with letter V.",
+              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-letter-v-bf0baa.mp3"
             },
             {
-              "key": "f",
-              "text": "Station begins with letter F.",
-              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-letter-f-77f0e1.mp3"
+              "key": "l",
+              "text": "Station begins with letter L.",
+              "audio": "audio/sentences/k2-letter-s/a-station-begins-with-letter-l-596012.mp3"
             }
           ]
         }
@@ -696,9 +696,9 @@
               "audio": "audio/sentences/k2-letter-s/a-it-s-snow-61d75b.mp3"
             },
             {
-              "key": "brown",
-              "text": "It's brown.",
-              "audio": "audio/sentences/k2-letter-s/a-it-s-brown-ed7c04.mp3"
+              "key": "man",
+              "text": "It's man.",
+              "audio": "audio/sentences/k2-letter-s/a-it-s-man-4f54a0.mp3"
             }
           ]
         },
@@ -720,14 +720,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Space begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-the-sound-j-c99cfb.mp3"
+              "key": "/m/",
+              "text": "Space begins with the sound /m/.",
+              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-the-sound-m-99453c.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Space begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-the-sound-l-108ff9.mp3"
+              "key": "/p/",
+              "text": "Space begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-the-sound-p-b07fd3.mp3"
             }
           ]
         },
@@ -749,14 +749,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Space begins with letter H.",
-              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-letter-h-23766c.mp3"
+              "key": "b",
+              "text": "Space begins with letter B.",
+              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-letter-b-339544.mp3"
             },
             {
-              "key": "d",
-              "text": "Space begins with letter D.",
-              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-letter-d-7214c4.mp3"
+              "key": "u",
+              "text": "Space begins with letter U.",
+              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-letter-u-30e3e3.mp3"
             }
           ]
         }
@@ -787,14 +787,14 @@
           ],
           "opts": [
             {
-              "key": "sailor",
-              "text": "This is a sailor.",
-              "audio": "audio/sentences/k2-letter-s/a-this-is-a-sailor-10ba74.mp3"
-            },
-            {
               "key": "sick",
               "text": "The boy is sick.",
               "audio": "audio/sentences/k2-letter-s/a-the-boy-is-sick-ebc195.mp3"
+            },
+            {
+              "key": "sailor",
+              "text": "This is a sailor.",
+              "audio": "audio/sentences/k2-letter-s/a-this-is-a-sailor-10ba74.mp3"
             }
           ]
         },
@@ -816,14 +816,14 @@
           ],
           "opts": [
             {
-              "key": "/yoo/",
-              "text": "Say begins with the sound /yoo/.",
-              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-the-sound-yoo-471661.mp3"
+              "key": "/i/",
+              "text": "Say begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-the-sound-i-6c24de.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Say begins with the sound /d/.",
-              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-the-sound-d-206932.mp3"
+              "key": "/f/",
+              "text": "Say begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-the-sound-f-9c7756.mp3"
             }
           ]
         },
@@ -845,14 +845,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Say begins with letter A.",
-              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-letter-a-c9a646.mp3"
+              "key": "y",
+              "text": "Say begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-letter-y-4c72c5.mp3"
             },
             {
-              "key": "k",
-              "text": "Say begins with letter K.",
-              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-letter-k-f000be.mp3"
+              "key": "v",
+              "text": "Say begins with letter V.",
+              "audio": "audio/sentences/k2-letter-s/a-say-begins-with-letter-v-9f3073.mp3"
             }
           ]
         }
@@ -884,13 +884,13 @@
           "opts": [
             {
               "key": "s",
-              "text": "Sick begins with letter S.",
-              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-letter-s-d0eac1.mp3"
+              "text": "Sandwich begins with letter S.",
+              "audio": "audio/sentences/k2-letter-s/a-sandwich-begins-with-letter-s-74b3f5.mp3"
             },
             {
               "key": "s",
-              "text": "Space begins with letter S.",
-              "audio": "audio/sentences/k2-letter-s/a-space-begins-with-letter-s-cb6742.mp3"
+              "text": "Smart begins with letter S.",
+              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-letter-s-e946fc.mp3"
             }
           ]
         },
@@ -912,14 +912,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "See begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-the-sound-l-fd6e99.mp3"
+              "key": "/g/",
+              "text": "See begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-the-sound-g-9f1bfa.mp3"
             },
             {
-              "key": "/k/",
-              "text": "See begins with the sound /k/.",
-              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-the-sound-k-37ad4c.mp3"
+              "key": "/v/",
+              "text": "See begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-the-sound-v-882af5.mp3"
             }
           ]
         },
@@ -941,14 +941,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "See begins with letter G.",
-              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-letter-g-22e3a1.mp3"
+              "key": "o",
+              "text": "See begins with letter O.",
+              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-letter-o-dee7eb.mp3"
             },
             {
-              "key": "r",
-              "text": "See begins with letter R.",
-              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-letter-r-f524f2.mp3"
+              "key": "p",
+              "text": "See begins with letter P.",
+              "audio": "audio/sentences/k2-letter-s/a-see-begins-with-letter-p-68b572.mp3"
             }
           ]
         }
@@ -985,8 +985,8 @@
             },
             {
               "key": "s",
-              "text": "Snake begins with letter S.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-s-ff3468.mp3"
+              "text": "Sun begins with letter S.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-s-65f590.mp3"
             }
           ]
         },
@@ -1008,14 +1008,14 @@
           ],
           "opts": [
             {
-              "key": "/n/",
-              "text": "Smart begins with the sound /n/.",
-              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-the-sound-n-93e1e3.mp3"
+              "key": "/v/",
+              "text": "Smart begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-the-sound-v-d88e9d.mp3"
             },
             {
-              "key": "/eye/",
-              "text": "Smart begins with the sound /eye/.",
-              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-the-sound-eye-e429f1.mp3"
+              "key": "/t/",
+              "text": "Smart begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-the-sound-t-41e40d.mp3"
             }
           ]
         },
@@ -1037,14 +1037,14 @@
           ],
           "opts": [
             {
-              "key": "x",
-              "text": "Smart begins with letter X.",
-              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-letter-x-bf72a5.mp3"
+              "key": "q",
+              "text": "Smart begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-letter-q-94d29d.mp3"
             },
             {
-              "key": "l",
-              "text": "Smart begins with letter L.",
-              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-letter-l-6b025a.mp3"
+              "key": "g",
+              "text": "Smart begins with letter G.",
+              "audio": "audio/sentences/k2-letter-s/a-smart-begins-with-letter-g-701658.mp3"
             }
           ]
         }
@@ -1075,14 +1075,14 @@
           ],
           "opts": [
             {
-              "key": "say",
-              "text": "I can say hello.",
-              "audio": "audio/sentences/k2-letter-s/a-i-can-say-hello-632b70.mp3"
-            },
-            {
               "key": "sailor",
               "text": "This is a sailor.",
               "audio": "audio/sentences/k2-letter-s/a-this-is-a-sailor-10ba74.mp3"
+            },
+            {
+              "key": "say",
+              "text": "I can say hello.",
+              "audio": "audio/sentences/k2-letter-s/a-i-can-say-hello-632b70.mp3"
             }
           ]
         },
@@ -1104,14 +1104,14 @@
           ],
           "opts": [
             {
-              "key": "/p/",
-              "text": "Sick begins with the sound /p/.",
-              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-the-sound-p-24d09f.mp3"
+              "key": "/oh/",
+              "text": "Sick begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-the-sound-oh-40023f.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Sick begins with the sound /h/.",
-              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-the-sound-h-cc7c6b.mp3"
+              "key": "/u/",
+              "text": "Sick begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-the-sound-u-d358e1.mp3"
             }
           ]
         },
@@ -1133,14 +1133,14 @@
           ],
           "opts": [
             {
-              "key": "j",
-              "text": "Sick begins with letter J.",
-              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-letter-j-f67f1b.mp3"
+              "key": "e",
+              "text": "Sick begins with letter E.",
+              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-letter-e-ab1a44.mp3"
             },
             {
-              "key": "x",
-              "text": "Sick begins with letter X.",
-              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-letter-x-3e5d79.mp3"
+              "key": "q",
+              "text": "Sick begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-sick-begins-with-letter-q-71405e.mp3"
             }
           ]
         }
@@ -1177,8 +1177,8 @@
             },
             {
               "key": "s",
-              "text": "Snake begins with letter S.",
-              "audio": "audio/sentences/k2-letter-s/a-snake-begins-with-letter-s-ff3468.mp3"
+              "text": "Sun begins with letter S.",
+              "audio": "audio/sentences/k2-letter-s/a-sun-begins-with-letter-s-65f590.mp3"
             }
           ]
         },
@@ -1200,14 +1200,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Same begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-the-sound-j-a8b097.mp3"
+              "key": "/p/",
+              "text": "Same begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-the-sound-p-43d1a0.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Same begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-the-sound-l-20e16d.mp3"
+              "key": "/ks/",
+              "text": "Same begins with the sound /ks/.",
+              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-the-sound-ks-531a8d.mp3"
             }
           ]
         },
@@ -1229,14 +1229,14 @@
           ],
           "opts": [
             {
-              "key": "p",
-              "text": "Same begins with letter P.",
-              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-letter-p-241c4b.mp3"
+              "key": "e",
+              "text": "Same begins with letter E.",
+              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-letter-e-3ade8c.mp3"
             },
             {
-              "key": "n",
-              "text": "Same begins with letter N.",
-              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-letter-n-7f0b78.mp3"
+              "key": "q",
+              "text": "Same begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-same-begins-with-letter-q-e6c9b1.mp3"
             }
           ]
         }
@@ -1267,14 +1267,14 @@
           ],
           "opts": [
             {
+              "key": "newspaper",
+              "text": "This is a newspaper.",
+              "audio": "audio/sentences/k2-letter-s/a-this-is-a-newspaper-dfd2e9.mp3"
+            },
+            {
               "key": "nest",
               "text": "This is a nest.",
               "audio": "audio/sentences/k2-letter-s/a-this-is-a-nest-0f98f0.mp3"
-            },
-            {
-              "key": "doctor",
-              "text": "This is a doctor.",
-              "audio": "audio/sentences/k2-letter-s/a-this-is-a-doctor-7c8317.mp3"
             }
           ]
         },
@@ -1296,14 +1296,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Sailor begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-the-sound-l-9aba2b.mp3"
+              "key": "/o/",
+              "text": "Sailor begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-the-sound-o-35df3d.mp3"
             },
             {
-              "key": "/k/",
-              "text": "Sailor begins with the sound /k/.",
-              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-the-sound-k-96d477.mp3"
+              "key": "/g/",
+              "text": "Sailor begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-the-sound-g-c7bedc.mp3"
             }
           ]
         },
@@ -1325,14 +1325,14 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Sailor begins with letter N.",
-              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-letter-n-128d86.mp3"
+              "key": "e",
+              "text": "Sailor begins with letter E.",
+              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-letter-e-4bab07.mp3"
             },
             {
-              "key": "j",
-              "text": "Sailor begins with letter J.",
-              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-letter-j-9782ab.mp3"
+              "key": "q",
+              "text": "Sailor begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-s/a-sailor-begins-with-letter-q-e1bcc5.mp3"
             }
           ]
         }
@@ -1363,14 +1363,14 @@
           ],
           "opts": [
             {
-              "key": "drums",
-              "text": "They are drums.",
-              "audio": "audio/sentences/k2-letter-s/a-they-are-drums-b38d54.mp3"
-            },
-            {
               "key": "pets",
               "text": "They are pets.",
               "audio": "audio/sentences/k2-letter-s/a-they-are-pets-fffe79.mp3"
+            },
+            {
+              "key": "drums",
+              "text": "They are drums.",
+              "audio": "audio/sentences/k2-letter-s/a-they-are-drums-b38d54.mp3"
             }
           ]
         },
@@ -1392,14 +1392,14 @@
           ],
           "opts": [
             {
-              "key": "/eye/",
-              "text": "Students begins with the sound /eye/.",
-              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-the-sound-eye-8b0636.mp3"
+              "key": "/v/",
+              "text": "Students begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-the-sound-v-f71954.mp3"
             },
             {
-              "key": "/f/",
-              "text": "Students begins with the sound /f/.",
-              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-the-sound-f-f4d931.mp3"
+              "key": "/t/",
+              "text": "Students begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-the-sound-t-2fa9db.mp3"
             }
           ]
         },
@@ -1421,14 +1421,14 @@
           ],
           "opts": [
             {
-              "key": "r",
-              "text": "Students begins with letter R.",
-              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-letter-r-0476c8.mp3"
+              "key": "o",
+              "text": "Students begins with letter O.",
+              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-letter-o-52ddc9.mp3"
             },
             {
-              "key": "h",
-              "text": "Students begins with letter H.",
-              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-letter-h-734677.mp3"
+              "key": "p",
+              "text": "Students begins with letter P.",
+              "audio": "audio/sentences/k2-letter-s/a-students-begins-with-letter-p-85d025.mp3"
             }
           ]
         }
@@ -1450,26 +1450,47 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "are": "audio/words/are.mp3",
+    "b": "audio/words/b.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "boy": "audio/words/boy.mp3",
     "butterfly": "audio/words/butterfly.mp3",
+    "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "drums": "audio/words/drums.mp3",
+    "e": "audio/words/e.mp3",
     "eyes": "audio/words/eyes.mp3",
+    "f": "audio/words/f.mp3",
     "feel": "audio/words/feel.mp3",
+    "g": "audio/words/g.mp3",
     "hello": "audio/words/hello.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "ks": "audio/words/ks.mp3",
+    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter s": "audio/words/letter-s.mp3",
+    "m": "audio/words/m.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
+    "man": "audio/words/man.mp3",
     "mouth": "audio/words/mouth.mp3",
+    "n": "audio/words/n.mp3",
+    "nail": "audio/words/nail.mp3",
+    "nest": "audio/words/nest.mp3",
+    "newspaper": "audio/words/newspaper.mp3",
+    "o": "audio/words/o.mp3",
+    "oh": "audio/words/oh.mp3",
+    "orange": "audio/words/orange.mp3",
+    "p": "audio/words/p.mp3",
+    "pets": "audio/words/pets.mp3",
     "place": "audio/words/place.mp3",
+    "q": "audio/words/q.mp3",
+    "r": "audio/words/r.mp3",
     "s": "audio/words/s.mp3",
     "sailor": "audio/words/sailor.mp3",
     "same": "audio/words/same.mp3",
@@ -1488,14 +1509,20 @@
     "station": "audio/words/station.mp3",
     "students": "audio/words/students.mp3",
     "sun": "audio/words/sun.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "they": "audio/words/they.mp3",
     "this": "audio/words/this.mp3",
+    "trumpet": "audio/words/trumpet.mp3",
+    "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
+    "w": "audio/words/w.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "which": "audio/words/which.mp3",
     "who": "audio/words/who.mp3",
     "with": "audio/words/with.mp3",
+    "y": "audio/words/y.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3",
     "your": "audio/words/your.mp3"

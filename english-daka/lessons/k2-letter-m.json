@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "o",
-              "text": "It's letter O.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-letter-o-2df967.mp3"
-            },
-            {
               "key": "f",
               "text": "It's letter F.",
               "audio": "audio/sentences/k2-letter-m/a-it-s-letter-f-5461e9.mp3"
+            },
+            {
+              "key": "o",
+              "text": "It's letter O.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-letter-o-2df967.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "M makes the sound /h/.",
-              "audio": "audio/sentences/k2-letter-m/a-m-makes-the-sound-h-029b76.mp3"
-            },
-            {
               "key": "/oh/",
               "text": "M makes the sound /oh/.",
               "audio": "audio/sentences/k2-letter-m/a-m-makes-the-sound-oh-f0fc53.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "M makes the sound /u/.",
+              "audio": "audio/sentences/k2-letter-m/a-m-makes-the-sound-u-20fb0a.mp3"
             }
           ]
         }
@@ -97,14 +97,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Mom begins with letter F.",
-              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-letter-f-a4fee3.mp3"
-            },
-            {
               "key": "o",
               "text": "Mom begins with letter O.",
               "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-letter-o-801064.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Mom begins with letter F.",
+              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-letter-f-a4fee3.mp3"
             }
           ]
         },
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "/yoo/",
-              "text": "Mom begins with the sound /yoo/.",
-              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-yoo-4b0e02.mp3"
+              "key": "/u/",
+              "text": "Mom begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-u-995174.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Mom begins with the sound /d/.",
-              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-d-a067f7.mp3"
+              "key": "/i/",
+              "text": "Mom begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-the-sound-i-20c043.mp3"
             }
           ]
         }
@@ -164,14 +164,14 @@
           ],
           "opts": [
             {
-              "key": "gorilla",
-              "text": "It's a gorilla.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-a-gorilla-e227c6.mp3"
+              "key": "piano",
+              "text": "It's a piano.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-a-piano-8300b6.mp3"
             },
             {
-              "key": "rectangle",
-              "text": "It's a rectangle.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-a-rectangle-9f01d5.mp3"
+              "key": "crow",
+              "text": "It's a crow.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-a-crow-fcd0b6.mp3"
             }
           ]
         },
@@ -193,14 +193,14 @@
           ],
           "opts": [
             {
-              "key": "/yoo/",
-              "text": "Monkey begins with the sound /yoo/.",
-              "audio": "audio/sentences/k2-letter-m/a-monkey-begins-with-the-sound-yoo-b5ee59.mp3"
+              "key": "/i/",
+              "text": "Monkey begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-m/a-monkey-begins-with-the-sound-i-b0d26f.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Monkey begins with the sound /d/.",
-              "audio": "audio/sentences/k2-letter-m/a-monkey-begins-with-the-sound-d-f27494.mp3"
+              "key": "/f/",
+              "text": "Monkey begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-m/a-monkey-begins-with-the-sound-f-f49fd8.mp3"
             }
           ]
         },
@@ -266,9 +266,9 @@
               "audio": "audio/sentences/k2-letter-m/a-the-mouse-is-orange-ee5ba6.mp3"
             },
             {
-              "key": "purple",
-              "text": "The mouse is purple.",
-              "audio": "audio/sentences/k2-letter-m/a-the-mouse-is-purple-e1422a.mp3"
+              "key": "black",
+              "text": "The mouse is black.",
+              "audio": "audio/sentences/k2-letter-m/a-the-mouse-is-black-91d33f.mp3"
             }
           ]
         },
@@ -290,14 +290,14 @@
           ],
           "opts": [
             {
-              "key": "/k/",
-              "text": "Mouse begins with the sound /k/.",
-              "audio": "audio/sentences/k2-letter-m/a-mouse-begins-with-the-sound-k-003355.mp3"
+              "key": "/g/",
+              "text": "Mouse begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-m/a-mouse-begins-with-the-sound-g-063d2e.mp3"
             },
             {
-              "key": "/ay/",
-              "text": "Mouse begins with the sound /ay/.",
-              "audio": "audio/sentences/k2-letter-m/a-mouse-begins-with-the-sound-ay-a5d5bf.mp3"
+              "key": "/v/",
+              "text": "Mouse begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-m/a-mouse-begins-with-the-sound-v-936d33.mp3"
             }
           ]
         },
@@ -362,9 +362,9 @@
               "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-orange-fdcdbe.mp3"
             },
             {
-              "key": "o",
-              "text": "Orange begins with letter O.",
-              "audio": "audio/sentences/k2-letter-m/a-orange-begins-with-letter-o-628bce.mp3"
+              "key": "m",
+              "text": "Mom begins with letter M.",
+              "audio": "audio/sentences/k2-letter-m/a-mom-begins-with-letter-m-19f985.mp3"
             }
           ]
         },
@@ -386,14 +386,14 @@
           ],
           "opts": [
             {
-              "key": "/oh/",
-              "text": "Milk begins with the sound /oh/.",
-              "audio": "audio/sentences/k2-letter-m/a-milk-begins-with-the-sound-oh-af1cb5.mp3"
-            },
-            {
               "key": "/u/",
               "text": "Milk begins with the sound /u/.",
               "audio": "audio/sentences/k2-letter-m/a-milk-begins-with-the-sound-u-70347c.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Milk begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-m/a-milk-begins-with-the-sound-i-1c8ba9.mp3"
             }
           ]
         },
@@ -482,14 +482,14 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Mouth begins with the sound /b/.",
-              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-the-sound-b-d45010.mp3"
+              "key": "/h/",
+              "text": "Mouth begins with the sound /h/.",
+              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-the-sound-h-37ec51.mp3"
             },
             {
-              "key": "/o/",
-              "text": "Mouth begins with the sound /o/.",
-              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-the-sound-o-88b7fe.mp3"
+              "key": "/oh/",
+              "text": "Mouth begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-the-sound-oh-763400.mp3"
             }
           ]
         },
@@ -511,14 +511,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Mouth begins with letter F.",
-              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-letter-f-420667.mp3"
-            },
-            {
               "key": "o",
               "text": "Mouth begins with letter O.",
               "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-letter-o-25b2d7.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Mouth begins with letter F.",
+              "audio": "audio/sentences/k2-letter-m/a-mouth-begins-with-letter-f-420667.mp3"
             }
           ]
         }
@@ -554,9 +554,9 @@
               "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-gray-826074.mp3"
             },
             {
-              "key": "purple",
-              "text": "Red and yellow can make purple.",
-              "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-purple-28744b.mp3"
+              "key": "brown",
+              "text": "Red and yellow can make brown.",
+              "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-brown-418aa2.mp3"
             }
           ]
         },
@@ -616,14 +616,14 @@
           ],
           "opts": [
             {
-              "key": "orange",
-              "text": "Red and yellow can make orange.",
-              "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-orange-fdcdbe.mp3"
-            },
-            {
               "key": "milk",
               "text": "Yes, I like to drink milk.",
               "audio": "audio/sentences/k2-letter-m/a-yes-i-like-to-drink-milk-094718.mp3"
+            },
+            {
+              "key": "orange",
+              "text": "Red and yellow can make orange.",
+              "audio": "audio/sentences/k2-letter-m/a-red-and-yellow-can-make-orange-fdcdbe.mp3"
             }
           ]
         },
@@ -645,14 +645,14 @@
           ],
           "opts": [
             {
-              "key": "/s/",
-              "text": "Market begins with the sound /s/.",
-              "audio": "audio/sentences/k2-letter-m/a-market-begins-with-the-sound-s-991c0b.mp3"
+              "key": "/o/",
+              "text": "Market begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-m/a-market-begins-with-the-sound-o-c04b17.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Market begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-m/a-market-begins-with-the-sound-l-10add3.mp3"
+              "key": "/g/",
+              "text": "Market begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-m/a-market-begins-with-the-sound-g-793191.mp3"
             }
           ]
         },
@@ -712,14 +712,14 @@
           ],
           "opts": [
             {
+              "key": "mittens",
+              "text": "They're mittens.",
+              "audio": "audio/sentences/k2-letter-m/a-they-re-mittens-f9c61b.mp3"
+            },
+            {
               "key": "music",
               "text": "It's music.",
               "audio": "audio/sentences/k2-letter-m/a-it-s-music-1e08c2.mp3"
-            },
-            {
-              "key": "money",
-              "text": "It's money.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-money-ac7a88.mp3"
             }
           ]
         }
@@ -751,14 +751,14 @@
           "image": "images/k2-four-fans.webp",
           "opts": [
             {
-              "key": "ten",
-              "text": "There are ten fans.",
-              "audio": "audio/sentences/k2-letter-m/a-there-are-ten-fans-ccb11a.mp3"
+              "key": "eleven",
+              "text": "There are eleven fans.",
+              "audio": "audio/sentences/k2-letter-m/a-there-are-eleven-fans-071340.mp3"
             },
             {
-              "key": "twelve",
-              "text": "There are twelve fans.",
-              "audio": "audio/sentences/k2-letter-m/a-there-are-twelve-fans-b0cb34.mp3"
+              "key": "fourteen",
+              "text": "There are fourteen fans.",
+              "audio": "audio/sentences/k2-letter-m/a-there-are-fourteen-fans-edcfa9.mp3"
             }
           ]
         },
@@ -780,14 +780,14 @@
           ],
           "opts": [
             {
-              "key": "o",
-              "text": "Fan begins with letter O.",
-              "audio": "audio/sentences/k2-letter-m/a-fan-begins-with-letter-o-ec4abf.mp3"
-            },
-            {
               "key": "m",
               "text": "Fan begins with letter M.",
               "audio": "audio/sentences/k2-letter-m/a-fan-begins-with-letter-m-a70434.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Fan begins with letter O.",
+              "audio": "audio/sentences/k2-letter-m/a-fan-begins-with-letter-o-ec4abf.mp3"
             }
           ]
         }
@@ -818,14 +818,14 @@
           ],
           "opts": [
             {
-              "key": "feet",
-              "text": "They're feet.",
-              "audio": "audio/sentences/k2-letter-m/a-they-re-feet-009684.mp3"
-            },
-            {
               "key": "teeth",
               "text": "They're teeth.",
               "audio": "audio/sentences/k2-letter-m/a-they-re-teeth-c59239.mp3"
+            },
+            {
+              "key": "toys",
+              "text": "They're toys.",
+              "audio": "audio/sentences/k2-letter-m/a-they-re-toys-e56c5f.mp3"
             }
           ]
         },
@@ -847,14 +847,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Mittens begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-m/a-mittens-begins-with-the-sound-j-a84f19.mp3"
+              "key": "/a/",
+              "text": "Mittens begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-m/a-mittens-begins-with-the-sound-a-d9fbf1.mp3"
             },
             {
-              "key": "/s/",
-              "text": "Mittens begins with the sound /s/.",
-              "audio": "audio/sentences/k2-letter-m/a-mittens-begins-with-the-sound-s-ce0d03.mp3"
+              "key": "/yoo/",
+              "text": "Mittens begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-m/a-mittens-begins-with-the-sound-yoo-4417a7.mp3"
             }
           ]
         },
@@ -914,14 +914,14 @@
           ],
           "opts": [
             {
-              "key": "music",
-              "text": "It's music.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-music-1e08c2.mp3"
-            },
-            {
               "key": "christmas",
               "text": "It's Christmas.",
               "audio": "audio/sentences/k2-letter-m/a-it-s-christmas-ca5961.mp3"
+            },
+            {
+              "key": "orange",
+              "text": "It's orange.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-orange-587e78.mp3"
             }
           ]
         },
@@ -943,14 +943,14 @@
           ],
           "opts": [
             {
-              "key": "/n/",
-              "text": "Money begins with the sound /n/.",
-              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-the-sound-n-126f03.mp3"
+              "key": "/v/",
+              "text": "Money begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-the-sound-v-114056.mp3"
             },
             {
-              "key": "/eye/",
-              "text": "Money begins with the sound /eye/.",
-              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-the-sound-eye-06dae3.mp3"
+              "key": "/t/",
+              "text": "Money begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-the-sound-t-ce390e.mp3"
             }
           ]
         },
@@ -972,14 +972,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Money begins with letter F.",
-              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-letter-f-b555db.mp3"
-            },
-            {
               "key": "o",
               "text": "Money begins with letter O.",
               "audio": "audio/sentences/k2-letter-m/a-money-begins-with-letter-o-fd4c45.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Money begins with letter F.",
+              "audio": "audio/sentences/k2-letter-m/a-money-begins-with-letter-f-b555db.mp3"
             }
           ]
         }
@@ -1010,14 +1010,14 @@
           ],
           "opts": [
             {
-              "key": "christmas",
-              "text": "It's Christmas.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-christmas-ca5961.mp3"
+              "key": "gray",
+              "text": "It's gray.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-gray-04f47b.mp3"
             },
             {
-              "key": "orange",
-              "text": "It's orange.",
-              "audio": "audio/sentences/k2-letter-m/a-it-s-orange-587e78.mp3"
+              "key": "money",
+              "text": "It's money.",
+              "audio": "audio/sentences/k2-letter-m/a-it-s-money-ac7a88.mp3"
             }
           ]
         },
@@ -1039,14 +1039,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Music begins with the sound /f/.",
-              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-the-sound-f-bd1e78.mp3"
+              "key": "/n/",
+              "text": "Music begins with the sound /n/.",
+              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-the-sound-n-104b5b.mp3"
             },
             {
-              "key": "/v/",
-              "text": "Music begins with the sound /v/.",
-              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-the-sound-v-fc638b.mp3"
+              "key": "/b/",
+              "text": "Music begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-the-sound-b-0279bf.mp3"
             }
           ]
         },
@@ -1068,14 +1068,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Music begins with letter F.",
-              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-letter-f-5f8e85.mp3"
-            },
-            {
               "key": "o",
               "text": "Music begins with letter O.",
               "audio": "audio/sentences/k2-letter-m/a-music-begins-with-letter-o-2a1d11.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Music begins with letter F.",
+              "audio": "audio/sentences/k2-letter-m/a-music-begins-with-letter-f-5f8e85.mp3"
             }
           ]
         }
@@ -1100,26 +1100,27 @@
     "animal": "audio/words/animal.mp3",
     "apples": "audio/words/apples.mp3",
     "are": "audio/words/are.mp3",
-    "ay": "audio/words/ay.mp3",
     "b": "audio/words/b.mp3",
     "bananas": "audio/words/bananas.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
+    "black": "audio/words/black.mp3",
+    "brown": "audio/words/brown.mp3",
     "buy": "audio/words/buy.mp3",
     "can": "audio/words/can.mp3",
     "christmas": "audio/words/christmas.mp3",
     "color": "audio/words/color.mp3",
-    "d": "audio/words/d.mp3",
+    "crow": "audio/words/crow.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "drink": "audio/words/drink.mp3",
-    "eye": "audio/words/eye.mp3",
+    "eleven": "audio/words/eleven.mp3",
     "f": "audio/words/f.mp3",
     "fan": "audio/words/fan.mp3",
     "fans": "audio/words/fans.mp3",
-    "feet": "audio/words/feet.mp3",
     "four": "audio/words/four.mp3",
-    "gorilla": "audio/words/gorilla.mp3",
+    "fourteen": "audio/words/fourteen.mp3",
+    "g": "audio/words/g.mp3",
     "gray": "audio/words/gray.mp3",
     "h": "audio/words/h.mp3",
     "how": "audio/words/how.mp3",
@@ -1127,9 +1128,6 @@
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
-    "j": "audio/words/j.mp3",
-    "k": "audio/words/k.mp3",
-    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter m": "audio/words/letter-m.mp3",
     "like": "audio/words/like.mp3",
@@ -1153,21 +1151,19 @@
     "oh": "audio/words/oh.mp3",
     "on": "audio/words/on.mp3",
     "orange": "audio/words/orange.mp3",
-    "purple": "audio/words/purple.mp3",
-    "rectangle": "audio/words/rectangle.mp3",
+    "piano": "audio/words/piano.mp3",
     "red": "audio/words/red.mp3",
-    "s": "audio/words/s.mp3",
     "say": "audio/words/say.mp3",
     "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
     "teeth": "audio/words/teeth.mp3",
-    "ten": "audio/words/ten.mp3",
     "the": "audio/words/the.mp3",
     "there": "audio/words/there.mp3",
     "these": "audio/words/these.mp3",
     "they're": "audio/words/they-re.mp3",
     "this": "audio/words/this.mp3",
     "to": "audio/words/to.mp3",
-    "twelve": "audio/words/twelve.mp3",
+    "toys": "audio/words/toys.mp3",
     "u": "audio/words/u.mp3",
     "v": "audio/words/v.mp3",
     "we": "audio/words/we.mp3",

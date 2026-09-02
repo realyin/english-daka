@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "purple",
-              "text": "It's purple.",
-              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-purple-e81e9e.mp3"
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-job-412b3c.mp3"
             },
             {
-              "key": "kite",
-              "text": "It's kite.",
-              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-kite-393325.mp3"
+              "key": "money",
+              "text": "It's money.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-money-ac7a88.mp3"
             }
           ]
         },
@@ -120,9 +120,9 @@
     "happy": "audio/words/happy.mp3",
     "holiday": "audio/words/holiday.mp3",
     "it's": "audio/words/it-s.mp3",
-    "kite": "audio/words/kite.mp3",
+    "job": "audio/words/job.mp3",
+    "money": "audio/words/money.mp3",
     "on": "audio/words/on.mp3",
-    "purple": "audio/words/purple.mp3",
     "say": "audio/words/say.mp3",
     "thanksgiving": "audio/words/thanksgiving.mp3",
     "this": "audio/words/this.mp3",

@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k2-letter-f/a-it-s-letter-t-f0e81f.mp3"
             },
             {
-              "key": "p",
-              "text": "It's letter P.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-p-39352f.mp3"
+              "key": "i",
+              "text": "It's letter I.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-i-d4a773.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "F makes the sound /j/.",
-              "audio": "audio/sentences/k2-letter-f/a-f-makes-the-sound-j-068997.mp3"
-            },
-            {
               "key": "/s/",
               "text": "F makes the sound /s/.",
               "audio": "audio/sentences/k2-letter-f/a-f-makes-the-sound-s-d0fb56.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "F makes the sound /ks/.",
+              "audio": "audio/sentences/k2-letter-f/a-f-makes-the-sound-ks-b7138f.mp3"
             }
           ]
         }
@@ -97,14 +97,14 @@
           ],
           "opts": [
             {
-              "key": "flower",
-              "text": "It's a flower.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-flower-26c517.mp3"
-            },
-            {
               "key": "fox",
               "text": "It's a fox.",
               "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "/p/",
-              "text": "Fairy begins with the sound /p/.",
-              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-p-a0c53c.mp3"
+              "key": "/oh/",
+              "text": "Fairy begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-oh-6726f6.mp3"
             },
             {
-              "key": "/h/",
-              "text": "Fairy begins with the sound /h/.",
-              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-h-83f171.mp3"
+              "key": "/u/",
+              "text": "Fairy begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-u-af6b42.mp3"
             }
           ]
         },
@@ -160,9 +160,9 @@
               "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-t-9bb48d.mp3"
             },
             {
-              "key": "g",
-              "text": "Fairy begins with letter G.",
-              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-g-6216ec.mp3"
+              "key": "o",
+              "text": "Fairy begins with letter O.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-o-0be3f5.mp3"
             }
           ]
         }
@@ -193,9 +193,9 @@
           ],
           "opts": [
             {
-              "key": "fan",
-              "text": "It's a fan.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+              "key": "farm",
+              "text": "It's a farm.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
             },
             {
               "key": "face",
@@ -224,13 +224,13 @@
           "opts": [
             {
               "key": "f",
-              "text": "Fox begins with letter F.",
-              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-f-7fad2b.mp3"
+              "text": "Fun begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-f-d52ba3.mp3"
             },
             {
               "key": "f",
-              "text": "Feet begins with letter F.",
-              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-f-757996.mp3"
+              "text": "Forest begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-f-16b02f.mp3"
             }
           ]
         },
@@ -281,14 +281,14 @@
           ],
           "opts": [
             {
-              "key": "/a/",
-              "text": "Fox begins with the sound /a/.",
-              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-a-5d7c58.mp3"
+              "key": "/e/",
+              "text": "Fox begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-e-a380ac.mp3"
             },
             {
-              "key": "/g/",
-              "text": "Fox begins with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-g-5aa21c.mp3"
+              "key": "/d/",
+              "text": "Fox begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-d-49e849.mp3"
             }
           ]
         },
@@ -315,9 +315,9 @@
               "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-t-cd257e.mp3"
             },
             {
-              "key": "l",
-              "text": "Fox begins with letter L.",
-              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-l-341f5e.mp3"
+              "key": "m",
+              "text": "Fox begins with letter M.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-m-82ed85.mp3"
             }
           ]
         }
@@ -354,8 +354,8 @@
             },
             {
               "key": "f",
-              "text": "Feet begins with letter F.",
-              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-f-757996.mp3"
+              "text": "Fun begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-f-d52ba3.mp3"
             }
           ]
         },
@@ -377,14 +377,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Fun begins with the sound /i/.",
-              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-i-56c114.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Fun begins with the sound /b/.",
               "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-b-cce143.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Fun begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-r-c7de3f.mp3"
             }
           ]
         },
@@ -440,9 +440,9 @@
               "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-t-57a88f.mp3"
             },
             {
-              "key": "n",
-              "text": "Fun begins with letter N.",
-              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-n-80c779.mp3"
+              "key": "e",
+              "text": "Fun begins with letter E.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-e-edc588.mp3"
             }
           ]
         }
@@ -474,14 +474,14 @@
           ],
           "opts": [
             {
-              "key": "face",
-              "text": "It's a face.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-face-3cab91.mp3"
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
             },
             {
-              "key": "farm",
-              "text": "It's a farm.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -538,9 +538,9 @@
               "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-t-efb3b4.mp3"
             },
             {
-              "key": "o",
-              "text": "Forest begins with letter O.",
-              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-o-770c3f.mp3"
+              "key": "h",
+              "text": "Forest begins with letter H.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-h-767227.mp3"
             }
           ]
         },
@@ -562,14 +562,14 @@
           ],
           "opts": [
             {
-              "key": "/j/",
-              "text": "Forest begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-j-c7b707.mp3"
+              "key": "/a/",
+              "text": "Forest begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-a-e4bea6.mp3"
             },
             {
-              "key": "/s/",
-              "text": "Forest begins with the sound /s/.",
-              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-s-c64873.mp3"
+              "key": "/yoo/",
+              "text": "Forest begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-yoo-6f416e.mp3"
             }
           ]
         }
@@ -603,14 +603,14 @@
           ],
           "opts": [
             {
-              "key": "flower",
-              "text": "It's a flower.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-flower-26c517.mp3"
-            },
-            {
               "key": "fox",
               "text": "It's a fox.",
               "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -632,14 +632,14 @@
           ],
           "opts": [
             {
-              "key": "/n/",
-              "text": "Face begins with the sound /n/.",
-              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-n-91362e.mp3"
+              "key": "/v/",
+              "text": "Face begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-v-dfe3ec.mp3"
             },
             {
-              "key": "/eye/",
-              "text": "Face begins with the sound /eye/.",
-              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-eye-524dea.mp3"
+              "key": "/t/",
+              "text": "Face begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-t-b1523a.mp3"
             }
           ]
         },
@@ -666,9 +666,9 @@
               "audio": "audio/sentences/k2-letter-f/a-face-begins-with-letter-t-a5ac62.mp3"
             },
             {
-              "key": "g",
-              "text": "Face begins with letter G.",
-              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-letter-g-f0e320.mp3"
+              "key": "o",
+              "text": "Face begins with letter O.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-letter-o-f5c081.mp3"
             }
           ]
         }
@@ -707,9 +707,9 @@
               "audio": "audio/sentences/k2-letter-f/a-they-re-mittens-f9c61b.mp3"
             },
             {
-              "key": "toys",
-              "text": "They're toys.",
-              "audio": "audio/sentences/k2-letter-f/a-they-re-toys-e56c5f.mp3"
+              "key": "teeth",
+              "text": "They're teeth.",
+              "audio": "audio/sentences/k2-letter-f/a-they-re-teeth-c59239.mp3"
             }
           ]
         },
@@ -731,14 +731,14 @@
           ],
           "opts": [
             {
-              "key": "/ay/",
-              "text": "Feet begins with the sound /ay/.",
-              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-ay-3b0b5e.mp3"
+              "key": "/g/",
+              "text": "Feet begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-g-df128d.mp3"
             },
             {
-              "key": "/n/",
-              "text": "Feet begins with the sound /n/.",
-              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-n-ccacab.mp3"
+              "key": "/v/",
+              "text": "Feet begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-v-a993c8.mp3"
             }
           ]
         },
@@ -765,9 +765,9 @@
               "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-t-817b40.mp3"
             },
             {
-              "key": "x",
-              "text": "Feet begins with letter X.",
-              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-x-099df9.mp3"
+              "key": "q",
+              "text": "Feet begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-q-1c025a.mp3"
             }
           ]
         }
@@ -803,9 +803,9 @@
               "audio": "audio/sentences/k2-letter-f/a-i-have-five-fingers-3abb87.mp3"
             },
             {
-              "key": "twelve",
-              "text": "I have twelve fingers.",
-              "audio": "audio/sentences/k2-letter-f/a-i-have-twelve-fingers-70a306.mp3"
+              "key": "eleven",
+              "text": "I have eleven fingers.",
+              "audio": "audio/sentences/k2-letter-f/a-i-have-eleven-fingers-728871.mp3"
             }
           ]
         },
@@ -832,9 +832,9 @@
               "audio": "audio/sentences/k2-letter-f/a-ten-begins-with-letter-f-e7af49.mp3"
             },
             {
-              "key": "o",
-              "text": "Ten begins with letter O.",
-              "audio": "audio/sentences/k2-letter-f/a-ten-begins-with-letter-o-675dac.mp3"
+              "key": "c",
+              "text": "Ten begins with letter C.",
+              "audio": "audio/sentences/k2-letter-f/a-ten-begins-with-letter-c-42669c.mp3"
             }
           ]
         }
@@ -873,9 +873,9 @@
               "audio": "audio/sentences/k2-letter-f/a-it-s-number-ten-f5e736.mp3"
             },
             {
-              "key": "seven",
-              "text": "It's number seven.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-number-seven-ff96d3.mp3"
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-number-three-da9b4d.mp3"
             }
           ]
         },
@@ -897,14 +897,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Five begins with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-g-fa98df.mp3"
+              "key": "/ay/",
+              "text": "Five begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-ay-3c26af.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Five begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-j-c06458.mp3"
+              "key": "/l/",
+              "text": "Five begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-l-a38d07.mp3"
             }
           ]
         },
@@ -931,9 +931,9 @@
               "audio": "audio/sentences/k2-letter-f/a-five-begins-with-letter-t-d3cb0c.mp3"
             },
             {
-              "key": "p",
-              "text": "Five begins with letter P.",
-              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-letter-p-e1aefb.mp3"
+              "key": "z",
+              "text": "Five begins with letter Z.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-letter-z-ab0ebf.mp3"
             }
           ]
         }
@@ -972,9 +972,9 @@
               "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
             },
             {
-              "key": "forest",
-              "text": "It's a forest.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-forest-a674d8.mp3"
+              "key": "farm",
+              "text": "It's a farm.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
             }
           ]
         },
@@ -996,14 +996,14 @@
           ],
           "opts": [
             {
-              "key": "/yoo/",
-              "text": "Fan begins with the sound /yoo/.",
-              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-yoo-45fd6a.mp3"
+              "key": "/u/",
+              "text": "Fan begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-u-333f1c.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Fan begins with the sound /d/.",
-              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-d-cbdf3a.mp3"
+              "key": "/i/",
+              "text": "Fan begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-i-db8bb8.mp3"
             }
           ]
         },
@@ -1030,9 +1030,9 @@
               "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-letter-t-5c8da1.mp3"
             },
             {
-              "key": "n",
-              "text": "Fan begins with letter N.",
-              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-letter-n-1d0018.mp3"
+              "key": "e",
+              "text": "Fan begins with letter E.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-letter-e-6585c5.mp3"
             }
           ]
         }
@@ -1068,9 +1068,9 @@
               "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
             },
             {
-              "key": "forest",
-              "text": "It's a forest.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-forest-a674d8.mp3"
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -1092,14 +1092,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Flower begins with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-g-3559b7.mp3"
+              "key": "/ay/",
+              "text": "Flower begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-ay-c2d448.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Flower begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-j-5b0d22.mp3"
+              "key": "/l/",
+              "text": "Flower begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-l-4a5a34.mp3"
             }
           ]
         },
@@ -1126,9 +1126,9 @@
               "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-letter-t-bf4e40.mp3"
             },
             {
-              "key": "m",
-              "text": "Flower begins with letter M.",
-              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-letter-m-5165c5.mp3"
+              "key": "v",
+              "text": "Flower begins with letter V.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-letter-v-07a58c.mp3"
             }
           ]
         }
@@ -1159,14 +1159,14 @@
           ],
           "opts": [
             {
-              "key": "fairy",
-              "text": "It's a fairy.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fairy-95f59a.mp3"
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
             },
             {
-              "key": "flower",
-              "text": "It's a flower.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-flower-26c517.mp3"
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -1188,14 +1188,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Farm begins with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-g-7c4075.mp3"
+              "key": "/ay/",
+              "text": "Farm begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-ay-8d4a49.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Farm begins with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-j-b20fa0.mp3"
+              "key": "/l/",
+              "text": "Farm begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-l-7878bd.mp3"
             }
           ]
         },
@@ -1222,9 +1222,9 @@
               "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-letter-t-edc033.mp3"
             },
             {
-              "key": "l",
-              "text": "Farm begins with letter L.",
-              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-letter-l-a01908.mp3"
+              "key": "m",
+              "text": "Farm begins with letter M.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-letter-m-5a9997.mp3"
             }
           ]
         }
@@ -1255,14 +1255,14 @@
           ],
           "opts": [
             {
-              "key": "farm",
-              "text": "It's a farm.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
+              "key": "f",
+              "text": "It's letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-f-5461e9.mp3"
             },
             {
-              "key": "five",
-              "text": "It's number five.",
-              "audio": "audio/sentences/k2-letter-f/a-it-s-number-five-82bd3b.mp3"
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
             }
           ]
         },
@@ -1284,14 +1284,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Fly begins with the sound /i/.",
-              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-i-c1103b.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Fly begins with the sound /b/.",
               "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-b-067d19.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Fly begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-r-a13d47.mp3"
             }
           ]
         },
@@ -1318,9 +1318,9 @@
               "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-letter-t-518e26.mp3"
             },
             {
-              "key": "m",
-              "text": "Fly begins with letter M.",
-              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-letter-m-ac23b6.mp3"
+              "key": "y",
+              "text": "Fly begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-letter-y-a5e284.mp3"
             }
           ]
         }
@@ -1351,14 +1351,14 @@
           "image": "images/wf-at-1-sat.webp",
           "opts": [
             {
+              "key": "fox",
+              "text": "F says /f/, O says /o/, X says /ks/, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
+            },
+            {
               "key": "mat",
               "text": "M says /m/, A says /a/, T says /t/, mat.",
               "audio": "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
-            },
-            {
-              "key": "not",
-              "text": "N says /n/, O says /o/, T says /t/, not.",
-              "audio": "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
             }
           ]
         },
@@ -1381,14 +1381,14 @@
           "image": "images/wf-at-1-mat.webp",
           "opts": [
             {
-              "key": "fox",
-              "text": "F says /f/, O says /o/, X says /ks/, fox.",
-              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
-            },
-            {
               "key": "not",
               "text": "N says /n/, O says /o/, T says /t/, not.",
               "audio": "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "F says /f/, O says /o/, X says /ks/, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
             }
           ]
         },
@@ -1410,14 +1410,14 @@
           ],
           "opts": [
             {
-              "key": "sat",
-              "text": "S says /s/, A says /a/, T says /t/, sat.",
-              "audio": "audio/sentences/k2-letter-f/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
-            },
-            {
               "key": "fox",
               "text": "F says /f/, O says /o/, X says /ks/, fox.",
               "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "M says /m/, A says /a/, T says /t/, mat.",
+              "audio": "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
             }
           ]
         },
@@ -1445,9 +1445,9 @@
               "audio": "audio/sentences/k2-letter-f/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
             },
             {
-              "key": "mat",
-              "text": "M says /m/, A says /a/, T says /t/, mat.",
-              "audio": "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
+              "key": "not",
+              "text": "N says /n/, O says /o/, T says /t/, not.",
+              "audio": "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
             }
           ]
         }
@@ -1478,12 +1478,14 @@
     "begins": "audio/words/begins.mp3",
     "bird": "audio/words/bird.mp3",
     "birds": "audio/words/birds.mp3",
+    "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
     "d": "audio/words/d.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "eleven": "audio/words/eleven.mp3",
     "english": "audio/words/english.mp3",
-    "eye": "audio/words/eye.mp3",
     "f": "audio/words/f.mp3",
     "face": "audio/words/face.mp3",
     "fairy": "audio/words/fairy.mp3",
@@ -1506,7 +1508,6 @@
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
-    "j": "audio/words/j.mp3",
     "ks": "audio/words/ks.mp3",
     "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
@@ -1523,35 +1524,39 @@
     "not": "audio/words/not.mp3",
     "number": "audio/words/number.mp3",
     "o": "audio/words/o.mp3",
+    "oh": "audio/words/oh.mp3",
     "out": "audio/words/out.mp3",
-    "p": "audio/words/p.mp3",
     "place": "audio/words/place.mp3",
+    "q": "audio/words/q.mp3",
+    "r": "audio/words/r.mp3",
     "s": "audio/words/s.mp3",
     "sat": "audio/words/sat.mp3",
     "says": "audio/words/says.mp3",
     "see": "audio/words/see.mp3",
-    "seven": "audio/words/seven.mp3",
     "sound": "audio/words/sound.mp3",
     "sound it out": "audio/words/sound-it-out.mp3",
     "spell": "audio/words/spell.mp3",
     "t": "audio/words/t.mp3",
+    "teeth": "audio/words/teeth.mp3",
     "ten": "audio/words/ten.mp3",
     "the": "audio/words/the.mp3",
     "these": "audio/words/these.mp3",
     "they're": "audio/words/they-re.mp3",
     "this": "audio/words/this.mp3",
-    "toys": "audio/words/toys.mp3",
-    "twelve": "audio/words/twelve.mp3",
+    "three": "audio/words/three.mp3",
     "two": "audio/words/two.mp3",
     "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
     "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",
     "x": "audio/words/x.mp3",
+    "y": "audio/words/y.mp3",
     "yes": "audio/words/yes.mp3",
     "yoo": "audio/words/yoo.mp3",
-    "you": "audio/words/you.mp3"
+    "you": "audio/words/you.mp3",
+    "z": "audio/words/z.mp3"
   }
 }

@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "It's letter A.",
-              "audio": "audio/sentences/k2-letter-d/a-it-s-letter-a-3ee564.mp3"
+              "key": "y",
+              "text": "It's letter Y.",
+              "audio": "audio/sentences/k2-letter-d/a-it-s-letter-y-dd08b8.mp3"
             },
             {
-              "key": "k",
-              "text": "It's letter K.",
-              "audio": "audio/sentences/k2-letter-d/a-it-s-letter-k-a2fba9.mp3"
+              "key": "v",
+              "text": "It's letter V.",
+              "audio": "audio/sentences/k2-letter-d/a-it-s-letter-v-7be215.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
-              "key": "/o/",
-              "text": "D makes the sound /o/.",
-              "audio": "audio/sentences/k2-letter-d/a-d-makes-the-sound-o-f7ef04.mp3"
+              "key": "/h/",
+              "text": "D makes the sound /h/.",
+              "audio": "audio/sentences/k2-letter-d/a-d-makes-the-sound-h-73ee67.mp3"
             },
             {
-              "key": "/e/",
-              "text": "D makes the sound /e/.",
-              "audio": "audio/sentences/k2-letter-d/a-d-makes-the-sound-e-f456cd.mp3"
+              "key": "/oh/",
+              "text": "D makes the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-d/a-d-makes-the-sound-oh-f11e53.mp3"
             }
           ]
         }
@@ -97,14 +97,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dolphin begins with letter G.",
-              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-letter-g-101a7e.mp3"
+              "key": "o",
+              "text": "Dolphin begins with letter O.",
+              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-letter-o-646b0d.mp3"
             },
             {
-              "key": "s",
-              "text": "Dolphin begins with letter S.",
-              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-letter-s-35e8a9.mp3"
+              "key": "p",
+              "text": "Dolphin begins with letter P.",
+              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-letter-p-940f33.mp3"
             }
           ]
         },
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "/s/",
-              "text": "Dolphin begins with the sound /s/.",
-              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-the-sound-s-59878a.mp3"
+              "key": "/o/",
+              "text": "Dolphin begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-the-sound-o-6359ee.mp3"
             },
             {
-              "key": "/l/",
-              "text": "Dolphin begins with the sound /l/.",
-              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-the-sound-l-db18aa.mp3"
+              "key": "/g/",
+              "text": "Dolphin begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-d/a-dolphin-begins-with-the-sound-g-061e3b.mp3"
             }
           ]
         }
@@ -164,14 +164,14 @@
           ],
           "opts": [
             {
-              "key": "z",
-              "text": "Bed ends with letter Z.",
-              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-letter-z-ee5d69.mp3"
+              "key": "j",
+              "text": "Bed ends with letter J.",
+              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-letter-j-dc8914.mp3"
             },
             {
-              "key": "g",
-              "text": "Bed ends with letter G.",
-              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-letter-g-1f91ae.mp3"
+              "key": "r",
+              "text": "Bed ends with letter R.",
+              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-letter-r-7e6cc5.mp3"
             }
           ]
         },
@@ -193,14 +193,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Bed ends with the sound /g/.",
-              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-the-sound-g-0b971d.mp3"
+              "key": "/ay/",
+              "text": "Bed ends with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-the-sound-ay-9156cb.mp3"
             },
             {
-              "key": "/j/",
-              "text": "Bed ends with the sound /j/.",
-              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-the-sound-j-2e93e1.mp3"
+              "key": "/l/",
+              "text": "Bed ends with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-d/a-bed-ends-with-the-sound-l-2ca3e9.mp3"
             }
           ]
         }
@@ -231,14 +231,14 @@
           ],
           "opts": [
             {
-              "key": "/n/",
-              "text": "Dog begins with the sound /n/.",
-              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-the-sound-n-87375e.mp3"
+              "key": "/v/",
+              "text": "Dog begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-the-sound-v-5c4459.mp3"
             },
             {
-              "key": "/eye/",
-              "text": "Dog begins with the sound /eye/.",
-              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-the-sound-eye-13a571.mp3"
+              "key": "/t/",
+              "text": "Dog begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-the-sound-t-aca288.mp3"
             }
           ]
         },
@@ -260,14 +260,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dog begins with letter G.",
-              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-letter-g-ed999a.mp3"
+              "key": "o",
+              "text": "Dog begins with letter O.",
+              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-letter-o-72f488.mp3"
             },
             {
-              "key": "s",
-              "text": "Dog begins with letter S.",
-              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-letter-s-d78d26.mp3"
+              "key": "p",
+              "text": "Dog begins with letter P.",
+              "audio": "audio/sentences/k2-letter-d/a-dog-begins-with-letter-p-b4a89d.mp3"
             }
           ]
         }
@@ -298,14 +298,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Dinosaur begins with the sound /i/.",
-              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-the-sound-i-d33619.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Dinosaur begins with the sound /b/.",
               "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-the-sound-b-efe8cc.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Dinosaur begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-the-sound-r-9d4b11.mp3"
             }
           ]
         },
@@ -327,14 +327,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dinosaur begins with letter G.",
-              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-letter-g-f485ab.mp3"
+              "key": "o",
+              "text": "Dinosaur begins with letter O.",
+              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-letter-o-6ebc68.mp3"
             },
             {
-              "key": "s",
-              "text": "Dinosaur begins with letter S.",
-              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-letter-s-e90877.mp3"
+              "key": "p",
+              "text": "Dinosaur begins with letter P.",
+              "audio": "audio/sentences/k2-letter-d/a-dinosaur-begins-with-letter-p-70f977.mp3"
             }
           ]
         }
@@ -354,6 +354,8 @@
     "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
   "word_audio": {
+    "ay": "audio/words/ay.mp3",
+    "b": "audio/words/b.mp3",
     "bed": "audio/words/bed.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
@@ -364,17 +366,28 @@
     "dolphin": "audio/words/dolphin.mp3",
     "end": "audio/words/end.mp3",
     "ends": "audio/words/ends.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
     "it's": "audio/words/it-s.mp3",
+    "j": "audio/words/j.mp3",
+    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter d": "audio/words/letter-d.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
+    "o": "audio/words/o.mp3",
+    "oh": "audio/words/oh.mp3",
+    "p": "audio/words/p.mp3",
+    "r": "audio/words/r.mp3",
     "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "v": "audio/words/v.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "which": "audio/words/which.mp3",
-    "with": "audio/words/with.mp3"
+    "with": "audio/words/with.mp3",
+    "y": "audio/words/y.mp3"
   }
 }
