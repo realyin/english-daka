@@ -1,7 +1,9 @@
 {
   "seq": 404,
+  "level": "K2",
   "group": "常见词 Sight Words",
   "badge": "to",
+  "cover": "images/sw-to-sing.webp",
   "title": "Sight Words · to / and",
   "cards": [
     {
@@ -27,16 +29,27 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3"
+          ],
+          "opts": [
+            {
+              "key": "and",
+              "text": "It's sight word and.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3"
+            },
+            {
+              "key": "too",
+              "text": "It's sight word too.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-too-47590f.mp3"
+            }
           ]
         }
       ],
-      "added": "2026-08-31",
       "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-to-19af97.mp3"
     },
     {
       "word": "sing",
       "cn": "唱歌",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-to-sing.webp",
       "dialog": [
         {
@@ -54,6 +67,18 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-do-you-like-to-do-8b4356.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "teacher",
+              "text": "I want to be a teacher.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
+            },
+            {
+              "key": "black",
+              "text": "A piano is black and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            }
           ]
         }
       ],
@@ -62,7 +87,7 @@
     {
       "word": "drums",
       "cn": "架子鼓",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-to-drums.webp",
       "dialog": [
         {
@@ -80,6 +105,48 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-do-you-like-to-play-the-drums-cd7d74.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-yes-i-like-to-play-the-drums-0a96bd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "teacher",
+              "text": "I want to be a teacher.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
+            },
+            {
+              "key": "black",
+              "text": "A piano is black and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you want to be?",
+          "a": [
+            "I want to be a teacher."
+          ],
+          "key": [
+            "teacher"
+          ],
+          "q_cn": "你长大想做什么？",
+          "a_cn": [
+            "我想当老师。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-to-and/q-what-do-you-want-to-be-222838.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
+          ],
+          "image": "images/k2-want-teacher.webp",
+          "opts": [
+            {
+              "key": "black",
+              "text": "A piano is black and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I like to sing a song.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
+            }
           ]
         }
       ],
@@ -88,7 +155,7 @@
     {
       "word": "teacher",
       "cn": "老师",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-to-teacher.webp",
       "dialog": [
         {
@@ -106,6 +173,18 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-do-you-want-to-be-222838.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-i-want-to-be-a-teacher-23ae80.mp3"
+          ],
+          "opts": [
+            {
+              "key": "black",
+              "text": "A piano is black and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I like to sing a song.",
+              "audio": "audio/sentences/k2-sw-to-and/a-i-like-to-sing-a-song-97d81b.mp3"
+            }
           ]
         }
       ],
@@ -134,16 +213,27 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "to",
+              "text": "It's sight word to.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3"
+            },
+            {
+              "key": "sleep",
+              "text": "It's sight word sleep.",
+              "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-sleep-0313cc.mp3"
+            }
           ]
         }
       ],
-      "added": "2026-08-31",
       "quiz_audio": "audio/sentences/k2-sw-to-and/q-which-one-is-and-c834d6.mp3"
     },
     {
       "word": "piano",
       "cn": "钢琴",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/sw-and-piano.webp",
       "dialog": [
         {
@@ -161,6 +251,19 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-color-is-a-piano-6b3c10.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+          ],
+          "image": "images/k2-piano-bw.webp",
+          "opts": [
+            {
+              "key": "orange",
+              "text": "A piano is orange and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-orange-and-white-298e6a.mp3"
+            },
+            {
+              "key": "red",
+              "text": "A piano is red and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-red-and-white-3a2531.mp3"
+            }
           ]
         }
       ],
@@ -169,7 +272,7 @@
     {
       "word": "market",
       "cn": "市场",
-      "tag": "sight word",
+      "tag": "word",
       "image": "images/market.webp",
       "dialog": [
         {
@@ -187,6 +290,18 @@
           "q_audio": "audio/sentences/k2-sw-to-and/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-to-and/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "drums",
+              "text": "Yes, I like to play the drums.",
+              "audio": "audio/sentences/k2-sw-to-and/a-yes-i-like-to-play-the-drums-0a96bd.mp3"
+            },
+            {
+              "key": "black",
+              "text": "A piano is black and white.",
+              "audio": "audio/sentences/k2-sw-to-and/a-a-piano-is-black-and-white-848cb1.mp3"
+            }
           ]
         }
       ],
@@ -211,15 +326,19 @@
     "it's": "audio/words/it-s.mp3",
     "like": "audio/words/like.mp3",
     "market": "audio/words/market.mp3",
+    "orange": "audio/words/orange.mp3",
     "piano": "audio/words/piano.mp3",
     "play": "audio/words/play.mp3",
+    "red": "audio/words/red.mp3",
     "sight": "audio/words/sight.mp3",
     "sing": "audio/words/sing.mp3",
+    "sleep": "audio/words/sleep.mp3",
     "song": "audio/words/song.mp3",
     "teacher": "audio/words/teacher.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "to": "audio/words/to.mp3",
+    "too": "audio/words/too.mp3",
     "want": "audio/words/want.mp3",
     "we": "audio/words/we.mp3",
     "what": "audio/words/what.mp3",

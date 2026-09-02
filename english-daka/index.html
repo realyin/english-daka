@@ -119,6 +119,12 @@
     display:flex;align-items:center;gap:10px;
     margin:26px var(--sp-3,16px) 6px;font-size:15px;font-weight:900;color:var(--ink);
   }
+  /* 组图标:每组一张水彩图,圆形裁切放在组名前面,给每条货架一个视觉身份。
+     图 404 时 onerror 把 <img> 摘掉,标题回落成原来的纯文字,外观无损 */
+  .shelf-head .ico{
+    width:30px;height:30px;border-radius:50%;object-fit:cover;display:block;
+    flex:none;box-shadow:0 1px 3px rgba(30,60,110,.18);
+  }
   .shelf-head .rule{height:3px;background:#DCE7F5;flex:1;border-radius:9px;}
   .shelf-head .count{font-size:12px;font-weight:700;color:#5E6E8C;}
 
@@ -158,6 +164,12 @@
     flex:1;display:flex;align-items:center;justify-content:center;
     background:var(--c);
     position:relative;                         /* 星数角标的定位基准 */
+    /* ⚠️ 圆角和裁剪必须写在 .art 自己身上,不能只靠 .cover 的 overflow:hidden。
+       .cover 是 position:static,封面图是 position:absolute —— Safari/iPad 上
+       合成层会忽略这种"隔着一层、又不是包含块"的祖先圆角裁剪,图片四角照方的画,
+       在卡片的圆角外露出直角(Chromium 上看不出来,只在平板上现形)。
+       让直接父元素自己裁,哪个内核都不会漏。*/
+    border-radius:16px 16px 0 0;overflow:hidden;
   }
   /* 字号跟着卡宽走,卡片缩到 120px 时字形也要仍然是"一眼认出的那个字母";
      比例比通栏时期略提(.42→.46),小卡上字形周围的留白本来就少不了 */
@@ -174,12 +186,43 @@
   .cover .art img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
   }
+  /* 有封面画的卡:图不再铺满 .art,四边留一圈边、带自己的圆角,垫在浅色衬底上 ——
+     像一张贴在卡片上的画。铺满的版本家长实测反馈"把卡片撑得太满,反而不美观"。
+     内缩量跟卡宽走(160px 卡约 10px),窄屏小卡自动收窄。
+     衬底不用 var(--c):那是组色,饱和度高,围着水彩图一圈会很吵。
+     字形只是藏起来不删 —— 图 404 时 onerror 把 has-cover 摘掉,字形原样回来。 */
+  .cover .art.has-cover{background:#F4F7FC;}
+  .cover .art.has-cover .glyph{visibility:hidden;}
+  /* ⚠️ 宽高必须显式算出来,不能写 auto:<img> 是替换元素,绝对定位下
+     left/right 同时给定也不会把它撑开,auto 只取固有尺寸 —— 实测缩成左上角
+     40×53 的一小块。--inset 算一次,四边和宽高共用。 */
+  .cover .art.has-cover img{
+    --inset:calc(var(--cw) * 0.062);
+    inset:var(--inset);
+    width:calc(100% - var(--inset) * 2);height:calc(100% - var(--inset) * 2);
+    border-radius:calc(var(--cw) * 0.07);
+  }
+  .cover .art.has-cover .cover-stars{top:calc(var(--cw) * 0.062 + 5px);right:calc(var(--cw) * 0.062 + 5px);}
   .cover .label{padding:8px 10px 10px;background:#fff;}
   .cover .en{font-size:14px;font-weight:900;line-height:1.2;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .cover .cn{font-size:11px;color:#5E6E8C;font-weight:700;margin-top:2px;
              white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .cover:focus-visible{outline:4px solid var(--blue);outline-offset:3px;}
+
+  /* 封面图是按 3:4 画的,而 .art 原来是近正方(160×156)—— object-fit:cover
+     要上下各裁掉 13%,人头猫头全切在外面。让 .art 自己按 3:4 撑开、卡高跟着走,
+     图就按画出来的样子完整显示。
+     ⚠️ 必须用 @supports 包住:老 Safari(15 以下)不认 aspect-ratio,而 .art 是
+     flex:none,不兜底会塌成 0 高度、整排封面消失。回落走原来的固定高度 —— 
+     还是裁,但和以前一模一样,不算退步。
+     .skel-card 要跟着一起变,否则骨架屏 205px、真卡片 266px,加载完跳一下。
+     49px 是 .label 的实测高度(8+10 内边距 + 两行定死字号,不会换行)*/
+  @supports (aspect-ratio: 3 / 4){
+    .cover{height:auto;}
+    .cover .art{flex:none;aspect-ratio:3 / 4;}
+    .skel-card{height:calc(var(--cw) * 4 / 3 + 49px);}
+  }
 
   /* ===== 打卡条 ===== */
   /* 本周(周一起)到今天,一天一个点。天天来的孩子看的就是这一行 ——
@@ -472,6 +515,17 @@
      而且每次进去内容都不一样,当成"课"会误导 */
   /* text-align:center 显式写出来:它以前是从 header 继承的,
      而 header 的 text-align 只服务标题,不该被按钮的居中依赖着 */
+  /* 级别切换器:K1 导入前只有一个级别,整条 hidden,页面无变化 */
+  .lv-bar{
+    max-width:720px;margin:18px auto -6px;padding:0 16px;
+    display:flex;gap:8px;
+  }
+  .lv-tab{
+    padding:7px 22px;border:none;border-radius:999px;cursor:pointer;
+    font-size:14px;font-weight:900;color:#7A879E;background:#E7EDF6;
+  }
+  .lv-tab.on{background:var(--blue);color:#fff;}
+  .lv-tab:focus-visible{outline:3px solid var(--blue);outline-offset:2px;}
   .review-btn{
     /* flex 而不是 block:并排时会被 stretch 拉到和主按钮同高(52px),
        block 的文字会贴在顶上,竖向也要居中 */
@@ -605,6 +659,7 @@
     </div>
   </div>
 </header>
+<div id="lvBar" class="lv-bar" hidden></div>
 <div id="shelves"></div>
 <div class="note" id="note"></div>
 
@@ -1474,9 +1529,12 @@ function renderDayList(data, days){
       const g = groupOf[id];
       if(g && groups.indexOf(g) < 0) groups.push(g);
     });
+    // 有课名就把课名放在第二行:家长找的是"讲宠物那节",不是"8月30日那节"。
+    // 没起名的日子退回分组名(字母、常见词),至少比只有日期强(main 侧改进,合并保留)
+    const sub = dy.name || groups.join("、");
     return `<a class="day-row" href="app.html?lesson=review&pick=day&d=${encodeURIComponent(dy.date)}">` +
       `<span><b>${rel[dy.date] || md}</b><i>${rel[dy.date] ? md + " " + wd : wd}</i></span>` +
-      `<span class="r"><b>${dy.cards} 张卡</b><i>${groups.join("、")}</i></span></a>`;
+      `<span class="r"><b>${dy.cards} 张卡</b><i>${sub}</i></span></a>`;
   }).join("");
 }
 
@@ -1592,11 +1650,33 @@ function enableMouseDrag(row){
   row.addEventListener("dragstart", e => e.preventDefault());
 }
 
-function buildShelf(group, lessons){
+/* 每组一张的组图标。键取组名的中文段(「字母 Letters」→「字母」),
+   K1/K2 同名组共用一张 —— 教的东西是一回事,不必分级各出一张。
+   没登记的组不画图标,标题就是原来的纯文字 */
+var SHELF_ICO = {
+  "字母":"k1-cover-letters", "数字":"k1-cover-numbers", "颜色":"k1-cover-colors",
+  "动物":"k1-cover-animals", "身体":"k1-cover-body",   "动作":"k1-cover-actions",
+  "职业":"k1-cover-jobs",    "天气":"k1-cover-weather", "形状":"k1-cover-shapes",
+  "规律":"k1-cover-patterns","乐器":"k1-cover-instruments", "节日":"k1-cover-holidays",
+  "词族":"k2-cover-word-family", "拼读":"k2-cover-phonics", "常见词":"k2-cover-sight-words",
+  "主题":"k2-cover-topics",      "数学":"k2-cover-math",    "科学":"k2-cover-science"
+};
+
+/* 组名 → 图标 <img>。取组名第一段(空格前)去查表;查不到返回空串 */
+function shelfIco(group){
+  var key = String(group || "").split(" ")[0];
+  var slug = SHELF_ICO[key];
+  if(!slug) return "";
+  return '<img class="ico" src="lessons/images/' + slug + '.webp" alt="" ' +
+         'loading="lazy" onerror="this.parentNode&&this.parentNode.removeChild(this)">';
+}
+
+function buildShelf(group, lessons, memKey){
+  memKey = memKey || group;      // 多级别后 K1/K2 都有「字母 Letters」,记忆键要带级别
   const wrap = document.createElement("section");
   wrap.className = "shelf";
   wrap.innerHTML =
-    `<div class="shelf-head"><span>${group}</span>` +
+    `<div class="shelf-head">` + shelfIco(group) + `<span>${group}</span>` +
     `<span class="count">${lessons.length} 节</span><span class="rule"></span></div>` +
     `<div class="shelf-row"></div>`;
   const row = wrap.querySelector(".shelf-row");
@@ -1617,12 +1697,14 @@ function buildShelf(group, lessons){
     const got = rec && typeof rec.stars === "number" ? rec.stars : 0;
     // 封面画(可选):有 cover 字段就铺一张图盖住字形徽章;图还没入库时 onerror
     // 把 <img> 摘掉,露出底下照常渲染的 glyph —— 404 下外观和以前完全一样
+    // onerror 要把 has-cover 一起摘掉:类名留着的话字形还是藏的、衬底还是浅色,
+    // 404 退回来的就不是"原来那个字形封面"而是一块空白
     const cover = l.cover
       ? `<img src="lessons/${l.cover}" alt="" loading="lazy"` +
-        ` onerror="this.parentNode&&this.parentNode.removeChild(this)">`
+        ` onerror="var p=this.parentNode;if(p){p.classList.remove('has-cover');p.removeChild(this);}">`
       : ``;
     a.innerHTML =
-      `<div class="art"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
+      `<div class="art${l.cover ? " has-cover" : ""}"><span class="glyph${String(glyph).length > 2 ? " long" : ""}">${glyph}</span>` +
       cover +
       (got > 0 ? `<span class="cover-stars"><svg class="ic ic-star" aria-hidden="true"><use href="#i-star"/></svg> ${got}</span>` : ``) + `</div>` +
       `<div class="label"><div class="en">${en}</div>` +
@@ -1640,7 +1722,7 @@ function buildShelf(group, lessons){
   row.setAttribute("aria-label", group);
 
   // 跳转走 <a> 的默认行为,这里只顺手记下滚到哪儿了(处理器在导航之前跑完)
-  row.addEventListener("click", () => saveShelfMem(group, row.scrollLeft));
+  row.addEventListener("click", () => saveShelfMem(memKey, row.scrollLeft));
   enableMouseDrag(row);                          // 桌面鼠标也能拖着滚
 
   return wrap;
@@ -1651,7 +1733,7 @@ function buildShelf(group, lessons){
    ⚠️ 不用 scrollIntoView():它会连带把整页竖向滚一段 —— 一进目录页就被拽到
    第三个货架那儿去了。两张卡的 offsetLeft 之差不受 offsetParent 是谁的影响,
    正好等于要滚的距离(第一张停在 scrollLeft=0 时左缘正对标题)。 */
-function restoreShelfPos(group, wrap, lessons){
+function restoreShelfPos(group, wrap, lessons){   // group 这里已是记忆键(级别|组)
   const row = wrap.querySelector(".shelf-row");
   const covers = row.children;
   const mem = shelfMem();
@@ -1672,6 +1754,64 @@ function restoreShelfPos(group, wrap, lessons){
 /* 清单还没回来时先占住版面(见 CSS 的「骨架屏」)。
    ⚠️ 两条出路都要记得撤掉它:成功时被真架子换掉,失败时在 catch 里清空。
    漏了失败那条,页面就是"错误提示 + 底下三个灰块还在呼吸",自相矛盾。 */
+/* ── 级别切换器 + 分级货架 ─────────────────────────────────────────
+   目录只显示一个级别的货架:K1 全套导入后课程翻倍,平铺的话孩子每天要
+   滚过一整屏已学完的旧课才摸到正在学的。只有一个级别时切换器不渲染,
+   页面和从前一个像素都不差。
+   默认停在"当前级别"(手里排位最高的那个 —— 导入跟着孩子进度走,K1 学完
+   才会有 K2);手动切换记在 localStorage(设备本地的浏览习惯,不进存档信封)。 */
+var LV_KEY = "daka-level";
+function pickLevel(levels){
+  try{
+    var m = localStorage.getItem(LV_KEY);
+    if(m && levels.indexOf(m) >= 0) return m;
+  }catch(e){}
+  return levels[levels.length - 1];          // levels 已按 LV_ORDER 排,末位=当前级别
+}
+function renderLevels(lessons){
+  var levels = [];
+  lessons.forEach(function(l){
+    if(levels.indexOf(lvOf(l)) < 0) levels.push(lvOf(l));
+  });
+  levels.sort(function(a, b){ return lvRank(a) - lvRank(b); });
+  var bar = document.getElementById("lvBar");
+  if(levels.length > 1){
+    var cur = pickLevel(levels);
+    bar.hidden = false;
+    bar.innerHTML = levels.map(function(lv){
+      return '<button type="button" class="lv-tab' + (lv === cur ? " on" : "") +
+             '" data-lv="' + lv + '">' + lv + "</button>";
+    }).join("");
+    bar.onclick = function(e){
+      var b = e.target.closest(".lv-tab");
+      if(!b || b.classList.contains("on")) return;
+      try{ localStorage.setItem(LV_KEY, b.dataset.lv); }catch(err){}
+      renderLevels(lessons);                 // 重画切换器高亮 + 货架
+    };
+    renderShelves(lessons.filter(function(l){ return lvOf(l) === cur; }), cur);
+  }else{
+    bar.hidden = true;
+    renderShelves(lessons, levels[0] || "K2");
+  }
+}
+function renderShelves(lessons, lv){
+  const shelves = document.getElementById("shelves");
+  shelves.innerHTML = "";
+  const order = [], byGroup = new Map();
+  lessons.forEach(l => {
+    const g = l.group || "其他 Others";
+    if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
+    byGroup.get(g).push(l);
+  });
+  order.forEach(g => {
+    const ls = byGroup.get(g);
+    const key = lv + "|" + g;                // 记忆键带级别,K1/K2 同名组不串位
+    const wrap = buildShelf(g, ls, key);
+    shelves.appendChild(wrap);
+    restoreShelfPos(key, wrap, ls);          // 先上树再定位,理由见函数注释
+  });
+}
+
 function showSkeleton(){
   var box = document.getElementById("shelves");
   box.innerHTML =
@@ -1689,22 +1829,9 @@ function showSkeleton(){
     const r = await fetch("lessons/index.json", {cache:"no-store"});
     if(!r.ok) throw new Error();
     const data = await r.json();
-    const shelves = document.getElementById("shelves");
-    shelves.innerHTML = "";      // 骨架下岗,真架子上台
-    const order = [], byGroup = new Map();
-    data.lessons.forEach(l => {
-      const g = l.group || "其他 Others";
-      if(!byGroup.has(g)){ byGroup.set(g, []); order.push(g); }
-      byGroup.get(g).push(l);
-    });
-    renderContinue(data.lessons);
+    renderContinue(data.lessons);            // 继续学/按课堂复习看全部级别
     renderDayPicker(data);
-    order.forEach(g => {
-      const ls = byGroup.get(g);
-      const wrap = buildShelf(g, ls);
-      shelves.appendChild(wrap);
-      restoreShelfPos(g, wrap, ls);            // 先上树再定位,理由见函数注释
-    });
+    renderLevels(data.lessons);              // 货架按级别渲染(单级别时没有切换器)
   }catch(e){
     // 骨架必须撤掉:留着它就是"永远在加载",而下面明明写着加载失败了
     document.getElementById("shelves").innerHTML = "";

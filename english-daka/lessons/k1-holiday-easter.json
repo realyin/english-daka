@@ -1,0 +1,230 @@
+{
+  "seq": 1202,
+  "level": "K1",
+  "group": "节日 Holidays",
+  "badge": "🐰",
+  "cover": "images/hol-easter.webp",
+  "title": "Holidays · Easter 复活节",
+  "cards": [
+    {
+      "word": "Easter",
+      "cn": "复活节",
+      "tag": "word",
+      "image": "images/hol-easter.webp",
+      "dialog": [
+        {
+          "q": "What's this holiday?",
+          "a": [
+            "It's Easter."
+          ],
+          "key": [
+            "easter"
+          ],
+          "q_cn": "这是什么节日？",
+          "a_cn": [
+            "这是复活节。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-easter/q-what-s-this-holiday-518c80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-dot-d297cc.mp3"
+            },
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-tub-b848ea.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Easter?",
+          "a": [
+            "Happy Easter!"
+          ],
+          "key": [
+            "happy"
+          ],
+          "q_cn": "复活节我们说什么？",
+          "a_cn": [
+            "复活节快乐！"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-easter/q-what-do-we-say-on-easter-303465.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-easter/a-happy-easter-527909.mp3"
+          ],
+          "image": "images/k1-say-happy-easter.webp",
+          "opts": [
+            {
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
+            },
+            {
+              "key": "bunny",
+              "text": "It's an Easter Bunny.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-an-easter-bunny-de09cf.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-easter/q-which-one-is-easter-238b46.mp3"
+    },
+    {
+      "word": "pretty clothes",
+      "cn": "漂亮的衣服",
+      "tag": "word",
+      "image": "images/hol-easter-clothes.webp",
+      "dialog": [
+        {
+          "q": "What do we wear on Easter?",
+          "a": [
+            "We wear pretty clothes."
+          ],
+          "key": [
+            "clothes"
+          ],
+          "q_cn": "复活节我们穿什么？",
+          "a_cn": [
+            "我们穿漂亮的衣服。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-easter/q-what-do-we-wear-on-easter-085bed.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-easter/a-we-wear-pretty-clothes-cddec8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bunny",
+              "text": "It's an Easter Bunny.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-an-easter-bunny-de09cf.mp3"
+            },
+            {
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-easter/q-which-one-is-pretty-clothes-c4b46e.mp3"
+    },
+    {
+      "word": "egg hunt",
+      "cn": "找彩蛋",
+      "tag": "word",
+      "image": "images/sw-on-holiday-egg.webp",
+      "dialog": [
+        {
+          "q": "What can we do on Easter?",
+          "a": [
+            "On Easter, we can have an egg hunt."
+          ],
+          "key": [
+            "egg"
+          ],
+          "q_cn": "复活节我们可以做什么？",
+          "a_cn": [
+            "复活节我们可以去找彩蛋。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-easter/q-what-can-we-do-on-easter-8fb023.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-easter/a-on-easter-we-can-have-an-egg-hunt-1118ee.mp3"
+          ],
+          "opts": [
+            {
+              "key": "clothes",
+              "text": "We wear pretty clothes.",
+              "audio": "audio/sentences/k1-holiday-easter/a-we-wear-pretty-clothes-cddec8.mp3"
+            },
+            {
+              "key": "bunny",
+              "text": "It's an Easter Bunny.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-an-easter-bunny-de09cf.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-easter/q-which-one-is-egg-hunt-58fec5.mp3"
+    },
+    {
+      "word": "Easter Bunny",
+      "cn": "复活节兔子",
+      "tag": "word",
+      "image": "images/hol-easter-bunny.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's an Easter Bunny."
+          ],
+          "key": [
+            "bunny"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是复活节兔子。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-easter/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-easter/a-it-s-an-easter-bunny-de09cf.mp3"
+          ],
+          "opts": [
+            {
+              "key": "clothes",
+              "text": "We wear pretty clothes.",
+              "audio": "audio/sentences/k1-holiday-easter/a-we-wear-pretty-clothes-cddec8.mp3"
+            },
+            {
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-easter/q-which-one-is-easter-bunny-69c3e5.mp3"
+    }
+  ],
+  "word_audio": {
+    "an": "audio/words/an.mp3",
+    "bunny": "audio/words/bunny.mp3",
+    "can": "audio/words/can.mp3",
+    "clothes": "audio/words/clothes.mp3",
+    "do": "audio/words/do.mp3",
+    "dot": "audio/words/dot.mp3",
+    "easter": "audio/words/easter.mp3",
+    "easter bunny": "audio/words/easter-bunny.mp3",
+    "egg": "audio/words/egg.mp3",
+    "egg hunt": "audio/words/egg-hunt.mp3",
+    "happy": "audio/words/happy.mp3",
+    "have": "audio/words/have.mp3",
+    "holiday": "audio/words/holiday.mp3",
+    "hunt": "audio/words/hunt.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "on": "audio/words/on.mp3",
+    "pretty": "audio/words/pretty.mp3",
+    "pretty clothes": "audio/words/pretty-clothes.mp3",
+    "say": "audio/words/say.mp3",
+    "this": "audio/words/this.mp3",
+    "tub": "audio/words/tub.mp3",
+    "we": "audio/words/we.mp3",
+    "wear": "audio/words/wear.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

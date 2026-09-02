@@ -1,7 +1,9 @@
 {
   "seq": 602,
+  "level": "K2",
   "group": "数学 Math",
   "badge": "6-10",
+  "cover": "images/math-six.webp",
   "title": "Numbers · Six to Ten",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-it-s-number-six-ff0755.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
+            },
+            {
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+            }
           ]
         },
         {
@@ -42,6 +56,47 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-there-are-six-chickens-907203.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nine",
+              "text": "There are nine chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-nine-chickens-9a82d5.mp3"
+            },
+            {
+              "key": "seven",
+              "text": "There are seven chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show six chickens?",
+          "a": [
+            "Six chips can show six chickens."
+          ],
+          "key": [
+            "six"
+          ],
+          "q_cn": "几个筹码能表示 六 只小鸡？",
+          "a_cn": [
+            "六 个筹码能表示 六 只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-six-chickens-5ea045.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "Seven chips can show seven chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-seven-chips-can-show-seven-chickens-8ffc99.mp3"
+            },
+            {
+              "key": "nine",
+              "text": "Nine chips can show nine chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-nine-chips-can-show-nine-chickens-ac593d.mp3"
+            }
           ]
         }
       ],
@@ -68,6 +123,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+            },
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-five-82bd3b.mp3"
+            }
           ]
         },
         {
@@ -85,6 +152,47 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
+          ],
+          "opts": [
+            {
+              "key": "eight",
+              "text": "There are eight chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-eight-chickens-2d77fc.mp3"
+            },
+            {
+              "key": "six",
+              "text": "There are six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-six-chickens-907203.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show seven chickens?",
+          "a": [
+            "Seven chips can show seven chickens."
+          ],
+          "key": [
+            "seven"
+          ],
+          "q_cn": "几个筹码能表示 七 只小鸡？",
+          "a_cn": [
+            "七 个筹码能表示 七 只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-seven-chicke-f4a81f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-seven-chips-can-show-seven-chickens-8ffc99.mp3"
+          ],
+          "opts": [
+            {
+              "key": "six",
+              "text": "Six chips can show six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+            },
+            {
+              "key": "eight",
+              "text": "Eight chips can show eight chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-eight-chips-can-show-eight-chickens-100f4c.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +219,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-it-s-number-eight-c7674b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+            },
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-five-82bd3b.mp3"
+            }
           ]
         },
         {
@@ -128,6 +248,47 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-there-are-eight-chickens-2d77fc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "There are seven chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
+            },
+            {
+              "key": "ten",
+              "text": "There are ten chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show eight chickens?",
+          "a": [
+            "Eight chips can show eight chickens."
+          ],
+          "key": [
+            "eight"
+          ],
+          "q_cn": "几个筹码能表示 八 只小鸡？",
+          "a_cn": [
+            "八 个筹码能表示 八 只小鸡。"
+          ],
+          "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-eight-chicke-ecfb48.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-6-10/a-eight-chips-can-show-eight-chickens-100f4c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ten",
+              "text": "Ten chips can show ten chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-ten-chips-can-show-ten-chickens-2f5e76.mp3"
+            },
+            {
+              "key": "seven",
+              "text": "Seven chips can show seven chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-seven-chips-can-show-seven-chickens-8ffc99.mp3"
+            }
           ]
         }
       ],
@@ -154,6 +315,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-it-s-number-nine-7a9de2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
+            },
+            {
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+            }
           ]
         },
         {
@@ -171,6 +344,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-there-are-nine-chickens-9a82d5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "There are seven chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-seven-chickens-70f448.mp3"
+            },
+            {
+              "key": "ten",
+              "text": "There are ten chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
+            }
           ]
         },
         {
@@ -189,6 +374,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-nine-chicken-09512f.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-nine-chips-can-show-nine-chickens-ac593d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "six",
+              "text": "Six chips can show six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+            },
+            {
+              "key": "eight",
+              "text": "Eight chips can show eight chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-eight-chips-can-show-eight-chickens-100f4c.mp3"
+            }
           ]
         }
       ],
@@ -215,6 +412,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-what-s-this-number-0b7195.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-it-s-number-ten-f5e736.mp3"
+          ],
+          "opts": [
+            {
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-seven-ff96d3.mp3"
+            },
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k2-math-6-10/a-it-s-number-five-82bd3b.mp3"
+            }
           ]
         },
         {
@@ -232,6 +441,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chickens-are-there-f42606.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-there-are-ten-chickens-4637a6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "eight",
+              "text": "There are eight chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-eight-chickens-2d77fc.mp3"
+            },
+            {
+              "key": "six",
+              "text": "There are six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-there-are-six-chickens-907203.mp3"
+            }
           ]
         },
         {
@@ -250,6 +471,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-how-many-chips-can-show-ten-chickens-e7abfd.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-ten-chips-can-show-ten-chickens-2f5e76.mp3"
+          ],
+          "opts": [
+            {
+              "key": "six",
+              "text": "Six chips can show six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+            },
+            {
+              "key": "eight",
+              "text": "Eight chips can show eight chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-eight-chips-can-show-eight-chickens-100f4c.mp3"
+            }
           ]
         }
       ],
@@ -278,7 +511,19 @@
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-one-two-three-four-five-five-fingers-eeb85b.mp3"
           ],
-          "image": "images/math-five-fingers.webp"
+          "image": "images/math-five-fingers.webp",
+          "opts": [
+            {
+              "key": "ten",
+              "text": "Five and five makes ten. Ten fingers.",
+              "audio": "audio/sentences/k2-math-6-10/a-five-and-five-makes-ten-ten-fingers-1c2cec.mp3"
+            },
+            {
+              "key": "six",
+              "text": "Six chips can show six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+            }
+          ]
         },
         {
           "q": "Show me ten fingers.",
@@ -295,6 +540,18 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-show-me-ten-fingers-3b8ed3.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-one-two-three-four-five-six-seven-ei-b50104.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "One, two, three, four, five. Five fingers.",
+              "audio": "audio/sentences/k2-math-6-10/a-one-two-three-four-five-five-fingers-eeb85b.mp3"
+            },
+            {
+              "key": "five",
+              "text": "Two and three makes five. Five apples.",
+              "audio": "audio/sentences/k2-math-6-10/a-two-and-three-makes-five-five-apples-77d53a.mp3"
+            }
           ]
         }
       ],
@@ -321,6 +578,19 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-i-have-two-apples-you-have-three-app-1d6850.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-two-and-three-makes-five-five-apples-77d53a.mp3"
+          ],
+          "image": "images/k2-two-plus-three.webp",
+          "opts": [
+            {
+              "key": "ten",
+              "text": "Five and five makes ten. Ten fingers.",
+              "audio": "audio/sentences/k2-math-6-10/a-five-and-five-makes-ten-ten-fingers-1c2cec.mp3"
+            },
+            {
+              "key": "six",
+              "text": "Six chips can show six chickens.",
+              "audio": "audio/sentences/k2-math-6-10/a-six-chips-can-show-six-chickens-3d385c.mp3"
+            }
           ]
         }
       ],
@@ -348,6 +618,19 @@
           "q_audio": "audio/sentences/k2-math-6-10/q-i-have-five-fingers-on-this-hand-and-369027.mp3",
           "a_audio": [
             "audio/sentences/k2-math-6-10/a-five-and-five-makes-ten-ten-fingers-1c2cec.mp3"
+          ],
+          "image": "images/k2-five-plus-five.webp",
+          "opts": [
+            {
+              "key": "five",
+              "text": "One, two, three, four, five. Five fingers.",
+              "audio": "audio/sentences/k2-math-6-10/a-one-two-three-four-five-five-fingers-eeb85b.mp3"
+            },
+            {
+              "key": "five",
+              "text": "Two and three makes five. Five apples.",
+              "audio": "audio/sentences/k2-math-6-10/a-two-and-three-makes-five-five-apples-77d53a.mp3"
+            }
           ]
         }
       ],

@@ -32,6 +32,7 @@
 """
 
 import array
+import random
 import asyncio
 import hashlib
 import json
@@ -77,6 +78,7 @@ PRAISES = ["Great job!", "Well done!", "Awesome!", "Excellent!", "Perfect!",
            "You did it! See you tomorrow!"]
 
 AUDIO_DIR = "audio"
+LEVEL_ORDER = ["K1", "K2", "K3", "S1", "S2", "S3"]   # 目录页级别切换器同序
 
 
 def slug(t: str) -> str:
@@ -99,7 +101,21 @@ def words_of(sentence: str):
 
 
 async def tts_to_file(text: str, voice: str, rate: str, out: Path):
-    await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
+    """合成一句写进 out。带指数退避重试 —— edge-tts 是微软的公共服务,
+    连续合成上千句时会间歇性回 503(WSServerHandshakeError);
+    没有重试的话一次抖动就把整课的生成打断在半路,回写出来的 JSON
+    指着一堆不存在的 mp3。"""
+    last = None
+    for i in range(6):
+        try:
+            await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
+            return
+        except Exception as e:                      # 503 / 握手失败 / 连接被掐
+            last = e
+            if i == 5:
+                break
+            await asyncio.sleep(min(2 ** i, 20) + random.random())
+    raise last
 
 
 async def tts_samples(text: str, voice: str, rate: str) -> array.array:
@@ -198,7 +214,7 @@ async def synth(text: str, voice: str, rate: str, out: Path,
     return True
 
 
-NON_LESSON = {"index.json", "phonics.json", "dictionary.json"}
+NON_LESSON = {"index.json", "phonics.json", "dictionary.json", "classes.json"}
 
 
 def lesson_files(lessons_root: Path):
@@ -306,6 +322,21 @@ def plan_lesson(lesson: dict, lesson_id: str, tasks: dict, write_back=True):
             if write_back:
                 qa["q_audio"] = q_rel
                 qa["a_audio"] = a_rels
+            # 闯关的干扰句(build_opts.py 预造的整句选项)。
+            # 第二层直接复用了本课别的答句,自带 audio,跳过不重复合成;
+            # 第一层是换词造出来的新句子,要在这儿排进任务表 —— 和答句同一个
+            # 角色(a=Jenny),否则三个选项里正确的那条会是另一个音色,一听就露
+            for opt in (qa.get("opts") or []):
+                # ⚠️ 收词要在 continue 之前:第二层干扰句自带 audio、第一层
+                # 重跑时 audio 也已经填好,两种都会走 continue —— 收词写在下面
+                # 就永远收不到,选项句里的词(doctor/horse/mittens…)进不了
+                # word_audio,点读时静默退回浏览器 TTS,换了个音色
+                all_words.update(words_of(opt["text"]))
+                if opt.get("audio"): continue
+                rel = clip_rel("a", opt["text"], lesson_id)
+                tasks[rel] = ("a", opt["text"])
+                if write_back:
+                    opt["audio"] = rel
             for s in [qa["q"], *qa["a"]]:
                 all_words.update(words_of(s))
 
@@ -353,7 +384,33 @@ def build_days(lessons_root: Path):
             rec["cards"] += 1
             if f.stem not in rec["lessons"]:
                 rec["lessons"].append(f.stem)
+    # 课名按日期登记在 classes.json 里,这里拼进来。
+    # 为什么不写进每张卡:一节课一个名字,改错别字只改一处;卡片在课程之间搬家
+    # (这个项目里发生过很多次)名字也不会跟着散;--backfill 的历史内容没有日期,
+    # 自然就没有条目,不用特判
+    names = load_classes(lessons_root)
+    for k, rec in days.items():
+        if names.get(k):
+            rec["name"] = names[k]
     return [days[k] for k in sorted(days, reverse=True)]
+
+
+def classes_path(lessons_root: Path) -> Path:
+    return lessons_root / "classes.json"
+
+
+def load_classes(lessons_root: Path) -> dict:
+    f = classes_path(lessons_root)
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
+def save_class_name(lessons_root: Path, date: str, name: str):
+    """给某一天的课起个名字。日期是这节课的身份,名字是给人看的标签"""
+    f = classes_path(lessons_root)
+    data = load_classes(lessons_root)
+    data[date] = name
+    f.write_text(json.dumps(dict(sorted(data.items(), reverse=True)),
+                            ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
@@ -363,7 +420,9 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
         if index_file.exists() else {"lessons": []}
     entry = {"id": lesson_id, "title": lesson["title"],
              "words": len(lesson["cards"])}
-    for k in ("num", "group", "badge", "badge_sub", "seq"):
+    # cover 是课程 JSON 顶层字段,必须在这儿带上 —— 只写进 index.json
+    # 的话,下次对这一课跑 gen_audio 就会被这个重建函数抹掉
+    for k in ("num", "group", "badge", "badge_sub", "seq", "level", "cover"):
         if lesson.get(k) is not None:
             entry[k] = lesson[k]
     index["lessons"] = [x for x in index["lessons"] if x["id"] != lesson_id]
@@ -374,8 +433,11 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
     numbered = sorted([x for x in index["lessons"]
                        if not has(x, "group") and has(x, "num")],
                       key=lambda x: x["num"], reverse=True)
+    # 级别优先(K1→K2→K3→S1→S2→S3),级内按 seq;没标 level 的老条目按 K2
     grouped = sorted([x for x in index["lessons"] if has(x, "group")],
-                     key=lambda x: x.get("seq", x.get("num", 0)))
+                     key=lambda x: (LEVEL_ORDER.index(x.get("level", "K2"))
+                                    if x.get("level", "K2") in LEVEL_ORDER else 99,
+                                    x.get("seq", x.get("num", 0))))
     dated = sorted([x for x in index["lessons"]
                     if not has(x, "group") and not has(x, "num")],
                    key=lambda x: x["id"], reverse=True)
@@ -386,7 +448,7 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-async def main(lesson_path: str, class_date: str = None):
+async def main(lesson_path: str, class_date: str = None, class_name: str = None):
     lesson_file = Path(lesson_path)
     lesson = json.loads(lesson_file.read_text(encoding="utf-8"))
     lessons_root = lesson_file.parent
@@ -399,7 +461,10 @@ async def main(lesson_path: str, class_date: str = None):
         if card.get("image") == "":
             del card["image"]
 
-    stamped = stamp_added(lesson, class_date or date.today().isoformat())
+    # 补录历史内容(--backfill)不盖课堂日戳:K1 这类"孩子早学完、现在才导入"的课,
+    # 盖上今天的戳会让「按课堂复习」冒出一条"今天的课 · 几百张卡"
+    stamped = 0 if class_date == "--backfill" else \
+        stamp_added(lesson, class_date or date.today().isoformat())
 
     lint_lesson(lesson, lesson_id)
 
@@ -438,6 +503,10 @@ async def main(lesson_path: str, class_date: str = None):
     write_manifest(lessons_root)
     lesson_file.write_text(
         json.dumps(lesson, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 课名要在 update_index 之前落盘 —— build_days 会读它
+    if class_name:
+        save_class_name(lessons_root, class_date, class_name)
+        print(f"课名已登记:{class_date} → 「{class_name}」")
     update_index(lessons_root, lesson_id, lesson)
     print(f"\n完成:新生成 {made} 条,复用已有 {skipped} 条")
     if stamped:
@@ -452,6 +521,9 @@ async def main(lesson_path: str, class_date: str = None):
 if __name__ == "__main__":
     argv = sys.argv[1:]
     class_date = None
+    if "--backfill" in argv:
+        argv.remove("--backfill")
+        class_date = "--backfill"          # 哨兵:main 里跳过盖戳
     if "--date" in argv:
         i = argv.index("--date")
         class_date = argv[i + 1] if i + 1 < len(argv) else ""
@@ -459,7 +531,21 @@ if __name__ == "__main__":
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", class_date):
             print("--date 要求 YYYY-MM-DD,例如 --date 2026-08-30")
             sys.exit(1)
+    class_name = None
+    if "--class" in argv:
+        i = argv.index("--class")
+        class_name = argv[i + 1].strip() if i + 1 < len(argv) else ""
+        del argv[i:i + 2]
+        if not class_name:
+            print("--class 后面要跟课名,例如 --class \"T4L2 动物 · 宠物\"")
+            sys.exit(1)
+        if not class_date or class_date == "--backfill":
+            print("--class 得配 --date 一起用:课名是挂在某一天的课上的\n"
+                  "  例: python gen_audio.py lessons/k2-zoo.json "
+                  "--date 2026-09-05 --class \"T4L2 动物 · 宠物\"")
+            sys.exit(1)
     if len(argv) != 1:
-        print("用法: python gen_audio.py lessons/2026-08-29.json [--date 2026-08-30]")
+        print("用法: python gen_audio.py lessons/x.json "
+              "[--date 2026-08-30 [--class \"课名\"] | --backfill]")
         sys.exit(1)
-    asyncio.run(main(argv[0], class_date))
+    asyncio.run(main(argv[0], class_date, class_name))

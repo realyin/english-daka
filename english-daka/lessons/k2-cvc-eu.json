@@ -1,7 +1,9 @@
 {
   "seq": 304,
+  "level": "K2",
   "group": "拼读 Phonics",
   "badge": "eu",
+  "cover": "images/cvc-fed.webp",
   "title": "Short e & u · 短元音 e 和 u",
   "cards": [
     {
@@ -55,6 +57,221 @@
           "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+          ],
+          "opts": [
+            {
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+            },
+            {
+              "key": "gum",
+              "text": "It's gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: f — ed?",
+          "a": [
+            "/f/ /ed/, fed."
+          ],
+          "key": [
+            "fed"
+          ],
+          "q_cn": "f 和 ed 连起来怎么读？",
+          "a_cn": [
+            "/f/ /ed/，fed。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-how-do-you-read-f-ed-b2c164.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "/t/ /ub/, tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+            },
+            {
+              "key": "vet",
+              "text": "/v/ /et/, vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fed begin with?",
+          "a": [
+            "Fed begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fed 的开头是什么音？",
+          "a_cn": [
+            "fed 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-fed-begin-with-542d23.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-f-6387f6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Fed begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-m-8b2b2e.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Fed begins with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-the-sound-g-a63f56.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fed begin with?",
+          "a": [
+            "Fed begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fed 以哪个字母开头？",
+          "a_cn": [
+            "fed 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-fed-begin-with-fd0fbe.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-f-023f4c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Fed begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-e-ab7536.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Fed begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-begins-with-letter-g-be3303.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fed have in the middle?",
+          "a": [
+            "Fed has the sound /e/ in the middle."
+          ],
+          "key": [
+            "/e/"
+          ],
+          "q_cn": "fed 中间是什么音？",
+          "a_cn": [
+            "fed 中间是 /ɛ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-fed-have-in-the-midd-d90a54.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-e-in-the-middle-537743.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Fed has the sound /u/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-u-in-the-middle-a8a13a.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Fed has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-the-sound-f-in-the-middle-58c248.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fed have in the middle?",
+          "a": [
+            "Fed has letter E in the middle."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "fed 中间是哪个字母？",
+          "a_cn": [
+            "fed 中间是字母 E。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-fed-have-in-the-mi-93468c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-has-letter-e-in-the-middle-35f672.mp3"
+          ],
+          "opts": [
+            {
+              "key": "v",
+              "text": "Fed has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-v-in-the-middle-60d1bd.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Fed has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-has-letter-g-in-the-middle-3d7984.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fed end with?",
+          "a": [
+            "Fed ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "fed 的结尾是什么音？",
+          "a_cn": [
+            "fed 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-fed-end-with-38fa40.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-d-207ee9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Fed ends with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-u-1d6d40.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Fed ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-the-sound-f-473cea.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fed end with?",
+          "a": [
+            "Fed ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "fed 以哪个字母结尾？",
+          "a_cn": [
+            "fed 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-fed-end-with-579a8d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-fed-ends-with-letter-d-b70889.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Fed ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-letter-e-12af88.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Fed ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-fed-ends-with-letter-g-d1bd59.mp3"
+            }
           ]
         }
       ],
@@ -112,6 +329,221 @@
           "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
+          ],
+          "opts": [
+            {
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+            },
+            {
+              "key": "gum",
+              "text": "It's gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: b — eg?",
+          "a": [
+            "/b/ /eg/, beg."
+          ],
+          "key": [
+            "beg"
+          ],
+          "q_cn": "b 和 eg 连起来怎么读？",
+          "a_cn": [
+            "/b/ /eg/，beg。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-how-do-you-read-b-eg-46fa5c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-b-eg-beg-af462c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "/t/ /ub/, tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+            },
+            {
+              "key": "fed",
+              "text": "/f/ /ed/, fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does beg begin with?",
+          "a": [
+            "Beg begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "beg 的开头是什么音？",
+          "a_cn": [
+            "beg 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-beg-begin-with-b22b62.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-b-6c0619.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Beg begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-u-0cd235.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Beg begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-the-sound-f-f5abf3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does beg begin with?",
+          "a": [
+            "Beg begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "beg 以哪个字母开头？",
+          "a_cn": [
+            "beg 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-beg-begin-with-6c1a8e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-b-b43cd9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Beg begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-e-729060.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Beg begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-begins-with-letter-g-811315.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does beg have in the middle?",
+          "a": [
+            "Beg has the sound /e/ in the middle."
+          ],
+          "key": [
+            "/e/"
+          ],
+          "q_cn": "beg 中间是什么音？",
+          "a_cn": [
+            "beg 中间是 /ɛ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-beg-have-in-the-midd-f55878.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-e-in-the-middle-9a1e19.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Beg has the sound /u/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-u-in-the-middle-3206c3.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Beg has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-the-sound-f-in-the-middle-ab7e12.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does beg have in the middle?",
+          "a": [
+            "Beg has letter E in the middle."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "beg 中间是哪个字母？",
+          "a_cn": [
+            "beg 中间是字母 E。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-beg-have-in-the-mi-3c9acf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-has-letter-e-in-the-middle-da6e27.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Beg has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-letter-g-in-the-middle-879956.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Beg has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-has-letter-m-in-the-middle-0b7ce2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does beg end with?",
+          "a": [
+            "Beg ends with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "beg 的结尾是什么音？",
+          "a_cn": [
+            "beg 结尾是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-beg-end-with-02a154.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-g-01463c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Beg ends with the sound /v/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-v-555b1f.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Beg ends with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-the-sound-t-f07e56.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does beg end with?",
+          "a": [
+            "Beg ends with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "beg 以哪个字母结尾？",
+          "a_cn": [
+            "beg 以字母 G 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-beg-end-with-4fa66c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-g-425665.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Beg ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-m-6c9cc4.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Beg ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-eu/a-beg-ends-with-letter-d-8b5a9b.mp3"
+            }
           ]
         }
       ],
@@ -169,6 +601,221 @@
           "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+          ],
+          "opts": [
+            {
+              "key": "gum",
+              "text": "It's gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
+            },
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: v — et?",
+          "a": [
+            "/v/ /et/, vet."
+          ],
+          "key": [
+            "vet"
+          ],
+          "q_cn": "v 和 et 连起来怎么读？",
+          "a_cn": [
+            "/v/ /et/，vet。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-how-do-you-read-v-et-a9786c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
+          ],
+          "opts": [
+            {
+              "key": "gum",
+              "text": "/g/ /um/, gum.",
+              "audio": "audio/sentences/k2-cvc-eu/a-g-um-gum-87c1d6.mp3"
+            },
+            {
+              "key": "beg",
+              "text": "/b/ /eg/, beg.",
+              "audio": "audio/sentences/k2-cvc-eu/a-b-eg-beg-af462c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does vet begin with?",
+          "a": [
+            "Vet begins with the sound /v/."
+          ],
+          "key": [
+            "/v/"
+          ],
+          "q_cn": "vet 的开头是什么音？",
+          "a_cn": [
+            "vet 开头是 /v/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-vet-begin-with-249205.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-v-452986.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Vet begins with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-b-ab2088.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Vet begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-the-sound-u-0df6f8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does vet begin with?",
+          "a": [
+            "Vet begins with letter V."
+          ],
+          "key": [
+            "v"
+          ],
+          "q_cn": "vet 以哪个字母开头？",
+          "a_cn": [
+            "vet 以字母 V 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-vet-begin-with-7e258a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-v-c8690c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Vet begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-e-8e3b82.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Vet begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-begins-with-letter-g-e7f55c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does vet have in the middle?",
+          "a": [
+            "Vet has the sound /e/ in the middle."
+          ],
+          "key": [
+            "/e/"
+          ],
+          "q_cn": "vet 中间是什么音？",
+          "a_cn": [
+            "vet 中间是 /ɛ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-vet-have-in-the-midd-ae3bbe.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-e-in-the-middle-56e701.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Vet has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-m-in-the-middle-ca12d3.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Vet has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-the-sound-g-in-the-middle-61b9c8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does vet have in the middle?",
+          "a": [
+            "Vet has letter E in the middle."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "vet 中间是哪个字母？",
+          "a_cn": [
+            "vet 中间是字母 E。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-vet-have-in-the-mi-52b06e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-has-letter-e-in-the-middle-f3fdec.mp3"
+          ],
+          "opts": [
+            {
+              "key": "v",
+              "text": "Vet has letter V in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-v-in-the-middle-a18e0a.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Vet has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-has-letter-g-in-the-middle-f2727f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does vet end with?",
+          "a": [
+            "Vet ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "vet 的结尾是什么音？",
+          "a_cn": [
+            "vet 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-vet-end-with-6fa708.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-t-179d66.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Vet ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-m-fab761.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Vet ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-the-sound-g-10c20c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does vet end with?",
+          "a": [
+            "Vet ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "vet 以哪个字母结尾？",
+          "a_cn": [
+            "vet 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-vet-end-with-1252f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-t-38f24a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "v",
+              "text": "Vet ends with letter V.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-v-c0f3fd.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Vet ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-vet-ends-with-letter-e-9539b3.mp3"
+            }
           ]
         }
       ],
@@ -226,6 +873,221 @@
           "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fed",
+              "text": "It's fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-fed-529708.mp3"
+            },
+            {
+              "key": "beg",
+              "text": "It's beg.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-beg-b2a290.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: t — ub?",
+          "a": [
+            "/t/ /ub/, tub."
+          ],
+          "key": [
+            "tub"
+          ],
+          "q_cn": "t 和 ub 连起来怎么读？",
+          "a_cn": [
+            "/t/ /ub/，tub。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-how-do-you-read-t-ub-facb28.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fed",
+              "text": "/f/ /ed/, fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+            },
+            {
+              "key": "vet",
+              "text": "/v/ /et/, vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-v-et-vet-887fde.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tub begin with?",
+          "a": [
+            "Tub begins with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "tub 的开头是什么音？",
+          "a_cn": [
+            "tub 开头是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-tub-begin-with-f16647.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-t-1f606f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Tub begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-f-c29fd0.mp3"
+            },
+            {
+              "key": "/e/",
+              "text": "Tub begins with the sound /e/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-the-sound-e-96b8b8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tub begin with?",
+          "a": [
+            "Tub begins with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "tub 以哪个字母开头？",
+          "a_cn": [
+            "tub 以字母 T 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-tub-begin-with-c410d4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-t-3f13a3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Tub begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-b-8aaa3b.mp3"
+            },
+            {
+              "key": "u",
+              "text": "Tub begins with letter U.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-begins-with-letter-u-2b5497.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tub have in the middle?",
+          "a": [
+            "Tub has the sound /u/ in the middle."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "tub 中间是什么音？",
+          "a_cn": [
+            "tub 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-tub-have-in-the-midd-9b4eaa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-u-in-the-middle-dd3017.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Tub has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-f-in-the-middle-808200.mp3"
+            },
+            {
+              "key": "/e/",
+              "text": "Tub has the sound /e/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-the-sound-e-in-the-middle-9f4bbc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tub have in the middle?",
+          "a": [
+            "Tub has letter U in the middle."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "tub 中间是哪个字母？",
+          "a_cn": [
+            "tub 中间是字母 U。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-tub-have-in-the-mi-1f6e26.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-has-letter-u-in-the-middle-e6543c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Tub has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-b-in-the-middle-ab812c.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Tub has letter T in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-has-letter-t-in-the-middle-5b0d4a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does tub end with?",
+          "a": [
+            "Tub ends with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "tub 的结尾是什么音？",
+          "a_cn": [
+            "tub 结尾是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-tub-end-with-27a154.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-b-7eeba1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Tub ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-m-420b05.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Tub ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-the-sound-g-4e10f2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tub end with?",
+          "a": [
+            "Tub ends with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "tub 以哪个字母结尾？",
+          "a_cn": [
+            "tub 以字母 B 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-tub-end-with-571158.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-tub-ends-with-letter-b-d0f1b9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Tub ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-letter-e-a71131.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Tub ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-tub-ends-with-letter-g-71bc14.mp3"
+            }
           ]
         }
       ],
@@ -283,6 +1145,221 @@
           "q_audio": "audio/sentences/k2-cvc-eu/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-eu/a-it-s-gum-c88a2b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "vet",
+              "text": "It's vet.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-vet-a9c627.mp3"
+            },
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-it-s-tub-b848ea.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: g — um?",
+          "a": [
+            "/g/ /um/, gum."
+          ],
+          "key": [
+            "gum"
+          ],
+          "q_cn": "g 和 um 连起来怎么读？",
+          "a_cn": [
+            "/g/ /um/，gum。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-how-do-you-read-g-um-3ff4ba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-g-um-gum-87c1d6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "/t/ /ub/, tub.",
+              "audio": "audio/sentences/k2-cvc-eu/a-t-ub-tub-51f9e5.mp3"
+            },
+            {
+              "key": "fed",
+              "text": "/f/ /ed/, fed.",
+              "audio": "audio/sentences/k2-cvc-eu/a-f-ed-fed-1b9d78.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does gum begin with?",
+          "a": [
+            "Gum begins with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "gum 的开头是什么音？",
+          "a_cn": [
+            "gum 开头是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-gum-begin-with-518501.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-g-f0d65d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Gum begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-u-d98bb7.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Gum begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-the-sound-f-4ecd9f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does gum begin with?",
+          "a": [
+            "Gum begins with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "gum 以哪个字母开头？",
+          "a_cn": [
+            "gum 以字母 G 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-gum-begin-with-2ab7f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-g-a476fe.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Gum begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-e-c0a4ff.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Gum begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-begins-with-letter-m-fca435.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does gum have in the middle?",
+          "a": [
+            "Gum has the sound /u/ in the middle."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "gum 中间是什么音？",
+          "a_cn": [
+            "gum 中间是 /ʌ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-gum-have-in-the-midd-2162d7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-has-the-sound-u-in-the-middle-bea84f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Gum has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-the-sound-g-in-the-middle-d61341.mp3"
+            },
+            {
+              "key": "/v/",
+              "text": "Gum has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-the-sound-v-in-the-middle-9e4c5d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does gum have in the middle?",
+          "a": [
+            "Gum has letter U in the middle."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "gum 中间是哪个字母？",
+          "a_cn": [
+            "gum 中间是字母 U。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-gum-have-in-the-mi-da5810.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-has-letter-u-in-the-middle-8b721a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Gum has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-letter-d-in-the-middle-aab5a9.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Gum has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-has-letter-b-in-the-middle-e41e9e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does gum end with?",
+          "a": [
+            "Gum ends with the sound /m/."
+          ],
+          "key": [
+            "/m/"
+          ],
+          "q_cn": "gum 的结尾是什么音？",
+          "a_cn": [
+            "gum 结尾是 /m/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-what-sound-does-gum-end-with-79e478.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-m-177534.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Gum ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-g-77496e.mp3"
+            },
+            {
+              "key": "/v/",
+              "text": "Gum ends with the sound /v/.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-the-sound-v-1be7fa.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does gum end with?",
+          "a": [
+            "Gum ends with letter M."
+          ],
+          "key": [
+            "m"
+          ],
+          "q_cn": "gum 以哪个字母结尾？",
+          "a_cn": [
+            "gum 以字母 M 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-eu/q-which-letter-does-gum-end-with-1d43f0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-m-dfdd2a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "Gum ends with letter E.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-e-561b07.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Gum ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-eu/a-gum-ends-with-letter-g-184caf.mp3"
+            }
           ]
         }
       ],
@@ -291,16 +1368,48 @@
     }
   ],
   "word_audio": {
+    "b": "audio/words/b.mp3",
     "beg": "audio/words/beg.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "d": "audio/words/d.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "ed": "audio/words/ed.mp3",
+    "eg": "audio/words/eg.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "et": "audio/words/et.mp3",
+    "f": "audio/words/f.mp3",
     "fed": "audio/words/fed.mp3",
+    "g": "audio/words/g.mp3",
     "gum": "audio/words/gum.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "m": "audio/words/m.mp3",
+    "middle": "audio/words/middle.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "tub": "audio/words/tub.mp3",
+    "u": "audio/words/u.mp3",
+    "ub": "audio/words/ub.mp3",
+    "um": "audio/words/um.mp3",
+    "v": "audio/words/v.mp3",
     "vet": "audio/words/vet.mp3",
     "what": "audio/words/what.mp3",
-    "word": "audio/words/word.mp3"
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

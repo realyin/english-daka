@@ -1,7 +1,9 @@
 {
   "seq": 502,
+  "level": "K2",
   "group": "主题 Topics",
   "badge": "🚏",
+  "cover": "images/street.webp",
   "title": "Signs · 生活中的标识",
   "cards": [
     {
@@ -24,6 +26,18 @@
           "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "zoo",
+              "text": "It's the zoo.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-zoo-312b57.mp3"
+            },
+            {
+              "key": "bus stop",
+              "text": "It's the bus stop.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
+            }
           ]
         },
         {
@@ -42,7 +56,19 @@
           "a_audio": [
             "audio/sentences/k2-signs/a-no-we-should-walk-on-the-street-35d675.mp3"
           ],
-          "image": "images/walk-on-street.webp"
+          "image": "images/walk-on-street.webp",
+          "opts": [
+            {
+              "key": "zoo",
+              "text": "We can see animals at the zoo.",
+              "audio": "audio/sentences/k2-signs/a-we-can-see-animals-at-the-zoo-e314e9.mp3"
+            },
+            {
+              "key": "market",
+              "text": "We can buy apples and bananas in the market.",
+              "audio": "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+            }
+          ]
         }
       ],
       "image": "images/street.webp",
@@ -69,6 +95,18 @@
           "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "street",
+              "text": "It's the street.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
+            },
+            {
+              "key": "market",
+              "text": "It's the market.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-market-abdf40.mp3"
+            }
           ]
         },
         {
@@ -87,6 +125,18 @@
           "q_audio": "audio/sentences/k2-signs/q-where-should-we-get-on-the-bus-73d9e3.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-we-should-get-on-the-bus-at-the-bus--253e82.mp3"
+          ],
+          "opts": [
+            {
+              "key": "market",
+              "text": "We can buy apples and bananas in the market.",
+              "audio": "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+            },
+            {
+              "key": "walk",
+              "text": "No, we should walk on the street.",
+              "audio": "audio/sentences/k2-signs/a-no-we-should-walk-on-the-street-35d675.mp3"
+            }
           ]
         }
       ],
@@ -113,6 +163,18 @@
           "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-it-s-the-market-abdf40.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bus stop",
+              "text": "It's the bus stop.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
+            },
+            {
+              "key": "street",
+              "text": "It's the street.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
+            }
           ]
         },
         {
@@ -130,6 +192,18 @@
           "q_audio": "audio/sentences/k2-signs/q-where-can-we-buy-apples-and-bananas-d1fa14.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bus stop",
+              "text": "We should get on the bus at the bus stop.",
+              "audio": "audio/sentences/k2-signs/a-we-should-get-on-the-bus-at-the-bus--253e82.mp3"
+            },
+            {
+              "key": "zoo",
+              "text": "We can see animals at the zoo.",
+              "audio": "audio/sentences/k2-signs/a-we-can-see-animals-at-the-zoo-e314e9.mp3"
+            }
           ]
         }
       ],
@@ -156,6 +230,18 @@
           "q_audio": "audio/sentences/k2-signs/q-what-s-this-sign-db146c.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-it-s-the-zoo-312b57.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bus stop",
+              "text": "It's the bus stop.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-bus-stop-c3805f.mp3"
+            },
+            {
+              "key": "street",
+              "text": "It's the street.",
+              "audio": "audio/sentences/k2-signs/a-it-s-the-street-4016d2.mp3"
+            }
           ]
         },
         {
@@ -173,6 +259,18 @@
           "q_audio": "audio/sentences/k2-signs/q-where-can-we-see-animals-b91fca.mp3",
           "a_audio": [
             "audio/sentences/k2-signs/a-we-can-see-animals-at-the-zoo-e314e9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "walk",
+              "text": "No, we should walk on the street.",
+              "audio": "audio/sentences/k2-signs/a-no-we-should-walk-on-the-street-35d675.mp3"
+            },
+            {
+              "key": "market",
+              "text": "We can buy apples and bananas in the market.",
+              "audio": "audio/sentences/k2-signs/a-we-can-buy-apples-and-bananas-in-the-7312a4.mp3"
+            }
           ]
         }
       ],

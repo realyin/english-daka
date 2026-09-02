@@ -1,0 +1,380 @@
+{
+  "seq": 404,
+  "level": "K1",
+  "group": "动物 Animals",
+  "badge": "鸟",
+  "cover": "images/k1-place-nest.webp",
+  "title": "Animals · Birds 鸟类",
+  "cards": [
+    {
+      "word": "nest",
+      "cn": "鸟巢",
+      "tag": "word",
+      "image": "images/k1-place-nest.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "This is a nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个鸟巢。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-this-is-a-nest-0f98f0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hospital",
+              "text": "This is a hospital.",
+              "audio": "audio/sentences/k1-animal-birds/a-this-is-a-hospital-82e78f.mp3"
+            },
+            {
+              "key": "mouth",
+              "text": "This is a mouth.",
+              "audio": "audio/sentences/k1-animal-birds/a-this-is-a-mouth-155fd0.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-nest-865162.mp3"
+    },
+    {
+      "word": "eagle",
+      "cn": "老鹰",
+      "tag": "word",
+      "image": "images/k1-animal-eagle.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's an eagle."
+          ],
+          "key": [
+            "eagle"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是老鹰。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
+          ],
+          "opts": [
+            {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+            },
+            {
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-elephant-ed3297.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does an eagle live?",
+          "a": [
+            "An eagle lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "老鹰住在哪里？",
+          "a_cn": [
+            "老鹰住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-an-eagle-live-3fb109.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-an-eagle-lives-in-the-nest-aeebc9.mp3"
+          ],
+          "image": "images/k1-bird-eagle-nest.webp",
+          "opts": [
+            {
+              "key": "bird",
+              "text": "A crow is a bird.",
+              "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
+            },
+            {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What bird do you like? Why?",
+          "a": [
+            "I like the eagle, because it flies fast."
+          ],
+          "key": [
+            "eagle"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢哪种鸟？为什么？",
+          "a_cn": [
+            "我喜欢老鹰，因为它飞得快。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-do-you-like-why-f8570d.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-i-like-the-eagle-because-it-flies-fa-767283.mp3"
+          ]
+        },
+        {
+          "q": "What can birds do?",
+          "a": [
+            "Birds can fly."
+          ],
+          "key": [
+            "fly"
+          ],
+          "q_cn": "鸟会做什么？",
+          "a_cn": [
+            "鸟会飞。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-can-birds-do-fe36fb.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-birds-can-fly-394fdc.mp3"
+          ],
+          "image": "images/k1-birds-fly.webp",
+          "opts": [
+            {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+            },
+            {
+              "key": "crow",
+              "text": "It's a crow.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-eagle-5898bc.mp3"
+    },
+    {
+      "word": "crow",
+      "cn": "乌鸦",
+      "tag": "word",
+      "image": "images/k1-animal-crow.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's a crow."
+          ],
+          "key": [
+            "crow"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是乌鸦。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nest",
+              "text": "It's a nest.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-nest-181566.mp3"
+            },
+            {
+              "key": "hippo",
+              "text": "It's a hippo.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-hippo-1ba264.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does a crow live?",
+          "a": [
+            "A crow lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "乌鸦住在哪里？",
+          "a_cn": [
+            "乌鸦住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-a-crow-live-414e97.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-a-crow-lives-in-the-nest-17fd49.mp3"
+          ],
+          "image": "images/k1-bird-crow-nest.webp",
+          "opts": [
+            {
+              "key": "bird",
+              "text": "A crow is a bird.",
+              "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
+            },
+            {
+              "key": "eagle",
+              "text": "It's an eagle.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What kind of animal is a crow?",
+          "a": [
+            "A crow is a bird."
+          ],
+          "key": [
+            "bird"
+          ],
+          "q_cn": "乌鸦属于哪一类动物？",
+          "a_cn": [
+            "乌鸦是鸟类。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-kind-of-animal-is-a-crow-24f326.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
+          ],
+          "image": "images/k1-crow-is-bird.webp",
+          "opts": [
+            {
+              "key": "nest",
+              "text": "An owl lives in the nest.",
+              "audio": "audio/sentences/k1-animal-birds/a-an-owl-lives-in-the-nest-23ea08.mp3"
+            },
+            {
+              "key": "nest",
+              "text": "This is a nest.",
+              "audio": "audio/sentences/k1-animal-birds/a-this-is-a-nest-0f98f0.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-crow-c9add6.mp3"
+    },
+    {
+      "word": "owl",
+      "cn": "猫头鹰",
+      "tag": "word",
+      "image": "images/k1-animal-owl.webp",
+      "dialog": [
+        {
+          "q": "What bird is it?",
+          "a": [
+            "It's an owl."
+          ],
+          "key": [
+            "owl"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是猫头鹰。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-what-bird-is-it-09673e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-it-s-an-owl-269be9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "eagle",
+              "text": "It's an eagle.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-eagle-0b4e25.mp3"
+            },
+            {
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-an-elephant-ed3297.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does an owl live?",
+          "a": [
+            "An owl lives in the nest."
+          ],
+          "key": [
+            "nest"
+          ],
+          "q_cn": "猫头鹰住在哪里？",
+          "a_cn": [
+            "猫头鹰住在鸟巢里。"
+          ],
+          "q_audio": "audio/sentences/k1-animal-birds/q-where-does-an-owl-live-89bdf0.mp3",
+          "a_audio": [
+            "audio/sentences/k1-animal-birds/a-an-owl-lives-in-the-nest-23ea08.mp3"
+          ],
+          "image": "images/k1-bird-owl-nest.webp",
+          "opts": [
+            {
+              "key": "bird",
+              "text": "A crow is a bird.",
+              "audio": "audio/sentences/k1-animal-birds/a-a-crow-is-a-bird-185b29.mp3"
+            },
+            {
+              "key": "crow",
+              "text": "It's a crow.",
+              "audio": "audio/sentences/k1-animal-birds/a-it-s-a-crow-fcd0b6.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-animal-birds/q-which-one-is-owl-f3c1de.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "animal": "audio/words/animal.mp3",
+    "because": "audio/words/because.mp3",
+    "bird": "audio/words/bird.mp3",
+    "birds": "audio/words/birds.mp3",
+    "can": "audio/words/can.mp3",
+    "crow": "audio/words/crow.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "eagle": "audio/words/eagle.mp3",
+    "elephant": "audio/words/elephant.mp3",
+    "fast": "audio/words/fast.mp3",
+    "flies": "audio/words/flies.mp3",
+    "fly": "audio/words/fly.mp3",
+    "hippo": "audio/words/hippo.mp3",
+    "hospital": "audio/words/hospital.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "kind": "audio/words/kind.mp3",
+    "like": "audio/words/like.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "mouth": "audio/words/mouth.mp3",
+    "nest": "audio/words/nest.mp3",
+    "of": "audio/words/of.mp3",
+    "owl": "audio/words/owl.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "why": "audio/words/why.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

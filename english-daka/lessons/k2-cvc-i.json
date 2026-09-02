@@ -1,7 +1,9 @@
 {
   "seq": 302,
+  "level": "K2",
   "group": "拼读 Phonics",
   "badge": "i",
+  "cover": "images/cvc-fit.webp",
   "title": "Short i · 短元音 i 拼读",
   "cards": [
     {
@@ -55,6 +57,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+          ],
+          "opts": [
+            {
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+            },
+            {
+              "key": "kid",
+              "text": "It's kid.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: f — it?",
+          "a": [
+            "/f/ /it/, fit."
+          ],
+          "key": [
+            "fit"
+          ],
+          "q_cn": "f 和 it 连起来怎么读？",
+          "a_cn": [
+            "/f/ /it/，fit。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-f-it-6da172.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
+            },
+            {
+              "key": "dig",
+              "text": "/d/ /ig/, dig.",
+              "audio": "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fit begin with?",
+          "a": [
+            "Fit begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fit 的开头是什么音？",
+          "a_cn": [
+            "fit 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-fit-begin-with-0a07f9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-f-aa38c7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Fit begins with the sound /s/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-s-ea98cb.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "Fit begins with the sound /ks/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-ks-f14fee.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fit begin with?",
+          "a": [
+            "Fit begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fit 以哪个字母开头？",
+          "a_cn": [
+            "fit 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-fit-begin-with-bc5dd6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-begins-with-letter-f-e44cd5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Fit begins with letter S.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-letter-s-7d3bac.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Fit begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-letter-g-e562a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fit have in the middle?",
+          "a": [
+            "Fit has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "fit 中间是什么音？",
+          "a_cn": [
+            "fit 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-fit-have-in-the-midd-6adb7e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-has-the-sound-i-in-the-middle-84f661.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Fit has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-the-sound-n-in-the-middle-0a103f.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Fit has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-the-sound-b-in-the-middle-191468.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fit have in the middle?",
+          "a": [
+            "Fit has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "fit 中间是哪个字母？",
+          "a_cn": [
+            "fit 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-fit-have-in-the-mi-18839a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-has-letter-i-in-the-middle-c698fd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Fit has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-b-in-the-middle-7497bc.mp3"
+            },
+            {
+              "key": "x",
+              "text": "Fit has letter X in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-x-in-the-middle-88b12a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fit end with?",
+          "a": [
+            "Fit ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "fit 的结尾是什么音？",
+          "a_cn": [
+            "fit 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-fit-end-with-91406a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-ends-with-the-sound-t-bd11fb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Fit ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-the-sound-k-9f36b1.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Fit ends with the sound /s/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-the-sound-s-7fe908.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fit end with?",
+          "a": [
+            "Fit ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "fit 以哪个字母结尾？",
+          "a_cn": [
+            "fit 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-fit-end-with-b12332.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-t-39ef1c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "x",
+              "text": "Fit ends with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-x-b7ce58.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fit ends with letter F.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-f-6789c6.mp3"
+            }
           ]
         }
       ],
@@ -112,6 +329,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+          ],
+          "opts": [
+            {
+              "key": "kid",
+              "text": "It's kid.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+            },
+            {
+              "key": "dig",
+              "text": "It's dig.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: b — ig?",
+          "a": [
+            "/b/ /ig/, big."
+          ],
+          "key": [
+            "big"
+          ],
+          "q_cn": "b 和 ig 连起来怎么读？",
+          "a_cn": [
+            "/b/ /ig/，big。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-b-ig-317c74.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dig",
+              "text": "/d/ /ig/, dig.",
+              "audio": "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
+            },
+            {
+              "key": "fit",
+              "text": "/f/ /it/, fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does big begin with?",
+          "a": [
+            "Big begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "big 的开头是什么音？",
+          "a_cn": [
+            "big 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-big-begin-with-03581e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-b-f1b369.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Big begins with the sound /s/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-s-9ba050.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "Big begins with the sound /ks/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-ks-0527c4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does big begin with?",
+          "a": [
+            "Big begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "big 以哪个字母开头？",
+          "a_cn": [
+            "big 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-big-begin-with-eb4075.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-begins-with-letter-b-576b95.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Big begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-letter-k-7c1488.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Big begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-letter-n-0224fa.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does big have in the middle?",
+          "a": [
+            "Big has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "big 中间是什么音？",
+          "a_cn": [
+            "big 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-big-have-in-the-midd-080dba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-has-the-sound-i-in-the-middle-02ad08.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Big has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-the-sound-f-in-the-middle-302075.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Big has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-the-sound-d-in-the-middle-b0bd80.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does big have in the middle?",
+          "a": [
+            "Big has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "big 中间是哪个字母？",
+          "a_cn": [
+            "big 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-big-have-in-the-mi-7bec08.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-has-letter-i-in-the-middle-a4cd1c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Big has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-d-in-the-middle-d22e28.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Big has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-b-in-the-middle-a3dcc4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does big end with?",
+          "a": [
+            "Big ends with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "big 的结尾是什么音？",
+          "a_cn": [
+            "big 结尾是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-big-end-with-c513be.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-g-1bb486.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Big ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-i-d46338.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Big ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-f-6430ad.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does big end with?",
+          "a": [
+            "Big ends with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "big 以哪个字母结尾？",
+          "a_cn": [
+            "big 以字母 G 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-big-end-with-e19f81.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-big-ends-with-letter-g-aff0b6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Big ends with letter S.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-s-d31617.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Big ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-d-19f4a2.mp3"
+            }
           ]
         }
       ],
@@ -169,6 +601,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fit",
+              "text": "It's fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+            },
+            {
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: b — in?",
+          "a": [
+            "/b/ /in/, bin."
+          ],
+          "key": [
+            "bin"
+          ],
+          "q_cn": "b 和 in 连起来怎么读？",
+          "a_cn": [
+            "/b/ /in/，bin。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-b-in-8b15d3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-b-in-bin-67f9d6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
+            },
+            {
+              "key": "dig",
+              "text": "/d/ /ig/, dig.",
+              "audio": "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bin begin with?",
+          "a": [
+            "Bin begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bin 的开头是什么音？",
+          "a_cn": [
+            "bin 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-bin-begin-with-4c5a47.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-b-d9ff96.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Bin begins with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-i-10970e.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Bin begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-f-9f0c3f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bin begin with?",
+          "a": [
+            "Bin begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bin 以哪个字母开头？",
+          "a_cn": [
+            "bin 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-bin-begin-with-319e0e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-b-d1501c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Bin begins with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-d-97c253.mp3"
+            },
+            {
+              "key": "x",
+              "text": "Bin begins with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-x-f08f95.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bin have in the middle?",
+          "a": [
+            "Bin has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "bin 中间是什么音？",
+          "a_cn": [
+            "bin 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-bin-have-in-the-midd-ffe78f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-has-the-sound-i-in-the-middle-c65838.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Bin has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-the-sound-s-in-the-middle-d6c112.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "Bin has the sound /ks/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-the-sound-ks-in-the-middle-796fa6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bin have in the middle?",
+          "a": [
+            "Bin has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "bin 中间是哪个字母？",
+          "a_cn": [
+            "bin 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-bin-have-in-the-mi-420490.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-has-letter-i-in-the-middle-4f3bfb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Bin has letter K in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-letter-k-in-the-middle-169421.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Bin has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-letter-n-in-the-middle-d38711.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bin end with?",
+          "a": [
+            "Bin ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "bin 的结尾是什么音？",
+          "a_cn": [
+            "bin 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-bin-end-with-2b3f27.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-n-8b89ce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Bin ends with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-b-bdbfcf.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Bin ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-i-7a4af9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bin end with?",
+          "a": [
+            "Bin ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "bin 以哪个字母结尾？",
+          "a_cn": [
+            "bin 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-bin-end-with-b8ed4d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-n-fc9d2f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Bin ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-g-3772a9.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bin ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-d-e86d78.mp3"
+            }
           ]
         }
       ],
@@ -226,6 +873,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+          ],
+          "opts": [
+            {
+              "key": "six",
+              "text": "It's six.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+            },
+            {
+              "key": "bin",
+              "text": "It's bin.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: d — ig?",
+          "a": [
+            "/d/ /ig/, dig."
+          ],
+          "key": [
+            "dig"
+          ],
+          "q_cn": "d 和 ig 连起来怎么读？",
+          "a_cn": [
+            "/d/ /ig/，dig。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-d-ig-371fb6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
+            },
+            {
+              "key": "fit",
+              "text": "/f/ /it/, fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dig begin with?",
+          "a": [
+            "Dig begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dig 的开头是什么音？",
+          "a_cn": [
+            "dig 开头是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-dig-begin-with-c3b72e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-d-07faa1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Dig begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-f-b0948c.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Dig begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-k-61b911.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dig begin with?",
+          "a": [
+            "Dig begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dig 以哪个字母开头？",
+          "a_cn": [
+            "dig 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-dig-begin-with-8673d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-d-6d879a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Dig begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-b-f21d4d.mp3"
+            },
+            {
+              "key": "x",
+              "text": "Dig begins with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-x-873ad6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dig have in the middle?",
+          "a": [
+            "Dig has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "dig 中间是什么音？",
+          "a_cn": [
+            "dig 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-dig-have-in-the-midd-cf56bf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-has-the-sound-i-in-the-middle-d509e2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Dig has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-g-in-the-middle-0bb7a3.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Dig has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-t-in-the-middle-2c6bb9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dig have in the middle?",
+          "a": [
+            "Dig has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "dig 中间是哪个字母？",
+          "a_cn": [
+            "dig 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-dig-have-in-the-mi-1fe675.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-has-letter-i-in-the-middle-3405e8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dig has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-d-in-the-middle-ae319f.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dig has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-b-in-the-middle-65c47d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dig end with?",
+          "a": [
+            "Dig ends with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "dig 的结尾是什么音？",
+          "a_cn": [
+            "dig 结尾是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-dig-end-with-fdbe37.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-g-662a42.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Dig ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-i-d039b1.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Dig ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-f-2857ce.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dig end with?",
+          "a": [
+            "Dig ends with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "dig 以哪个字母结尾？",
+          "a_cn": [
+            "dig 以字母 G 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-dig-end-with-6b03b3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-g-3d098e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Dig ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-d-c852ab.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dig ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-b-e2feb7.mp3"
+            }
           ]
         }
       ],
@@ -283,6 +1145,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fit",
+              "text": "It's fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+            },
+            {
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: s — ix?",
+          "a": [
+            "/s/ /ix/, six."
+          ],
+          "key": [
+            "six"
+          ],
+          "q_cn": "s 和 ix 连起来怎么读？",
+          "a_cn": [
+            "/s/ /ix/，six。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-s-ix-e02afd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "/s/ /ix/, three.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-three-e136d9.mp3"
+            },
+            {
+              "key": "twelve",
+              "text": "/s/ /ix/, twelve.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-twelve-cec98d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does six begin with?",
+          "a": [
+            "Six begins with the sound /s/."
+          ],
+          "key": [
+            "/s/"
+          ],
+          "q_cn": "six 的开头是什么音？",
+          "a_cn": [
+            "six 开头是 /s/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-six-begin-with-af1d90.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-s-65627c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Six begins with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-i-19edb0.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Six begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-f-e5d72e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does six begin with?",
+          "a": [
+            "Six begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "six 以哪个字母开头？",
+          "a_cn": [
+            "six 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-six-begin-with-4af725.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-begins-with-letter-s-463881.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Six begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-k-4f5882.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Six begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-n-372a28.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does six have in the middle?",
+          "a": [
+            "Six has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "six 中间是什么音？",
+          "a_cn": [
+            "six 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-six-have-in-the-midd-5d8035.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-has-the-sound-i-in-the-middle-5b5c52.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Six has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-d-in-the-middle-887635.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Six has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-k-in-the-middle-9ea441.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does six have in the middle?",
+          "a": [
+            "Six has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "six 中间是哪个字母？",
+          "a_cn": [
+            "six 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-six-have-in-the-mi-c5b3d1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-has-letter-i-in-the-middle-099ca7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Six has letter K in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-k-in-the-middle-7b577c.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Six has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-n-in-the-middle-e36cee.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does six end with?",
+          "a": [
+            "Six ends with the sound /ks/."
+          ],
+          "key": [
+            "/ks/"
+          ],
+          "q_cn": "six 的结尾是什么音？",
+          "a_cn": [
+            "six 结尾是 /ks/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-six-end-with-780810.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-ks-0f878e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Six ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-i-6f401f.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Six ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-f-d898e5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does six end with?",
+          "a": [
+            "Six ends with letter X."
+          ],
+          "key": [
+            "x"
+          ],
+          "q_cn": "six 以哪个字母结尾？",
+          "a_cn": [
+            "six 以字母 X 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-six-end-with-308471.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-six-ends-with-letter-x-bf9021.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Six ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-d-c4b07b.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Six ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-b-a92c30.mp3"
+            }
           ]
         }
       ],
@@ -340,6 +1417,221 @@
           "q_audio": "audio/sentences/k2-cvc-i/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "six",
+              "text": "It's six.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+            },
+            {
+              "key": "bin",
+              "text": "It's bin.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: k — id?",
+          "a": [
+            "/k/ /id/, kid."
+          ],
+          "key": [
+            "kid"
+          ],
+          "q_cn": "k 和 id 连起来怎么读？",
+          "a_cn": [
+            "/k/ /id/，kid。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-how-do-you-read-k-id-d959c0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-k-id-kid-595b77.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bin",
+              "text": "/b/ /in/, bin.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-in-bin-67f9d6.mp3"
+            },
+            {
+              "key": "six",
+              "text": "/s/ /ix/, six.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kid begin with?",
+          "a": [
+            "Kid begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "kid 的开头是什么音？",
+          "a_cn": [
+            "kid 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-kid-begin-with-ca8d29.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-k-c57338.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Kid begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-t-6ba417.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Kid begins with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-n-5f0374.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does kid begin with?",
+          "a": [
+            "Kid begins with letter K."
+          ],
+          "key": [
+            "k"
+          ],
+          "q_cn": "kid 以哪个字母开头？",
+          "a_cn": [
+            "kid 以字母 K 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-kid-begin-with-a151e1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-k-d992ac.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Kid begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-n-e036b4.mp3"
+            },
+            {
+              "key": "i",
+              "text": "Kid begins with letter I.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-i-aacbec.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kid have in the middle?",
+          "a": [
+            "Kid has the sound /i/ in the middle."
+          ],
+          "key": [
+            "/i/"
+          ],
+          "q_cn": "kid 中间是什么音？",
+          "a_cn": [
+            "kid 中间是 /ɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-kid-have-in-the-midd-b9c9db.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-has-the-sound-i-in-the-middle-600db1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Kid has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-the-sound-f-in-the-middle-26fe4f.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Kid has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-the-sound-d-in-the-middle-9fe00f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does kid have in the middle?",
+          "a": [
+            "Kid has letter I in the middle."
+          ],
+          "key": [
+            "i"
+          ],
+          "q_cn": "kid 中间是哪个字母？",
+          "a_cn": [
+            "kid 中间是字母 I。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-kid-have-in-the-mi-66adfa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-has-letter-i-in-the-middle-15c94a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Kid has letter S in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-s-in-the-middle-804bc7.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Kid has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-g-in-the-middle-b6bb05.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kid end with?",
+          "a": [
+            "Kid ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "kid 的结尾是什么音？",
+          "a_cn": [
+            "kid 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-what-sound-does-kid-end-with-a785e0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-d-196be9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Kid ends with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-t-af61fe.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Kid ends with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-n-701116.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does kid end with?",
+          "a": [
+            "Kid ends with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "kid 以哪个字母结尾？",
+          "a_cn": [
+            "kid 以字母 D 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-i/q-which-letter-does-kid-end-with-76a232.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-d-76de6b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Kid ends with letter K.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-k-1353f8.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Kid ends with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-n-11e845.mp3"
+            }
           ]
         }
       ],
@@ -348,17 +1640,52 @@
     }
   ],
   "word_audio": {
+    "b": "audio/words/b.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
     "big": "audio/words/big.mp3",
     "bin": "audio/words/bin.mp3",
+    "d": "audio/words/d.mp3",
     "dig": "audio/words/dig.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "f": "audio/words/f.mp3",
     "fit": "audio/words/fit.mp3",
+    "g": "audio/words/g.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
+    "ig": "audio/words/ig.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
+    "ix": "audio/words/ix.mp3",
+    "k": "audio/words/k.mp3",
     "kid": "audio/words/kid.mp3",
+    "ks": "audio/words/ks.mp3",
+    "letter": "audio/words/letter.mp3",
+    "middle": "audio/words/middle.mp3",
+    "n": "audio/words/n.mp3",
+    "read": "audio/words/read.mp3",
+    "s": "audio/words/s.mp3",
     "six": "audio/words/six.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "three": "audio/words/three.mp3",
+    "twelve": "audio/words/twelve.mp3",
     "what": "audio/words/what.mp3",
-    "word": "audio/words/word.mp3"
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "x": "audio/words/x.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

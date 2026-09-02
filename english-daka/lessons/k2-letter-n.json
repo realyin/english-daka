@@ -1,7 +1,9 @@
 {
   "seq": 105,
+  "level": "K2",
   "group": "字母 Letters",
   "badge": "N",
+  "cover": "images/n-letter.webp",
   "title": "Letter N · /n/",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-s-this-letter-ab944e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-it-s-letter-n-ba8f15.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "It's letter M.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-letter-m-66d20a.mp3"
+            },
+            {
+              "key": "j",
+              "text": "It's letter J.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-letter-j-51bfeb.mp3"
+            }
           ]
         },
         {
@@ -42,6 +56,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-letter-n-make-63bb05.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-n-makes-the-sound-n-8c5eeb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/h/",
+              "text": "N makes the sound /h/.",
+              "audio": "audio/sentences/k2-letter-n/a-n-makes-the-sound-h-631eee.mp3"
+            },
+            {
+              "key": "/oh/",
+              "text": "N makes the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-n/a-n-makes-the-sound-oh-5317d6.mp3"
+            }
           ]
         }
       ],
@@ -68,6 +94,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-it-s-a-nail-e62d6b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "notebook",
+              "text": "It's a notebook.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-notebook-69977f.mp3"
+            },
+            {
+              "key": "nest",
+              "text": "It's a nest.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-nest-181566.mp3"
+            }
           ]
         },
         {
@@ -85,6 +123,47 @@
           "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-nail-begin-with-441465.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-nail-begins-with-letter-n-67ecb3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Nail begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-letter-s-d95700.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Nail begins with letter O.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-letter-o-866970.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does nail begin with?",
+          "a": [
+            "Nail begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "nail 的开头是什么音？",
+          "a_cn": [
+            "nail 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-nail-begin-with-616e9c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nail-begins-with-the-sound-n-c9f041.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ay/",
+              "text": "Nail begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-the-sound-ay-1c2d0a.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Nail begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-the-sound-l-6ef4b7.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +190,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-it-s-a-notebook-69977f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nest",
+              "text": "It's a nest.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-nest-181566.mp3"
+            },
+            {
+              "key": "nail",
+              "text": "It's a nail.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-nail-e62d6b.mp3"
+            }
           ]
         },
         {
@@ -128,6 +219,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-notebook-begin-with-c7271e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-notebook-begins-with-the-sound-n-ed6d0a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/o/",
+              "text": "Notebook begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-n/a-notebook-begins-with-the-sound-o-c9f789.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Notebook begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-n/a-notebook-begins-with-the-sound-g-43121d.mp3"
+            }
           ]
         },
         {
@@ -145,6 +248,19 @@
           "q_audio": "audio/sentences/k2-letter-n/q-is-this-a-new-notebook-0205f7.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-yes-it-s-a-new-notebook-ad65c1.mp3"
+          ],
+          "image": "images/k2-n-new-notebook.webp",
+          "opts": [
+            {
+              "key": "n",
+              "text": "Fan ends with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-fan-ends-with-letter-n-1f2ff1.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Need begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-need-begins-with-letter-n-9bc1c0.mp3"
+            }
           ]
         },
         {
@@ -162,6 +278,48 @@
           "q_audio": "audio/sentences/k2-letter-n/q-is-this-a-nice-notebook-0a68ef.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-yes-it-s-a-nice-notebook-c463ba.mp3"
+          ],
+          "image": "images/k2-n-nice-notebook.webp",
+          "opts": [
+            {
+              "key": "n",
+              "text": "Nail begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-letter-n-67ecb3.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Nest begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-letter-n-b144ad.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does notebook begin with?",
+          "a": [
+            "Notebook begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "notebook 以哪个字母开头？",
+          "a_cn": [
+            "notebook 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-notebook-begin-wit-d39b43.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-notebook-begins-with-letter-n-f9ed73.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Notebook begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-notebook-begins-with-letter-s-516760.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Notebook begins with letter B.",
+              "audio": "audio/sentences/k2-letter-n/a-notebook-begins-with-letter-b-f698eb.mp3"
+            }
           ]
         }
       ],
@@ -188,6 +346,76 @@
           "q_audio": "audio/sentences/k2-letter-n/q-can-you-touch-your-nose-599556.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-can-touch-my-nose-0a7005.mp3"
+          ],
+          "opts": [
+            {
+              "key": "new",
+              "text": "Yes, it's a new notebook.",
+              "audio": "audio/sentences/k2-letter-n/a-yes-it-s-a-new-notebook-ad65c1.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Nose begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-nose-begins-with-letter-n-6a848e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does nose begin with?",
+          "a": [
+            "Nose begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "nose 的开头是什么音？",
+          "a_cn": [
+            "nose 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-nose-begin-with-1b29a5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nose-begins-with-the-sound-n-82e674.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/h/",
+              "text": "Nose begins with the sound /h/.",
+              "audio": "audio/sentences/k2-letter-n/a-nose-begins-with-the-sound-h-93b208.mp3"
+            },
+            {
+              "key": "/oh/",
+              "text": "Nose begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-n/a-nose-begins-with-the-sound-oh-93164a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does nose begin with?",
+          "a": [
+            "Nose begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "nose 以哪个字母开头？",
+          "a_cn": [
+            "nose 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-nose-begin-with-cb6e8a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nose-begins-with-letter-n-6a848e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Nose begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-nose-begins-with-letter-s-d4ac27.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Nose begins with letter O.",
+              "audio": "audio/sentences/k2-letter-n/a-nose-begins-with-letter-o-07ec0f.mp3"
+            }
           ]
         }
       ],
@@ -214,6 +442,47 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-can-you-do-with-your-nose-d27a20.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-can-smell-with-my-nose-138300.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sick",
+              "text": "Nurses can care for sick people.",
+              "audio": "audio/sentences/k2-letter-n/a-nurses-can-care-for-sick-people-526fe4.mp3"
+            },
+            {
+              "key": "clothes",
+              "text": "I need to wear some clothes.",
+              "audio": "audio/sentences/k2-letter-n/a-i-need-to-wear-some-clothes-c68477.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does smell begin with?",
+          "a": [
+            "Smell begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "smell 以哪个字母开头？",
+          "a_cn": [
+            "smell 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-smell-begin-with-3bb428.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-smell-begins-with-letter-s-df0c11.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Smell begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-smell-begins-with-letter-n-7a8eda.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Smell begins with letter O.",
+              "audio": "audio/sentences/k2-letter-n/a-smell-begins-with-letter-o-7a68a6.mp3"
+            }
           ]
         }
       ],
@@ -240,6 +509,76 @@
           "q_audio": "audio/sentences/k2-letter-n/q-can-you-touch-your-neck-3dbfe6.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-can-touch-my-neck-a3a681.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nose",
+              "text": "I can touch my nose.",
+              "audio": "audio/sentences/k2-letter-n/a-i-can-touch-my-nose-0a7005.mp3"
+            },
+            {
+              "key": "new",
+              "text": "Yes, it's a new notebook.",
+              "audio": "audio/sentences/k2-letter-n/a-yes-it-s-a-new-notebook-ad65c1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does neck begin with?",
+          "a": [
+            "Neck begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "neck 的开头是什么音？",
+          "a_cn": [
+            "neck 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-neck-begin-with-003e86.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-neck-begins-with-the-sound-n-ecf320.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/e/",
+              "text": "Neck begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-n/a-neck-begins-with-the-sound-e-c728a5.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Neck begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-n/a-neck-begins-with-the-sound-d-bdda7f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does neck begin with?",
+          "a": [
+            "Neck begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "neck 以哪个字母开头？",
+          "a_cn": [
+            "neck 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-neck-begin-with-b54e34.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-neck-begins-with-letter-n-4f2565.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Neck begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-neck-begins-with-letter-s-451159.mp3"
+            },
+            {
+              "key": "q",
+              "text": "Neck begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-n/a-neck-begins-with-letter-q-ef11ac.mp3"
+            }
           ]
         }
       ],
@@ -266,6 +605,76 @@
           "q_audio": "audio/sentences/k2-letter-n/q-can-you-nod-your-head-12582a.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-can-nod-my-head-7bcc85.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Nail begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-nail-begins-with-letter-n-67ecb3.mp3"
+            },
+            {
+              "key": "n",
+              "text": "Nest begins with letter N.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-letter-n-b144ad.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does nod begin with?",
+          "a": [
+            "Nod begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "nod 的开头是什么音？",
+          "a_cn": [
+            "nod 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-nod-begin-with-71b99b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nod-begins-with-the-sound-n-0347a3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Nod begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-n/a-nod-begins-with-the-sound-b-1a13d6.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Nod begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-n/a-nod-begins-with-the-sound-r-d48677.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does nod begin with?",
+          "a": [
+            "Nod begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "nod 以哪个字母开头？",
+          "a_cn": [
+            "nod 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-nod-begin-with-188d62.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nod-begins-with-letter-n-e35dd3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Nod begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-nod-begins-with-letter-s-7a2663.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Nod begins with letter B.",
+              "audio": "audio/sentences/k2-letter-n/a-nod-begins-with-letter-b-ad45e4.mp3"
+            }
           ]
         }
       ],
@@ -294,7 +703,77 @@
           "a_audio": [
             "audio/sentences/k2-letter-n/a-yes-i-can-spell-number-one-o-n-e-one-acef43.mp3"
           ],
-          "image": "images/n-need-spell-one.webp"
+          "image": "images/n-need-spell-one.webp",
+          "opts": [
+            {
+              "key": "eagle",
+              "text": "The eagle lives in the nest.",
+              "audio": "audio/sentences/k2-letter-n/a-the-eagle-lives-in-the-nest-6f077f.mp3"
+            },
+            {
+              "key": "smell",
+              "text": "I can smell with my nose.",
+              "audio": "audio/sentences/k2-letter-n/a-i-can-smell-with-my-nose-138300.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does need begin with?",
+          "a": [
+            "Need begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "need 的开头是什么音？",
+          "a_cn": [
+            "need 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-need-begin-with-044756.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-need-begins-with-the-sound-n-735c47.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Need begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-n/a-need-begins-with-the-sound-i-f78ccf.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Need begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-n/a-need-begins-with-the-sound-f-4f12a4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does need begin with?",
+          "a": [
+            "Need begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "need 以哪个字母开头？",
+          "a_cn": [
+            "need 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-need-begin-with-363d08.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-need-begins-with-letter-n-9bc1c0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Need begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-need-begins-with-letter-s-d77ac1.mp3"
+            },
+            {
+              "key": "q",
+              "text": "Need begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-n/a-need-begins-with-letter-q-fff042.mp3"
+            }
+          ]
         }
       ],
       "quiz": false,
@@ -321,6 +800,76 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-do-you-need-when-you-feel-hot-b1023b.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-need-a-fan-c7d290.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nurse",
+              "text": "This is a nurse.",
+              "audio": "audio/sentences/k2-letter-n/a-this-is-a-nurse-939568.mp3"
+            },
+            {
+              "key": "umbrella",
+              "text": "I need an umbrella.",
+              "audio": "audio/sentences/k2-letter-n/a-i-need-an-umbrella-e685b4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan end with?",
+          "a": [
+            "Fan ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "fan 的结尾是什么音？",
+          "a_cn": [
+            "fan 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-fan-end-with-3f68ba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-fan-ends-with-the-sound-n-014cef.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Fan ends with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-n/a-fan-ends-with-the-sound-j-655880.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Fan ends with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-n/a-fan-ends-with-the-sound-a-878d62.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan end with?",
+          "a": [
+            "Fan ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "fan 以哪个字母结尾？",
+          "a_cn": [
+            "fan 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-fan-end-with-593a60.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-fan-ends-with-letter-n-1f2ff1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Fan ends with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-fan-ends-with-letter-s-7e2636.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Fan ends with letter M.",
+              "audio": "audio/sentences/k2-letter-n/a-fan-ends-with-letter-m-e7106d.mp3"
+            }
           ]
         }
       ],
@@ -347,6 +896,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-do-you-need-on-rainy-days-34d46f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-need-an-umbrella-e685b4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fan",
+              "text": "I need a fan.",
+              "audio": "audio/sentences/k2-letter-n/a-i-need-a-fan-c7d290.mp3"
+            },
+            {
+              "key": "nurse",
+              "text": "This is a nurse.",
+              "audio": "audio/sentences/k2-letter-n/a-this-is-a-nurse-939568.mp3"
+            }
           ]
         }
       ],
@@ -373,6 +934,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-do-you-need-when-you-feel-cold-df74fb.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-i-need-to-wear-some-clothes-c68477.mp3"
+          ],
+          "opts": [
+            {
+              "key": "smell",
+              "text": "I can smell with my nose.",
+              "audio": "audio/sentences/k2-letter-n/a-i-can-smell-with-my-nose-138300.mp3"
+            },
+            {
+              "key": "sick",
+              "text": "Nurses can care for sick people.",
+              "audio": "audio/sentences/k2-letter-n/a-nurses-can-care-for-sick-people-526fe4.mp3"
+            }
           ]
         }
       ],
@@ -399,6 +972,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-s-this-job-078604.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-this-is-a-nurse-939568.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nest",
+              "text": "This is a nest.",
+              "audio": "audio/sentences/k2-letter-n/a-this-is-a-nest-0f98f0.mp3"
+            },
+            {
+              "key": "nose",
+              "text": "This is a nose.",
+              "audio": "audio/sentences/k2-letter-n/a-this-is-a-nose-db83ee.mp3"
+            }
           ]
         },
         {
@@ -417,7 +1002,77 @@
           "a_audio": [
             "audio/sentences/k2-letter-n/a-nurses-can-care-for-sick-people-526fe4.mp3"
           ],
-          "image": "images/n-nurse-sick.webp"
+          "image": "images/n-nurse-sick.webp",
+          "opts": [
+            {
+              "key": "eagle",
+              "text": "The eagle lives in the nest.",
+              "audio": "audio/sentences/k2-letter-n/a-the-eagle-lives-in-the-nest-6f077f.mp3"
+            },
+            {
+              "key": "smell",
+              "text": "I can smell with my nose.",
+              "audio": "audio/sentences/k2-letter-n/a-i-can-smell-with-my-nose-138300.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does nurse begin with?",
+          "a": [
+            "Nurse begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "nurse 的开头是什么音？",
+          "a_cn": [
+            "nurse 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-nurse-begin-with-3d77d5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nurse-begins-with-the-sound-n-e1e558.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Nurse begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-n/a-nurse-begins-with-the-sound-v-a3548a.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Nurse begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-n/a-nurse-begins-with-the-sound-t-885503.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does nurse begin with?",
+          "a": [
+            "Nurse begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "nurse 以哪个字母开头？",
+          "a_cn": [
+            "nurse 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-nurse-begin-with-63b31f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nurse-begins-with-letter-n-cf7b13.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Nurse begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-nurse-begins-with-letter-s-49cfb3.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Nurse begins with letter O.",
+              "audio": "audio/sentences/k2-letter-n/a-nurse-begins-with-letter-o-c29a4e.mp3"
+            }
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-letter-n/q-which-one-is-nurse-3c0d1c.mp3"
@@ -443,6 +1098,18 @@
           "q_audio": "audio/sentences/k2-letter-n/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-n/a-it-s-a-nest-181566.mp3"
+          ],
+          "opts": [
+            {
+              "key": "notebook",
+              "text": "It's a notebook.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-notebook-69977f.mp3"
+            },
+            {
+              "key": "nail",
+              "text": "It's a nail.",
+              "audio": "audio/sentences/k2-letter-n/a-it-s-a-nail-e62d6b.mp3"
+            }
           ]
         },
         {
@@ -461,7 +1128,77 @@
           "a_audio": [
             "audio/sentences/k2-letter-n/a-the-eagle-lives-in-the-nest-6f077f.mp3"
           ],
-          "image": "images/n-nest-eagle.webp"
+          "image": "images/n-nest-eagle.webp",
+          "opts": [
+            {
+              "key": "sick",
+              "text": "Nurses can care for sick people.",
+              "audio": "audio/sentences/k2-letter-n/a-nurses-can-care-for-sick-people-526fe4.mp3"
+            },
+            {
+              "key": "clothes",
+              "text": "I need to wear some clothes.",
+              "audio": "audio/sentences/k2-letter-n/a-i-need-to-wear-some-clothes-c68477.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does nest begin with?",
+          "a": [
+            "Nest begins with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "nest 的开头是什么音？",
+          "a_cn": [
+            "nest 开头是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-what-sound-does-nest-begin-with-15132c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nest-begins-with-the-sound-n-f32ab0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Nest begins with the sound /m/.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-the-sound-m-7312ac.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Nest begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-the-sound-p-d53373.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does nest begin with?",
+          "a": [
+            "Nest begins with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "nest 以哪个字母开头？",
+          "a_cn": [
+            "nest 以字母 N 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-n/q-which-letter-does-nest-begin-with-71ecab.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-n/a-nest-begins-with-letter-n-b144ad.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Nest begins with letter S.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-letter-s-03028b.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Nest begins with letter M.",
+              "audio": "audio/sentences/k2-letter-n/a-nest-begins-with-letter-m-178eb0.mp3"
+            }
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-letter-n/q-which-one-is-nest-865162.mp3"
@@ -481,30 +1218,41 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "an": "audio/words/an.mp3",
+    "ay": "audio/words/ay.mp3",
+    "b": "audio/words/b.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "can": "audio/words/can.mp3",
     "care": "audio/words/care.mp3",
     "clothes": "audio/words/clothes.mp3",
     "cold": "audio/words/cold.mp3",
+    "d": "audio/words/d.mp3",
     "days": "audio/words/days.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "e": "audio/words/e.mp3",
     "eagle": "audio/words/eagle.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "f": "audio/words/f.mp3",
     "fan": "audio/words/fan.mp3",
     "feel": "audio/words/feel.mp3",
     "for": "audio/words/for.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
     "head": "audio/words/head.mp3",
     "hot": "audio/words/hot.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "j": "audio/words/j.mp3",
     "job": "audio/words/job.mp3",
+    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter n": "audio/words/letter-n.mp3",
     "lives": "audio/words/lives.mp3",
+    "m": "audio/words/m.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
     "my": "audio/words/my.mp3",
@@ -522,20 +1270,27 @@
     "nurse": "audio/words/nurse.mp3",
     "nurses": "audio/words/nurses.mp3",
     "o": "audio/words/o.mp3",
+    "oh": "audio/words/oh.mp3",
     "on": "audio/words/on.mp3",
     "one": "audio/words/one.mp3",
+    "p": "audio/words/p.mp3",
     "people": "audio/words/people.mp3",
+    "q": "audio/words/q.mp3",
+    "r": "audio/words/r.mp3",
     "rainy": "audio/words/rainy.mp3",
+    "s": "audio/words/s.mp3",
     "sick": "audio/words/sick.mp3",
     "smell": "audio/words/smell.mp3",
     "some": "audio/words/some.mp3",
     "sound": "audio/words/sound.mp3",
     "spell": "audio/words/spell.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "to": "audio/words/to.mp3",
     "touch": "audio/words/touch.mp3",
     "umbrella": "audio/words/umbrella.mp3",
+    "v": "audio/words/v.mp3",
     "wear": "audio/words/wear.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",

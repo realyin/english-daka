@@ -1,7 +1,9 @@
 {
   "seq": 107,
+  "level": "K2",
   "group": "字母 Letters",
   "badge": "F",
+  "cover": "images/f-letter.webp",
   "title": "Letter F · /f/",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-letter-ab944e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-letter-f-5461e9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "It's letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-t-f0e81f.mp3"
+            },
+            {
+              "key": "i",
+              "text": "It's letter I.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-i-d4a773.mp3"
+            }
           ]
         },
         {
@@ -42,6 +56,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-letter-f-make-01ab25.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-f-makes-the-sound-f-751fd5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "F makes the sound /s/.",
+              "audio": "audio/sentences/k2-letter-f/a-f-makes-the-sound-s-d0fb56.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "F makes the sound /ks/.",
+              "audio": "audio/sentences/k2-letter-f/a-f-makes-the-sound-ks-b7138f.mp3"
+            }
           ]
         }
       ],
@@ -68,6 +94,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-fairy-95f59a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
           ]
         },
         {
@@ -85,6 +123,47 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-fairy-begin-with-ca3728.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-f-f146eb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Fairy begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-oh-6726f6.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Fairy begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-the-sound-u-af6b42.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fairy begin with?",
+          "a": [
+            "Fairy begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fairy 以哪个字母开头？",
+          "a_cn": [
+            "fairy 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-fairy-begin-with-16acf0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-f-8b82b2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Fairy begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-t-9bb48d.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Fairy begins with letter O.",
+              "audio": "audio/sentences/k2-letter-f/a-fairy-begins-with-letter-o-0be3f5.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +190,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-animal-ac42e5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "farm",
+              "text": "It's a farm.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
+            },
+            {
+              "key": "face",
+              "text": "It's a face.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-face-3cab91.mp3"
+            }
           ]
         },
         {
@@ -129,7 +220,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-the-fox-is-in-the-forest-9e751a.mp3"
           ],
-          "image": "images/f-fox-forest.webp"
+          "image": "images/f-fox-forest.webp",
+          "opts": [
+            {
+              "key": "f",
+              "text": "Fun begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-f-d52ba3.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Forest begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-f-16b02f.mp3"
+            }
+          ]
         },
         {
           "q": "Can you spell fox?",
@@ -146,6 +249,76 @@
           "q_audio": "audio/sentences/k2-letter-f/q-can-you-spell-fox-896714.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fun",
+              "text": "I can spell it. F, U, N, fun.",
+              "audio": "audio/sentences/k2-letter-f/a-i-can-spell-it-f-u-n-fun-70d8ab.mp3"
+            },
+            {
+              "key": "forest",
+              "text": "The fox is in the forest.",
+              "audio": "audio/sentences/k2-letter-f/a-the-fox-is-in-the-forest-9e751a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fox begin with?",
+          "a": [
+            "Fox begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fox 的开头是什么音？",
+          "a_cn": [
+            "fox 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-fox-begin-with-0bad15.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-f-6ecb6d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/e/",
+              "text": "Fox begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-e-a380ac.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Fox begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-the-sound-d-49e849.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fox begin with?",
+          "a": [
+            "Fox begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fox 以哪个字母开头？",
+          "a_cn": [
+            "fox 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-fox-begin-with-064959.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fox-begins-with-letter-f-7fad2b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Fox begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-t-cd257e.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Fox begins with letter M.",
+              "audio": "audio/sentences/k2-letter-f/a-fox-begins-with-letter-m-82ed85.mp3"
+            }
           ]
         }
       ],
@@ -172,6 +345,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-is-english-fun-163c74.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-yes-english-is-fun-90232e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ten",
+              "text": "I have ten fingers.",
+              "audio": "audio/sentences/k2-letter-f/a-i-have-ten-fingers-1501e2.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fun begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-f-d52ba3.mp3"
+            }
           ]
         },
         {
@@ -189,6 +374,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-fun-begin-with-080ed9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-f-53ba9c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Fun begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-b-cce143.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Fun begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-the-sound-r-c7de3f.mp3"
+            }
           ]
         },
         {
@@ -206,6 +403,47 @@
           "q_audio": "audio/sentences/k2-letter-f/q-can-you-spell-fun-3f92d0.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-i-can-spell-it-f-u-n-fun-70d8ab.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "I can spell it. F, O, X, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-i-can-spell-it-f-o-x-fox-c6f03c.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "I can see a fox in the forest.",
+              "audio": "audio/sentences/k2-letter-f/a-i-can-see-a-fox-in-the-forest-56a928.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fun begin with?",
+          "a": [
+            "Fun begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fun 以哪个字母开头？",
+          "a_cn": [
+            "fun 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-fun-begin-with-2f37c0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fun-begins-with-letter-f-d52ba3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Fun begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-t-57a88f.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Fun begins with letter E.",
+              "audio": "audio/sentences/k2-letter-f/a-fun-begins-with-letter-e-edc588.mp3"
+            }
           ]
         }
       ],
@@ -233,6 +471,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-place-a3f797.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-forest-a674d8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
           ]
         },
         {
@@ -251,7 +501,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-i-can-see-a-fox-in-the-forest-56a928.mp3"
           ],
-          "image": "images/f-fox.webp"
+          "image": "images/f-fox.webp",
+          "opts": [
+            {
+              "key": "fun",
+              "text": "I can spell it. F, U, N, fun.",
+              "audio": "audio/sentences/k2-letter-f/a-i-can-spell-it-f-u-n-fun-70d8ab.mp3"
+            },
+            {
+              "key": "forest",
+              "text": "The fox is in the forest.",
+              "audio": "audio/sentences/k2-letter-f/a-the-fox-is-in-the-forest-9e751a.mp3"
+            }
+          ]
         },
         {
           "q": "Which letter does forest begin with?",
@@ -268,6 +530,47 @@
           "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-forest-begin-with-5e034d.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-forest-begins-with-letter-f-16b02f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Forest begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-t-efb3b4.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Forest begins with letter H.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-letter-h-767227.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does forest begin with?",
+          "a": [
+            "Forest begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "forest 的开头是什么音？",
+          "a_cn": [
+            "forest 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-forest-begin-with-b3b94d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-f-2a6efc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Forest begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-a-e4bea6.mp3"
+            },
+            {
+              "key": "/yoo/",
+              "text": "Forest begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-f/a-forest-begins-with-the-sound-yoo-6f416e.mp3"
+            }
           ]
         }
       ],
@@ -297,6 +600,76 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-face-3cab91.mp3",
             "audio/sentences/k2-letter-f/a-this-is-my-face-353589.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does face begin with?",
+          "a": [
+            "Face begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "face 的开头是什么音？",
+          "a_cn": [
+            "face 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-face-begin-with-41bd11.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-f-5fb0d0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Face begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-v-dfe3ec.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Face begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-the-sound-t-b1523a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does face begin with?",
+          "a": [
+            "Face begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "face 以哪个字母开头？",
+          "a_cn": [
+            "face 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-face-begin-with-09664c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-face-begins-with-letter-f-f1467b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Face begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-letter-t-a5ac62.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Face begins with letter O.",
+              "audio": "audio/sentences/k2-letter-f/a-face-begins-with-letter-o-f5c081.mp3"
+            }
           ]
         }
       ],
@@ -326,6 +699,76 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-they-re-feet-009684.mp3",
             "audio/sentences/k2-letter-f/a-i-have-two-feet-eb0fdf.mp3"
+          ],
+          "opts": [
+            {
+              "key": "mittens",
+              "text": "They're mittens.",
+              "audio": "audio/sentences/k2-letter-f/a-they-re-mittens-f9c61b.mp3"
+            },
+            {
+              "key": "teeth",
+              "text": "They're teeth.",
+              "audio": "audio/sentences/k2-letter-f/a-they-re-teeth-c59239.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does feet begin with?",
+          "a": [
+            "Feet begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "feet 的开头是什么音？",
+          "a_cn": [
+            "feet 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-feet-begin-with-a52e2f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-f-2599d1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Feet begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-g-df128d.mp3"
+            },
+            {
+              "key": "/v/",
+              "text": "Feet begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-the-sound-v-a993c8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does feet begin with?",
+          "a": [
+            "Feet begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "feet 以哪个字母开头？",
+          "a_cn": [
+            "feet 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-feet-begin-with-e5c221.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-feet-begins-with-letter-f-757996.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Feet begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-t-817b40.mp3"
+            },
+            {
+              "key": "q",
+              "text": "Feet begins with letter Q.",
+              "audio": "audio/sentences/k2-letter-f/a-feet-begins-with-letter-q-1c025a.mp3"
+            }
           ]
         }
       ],
@@ -352,6 +795,47 @@
           "q_audio": "audio/sentences/k2-letter-f/q-how-many-fingers-do-you-have-a3d9a9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-i-have-ten-fingers-1501e2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "I have five fingers.",
+              "audio": "audio/sentences/k2-letter-f/a-i-have-five-fingers-3abb87.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "I have eleven fingers.",
+              "audio": "audio/sentences/k2-letter-f/a-i-have-eleven-fingers-728871.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ten begin with?",
+          "a": [
+            "Ten begins with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "ten 以哪个字母开头？",
+          "a_cn": [
+            "ten 以字母 T 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-ten-begin-with-092177.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-ten-begins-with-letter-t-dd4afc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "f",
+              "text": "Ten begins with letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-ten-begins-with-letter-f-e7af49.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Ten begins with letter C.",
+              "audio": "audio/sentences/k2-letter-f/a-ten-begins-with-letter-c-42669c.mp3"
+            }
           ]
         }
       ],
@@ -381,6 +865,76 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-number-five-82bd3b.mp3",
             "audio/sentences/k2-letter-f/a-five-begins-with-f-dc67b4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-number-ten-f5e736.mp3"
+            },
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-number-three-da9b4d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does five begin with?",
+          "a": [
+            "Five begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "five 的开头是什么音？",
+          "a_cn": [
+            "five 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-five-begin-with-8d041b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-f-4c289e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ay/",
+              "text": "Five begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-ay-3c26af.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Five begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-the-sound-l-a38d07.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does five begin with?",
+          "a": [
+            "Five begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "five 以哪个字母开头？",
+          "a_cn": [
+            "five 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-five-begin-with-34fc99.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-five-begins-with-letter-f-9a1938.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Five begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-letter-t-d3cb0c.mp3"
+            },
+            {
+              "key": "z",
+              "text": "Five begins with letter Z.",
+              "audio": "audio/sentences/k2-letter-f/a-five-begins-with-letter-z-ab0ebf.mp3"
+            }
           ]
         }
       ],
@@ -410,6 +964,76 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3",
             "audio/sentences/k2-letter-f/a-i-need-a-fan-c7d290.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "farm",
+              "text": "It's a farm.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan begin with?",
+          "a": [
+            "Fan begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fan 的开头是什么音？",
+          "a_cn": [
+            "fan 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-fan-begin-with-8f7a3c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-f-fbae31.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Fan begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-u-333f1c.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Fan begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-the-sound-i-db8bb8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan begin with?",
+          "a": [
+            "Fan begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fan 以哪个字母开头？",
+          "a_cn": [
+            "fan 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-fan-begin-with-fec9d0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fan-begins-with-letter-f-33fc5a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Fan begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-letter-t-5c8da1.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Fan begins with letter E.",
+              "audio": "audio/sentences/k2-letter-f/a-fan-begins-with-letter-e-6585c5.mp3"
+            }
           ]
         }
       ],
@@ -436,6 +1060,76 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-flower-26c517.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does flower begin with?",
+          "a": [
+            "Flower begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "flower 的开头是什么音？",
+          "a_cn": [
+            "flower 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-flower-begin-with-790c50.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-f-51e12a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ay/",
+              "text": "Flower begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-ay-c2d448.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Flower begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-the-sound-l-4a5a34.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does flower begin with?",
+          "a": [
+            "Flower begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "flower 以哪个字母开头？",
+          "a_cn": [
+            "flower 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-flower-begin-with-27bc4c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-flower-begins-with-letter-f-ad87a4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Flower begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-letter-t-bf4e40.mp3"
+            },
+            {
+              "key": "v",
+              "text": "Flower begins with letter V.",
+              "audio": "audio/sentences/k2-letter-f/a-flower-begins-with-letter-v-07a58c.mp3"
+            }
           ]
         }
       ],
@@ -462,6 +1156,76 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-s-this-place-a3f797.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-it-s-a-farm-349ae8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "It's a fox.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fox-e460b7.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does farm begin with?",
+          "a": [
+            "Farm begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "farm 的开头是什么音？",
+          "a_cn": [
+            "farm 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-farm-begin-with-c43e39.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-f-6f1eb1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ay/",
+              "text": "Farm begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-ay-8d4a49.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Farm begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-the-sound-l-7878bd.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does farm begin with?",
+          "a": [
+            "Farm begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "farm 以哪个字母开头？",
+          "a_cn": [
+            "farm 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-farm-begin-with-368caf.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-farm-begins-with-letter-f-8154d9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Farm begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-letter-t-edc033.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Farm begins with letter M.",
+              "audio": "audio/sentences/k2-letter-f/a-farm-begins-with-letter-m-5a9997.mp3"
+            }
           ]
         }
       ],
@@ -488,6 +1252,76 @@
           "q_audio": "audio/sentences/k2-letter-f/q-what-can-the-bird-do-149c77.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-birds-can-fly-394fdc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "f",
+              "text": "It's letter F.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-letter-f-5461e9.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's a fan.",
+              "audio": "audio/sentences/k2-letter-f/a-it-s-a-fan-85775b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fly begin with?",
+          "a": [
+            "Fly begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fly 的开头是什么音？",
+          "a_cn": [
+            "fly 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-what-sound-does-fly-begin-with-8e86b1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-f-eeeb63.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Fly begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-b-067d19.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Fly begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-the-sound-r-a13d47.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fly begin with?",
+          "a": [
+            "Fly begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fly 以哪个字母开头？",
+          "a_cn": [
+            "fly 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-f/q-which-letter-does-fly-begin-with-232e7a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-f/a-fly-begins-with-letter-f-e347f0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Fly begins with letter T.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-letter-t-518e26.mp3"
+            },
+            {
+              "key": "y",
+              "text": "Fly begins with letter Y.",
+              "audio": "audio/sentences/k2-letter-f/a-fly-begins-with-letter-y-a5e284.mp3"
+            }
           ]
         }
       ],
@@ -514,7 +1348,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
           ],
-          "image": "images/wf-at-1-sat.webp"
+          "image": "images/wf-at-1-sat.webp",
+          "opts": [
+            {
+              "key": "fox",
+              "text": "F says /f/, O says /o/, X says /ks/, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "M says /m/, A says /a/, T says /t/, mat.",
+              "audio": "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
+            }
+          ]
         },
         {
           "q": "How do you sound out m, a, t?",
@@ -532,7 +1378,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
           ],
-          "image": "images/wf-at-1-mat.webp"
+          "image": "images/wf-at-1-mat.webp",
+          "opts": [
+            {
+              "key": "not",
+              "text": "N says /n/, O says /o/, T says /t/, not.",
+              "audio": "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+            },
+            {
+              "key": "fox",
+              "text": "F says /f/, O says /o/, X says /ks/, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
+            }
+          ]
         },
         {
           "q": "How do you sound out n, o, t?",
@@ -549,6 +1407,18 @@
           "q_audio": "audio/sentences/k2-letter-f/q-how-do-you-sound-out-n-o-t-7cc33f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fox",
+              "text": "F says /f/, O says /o/, X says /ks/, fox.",
+              "audio": "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "M says /m/, A says /a/, T says /t/, mat.",
+              "audio": "audio/sentences/k2-letter-f/a-m-says-m-a-says-a-t-says-t-mat-0f3a1a.mp3"
+            }
           ]
         },
         {
@@ -567,7 +1437,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-f/a-f-says-f-o-says-o-x-says-ks-fox-c922eb.mp3"
           ],
-          "image": "images/f-fox.webp"
+          "image": "images/f-fox.webp",
+          "opts": [
+            {
+              "key": "sat",
+              "text": "S says /s/, A says /a/, T says /t/, sat.",
+              "audio": "audio/sentences/k2-letter-f/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
+            },
+            {
+              "key": "not",
+              "text": "N says /n/, O says /o/, T says /t/, not.",
+              "audio": "audio/sentences/k2-letter-f/a-n-says-n-o-says-o-t-says-t-not-26cfdd.mp3"
+            }
+          ]
         }
       ],
       "emoji": "🔤",
@@ -590,13 +1472,19 @@
     "a": "audio/words/a.mp3",
     "animal": "audio/words/animal.mp3",
     "are": "audio/words/are.mp3",
+    "ay": "audio/words/ay.mp3",
+    "b": "audio/words/b.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "bird": "audio/words/bird.mp3",
     "birds": "audio/words/birds.mp3",
+    "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
+    "d": "audio/words/d.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "eleven": "audio/words/eleven.mp3",
     "english": "audio/words/english.mp3",
     "f": "audio/words/f.mp3",
     "face": "audio/words/face.mp3",
@@ -611,6 +1499,8 @@
     "forest": "audio/words/forest.mp3",
     "fox": "audio/words/fox.mp3",
     "fun": "audio/words/fun.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
@@ -619,6 +1509,7 @@
     "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
     "ks": "audio/words/ks.mp3",
+    "l": "audio/words/l.mp3",
     "letter": "audio/words/letter.mp3",
     "letter f": "audio/words/letter-f.mp3",
     "m": "audio/words/m.mp3",
@@ -626,14 +1517,18 @@
     "makes": "audio/words/makes.mp3",
     "many": "audio/words/many.mp3",
     "mat": "audio/words/mat.mp3",
+    "mittens": "audio/words/mittens.mp3",
     "my": "audio/words/my.mp3",
     "n": "audio/words/n.mp3",
     "need": "audio/words/need.mp3",
     "not": "audio/words/not.mp3",
     "number": "audio/words/number.mp3",
     "o": "audio/words/o.mp3",
+    "oh": "audio/words/oh.mp3",
     "out": "audio/words/out.mp3",
     "place": "audio/words/place.mp3",
+    "q": "audio/words/q.mp3",
+    "r": "audio/words/r.mp3",
     "s": "audio/words/s.mp3",
     "sat": "audio/words/sat.mp3",
     "says": "audio/words/says.mp3",
@@ -642,20 +1537,26 @@
     "sound it out": "audio/words/sound-it-out.mp3",
     "spell": "audio/words/spell.mp3",
     "t": "audio/words/t.mp3",
+    "teeth": "audio/words/teeth.mp3",
     "ten": "audio/words/ten.mp3",
     "the": "audio/words/the.mp3",
     "these": "audio/words/these.mp3",
     "they're": "audio/words/they-re.mp3",
     "this": "audio/words/this.mp3",
+    "three": "audio/words/three.mp3",
     "two": "audio/words/two.mp3",
     "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
     "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",
     "x": "audio/words/x.mp3",
+    "y": "audio/words/y.mp3",
     "yes": "audio/words/yes.mp3",
-    "you": "audio/words/you.mp3"
+    "yoo": "audio/words/yoo.mp3",
+    "you": "audio/words/you.mp3",
+    "z": "audio/words/z.mp3"
   }
 }

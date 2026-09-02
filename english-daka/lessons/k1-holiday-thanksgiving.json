@@ -1,0 +1,145 @@
+{
+  "seq": 1203,
+  "level": "K1",
+  "group": "节日 Holidays",
+  "badge": "🦃",
+  "cover": "images/t-words-3-thanksgiving.webp",
+  "title": "Holidays · Thanksgiving 感恩节",
+  "cards": [
+    {
+      "word": "Thanksgiving",
+      "cn": "感恩节",
+      "tag": "word",
+      "image": "images/t-words-3-thanksgiving.webp",
+      "dialog": [
+        {
+          "q": "What's this holiday?",
+          "a": [
+            "It's Thanksgiving."
+          ],
+          "key": [
+            "thanksgiving"
+          ],
+          "q_cn": "这是什么节日？",
+          "a_cn": [
+            "这是感恩节。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-thanksgiving/q-what-s-this-holiday-518c80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-thanksgiving/a-it-s-thanksgiving-41cd8f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-job-412b3c.mp3"
+            },
+            {
+              "key": "money",
+              "text": "It's money.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-money-ac7a88.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Thanksgiving?",
+          "a": [
+            "Happy Thanksgiving!"
+          ],
+          "key": [
+            "happy"
+          ],
+          "q_cn": "感恩节我们说什么？",
+          "a_cn": [
+            "感恩节快乐！"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-thanksgiving/q-what-do-we-say-on-thanksgiving-4711b9.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-thanksgiving/a-happy-thanksgiving-d2e8ff.mp3"
+          ],
+          "image": "images/k1-say-happy-thanksgiving.webp",
+          "opts": [
+            {
+              "key": "thanksgiving",
+              "text": "It's Thanksgiving.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-thanksgiving-41cd8f.mp3"
+            },
+            {
+              "key": "turkey",
+              "text": "We can eat turkey.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-we-can-eat-turkey-76bc3f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-thanksgiving/q-which-one-is-thanksgiving-232700.mp3"
+    },
+    {
+      "word": "turkey",
+      "cn": "火鸡",
+      "tag": "word",
+      "image": "images/sw-on-holiday-turkey.webp",
+      "dialog": [
+        {
+          "q": "What can we eat on Thanksgiving?",
+          "a": [
+            "We can eat turkey."
+          ],
+          "key": [
+            "turkey"
+          ],
+          "q_cn": "感恩节我们可以吃什么？",
+          "a_cn": [
+            "我们可以吃火鸡。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-thanksgiving/q-what-can-we-eat-on-thanksgiving-b47611.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-thanksgiving/a-we-can-eat-turkey-76bc3f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "thanksgiving",
+              "text": "It's Thanksgiving.",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-it-s-thanksgiving-41cd8f.mp3"
+            },
+            {
+              "key": "happy",
+              "text": "Happy Thanksgiving!",
+              "audio": "audio/sentences/k1-holiday-thanksgiving/a-happy-thanksgiving-d2e8ff.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-thanksgiving/q-which-one-is-turkey-dfceb7.mp3"
+    }
+  ],
+  "word_audio": {
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "eat": "audio/words/eat.mp3",
+    "happy": "audio/words/happy.mp3",
+    "holiday": "audio/words/holiday.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "job": "audio/words/job.mp3",
+    "money": "audio/words/money.mp3",
+    "on": "audio/words/on.mp3",
+    "say": "audio/words/say.mp3",
+    "thanksgiving": "audio/words/thanksgiving.mp3",
+    "this": "audio/words/this.mp3",
+    "turkey": "audio/words/turkey.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

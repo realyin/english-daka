@@ -1,7 +1,9 @@
 {
   "seq": 202,
+  "level": "K2",
   "group": "词族 Word Family",
   "badge": "-at",
+  "cover": "images/wf-at-1-sat.webp",
   "title": "Word Family · -at 词族",
   "cards": [
     {
@@ -27,6 +29,18 @@
           "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-at-make-2fc81f.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-at-makes-the-sound-at-1992c7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ot/",
+              "text": "At makes the sound /ot/.",
+              "audio": "audio/sentences/k2-wf-at/a-at-makes-the-sound-ot-426fe6.mp3"
+            },
+            {
+              "key": "/id/",
+              "text": "At makes the sound /id/.",
+              "audio": "audio/sentences/k2-wf-at/a-at-makes-the-sound-id-2dc0b2.mp3"
+            }
           ]
         },
         {
@@ -35,7 +49,7 @@
             "It's -at family."
           ],
           "key": [
-            "family"
+            "at"
           ],
           "q_cn": "这是什么词族？",
           "a_cn": [
@@ -44,6 +58,18 @@
           "q_audio": "audio/sentences/k2-wf-at/q-what-s-this-family-fc4ac3.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-it-s-at-family-0c7574.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ad",
+              "text": "It's -ad family.",
+              "audio": "audio/sentences/k2-wf-at/a-it-s-ad-family-8ed62f.mp3"
+            },
+            {
+              "key": "an",
+              "text": "It's -an family.",
+              "audio": "audio/sentences/k2-wf-at/a-it-s-an-family-f1bc7a.mp3"
+            }
           ]
         }
       ],
@@ -103,7 +129,222 @@
             "audio/sentences/k2-wf-at/a-s-at-sat-b1d773.mp3",
             "audio/sentences/k2-wf-at/a-the-cat-sat-on-the-mat-eb46e8.mp3"
           ],
-          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-s-at-2d30e5.mp3"
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-s-at-2d30e5.mp3",
+          "opts": [
+            {
+              "key": "mat",
+              "text": "/m/ /at/, mat.",
+              "audio": "audio/sentences/k2-wf-at/a-m-at-mat-9c64da.mp3"
+            },
+            {
+              "key": "cat",
+              "text": "/k/ /at/, cat.",
+              "audio": "audio/sentences/k2-wf-at/a-k-at-cat-53c689.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sat begin with?",
+          "a": [
+            "Sat begins with the sound /s/."
+          ],
+          "key": [
+            "/s/"
+          ],
+          "q_cn": "sat 的开头是什么音？",
+          "a_cn": [
+            "sat 开头是 /s/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-sat-begin-with-68e97b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-begins-with-the-sound-s-109fa8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Sat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-begins-with-the-sound-f-d19b7f.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Sat begins with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-begins-with-the-sound-k-44d7b2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sat begin with?",
+          "a": [
+            "Sat begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "sat 以哪个字母开头？",
+          "a_cn": [
+            "sat 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-sat-begin-with-5fa925.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-begins-with-letter-s-b26097.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Sat begins with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-begins-with-letter-m-385319.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Sat begins with letter R.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-begins-with-letter-r-bf5250.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sat have in the middle?",
+          "a": [
+            "Sat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "sat 中间是什么音？",
+          "a_cn": [
+            "sat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-sat-have-in-the-midd-a4fb1b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-has-the-sound-a-in-the-middle-8fd512.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Sat has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-has-the-sound-t-in-the-middle-aec4d5.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Sat has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-has-the-sound-b-in-the-middle-34bf2e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sat have in the middle?",
+          "a": [
+            "Sat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "sat 中间是哪个字母？",
+          "a_cn": [
+            "sat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-sat-have-in-the-mi-774eff.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-has-letter-a-in-the-middle-661414.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Sat has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-has-letter-s-in-the-middle-4aa747.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Sat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-has-letter-m-in-the-middle-ddff46.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does sat end with?",
+          "a": [
+            "Sat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "sat 的结尾是什么音？",
+          "a_cn": [
+            "sat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-sat-end-with-2c2b95.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-ends-with-the-sound-t-735a45.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Sat ends with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-ends-with-the-sound-m-17ea8f.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Sat ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-ends-with-the-sound-s-d0fcbe.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sat end with?",
+          "a": [
+            "Sat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "sat 以哪个字母结尾？",
+          "a_cn": [
+            "sat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-sat-end-with-761684.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-ends-with-letter-t-7d309e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Sat ends with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-ends-with-letter-s-29869e.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Sat ends with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-sat-ends-with-letter-m-d9690e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is sat in?",
+          "a": [
+            "Sat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "sat 属于哪个词族？",
+          "a_cn": [
+            "sat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-sat-in-b1464e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-sat-is-in-the-at-family-39783f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-sat-78bec1.mp3"
@@ -162,7 +403,222 @@
             "audio/sentences/k2-wf-at/a-f-at-fat-d33946.mp3",
             "audio/sentences/k2-wf-at/a-the-cat-is-fat-e55670.mp3"
           ],
-          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-f-at-08c7df.mp3"
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-f-at-08c7df.mp3",
+          "opts": [
+            {
+              "key": "sat",
+              "text": "/s/ /at/, sat.",
+              "audio": "audio/sentences/k2-wf-at/a-s-at-sat-b1d773.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "/m/ /at/, mat.",
+              "audio": "audio/sentences/k2-wf-at/a-m-at-mat-9c64da.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fat begin with?",
+          "a": [
+            "Fat begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fat 的开头是什么音？",
+          "a_cn": [
+            "fat 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-fat-begin-with-fc02eb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-begins-with-the-sound-f-8eec5a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Fat begins with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-begins-with-the-sound-m-e51a6c.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Fat begins with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-begins-with-the-sound-s-94a09c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fat begin with?",
+          "a": [
+            "Fat begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fat 以哪个字母开头？",
+          "a_cn": [
+            "fat 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-fat-begin-with-6da76a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-begins-with-letter-f-15c273.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Fat begins with letter B.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-begins-with-letter-b-3b2fe8.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Fat begins with letter H.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-begins-with-letter-h-798e31.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fat have in the middle?",
+          "a": [
+            "Fat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "fat 中间是什么音？",
+          "a_cn": [
+            "fat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-fat-have-in-the-midd-dfd02c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-has-the-sound-a-in-the-middle-f1fead.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Fat has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-has-the-sound-f-in-the-middle-93d437.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Fat has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-has-the-sound-k-in-the-middle-a96ff7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fat have in the middle?",
+          "a": [
+            "Fat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "fat 中间是哪个字母？",
+          "a_cn": [
+            "fat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-fat-have-in-the-mi-152221.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-has-letter-a-in-the-middle-85ddbb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Fat has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-has-letter-s-in-the-middle-322c05.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Fat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-has-letter-m-in-the-middle-03cd71.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fat end with?",
+          "a": [
+            "Fat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "fat 的结尾是什么音？",
+          "a_cn": [
+            "fat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-fat-end-with-d97a6c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-ends-with-the-sound-t-7db55a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Fat ends with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-ends-with-the-sound-k-ee162a.mp3"
+            },
+            {
+              "key": "/m/",
+              "text": "Fat ends with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-ends-with-the-sound-m-1d0214.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fat end with?",
+          "a": [
+            "Fat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "fat 以哪个字母结尾？",
+          "a_cn": [
+            "fat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-fat-end-with-e0aee9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-ends-with-letter-t-cb1989.mp3"
+          ],
+          "opts": [
+            {
+              "key": "f",
+              "text": "Fat ends with letter F.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-ends-with-letter-f-0daa40.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Fat ends with letter C.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-ends-with-letter-c-7d6671.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is fat in?",
+          "a": [
+            "Fat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "fat 属于哪个词族？",
+          "a_cn": [
+            "fat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-fat-in-ef6f8a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-fat-is-in-the-at-family-68813b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
+          ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-wf-at/q-which-one-is-fat-d39bef.mp3"
@@ -221,7 +677,19 @@
             "audio/sentences/k2-wf-at/a-m-at-mat-9c64da.mp3",
             "audio/sentences/k2-wf-at/a-this-is-a-mat-0c4374.mp3"
           ],
-          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-m-at-93a5cb.mp3"
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-m-at-93a5cb.mp3",
+          "opts": [
+            {
+              "key": "sat",
+              "text": "/s/ /at/, sat.",
+              "audio": "audio/sentences/k2-wf-at/a-s-at-sat-b1d773.mp3"
+            },
+            {
+              "key": "cat",
+              "text": "/k/ /at/, cat.",
+              "audio": "audio/sentences/k2-wf-at/a-k-at-cat-53c689.mp3"
+            }
+          ]
         },
         {
           "q": "Where did the rat sit?",
@@ -239,6 +707,221 @@
           "q_audio": "audio/sentences/k2-wf-at/q-where-did-the-rat-sit-0c3a80.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/at/",
+              "text": "Mat is in the -at family.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-is-in-the-at-family-2ade5a.mp3"
+            },
+            {
+              "key": "/at/",
+              "text": "Fat is in the -at family.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-is-in-the-at-family-68813b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does mat begin with?",
+          "a": [
+            "Mat begins with the sound /m/."
+          ],
+          "key": [
+            "/m/"
+          ],
+          "q_cn": "mat 的开头是什么音？",
+          "a_cn": [
+            "mat 开头是 /m/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-mat-begin-with-dde9b4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-begins-with-the-sound-m-d1c20f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Mat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-begins-with-the-sound-f-600d7e.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Mat begins with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-begins-with-the-sound-k-db8e20.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does mat begin with?",
+          "a": [
+            "Mat begins with letter M."
+          ],
+          "key": [
+            "m"
+          ],
+          "q_cn": "mat 以哪个字母开头？",
+          "a_cn": [
+            "mat 以字母 M 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-mat-begin-with-ded218.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-begins-with-letter-m-2c8bb8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Mat begins with letter B.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-begins-with-letter-b-75c331.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Mat begins with letter H.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-begins-with-letter-h-4a528e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does mat have in the middle?",
+          "a": [
+            "Mat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "mat 中间是什么音？",
+          "a_cn": [
+            "mat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-mat-have-in-the-midd-d68e73.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-has-the-sound-a-in-the-middle-0bdf7c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Mat has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-has-the-sound-f-in-the-middle-7463da.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Mat has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-has-the-sound-k-in-the-middle-af6a06.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does mat have in the middle?",
+          "a": [
+            "Mat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "mat 中间是哪个字母？",
+          "a_cn": [
+            "mat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-mat-have-in-the-mi-f97db2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-has-letter-a-in-the-middle-dee8f7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Mat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-has-letter-m-in-the-middle-cac995.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Mat has letter R in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-has-letter-r-in-the-middle-c370b1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does mat end with?",
+          "a": [
+            "Mat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "mat 的结尾是什么音？",
+          "a_cn": [
+            "mat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-mat-end-with-111aba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-ends-with-the-sound-t-11d11f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Mat ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-ends-with-the-sound-f-8ef4c9.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Mat ends with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-ends-with-the-sound-k-cf01dc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does mat end with?",
+          "a": [
+            "Mat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "mat 以哪个字母结尾？",
+          "a_cn": [
+            "mat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-mat-end-with-8e8d89.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-ends-with-letter-t-052a79.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Mat ends with letter B.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-ends-with-letter-b-079d2c.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Mat ends with letter H.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-ends-with-letter-h-b73cdc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is mat in?",
+          "a": [
+            "Mat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "mat 属于哪个词族？",
+          "a_cn": [
+            "mat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-mat-in-83498a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-mat-is-in-the-at-family-2ade5a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
           ]
         }
       ],
@@ -298,7 +981,19 @@
             "audio/sentences/k2-wf-at/a-k-at-cat-53c689.mp3",
             "audio/sentences/k2-wf-at/a-i-have-a-fat-cat-04495b.mp3"
           ],
-          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-c-at-cf41d8.mp3"
+          "q_audio": "audio/sentences/k2-wf-at/q-how-do-you-read-c-at-cf41d8.mp3",
+          "opts": [
+            {
+              "key": "mat",
+              "text": "/m/ /at/, mat.",
+              "audio": "audio/sentences/k2-wf-at/a-m-at-mat-9c64da.mp3"
+            },
+            {
+              "key": "fat",
+              "text": "/f/ /at/, fat.",
+              "audio": "audio/sentences/k2-wf-at/a-f-at-fat-d33946.mp3"
+            }
+          ]
         },
         {
           "q": "Can you pat the cat?",
@@ -316,6 +1011,221 @@
           "q_audio": "audio/sentences/k2-wf-at/q-can-you-pat-the-cat-04537b.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/at/",
+              "text": "Mat is in the -at family.",
+              "audio": "audio/sentences/k2-wf-at/a-mat-is-in-the-at-family-2ade5a.mp3"
+            },
+            {
+              "key": "/at/",
+              "text": "Fat is in the -at family.",
+              "audio": "audio/sentences/k2-wf-at/a-fat-is-in-the-at-family-68813b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cat begin with?",
+          "a": [
+            "Cat begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "cat 的开头是什么音？",
+          "a_cn": [
+            "cat 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-cat-begin-with-d2b6d8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-begins-with-the-sound-k-f976b4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Cat begins with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-begins-with-the-sound-b-13cc34.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Cat begins with the sound /r/.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-begins-with-the-sound-r-152f59.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cat begin with?",
+          "a": [
+            "Cat begins with letter C."
+          ],
+          "key": [
+            "c"
+          ],
+          "q_cn": "cat 以哪个字母开头？",
+          "a_cn": [
+            "cat 以字母 C 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-cat-begin-with-4fd55b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-begins-with-letter-c-dc4912.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Cat begins with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-begins-with-letter-s-dc28a4.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Cat begins with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-begins-with-letter-m-35845a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cat have in the middle?",
+          "a": [
+            "Cat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "cat 中间是什么音？",
+          "a_cn": [
+            "cat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-cat-have-in-the-midd-e11f4f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-has-the-sound-a-in-the-middle-a78a4a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Cat has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-has-the-sound-f-in-the-middle-5b3ac7.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Cat has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-has-the-sound-k-in-the-middle-10270a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cat have in the middle?",
+          "a": [
+            "Cat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "cat 中间是哪个字母？",
+          "a_cn": [
+            "cat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-cat-have-in-the-mi-73aaed.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-has-letter-a-in-the-middle-78352f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Cat has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-has-letter-s-in-the-middle-d61089.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Cat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-has-letter-m-in-the-middle-71768a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cat end with?",
+          "a": [
+            "Cat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "cat 的结尾是什么音？",
+          "a_cn": [
+            "cat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-cat-end-with-bc6f52.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-ends-with-the-sound-t-622a05.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Cat ends with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-the-sound-m-cf1b07.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Cat ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-the-sound-s-02c9a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cat end with?",
+          "a": [
+            "Cat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "cat 以哪个字母结尾？",
+          "a_cn": [
+            "cat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-cat-end-with-e6b331.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-ends-with-letter-t-c8b647.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Cat ends with letter A.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-letter-a-470ae1.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Cat ends with letter B.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-letter-b-7c3509.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is cat in?",
+          "a": [
+            "Cat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "cat 属于哪个词族？",
+          "a_cn": [
+            "cat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-cat-in-e06b22.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-cat-is-in-the-at-family-fe62c3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
           ]
         }
       ],
@@ -376,6 +1286,18 @@
           "a_audio": [
             "audio/sentences/k2-wf-at/a-b-a-t-bat-fadebf.mp3",
             "audio/sentences/k2-wf-at/a-i-see-a-bat-bb6a08.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hat",
+              "text": "/h/ /a/ /t/, hat.",
+              "audio": "audio/sentences/k2-wf-at/a-h-a-t-hat-53885c.mp3"
+            },
+            {
+              "key": "rat",
+              "text": "/r/ /a/ /t/, rat.",
+              "audio": "audio/sentences/k2-wf-at/a-r-a-t-rat-5787c1.mp3"
+            }
           ]
         },
         {
@@ -394,6 +1316,221 @@
           "q_audio": "audio/sentences/k2-wf-at/q-can-the-bat-fly-21c15f.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-yes-the-bat-can-fly-0e131b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Cat ends with letter T.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-letter-t-c8b647.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hat begins with letter H.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-letter-h-392ba1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bat begin with?",
+          "a": [
+            "Bat begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "bat 的开头是什么音？",
+          "a_cn": [
+            "bat 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-bat-begin-with-3194c8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-begins-with-the-sound-b-0c982c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Bat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-begins-with-the-sound-f-c873c4.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Bat begins with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-begins-with-the-sound-k-b04d7e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bat begin with?",
+          "a": [
+            "Bat begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bat 以哪个字母开头？",
+          "a_cn": [
+            "bat 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-bat-begin-with-6f9433.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-begins-with-letter-b-72b42f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Bat begins with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-begins-with-letter-s-f69b3a.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Bat begins with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-begins-with-letter-m-58ea09.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bat have in the middle?",
+          "a": [
+            "Bat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "bat 中间是什么音？",
+          "a_cn": [
+            "bat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-bat-have-in-the-midd-d0edaa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-has-the-sound-a-in-the-middle-064f15.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Bat has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-has-the-sound-t-in-the-middle-c3d121.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Bat has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-has-the-sound-b-in-the-middle-b84c22.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bat have in the middle?",
+          "a": [
+            "Bat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "bat 中间是哪个字母？",
+          "a_cn": [
+            "bat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-bat-have-in-the-mi-a0450d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-has-letter-a-in-the-middle-155140.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Bat has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-has-letter-s-in-the-middle-84e262.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Bat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-has-letter-m-in-the-middle-415330.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bat end with?",
+          "a": [
+            "Bat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "bat 的结尾是什么音？",
+          "a_cn": [
+            "bat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-bat-end-with-d3f2e0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-ends-with-the-sound-t-039a42.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Bat ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-ends-with-the-sound-f-e48131.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Bat ends with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-ends-with-the-sound-k-6f17a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bat end with?",
+          "a": [
+            "Bat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "bat 以哪个字母结尾？",
+          "a_cn": [
+            "bat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-bat-end-with-4221eb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-ends-with-letter-t-12ba5b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Bat ends with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-ends-with-letter-m-e59524.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Bat ends with letter R.",
+              "audio": "audio/sentences/k2-wf-at/a-bat-ends-with-letter-r-c12aa9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is bat in?",
+          "a": [
+            "Bat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "bat 属于哪个词族？",
+          "a_cn": [
+            "bat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-bat-in-d30d7e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-bat-is-in-the-at-family-2f103d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
           ]
         }
       ],
@@ -453,6 +1590,221 @@
           "a_audio": [
             "audio/sentences/k2-wf-at/a-r-a-t-rat-5787c1.mp3",
             "audio/sentences/k2-wf-at/a-the-rat-can-run-dffec1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bat",
+              "text": "/b/ /a/ /t/, bat.",
+              "audio": "audio/sentences/k2-wf-at/a-b-a-t-bat-fadebf.mp3"
+            },
+            {
+              "key": "hat",
+              "text": "/h/ /a/ /t/, hat.",
+              "audio": "audio/sentences/k2-wf-at/a-h-a-t-hat-53885c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does rat begin with?",
+          "a": [
+            "Rat begins with the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "rat 的开头是什么音？",
+          "a_cn": [
+            "rat 开头是 /r/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-rat-begin-with-fbe4b7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-begins-with-the-sound-r-e212a7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Rat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-begins-with-the-sound-f-5998a2.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Rat begins with the sound /k/.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-begins-with-the-sound-k-0fc786.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does rat begin with?",
+          "a": [
+            "Rat begins with letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "rat 以哪个字母开头？",
+          "a_cn": [
+            "rat 以字母 R 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-rat-begin-with-ad3887.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-begins-with-letter-r-0c3a33.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Rat begins with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-begins-with-letter-s-5204dd.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Rat begins with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-begins-with-letter-m-015f6e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does rat have in the middle?",
+          "a": [
+            "Rat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "rat 中间是什么音？",
+          "a_cn": [
+            "rat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-rat-have-in-the-midd-69b799.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-has-the-sound-a-in-the-middle-24dfd4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Rat has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-has-the-sound-t-in-the-middle-be73f1.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Rat has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-has-the-sound-b-in-the-middle-521b27.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does rat have in the middle?",
+          "a": [
+            "Rat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "rat 中间是哪个字母？",
+          "a_cn": [
+            "rat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-rat-have-in-the-mi-51ed8b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-has-letter-a-in-the-middle-cf1839.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Rat has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-has-letter-s-in-the-middle-bdedc0.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Rat has letter M in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-has-letter-m-in-the-middle-ba971d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does rat end with?",
+          "a": [
+            "Rat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "rat 的结尾是什么音？",
+          "a_cn": [
+            "rat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-rat-end-with-df028c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-ends-with-the-sound-t-7d2b61.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Rat ends with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-ends-with-the-sound-b-be27df.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Rat ends with the sound /r/.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-ends-with-the-sound-r-ff6aba.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does rat end with?",
+          "a": [
+            "Rat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "rat 以哪个字母结尾？",
+          "a_cn": [
+            "rat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-rat-end-with-b29a5c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-ends-with-letter-t-4c93fc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Rat ends with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-ends-with-letter-s-f134f6.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Rat ends with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-rat-ends-with-letter-m-1a3325.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is rat in?",
+          "a": [
+            "Rat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "rat 属于哪个词族？",
+          "a_cn": [
+            "rat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-rat-in-c934b2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-rat-is-in-the-at-family-0fd839.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
           ]
         }
       ],
@@ -513,6 +1865,18 @@
           "a_audio": [
             "audio/sentences/k2-wf-at/a-h-a-t-hat-53885c.mp3",
             "audio/sentences/k2-wf-at/a-i-have-a-hat-7f28db.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bat",
+              "text": "/b/ /a/ /t/, bat.",
+              "audio": "audio/sentences/k2-wf-at/a-b-a-t-bat-fadebf.mp3"
+            },
+            {
+              "key": "rat",
+              "text": "/r/ /a/ /t/, rat.",
+              "audio": "audio/sentences/k2-wf-at/a-r-a-t-rat-5787c1.mp3"
+            }
           ]
         },
         {
@@ -531,6 +1895,221 @@
           "q_audio": "audio/sentences/k2-wf-at/q-what-color-is-your-hat-ce3bd8.mp3",
           "a_audio": [
             "audio/sentences/k2-wf-at/a-i-have-a-pink-hat-2a16b5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Cat ends with letter T.",
+              "audio": "audio/sentences/k2-wf-at/a-cat-ends-with-letter-t-c8b647.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hat begins with letter H.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-letter-h-392ba1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hat begin with?",
+          "a": [
+            "Hat begins with the sound /h/."
+          ],
+          "key": [
+            "/h/"
+          ],
+          "q_cn": "hat 的开头是什么音？",
+          "a_cn": [
+            "hat 开头是 /h/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-hat-begin-with-609f0a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-begins-with-the-sound-h-0b1dd2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Hat begins with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-the-sound-m-d35d7b.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Hat begins with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-the-sound-s-cca5bb.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hat begin with?",
+          "a": [
+            "Hat begins with letter H."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "hat 以哪个字母开头？",
+          "a_cn": [
+            "hat 以字母 H 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-hat-begin-with-2e1399.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-begins-with-letter-h-392ba1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Hat begins with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-letter-m-679a50.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Hat begins with letter R.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-begins-with-letter-r-f259d5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hat have in the middle?",
+          "a": [
+            "Hat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "hat 中间是什么音？",
+          "a_cn": [
+            "hat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-hat-have-in-the-midd-be4722.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-has-the-sound-a-in-the-middle-e413fc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Hat has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-has-the-sound-m-in-the-middle-f2dfa4.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Hat has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-has-the-sound-s-in-the-middle-f36e34.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hat have in the middle?",
+          "a": [
+            "Hat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "hat 中间是哪个字母？",
+          "a_cn": [
+            "hat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-hat-have-in-the-mi-3a351c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-has-letter-a-in-the-middle-dec4dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Hat has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-has-letter-b-in-the-middle-9a43de.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hat has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-has-letter-h-in-the-middle-dcd97e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hat end with?",
+          "a": [
+            "Hat ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "hat 的结尾是什么音？",
+          "a_cn": [
+            "hat 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-sound-does-hat-end-with-c1fd6c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-ends-with-the-sound-t-24cb9d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/h/",
+              "text": "Hat ends with the sound /h/.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-ends-with-the-sound-h-8c5879.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Hat ends with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-ends-with-the-sound-f-203f31.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hat end with?",
+          "a": [
+            "Hat ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "hat 以哪个字母结尾？",
+          "a_cn": [
+            "hat 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-which-letter-does-hat-end-with-d5b76f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-ends-with-letter-t-e9e043.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Hat ends with letter S.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-ends-with-letter-s-4d896c.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Hat ends with letter M.",
+              "audio": "audio/sentences/k2-wf-at/a-hat-ends-with-letter-m-dff7c6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What family is hat in?",
+          "a": [
+            "Hat is in the -at family."
+          ],
+          "key": [
+            "/at/"
+          ],
+          "q_cn": "hat 属于哪个词族？",
+          "a_cn": [
+            "hat 属于 -at 词族。"
+          ],
+          "q_audio": "audio/sentences/k2-wf-at/q-what-family-is-hat-in-5b0458.mp3",
+          "a_audio": [
+            "audio/sentences/k2-wf-at/a-hat-is-in-the-at-family-af98c8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "pat",
+              "text": "I can pat the tan cat.",
+              "audio": "audio/sentences/k2-wf-at/a-i-can-pat-the-tan-cat-b541a0.mp3"
+            },
+            {
+              "key": "mat",
+              "text": "The rat sat on the mat.",
+              "audio": "audio/sentences/k2-wf-at/a-the-rat-sat-on-the-mat-857562.mp3"
+            }
           ]
         }
       ],
@@ -551,9 +2130,13 @@
   "word_audio": {
     "-at family": "audio/words/at-family.mp3",
     "a": "audio/words/a.mp3",
+    "ad": "audio/words/ad.mp3",
+    "an": "audio/words/an.mp3",
     "at": "audio/words/at.mp3",
     "b": "audio/words/b.mp3",
     "bat": "audio/words/bat.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
     "c": "audio/words/c.mp3",
     "can": "audio/words/can.mp3",
     "cat": "audio/words/cat.mp3",
@@ -561,23 +2144,31 @@
     "did": "audio/words/did.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
     "f": "audio/words/f.mp3",
     "family": "audio/words/family.mp3",
     "fat": "audio/words/fat.mp3",
     "fly": "audio/words/fly.mp3",
     "h": "audio/words/h.mp3",
+    "has": "audio/words/has.mp3",
     "hat": "audio/words/hat.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
     "k": "audio/words/k.mp3",
+    "letter": "audio/words/letter.mp3",
     "m": "audio/words/m.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
     "mat": "audio/words/mat.mp3",
+    "middle": "audio/words/middle.mp3",
     "on": "audio/words/on.mp3",
+    "ot": "audio/words/ot.mp3",
     "pat": "audio/words/pat.mp3",
     "pink": "audio/words/pink.mp3",
     "r": "audio/words/r.mp3",
@@ -596,6 +2187,8 @@
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3",
     "your": "audio/words/your.mp3"

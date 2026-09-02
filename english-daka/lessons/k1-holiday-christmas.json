@@ -1,0 +1,188 @@
+{
+  "seq": 1201,
+  "level": "K1",
+  "group": "节日 Holidays",
+  "badge": "🎄",
+  "cover": "images/hol-christmas.webp",
+  "title": "Holidays · Christmas 圣诞节",
+  "cards": [
+    {
+      "word": "Christmas",
+      "cn": "圣诞节",
+      "tag": "word",
+      "image": "images/hol-christmas.webp",
+      "dialog": [
+        {
+          "q": "What's this holiday?",
+          "a": [
+            "It's Christmas."
+          ],
+          "key": [
+            "christmas"
+          ],
+          "q_cn": "这是什么节日？",
+          "a_cn": [
+            "这是圣诞节。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-christmas/q-what-s-this-holiday-518c80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-christmas/a-it-s-christmas-ca5961.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hot",
+              "text": "It's hot.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-it-s-hot-1dda03.mp3"
+            },
+            {
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-it-s-dot-d297cc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Christmas?",
+          "a": [
+            "Merry Christmas!"
+          ],
+          "key": [
+            "merry"
+          ],
+          "q_cn": "圣诞节我们说什么？",
+          "a_cn": [
+            "圣诞快乐！"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-christmas/q-what-do-we-say-on-christmas-dbb299.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-christmas/a-merry-christmas-4757e7.mp3"
+          ],
+          "image": "images/k1-say-merry-christmas.webp",
+          "opts": [
+            {
+              "key": "christmas",
+              "text": "It's Christmas.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-it-s-christmas-ca5961.mp3"
+            },
+            {
+              "key": "christmas",
+              "text": "It's a Christmas tree.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-it-s-a-christmas-tree-0edfc3.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-christmas/q-which-one-is-christmas-05f623.mp3"
+    },
+    {
+      "word": "Christmas tree",
+      "cn": "圣诞树",
+      "tag": "word",
+      "image": "images/sw-on-holiday-christmas.webp",
+      "dialog": [
+        {
+          "q": "What's this tree?",
+          "a": [
+            "It's a Christmas tree."
+          ],
+          "key": [
+            "christmas"
+          ],
+          "q_cn": "这是什么树？",
+          "a_cn": [
+            "这是一棵圣诞树。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-christmas/q-what-s-this-tree-d1d2cd.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-christmas/a-it-s-a-christmas-tree-0edfc3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "merry",
+              "text": "Merry Christmas!",
+              "audio": "audio/sentences/k1-holiday-christmas/a-merry-christmas-4757e7.mp3"
+            },
+            {
+              "key": "gifts",
+              "text": "On Christmas, we can give gifts to others.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-on-christmas-we-can-give-gifts-to-ot-5f1428.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-christmas/q-which-one-is-christmas-tree-39248d.mp3"
+    },
+    {
+      "word": "gifts",
+      "cn": "礼物",
+      "tag": "word",
+      "image": "images/m-words-2-christmas.webp",
+      "dialog": [
+        {
+          "q": "What can we do on Christmas?",
+          "a": [
+            "On Christmas, we can give gifts to others."
+          ],
+          "key": [
+            "gifts"
+          ],
+          "q_cn": "圣诞节我们可以做什么？",
+          "a_cn": [
+            "圣诞节我们可以送礼物给别人。"
+          ],
+          "q_audio": "audio/sentences/k1-holiday-christmas/q-what-can-we-do-on-christmas-e0e515.mp3",
+          "a_audio": [
+            "audio/sentences/k1-holiday-christmas/a-on-christmas-we-can-give-gifts-to-ot-5f1428.mp3"
+          ],
+          "opts": [
+            {
+              "key": "christmas",
+              "text": "It's a Christmas tree.",
+              "audio": "audio/sentences/k1-holiday-christmas/a-it-s-a-christmas-tree-0edfc3.mp3"
+            },
+            {
+              "key": "merry",
+              "text": "Merry Christmas!",
+              "audio": "audio/sentences/k1-holiday-christmas/a-merry-christmas-4757e7.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-holiday-christmas/q-which-one-is-gifts-23b01b.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "can": "audio/words/can.mp3",
+    "christmas": "audio/words/christmas.mp3",
+    "christmas tree": "audio/words/christmas-tree.mp3",
+    "do": "audio/words/do.mp3",
+    "dot": "audio/words/dot.mp3",
+    "gifts": "audio/words/gifts.mp3",
+    "give": "audio/words/give.mp3",
+    "holiday": "audio/words/holiday.mp3",
+    "hot": "audio/words/hot.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "merry": "audio/words/merry.mp3",
+    "on": "audio/words/on.mp3",
+    "others": "audio/words/others.mp3",
+    "say": "audio/words/say.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "tree": "audio/words/tree.mp3",
+    "we": "audio/words/we.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

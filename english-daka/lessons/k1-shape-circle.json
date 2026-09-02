@@ -1,0 +1,180 @@
+{
+ "seq": 901,
+ "level": "K1",
+ "group": "形状 Shapes",
+ "badge": "圆",
+ "cover": "images/k1-shape-pizza.webp",
+ "title": "Shapes · Circle & Oval 圆形和椭圆",
+ "cards": [
+  {
+   "word": "circle",
+   "cn": "圆形",
+   "tag": "shape",
+   "pattern": [
+    "@circle"
+   ],
+   "dialog": [
+    {
+     "q": "What shape is it?",
+     "a": [
+      "It's a circle."
+     ],
+     "key": [
+      "circle"
+     ],
+     "q_cn": "这是什么形状？",
+     "a_cn": [
+      "这是圆形。"
+     ],
+     "q_audio": "audio/sentences/k1-shape-circle/q-what-shape-is-it-ada0c8.mp3",
+     "a_audio": [
+      "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+     ],
+     "opts": [
+      {
+       "key": "diamond",
+       "text": "It's a diamond.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-a-diamond-eb0eea.mp3"
+      },
+      {
+       "key": "raccoon",
+       "text": "It's a raccoon.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-a-raccoon-8723cc.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What is like a circle?",
+     "image": "images/k1-shape-pizza.webp",
+     "a": [
+      "The pizza is like a circle."
+     ],
+     "key": [
+      "pizza"
+     ],
+     "q_cn": "什么东西像圆形？",
+     "a_cn": [
+      "披萨像圆形。"
+     ],
+     "q_audio": "audio/sentences/k1-shape-circle/q-what-is-like-a-circle-c6a630.mp3",
+     "a_audio": [
+      "audio/sentences/k1-shape-circle/a-the-pizza-is-like-a-circle-793ba0.mp3"
+     ],
+     "opts": [
+      {
+       "key": "egg",
+       "text": "The egg is like an oval.",
+       "audio": "audio/sentences/k1-shape-circle/a-the-egg-is-like-an-oval-3d849a.mp3"
+      },
+      {
+       "key": "circle",
+       "text": "It's a circle.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-shape-circle/q-which-one-is-circle-690d3b.mp3"
+  },
+  {
+   "word": "oval",
+   "cn": "椭圆形",
+   "tag": "shape",
+   "pattern": [
+    "@oval"
+   ],
+   "dialog": [
+    {
+     "q": "What shape is it?",
+     "a": [
+      "It's an oval."
+     ],
+     "key": [
+      "oval"
+     ],
+     "q_cn": "这是什么形状？",
+     "a_cn": [
+      "这是椭圆形。"
+     ],
+     "q_audio": "audio/sentences/k1-shape-circle/q-what-shape-is-it-ada0c8.mp3",
+     "a_audio": [
+      "audio/sentences/k1-shape-circle/a-it-s-an-oval-61cad6.mp3"
+     ],
+     "opts": [
+      {
+       "key": "owl",
+       "text": "It's an owl.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-an-owl-269be9.mp3"
+      },
+      {
+       "key": "eagle",
+       "text": "It's an eagle.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-an-eagle-0b4e25.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What is like an oval?",
+     "image": "images/k1-shape-egg.webp",
+     "a": [
+      "The egg is like an oval."
+     ],
+     "key": [
+      "egg"
+     ],
+     "q_cn": "什么东西像椭圆形？",
+     "a_cn": [
+      "鸡蛋像椭圆形。"
+     ],
+     "q_audio": "audio/sentences/k1-shape-circle/q-what-is-like-an-oval-a46176.mp3",
+     "a_audio": [
+      "audio/sentences/k1-shape-circle/a-the-egg-is-like-an-oval-3d849a.mp3"
+     ],
+     "opts": [
+      {
+       "key": "pizza",
+       "text": "The pizza is like a circle.",
+       "audio": "audio/sentences/k1-shape-circle/a-the-pizza-is-like-a-circle-793ba0.mp3"
+      },
+      {
+       "key": "circle",
+       "text": "It's a circle.",
+       "audio": "audio/sentences/k1-shape-circle/a-it-s-a-circle-a9f70a.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-shape-circle/q-which-one-is-oval-bdfa3d.mp3"
+  }
+ ],
+ "word_audio": {
+  "a": "audio/words/a.mp3",
+  "an": "audio/words/an.mp3",
+  "circle": "audio/words/circle.mp3",
+  "diamond": "audio/words/diamond.mp3",
+  "eagle": "audio/words/eagle.mp3",
+  "egg": "audio/words/egg.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "oval": "audio/words/oval.mp3",
+  "owl": "audio/words/owl.mp3",
+  "pizza": "audio/words/pizza.mp3",
+  "raccoon": "audio/words/raccoon.mp3",
+  "shape": "audio/words/shape.mp3",
+  "the": "audio/words/the.mp3",
+  "what": "audio/words/what.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
+}

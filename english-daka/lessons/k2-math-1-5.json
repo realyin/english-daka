@@ -1,7 +1,9 @@
 {
   "seq": 601,
+  "level": "K2",
   "group": "数学 Math",
   "badge": "1-5",
+  "cover": "images/math-one.webp",
   "title": "Numbers · One to Five",
   "cards": [
     {
@@ -10,6 +12,35 @@
       "tag": "number",
       "image": "images/math-one.webp",
       "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number one."
+          ],
+          "key": [
+            "one"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字 一。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-it-s-number-one-63c1c7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-five-82bd3b.mp3"
+            },
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-three-da9b4d.mp3"
+            }
+          ]
+        },
         {
           "q": "How many boxes are there?",
           "a": [
@@ -25,6 +56,18 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-boxes-are-there-d6ca28.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-is-one-box-9926dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "There is two box.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-is-two-box-57a0cc.mp3"
+            },
+            {
+              "key": "four",
+              "text": "There is four box.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-is-four-box-bb8a15.mp3"
+            }
           ]
         },
         {
@@ -42,6 +85,47 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-one-box-2f09a9.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-one-chip-can-show-one-box-d94082.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "Four chips can show four toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-toys-8dd8b3.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four chips can show four apples.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-apples-a136c7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show number one?",
+          "a": [
+            "One chip can show number one."
+          ],
+          "key": [
+            "one"
+          ],
+          "q_cn": "几个筹码能表示数字 一？",
+          "a_cn": [
+            "一 个筹码能表示数字 一。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-number-one-da01f4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "Two chips can show number two.",
+              "audio": "audio/sentences/k2-math-1-5/a-two-chips-can-show-number-two-525e68.mp3"
+            },
+            {
+              "key": "five",
+              "text": "Five chips can show five animals.",
+              "audio": "audio/sentences/k2-math-1-5/a-five-chips-can-show-five-animals-aba4f0.mp3"
+            }
           ]
         }
       ],
@@ -53,6 +137,35 @@
       "tag": "number",
       "image": "images/math-two.webp",
       "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number two."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字 二。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-it-s-number-two-e0a444.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
         {
           "q": "How many unicycles are there?",
           "a": [
@@ -68,6 +181,18 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-unicycles-are-there-04b635.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-two-unicycles-30f237.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "There are four unicycles.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-four-unicycles-d253ec.mp3"
+            },
+            {
+              "key": "five",
+              "text": "There are five unicycles.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-five-unicycles-bdff02.mp3"
+            }
           ]
         },
         {
@@ -85,6 +210,47 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-two-unicycle-c91c30.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-two-chips-can-show-two-unicycles-9d989d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "One chip can show number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four chips can show four toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-toys-8dd8b3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show number two?",
+          "a": [
+            "Two chips can show number two."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "几个筹码能表示数字 二？",
+          "a_cn": [
+            "二 个筹码能表示数字 二。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-number-two-60f0d5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-two-chips-can-show-number-two-525e68.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "Four chips can show number four.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-number-four-cf0825.mp3"
+            },
+            {
+              "key": "three",
+              "text": "Three chips can show number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-three-chips-can-show-number-three-53ca08.mp3"
+            }
           ]
         }
       ],
@@ -96,6 +262,35 @@
       "tag": "number",
       "image": "images/math-three.webp",
       "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number three."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字 三。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-it-s-number-three-da9b4d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "It's number two.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-two-e0a444.mp3"
+            },
+            {
+              "key": "four",
+              "text": "It's number four.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-four-e275dc.mp3"
+            }
+          ]
+        },
         {
           "q": "How many cars are there?",
           "a": [
@@ -111,6 +306,18 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-cars-are-there-caf474.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-three-cars-caac5b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "There are four cars.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-four-cars-f14b31.mp3"
+            },
+            {
+              "key": "five",
+              "text": "There are five cars.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-five-cars-ded761.mp3"
+            }
           ]
         },
         {
@@ -128,6 +335,47 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-three-cars-e2a039.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-three-chips-can-show-three-cars-6d547a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "One chip can show number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four chips can show four toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-toys-8dd8b3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show number three?",
+          "a": [
+            "Three chips can show number three."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "几个筹码能表示数字 三？",
+          "a_cn": [
+            "三 个筹码能表示数字 三。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-number-three-684cd2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-three-chips-can-show-number-three-53ca08.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "One chip can show number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four chips can show four toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-toys-8dd8b3.mp3"
+            }
           ]
         }
       ],
@@ -139,6 +387,35 @@
       "tag": "number",
       "image": "images/math-four.webp",
       "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number four."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字 四。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-it-s-number-four-e275dc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
         {
           "q": "How many toys are there?",
           "a": [
@@ -154,6 +431,18 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-toys-are-there-8a5ee7.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-four-toys-5534c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "There are three toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-three-toys-a4e2cf.mp3"
+            },
+            {
+              "key": "one",
+              "text": "There are one toys.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-one-toys-f22c2b.mp3"
+            }
           ]
         },
         {
@@ -171,6 +460,47 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-four-toys-c23953.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-toys-8dd8b3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "Two chips can show two lions.",
+              "audio": "audio/sentences/k2-math-1-5/a-two-chips-can-show-two-lions-bea50f.mp3"
+            },
+            {
+              "key": "three",
+              "text": "Three chips can show number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-three-chips-can-show-number-three-53ca08.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show number four?",
+          "a": [
+            "Four chips can show number four."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "几个筹码能表示数字 四？",
+          "a_cn": [
+            "四 个筹码能表示数字 四。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-number-four-a58c81.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-four-chips-can-show-number-four-cf0825.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "One chip can show number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+            },
+            {
+              "key": "one",
+              "text": "One chip can show one box.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-one-box-d94082.mp3"
+            }
           ]
         }
       ],
@@ -182,6 +512,35 @@
       "tag": "number",
       "image": "images/math-five.webp",
       "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number five."
+          ],
+          "key": [
+            "five"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字 五。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-it-s-number-five-82bd3b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
         {
           "q": "How many animals are there?",
           "a": [
@@ -197,6 +556,18 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-animals-are-there-5b8579.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-five-animals-f0ca57.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "There are three animals.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-three-animals-7ad3f1.mp3"
+            },
+            {
+              "key": "one",
+              "text": "There are one animals.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-one-animals-19eb2d.mp3"
+            }
           ]
         },
         {
@@ -214,6 +585,47 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-five-animals-bd2e8d.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-five-chips-can-show-five-animals-aba4f0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "Two chips can show number two.",
+              "audio": "audio/sentences/k2-math-1-5/a-two-chips-can-show-number-two-525e68.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four chips can show number four.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-number-four-cf0825.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show number five?",
+          "a": [
+            "Five chips can show number five."
+          ],
+          "key": [
+            "five"
+          ],
+          "q_cn": "几个筹码能表示数字 五？",
+          "a_cn": [
+            "五 个筹码能表示数字 五。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-number-five-a6eb72.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-five-chips-can-show-number-five-2fb5b2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "four",
+              "text": "Four chips can show number four.",
+              "audio": "audio/sentences/k2-math-1-5/a-four-chips-can-show-number-four-cf0825.mp3"
+            },
+            {
+              "key": "two",
+              "text": "Two chips can show two lions.",
+              "audio": "audio/sentences/k2-math-1-5/a-two-chips-can-show-two-lions-bea50f.mp3"
+            }
           ]
         }
       ],
@@ -262,7 +674,19 @@
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-five-chips-d17c0f.mp3"
           ],
-          "image": "images/math-count-chips-five.webp"
+          "image": "images/math-count-chips-five.webp",
+          "opts": [
+            {
+              "key": "three",
+              "text": "There are three chips.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-three-chips-05108d.mp3"
+            },
+            {
+              "key": "one",
+              "text": "There are one chips.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-one-chips-e7dbf5.mp3"
+            }
+          ]
         }
       ],
       "quiz": false,
@@ -289,6 +713,49 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-lions-are-there-9becdf.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-two-lions-e66fba.mp3"
+          ],
+          "image": "images/k2-two-lions.webp",
+          "opts": [
+            {
+              "key": "four",
+              "text": "There are four lions.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-four-lions-020834.mp3"
+            },
+            {
+              "key": "five",
+              "text": "There are five lions.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-five-lions-d984c3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show two lions?",
+          "a": [
+            "Two chips can show two lions."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "几个筹码能表示两只狮子？",
+          "a_cn": [
+            "二 个筹码能表示两只狮子。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-two-lions-85446d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-two-chips-can-show-two-lions-bea50f.mp3"
+          ],
+          "image": "images/k2-two-lions-chips.webp",
+          "opts": [
+            {
+              "key": "three",
+              "text": "Three chips can show number three.",
+              "audio": "audio/sentences/k2-math-1-5/a-three-chips-can-show-number-three-53ca08.mp3"
+            },
+            {
+              "key": "one",
+              "text": "One chip can show number one.",
+              "audio": "audio/sentences/k2-math-1-5/a-one-chip-can-show-number-one-b5da35.mp3"
+            }
           ]
         }
       ],
@@ -315,6 +782,49 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-apples-are-there-33bd78.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-there-are-four-apples-dcac8f.mp3"
+          ],
+          "image": "images/k2-four-apples.webp",
+          "opts": [
+            {
+              "key": "five",
+              "text": "There are five apples.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-five-apples-fcd989.mp3"
+            },
+            {
+              "key": "three",
+              "text": "There are three apples.",
+              "audio": "audio/sentences/k2-math-1-5/a-there-are-three-apples-23d588.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show four apples?",
+          "a": [
+            "Four chips can show four apples."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "几个筹码能表示四个苹果？",
+          "a_cn": [
+            "四 个筹码能表示四个苹果。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-four-apples-08d293.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-four-chips-can-show-four-apples-a136c7.mp3"
+          ],
+          "image": "images/k2-four-apples-chips.webp",
+          "opts": [
+            {
+              "key": "two",
+              "text": "Two chips can show number two.",
+              "audio": "audio/sentences/k2-math-1-5/a-two-chips-can-show-number-two-525e68.mp3"
+            },
+            {
+              "key": "five",
+              "text": "Five chips can show five animals.",
+              "audio": "audio/sentences/k2-math-1-5/a-five-chips-can-show-five-animals-aba4f0.mp3"
+            }
           ]
         }
       ],
@@ -341,6 +851,49 @@
           "q_audio": "audio/sentences/k2-math-1-5/q-how-many-hands-do-you-have-73098c.mp3",
           "a_audio": [
             "audio/sentences/k2-math-1-5/a-i-have-two-hands-5ccb94.mp3"
+          ],
+          "image": "images/k2-two-hands-math.webp",
+          "opts": [
+            {
+              "key": "four",
+              "text": "I have four hands.",
+              "audio": "audio/sentences/k2-math-1-5/a-i-have-four-hands-50fcaf.mp3"
+            },
+            {
+              "key": "five",
+              "text": "I have five hands.",
+              "audio": "audio/sentences/k2-math-1-5/a-i-have-five-hands-e197d6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chips can show two hands?",
+          "a": [
+            "Two chips can show two hands."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "几个筹码能表示两只手？",
+          "a_cn": [
+            "二 个筹码能表示两只手。"
+          ],
+          "q_audio": "audio/sentences/k2-math-1-5/q-how-many-chips-can-show-two-hands-cf9b60.mp3",
+          "a_audio": [
+            "audio/sentences/k2-math-1-5/a-two-chips-can-show-two-hands-282463.mp3"
+          ],
+          "image": "images/k2-two-hands-chips.webp",
+          "opts": [
+            {
+              "key": "five",
+              "text": "Five chips can show number five.",
+              "audio": "audio/sentences/k2-math-1-5/a-five-chips-can-show-number-five-2fb5b2.mp3"
+            },
+            {
+              "key": "five",
+              "text": "Five chips can show five animals.",
+              "audio": "audio/sentences/k2-math-1-5/a-five-chips-can-show-five-animals-aba4f0.mp3"
+            }
           ]
         }
       ],
@@ -406,6 +959,7 @@
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
     "lions": "audio/words/lions.mp3",
     "many": "audio/words/many.mp3",
     "my": "audio/words/my.mp3",
@@ -416,11 +970,13 @@
     "show": "audio/words/show.mp3",
     "the": "audio/words/the.mp3",
     "there": "audio/words/there.mp3",
+    "this": "audio/words/this.mp3",
     "three": "audio/words/three.mp3",
     "toys": "audio/words/toys.mp3",
     "two": "audio/words/two.mp3",
     "unicycles": "audio/words/unicycles.mp3",
     "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
     "with": "audio/words/with.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3",

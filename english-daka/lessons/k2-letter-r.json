@@ -1,7 +1,9 @@
 {
   "seq": 109,
+  "level": "K2",
   "group": "字母 Letters",
   "badge": "R",
+  "cover": "images/r-letter.webp",
   "title": "Letter R · /r/",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-letter-ab944e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-letter-r-804942.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "It's letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-letter-t-f0e81f.mp3"
+            },
+            {
+              "key": "y",
+              "text": "It's letter Y.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-letter-y-dd08b8.mp3"
+            }
           ]
         },
         {
@@ -42,6 +56,18 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-letter-r-make-4c97fa.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-r-makes-the-sound-r-4a6872.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "R makes the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-r/a-r-makes-the-sound-oh-85f487.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "R makes the sound /u/.",
+              "audio": "audio/sentences/k2-letter-r/a-r-makes-the-sound-u-4bbfd9.mp3"
+            }
           ]
         }
       ],
@@ -68,6 +94,18 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-animal-ac42e5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "crayfish",
+              "text": "It's a crayfish.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+            },
+            {
+              "key": "city",
+              "text": "It's a city.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
+            }
           ]
         },
         {
@@ -85,6 +123,47 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-raccoon-begin-with-2c5086.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-r-c970f8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Raccoon begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-j-1ebfb0.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Raccoon begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-the-sound-a-4e9ec9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does raccoon begin with?",
+          "a": [
+            "Raccoon begins with letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "raccoon 以哪个字母开头？",
+          "a_cn": [
+            "raccoon 以字母 R 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-raccoon-begin-with-5c3bc5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-r-904251.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Raccoon begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-s-4f091b.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Raccoon begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-raccoon-begins-with-letter-t-2d2ac6.mp3"
+            }
           ]
         }
       ],
@@ -114,6 +193,47 @@
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-sight-word-sleep-0313cc.mp3",
             "audio/sentences/k2-letter-r/a-i-sleep-at-night-1a4a60.mp3"
+          ],
+          "opts": [
+            {
+              "key": "go",
+              "text": "It's sight word go.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-sight-word-go-0bdeca.mp3"
+            },
+            {
+              "key": "and",
+              "text": "It's sight word and.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-sight-word-and-9c3d0b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sleep begin with?",
+          "a": [
+            "Sleep begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "sleep 以哪个字母开头？",
+          "a_cn": [
+            "sleep 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-sleep-begin-with-5cbe65.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-s-4e8e1b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Sleep begins with letter R.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-r-d18ca9.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Sleep begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-t-2eec37.mp3"
+            }
           ]
         }
       ],
@@ -140,6 +260,48 @@
           "q_audio": "audio/sentences/k2-letter-r/q-can-you-sing-a-song-44e08a.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-yes-i-can-sing-a-song-1dcebd.mp3"
+          ],
+          "image": "images/k2-r-sing-song.webp",
+          "opts": [
+            {
+              "key": "river",
+              "text": "The crayfish lives in the river.",
+              "audio": "audio/sentences/k2-letter-r/a-the-crayfish-lives-in-the-river-3adc92.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Sleep begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-s-4e8e1b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does sing begin with?",
+          "a": [
+            "Sing begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "sing 以哪个字母开头？",
+          "a_cn": [
+            "sing 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-sing-begin-with-c1554c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-sing-begins-with-letter-s-55d189.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Sing begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-sing-begins-with-letter-t-533cf4.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Sing begins with letter R.",
+              "audio": "audio/sentences/k2-letter-r/a-sing-begins-with-letter-r-17e191.mp3"
+            }
           ]
         }
       ],
@@ -166,6 +328,18 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "raccoon",
+              "text": "It's a raccoon.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+            },
+            {
+              "key": "ring",
+              "text": "It's a ring.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+            }
           ]
         }
       ],
@@ -192,6 +366,76 @@
           "q_audio": "audio/sentences/k2-letter-r/q-where-does-the-crayfish-live-a555c3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-the-crayfish-lives-in-the-river-3adc92.mp3"
+          ],
+          "opts": [
+            {
+              "key": "can",
+              "text": "Yes, I can sing a song.",
+              "audio": "audio/sentences/k2-letter-r/a-yes-i-can-sing-a-song-1dcebd.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Sleep begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-sleep-begins-with-letter-s-4e8e1b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does river begin with?",
+          "a": [
+            "River begins with the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "river 的开头是什么音？",
+          "a_cn": [
+            "river 开头是 /r/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-river-begin-with-e9e9ab.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-r-3b0cf7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/e/",
+              "text": "River begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-e-058230.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "River begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-the-sound-d-b64904.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does river begin with?",
+          "a": [
+            "River begins with letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "river 以哪个字母开头？",
+          "a_cn": [
+            "river 以字母 R 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-river-begin-with-ed35bb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-river-begins-with-letter-r-02f210.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "River begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-letter-s-c527e8.mp3"
+            },
+            {
+              "key": "t",
+              "text": "River begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-river-begins-with-letter-t-0a386a.mp3"
+            }
           ]
         }
       ],
@@ -218,6 +462,47 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-hollow-tree-417469.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sleep",
+              "text": "It's sight word sleep.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-sight-word-sleep-0313cc.mp3"
+            },
+            {
+              "key": "ring",
+              "text": "It's a ring.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does tree begin with?",
+          "a": [
+            "Tree begins with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "tree 以哪个字母开头？",
+          "a_cn": [
+            "tree 以字母 T 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-tree-begin-with-c2bca8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-tree-begins-with-letter-t-0ea563.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Tree begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-tree-begins-with-letter-s-7382f4.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Tree begins with letter R.",
+              "audio": "audio/sentences/k2-letter-r/a-tree-begins-with-letter-r-a26671.mp3"
+            }
           ]
         }
       ],
@@ -244,6 +529,18 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-word-1d82d4.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "crayfish",
+              "text": "It's a crayfish.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+            },
+            {
+              "key": "rat",
+              "text": "It's a rat.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
+            }
           ]
         }
       ],
@@ -270,6 +567,76 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-animal-ac42e5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-rat-ae427b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "raccoon",
+              "text": "It's a raccoon.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-raccoon-8723cc.mp3"
+            },
+            {
+              "key": "ring",
+              "text": "It's a ring.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does rat begin with?",
+          "a": [
+            "Rat begins with the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "rat 的开头是什么音？",
+          "a_cn": [
+            "rat 开头是 /r/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-rat-begin-with-fbe4b7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-r-e212a7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Rat begins with the sound /f/.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-f-5998a2.mp3"
+            },
+            {
+              "key": "/e/",
+              "text": "Rat begins with the sound /e/.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-the-sound-e-39a96f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does rat begin with?",
+          "a": [
+            "Rat begins with letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "rat 以哪个字母开头？",
+          "a_cn": [
+            "rat 以字母 R 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-rat-begin-with-ad3887.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-rat-begins-with-letter-r-0c3a33.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Rat begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-letter-s-5204dd.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Rat begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-rat-begins-with-letter-t-ca2a89.mp3"
+            }
           ]
         }
       ],
@@ -296,6 +663,76 @@
           "q_audio": "audio/sentences/k2-letter-r/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-r/a-it-s-a-ring-eee28f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "crayfish",
+              "text": "It's a crayfish.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-crayfish-dfc2bd.mp3"
+            },
+            {
+              "key": "city",
+              "text": "It's a city.",
+              "audio": "audio/sentences/k2-letter-r/a-it-s-a-city-d96e3e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does ring begin with?",
+          "a": [
+            "Ring begins with the sound /r/."
+          ],
+          "key": [
+            "/r/"
+          ],
+          "q_cn": "ring 的开头是什么音？",
+          "a_cn": [
+            "ring 开头是 /r/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-what-sound-does-ring-begin-with-ae7ca8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-r-f4f76d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Ring begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-g-39ab49.mp3"
+            },
+            {
+              "key": "/v/",
+              "text": "Ring begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-the-sound-v-fb89d0.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ring begin with?",
+          "a": [
+            "Ring begins with letter R."
+          ],
+          "key": [
+            "r"
+          ],
+          "q_cn": "ring 以哪个字母开头？",
+          "a_cn": [
+            "ring 以字母 R 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-r/q-which-letter-does-ring-begin-with-1b6b6d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-r/a-ring-begins-with-letter-r-5fba13.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Ring begins with letter S.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-letter-s-d8b61c.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Ring begins with letter T.",
+              "audio": "audio/sentences/k2-letter-r/a-ring-begins-with-letter-t-027429.mp3"
+            }
           ]
         }
       ],
@@ -315,6 +752,7 @@
   },
   "word_audio": {
     "a": "audio/words/a.mp3",
+    "and": "audio/words/and.mp3",
     "animal": "audio/words/animal.mp3",
     "at": "audio/words/at.mp3",
     "begin": "audio/words/begin.mp3",
@@ -322,11 +760,17 @@
     "can": "audio/words/can.mp3",
     "city": "audio/words/city.mp3",
     "crayfish": "audio/words/crayfish.mp3",
+    "d": "audio/words/d.mp3",
     "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "f": "audio/words/f.mp3",
+    "g": "audio/words/g.mp3",
+    "go": "audio/words/go.mp3",
     "hollow": "audio/words/hollow.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
     "it's": "audio/words/it-s.mp3",
+    "j": "audio/words/j.mp3",
     "letter": "audio/words/letter.mp3",
     "letter r": "audio/words/letter-r.mp3",
     "live": "audio/words/live.mp3",
@@ -334,24 +778,31 @@
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
     "night": "audio/words/night.mp3",
+    "oh": "audio/words/oh.mp3",
     "r": "audio/words/r.mp3",
     "raccoon": "audio/words/raccoon.mp3",
     "rat": "audio/words/rat.mp3",
     "ring": "audio/words/ring.mp3",
     "river": "audio/words/river.mp3",
+    "s": "audio/words/s.mp3",
     "sight": "audio/words/sight.mp3",
     "sing": "audio/words/sing.mp3",
     "sleep": "audio/words/sleep.mp3",
     "song": "audio/words/song.mp3",
     "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "tree": "audio/words/tree.mp3",
+    "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",
+    "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",
     "word": "audio/words/word.mp3",
+    "y": "audio/words/y.mp3",
     "yes": "audio/words/yes.mp3",
     "you": "audio/words/you.mp3"
   }
