@@ -2212,8 +2212,12 @@ function buildDialog(c, din){
       const img = document.createElement("img");
       img.className = "pic"; img.loading = "lazy"; img.src = imgSrc(pic);
       din.appendChild(img);
-    }else if(perQA && /^[a-z]{2,6}$/i.test(qa.key[0] || "")){
-      // 这一问没图、卡片也没图 —— 放字母,不要留空
+    }else if(perQA && !c.pattern && !c.eq && /^[a-z]{2,6}$/i.test(qa.key[0] || "")){
+      /* 这一问没图、卡片也**没有任何画面** —— 放字母,不要留空。
+         ⚠️ 必须排掉 pattern/eq 卡:它们的画面已经顶在这张卡最上面了,
+         再补一块字母是多余的,而且在颜色课里直接是误导 ——
+         「red」这一问会画出一个**蓝底**的 RED 字块,压在红色块下面,
+         孩子正在学"红色"却看到红字写在蓝底上。 */
       const box = document.createElement("div");
       box.className = "eq-box";
       box.innerHTML = letterTiles(qa.key[0]);
