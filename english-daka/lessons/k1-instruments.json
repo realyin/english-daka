@@ -347,7 +347,8 @@
      "q_audio": "audio/sentences/k1-instruments/q-what-do-you-need-to-play-the-drums-7542e7.mp3",
      "a_audio": [
       "audio/sentences/k1-instruments/a-i-need-drumsticks-c257ee.mp3"
-     ]
+     ],
+     "image": "images/k1-drumsticks.webp"
     }
    ],
    "quiz_audio": "audio/sentences/k1-instruments/q-which-one-is-drums-02e43a.mp3"

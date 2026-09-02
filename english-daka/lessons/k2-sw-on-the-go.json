@@ -303,7 +303,8 @@
      "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-do-we-say-on-easter-303465.mp3",
      "a_audio": [
       "audio/sentences/k2-sw-on-the-go/a-we-say-happy-easter-9df5e2.mp3"
-     ]
+     ],
+     "image": "images/k1-say-happy-easter.webp"
     },
     {
      "q": "What do we wear on Easter?",

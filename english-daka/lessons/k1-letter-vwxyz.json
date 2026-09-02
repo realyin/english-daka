@@ -43,7 +43,8 @@
      "q_audio": "audio/sentences/k1-letter-vwxyz/q-can-you-show-me-letter-v-e85b23.mp3",
      "a_audio": [
       "audio/sentences/k1-letter-vwxyz/a-i-can-show-you-letter-v-f37886.mp3"
-     ]
+     ],
+     "image": "images/k1-pose-v.webp"
     },
     {
      "q": "Is it a big V or a small v?",
@@ -103,7 +104,8 @@
      "q_audio": "audio/sentences/k1-letter-vwxyz/q-can-you-show-me-letter-w-158380.mp3",
      "a_audio": [
       "audio/sentences/k1-letter-vwxyz/a-i-can-show-you-letter-w-e128b0.mp3"
-     ]
+     ],
+     "image": "images/k1-pose-w.webp"
     },
     {
      "q": "Is it a big W or a small w?",
@@ -163,7 +165,8 @@
      "q_audio": "audio/sentences/k1-letter-vwxyz/q-can-you-show-me-letter-x-9f01fd.mp3",
      "a_audio": [
       "audio/sentences/k1-letter-vwxyz/a-i-can-show-you-letter-x-85744a.mp3"
-     ]
+     ],
+     "image": "images/k1-pose-x.webp"
     },
     {
      "q": "Is it a big X or a small x?",
@@ -223,7 +226,8 @@
      "q_audio": "audio/sentences/k1-letter-vwxyz/q-can-you-show-me-letter-y-fcea18.mp3",
      "a_audio": [
       "audio/sentences/k1-letter-vwxyz/a-i-can-show-you-letter-y-783eda.mp3"
-     ]
+     ],
+     "image": "images/k1-pose-y.webp"
     },
     {
      "q": "Is it a big Y or a small y?",
@@ -283,7 +287,8 @@
      "q_audio": "audio/sentences/k1-letter-vwxyz/q-can-you-show-me-letter-z-d2181e.mp3",
      "a_audio": [
       "audio/sentences/k1-letter-vwxyz/a-i-can-show-you-letter-z-33cb1a.mp3"
-     ]
+     ],
+     "image": "images/k1-pose-z.webp"
     },
     {
      "q": "Is it a big Z or a small z?",
