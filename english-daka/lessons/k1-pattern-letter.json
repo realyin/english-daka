@@ -1,190 +1,191 @@
 {
-  "seq": 1001,
-  "level": "K1",
-  "group": "规律 Patterns",
-  "badge": "字母",
-  "title": "Letter Pattern · 字母规律",
-  "cards": [
+ "seq": 1001,
+ "level": "K1",
+ "group": "规律 Patterns",
+ "badge": "字母",
+ "cover": "images/k1-pattern-letter.webp",
+ "title": "Letter Pattern · 字母规律",
+ "cards": [
+  {
+   "word": "LMN pattern",
+   "cn": "LMN 规律",
+   "tag": "pattern",
+   "pattern": [
+    "L",
+    "M",
+    "N",
+    "L",
+    "M",
+    "N",
+    "?"
+   ],
+   "dialog": [
     {
-      "word": "LMN pattern",
-      "cn": "LMN 规律",
-      "tag": "pattern",
-      "pattern": [
-        "L",
-        "M",
-        "N",
-        "L",
-        "M",
-        "N",
-        "?"
-      ],
-      "dialog": [
-        {
-          "q": "What's this pattern?",
-          "a": [
-            "The pattern is L M N, L M N."
-          ],
-          "key": [
-            "l"
-          ],
-          "q_cn": "这个规律是什么？",
-          "a_cn": [
-            "这个规律是 L M N，L M N。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
-          ],
-          "opts": [
-            {
-              "key": "p",
-              "text": "The pattern is P B R, P B R.",
-              "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
-            },
-            {
-              "key": "p",
-              "text": "P comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
-            }
-          ]
-        },
-        {
-          "q": "What comes next?",
-          "a": [
-            "L comes next."
-          ],
-          "key": [
-            "l"
-          ],
-          "q_cn": "下一个是什么？",
-          "a_cn": [
-            "下一个是L。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
-          ],
-          "opts": [
-            {
-              "key": "p",
-              "text": "P comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
-            },
-            {
-              "key": "rectangle",
-              "text": "Rectangle comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-rectangle-comes-next-f102a7.mp3"
-            }
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-pattern-letter/q-which-one-is-lmn-pattern-c3375b.mp3"
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is L M N, L M N."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 L M N，L M N。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
+     ],
+     "opts": [
+      {
+       "key": "p",
+       "text": "The pattern is P B R, P B R.",
+       "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
+      },
+      {
+       "key": "p",
+       "text": "P comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+      }
+     ]
     },
     {
-      "word": "PBR pattern",
-      "cn": "PBR 规律",
-      "tag": "pattern",
-      "pattern": [
-        "P",
-        "B",
-        "R",
-        "P",
-        "B",
-        "R",
-        "?"
-      ],
-      "dialog": [
-        {
-          "q": "What's this pattern?",
-          "a": [
-            "The pattern is P B R, P B R."
-          ],
-          "key": [
-            "p"
-          ],
-          "q_cn": "这个规律是什么？",
-          "a_cn": [
-            "这个规律是 P B R，P B R。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
-          ],
-          "opts": [
-            {
-              "key": "l",
-              "text": "The pattern is L M N, L M N.",
-              "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
-            },
-            {
-              "key": "l",
-              "text": "L comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
-            }
-          ]
-        },
-        {
-          "q": "What comes next?",
-          "a": [
-            "P comes next."
-          ],
-          "key": [
-            "p"
-          ],
-          "q_cn": "下一个是什么？",
-          "a_cn": [
-            "下一个是P。"
-          ],
-          "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
-          "a_audio": [
-            "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
-          ],
-          "opts": [
-            {
-              "key": "l",
-              "text": "L comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
-            },
-            {
-              "key": "fish",
-              "text": "Fish comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-fish-comes-next-888ff0.mp3"
-            }
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/k1-pattern-letter/q-which-one-is-pbr-pattern-5300ff.mp3"
+     "q": "What comes next?",
+     "a": [
+      "L comes next."
+     ],
+     "key": [
+      "l"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是L。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+     ],
+     "opts": [
+      {
+       "key": "p",
+       "text": "P comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+      },
+      {
+       "key": "rectangle",
+       "text": "Rectangle comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-rectangle-comes-next-f102a7.mp3"
+      }
+     ]
     }
-  ],
-  "word_audio": {
-    "b": "audio/words/b.mp3",
-    "comes": "audio/words/comes.mp3",
-    "fish": "audio/words/fish.mp3",
-    "is": "audio/words/is.mp3",
-    "l": "audio/words/l.mp3",
-    "lmn pattern": "audio/words/lmn-pattern.mp3",
-    "m": "audio/words/m.mp3",
-    "n": "audio/words/n.mp3",
-    "next": "audio/words/next.mp3",
-    "p": "audio/words/p.mp3",
-    "pattern": "audio/words/pattern.mp3",
-    "pbr pattern": "audio/words/pbr-pattern.mp3",
-    "r": "audio/words/r.mp3",
-    "rectangle": "audio/words/rectangle.mp3",
-    "the": "audio/words/the.mp3",
-    "this": "audio/words/this.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3"
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-letter/q-which-one-is-lmn-pattern-c3375b.mp3"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "PBR pattern",
+   "cn": "PBR 规律",
+   "tag": "pattern",
+   "pattern": [
+    "P",
+    "B",
+    "R",
+    "P",
+    "B",
+    "R",
+    "?"
+   ],
+   "dialog": [
+    {
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is P B R, P B R."
+     ],
+     "key": [
+      "p"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 P B R，P B R。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-letter/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-letter/a-the-pattern-is-p-b-r-p-b-r-76f3a5.mp3"
+     ],
+     "opts": [
+      {
+       "key": "l",
+       "text": "The pattern is L M N, L M N.",
+       "audio": "audio/sentences/k1-pattern-letter/a-the-pattern-is-l-m-n-l-m-n-00154f.mp3"
+      },
+      {
+       "key": "l",
+       "text": "L comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What comes next?",
+     "a": [
+      "P comes next."
+     ],
+     "key": [
+      "p"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是P。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-letter/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
+     ],
+     "opts": [
+      {
+       "key": "l",
+       "text": "L comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
+      },
+      {
+       "key": "fish",
+       "text": "Fish comes next.",
+       "audio": "audio/sentences/k1-pattern-letter/a-fish-comes-next-888ff0.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-letter/q-which-one-is-pbr-pattern-5300ff.mp3"
   }
+ ],
+ "word_audio": {
+  "b": "audio/words/b.mp3",
+  "comes": "audio/words/comes.mp3",
+  "fish": "audio/words/fish.mp3",
+  "is": "audio/words/is.mp3",
+  "l": "audio/words/l.mp3",
+  "lmn pattern": "audio/words/lmn-pattern.mp3",
+  "m": "audio/words/m.mp3",
+  "n": "audio/words/n.mp3",
+  "next": "audio/words/next.mp3",
+  "p": "audio/words/p.mp3",
+  "pattern": "audio/words/pattern.mp3",
+  "pbr pattern": "audio/words/pbr-pattern.mp3",
+  "r": "audio/words/r.mp3",
+  "rectangle": "audio/words/rectangle.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }

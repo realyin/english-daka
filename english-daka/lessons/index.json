@@ -427,7 +427,8 @@
       "group": "规律 Patterns",
       "badge": "字母",
       "seq": 1001,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-pattern-letter.webp"
     },
     {
       "id": "k1-pattern-number",
@@ -436,7 +437,8 @@
       "group": "规律 Patterns",
       "badge": "数字",
       "seq": 1002,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-pattern-number.webp"
     },
     {
       "id": "k1-pattern-color",
@@ -445,7 +447,8 @@
       "group": "规律 Patterns",
       "badge": "颜色",
       "seq": 1003,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-pattern-color.webp"
     },
     {
       "id": "k1-pattern-shape",
@@ -454,7 +457,8 @@
       "group": "规律 Patterns",
       "badge": "形状",
       "seq": 1004,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-pattern-shape.webp"
     },
     {
       "id": "k1-pattern-symbol",
@@ -463,7 +467,8 @@
       "group": "规律 Patterns",
       "badge": "符号",
       "seq": 1005,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-pattern-symbol.webp"
     },
     {
       "id": "k1-instruments",
@@ -853,7 +858,8 @@
       "badge": "−1",
       "badge_sub": "减法",
       "seq": 603,
-      "level": "K2"
+      "level": "K2",
+      "cover": "images/20-one-fewer-than-and-zero.webp"
     },
     {
       "id": "k2-recycling",
