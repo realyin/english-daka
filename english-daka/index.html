@@ -1463,9 +1463,9 @@ function renderDayPicker(data){
   const btn = document.getElementById("dayBtn");
   if(!btn) return;
   if(!days.length){
+    // 提示语要短:一句话说清"这里将来是什么",别解释机制(实测点名嫌啰嗦)
     document.getElementById("dayList").innerHTML =
-      `<p class="day-empty">这里会按上课日期列出每天学过的卡片，` +
-      `选一天就能整套重过。<br>等课程带上日期信息后就有内容了。</p>`;
+      `<p class="day-empty">上过课后，这里会按日期列出当天学的卡片。</p>`;
   }else{
     renderDayList(data, days);
   }
