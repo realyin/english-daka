@@ -136,14 +136,14 @@
           ],
           "opts": [
             {
-              "key": "money",
-              "text": "We can get lucky money.",
-              "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-get-lucky-money-e1cd81.mp3"
-            },
-            {
               "key": "couplets",
               "text": "We can put up couplets.",
               "audio": "audio/sentences/k1-holiday-spring-festival/a-we-can-put-up-couplets-4a5469.mp3"
+            },
+            {
+              "key": "new",
+              "text": "Happy New Year!",
+              "audio": "audio/sentences/k1-holiday-spring-festival/a-happy-new-year-917d5f.mp3"
             }
           ]
         }

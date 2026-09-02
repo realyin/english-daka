@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-body-nose/a-this-is-a-mouth-155fd0.mp3"
             },
             {
-              "key": "neck",
-              "text": "This is a neck.",
-              "audio": "audio/sentences/k1-body-nose/a-this-is-a-neck-1ea311.mp3"
+              "key": "spaceship",
+              "text": "This is a spaceship.",
+              "audio": "audio/sentences/k1-body-nose/a-this-is-a-spaceship-2004c5.mp3"
             }
           ]
         },
@@ -122,9 +122,9 @@
               "audio": "audio/sentences/k1-body-nose/a-this-is-a-nose-db83ee.mp3"
             },
             {
-              "key": "nest",
-              "text": "This is a nest.",
-              "audio": "audio/sentences/k1-body-nose/a-this-is-a-nest-0f98f0.mp3"
+              "key": "policeman",
+              "text": "This is a policeman.",
+              "audio": "audio/sentences/k1-body-nose/a-this-is-a-policeman-5554cb.mp3"
             }
           ]
         },
@@ -147,14 +147,14 @@
           "image": "images/k1-eat-with-mouth.webp",
           "opts": [
             {
-              "key": "drink",
-              "text": "I can drink with my mouth.",
-              "audio": "audio/sentences/k1-body-nose/a-i-can-drink-with-my-mouth-70b450.mp3"
-            },
-            {
               "key": "smell",
               "text": "I can smell with my nose.",
               "audio": "audio/sentences/k1-body-nose/a-i-can-smell-with-my-nose-138300.mp3"
+            },
+            {
+              "key": "drink",
+              "text": "I can drink with my mouth.",
+              "audio": "audio/sentences/k1-body-nose/a-i-can-drink-with-my-mouth-70b450.mp3"
             }
           ]
         },
@@ -177,14 +177,14 @@
           "image": "images/k1-drink-with-mouth.webp",
           "opts": [
             {
-              "key": "eat",
-              "text": "I can eat with my mouth.",
-              "audio": "audio/sentences/k1-body-nose/a-i-can-eat-with-my-mouth-b33f9e.mp3"
-            },
-            {
               "key": "smell",
               "text": "I can smell with my nose.",
               "audio": "audio/sentences/k1-body-nose/a-i-can-smell-with-my-nose-138300.mp3"
+            },
+            {
+              "key": "eat",
+              "text": "I can eat with my mouth.",
+              "audio": "audio/sentences/k1-body-nose/a-i-can-eat-with-my-mouth-b33f9e.mp3"
             }
           ]
         }
@@ -204,11 +204,11 @@
     "is": "audio/words/is.mp3",
     "mouth": "audio/words/mouth.mp3",
     "my": "audio/words/my.mp3",
-    "neck": "audio/words/neck.mp3",
-    "nest": "audio/words/nest.mp3",
     "nose": "audio/words/nose.mp3",
     "part": "audio/words/part.mp3",
+    "policeman": "audio/words/policeman.mp3",
     "smell": "audio/words/smell.mp3",
+    "spaceship": "audio/words/spaceship.mp3",
     "this": "audio/words/this.mp3",
     "touch": "audio/words/touch.mp3",
     "what": "audio/words/what.mp3",

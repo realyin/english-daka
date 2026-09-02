@@ -88,14 +88,14 @@
           ],
           "opts": [
             {
-              "key": "small",
-              "text": "It's a small b.",
-              "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-small-b-788156.mp3"
-            },
-            {
               "key": "d",
               "text": "Letter D comes next.",
               "audio": "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
+            },
+            {
+              "key": "small",
+              "text": "It's a small b.",
+              "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-small-b-788156.mp3"
             }
           ]
         }
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
+              "key": "c",
+              "text": "It's letter C.",
+              "audio": "audio/sentences/k1-letter-abcd/a-it-s-letter-c-522e2e.mp3"
+            },
+            {
               "key": "d",
               "text": "It's letter D.",
               "audio": "audio/sentences/k1-letter-abcd/a-it-s-letter-d-9f52e9.mp3"
-            },
-            {
-              "key": "a",
-              "text": "It's letter A.",
-              "audio": "audio/sentences/k1-letter-abcd/a-it-s-letter-a-3ee564.mp3"
             }
           ]
         },
@@ -185,14 +185,14 @@
           ],
           "opts": [
             {
+              "key": "big",
+              "text": "It's a big C.",
+              "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-big-c-32e040.mp3"
+            },
+            {
               "key": "c",
               "text": "Letter C is missing.",
               "audio": "audio/sentences/k1-letter-abcd/a-letter-c-is-missing-9c9fc6.mp3"
-            },
-            {
-              "key": "d",
-              "text": "Letter D comes next.",
-              "audio": "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
             }
           ]
         }
@@ -287,9 +287,9 @@
               "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-small-b-788156.mp3"
             },
             {
-              "key": "d",
-              "text": "Letter D comes next.",
-              "audio": "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
+              "key": "small",
+              "text": "It's a small d.",
+              "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-small-d-76f355.mp3"
             }
           ]
         }
@@ -350,14 +350,14 @@
           "image": "images/k1-pose-d.webp",
           "opts": [
             {
+              "key": "a",
+              "text": "I can show you letter A.",
+              "audio": "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-a-ca45ae.mp3"
+            },
+            {
               "key": "b",
               "text": "I can show you letter B.",
               "audio": "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-b-78cbac.mp3"
-            },
-            {
-              "key": "c",
-              "text": "I can show you letter C.",
-              "audio": "audio/sentences/k1-letter-abcd/a-i-can-show-you-letter-c-9a1ae6.mp3"
             }
           ]
         },
@@ -379,14 +379,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Letter D comes next.",
-              "audio": "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
-            },
-            {
               "key": "big",
               "text": "It's a big A.",
               "audio": "audio/sentences/k1-letter-abcd/a-it-s-a-big-a-e5e256.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Letter D comes next.",
+              "audio": "audio/sentences/k1-letter-abcd/a-letter-d-comes-next-bcf738.mp3"
             }
           ]
         }
@@ -429,9 +429,9 @@
               "audio": "audio/sentences/k1-letter-abcd/a-letter-k-is-missing-cfc42a.mp3"
             },
             {
-              "key": "f",
-              "text": "Letter F is missing.",
-              "audio": "audio/sentences/k1-letter-abcd/a-letter-f-is-missing-696855.mp3"
+              "key": "r",
+              "text": "Letter R is missing.",
+              "audio": "audio/sentences/k1-letter-abcd/a-letter-r-is-missing-a60940.mp3"
             }
           ]
         }
@@ -468,9 +468,9 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Letter H comes next.",
-              "audio": "audio/sentences/k1-letter-abcd/a-letter-h-comes-next-03ec40.mp3"
+              "key": "p",
+              "text": "Letter P comes next.",
+              "audio": "audio/sentences/k1-letter-abcd/a-letter-p-comes-next-506e58.mp3"
             },
             {
               "key": "u",
@@ -491,8 +491,6 @@
     "can": "audio/words/can.mp3",
     "comes": "audio/words/comes.mp3",
     "d": "audio/words/d.mp3",
-    "f": "audio/words/f.mp3",
-    "h": "audio/words/h.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",
@@ -508,6 +506,8 @@
     "missing": "audio/words/missing.mp3",
     "next": "audio/words/next.mp3",
     "or": "audio/words/or.mp3",
+    "p": "audio/words/p.mp3",
+    "r": "audio/words/r.mp3",
     "show": "audio/words/show.mp3",
     "small": "audio/words/small.mp3",
     "this": "audio/words/this.mp3",

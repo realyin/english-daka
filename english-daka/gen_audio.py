@@ -327,12 +327,16 @@ def plan_lesson(lesson: dict, lesson_id: str, tasks: dict, write_back=True):
             # 第一层是换词造出来的新句子,要在这儿排进任务表 —— 和答句同一个
             # 角色(a=Jenny),否则三个选项里正确的那条会是另一个音色,一听就露
             for opt in (qa.get("opts") or []):
+                # ⚠️ 收词要在 continue 之前:第二层干扰句自带 audio、第一层
+                # 重跑时 audio 也已经填好,两种都会走 continue —— 收词写在下面
+                # 就永远收不到,选项句里的词(doctor/horse/mittens…)进不了
+                # word_audio,点读时静默退回浏览器 TTS,换了个音色
+                all_words.update(words_of(opt["text"]))
                 if opt.get("audio"): continue
                 rel = clip_rel("a", opt["text"], lesson_id)
                 tasks[rel] = ("a", opt["text"])
                 if write_back:
                     opt["audio"] = rel
-                all_words.update(words_of(opt["text"]))
             for s in [qa["q"], *qa["a"]]:
                 all_words.update(words_of(s))
 

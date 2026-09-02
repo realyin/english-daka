@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
-              "key": "walk",
-              "text": "I can walk.",
-              "audio": "audio/sentences/k1-action-walk/a-i-can-walk-de0003.mp3"
-            },
-            {
               "key": "run",
               "text": "I can run.",
               "audio": "audio/sentences/k1-action-walk/a-i-can-run-d35df4.mp3"
+            },
+            {
+              "key": "walk",
+              "text": "I can walk.",
+              "audio": "audio/sentences/k1-action-walk/a-i-can-walk-de0003.mp3"
             }
           ]
         },
@@ -124,14 +124,14 @@
           ],
           "opts": [
             {
-              "key": "walk",
-              "text": "I can walk.",
-              "audio": "audio/sentences/k1-action-walk/a-i-can-walk-de0003.mp3"
-            },
-            {
               "key": "jump",
               "text": "I can jump.",
               "audio": "audio/sentences/k1-action-walk/a-i-can-jump-c865d3.mp3"
+            },
+            {
+              "key": "walk",
+              "text": "I can walk.",
+              "audio": "audio/sentences/k1-action-walk/a-i-can-walk-de0003.mp3"
             }
           ]
         }

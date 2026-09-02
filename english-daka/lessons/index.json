@@ -107,7 +107,8 @@
       "group": "颜色 Colors",
       "badge": "红黄蓝",
       "seq": 301,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-color-red.webp"
     },
     {
       "id": "k1-color-orange",
@@ -116,7 +117,8 @@
       "group": "颜色 Colors",
       "badge": "橙绿紫",
       "seq": 302,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-color-orange.webp"
     },
     {
       "id": "k1-color-black",
@@ -125,7 +127,8 @@
       "group": "颜色 Colors",
       "badge": "黑白灰",
       "seq": 303,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-color-black.webp"
     },
     {
       "id": "k1-color-pink",
@@ -134,7 +137,8 @@
       "group": "颜色 Colors",
       "badge": "粉棕",
       "seq": 304,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-color-pink.webp"
     },
     {
       "id": "k1-animal-farm",
@@ -393,7 +397,8 @@
       "group": "形状 Shapes",
       "badge": "圆",
       "seq": 901,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-shape-pizza.webp"
     },
     {
       "id": "k1-shape-square",
@@ -402,7 +407,8 @@
       "group": "形状 Shapes",
       "badge": "方",
       "seq": 902,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-shape-toast.webp"
     },
     {
       "id": "k1-shape-more",
@@ -411,7 +417,8 @@
       "group": "形状 Shapes",
       "badge": "△",
       "seq": 903,
-      "level": "K1"
+      "level": "K1",
+      "cover": "images/k1-shape-sandwich.webp"
     },
     {
       "id": "k1-pattern-letter",

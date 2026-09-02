@@ -71,9 +71,9 @@
               "audio": "audio/sentences/k1-pattern-letter/a-p-comes-next-e52e97.mp3"
             },
             {
-              "key": "square",
-              "text": "Square comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-square-comes-next-4bad71.mp3"
+              "key": "rectangle",
+              "text": "Rectangle comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-rectangle-comes-next-f102a7.mp3"
             }
           ]
         }
@@ -146,9 +146,9 @@
               "audio": "audio/sentences/k1-pattern-letter/a-l-comes-next-1fed2b.mp3"
             },
             {
-              "key": "four",
-              "text": "Four comes next.",
-              "audio": "audio/sentences/k1-pattern-letter/a-four-comes-next-7fd9f2.mp3"
+              "key": "fish",
+              "text": "Fish comes next.",
+              "audio": "audio/sentences/k1-pattern-letter/a-fish-comes-next-888ff0.mp3"
             }
           ]
         }
@@ -159,7 +159,7 @@
   "word_audio": {
     "b": "audio/words/b.mp3",
     "comes": "audio/words/comes.mp3",
-    "four": "audio/words/four.mp3",
+    "fish": "audio/words/fish.mp3",
     "is": "audio/words/is.mp3",
     "l": "audio/words/l.mp3",
     "lmn pattern": "audio/words/lmn-pattern.mp3",
@@ -170,7 +170,7 @@
     "pattern": "audio/words/pattern.mp3",
     "pbr pattern": "audio/words/pbr-pattern.mp3",
     "r": "audio/words/r.mp3",
-    "square": "audio/words/square.mp3",
+    "rectangle": "audio/words/rectangle.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "what": "audio/words/what.mp3",

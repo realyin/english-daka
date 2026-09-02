@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-snowy-day-33e3e5.mp3"
             },
             {
-              "key": "cloudy",
-              "text": "It's a cloudy day.",
-              "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-cloudy-day-e9a206.mp3"
+              "key": "windy",
+              "text": "It's a windy day.",
+              "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-windy-day-898546.mp3"
             }
           ]
         },
@@ -120,14 +120,14 @@
           "image": "images/k1-rainy-raincoat.webp",
           "opts": [
             {
-              "key": "umbrella",
-              "text": "I need an umbrella on rainy days.",
-              "audio": "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
-            },
-            {
               "key": "scarf",
               "text": "I need a scarf on snowy days.",
               "audio": "audio/sentences/k1-weather-rainy/a-i-need-a-scarf-on-snowy-days-d64f53.mp3"
+            },
+            {
+              "key": "umbrella",
+              "text": "I need an umbrella on rainy days.",
+              "audio": "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
             }
           ]
         }
@@ -163,9 +163,9 @@
               "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-rainy-day-c5589e.mp3"
             },
             {
-              "key": "sunny",
-              "text": "It's a sunny day.",
-              "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-sunny-day-03c74a.mp3"
+              "key": "cloudy",
+              "text": "It's a cloudy day.",
+              "audio": "audio/sentences/k1-weather-rainy/a-it-s-a-cloudy-day-e9a206.mp3"
             }
           ]
         },
@@ -193,9 +193,9 @@
               "audio": "audio/sentences/k1-weather-rainy/a-i-need-a-raincoat-on-rainy-days-c44fef.mp3"
             },
             {
-              "key": "umbrella",
-              "text": "I need an umbrella on rainy days.",
-              "audio": "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
+              "key": "scarf",
+              "text": "I need a scarf on snowy days.",
+              "audio": "audio/sentences/k1-weather-rainy/a-i-need-a-scarf-on-snowy-days-d64f53.mp3"
             }
           ]
         },
@@ -223,9 +223,9 @@
               "audio": "audio/sentences/k1-weather-rainy/a-i-feel-cool-on-rainy-days-309820.mp3"
             },
             {
-              "key": "scarf",
-              "text": "I need a scarf on snowy days.",
-              "audio": "audio/sentences/k1-weather-rainy/a-i-need-a-scarf-on-snowy-days-d64f53.mp3"
+              "key": "umbrella",
+              "text": "I need an umbrella on rainy days.",
+              "audio": "audio/sentences/k1-weather-rainy/a-i-need-an-umbrella-on-rainy-days-3494f8.mp3"
             }
           ]
         },
@@ -287,12 +287,12 @@
     "scarf": "audio/words/scarf.mp3",
     "snowman": "audio/words/snowman.mp3",
     "snowy": "audio/words/snowy.mp3",
-    "sunny": "audio/words/sunny.mp3",
     "the": "audio/words/the.mp3",
     "umbrella": "audio/words/umbrella.mp3",
     "weather": "audio/words/weather.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
+    "windy": "audio/words/windy.mp3",
     "you": "audio/words/you.mp3"
   },
   "praise_audio": {

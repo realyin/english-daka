@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
+              "key": "face",
+              "text": "This is a face.",
+              "audio": "audio/sentences/k1-body-hair/a-this-is-a-face-68741b.mp3"
+            },
+            {
               "key": "black",
               "text": "My hair is black.",
               "audio": "audio/sentences/k1-body-hair/a-my-hair-is-black-5136c9.mp3"
-            },
-            {
-              "key": "long",
-              "text": "I have long hair.",
-              "audio": "audio/sentences/k1-body-hair/a-i-have-long-hair-a8f5f5.mp3"
             }
           ]
         },
@@ -60,14 +60,14 @@
           "image": "images/k1-black-hair.webp",
           "opts": [
             {
-              "key": "orange",
-              "text": "My hair is orange.",
-              "audio": "audio/sentences/k1-body-hair/a-my-hair-is-orange-66c434.mp3"
+              "key": "yellow",
+              "text": "My hair is yellow.",
+              "audio": "audio/sentences/k1-body-hair/a-my-hair-is-yellow-2d76ec.mp3"
             },
             {
-              "key": "purple",
-              "text": "My hair is purple.",
-              "audio": "audio/sentences/k1-body-hair/a-my-hair-is-purple-8d51fd.mp3"
+              "key": "brown",
+              "text": "My hair is brown.",
+              "audio": "audio/sentences/k1-body-hair/a-my-hair-is-brown-5d376b.mp3"
             }
           ]
         },
@@ -128,14 +128,14 @@
           ],
           "opts": [
             {
-              "key": "firefighter",
-              "text": "This is a firefighter.",
-              "audio": "audio/sentences/k1-body-hair/a-this-is-a-firefighter-adf8ae.mp3"
+              "key": "newspaper",
+              "text": "This is a newspaper.",
+              "audio": "audio/sentences/k1-body-hair/a-this-is-a-newspaper-dfd2e9.mp3"
             },
             {
-              "key": "nurse",
-              "text": "This is a nurse.",
-              "audio": "audio/sentences/k1-body-hair/a-this-is-a-nurse-939568.mp3"
+              "key": "nest",
+              "text": "This is a nest.",
+              "audio": "audio/sentences/k1-body-hair/a-this-is-a-nest-0f98f0.mp3"
             }
           ]
         },
@@ -158,14 +158,14 @@
           "image": "images/k1-touch-face.webp",
           "opts": [
             {
+              "key": "black",
+              "text": "My hair is black.",
+              "audio": "audio/sentences/k1-body-hair/a-my-hair-is-black-5136c9.mp3"
+            },
+            {
               "key": "long",
               "text": "I have long hair.",
               "audio": "audio/sentences/k1-body-hair/a-i-have-long-hair-a8f5f5.mp3"
-            },
-            {
-              "key": "face",
-              "text": "This is a face.",
-              "audio": "audio/sentences/k1-body-hair/a-this-is-a-face-68741b.mp3"
             }
           ]
         }
@@ -177,27 +177,27 @@
     "a": "audio/words/a.mp3",
     "black": "audio/words/black.mp3",
     "body": "audio/words/body.mp3",
+    "brown": "audio/words/brown.mp3",
     "can": "audio/words/can.mp3",
     "color": "audio/words/color.mp3",
     "do": "audio/words/do.mp3",
     "face": "audio/words/face.mp3",
-    "firefighter": "audio/words/firefighter.mp3",
     "hair": "audio/words/hair.mp3",
     "have": "audio/words/have.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "long": "audio/words/long.mp3",
     "my": "audio/words/my.mp3",
-    "nurse": "audio/words/nurse.mp3",
+    "nest": "audio/words/nest.mp3",
+    "newspaper": "audio/words/newspaper.mp3",
     "or": "audio/words/or.mp3",
-    "orange": "audio/words/orange.mp3",
     "part": "audio/words/part.mp3",
-    "purple": "audio/words/purple.mp3",
     "short": "audio/words/short.mp3",
     "this": "audio/words/this.mp3",
     "touch": "audio/words/touch.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
+    "yellow": "audio/words/yellow.mp3",
     "you": "audio/words/you.mp3",
     "your": "audio/words/your.mp3"
   },

@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-job-police/a-this-is-a-firefighter-adf8ae.mp3"
             },
             {
-              "key": "nest",
-              "text": "This is a nest.",
-              "audio": "audio/sentences/k1-job-police/a-this-is-a-nest-0f98f0.mp3"
+              "key": "newspaper",
+              "text": "This is a newspaper.",
+              "audio": "audio/sentences/k1-job-police/a-this-is-a-newspaper-dfd2e9.mp3"
             }
           ]
         },
@@ -60,14 +60,14 @@
           "image": "images/k1-police-catch.webp",
           "opts": [
             {
-              "key": "fires",
-              "text": "Firefighters can put out fires.",
-              "audio": "audio/sentences/k1-job-police/a-firefighters-can-put-out-fires-e0b79c.mp3"
-            },
-            {
               "key": "car",
               "text": "This is a police car.",
               "audio": "audio/sentences/k1-job-police/a-this-is-a-police-car-d53fdf.mp3"
+            },
+            {
+              "key": "fires",
+              "text": "Firefighters can put out fires.",
+              "audio": "audio/sentences/k1-job-police/a-firefighters-can-put-out-fires-e0b79c.mp3"
             }
           ]
         }
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k1-job-police/a-policemen-can-catch-bad-people-89ef30.mp3"
             },
             {
-              "key": "truck",
-              "text": "This is a fire truck.",
-              "audio": "audio/sentences/k1-job-police/a-this-is-a-fire-truck-620b0a.mp3"
+              "key": "fires",
+              "text": "Firefighters can put out fires.",
+              "audio": "audio/sentences/k1-job-police/a-firefighters-can-put-out-fires-e0b79c.mp3"
             }
           ]
         }
@@ -141,9 +141,9 @@
               "audio": "audio/sentences/k1-job-police/a-this-is-a-policeman-5554cb.mp3"
             },
             {
-              "key": "pilot",
-              "text": "This is a pilot.",
-              "audio": "audio/sentences/k1-job-police/a-this-is-a-pilot-693a93.mp3"
+              "key": "head",
+              "text": "This is a head.",
+              "audio": "audio/sentences/k1-job-police/a-this-is-a-head-66cd58.mp3"
             }
           ]
         },
@@ -166,14 +166,14 @@
           "image": "images/k1-firefighter-fire.webp",
           "opts": [
             {
+              "key": "truck",
+              "text": "This is a fire truck.",
+              "audio": "audio/sentences/k1-job-police/a-this-is-a-fire-truck-620b0a.mp3"
+            },
+            {
               "key": "car",
               "text": "This is a police car.",
               "audio": "audio/sentences/k1-job-police/a-this-is-a-police-car-d53fdf.mp3"
-            },
-            {
-              "key": "catch",
-              "text": "Policemen can catch bad people.",
-              "audio": "audio/sentences/k1-job-police/a-policemen-can-catch-bad-people-89ef30.mp3"
             }
           ]
         },
@@ -250,13 +250,13 @@
     "firefighter": "audio/words/firefighter.mp3",
     "firefighters": "audio/words/firefighters.mp3",
     "fires": "audio/words/fires.mp3",
+    "head": "audio/words/head.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
     "job": "audio/words/job.mp3",
-    "nest": "audio/words/nest.mp3",
+    "newspaper": "audio/words/newspaper.mp3",
     "out": "audio/words/out.mp3",
     "people": "audio/words/people.mp3",
-    "pilot": "audio/words/pilot.mp3",
     "police": "audio/words/police.mp3",
     "police car": "audio/words/police-car.mp3",
     "policeman": "audio/words/policeman.mp3",

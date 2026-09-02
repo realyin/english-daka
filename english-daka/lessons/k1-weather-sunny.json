@@ -65,9 +65,9 @@
               "audio": "audio/sentences/k1-weather-sunny/a-i-can-play-in-the-house-on-cloudy-da-92b18b.mp3"
             },
             {
-              "key": "hot",
-              "text": "I feel hot on sunny days.",
-              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-hot-on-sunny-days-210b92.mp3"
+              "key": "swim",
+              "text": "I can swim on sunny days.",
+              "audio": "audio/sentences/k1-weather-sunny/a-i-can-swim-on-sunny-days-b5d62e.mp3"
             }
           ]
         },
@@ -90,14 +90,14 @@
           "image": "images/k1-sunny-hot.webp",
           "opts": [
             {
-              "key": "cool",
-              "text": "I feel cool on cloudy days.",
-              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-cool-on-cloudy-days-ee5068.mp3"
-            },
-            {
               "key": "swim",
               "text": "I can swim on sunny days.",
               "audio": "audio/sentences/k1-weather-sunny/a-i-can-swim-on-sunny-days-b5d62e.mp3"
+            },
+            {
+              "key": "cool",
+              "text": "I feel cool on cloudy days.",
+              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-cool-on-cloudy-days-ee5068.mp3"
             }
           ]
         },
@@ -163,9 +163,9 @@
               "audio": "audio/sentences/k1-weather-sunny/a-it-s-a-sunny-day-03c74a.mp3"
             },
             {
-              "key": "windy",
-              "text": "It's a windy day.",
-              "audio": "audio/sentences/k1-weather-sunny/a-it-s-a-windy-day-898546.mp3"
+              "key": "snowy",
+              "text": "It's a snowy day.",
+              "audio": "audio/sentences/k1-weather-sunny/a-it-s-a-snowy-day-33e3e5.mp3"
             }
           ]
         },
@@ -193,9 +193,9 @@
               "audio": "audio/sentences/k1-weather-sunny/a-i-can-eat-ice-cream-on-sunny-days-a51d1b.mp3"
             },
             {
-              "key": "hot",
-              "text": "I feel hot on sunny days.",
-              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-hot-on-sunny-days-210b92.mp3"
+              "key": "swim",
+              "text": "I can swim on sunny days.",
+              "audio": "audio/sentences/k1-weather-sunny/a-i-can-swim-on-sunny-days-b5d62e.mp3"
             }
           ]
         },
@@ -218,14 +218,14 @@
           "image": "images/k1-cloudy-cool.webp",
           "opts": [
             {
-              "key": "hot",
-              "text": "I feel hot on sunny days.",
-              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-hot-on-sunny-days-210b92.mp3"
-            },
-            {
               "key": "swim",
               "text": "I can swim on sunny days.",
               "audio": "audio/sentences/k1-weather-sunny/a-i-can-swim-on-sunny-days-b5d62e.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "I feel hot on sunny days.",
+              "audio": "audio/sentences/k1-weather-sunny/a-i-feel-hot-on-sunny-days-210b92.mp3"
             }
           ]
         }
@@ -262,7 +262,6 @@
     "weather": "audio/words/weather.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
-    "windy": "audio/words/windy.mp3",
     "you": "audio/words/you.mp3"
   },
   "praise_audio": {

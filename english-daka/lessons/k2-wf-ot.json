@@ -32,14 +32,14 @@
           ],
           "opts": [
             {
+              "key": "/id/",
+              "text": "Ot makes the sound /id/.",
+              "audio": "audio/sentences/k2-wf-ot/a-ot-makes-the-sound-id-c6a284.mp3"
+            },
+            {
               "key": "/it/",
               "text": "Ot makes the sound /it/.",
               "audio": "audio/sentences/k2-wf-ot/a-ot-makes-the-sound-it-21a1db.mp3"
-            },
-            {
-              "key": "/ad/",
-              "text": "Ot makes the sound /ad/.",
-              "audio": "audio/sentences/k2-wf-ot/a-ot-makes-the-sound-ad-e09c38.mp3"
             }
           ]
         },
@@ -49,7 +49,7 @@
             "It's -ot family."
           ],
           "key": [
-            "family"
+            "ot"
           ],
           "q_cn": "这是什么词族？",
           "a_cn": [
@@ -61,14 +61,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Dot ends with letter T.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-t-af5523.mp3"
+              "key": "ad",
+              "text": "It's -ad family.",
+              "audio": "audio/sentences/k2-wf-ot/a-it-s-ad-family-8ed62f.mp3"
             },
             {
-              "key": "d",
-              "text": "Dot begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-d-bf887a.mp3"
+              "key": "at",
+              "text": "It's -at family.",
+              "audio": "audio/sentences/k2-wf-ot/a-it-s-at-family-0c7574.mp3"
             }
           ]
         }
@@ -132,14 +132,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "/h/ /o/ /t/, hot.",
-              "audio": "audio/sentences/k2-wf-ot/a-h-o-t-hot-4cad64.mp3"
-            },
-            {
               "key": "dot",
               "text": "/d/ /o/ /t/, dot.",
               "audio": "audio/sentences/k2-wf-ot/a-d-o-t-dot-03283a.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "/h/ /o/ /t/, hot.",
+              "audio": "audio/sentences/k2-wf-ot/a-h-o-t-hot-4cad64.mp3"
             }
           ]
         },
@@ -161,14 +161,14 @@
           ],
           "opts": [
             {
+              "key": "/d/",
+              "text": "Tot begins with the sound /d/.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-begins-with-the-sound-d-208b74.mp3"
+            },
+            {
               "key": "/o/",
               "text": "Tot begins with the sound /o/.",
               "audio": "audio/sentences/k2-wf-ot/a-tot-begins-with-the-sound-o-202dbd.mp3"
-            },
-            {
-              "key": "/h/",
-              "text": "Tot begins with the sound /h/.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-begins-with-the-sound-h-8e8834.mp3"
             }
           ]
         },
@@ -190,9 +190,9 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Tot begins with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-begins-with-letter-h-fdb61f.mp3"
+              "key": "o",
+              "text": "Tot begins with letter O.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-begins-with-letter-o-2da8ff.mp3"
             },
             {
               "key": "d",
@@ -219,14 +219,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "Tot has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-has-the-sound-h-in-the-middle-55fc08.mp3"
-            },
-            {
               "key": "/t/",
               "text": "Tot has the sound /t/ in the middle.",
               "audio": "audio/sentences/k2-wf-ot/a-tot-has-the-sound-t-in-the-middle-5619a1.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Tot has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-has-the-sound-h-in-the-middle-55fc08.mp3"
             }
           ]
         },
@@ -248,14 +248,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Tot has letter H in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-h-in-the-middle-e468dc.mp3"
-            },
-            {
               "key": "d",
               "text": "Tot has letter D in the middle.",
               "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-d-in-the-middle-c50121.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Tot has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-h-in-the-middle-e468dc.mp3"
             }
           ]
         },
@@ -306,9 +306,9 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Tot ends with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-ends-with-letter-h-dbafd2.mp3"
+              "key": "o",
+              "text": "Tot ends with letter O.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-ends-with-letter-o-0c409d.mp3"
             },
             {
               "key": "d",
@@ -335,14 +335,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Dot ends with letter T.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-t-af5523.mp3"
+              "key": "o",
+              "text": "Dot has letter O in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-has-letter-o-in-the-middle-122f75.mp3"
             },
             {
-              "key": "o",
-              "text": "Tot has letter O in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-o-in-the-middle-555ff3.mp3"
+              "key": "d",
+              "text": "Dot begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-d-bf887a.mp3"
             }
           ]
         }
@@ -435,14 +435,14 @@
           ],
           "opts": [
             {
+              "key": "/d/",
+              "text": "Hot begins with the sound /d/.",
+              "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-the-sound-d-b42884.mp3"
+            },
+            {
               "key": "/o/",
               "text": "Hot begins with the sound /o/.",
               "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-the-sound-o-3f6206.mp3"
-            },
-            {
-              "key": "/t/",
-              "text": "Hot begins with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-the-sound-t-f9fa73.mp3"
             }
           ]
         },
@@ -464,14 +464,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Hot begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-letter-d-df9fc5.mp3"
-            },
-            {
               "key": "o",
               "text": "Hot begins with letter O.",
               "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-letter-o-e90134.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Hot begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-letter-d-df9fc5.mp3"
             }
           ]
         },
@@ -493,14 +493,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "Hot has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-has-the-sound-h-in-the-middle-44eab0.mp3"
-            },
-            {
               "key": "/t/",
               "text": "Hot has the sound /t/ in the middle.",
               "audio": "audio/sentences/k2-wf-ot/a-hot-has-the-sound-t-in-the-middle-ec97ad.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Hot has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-hot-has-the-sound-h-in-the-middle-44eab0.mp3"
             }
           ]
         },
@@ -522,14 +522,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Hot has letter H in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-has-letter-h-in-the-middle-1302cc.mp3"
-            },
-            {
               "key": "d",
               "text": "Hot has letter D in the middle.",
               "audio": "audio/sentences/k2-wf-ot/a-hot-has-letter-d-in-the-middle-b6b763.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Hot has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-hot-has-letter-h-in-the-middle-1302cc.mp3"
             }
           ]
         },
@@ -580,9 +580,9 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Hot ends with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-ends-with-letter-h-69ccdd.mp3"
+              "key": "o",
+              "text": "Hot ends with letter O.",
+              "audio": "audio/sentences/k2-wf-ot/a-hot-ends-with-letter-o-756716.mp3"
             },
             {
               "key": "d",
@@ -609,14 +609,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Dot ends with letter T.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-t-af5523.mp3"
+              "key": "o",
+              "text": "Dot has letter O in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-has-letter-o-in-the-middle-122f75.mp3"
             },
             {
-              "key": "o",
-              "text": "Tot has letter O in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-o-in-the-middle-555ff3.mp3"
+              "key": "d",
+              "text": "Dot begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-d-bf887a.mp3"
             }
           ]
         }
@@ -680,14 +680,14 @@
           ],
           "opts": [
             {
-              "key": "hot",
-              "text": "/h/ /o/ /t/, hot.",
-              "audio": "audio/sentences/k2-wf-ot/a-h-o-t-hot-4cad64.mp3"
-            },
-            {
               "key": "tot",
               "text": "/t/ /o/ /t/, tot.",
               "audio": "audio/sentences/k2-wf-ot/a-t-o-t-tot-cb2f74.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "/h/ /o/ /t/, hot.",
+              "audio": "audio/sentences/k2-wf-ot/a-h-o-t-hot-4cad64.mp3"
             }
           ]
         },
@@ -709,14 +709,14 @@
           ],
           "opts": [
             {
-              "key": "/o/",
-              "text": "Dot begins with the sound /o/.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-the-sound-o-03bcde.mp3"
-            },
-            {
               "key": "/h/",
               "text": "Dot begins with the sound /h/.",
               "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-the-sound-h-d8f6cf.mp3"
+            },
+            {
+              "key": "/o/",
+              "text": "Dot begins with the sound /o/.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-the-sound-o-03bcde.mp3"
             }
           ]
         },
@@ -738,14 +738,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Dot begins with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-h-9095b3.mp3"
-            },
-            {
               "key": "o",
               "text": "Dot begins with letter O.",
               "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-o-a690f3.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Dot begins with letter H.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-h-9095b3.mp3"
             }
           ]
         },
@@ -767,14 +767,14 @@
           ],
           "opts": [
             {
-              "key": "/h/",
-              "text": "Dot has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-has-the-sound-h-in-the-middle-3fd661.mp3"
-            },
-            {
               "key": "/t/",
               "text": "Dot has the sound /t/ in the middle.",
               "audio": "audio/sentences/k2-wf-ot/a-dot-has-the-sound-t-in-the-middle-f41e83.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Dot has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-has-the-sound-h-in-the-middle-3fd661.mp3"
             }
           ]
         },
@@ -796,9 +796,9 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dot has letter D in the middle.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-has-letter-d-in-the-middle-5fdf13.mp3"
+              "key": "h",
+              "text": "Dot has letter H in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-has-letter-h-in-the-middle-3c814a.mp3"
             },
             {
               "key": "t",
@@ -825,14 +825,14 @@
           ],
           "opts": [
             {
+              "key": "/d/",
+              "text": "Dot ends with the sound /d/.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-the-sound-d-ddab5f.mp3"
+            },
+            {
               "key": "/o/",
               "text": "Dot ends with the sound /o/.",
               "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-the-sound-o-a47c62.mp3"
-            },
-            {
-              "key": "/h/",
-              "text": "Dot ends with the sound /h/.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-the-sound-h-d0bf75.mp3"
             }
           ]
         },
@@ -854,9 +854,9 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Dot ends with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-h-c22aa7.mp3"
+              "key": "o",
+              "text": "Dot ends with letter O.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-o-b43ffc.mp3"
             },
             {
               "key": "d",
@@ -883,14 +883,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dot begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ot/a-dot-begins-with-letter-d-bf887a.mp3"
+              "key": "t",
+              "text": "Dot ends with letter T.",
+              "audio": "audio/sentences/k2-wf-ot/a-dot-ends-with-letter-t-af5523.mp3"
             },
             {
-              "key": "h",
-              "text": "Hot begins with letter H.",
-              "audio": "audio/sentences/k2-wf-ot/a-hot-begins-with-letter-h-51ab76.mp3"
+              "key": "o",
+              "text": "Tot has letter O in the middle.",
+              "audio": "audio/sentences/k2-wf-ot/a-tot-has-letter-o-in-the-middle-555ff3.mp3"
             }
           ]
         }
@@ -902,6 +902,7 @@
     "-ot family": "audio/words/ot-family.mp3",
     "a": "audio/words/a.mp3",
     "ad": "audio/words/ad.mp3",
+    "at": "audio/words/at.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "can": "audio/words/can.mp3",
@@ -919,6 +920,7 @@
     "hot": "audio/words/hot.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
+    "id": "audio/words/id.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",

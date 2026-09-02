@@ -30,9 +30,9 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "It's number nine.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-nine-7a9de2.mp3"
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-seven-ff96d3.mp3"
             },
             {
               "key": "ten",
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
+              "key": "ten",
+              "text": "There are ten horns.",
+              "audio": "audio/sentences/k1-number-6-10/a-there-are-ten-horns-1b5fb7.mp3"
+            },
+            {
               "key": "eight",
               "text": "There are eight horns.",
               "audio": "audio/sentences/k1-number-6-10/a-there-are-eight-horns-33af52.mp3"
-            },
-            {
-              "key": "seven",
-              "text": "There are seven horns.",
-              "audio": "audio/sentences/k1-number-6-10/a-there-are-seven-horns-cbc010.mp3"
             }
           ]
         }
@@ -97,14 +97,14 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "It's number nine.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-nine-7a9de2.mp3"
-            },
-            {
               "key": "ten",
               "text": "It's number ten.",
               "audio": "audio/sentences/k1-number-6-10/a-it-s-number-ten-f5e736.mp3"
+            },
+            {
+              "key": "eight",
+              "text": "It's number eight.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-eight-c7674b.mp3"
             }
           ]
         },
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "There are nine toys.",
-              "audio": "audio/sentences/k1-number-6-10/a-there-are-nine-toys-469f60.mp3"
-            },
-            {
               "key": "ten",
               "text": "There are ten toys.",
               "audio": "audio/sentences/k1-number-6-10/a-there-are-ten-toys-234a3a.mp3"
+            },
+            {
+              "key": "eight",
+              "text": "There are eight toys.",
+              "audio": "audio/sentences/k1-number-6-10/a-there-are-eight-toys-f17866.mp3"
             }
           ]
         }
@@ -164,14 +164,14 @@
           ],
           "opts": [
             {
-              "key": "seven",
-              "text": "It's number seven.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-seven-ff96d3.mp3"
+              "key": "ten",
+              "text": "It's number ten.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-ten-f5e736.mp3"
             },
             {
-              "key": "nine",
-              "text": "It's number nine.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-nine-7a9de2.mp3"
+              "key": "six",
+              "text": "It's number six.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-six-ff0755.mp3"
             }
           ]
         },
@@ -193,14 +193,14 @@
           ],
           "opts": [
             {
-              "key": "seven",
-              "text": "There are seven toy blocks.",
-              "audio": "audio/sentences/k1-number-6-10/a-there-are-seven-toy-blocks-3f275b.mp3"
+              "key": "ten",
+              "text": "There are ten toy blocks.",
+              "audio": "audio/sentences/k1-number-6-10/a-there-are-ten-toy-blocks-3aa5e2.mp3"
             },
             {
-              "key": "nine",
-              "text": "There are nine toy blocks.",
-              "audio": "audio/sentences/k1-number-6-10/a-there-are-nine-toy-blocks-0022d4.mp3"
+              "key": "six",
+              "text": "There are six toy blocks.",
+              "audio": "audio/sentences/k1-number-6-10/a-there-are-six-toy-blocks-c490dd.mp3"
             }
           ]
         }
@@ -231,14 +231,14 @@
           ],
           "opts": [
             {
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-seven-ff96d3.mp3"
+            },
+            {
               "key": "ten",
               "text": "It's number ten.",
               "audio": "audio/sentences/k1-number-6-10/a-it-s-number-ten-f5e736.mp3"
-            },
-            {
-              "key": "six",
-              "text": "It's number six.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-six-ff0755.mp3"
             }
           ]
         },
@@ -298,14 +298,14 @@
           ],
           "opts": [
             {
-              "key": "nine",
-              "text": "It's number nine.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-nine-7a9de2.mp3"
+              "key": "seven",
+              "text": "It's number seven.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-seven-ff96d3.mp3"
             },
             {
-              "key": "six",
-              "text": "It's number six.",
-              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-six-ff0755.mp3"
+              "key": "eight",
+              "text": "It's number eight.",
+              "audio": "audio/sentences/k1-number-6-10/a-it-s-number-eight-c7674b.mp3"
             }
           ]
         },
@@ -332,9 +332,9 @@
               "audio": "audio/sentences/k1-number-6-10/a-there-are-eight-chickens-2d77fc.mp3"
             },
             {
-              "key": "seven",
-              "text": "There are seven chickens.",
-              "audio": "audio/sentences/k1-number-6-10/a-there-are-seven-chickens-70f448.mp3"
+              "key": "six",
+              "text": "There are six chickens.",
+              "audio": "audio/sentences/k1-number-6-10/a-there-are-six-chickens-907203.mp3"
             }
           ]
         },

@@ -68,14 +68,14 @@
           ],
           "opts": [
             {
-              "key": "turtle",
-              "text": "It's a turtle.",
-              "audio": "audio/sentences/k1-animal-pets/a-it-s-a-turtle-505865.mp3"
-            },
-            {
               "key": "goldfish",
               "text": "It's a goldfish.",
               "audio": "audio/sentences/k1-animal-pets/a-it-s-a-goldfish-d7c91d.mp3"
+            },
+            {
+              "key": "turtle",
+              "text": "It's a turtle.",
+              "audio": "audio/sentences/k1-animal-pets/a-it-s-a-turtle-505865.mp3"
             }
           ]
         },
@@ -189,9 +189,9 @@
               "audio": "audio/sentences/k1-animal-pets/a-a-hamster-lives-in-the-cage-3fa579.mp3"
             },
             {
-              "key": "pets",
-              "text": "They are pets.",
-              "audio": "audio/sentences/k1-animal-pets/a-they-are-pets-fffe79.mp3"
+              "key": "hamster",
+              "text": "It's a hamster.",
+              "audio": "audio/sentences/k1-animal-pets/a-it-s-a-hamster-56987f.mp3"
             }
           ]
         }
@@ -257,9 +257,9 @@
               "audio": "audio/sentences/k1-animal-pets/a-a-hamster-lives-in-the-cage-3fa579.mp3"
             },
             {
-              "key": "goldfish",
-              "text": "It's a goldfish.",
-              "audio": "audio/sentences/k1-animal-pets/a-it-s-a-goldfish-d7c91d.mp3"
+              "key": "hamster",
+              "text": "It's a hamster.",
+              "audio": "audio/sentences/k1-animal-pets/a-it-s-a-hamster-56987f.mp3"
             }
           ]
         }

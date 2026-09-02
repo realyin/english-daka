@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
-              "key": "twelve",
-              "text": "There are twelve spaceships.",
-              "audio": "audio/sentences/k1-number-11-12/a-there-are-twelve-spaceships-1aadbb.mp3"
-            },
-            {
               "key": "six",
               "text": "There are six spaceships.",
               "audio": "audio/sentences/k1-number-11-12/a-there-are-six-spaceships-01610d.mp3"
+            },
+            {
+              "key": "three",
+              "text": "There are three spaceships.",
+              "audio": "audio/sentences/k1-number-11-12/a-there-are-three-spaceships-b21830.mp3"
             }
           ]
         },
@@ -88,14 +88,14 @@
           ],
           "opts": [
             {
-              "key": "eleven",
-              "text": "Number eleven is missing.",
-              "audio": "audio/sentences/k1-number-11-12/a-number-eleven-is-missing-15b27e.mp3"
-            },
-            {
               "key": "twelve",
               "text": "Number twelve is missing.",
               "audio": "audio/sentences/k1-number-11-12/a-number-twelve-is-missing-24e868.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "Number eleven is missing.",
+              "audio": "audio/sentences/k1-number-11-12/a-number-eleven-is-missing-15b27e.mp3"
             }
           ]
         },
@@ -122,9 +122,9 @@
               "audio": "audio/sentences/k1-number-11-12/a-number-three-comes-next-0af9ad.mp3"
             },
             {
-              "key": "eleven",
-              "text": "Number eleven comes next.",
-              "audio": "audio/sentences/k1-number-11-12/a-number-eleven-comes-next-17a548.mp3"
+              "key": "twelve",
+              "text": "Number twelve comes next.",
+              "audio": "audio/sentences/k1-number-11-12/a-number-twelve-comes-next-2933cf.mp3"
             }
           ]
         }
@@ -155,14 +155,14 @@
           ],
           "opts": [
             {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k1-number-11-12/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
               "key": "eleven",
               "text": "It's number eleven.",
               "audio": "audio/sentences/k1-number-11-12/a-it-s-number-eleven-2ccca0.mp3"
-            },
-            {
-              "key": "six",
-              "text": "It's number six.",
-              "audio": "audio/sentences/k1-number-11-12/a-it-s-number-six-ff0755.mp3"
             }
           ]
         },
@@ -184,14 +184,14 @@
           ],
           "opts": [
             {
-              "key": "eleven",
-              "text": "There are eleven friends.",
-              "audio": "audio/sentences/k1-number-11-12/a-there-are-eleven-friends-69c13d.mp3"
-            },
-            {
               "key": "six",
               "text": "There are six friends.",
               "audio": "audio/sentences/k1-number-11-12/a-there-are-six-friends-cf4836.mp3"
+            },
+            {
+              "key": "three",
+              "text": "There are three friends.",
+              "audio": "audio/sentences/k1-number-11-12/a-there-are-three-friends-fe8a41.mp3"
             }
           ]
         }

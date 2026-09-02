@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "winter",
-              "text": "It's winter.",
-              "audio": "audio/sentences/k1-holiday-easter/a-it-s-winter-785a59.mp3"
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-dot-d297cc.mp3"
             },
             {
-              "key": "space",
-              "text": "It's space.",
-              "audio": "audio/sentences/k1-holiday-easter/a-it-s-space-053088.mp3"
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-tub-b848ea.mp3"
             }
           ]
         },
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k1-holiday-easter/a-it-s-an-easter-bunny-de09cf.mp3"
             },
             {
-              "key": "happy",
-              "text": "Happy Easter!",
-              "audio": "audio/sentences/k1-holiday-easter/a-happy-easter-527909.mp3"
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
             }
           ]
         }
@@ -179,9 +179,9 @@
               "audio": "audio/sentences/k1-holiday-easter/a-we-wear-pretty-clothes-cddec8.mp3"
             },
             {
-              "key": "happy",
-              "text": "Happy Easter!",
-              "audio": "audio/sentences/k1-holiday-easter/a-happy-easter-527909.mp3"
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k1-holiday-easter/a-it-s-easter-8a859f.mp3"
             }
           ]
         }
@@ -195,6 +195,7 @@
     "can": "audio/words/can.mp3",
     "clothes": "audio/words/clothes.mp3",
     "do": "audio/words/do.mp3",
+    "dot": "audio/words/dot.mp3",
     "easter": "audio/words/easter.mp3",
     "easter bunny": "audio/words/easter-bunny.mp3",
     "egg": "audio/words/egg.mp3",
@@ -208,13 +209,12 @@
     "pretty": "audio/words/pretty.mp3",
     "pretty clothes": "audio/words/pretty-clothes.mp3",
     "say": "audio/words/say.mp3",
-    "space": "audio/words/space.mp3",
     "this": "audio/words/this.mp3",
+    "tub": "audio/words/tub.mp3",
     "we": "audio/words/we.mp3",
     "wear": "audio/words/wear.mp3",
     "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "winter": "audio/words/winter.mp3"
+    "what's": "audio/words/what-s.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

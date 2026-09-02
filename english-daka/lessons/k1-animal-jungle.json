@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
-              "key": "hippo",
-              "text": "It's a hippo.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
-            },
-            {
               "key": "leopard",
               "text": "It's a leopard.",
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
+            },
+            {
+              "key": "hippo",
+              "text": "It's a hippo.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
             }
           ]
         }
@@ -73,9 +73,9 @@
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-oval-61cad6.mp3"
             },
             {
-              "key": "ant",
-              "text": "It's an ant.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-ant-01cb4e.mp3"
+              "key": "eagle",
+              "text": "It's an eagle.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-eagle-0b4e25.mp3"
             }
           ]
         },
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
             },
             {
-              "key": "leopard",
-              "text": "It's a leopard.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
             }
           ]
         }
@@ -166,9 +166,9 @@
           "image": "images/k1-jungle-hippo.webp",
           "opts": [
             {
-              "key": "elephant",
-              "text": "It's an elephant.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
+              "key": "leopard",
+              "text": "It's a leopard.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
             },
             {
               "key": "hippo",
@@ -204,14 +204,14 @@
           ],
           "opts": [
             {
+              "key": "jungle",
+              "text": "It's a jungle.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-jungle-adc338.mp3"
+            },
+            {
               "key": "leopard",
               "text": "It's a leopard.",
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
-            },
-            {
-              "key": "hippo",
-              "text": "It's a hippo.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
             }
           ]
         },
@@ -234,14 +234,14 @@
           "image": "images/k1-jungle-monkey.webp",
           "opts": [
             {
-              "key": "leopard",
-              "text": "It's a leopard.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
+              "key": "hippo",
+              "text": "It's a hippo.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
             },
             {
-              "key": "monkey",
-              "text": "It's a monkey.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-monkey-0bf444.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
             }
           ]
         },
@@ -295,9 +295,9 @@
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-monkey-0bf444.mp3"
             },
             {
-              "key": "hippo",
-              "text": "It's a hippo.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
+              "key": "jungle",
+              "text": "It's a jungle.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-jungle-adc338.mp3"
             }
           ]
         },
@@ -325,9 +325,9 @@
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-monkey-0bf444.mp3"
             },
             {
-              "key": "elephant",
-              "text": "It's an elephant.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
+              "key": "leopard",
+              "text": "It's a leopard.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
             }
           ]
         },
@@ -355,9 +355,9 @@
               "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-hippo-1ba264.mp3"
             },
             {
-              "key": "leopard",
-              "text": "It's a leopard.",
-              "audio": "audio/sentences/k1-animal-jungle/a-it-s-a-leopard-4b5da2.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-jungle/a-it-s-an-elephant-ed3297.mp3"
             }
           ]
         }
@@ -369,10 +369,10 @@
     "a": "audio/words/a.mp3",
     "an": "audio/words/an.mp3",
     "animal": "audio/words/animal.mp3",
-    "ant": "audio/words/ant.mp3",
     "because": "audio/words/because.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "eagle": "audio/words/eagle.mp3",
     "elephant": "audio/words/elephant.mp3",
     "hippo": "audio/words/hippo.mp3",
     "i": "audio/words/i.mp3",

@@ -30,14 +30,14 @@
           ],
           "opts": [
             {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+            },
+            {
               "key": "three",
               "text": "It's number three.",
               "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
-            },
-            {
-              "key": "two",
-              "text": "It's number two.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-two-e0a444.mp3"
             }
           ]
         },
@@ -59,14 +59,14 @@
           ],
           "opts": [
             {
+              "key": "five",
+              "text": "There are five fans.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-five-fans-daca78.mp3"
+            },
+            {
               "key": "three",
               "text": "There are three fans.",
               "audio": "audio/sentences/k1-number-1-5/a-there-are-three-fans-b0881a.mp3"
-            },
-            {
-              "key": "two",
-              "text": "There are two fans.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-two-fans-a0a18a.mp3"
             }
           ]
         }
@@ -97,9 +97,9 @@
           ],
           "opts": [
             {
-              "key": "five",
-              "text": "It's number five.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
             },
             {
               "key": "one",
@@ -126,14 +126,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "There are one chairs.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-chairs-c66b59.mp3"
+              "key": "four",
+              "text": "There are four chairs.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-four-chairs-6faf70.mp3"
             },
             {
-              "key": "three",
-              "text": "There are three chairs.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-three-chairs-13acbc.mp3"
+              "key": "five",
+              "text": "There are five chairs.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-five-chairs-f24f8a.mp3"
             }
           ]
         }
@@ -164,14 +164,14 @@
           ],
           "opts": [
             {
-              "key": "five",
-              "text": "It's number five.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+              "key": "two",
+              "text": "It's number two.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-two-e0a444.mp3"
             },
             {
-              "key": "one",
-              "text": "It's number one.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+              "key": "four",
+              "text": "It's number four.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-four-e275dc.mp3"
             }
           ]
         },
@@ -193,14 +193,14 @@
           ],
           "opts": [
             {
-              "key": "two",
-              "text": "There are two lights.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-two-lights-a1261f.mp3"
+              "key": "five",
+              "text": "There are five lights.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-five-lights-e7a3f7.mp3"
             },
             {
-              "key": "four",
-              "text": "There are four lights.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-four-lights-fe4509.mp3"
+              "key": "one",
+              "text": "There are one lights.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-lights-107389.mp3"
             }
           ]
         }
@@ -231,9 +231,9 @@
           ],
           "opts": [
             {
-              "key": "five",
-              "text": "It's number five.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
             },
             {
               "key": "one",
@@ -260,9 +260,9 @@
           ],
           "opts": [
             {
-              "key": "five",
-              "text": "There are five ropes.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-five-ropes-63bc20.mp3"
+              "key": "three",
+              "text": "There are three ropes.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-three-ropes-822600.mp3"
             },
             {
               "key": "one",
@@ -298,14 +298,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "It's number one.",
-              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
-            },
-            {
               "key": "three",
               "text": "It's number three.",
               "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
             }
           ]
         },
@@ -327,14 +327,14 @@
           ],
           "opts": [
             {
-              "key": "one",
-              "text": "There are one phones.",
-              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-phones-cd2af2.mp3"
-            },
-            {
               "key": "three",
               "text": "There are three phones.",
               "audio": "audio/sentences/k1-number-1-5/a-there-are-three-phones-a8390c.mp3"
+            },
+            {
+              "key": "one",
+              "text": "There are one phones.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-phones-cd2af2.mp3"
             }
           ]
         }

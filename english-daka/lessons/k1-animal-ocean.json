@@ -30,9 +30,9 @@
           ],
           "opts": [
             {
-              "key": "oval",
-              "text": "It's an oval.",
-              "audio": "audio/sentences/k1-animal-ocean/a-it-s-an-oval-61cad6.mp3"
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k1-animal-ocean/a-it-s-an-elephant-ed3297.mp3"
             },
             {
               "key": "ant",
@@ -98,14 +98,14 @@
           "image": "images/k1-ocean-shark.webp",
           "opts": [
             {
-              "key": "shark",
-              "text": "It's a shark.",
-              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-shark-071564.mp3"
-            },
-            {
               "key": "dolphin",
               "text": "It's a dolphin.",
               "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-dolphin-b88c0d.mp3"
+            },
+            {
+              "key": "whale",
+              "text": "It's a whale.",
+              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-whale-9672b0.mp3"
             }
           ]
         }
@@ -222,14 +222,14 @@
           ],
           "opts": [
             {
-              "key": "shark",
-              "text": "It's a shark.",
-              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-shark-071564.mp3"
-            },
-            {
               "key": "dolphin",
               "text": "It's a dolphin.",
               "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-dolphin-b88c0d.mp3"
+            },
+            {
+              "key": "shark",
+              "text": "It's a shark.",
+              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-shark-071564.mp3"
             }
           ]
         },
@@ -282,14 +282,14 @@
           "image": "images/k1-whale-ocean-animal.webp",
           "opts": [
             {
+              "key": "whale",
+              "text": "It's a whale.",
+              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-whale-9672b0.mp3"
+            },
+            {
               "key": "shark",
               "text": "It's a shark.",
               "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-shark-071564.mp3"
-            },
-            {
-              "key": "dolphin",
-              "text": "It's a dolphin.",
-              "audio": "audio/sentences/k1-animal-ocean/a-it-s-a-dolphin-b88c0d.mp3"
             }
           ]
         }
@@ -306,6 +306,7 @@
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
     "dolphin": "audio/words/dolphin.mp3",
+    "elephant": "audio/words/elephant.mp3",
     "friend": "audio/words/friend.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
@@ -318,7 +319,6 @@
     "ocean": "audio/words/ocean.mp3",
     "of": "audio/words/of.mp3",
     "our": "audio/words/our.mp3",
-    "oval": "audio/words/oval.mp3",
     "place": "audio/words/place.mp3",
     "shark": "audio/words/shark.mp3",
     "the": "audio/words/the.mp3",

@@ -32,14 +32,14 @@
           ],
           "opts": [
             {
-              "key": "/id/",
-              "text": "Ad makes the sound /id/.",
-              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-id-e42a9a.mp3"
+              "key": "/at/",
+              "text": "Ad makes the sound /at/.",
+              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-at-a1b67b.mp3"
             },
             {
-              "key": "/ot/",
-              "text": "Ad makes the sound /ot/.",
-              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-ot-edf460.mp3"
+              "key": "/an/",
+              "text": "Ad makes the sound /an/.",
+              "audio": "audio/sentences/k2-wf-ad/a-ad-makes-the-sound-an-423b55.mp3"
             }
           ]
         },
@@ -49,7 +49,7 @@
             "It's -ad family."
           ],
           "key": [
-            "family"
+            "ad"
           ],
           "q_cn": "这是什么词族？",
           "a_cn": [
@@ -61,14 +61,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dad begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+              "key": "ot",
+              "text": "It's -ot family.",
+              "audio": "audio/sentences/k2-wf-ad/a-it-s-ot-family-485e6b.mp3"
             },
             {
-              "key": "d",
-              "text": "Dad ends with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+              "key": "at",
+              "text": "It's -at family.",
+              "audio": "audio/sentences/k2-wf-ad/a-it-s-at-family-0c7574.mp3"
             }
           ]
         }
@@ -166,9 +166,9 @@
               "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-b-1be501.mp3"
             },
             {
-              "key": "/a/",
-              "text": "Dad begins with the sound /a/.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-a-594220.mp3"
+              "key": "/s/",
+              "text": "Dad begins with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-the-sound-s-7c01a8.mp3"
             }
           ]
         },
@@ -248,14 +248,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dad has letter D in the middle.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-d-in-the-middle-c05346.mp3"
-            },
-            {
               "key": "b",
               "text": "Dad has letter B in the middle.",
               "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-b-in-the-middle-4b91ef.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Dad has letter S in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-s-in-the-middle-42a7a2.mp3"
             }
           ]
         },
@@ -277,14 +277,14 @@
           ],
           "opts": [
             {
-              "key": "/a/",
-              "text": "Dad ends with the sound /a/.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-a-e5603f.mp3"
-            },
-            {
               "key": "/s/",
               "text": "Dad ends with the sound /s/.",
               "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-s-f6c2db.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Dad ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-the-sound-a-e5603f.mp3"
             }
           ]
         },
@@ -306,14 +306,14 @@
           ],
           "opts": [
             {
-              "key": "s",
-              "text": "Dad ends with letter S.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-s-d04e11.mp3"
-            },
-            {
               "key": "a",
               "text": "Dad ends with letter A.",
               "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-a-3ab627.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dad ends with letter B.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-b-ff1a6d.mp3"
             }
           ]
         },
@@ -336,13 +336,13 @@
           "opts": [
             {
               "key": "d",
-              "text": "Dad begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+              "text": "Bad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-d-a7be24.mp3"
             },
             {
-              "key": "d",
-              "text": "Dad ends with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+              "key": "a",
+              "text": "Sad has letter A in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-letter-a-in-the-middle-6bebd8.mp3"
             }
           ]
         }
@@ -406,14 +406,14 @@
           ],
           "opts": [
             {
-              "key": "dad",
-              "text": "/d/ /a/ /d/, dad.",
-              "audio": "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3"
-            },
-            {
               "key": "bad",
               "text": "/b/ /a/ /d/, bad.",
               "audio": "audio/sentences/k2-wf-ad/a-b-a-d-bad-26f6c4.mp3"
+            },
+            {
+              "key": "dad",
+              "text": "/d/ /a/ /d/, dad.",
+              "audio": "audio/sentences/k2-wf-ad/a-d-a-d-dad-8311e1.mp3"
             }
           ]
         },
@@ -551,14 +551,14 @@
           ],
           "opts": [
             {
-              "key": "/s/",
-              "text": "Sad ends with the sound /s/.",
-              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-s-1b6044.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Sad ends with the sound /b/.",
               "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-b-e8970e.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Sad ends with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-the-sound-s-1b6044.mp3"
             }
           ]
         },
@@ -580,14 +580,14 @@
           ],
           "opts": [
             {
-              "key": "s",
-              "text": "Sad ends with letter S.",
-              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-s-9ac0ff.mp3"
-            },
-            {
               "key": "a",
               "text": "Sad ends with letter A.",
               "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-a-59ba43.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Sad ends with letter B.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-ends-with-letter-b-2be53d.mp3"
             }
           ]
         },
@@ -609,14 +609,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Dad begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+              "key": "a",
+              "text": "Sad has letter A in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-letter-a-in-the-middle-6bebd8.mp3"
             },
             {
-              "key": "d",
-              "text": "Dad ends with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+              "key": "a",
+              "text": "Dad has letter A in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-dad-has-letter-a-in-the-middle-206c58.mp3"
             }
           ]
         }
@@ -714,9 +714,9 @@
               "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-d-2943bd.mp3"
             },
             {
-              "key": "/a/",
-              "text": "Bad begins with the sound /a/.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-a-1f65f2.mp3"
+              "key": "/s/",
+              "text": "Bad begins with the sound /s/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-the-sound-s-c73be3.mp3"
             }
           ]
         },
@@ -738,14 +738,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Bad begins with letter A.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-a-0e7d60.mp3"
-            },
-            {
               "key": "s",
               "text": "Bad begins with letter S.",
               "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-s-4c2892.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bad begins with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-begins-with-letter-d-9d1f68.mp3"
             }
           ]
         },
@@ -767,14 +767,14 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Bad has the sound /b/ in the middle.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-has-the-sound-b-in-the-middle-129319.mp3"
-            },
-            {
               "key": "/d/",
               "text": "Bad has the sound /d/ in the middle.",
               "audio": "audio/sentences/k2-wf-ad/a-bad-has-the-sound-d-in-the-middle-d04a93.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Bad has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-the-sound-s-in-the-middle-f9bcc2.mp3"
             }
           ]
         },
@@ -796,14 +796,14 @@
           ],
           "opts": [
             {
-              "key": "s",
-              "text": "Bad has letter S in the middle.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-has-letter-s-in-the-middle-4d62d3.mp3"
-            },
-            {
               "key": "d",
               "text": "Bad has letter D in the middle.",
               "audio": "audio/sentences/k2-wf-ad/a-bad-has-letter-d-in-the-middle-c4fbb9.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bad has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-has-letter-b-in-the-middle-f6329b.mp3"
             }
           ]
         },
@@ -825,14 +825,14 @@
           ],
           "opts": [
             {
-              "key": "/a/",
-              "text": "Bad ends with the sound /a/.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-a-9ebcfd.mp3"
-            },
-            {
               "key": "/s/",
               "text": "Bad ends with the sound /s/.",
               "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-s-f90107.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Bad ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-the-sound-a-9ebcfd.mp3"
             }
           ]
         },
@@ -854,14 +854,14 @@
           ],
           "opts": [
             {
+              "key": "s",
+              "text": "Bad ends with letter S.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-s-194dea.mp3"
+            },
+            {
               "key": "a",
               "text": "Bad ends with letter A.",
               "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-a-e13a33.mp3"
-            },
-            {
-              "key": "b",
-              "text": "Bad ends with letter B.",
-              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-b-904485.mp3"
             }
           ]
         },
@@ -884,13 +884,13 @@
           "opts": [
             {
               "key": "d",
-              "text": "Dad begins with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-begins-with-letter-d-a23c5c.mp3"
+              "text": "Bad ends with letter D.",
+              "audio": "audio/sentences/k2-wf-ad/a-bad-ends-with-letter-d-a7be24.mp3"
             },
             {
-              "key": "d",
-              "text": "Dad ends with letter D.",
-              "audio": "audio/sentences/k2-wf-ad/a-dad-ends-with-letter-d-5b7c42.mp3"
+              "key": "a",
+              "text": "Sad has letter A in the middle.",
+              "audio": "audio/sentences/k2-wf-ad/a-sad-has-letter-a-in-the-middle-6bebd8.mp3"
             }
           ]
         }
@@ -903,6 +903,8 @@
     "a": "audio/words/a.mp3",
     "ad": "audio/words/ad.mp3",
     "am": "audio/words/am.mp3",
+    "an": "audio/words/an.mp3",
+    "at": "audio/words/at.mp3",
     "b": "audio/words/b.mp3",
     "bad": "audio/words/bad.mp3",
     "begin": "audio/words/begin.mp3",
@@ -918,7 +920,6 @@
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
-    "id": "audio/words/id.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",

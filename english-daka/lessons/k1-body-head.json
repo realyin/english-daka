@@ -35,9 +35,9 @@
               "audio": "audio/sentences/k1-body-head/a-this-is-a-neck-1ea311.mp3"
             },
             {
-              "key": "policeman",
-              "text": "This is a policeman.",
-              "audio": "audio/sentences/k1-body-head/a-this-is-a-policeman-5554cb.mp3"
+              "key": "newspaper",
+              "text": "This is a newspaper.",
+              "audio": "audio/sentences/k1-body-head/a-this-is-a-newspaper-dfd2e9.mp3"
             }
           ]
         },
@@ -103,9 +103,9 @@
               "audio": "audio/sentences/k1-body-head/a-this-is-a-head-66cd58.mp3"
             },
             {
-              "key": "hospital",
-              "text": "This is a hospital.",
-              "audio": "audio/sentences/k1-body-head/a-this-is-a-hospital-82e78f.mp3"
+              "key": "sailor",
+              "text": "This is a sailor.",
+              "audio": "audio/sentences/k1-body-head/a-this-is-a-sailor-10ba74.mp3"
             }
           ]
         },
@@ -166,14 +166,14 @@
           ],
           "opts": [
             {
-              "key": "ears",
-              "text": "These are ears.",
-              "audio": "audio/sentences/k1-body-head/a-these-are-ears-344756.mp3"
+              "key": "arms",
+              "text": "These are arms.",
+              "audio": "audio/sentences/k1-body-head/a-these-are-arms-6580c9.mp3"
             },
             {
-              "key": "fingers",
-              "text": "These are fingers.",
-              "audio": "audio/sentences/k1-body-head/a-these-are-fingers-442612.mp3"
+              "key": "hands",
+              "text": "These are hands.",
+              "audio": "audio/sentences/k1-body-head/a-these-are-hands-c2ffe8.mp3"
             }
           ]
         },
@@ -196,14 +196,14 @@
           "image": "images/k1-two-shoulders.webp",
           "opts": [
             {
-              "key": "six",
-              "text": "I have six shoulders.",
-              "audio": "audio/sentences/k1-body-head/a-i-have-six-shoulders-c3dfab.mp3"
+              "key": "seven",
+              "text": "I have seven shoulders.",
+              "audio": "audio/sentences/k1-body-head/a-i-have-seven-shoulders-993174.mp3"
             },
             {
-              "key": "three",
-              "text": "I have three shoulders.",
-              "audio": "audio/sentences/k1-body-head/a-i-have-three-shoulders-992983.mp3"
+              "key": "ten",
+              "text": "I have ten shoulders.",
+              "audio": "audio/sentences/k1-body-head/a-i-have-ten-shoulders-b68335.mp3"
             }
           ]
         }
@@ -214,14 +214,13 @@
   "word_audio": {
     "a": "audio/words/a.mp3",
     "are": "audio/words/are.mp3",
+    "arms": "audio/words/arms.mp3",
     "body": "audio/words/body.mp3",
     "can": "audio/words/can.mp3",
     "do": "audio/words/do.mp3",
-    "ears": "audio/words/ears.mp3",
-    "fingers": "audio/words/fingers.mp3",
+    "hands": "audio/words/hands.mp3",
     "have": "audio/words/have.mp3",
     "head": "audio/words/head.mp3",
-    "hospital": "audio/words/hospital.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
     "is": "audio/words/is.mp3",
@@ -229,17 +228,18 @@
     "many": "audio/words/many.mp3",
     "my": "audio/words/my.mp3",
     "neck": "audio/words/neck.mp3",
+    "newspaper": "audio/words/newspaper.mp3",
     "nod": "audio/words/nod.mp3",
     "or": "audio/words/or.mp3",
     "part": "audio/words/part.mp3",
     "parts": "audio/words/parts.mp3",
-    "policeman": "audio/words/policeman.mp3",
+    "sailor": "audio/words/sailor.mp3",
+    "seven": "audio/words/seven.mp3",
     "short": "audio/words/short.mp3",
     "shoulders": "audio/words/shoulders.mp3",
-    "six": "audio/words/six.mp3",
+    "ten": "audio/words/ten.mp3",
     "these": "audio/words/these.mp3",
     "this": "audio/words/this.mp3",
-    "three": "audio/words/three.mp3",
     "two": "audio/words/two.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",

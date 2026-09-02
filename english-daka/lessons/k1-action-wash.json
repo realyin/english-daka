@@ -69,13 +69,13 @@
           "opts": [
             {
               "key": "brush",
-              "text": "I can brush my teeth.",
-              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
+              "text": "I can brush my hair.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
             },
             {
               "key": "brush",
-              "text": "I can brush my hair.",
-              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
+              "text": "I can brush my teeth.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
             }
           ]
         }
@@ -145,13 +145,13 @@
           "opts": [
             {
               "key": "wash",
-              "text": "I can wash my hands.",
-              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
+              "text": "I can wash my face.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
             },
             {
               "key": "wash",
-              "text": "I can wash my face.",
-              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
+              "text": "I can wash my hands.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
             }
           ]
         }

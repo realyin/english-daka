@@ -32,14 +32,14 @@
           ],
           "opts": [
             {
-              "key": "/at/",
-              "text": "An makes the sound /at/.",
-              "audio": "audio/sentences/k2-wf-an/a-an-makes-the-sound-at-48448d.mp3"
-            },
-            {
               "key": "/id/",
               "text": "An makes the sound /id/.",
               "audio": "audio/sentences/k2-wf-an/a-an-makes-the-sound-id-860ee6.mp3"
+            },
+            {
+              "key": "/it/",
+              "text": "An makes the sound /it/.",
+              "audio": "audio/sentences/k2-wf-an/a-an-makes-the-sound-it-b4a4e9.mp3"
             }
           ]
         },
@@ -49,7 +49,7 @@
             "It's -an family."
           ],
           "key": [
-            "family"
+            "an"
           ],
           "q_cn": "这是什么词族？",
           "a_cn": [
@@ -61,14 +61,14 @@
           ],
           "opts": [
             {
-              "key": "man",
-              "text": "Dan is a man.",
-              "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
+              "key": "ot",
+              "text": "It's -ot family.",
+              "audio": "audio/sentences/k2-wf-an/a-it-s-ot-family-485e6b.mp3"
             },
             {
-              "key": "fan",
-              "text": "I need a fan.",
-              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+              "key": "ad",
+              "text": "It's -ad family.",
+              "audio": "audio/sentences/k2-wf-an/a-it-s-ad-family-8ed62f.mp3"
             }
           ]
         }
@@ -163,14 +163,14 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Fan ends with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
+              "key": "m",
+              "text": "Man begins with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-m-684617.mp3"
             },
             {
-              "key": "f",
-              "text": "Fan begins with letter F.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-f-33fc5a.mp3"
+              "key": "n",
+              "text": "Tan ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
             }
           ]
         },
@@ -193,9 +193,9 @@
           ],
           "opts": [
             {
-              "key": "fan",
-              "text": "I need a fan.",
-              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+              "key": "tan",
+              "text": "The dog is tan.",
+              "audio": "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
             },
             {
               "key": "fly",
@@ -222,14 +222,14 @@
           ],
           "opts": [
             {
+              "key": "/f/",
+              "text": "Man begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-f-4caac7.mp3"
+            },
+            {
               "key": "/a/",
               "text": "Man begins with the sound /a/.",
               "audio": "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-a-e9313e.mp3"
-            },
-            {
-              "key": "/n/",
-              "text": "Man begins with the sound /n/.",
-              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-the-sound-n-ed58b4.mp3"
             }
           ]
         },
@@ -251,14 +251,14 @@
           ],
           "opts": [
             {
+              "key": "n",
+              "text": "Man begins with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-n-b3ed28.mp3"
+            },
+            {
               "key": "a",
               "text": "Man begins with letter A.",
               "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-a-15d5e6.mp3"
-            },
-            {
-              "key": "f",
-              "text": "Man begins with letter F.",
-              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-f-a7f637.mp3"
             }
           ]
         },
@@ -280,9 +280,9 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Man has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-man-has-the-sound-t-in-the-middle-5c34f6.mp3"
+              "key": "/f/",
+              "text": "Man has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-the-sound-f-in-the-middle-fdaa3b.mp3"
             },
             {
               "key": "/m/",
@@ -314,9 +314,9 @@
               "audio": "audio/sentences/k2-wf-an/a-man-has-letter-m-in-the-middle-bb523e.mp3"
             },
             {
-              "key": "f",
-              "text": "Man has letter F in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-man-has-letter-f-in-the-middle-9a9198.mp3"
+              "key": "t",
+              "text": "Man has letter T in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-man-has-letter-t-in-the-middle-152526.mp3"
             }
           ]
         },
@@ -338,14 +338,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Man ends with the sound /f/.",
-              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-f-e73740.mp3"
+              "key": "/m/",
+              "text": "Man ends with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-m-384ec1.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Man ends with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-t-e6f7d9.mp3"
+              "key": "/a/",
+              "text": "Man ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-the-sound-a-8ce9ad.mp3"
             }
           ]
         },
@@ -372,9 +372,9 @@
               "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-a-a43e07.mp3"
             },
             {
-              "key": "m",
-              "text": "Man ends with letter M.",
-              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-m-f2a3fb.mp3"
+              "key": "t",
+              "text": "Man ends with letter T.",
+              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-t-ef0e39.mp3"
             }
           ]
         },
@@ -396,14 +396,14 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Man begins with letter M.",
-              "audio": "audio/sentences/k2-wf-an/a-man-begins-with-letter-m-684617.mp3"
+              "key": "dad",
+              "text": "The man is my dad.",
+              "audio": "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
             },
             {
-              "key": "n",
-              "text": "Tan ends with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
+              "key": "t",
+              "text": "Tan begins with letter T.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-t-e3ed8d.mp3"
             }
           ]
         }
@@ -503,9 +503,9 @@
               "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
             },
             {
-              "key": "fly",
-              "text": "Yes, birds can fly.",
-              "audio": "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
+              "key": "tan",
+              "text": "The dog is tan.",
+              "audio": "audio/sentences/k2-wf-an/a-the-dog-is-tan-93f59e.mp3"
             }
           ]
         },
@@ -556,9 +556,9 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Fan begins with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-n-1d0018.mp3"
+              "key": "m",
+              "text": "Fan begins with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-m-a70434.mp3"
             },
             {
               "key": "a",
@@ -585,14 +585,14 @@
           ],
           "opts": [
             {
-              "key": "/n/",
-              "text": "Fan has the sound /n/ in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-n-in-the-middle-44f39f.mp3"
+              "key": "/m/",
+              "text": "Fan has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-m-in-the-middle-c597bf.mp3"
             },
             {
-              "key": "/f/",
-              "text": "Fan has the sound /f/ in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-f-in-the-middle-5791f9.mp3"
+              "key": "/t/",
+              "text": "Fan has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-the-sound-t-in-the-middle-a0ec51.mp3"
             }
           ]
         },
@@ -614,14 +614,14 @@
           ],
           "opts": [
             {
+              "key": "n",
+              "text": "Fan has letter N in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-n-in-the-middle-bc17e4.mp3"
+            },
+            {
               "key": "m",
               "text": "Fan has letter M in the middle.",
               "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-m-in-the-middle-ca1a98.mp3"
-            },
-            {
-              "key": "f",
-              "text": "Fan has letter F in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-f-in-the-middle-b2e10d.mp3"
             }
           ]
         },
@@ -643,9 +643,9 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Fan ends with the sound /f/.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-f-36d319.mp3"
+              "key": "/a/",
+              "text": "Fan ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-the-sound-a-878d62.mp3"
             },
             {
               "key": "/t/",
@@ -672,14 +672,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Fan ends with letter A.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-a-f05601.mp3"
-            },
-            {
               "key": "m",
               "text": "Fan ends with letter M.",
               "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-m-e7106d.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Fan ends with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-a-f05601.mp3"
             }
           ]
         },
@@ -701,14 +701,14 @@
           ],
           "opts": [
             {
+              "key": "dad",
+              "text": "The man is my dad.",
+              "audio": "audio/sentences/k2-wf-an/a-the-man-is-my-dad-02d9c6.mp3"
+            },
+            {
               "key": "t",
               "text": "Tan begins with letter T.",
               "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-t-e3ed8d.mp3"
-            },
-            {
-              "key": "n",
-              "text": "Man ends with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-man-ends-with-letter-n-c585f9.mp3"
             }
           ]
         }
@@ -773,14 +773,14 @@
           "q_audio": "audio/sentences/k2-wf-an/q-how-do-you-read-t-an-fe1776.mp3",
           "opts": [
             {
-              "key": "man",
-              "text": "/m/ /an/, man.",
-              "audio": "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3"
-            },
-            {
               "key": "fan",
               "text": "/f/ /an/, fan.",
               "audio": "audio/sentences/k2-wf-an/a-f-an-fan-13ba46.mp3"
+            },
+            {
+              "key": "man",
+              "text": "/m/ /an/, man.",
+              "audio": "audio/sentences/k2-wf-an/a-m-an-man-d346e0.mp3"
             }
           ]
         },
@@ -808,9 +808,9 @@
               "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
             },
             {
-              "key": "fan",
-              "text": "I need a fan.",
-              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+              "key": "fly",
+              "text": "Yes, birds can fly.",
+              "audio": "audio/sentences/k2-wf-an/a-yes-birds-can-fly-412b23.mp3"
             }
           ]
         },
@@ -832,14 +832,14 @@
           ],
           "opts": [
             {
+              "key": "/f/",
+              "text": "Tan begins with the sound /f/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-f-e1048b.mp3"
+            },
+            {
               "key": "/m/",
               "text": "Tan begins with the sound /m/.",
               "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-m-157e56.mp3"
-            },
-            {
-              "key": "/a/",
-              "text": "Tan begins with the sound /a/.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-the-sound-a-bd0815.mp3"
             }
           ]
         },
@@ -861,9 +861,9 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Tan begins with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-n-eb552b.mp3"
+              "key": "m",
+              "text": "Tan begins with letter M.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-begins-with-letter-m-abd008.mp3"
             },
             {
               "key": "a",
@@ -890,9 +890,9 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Tan has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-has-the-sound-t-in-the-middle-7fcde5.mp3"
+              "key": "/f/",
+              "text": "Tan has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-the-sound-f-in-the-middle-7e44bf.mp3"
             },
             {
               "key": "/m/",
@@ -919,9 +919,9 @@
           ],
           "opts": [
             {
-              "key": "m",
-              "text": "Tan has letter M in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-has-letter-m-in-the-middle-3ddb57.mp3"
+              "key": "t",
+              "text": "Tan has letter T in the middle.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-has-letter-t-in-the-middle-aa00d6.mp3"
             },
             {
               "key": "f",
@@ -948,14 +948,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Tan ends with the sound /f/.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-f-28c4fe.mp3"
+              "key": "/m/",
+              "text": "Tan ends with the sound /m/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-m-0a3dd5.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Tan ends with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-t-61037f.mp3"
+              "key": "/a/",
+              "text": "Tan ends with the sound /a/.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-the-sound-a-04df2a.mp3"
             }
           ]
         },
@@ -982,9 +982,9 @@
               "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-m-1603f3.mp3"
             },
             {
-              "key": "f",
-              "text": "Tan ends with letter F.",
-              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-f-632dce.mp3"
+              "key": "a",
+              "text": "Tan ends with letter A.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-a-d5ea5e.mp3"
             }
           ]
         },
@@ -1006,14 +1006,14 @@
           ],
           "opts": [
             {
-              "key": "a",
-              "text": "Fan has letter A in the middle.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
+              "key": "n",
+              "text": "Tan ends with letter N.",
+              "audio": "audio/sentences/k2-wf-an/a-tan-ends-with-letter-n-4014ea.mp3"
             },
             {
-              "key": "n",
-              "text": "Fan ends with letter N.",
-              "audio": "audio/sentences/k2-wf-an/a-fan-ends-with-letter-n-1f2ff1.mp3"
+              "key": "f",
+              "text": "Fan begins with letter F.",
+              "audio": "audio/sentences/k2-wf-an/a-fan-begins-with-letter-f-33fc5a.mp3"
             }
           ]
         }
@@ -1045,9 +1045,9 @@
           "image": "images/k2-an-birds-fly.webp",
           "opts": [
             {
-              "key": "fan",
-              "text": "I need a fan.",
-              "audio": "audio/sentences/k2-wf-an/a-i-need-a-fan-c7d290.mp3"
+              "key": "man",
+              "text": "Dan is a man.",
+              "audio": "audio/sentences/k2-wf-an/a-dan-is-a-man-a61cc6.mp3"
             },
             {
               "key": "tan",
@@ -1074,8 +1074,8 @@
   "word_audio": {
     "-an family": "audio/words/an-family.mp3",
     "a": "audio/words/a.mp3",
+    "ad": "audio/words/ad.mp3",
     "an": "audio/words/an.mp3",
-    "at": "audio/words/at.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "birds": "audio/words/birds.mp3",
@@ -1101,6 +1101,7 @@
     "id": "audio/words/id.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
     "it's": "audio/words/it-s.mp3",
     "letter": "audio/words/letter.mp3",
     "m": "audio/words/m.mp3",
@@ -1111,6 +1112,7 @@
     "my": "audio/words/my.mp3",
     "n": "audio/words/n.mp3",
     "need": "audio/words/need.mp3",
+    "ot": "audio/words/ot.mp3",
     "read": "audio/words/read.mp3",
     "sound": "audio/words/sound.mp3",
     "t": "audio/words/t.mp3",

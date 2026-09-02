@@ -37,9 +37,9 @@
               "audio": "audio/sentences/k2-wf-it/a-it-makes-the-sound-at-94b5d1.mp3"
             },
             {
-              "key": "/id/",
-              "text": "It makes the sound /id/.",
-              "audio": "audio/sentences/k2-wf-it/a-it-makes-the-sound-id-1e5969.mp3"
+              "key": "/ad/",
+              "text": "It makes the sound /ad/.",
+              "audio": "audio/sentences/k2-wf-it/a-it-makes-the-sound-ad-c1a85d.mp3"
             }
           ]
         },
@@ -161,9 +161,9 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Hit begins with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-t-bed4fa.mp3"
+              "key": "/i/",
+              "text": "Hit begins with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-the-sound-i-57d906.mp3"
             },
             {
               "key": "/l/",
@@ -190,14 +190,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Hit begins with letter L.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-l-fa7d45.mp3"
+              "key": "b",
+              "text": "Hit begins with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-b-268b8f.mp3"
             },
             {
-              "key": "i",
-              "text": "Hit begins with letter I.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-i-68b596.mp3"
+              "key": "t",
+              "text": "Hit begins with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-t-6ad0eb.mp3"
             }
           ]
         },
@@ -219,14 +219,14 @@
           ],
           "opts": [
             {
+              "key": "/t/",
+              "text": "Hit has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-the-sound-t-in-the-middle-a38204.mp3"
+            },
+            {
               "key": "/b/",
               "text": "Hit has the sound /b/ in the middle.",
               "audio": "audio/sentences/k2-wf-it/a-hit-has-the-sound-b-in-the-middle-20c18c.mp3"
-            },
-            {
-              "key": "/h/",
-              "text": "Hit has the sound /h/ in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-has-the-sound-h-in-the-middle-c6a81e.mp3"
             }
           ]
         },
@@ -248,9 +248,9 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Hit has letter L in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-has-letter-l-in-the-middle-02dfe7.mp3"
+              "key": "b",
+              "text": "Hit has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-has-letter-b-in-the-middle-048445.mp3"
             },
             {
               "key": "h",
@@ -277,14 +277,14 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Hit ends with the sound /l/.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-l-6c7c7e.mp3"
+              "key": "/b/",
+              "text": "Hit ends with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-b-5244bf.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Hit ends with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-i-adc173.mp3"
+              "key": "/h/",
+              "text": "Hit ends with the sound /h/.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-the-sound-h-e02990.mp3"
             }
           ]
         },
@@ -306,9 +306,9 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Hit ends with letter L.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-l-a32655.mp3"
+              "key": "b",
+              "text": "Hit ends with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-b-6c326c.mp3"
             },
             {
               "key": "h",
@@ -336,13 +336,13 @@
           "opts": [
             {
               "key": "t",
-              "text": "Bit ends with letter T.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
-            },
-            {
-              "key": "t",
               "text": "Hit ends with letter T.",
               "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bit begins with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-b-37a4b7.mp3"
             }
           ]
         }
@@ -435,9 +435,9 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Bit begins with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-t-e1b464.mp3"
+              "key": "/i/",
+              "text": "Bit begins with the sound /i/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-the-sound-i-f7473a.mp3"
             },
             {
               "key": "/l/",
@@ -464,14 +464,14 @@
           ],
           "opts": [
             {
-              "key": "l",
-              "text": "Bit begins with letter L.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-l-685767.mp3"
-            },
-            {
               "key": "h",
               "text": "Bit begins with letter H.",
               "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-h-341442.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Bit begins with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-t-bcdda8.mp3"
             }
           ]
         },
@@ -493,9 +493,9 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Bit has the sound /l/ in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-has-the-sound-l-in-the-middle-44d971.mp3"
+              "key": "/t/",
+              "text": "Bit has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-the-sound-t-in-the-middle-0c9e48.mp3"
             },
             {
               "key": "/b/",
@@ -522,9 +522,9 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Bit has letter T in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-has-letter-t-in-the-middle-88b82d.mp3"
+              "key": "l",
+              "text": "Bit has letter L in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-letter-l-in-the-middle-c3c049.mp3"
             },
             {
               "key": "b",
@@ -556,9 +556,9 @@
               "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-l-bb8f23.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Bit ends with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-i-ca1bc6.mp3"
+              "key": "/b/",
+              "text": "Bit ends with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-the-sound-b-69f189.mp3"
             }
           ]
         },
@@ -580,14 +580,14 @@
           ],
           "opts": [
             {
+              "key": "l",
+              "text": "Bit ends with letter L.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-l-3fa7a2.mp3"
+            },
+            {
               "key": "i",
               "text": "Bit ends with letter I.",
               "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-i-0136bb.mp3"
-            },
-            {
-              "key": "b",
-              "text": "Bit ends with letter B.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-b-da3bcc.mp3"
             }
           ]
         },
@@ -610,13 +610,13 @@
           "opts": [
             {
               "key": "t",
-              "text": "Bit ends with letter T.",
-              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
-            },
-            {
-              "key": "t",
               "text": "Hit ends with letter T.",
               "audio": "audio/sentences/k2-wf-it/a-hit-ends-with-letter-t-87282b.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Bit begins with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-begins-with-letter-b-37a4b7.mp3"
             }
           ]
         }
@@ -680,14 +680,14 @@
           ],
           "opts": [
             {
-              "key": "hit",
-              "text": "/h/ /i/ /t/, hit.",
-              "audio": "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3"
-            },
-            {
               "key": "bit",
               "text": "/b/ /i/ /t/, bit.",
               "audio": "audio/sentences/k2-wf-it/a-b-i-t-bit-c3a588.mp3"
+            },
+            {
+              "key": "hit",
+              "text": "/h/ /i/ /t/, hit.",
+              "audio": "audio/sentences/k2-wf-it/a-h-i-t-hit-8af643.mp3"
             }
           ]
         },
@@ -709,14 +709,14 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Lit begins with the sound /t/.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-t-dd8e4d.mp3"
-            },
-            {
               "key": "/i/",
               "text": "Lit begins with the sound /i/.",
               "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-i-358702.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Lit begins with the sound /t/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-the-sound-t-dd8e4d.mp3"
             }
           ]
         },
@@ -738,14 +738,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Lit begins with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-letter-b-124034.mp3"
+            },
+            {
               "key": "h",
               "text": "Lit begins with letter H.",
               "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-letter-h-3134cc.mp3"
-            },
-            {
-              "key": "i",
-              "text": "Lit begins with letter I.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-begins-with-letter-i-a305f1.mp3"
             }
           ]
         },
@@ -767,9 +767,9 @@
           ],
           "opts": [
             {
-              "key": "/l/",
-              "text": "Lit has the sound /l/ in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-has-the-sound-l-in-the-middle-4879fb.mp3"
+              "key": "/t/",
+              "text": "Lit has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-the-sound-t-in-the-middle-7b3dcb.mp3"
             },
             {
               "key": "/b/",
@@ -796,14 +796,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Lit has letter B in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-b-in-the-middle-003970.mp3"
+            },
+            {
               "key": "h",
               "text": "Lit has letter H in the middle.",
               "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-h-in-the-middle-5988a6.mp3"
-            },
-            {
-              "key": "t",
-              "text": "Lit has letter T in the middle.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-has-letter-t-in-the-middle-c7d4ab.mp3"
             }
           ]
         },
@@ -830,9 +830,9 @@
               "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-l-a096b4.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Lit ends with the sound /i/.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-i-47c460.mp3"
+              "key": "/b/",
+              "text": "Lit ends with the sound /b/.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-the-sound-b-da5dda.mp3"
             }
           ]
         },
@@ -854,14 +854,14 @@
           ],
           "opts": [
             {
+              "key": "b",
+              "text": "Lit ends with letter B.",
+              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-b-a3860c.mp3"
+            },
+            {
               "key": "h",
               "text": "Lit ends with letter H.",
               "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-h-00996b.mp3"
-            },
-            {
-              "key": "i",
-              "text": "Lit ends with letter I.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-i-8cb1ad.mp3"
             }
           ]
         },
@@ -883,14 +883,14 @@
           ],
           "opts": [
             {
-              "key": "h",
-              "text": "Hit begins with letter H.",
-              "audio": "audio/sentences/k2-wf-it/a-hit-begins-with-letter-h-537a0b.mp3"
+              "key": "i",
+              "text": "Bit has letter I in the middle.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-has-letter-i-in-the-middle-48c8a6.mp3"
             },
             {
               "key": "t",
-              "text": "Lit ends with letter T.",
-              "audio": "audio/sentences/k2-wf-it/a-lit-ends-with-letter-t-19d2f6.mp3"
+              "text": "Bit ends with letter T.",
+              "audio": "audio/sentences/k2-wf-it/a-bit-ends-with-letter-t-7869b6.mp3"
             }
           ]
         }
@@ -901,6 +901,7 @@
   "word_audio": {
     "-it family": "audio/words/it-family.mp3",
     "a": "audio/words/a.mp3",
+    "ad": "audio/words/ad.mp3",
     "and": "audio/words/and.mp3",
     "at": "audio/words/at.mp3",
     "b": "audio/words/b.mp3",
@@ -922,7 +923,6 @@
     "hit": "audio/words/hit.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
-    "id": "audio/words/id.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it": "audio/words/it.mp3",

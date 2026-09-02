@@ -60,14 +60,14 @@
           ],
           "opts": [
             {
-              "key": "dig",
-              "text": "It's dig.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
             },
             {
-              "key": "six",
-              "text": "It's six.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+              "key": "kid",
+              "text": "It's kid.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
             }
           ]
         },
@@ -89,9 +89,9 @@
           ],
           "opts": [
             {
-              "key": "bin",
-              "text": "/b/ /in/, bin.",
-              "audio": "audio/sentences/k2-cvc-i/a-b-in-bin-67f9d6.mp3"
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
             },
             {
               "key": "dig",
@@ -118,14 +118,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Fit begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-g-252c45.mp3"
-            },
-            {
               "key": "/s/",
               "text": "Fit begins with the sound /s/.",
               "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-s-ea98cb.mp3"
+            },
+            {
+              "key": "/ks/",
+              "text": "Fit begins with the sound /ks/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-the-sound-ks-f14fee.mp3"
             }
           ]
         },
@@ -147,9 +147,9 @@
           ],
           "opts": [
             {
-              "key": "x",
-              "text": "Fit begins with letter X.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-letter-x-ae6200.mp3"
+              "key": "s",
+              "text": "Fit begins with letter S.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-begins-with-letter-s-7d3bac.mp3"
             },
             {
               "key": "g",
@@ -176,14 +176,14 @@
           ],
           "opts": [
             {
+              "key": "/n/",
+              "text": "Fit has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-the-sound-n-in-the-middle-0a103f.mp3"
+            },
+            {
               "key": "/b/",
               "text": "Fit has the sound /b/ in the middle.",
               "audio": "audio/sentences/k2-cvc-i/a-fit-has-the-sound-b-in-the-middle-191468.mp3"
-            },
-            {
-              "key": "/ks/",
-              "text": "Fit has the sound /ks/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-has-the-sound-ks-in-the-middle-e8b332.mp3"
             }
           ]
         },
@@ -205,14 +205,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Fit has letter D in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-d-in-the-middle-720184.mp3"
+              "key": "b",
+              "text": "Fit has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-b-in-the-middle-7497bc.mp3"
             },
             {
-              "key": "k",
-              "text": "Fit has letter K in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-k-in-the-middle-d3fc96.mp3"
+              "key": "x",
+              "text": "Fit has letter X in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-has-letter-x-in-the-middle-88b12a.mp3"
             }
           ]
         },
@@ -234,9 +234,9 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Fit ends with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-the-sound-g-4db471.mp3"
+              "key": "/k/",
+              "text": "Fit ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-the-sound-k-9f36b1.mp3"
             },
             {
               "key": "/s/",
@@ -263,14 +263,14 @@
           ],
           "opts": [
             {
-              "key": "d",
-              "text": "Fit ends with letter D.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-d-7bd6c8.mp3"
+              "key": "x",
+              "text": "Fit ends with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-x-b7ce58.mp3"
             },
             {
-              "key": "k",
-              "text": "Fit ends with letter K.",
-              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-k-e304d8.mp3"
+              "key": "f",
+              "text": "Fit ends with letter F.",
+              "audio": "audio/sentences/k2-cvc-i/a-fit-ends-with-letter-f-6789c6.mp3"
             }
           ]
         }
@@ -332,14 +332,14 @@
           ],
           "opts": [
             {
+              "key": "kid",
+              "text": "It's kid.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+            },
+            {
               "key": "dig",
               "text": "It's dig.",
               "audio": "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
-            },
-            {
-              "key": "six",
-              "text": "It's six.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
             }
           ]
         },
@@ -366,9 +366,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
             },
             {
-              "key": "six",
-              "text": "/s/ /ix/, six.",
-              "audio": "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
+              "key": "fit",
+              "text": "/f/ /it/, fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
             }
           ]
         },
@@ -395,9 +395,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-s-9ba050.mp3"
             },
             {
-              "key": "/k/",
-              "text": "Big begins with the sound /k/.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-k-f22271.mp3"
+              "key": "/ks/",
+              "text": "Big begins with the sound /ks/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-the-sound-ks-0527c4.mp3"
             }
           ]
         },
@@ -419,9 +419,9 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Big begins with letter T.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-letter-t-472d84.mp3"
+              "key": "k",
+              "text": "Big begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-begins-with-letter-k-7c1488.mp3"
             },
             {
               "key": "n",
@@ -448,14 +448,14 @@
           ],
           "opts": [
             {
+              "key": "/f/",
+              "text": "Big has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-the-sound-f-in-the-middle-302075.mp3"
+            },
+            {
               "key": "/d/",
               "text": "Big has the sound /d/ in the middle.",
               "audio": "audio/sentences/k2-cvc-i/a-big-has-the-sound-d-in-the-middle-b0bd80.mp3"
-            },
-            {
-              "key": "/g/",
-              "text": "Big has the sound /g/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-has-the-sound-g-in-the-middle-68a8d8.mp3"
             }
           ]
         },
@@ -477,14 +477,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Big has letter G in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-g-in-the-middle-e0f516.mp3"
+              "key": "d",
+              "text": "Big has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-d-in-the-middle-d22e28.mp3"
             },
             {
-              "key": "s",
-              "text": "Big has letter S in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-s-in-the-middle-bff6c8.mp3"
+              "key": "b",
+              "text": "Big has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-has-letter-b-in-the-middle-a3dcc4.mp3"
             }
           ]
         },
@@ -506,14 +506,14 @@
           ],
           "opts": [
             {
-              "key": "/b/",
-              "text": "Big ends with the sound /b/.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-b-64b133.mp3"
+              "key": "/i/",
+              "text": "Big ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-i-d46338.mp3"
             },
             {
-              "key": "/ks/",
-              "text": "Big ends with the sound /ks/.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-ks-d379b5.mp3"
+              "key": "/f/",
+              "text": "Big ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-the-sound-f-6430ad.mp3"
             }
           ]
         },
@@ -535,14 +535,14 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Big ends with letter N.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-n-dd8913.mp3"
+              "key": "s",
+              "text": "Big ends with letter S.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-s-d31617.mp3"
             },
             {
-              "key": "x",
-              "text": "Big ends with letter X.",
-              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-x-bcbaa2.mp3"
+              "key": "d",
+              "text": "Big ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-big-ends-with-letter-d-19f4a2.mp3"
             }
           ]
         }
@@ -604,14 +604,14 @@
           ],
           "opts": [
             {
-              "key": "dig",
-              "text": "It's dig.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+              "key": "fit",
+              "text": "It's fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
             },
             {
-              "key": "six",
-              "text": "It's six.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
             }
           ]
         },
@@ -633,14 +633,14 @@
           ],
           "opts": [
             {
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
+            },
+            {
               "key": "dig",
               "text": "/d/ /ig/, dig.",
               "audio": "audio/sentences/k2-cvc-i/a-d-ig-dig-b431e7.mp3"
-            },
-            {
-              "key": "six",
-              "text": "/s/ /ix/, six.",
-              "audio": "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
             }
           ]
         },
@@ -662,14 +662,14 @@
           ],
           "opts": [
             {
-              "key": "/ks/",
-              "text": "Bin begins with the sound /ks/.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-ks-e19c62.mp3"
+              "key": "/i/",
+              "text": "Bin begins with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-i-10970e.mp3"
             },
             {
-              "key": "/t/",
-              "text": "Bin begins with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-t-3c6482.mp3"
+              "key": "/f/",
+              "text": "Bin begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-the-sound-f-9f0c3f.mp3"
             }
           ]
         },
@@ -696,9 +696,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-d-97c253.mp3"
             },
             {
-              "key": "k",
-              "text": "Bin begins with letter K.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-k-c5e7b9.mp3"
+              "key": "x",
+              "text": "Bin begins with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-begins-with-letter-x-f08f95.mp3"
             }
           ]
         },
@@ -725,9 +725,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-bin-has-the-sound-s-in-the-middle-d6c112.mp3"
             },
             {
-              "key": "/k/",
-              "text": "Bin has the sound /k/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-has-the-sound-k-in-the-middle-8eeb86.mp3"
+              "key": "/ks/",
+              "text": "Bin has the sound /ks/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-the-sound-ks-in-the-middle-796fa6.mp3"
             }
           ]
         },
@@ -754,9 +754,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-bin-has-letter-k-in-the-middle-169421.mp3"
             },
             {
-              "key": "f",
-              "text": "Bin has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-has-letter-f-in-the-middle-38fa12.mp3"
+              "key": "n",
+              "text": "Bin has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-has-letter-n-in-the-middle-d38711.mp3"
             }
           ]
         },
@@ -778,14 +778,14 @@
           ],
           "opts": [
             {
-              "key": "/i/",
-              "text": "Bin ends with the sound /i/.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-i-7a4af9.mp3"
-            },
-            {
               "key": "/b/",
               "text": "Bin ends with the sound /b/.",
               "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-b-bdbfcf.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Bin ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-the-sound-i-7a4af9.mp3"
             }
           ]
         },
@@ -807,14 +807,14 @@
           ],
           "opts": [
             {
-              "key": "x",
-              "text": "Bin ends with letter X.",
-              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-x-6f1935.mp3"
-            },
-            {
               "key": "g",
               "text": "Bin ends with letter G.",
               "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-g-3772a9.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bin ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-bin-ends-with-letter-d-e86d78.mp3"
             }
           ]
         }
@@ -876,14 +876,14 @@
           ],
           "opts": [
             {
-              "key": "kid",
-              "text": "It's kid.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-kid-b49fd7.mp3"
+              "key": "six",
+              "text": "It's six.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
             },
             {
-              "key": "fit",
-              "text": "It's fit.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+              "key": "bin",
+              "text": "It's bin.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
             }
           ]
         },
@@ -905,14 +905,14 @@
           ],
           "opts": [
             {
-              "key": "bin",
-              "text": "/b/ /in/, bin.",
-              "audio": "audio/sentences/k2-cvc-i/a-b-in-bin-67f9d6.mp3"
+              "key": "big",
+              "text": "/b/ /ig/, big.",
+              "audio": "audio/sentences/k2-cvc-i/a-b-ig-big-0dc7dd.mp3"
             },
             {
-              "key": "six",
-              "text": "/s/ /ix/, six.",
-              "audio": "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
+              "key": "fit",
+              "text": "/f/ /it/, fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
             }
           ]
         },
@@ -934,14 +934,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Dig begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-g-1789cb.mp3"
+              "key": "/f/",
+              "text": "Dig begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-f-b0948c.mp3"
             },
             {
-              "key": "/s/",
-              "text": "Dig begins with the sound /s/.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-s-ea7ff8.mp3"
+              "key": "/k/",
+              "text": "Dig begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-the-sound-k-61b911.mp3"
             }
           ]
         },
@@ -963,14 +963,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dig begins with letter G.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-g-9efe8a.mp3"
+              "key": "b",
+              "text": "Dig begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-b-f21d4d.mp3"
             },
             {
-              "key": "s",
-              "text": "Dig begins with letter S.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-s-cc0bdd.mp3"
+              "key": "x",
+              "text": "Dig begins with letter X.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-begins-with-letter-x-873ad6.mp3"
             }
           ]
         },
@@ -992,14 +992,14 @@
           ],
           "opts": [
             {
-              "key": "/s/",
-              "text": "Dig has the sound /s/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-s-in-the-middle-2fe6ad.mp3"
+              "key": "/g/",
+              "text": "Dig has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-g-in-the-middle-0bb7a3.mp3"
             },
             {
-              "key": "/k/",
-              "text": "Dig has the sound /k/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-k-in-the-middle-a38854.mp3"
+              "key": "/t/",
+              "text": "Dig has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-the-sound-t-in-the-middle-2c6bb9.mp3"
             }
           ]
         },
@@ -1021,14 +1021,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Dig has letter G in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-g-in-the-middle-fad4f0.mp3"
+              "key": "d",
+              "text": "Dig has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-d-in-the-middle-ae319f.mp3"
             },
             {
-              "key": "s",
-              "text": "Dig has letter S in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-s-in-the-middle-906a02.mp3"
+              "key": "b",
+              "text": "Dig has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-has-letter-b-in-the-middle-65c47d.mp3"
             }
           ]
         },
@@ -1050,14 +1050,14 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Dig ends with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-t-296be6.mp3"
+              "key": "/i/",
+              "text": "Dig ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-i-d039b1.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Dig ends with the sound /d/.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-d-ab0244.mp3"
+              "key": "/f/",
+              "text": "Dig ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-the-sound-f-2857ce.mp3"
             }
           ]
         },
@@ -1079,14 +1079,14 @@
           ],
           "opts": [
             {
-              "key": "s",
-              "text": "Dig ends with letter S.",
-              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-s-82364a.mp3"
-            },
-            {
               "key": "d",
               "text": "Dig ends with letter D.",
               "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-d-c852ab.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dig ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-dig-ends-with-letter-b-e2feb7.mp3"
             }
           ]
         }
@@ -1148,14 +1148,14 @@
           ],
           "opts": [
             {
-              "key": "dig",
-              "text": "It's dig.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-dig-c21923.mp3"
+              "key": "fit",
+              "text": "It's fit.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
             },
             {
-              "key": "bin",
-              "text": "It's bin.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
+              "key": "big",
+              "text": "It's big.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
             }
           ]
         },
@@ -1177,14 +1177,14 @@
           ],
           "opts": [
             {
-              "key": "seven",
-              "text": "/s/ /ix/, seven.",
-              "audio": "audio/sentences/k2-cvc-i/a-s-ix-seven-b76776.mp3"
+              "key": "three",
+              "text": "/s/ /ix/, three.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-three-e136d9.mp3"
             },
             {
-              "key": "eleven",
-              "text": "/s/ /ix/, eleven.",
-              "audio": "audio/sentences/k2-cvc-i/a-s-ix-eleven-0573be.mp3"
+              "key": "twelve",
+              "text": "/s/ /ix/, twelve.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-twelve-cec98d.mp3"
             }
           ]
         },
@@ -1206,14 +1206,14 @@
           ],
           "opts": [
             {
-              "key": "/d/",
-              "text": "Six begins with the sound /d/.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-d-2b57b0.mp3"
+              "key": "/i/",
+              "text": "Six begins with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-i-19edb0.mp3"
             },
             {
-              "key": "/g/",
-              "text": "Six begins with the sound /g/.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-g-ece457.mp3"
+              "key": "/f/",
+              "text": "Six begins with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-the-sound-f-e5d72e.mp3"
             }
           ]
         },
@@ -1235,14 +1235,14 @@
           ],
           "opts": [
             {
-              "key": "t",
-              "text": "Six begins with letter T.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-t-406418.mp3"
+              "key": "k",
+              "text": "Six begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-k-4f5882.mp3"
             },
             {
-              "key": "b",
-              "text": "Six begins with letter B.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-b-62e0c5.mp3"
+              "key": "n",
+              "text": "Six begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-begins-with-letter-n-372a28.mp3"
             }
           ]
         },
@@ -1264,14 +1264,14 @@
           ],
           "opts": [
             {
-              "key": "/g/",
-              "text": "Six has the sound /g/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-g-in-the-middle-b387e0.mp3"
+              "key": "/d/",
+              "text": "Six has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-d-in-the-middle-887635.mp3"
             },
             {
-              "key": "/s/",
-              "text": "Six has the sound /s/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-s-in-the-middle-b6ece5.mp3"
+              "key": "/k/",
+              "text": "Six has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-the-sound-k-in-the-middle-9ea441.mp3"
             }
           ]
         },
@@ -1293,14 +1293,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Six has letter F in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-f-in-the-middle-d78033.mp3"
+              "key": "k",
+              "text": "Six has letter K in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-k-in-the-middle-7b577c.mp3"
             },
             {
-              "key": "t",
-              "text": "Six has letter T in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-t-in-the-middle-742d92.mp3"
+              "key": "n",
+              "text": "Six has letter N in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-has-letter-n-in-the-middle-e36cee.mp3"
             }
           ]
         },
@@ -1322,14 +1322,14 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Six ends with the sound /t/.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-t-6f4b43.mp3"
+              "key": "/i/",
+              "text": "Six ends with the sound /i/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-i-6f401f.mp3"
             },
             {
-              "key": "/d/",
-              "text": "Six ends with the sound /d/.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-d-c3aa2a.mp3"
+              "key": "/f/",
+              "text": "Six ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-the-sound-f-d898e5.mp3"
             }
           ]
         },
@@ -1351,14 +1351,14 @@
           ],
           "opts": [
             {
-              "key": "g",
-              "text": "Six ends with letter G.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-g-79335e.mp3"
+              "key": "d",
+              "text": "Six ends with letter D.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-d-c4b07b.mp3"
             },
             {
-              "key": "s",
-              "text": "Six ends with letter S.",
-              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-s-a2cc93.mp3"
+              "key": "b",
+              "text": "Six ends with letter B.",
+              "audio": "audio/sentences/k2-cvc-i/a-six-ends-with-letter-b-a92c30.mp3"
             }
           ]
         }
@@ -1420,14 +1420,14 @@
           ],
           "opts": [
             {
-              "key": "fit",
-              "text": "It's fit.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-fit-7861ba.mp3"
+              "key": "six",
+              "text": "It's six.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-six-3bb9bb.mp3"
             },
             {
-              "key": "big",
-              "text": "It's big.",
-              "audio": "audio/sentences/k2-cvc-i/a-it-s-big-e81b53.mp3"
+              "key": "bin",
+              "text": "It's bin.",
+              "audio": "audio/sentences/k2-cvc-i/a-it-s-bin-a4bed7.mp3"
             }
           ]
         },
@@ -1449,14 +1449,14 @@
           ],
           "opts": [
             {
-              "key": "fit",
-              "text": "/f/ /it/, fit.",
-              "audio": "audio/sentences/k2-cvc-i/a-f-it-fit-e56f2f.mp3"
-            },
-            {
               "key": "bin",
               "text": "/b/ /in/, bin.",
               "audio": "audio/sentences/k2-cvc-i/a-b-in-bin-67f9d6.mp3"
+            },
+            {
+              "key": "six",
+              "text": "/s/ /ix/, six.",
+              "audio": "audio/sentences/k2-cvc-i/a-s-ix-six-f129a6.mp3"
             }
           ]
         },
@@ -1478,14 +1478,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Kid begins with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-f-787184.mp3"
+              "key": "/t/",
+              "text": "Kid begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-t-6ba417.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Kid begins with the sound /i/.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-i-f29341.mp3"
+              "key": "/n/",
+              "text": "Kid begins with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-the-sound-n-5f0374.mp3"
             }
           ]
         },
@@ -1507,14 +1507,14 @@
           ],
           "opts": [
             {
-              "key": "f",
-              "text": "Kid begins with letter F.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-f-88c0a7.mp3"
+              "key": "n",
+              "text": "Kid begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-n-e036b4.mp3"
             },
             {
-              "key": "t",
-              "text": "Kid begins with letter T.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-t-92f7d9.mp3"
+              "key": "i",
+              "text": "Kid begins with letter I.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-begins-with-letter-i-aacbec.mp3"
             }
           ]
         },
@@ -1536,9 +1536,9 @@
           ],
           "opts": [
             {
-              "key": "/t/",
-              "text": "Kid has the sound /t/ in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-has-the-sound-t-in-the-middle-914711.mp3"
+              "key": "/f/",
+              "text": "Kid has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-the-sound-f-in-the-middle-26fe4f.mp3"
             },
             {
               "key": "/d/",
@@ -1565,14 +1565,14 @@
           ],
           "opts": [
             {
-              "key": "n",
-              "text": "Kid has letter N in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-n-in-the-middle-9d1591.mp3"
+              "key": "s",
+              "text": "Kid has letter S in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-s-in-the-middle-804bc7.mp3"
             },
             {
-              "key": "x",
-              "text": "Kid has letter X in the middle.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-x-in-the-middle-9bf1ab.mp3"
+              "key": "g",
+              "text": "Kid has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-has-letter-g-in-the-middle-b6bb05.mp3"
             }
           ]
         },
@@ -1594,14 +1594,14 @@
           ],
           "opts": [
             {
-              "key": "/f/",
-              "text": "Kid ends with the sound /f/.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-f-d81ca3.mp3"
+              "key": "/t/",
+              "text": "Kid ends with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-t-af61fe.mp3"
             },
             {
-              "key": "/i/",
-              "text": "Kid ends with the sound /i/.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-i-dcd1f4.mp3"
+              "key": "/n/",
+              "text": "Kid ends with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-the-sound-n-701116.mp3"
             }
           ]
         },
@@ -1628,9 +1628,9 @@
               "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-k-1353f8.mp3"
             },
             {
-              "key": "i",
-              "text": "Kid ends with letter I.",
-              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-i-a7b546.mp3"
+              "key": "n",
+              "text": "Kid ends with letter N.",
+              "audio": "audio/sentences/k2-cvc-i/a-kid-ends-with-letter-n-11e845.mp3"
             }
           ]
         }
@@ -1649,7 +1649,6 @@
     "dig": "audio/words/dig.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
-    "eleven": "audio/words/eleven.mp3",
     "end": "audio/words/end.mp3",
     "ends": "audio/words/ends.mp3",
     "f": "audio/words/f.mp3",
@@ -1674,12 +1673,13 @@
     "n": "audio/words/n.mp3",
     "read": "audio/words/read.mp3",
     "s": "audio/words/s.mp3",
-    "seven": "audio/words/seven.mp3",
     "six": "audio/words/six.mp3",
     "sound": "audio/words/sound.mp3",
     "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "three": "audio/words/three.mp3",
+    "twelve": "audio/words/twelve.mp3",
     "what": "audio/words/what.mp3",
     "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",

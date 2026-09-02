@@ -71,9 +71,9 @@
               "audio": "audio/sentences/k1-pattern-color/a-yellow-comes-next-06e03a.mp3"
             },
             {
-              "key": "four",
-              "text": "Four comes next.",
-              "audio": "audio/sentences/k1-pattern-color/a-four-comes-next-7fd9f2.mp3"
+              "key": "l",
+              "text": "L comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-l-comes-next-1fed2b.mp3"
             }
           ]
         }
@@ -146,9 +146,9 @@
               "audio": "audio/sentences/k1-pattern-color/a-red-comes-next-c68550.mp3"
             },
             {
-              "key": "four",
-              "text": "Four comes next.",
-              "audio": "audio/sentences/k1-pattern-color/a-four-comes-next-7fd9f2.mp3"
+              "key": "l",
+              "text": "L comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-l-comes-next-1fed2b.mp3"
             }
           ]
         }
@@ -159,9 +159,9 @@
   "word_audio": {
     "blue": "audio/words/blue.mp3",
     "comes": "audio/words/comes.mp3",
-    "four": "audio/words/four.mp3",
     "green": "audio/words/green.mp3",
     "is": "audio/words/is.mp3",
+    "l": "audio/words/l.mp3",
     "next": "audio/words/next.mp3",
     "pattern": "audio/words/pattern.mp3",
     "purple": "audio/words/purple.mp3",
