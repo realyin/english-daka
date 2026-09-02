@@ -872,5 +872,19 @@
       "cover": "images/recycling-bin-paper.webp"
     }
   ],
-  "days": []
+  "days": [
+    {
+      "date": "2026-08-31",
+      "cards": 8,
+      "lessons": [
+        "k2-sw-all",
+        "k2-sw-here-is",
+        "k2-sw-on-the-go",
+        "k2-sw-to-and",
+        "k2-wf-ad",
+        "k2-wf-id",
+        "k2-wf-ot"
+      ]
+    }
+  ]
 }
