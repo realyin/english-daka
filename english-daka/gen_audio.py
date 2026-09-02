@@ -32,6 +32,7 @@
 """
 
 import array
+import random
 import asyncio
 import hashlib
 import json
@@ -100,7 +101,21 @@ def words_of(sentence: str):
 
 
 async def tts_to_file(text: str, voice: str, rate: str, out: Path):
-    await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
+    """合成一句写进 out。带指数退避重试 —— edge-tts 是微软的公共服务,
+    连续合成上千句时会间歇性回 503(WSServerHandshakeError);
+    没有重试的话一次抖动就把整课的生成打断在半路,回写出来的 JSON
+    指着一堆不存在的 mp3。"""
+    last = None
+    for i in range(6):
+        try:
+            await edge_tts.Communicate(text, voice, rate=rate).save(str(out))
+            return
+        except Exception as e:                      # 503 / 握手失败 / 连接被掐
+            last = e
+            if i == 5:
+                break
+            await asyncio.sleep(min(2 ** i, 20) + random.random())
+    raise last
 
 
 async def tts_samples(text: str, voice: str, rate: str) -> array.array:
@@ -307,6 +322,17 @@ def plan_lesson(lesson: dict, lesson_id: str, tasks: dict, write_back=True):
             if write_back:
                 qa["q_audio"] = q_rel
                 qa["a_audio"] = a_rels
+            # 闯关的干扰句(build_opts.py 预造的整句选项)。
+            # 第二层直接复用了本课别的答句,自带 audio,跳过不重复合成;
+            # 第一层是换词造出来的新句子,要在这儿排进任务表 —— 和答句同一个
+            # 角色(a=Jenny),否则三个选项里正确的那条会是另一个音色,一听就露
+            for opt in (qa.get("opts") or []):
+                if opt.get("audio"): continue
+                rel = clip_rel("a", opt["text"], lesson_id)
+                tasks[rel] = ("a", opt["text"])
+                if write_back:
+                    opt["audio"] = rel
+                all_words.update(words_of(opt["text"]))
             for s in [qa["q"], *qa["a"]]:
                 all_words.update(words_of(s))
 

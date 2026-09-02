@@ -28,6 +28,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "yellow",
+              "text": "It's yellow.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+            },
+            {
+              "key": "blue",
+              "text": "It's blue.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+            }
           ]
         },
         {
@@ -46,6 +58,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-is-red-ed779d.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+          ],
+          "opts": [
+            {
+              "key": "banana",
+              "text": "The banana is yellow.",
+              "audio": "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+            },
+            {
+              "key": "sky",
+              "text": "The sky is blue.",
+              "audio": "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+            }
           ]
         },
         {
@@ -92,6 +116,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "blue",
+              "text": "It's blue.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+            },
+            {
+              "key": "red",
+              "text": "It's red.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+            }
           ]
         },
         {
@@ -110,6 +146,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-is-yellow-ff0e49.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sky",
+              "text": "The sky is blue.",
+              "audio": "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+            },
+            {
+              "key": "apple",
+              "text": "The apple is red.",
+              "audio": "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+            }
           ]
         }
       ],
@@ -138,6 +186,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "yellow",
+              "text": "It's yellow.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+            },
+            {
+              "key": "red",
+              "text": "It's red.",
+              "audio": "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+            }
           ]
         },
         {
@@ -156,6 +216,18 @@
           "q_audio": "audio/sentences/k1-color-red/q-what-is-blue-c97a28.mp3",
           "a_audio": [
             "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+          ],
+          "opts": [
+            {
+              "key": "apple",
+              "text": "The apple is red.",
+              "audio": "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+            },
+            {
+              "key": "banana",
+              "text": "The banana is yellow.",
+              "audio": "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+            }
           ]
         }
       ],

@@ -1,256 +1,376 @@
 {
- "seq": 201,
- "level": "K1",
- "group": "数字 Numbers",
- "badge": "1-5",
- "cover": "images/k1-num-one.webp",
- "title": "Numbers 1–5 · 数字 1–5",
- "cards": [
-  {
-   "word": "one",
-   "cn": "一",
-   "tag": "number",
-   "image": "images/k1-num-one.webp",
-   "dialog": [
+  "seq": 201,
+  "level": "K1",
+  "group": "数字 Numbers",
+  "badge": "1-5",
+  "cover": "images/k1-num-one.webp",
+  "title": "Numbers 1–5 · 数字 1–5",
+  "cards": [
     {
-     "q": "What's this number?",
-     "a": [
-      "It's number one."
-     ],
-     "key": [
-      "one"
-     ],
-     "q_cn": "这是数字几？",
-     "a_cn": [
-      "这是数字一。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
-     ]
+      "word": "one",
+      "cn": "一",
+      "tag": "number",
+      "image": "images/k1-num-one.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number one."
+          ],
+          "key": [
+            "one"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字一。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
+            },
+            {
+              "key": "two",
+              "text": "It's number two.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-two-e0a444.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many fans are there?",
+          "a": [
+            "There are one fans."
+          ],
+          "key": [
+            "one"
+          ],
+          "q_cn": "这里有几把扇子？",
+          "a_cn": [
+            "这里有一把扇子。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-how-many-fans-are-there-74de1f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-there-are-one-fans-c7c06c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "three",
+              "text": "There are three fans.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-three-fans-b0881a.mp3"
+            },
+            {
+              "key": "two",
+              "text": "There are two fans.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-two-fans-a0a18a.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-one-b6aa95.mp3"
     },
     {
-     "q": "How many fans are there?",
-     "a": [
-      "There are one fans."
-     ],
-     "key": [
-      "one"
-     ],
-     "q_cn": "这里有几把扇子？",
-     "a_cn": [
-      "这里有一把扇子。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-how-many-fans-are-there-74de1f.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-there-are-one-fans-c7c06c.mp3"
-     ]
+      "word": "two",
+      "cn": "二",
+      "tag": "number",
+      "image": "images/k1-num-two.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number two."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字二。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-it-s-number-two-e0a444.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many chairs are there?",
+          "a": [
+            "There are two chairs."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "这里有几把椅子？",
+          "a_cn": [
+            "这里有二把椅子。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-how-many-chairs-are-there-001ff0.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-there-are-two-chairs-d6f32a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "There are one chairs.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-chairs-c66b59.mp3"
+            },
+            {
+              "key": "three",
+              "text": "There are three chairs.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-three-chairs-13acbc.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-two-3c35f1.mp3"
+    },
+    {
+      "word": "three",
+      "cn": "三",
+      "tag": "number",
+      "image": "images/k1-num-three.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number three."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字三。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many lights are there?",
+          "a": [
+            "There are three lights."
+          ],
+          "key": [
+            "three"
+          ],
+          "q_cn": "这里有几盏灯？",
+          "a_cn": [
+            "这里有三盏灯。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-how-many-lights-are-there-1213d5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-there-are-three-lights-88b307.mp3"
+          ],
+          "opts": [
+            {
+              "key": "two",
+              "text": "There are two lights.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-two-lights-a1261f.mp3"
+            },
+            {
+              "key": "four",
+              "text": "There are four lights.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-four-lights-fe4509.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-three-7bbb71.mp3"
+    },
+    {
+      "word": "four",
+      "cn": "四",
+      "tag": "number",
+      "image": "images/k1-num-four.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number four."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字四。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-it-s-number-four-e275dc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "It's number five.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+            },
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many ropes are there?",
+          "a": [
+            "There are four ropes."
+          ],
+          "key": [
+            "four"
+          ],
+          "q_cn": "这里有几根绳子？",
+          "a_cn": [
+            "这里有四根绳子。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-how-many-ropes-are-there-0068da.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-there-are-four-ropes-e92758.mp3"
+          ],
+          "opts": [
+            {
+              "key": "five",
+              "text": "There are five ropes.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-five-ropes-63bc20.mp3"
+            },
+            {
+              "key": "one",
+              "text": "There are one ropes.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-ropes-c11a27.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-four-f6f702.mp3"
+    },
+    {
+      "word": "five",
+      "cn": "五",
+      "tag": "number",
+      "image": "images/k1-num-five.webp",
+      "dialog": [
+        {
+          "q": "What's this number?",
+          "a": [
+            "It's number five."
+          ],
+          "key": [
+            "five"
+          ],
+          "q_cn": "这是数字几？",
+          "a_cn": [
+            "这是数字五。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "It's number one.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-one-63c1c7.mp3"
+            },
+            {
+              "key": "three",
+              "text": "It's number three.",
+              "audio": "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many phones are there?",
+          "a": [
+            "There are five phones."
+          ],
+          "key": [
+            "five"
+          ],
+          "q_cn": "这里有几部电话？",
+          "a_cn": [
+            "这里有五部电话。"
+          ],
+          "q_audio": "audio/sentences/k1-number-1-5/q-how-many-phones-are-there-51aa44.mp3",
+          "a_audio": [
+            "audio/sentences/k1-number-1-5/a-there-are-five-phones-a266f8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "one",
+              "text": "There are one phones.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-one-phones-cd2af2.mp3"
+            },
+            {
+              "key": "three",
+              "text": "There are three phones.",
+              "audio": "audio/sentences/k1-number-1-5/a-there-are-three-phones-a8390c.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-five-b1d475.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-one-b6aa95.mp3"
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "chairs": "audio/words/chairs.mp3",
+    "fans": "audio/words/fans.mp3",
+    "five": "audio/words/five.mp3",
+    "four": "audio/words/four.mp3",
+    "how": "audio/words/how.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "lights": "audio/words/lights.mp3",
+    "many": "audio/words/many.mp3",
+    "number": "audio/words/number.mp3",
+    "one": "audio/words/one.mp3",
+    "phones": "audio/words/phones.mp3",
+    "ropes": "audio/words/ropes.mp3",
+    "there": "audio/words/there.mp3",
+    "this": "audio/words/this.mp3",
+    "three": "audio/words/three.mp3",
+    "two": "audio/words/two.mp3",
+    "what's": "audio/words/what-s.mp3"
   },
-  {
-   "word": "two",
-   "cn": "二",
-   "tag": "number",
-   "image": "images/k1-num-two.webp",
-   "dialog": [
-    {
-     "q": "What's this number?",
-     "a": [
-      "It's number two."
-     ],
-     "key": [
-      "two"
-     ],
-     "q_cn": "这是数字几？",
-     "a_cn": [
-      "这是数字二。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-it-s-number-two-e0a444.mp3"
-     ]
-    },
-    {
-     "q": "How many chairs are there?",
-     "a": [
-      "There are two chairs."
-     ],
-     "key": [
-      "two"
-     ],
-     "q_cn": "这里有几把椅子？",
-     "a_cn": [
-      "这里有二把椅子。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-how-many-chairs-are-there-001ff0.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-there-are-two-chairs-d6f32a.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-two-3c35f1.mp3"
-  },
-  {
-   "word": "three",
-   "cn": "三",
-   "tag": "number",
-   "image": "images/k1-num-three.webp",
-   "dialog": [
-    {
-     "q": "What's this number?",
-     "a": [
-      "It's number three."
-     ],
-     "key": [
-      "three"
-     ],
-     "q_cn": "这是数字几？",
-     "a_cn": [
-      "这是数字三。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-it-s-number-three-da9b4d.mp3"
-     ]
-    },
-    {
-     "q": "How many lights are there?",
-     "a": [
-      "There are three lights."
-     ],
-     "key": [
-      "three"
-     ],
-     "q_cn": "这里有几盏灯？",
-     "a_cn": [
-      "这里有三盏灯。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-how-many-lights-are-there-1213d5.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-there-are-three-lights-88b307.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-three-7bbb71.mp3"
-  },
-  {
-   "word": "four",
-   "cn": "四",
-   "tag": "number",
-   "image": "images/k1-num-four.webp",
-   "dialog": [
-    {
-     "q": "What's this number?",
-     "a": [
-      "It's number four."
-     ],
-     "key": [
-      "four"
-     ],
-     "q_cn": "这是数字几？",
-     "a_cn": [
-      "这是数字四。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-it-s-number-four-e275dc.mp3"
-     ]
-    },
-    {
-     "q": "How many ropes are there?",
-     "a": [
-      "There are four ropes."
-     ],
-     "key": [
-      "four"
-     ],
-     "q_cn": "这里有几根绳子？",
-     "a_cn": [
-      "这里有四根绳子。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-how-many-ropes-are-there-0068da.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-there-are-four-ropes-e92758.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-four-f6f702.mp3"
-  },
-  {
-   "word": "five",
-   "cn": "五",
-   "tag": "number",
-   "image": "images/k1-num-five.webp",
-   "dialog": [
-    {
-     "q": "What's this number?",
-     "a": [
-      "It's number five."
-     ],
-     "key": [
-      "five"
-     ],
-     "q_cn": "这是数字几？",
-     "a_cn": [
-      "这是数字五。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-what-s-this-number-0b7195.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-it-s-number-five-82bd3b.mp3"
-     ]
-    },
-    {
-     "q": "How many phones are there?",
-     "a": [
-      "There are five phones."
-     ],
-     "key": [
-      "five"
-     ],
-     "q_cn": "这里有几部电话？",
-     "a_cn": [
-      "这里有五部电话。"
-     ],
-     "q_audio": "audio/sentences/k1-number-1-5/q-how-many-phones-are-there-51aa44.mp3",
-     "a_audio": [
-      "audio/sentences/k1-number-1-5/a-there-are-five-phones-a266f8.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-number-1-5/q-which-one-is-five-b1d475.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "are": "audio/words/are.mp3",
-  "chairs": "audio/words/chairs.mp3",
-  "fans": "audio/words/fans.mp3",
-  "five": "audio/words/five.mp3",
-  "four": "audio/words/four.mp3",
-  "how": "audio/words/how.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "lights": "audio/words/lights.mp3",
-  "many": "audio/words/many.mp3",
-  "number": "audio/words/number.mp3",
-  "one": "audio/words/one.mp3",
-  "phones": "audio/words/phones.mp3",
-  "ropes": "audio/words/ropes.mp3",
-  "there": "audio/words/there.mp3",
-  "this": "audio/words/this.mp3",
-  "three": "audio/words/three.mp3",
-  "two": "audio/words/two.mp3",
-  "what's": "audio/words/what-s.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

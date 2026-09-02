@@ -1,386 +1,566 @@
 {
- "seq": 501,
- "level": "K2",
- "group": "主题 Topics",
- "badge": "🦁",
- "cover": "images/zoo-gate.webp",
- "title": "At the Zoo · 动物园",
- "cards": [
-  {
-   "word": "zoo",
-   "cn": "动物园",
-   "tag": "word",
-   "image": "images/zoo-gate.webp",
-   "dialog": [
+  "seq": 501,
+  "level": "K2",
+  "group": "主题 Topics",
+  "badge": "🦁",
+  "cover": "images/zoo-gate.webp",
+  "title": "At the Zoo · 动物园",
+  "cards": [
     {
-     "q": "What's this place?",
-     "a": [
-      "It's a zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "这是什么地方？",
-     "a_cn": [
-      "这是动物园。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-place-a3f797.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-a-zoo-bc8179.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-zoo-cfce4e.mp3"
-  },
-  {
-   "word": "camel",
-   "cn": "骆驼",
-   "tag": "word",
-   "image": "images/camel.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's a camel."
-     ],
-     "key": [
-      "camel"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是骆驼。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
-     ]
+      "word": "zoo",
+      "cn": "动物园",
+      "tag": "word",
+      "image": "images/zoo-gate.webp",
+      "dialog": [
+        {
+          "q": "What's this place?",
+          "a": [
+            "It's a zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "这是什么地方？",
+          "a_cn": [
+            "这是动物园。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-place-a3f797.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-a-zoo-bc8179.mp3"
+          ],
+          "opts": [
+            {
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            },
+            {
+              "key": "gorilla",
+              "text": "It's a gorilla.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-zoo-cfce4e.mp3"
     },
     {
-     "q": "Where does a camel live?",
-     "a": [
-      "The camel lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "骆驼住在哪里？",
-     "a_cn": [
-      "骆驼住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-a-camel-live-d40b4f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-camel-lives-in-the-zoo-4d499e.mp3"
-     ],
-     "image": "images/k2-zoo-camel.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-camel-e14baa.mp3"
-  },
-  {
-   "word": "lion",
-   "cn": "狮子",
-   "tag": "word",
-   "image": "images/lion.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's a lion."
-     ],
-     "key": [
-      "lion"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是狮子。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
-     ]
+      "word": "camel",
+      "cn": "骆驼",
+      "tag": "word",
+      "image": "images/camel.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a camel."
+          ],
+          "key": [
+            "camel"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是骆驼。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "zoo",
+              "text": "It's a zoo.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-zoo-bc8179.mp3"
+            },
+            {
+              "key": "gorilla",
+              "text": "It's a gorilla.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does a camel live?",
+          "a": [
+            "The camel lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "骆驼住在哪里？",
+          "a_cn": [
+            "骆驼住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-a-camel-live-d40b4f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-camel-lives-in-the-zoo-4d499e.mp3"
+          ],
+          "image": "images/k2-zoo-camel.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "rhino",
+              "text": "It's a rhinoceros.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-camel-e14baa.mp3"
     },
     {
-     "q": "Where does a lion live?",
-     "a": [
-      "The lion lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "狮子住在哪里？",
-     "a_cn": [
-      "狮子住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-a-lion-live-354dee.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-lion-lives-in-the-zoo-352939.mp3"
-     ],
-     "image": "images/k2-zoo-lion.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-lion-9ad2c7.mp3"
-  },
-  {
-   "word": "gorilla",
-   "cn": "大猩猩",
-   "tag": "word",
-   "image": "images/gorilla.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's a gorilla."
-     ],
-     "key": [
-      "gorilla"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是大猩猩。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
-     ]
+      "word": "lion",
+      "cn": "狮子",
+      "tag": "word",
+      "image": "images/lion.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a lion."
+          ],
+          "key": [
+            "lion"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是狮子。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
+          ],
+          "opts": [
+            {
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            },
+            {
+              "key": "zoo",
+              "text": "It's a zoo.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-zoo-bc8179.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does a lion live?",
+          "a": [
+            "The lion lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "狮子住在哪里？",
+          "a_cn": [
+            "狮子住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-a-lion-live-354dee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-lion-lives-in-the-zoo-352939.mp3"
+          ],
+          "image": "images/k2-zoo-lion.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "rhino",
+              "text": "It's a rhinoceros.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-lion-9ad2c7.mp3"
     },
     {
-     "q": "Where does a gorilla live?",
-     "a": [
-      "The gorilla lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "大猩猩住在哪里？",
-     "a_cn": [
-      "大猩猩住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-a-gorilla-live-ae20a1.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-gorilla-lives-in-the-zoo-91b52e.mp3"
-     ],
-     "image": "images/k2-zoo-gorilla.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-gorilla-d1a6b9.mp3"
-  },
-  {
-   "word": "rhino",
-   "cn": "犀牛",
-   "tag": "word",
-   "image": "images/rhino.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's a rhinoceros.",
-      "It's a rhino."
-     ],
-     "key": [
-      "rhino"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是犀牛（全称）。",
-      "这是犀牛（简称）。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3",
-      "audio/sentences/k2-zoo/a-it-s-a-rhino-e38a45.mp3"
-     ]
+      "word": "gorilla",
+      "cn": "大猩猩",
+      "tag": "word",
+      "image": "images/gorilla.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a gorilla."
+          ],
+          "key": [
+            "gorilla"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是大猩猩。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-a-gorilla-e227c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "lion",
+              "text": "It's a lion.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
+            },
+            {
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does a gorilla live?",
+          "a": [
+            "The gorilla lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "大猩猩住在哪里？",
+          "a_cn": [
+            "大猩猩住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-a-gorilla-live-ae20a1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-gorilla-lives-in-the-zoo-91b52e.mp3"
+          ],
+          "image": "images/k2-zoo-gorilla.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-gorilla-d1a6b9.mp3"
     },
     {
-     "q": "Where does a rhino live?",
-     "a": [
-      "The rhino lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "犀牛住在哪里？",
-     "a_cn": [
-      "犀牛住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-a-rhino-live-42def9.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-rhino-lives-in-the-zoo-369b96.mp3"
-     ],
-     "image": "images/k2-zoo-rhino.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-rhino-1484a4.mp3"
-  },
-  {
-   "word": "alligator",
-   "cn": "短吻鳄",
-   "tag": "word",
-   "image": "images/alligator.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's an alligator."
-     ],
-     "key": [
-      "alligator"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是短吻鳄。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
-     ]
+      "word": "rhino",
+      "cn": "犀牛",
+      "tag": "word",
+      "image": "images/rhino.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's a rhinoceros.",
+            "It's a rhino."
+          ],
+          "key": [
+            "rhino"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是犀牛（全称）。",
+            "这是犀牛（简称）。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3",
+            "audio/sentences/k2-zoo/a-it-s-a-rhino-e38a45.mp3"
+          ],
+          "opts": [
+            {
+              "key": "lion",
+              "text": "It's a lion.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-lion-695883.mp3"
+            },
+            {
+              "key": "camel",
+              "text": "It's a camel.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-camel-8477c1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does a rhino live?",
+          "a": [
+            "The rhino lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "犀牛住在哪里？",
+          "a_cn": [
+            "犀牛住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-a-rhino-live-42def9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-rhino-lives-in-the-zoo-369b96.mp3"
+          ],
+          "image": "images/k2-zoo-rhino.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "rhino",
+              "text": "It's a rhinoceros.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-rhino-1484a4.mp3"
     },
     {
-     "q": "Where does an alligator live?",
-     "a": [
-      "The alligator lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "短吻鳄住在哪里？",
-     "a_cn": [
-      "短吻鳄住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-an-alligator-live-f2171d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-alligator-lives-in-the-zoo-a63f27.mp3"
-     ],
-     "image": "images/k2-zoo-alligator.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-alligator-4fc1b5.mp3"
-  },
-  {
-   "word": "owl",
-   "cn": "猫头鹰",
-   "tag": "word",
-   "image": "images/owl.webp",
-   "dialog": [
-    {
-     "q": "What's this animal?",
-     "a": [
-      "It's an owl."
-     ],
-     "key": [
-      "owl"
-     ],
-     "q_cn": "这是什么动物？",
-     "a_cn": [
-      "这是猫头鹰。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-it-s-an-owl-269be9.mp3"
-     ]
+      "word": "alligator",
+      "cn": "短吻鳄",
+      "tag": "word",
+      "image": "images/alligator.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's an alligator."
+          ],
+          "key": [
+            "alligator"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是短吻鳄。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+          ],
+          "opts": [
+            {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-owl-269be9.mp3"
+            },
+            {
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-elephant-ed3297.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does an alligator live?",
+          "a": [
+            "The alligator lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "短吻鳄住在哪里？",
+          "a_cn": [
+            "短吻鳄住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-an-alligator-live-f2171d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-alligator-lives-in-the-zoo-a63f27.mp3"
+          ],
+          "image": "images/k2-zoo-alligator.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "rhino",
+              "text": "It's a rhinoceros.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-alligator-4fc1b5.mp3"
     },
     {
-     "q": "Where does an owl live?",
-     "a": [
-      "The owl lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "猫头鹰住在哪里？",
-     "a_cn": [
-      "猫头鹰住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-an-owl-live-89bdf0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-owl-lives-in-the-zoo-16dba5.mp3"
-     ],
-     "image": "images/k2-zoo-owl.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-owl-f3c1de.mp3"
-  },
-  {
-   "word": "elephant",
-   "cn": "大象",
-   "tag": "word",
-   "image": "images/sw-on-elephant.webp",
-   "dialog": [
-    {
-     "q": "Which animal has the longest nose?",
-     "a": [
-      "The elephant has the longest nose."
-     ],
-     "key": [
-      "elephant"
-     ],
-     "q_cn": "哪种动物的鼻子最长？",
-     "a_cn": [
-      "大象的鼻子最长。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-which-animal-has-the-longest-nose-0299c8.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
-     ]
+      "word": "owl",
+      "cn": "猫头鹰",
+      "tag": "word",
+      "image": "images/owl.webp",
+      "dialog": [
+        {
+          "q": "What's this animal?",
+          "a": [
+            "It's an owl."
+          ],
+          "key": [
+            "owl"
+          ],
+          "q_cn": "这是什么动物？",
+          "a_cn": [
+            "这是猫头鹰。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-what-s-this-animal-ac42e5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-it-s-an-owl-269be9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "It's an elephant.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-elephant-ed3297.mp3"
+            },
+            {
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does an owl live?",
+          "a": [
+            "The owl lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "猫头鹰住在哪里？",
+          "a_cn": [
+            "猫头鹰住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-an-owl-live-89bdf0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-owl-lives-in-the-zoo-16dba5.mp3"
+          ],
+          "image": "images/k2-zoo-owl.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "rhino",
+              "text": "It's a rhinoceros.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-a-rhinoceros-dedf69.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-owl-f3c1de.mp3"
     },
     {
-     "q": "Where does an elephant live?",
-     "a": [
-      "The elephant lives in the zoo."
-     ],
-     "key": [
-      "zoo"
-     ],
-     "q_cn": "大象住在哪里？",
-     "a_cn": [
-      "大象住在动物园里。"
-     ],
-     "q_audio": "audio/sentences/k2-zoo/q-where-does-an-elephant-live-c1f759.mp3",
-     "a_audio": [
-      "audio/sentences/k2-zoo/a-the-elephant-lives-in-the-zoo-dd56f9.mp3"
-     ],
-     "image": "images/k2-zoo-elephant.webp"
+      "word": "elephant",
+      "cn": "大象",
+      "tag": "word",
+      "image": "images/sw-on-elephant.webp",
+      "dialog": [
+        {
+          "q": "Which animal has the longest nose?",
+          "a": [
+            "The elephant has the longest nose."
+          ],
+          "key": [
+            "elephant"
+          ],
+          "q_cn": "哪种动物的鼻子最长？",
+          "a_cn": [
+            "大象的鼻子最长。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-which-animal-has-the-longest-nose-0299c8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "zoo",
+              "text": "The elephant lives in the zoo.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-lives-in-the-zoo-dd56f9.mp3"
+            },
+            {
+              "key": "zoo",
+              "text": "The rhino lives in the zoo.",
+              "audio": "audio/sentences/k2-zoo/a-the-rhino-lives-in-the-zoo-369b96.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Where does an elephant live?",
+          "a": [
+            "The elephant lives in the zoo."
+          ],
+          "key": [
+            "zoo"
+          ],
+          "q_cn": "大象住在哪里？",
+          "a_cn": [
+            "大象住在动物园里。"
+          ],
+          "q_audio": "audio/sentences/k2-zoo/q-where-does-an-elephant-live-c1f759.mp3",
+          "a_audio": [
+            "audio/sentences/k2-zoo/a-the-elephant-lives-in-the-zoo-dd56f9.mp3"
+          ],
+          "image": "images/k2-zoo-elephant.webp",
+          "opts": [
+            {
+              "key": "elephant",
+              "text": "The elephant has the longest nose.",
+              "audio": "audio/sentences/k2-zoo/a-the-elephant-has-the-longest-nose-e6caa9.mp3"
+            },
+            {
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k2-zoo/a-it-s-an-alligator-700c75.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-elephant-09f7c9.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k2-zoo/q-which-one-is-elephant-09f7c9.mp3"
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "alligator": "audio/words/alligator.mp3",
+    "an": "audio/words/an.mp3",
+    "animal": "audio/words/animal.mp3",
+    "camel": "audio/words/camel.mp3",
+    "does": "audio/words/does.mp3",
+    "elephant": "audio/words/elephant.mp3",
+    "gorilla": "audio/words/gorilla.mp3",
+    "has": "audio/words/has.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "lion": "audio/words/lion.mp3",
+    "live": "audio/words/live.mp3",
+    "lives": "audio/words/lives.mp3",
+    "longest": "audio/words/longest.mp3",
+    "nose": "audio/words/nose.mp3",
+    "owl": "audio/words/owl.mp3",
+    "place": "audio/words/place.mp3",
+    "rhino": "audio/words/rhino.mp3",
+    "rhinoceros": "audio/words/rhinoceros.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "where": "audio/words/where.mp3",
+    "which": "audio/words/which.mp3",
+    "zoo": "audio/words/zoo.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "alligator": "audio/words/alligator.mp3",
-  "an": "audio/words/an.mp3",
-  "animal": "audio/words/animal.mp3",
-  "camel": "audio/words/camel.mp3",
-  "does": "audio/words/does.mp3",
-  "elephant": "audio/words/elephant.mp3",
-  "gorilla": "audio/words/gorilla.mp3",
-  "has": "audio/words/has.mp3",
-  "in": "audio/words/in.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "lion": "audio/words/lion.mp3",
-  "live": "audio/words/live.mp3",
-  "lives": "audio/words/lives.mp3",
-  "longest": "audio/words/longest.mp3",
-  "nose": "audio/words/nose.mp3",
-  "owl": "audio/words/owl.mp3",
-  "place": "audio/words/place.mp3",
-  "rhino": "audio/words/rhino.mp3",
-  "rhinoceros": "audio/words/rhinoceros.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "where": "audio/words/where.mp3",
-  "which": "audio/words/which.mp3",
-  "zoo": "audio/words/zoo.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

@@ -1,941 +1,1421 @@
 {
- "seq": 301,
- "level": "K2",
- "group": "拼读 Phonics",
- "badge": "a",
- "cover": "images/cvc-man.webp",
- "title": "Short a · 短元音 a 拼读",
- "cards": [
-  {
-   "word": "man",
-   "cn": "男人",
-   "tag": "CVC",
-   "emoji": "👨",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/mæn/",
-    "parts": [
-     {
-      "text": "m",
-      "sound": "m",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "m",
-     "sound": "m"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-man.mp3"
-   },
-   "dialog": [
+  "seq": 301,
+  "level": "K2",
+  "group": "拼读 Phonics",
+  "badge": "a",
+  "cover": "images/cvc-man.webp",
+  "title": "Short a · 短元音 a 拼读",
+  "cards": [
     {
-     "q": "What word is this?",
-     "a": [
-      "It's man."
-     ],
-     "key": [
-      "man"
-     ],
-     "q_cn": "这是什么单词？",
-     "a_cn": [
-      "这是 man。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
-     ]
+      "word": "man",
+      "cn": "男人",
+      "tag": "CVC",
+      "emoji": "👨",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/mæn/",
+        "parts": [
+          {
+            "text": "m",
+            "sound": "m",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "m",
+          "sound": "m"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-man.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 man。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "can",
+              "text": "It's can.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: m — an?",
+          "a": [
+            "/m/ /an/, man."
+          ],
+          "key": [
+            "man"
+          ],
+          "q_cn": "m 和 an 连起来怎么读？",
+          "a_cn": [
+            "/m/ /an/，man。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-m-an-d41730.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-m-an-man-d346e0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "can",
+              "text": "/k/ /an/, can.",
+              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
+            },
+            {
+              "key": "ban",
+              "text": "/b/ /an/, ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man begin with?",
+          "a": [
+            "Man begins with the sound /m/."
+          ],
+          "key": [
+            "/m/"
+          ],
+          "q_cn": "man 的开头是什么音？",
+          "a_cn": [
+            "man 开头是 /m/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-begin-with-289348.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-m-2532ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Man begins with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-a-e9313e.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Man begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-k-f50ed8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man begin with?",
+          "a": [
+            "Man begins with letter M."
+          ],
+          "key": [
+            "m"
+          ],
+          "q_cn": "man 以哪个字母开头？",
+          "a_cn": [
+            "man 以字母 M 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-begin-with-a8db31.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-begins-with-letter-m-684617.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Man begins with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-a-15d5e6.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Man begins with letter F.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-begins-with-letter-f-a7f637.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man have in the middle?",
+          "a": [
+            "Man has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "man 中间是什么音？",
+          "a_cn": [
+            "man 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-have-in-the-midd-dbbba3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-has-the-sound-a-in-the-middle-22f8d4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Man has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-b-in-the-middle-ec85e8.mp3"
+            },
+            {
+              "key": "/m/",
+              "text": "Man has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-the-sound-m-in-the-middle-fcd493.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man have in the middle?",
+          "a": [
+            "Man has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "man 中间是哪个字母？",
+          "a_cn": [
+            "man 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-have-in-the-mi-1b4f2f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-has-letter-a-in-the-middle-fe60c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Man has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-letter-m-in-the-middle-bb523e.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Man has letter F in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-has-letter-f-in-the-middle-9a9198.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does man end with?",
+          "a": [
+            "Man ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "man 的结尾是什么音？",
+          "a_cn": [
+            "man 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-end-with-440470.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-n-5e99a5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Man ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-k-aac03b.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Man ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-f-e73740.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does man end with?",
+          "a": [
+            "Man ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "man 以哪个字母结尾？",
+          "a_cn": [
+            "man 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-end-with-20d909.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-man-ends-with-letter-n-c585f9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Man ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-letter-a-a43e07.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Man ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-man-ends-with-letter-m-f2a3fb.mp3"
+            }
+          ]
+        }
+      ],
+      "image": "images/cvc-man.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-man-0afdad.mp3"
     },
     {
-     "q": "How do you read: m — an?",
-     "a": [
-      "/m/ /an/, man."
-     ],
-     "key": [
-      "man"
-     ],
-     "q_cn": "m 和 an 连起来怎么读？",
-     "a_cn": [
-      "/m/ /an/，man。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-m-an-d41730.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-m-an-man-d346e0.mp3"
-     ]
+      "word": "fan",
+      "cn": "风扇",
+      "tag": "CVC",
+      "emoji": "🌀",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/fæn/",
+        "parts": [
+          {
+            "text": "f",
+            "sound": "f",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "f",
+          "sound": "f"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-fan.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 fan。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+          ],
+          "opts": [
+            {
+              "key": "man",
+              "text": "It's man.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
+            },
+            {
+              "key": "van",
+              "text": "It's van.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-van-054c0a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: f — an?",
+          "a": [
+            "/f/ /an/, fan."
+          ],
+          "key": [
+            "fan"
+          ],
+          "q_cn": "f 和 an 连起来怎么读？",
+          "a_cn": [
+            "/f/ /an/，fan。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-f-an-503659.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ban",
+              "text": "/b/ /an/, ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            },
+            {
+              "key": "man",
+              "text": "/m/ /an/, man.",
+              "audio": "audio/sentences/k2-cvc-a/a-m-an-man-d346e0.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan begin with?",
+          "a": [
+            "Fan begins with the sound /f/."
+          ],
+          "key": [
+            "/f/"
+          ],
+          "q_cn": "fan 的开头是什么音？",
+          "a_cn": [
+            "fan 开头是 /f/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-begin-with-8f7a3c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-f-fbae31.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Fan begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-m-a15a64.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Fan begins with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-a-5b2116.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan begin with?",
+          "a": [
+            "Fan begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fan 以哪个字母开头？",
+          "a_cn": [
+            "fan 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-begin-with-fec9d0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-f-33fc5a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Fan begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-n-1d0018.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Fan begins with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-a-c6fd77.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan have in the middle?",
+          "a": [
+            "Fan has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "fan 中间是什么音？",
+          "a_cn": [
+            "fan 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-have-in-the-midd-be6fd0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-has-the-sound-a-in-the-middle-91dbce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Fan has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-k-in-the-middle-c94eac.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Fan has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-the-sound-n-in-the-middle-44f39f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan have in the middle?",
+          "a": [
+            "Fan has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "fan 中间是哪个字母？",
+          "a_cn": [
+            "fan 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-have-in-the-mi-299361.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Fan has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-m-in-the-middle-ca1a98.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fan has letter F in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-has-letter-f-in-the-middle-b2e10d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan end with?",
+          "a": [
+            "Fan ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "fan 的结尾是什么音？",
+          "a_cn": [
+            "fan 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-end-with-3f68ba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-n-014cef.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Fan ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-k-f8e827.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Fan ends with the sound /f/.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-f-36d319.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan end with?",
+          "a": [
+            "Fan ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "fan 以哪个字母结尾？",
+          "a_cn": [
+            "fan 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-end-with-593a60.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-n-1f2ff1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Fan ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-a-f05601.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Fan ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-m-e7106d.mp3"
+            }
+          ]
+        }
+      ],
+      "image": "images/cvc-fan.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-fan-146707.mp3"
     },
     {
-     "q": "What sound does man begin with?",
-     "a": [
-      "Man begins with the sound /m/."
-     ],
-     "key": [
-      "/m/"
-     ],
-     "q_cn": "man 的开头是什么音？",
-     "a_cn": [
-      "man 开头是 /m/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-begin-with-289348.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-begins-with-the-sound-m-2532ca.mp3"
-     ]
+      "word": "ban",
+      "cn": "禁止",
+      "tag": "CVC",
+      "emoji": "🚫",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/bæn/",
+        "parts": [
+          {
+            "text": "b",
+            "sound": "b",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "b",
+          "sound": "b"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-ban.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's ban."
+          ],
+          "key": [
+            "ban"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 ban。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-it-s-ban-11273d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "man",
+              "text": "It's man.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
+            },
+            {
+              "key": "van",
+              "text": "It's van.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-van-054c0a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: b — an?",
+          "a": [
+            "/b/ /an/, ban."
+          ],
+          "key": [
+            "ban"
+          ],
+          "q_cn": "b 和 an 连起来怎么读？",
+          "a_cn": [
+            "/b/ /an/，ban。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-b-an-1abfe9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
+            },
+            {
+              "key": "can",
+              "text": "/k/ /an/, can.",
+              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does ban begin with?",
+          "a": [
+            "Ban begins with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "ban 的开头是什么音？",
+          "a_cn": [
+            "ban 开头是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-begin-with-b6d12b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-b-55cbb1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Ban begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-k-c735c4.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Ban begins with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-n-830f53.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ban begin with?",
+          "a": [
+            "Ban begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "ban 以哪个字母开头？",
+          "a_cn": [
+            "ban 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-begin-with-290b87.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-b-ca9c21.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Ban begins with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-m-5f9770.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Ban begins with letter F.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-f-b09242.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does ban have in the middle?",
+          "a": [
+            "Ban has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "ban 中间是什么音？",
+          "a_cn": [
+            "ban 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-have-in-the-midd-ad516d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-has-the-sound-a-in-the-middle-86ff30.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Ban has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-the-sound-n-in-the-middle-08b187.mp3"
+            },
+            {
+              "key": "/f/",
+              "text": "Ban has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-the-sound-f-in-the-middle-f526dc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ban have in the middle?",
+          "a": [
+            "Ban has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "ban 中间是哪个字母？",
+          "a_cn": [
+            "ban 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-have-in-the-mi-dc3da9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-has-letter-a-in-the-middle-41e902.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Ban has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-m-in-the-middle-7da0a7.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Ban has letter F in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-has-letter-f-in-the-middle-0ba51a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does ban end with?",
+          "a": [
+            "Ban ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "ban 的结尾是什么音？",
+          "a_cn": [
+            "ban 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-end-with-55c9ee.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-n-d70c1e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Ban ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-m-1f8654.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Ban ends with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-a-26840b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ban end with?",
+          "a": [
+            "Ban ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "ban 以哪个字母结尾？",
+          "a_cn": [
+            "ban 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-end-with-0db3fc.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-n-baadd4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Ban ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-a-057427.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Ban ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-m-0c9d15.mp3"
+            }
+          ]
+        }
+      ],
+      "image": "images/cvc-ban.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-ban-a77396.mp3"
     },
     {
-     "q": "Which letter does man begin with?",
-     "a": [
-      "Man begins with letter M."
-     ],
-     "key": [
-      "m"
-     ],
-     "q_cn": "man 以哪个字母开头？",
-     "a_cn": [
-      "man 以字母 M 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-begin-with-a8db31.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-begins-with-letter-m-684617.mp3"
-     ]
+      "word": "can",
+      "cn": "罐头；能够",
+      "tag": "CVC",
+      "emoji": "🥫",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/kæn/",
+        "parts": [
+          {
+            "text": "c",
+            "sound": "k",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "c",
+          "sound": "k"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-can.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's can."
+          ],
+          "key": [
+            "can"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 can。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fan",
+              "text": "It's fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+            },
+            {
+              "key": "man",
+              "text": "It's man.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-man-4f54a0.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: c — an?",
+          "a": [
+            "/k/ /an/, can."
+          ],
+          "key": [
+            "can"
+          ],
+          "q_cn": "c 和 an 连起来怎么读？",
+          "a_cn": [
+            "/k/ /an/，can。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-c-an-b51569.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fan",
+              "text": "/f/ /an/, fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
+            },
+            {
+              "key": "ban",
+              "text": "/b/ /an/, ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does can begin with?",
+          "a": [
+            "Can begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "can 的开头是什么音？",
+          "a_cn": [
+            "can 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-begin-with-d06ad4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-k-ae455d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Can begins with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-b-d42c48.mp3"
+            },
+            {
+              "key": "/m/",
+              "text": "Can begins with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-m-8f1292.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does can begin with?",
+          "a": [
+            "Can begins with letter C."
+          ],
+          "key": [
+            "c"
+          ],
+          "q_cn": "can 以哪个字母开头？",
+          "a_cn": [
+            "can 以字母 C 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-begin-with-1aed9e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-begins-with-letter-c-34f0cf.mp3"
+          ],
+          "opts": [
+            {
+              "key": "n",
+              "text": "Can begins with letter N.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-letter-n-b24f89.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Can begins with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-begins-with-letter-a-67b82e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does can have in the middle?",
+          "a": [
+            "Can has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "can 中间是什么音？",
+          "a_cn": [
+            "can 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-have-in-the-midd-a0c2ca.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-has-the-sound-a-in-the-middle-b8063e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Can has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-the-sound-m-in-the-middle-019805.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Can has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-the-sound-k-in-the-middle-930394.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does can have in the middle?",
+          "a": [
+            "Can has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "can 中间是哪个字母？",
+          "a_cn": [
+            "can 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-have-in-the-mi-88cf5d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-has-letter-a-in-the-middle-b3c8e8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Can has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-m-in-the-middle-f06504.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Can has letter F in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-has-letter-f-in-the-middle-0c9549.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does can end with?",
+          "a": [
+            "Can ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "can 的结尾是什么音？",
+          "a_cn": [
+            "can 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-end-with-2fd14c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-n-c8271b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Can ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-m-db027d.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Can ends with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-a-55257d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does can end with?",
+          "a": [
+            "Can ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "can 以哪个字母结尾？",
+          "a_cn": [
+            "can 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-end-with-cba573.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-can-ends-with-letter-n-b3743f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "c",
+              "text": "Can ends with letter C.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-c-0d045a.mp3"
+            },
+            {
+              "key": "v",
+              "text": "Can ends with letter V.",
+              "audio": "audio/sentences/k2-cvc-a/a-can-ends-with-letter-v-d58acd.mp3"
+            }
+          ]
+        }
+      ],
+      "image": "images/cvc-can.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-can-5722e0.mp3",
+      "quiz": false
     },
     {
-     "q": "What sound does man have in the middle?",
-     "a": [
-      "Man has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "man 中间是什么音？",
-     "a_cn": [
-      "man 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-have-in-the-midd-dbbba3.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-has-the-sound-a-in-the-middle-22f8d4.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does man have in the middle?",
-     "a": [
-      "Man has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "man 中间是哪个字母？",
-     "a_cn": [
-      "man 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-have-in-the-mi-1b4f2f.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-has-letter-a-in-the-middle-fe60c6.mp3"
-     ]
-    },
-    {
-     "q": "What sound does man end with?",
-     "a": [
-      "Man ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "man 的结尾是什么音？",
-     "a_cn": [
-      "man 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-man-end-with-440470.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-ends-with-the-sound-n-5e99a5.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does man end with?",
-     "a": [
-      "Man ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "man 以哪个字母结尾？",
-     "a_cn": [
-      "man 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-man-end-with-20d909.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-man-ends-with-letter-n-c585f9.mp3"
-     ]
+      "word": "van",
+      "cn": "厢式货车",
+      "tag": "CVC",
+      "emoji": "🚐",
+      "phonics": {
+        "group": "短音 a /æ/ · -an 词族",
+        "ipa": "/væn/",
+        "parts": [
+          {
+            "text": "v",
+            "sound": "v",
+            "kind": "consonant"
+          },
+          {
+            "text": "a",
+            "sound": "ae",
+            "kind": "vowel"
+          },
+          {
+            "text": "n",
+            "sound": "n",
+            "kind": "consonant"
+          }
+        ],
+        "onset": {
+          "text": "v",
+          "sound": "v"
+        },
+        "rime": {
+          "text": "an",
+          "sound": "an"
+        },
+        "blend_audio": "audio/phonics/blend-van.mp3"
+      },
+      "dialog": [
+        {
+          "q": "What word is this?",
+          "a": [
+            "It's van."
+          ],
+          "key": [
+            "van"
+          ],
+          "q_cn": "这是什么单词？",
+          "a_cn": [
+            "这是 van。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-it-s-van-054c0a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "can",
+              "text": "It's can.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
+            },
+            {
+              "key": "fan",
+              "text": "It's fan.",
+              "audio": "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: v — an?",
+          "a": [
+            "/v/ /an/, van."
+          ],
+          "key": [
+            "van"
+          ],
+          "q_cn": "v 和 an 连起来怎么读？",
+          "a_cn": [
+            "/v/ /an/，van。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-v-an-3e033d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-v-an-van-7fb3f5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "can",
+              "text": "/k/ /an/, can.",
+              "audio": "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
+            },
+            {
+              "key": "ban",
+              "text": "/b/ /an/, ban.",
+              "audio": "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does van begin with?",
+          "a": [
+            "Van begins with the sound /v/."
+          ],
+          "key": [
+            "/v/"
+          ],
+          "q_cn": "van 的开头是什么音？",
+          "a_cn": [
+            "van 开头是 /v/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-begin-with-33dfd4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-v-3ba0c0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Van begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-k-8933d2.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Van begins with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-n-c31dbe.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does van begin with?",
+          "a": [
+            "Van begins with letter V."
+          ],
+          "key": [
+            "v"
+          ],
+          "q_cn": "van 以哪个字母开头？",
+          "a_cn": [
+            "van 以字母 V 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-begin-with-f2315d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-begins-with-letter-v-49fae5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Van begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-b-5099b3.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Van begins with letter C.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-begins-with-letter-c-e90082.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does van have in the middle?",
+          "a": [
+            "Van has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "van 中间是什么音？",
+          "a_cn": [
+            "van 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-have-in-the-midd-48dbf1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-has-the-sound-a-in-the-middle-4c7000.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Van has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-the-sound-k-in-the-middle-0a9cb8.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Van has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-the-sound-n-in-the-middle-12de1c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does van have in the middle?",
+          "a": [
+            "Van has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "van 中间是哪个字母？",
+          "a_cn": [
+            "van 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-have-in-the-mi-b6070c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-has-letter-a-in-the-middle-eadd0c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "m",
+              "text": "Van has letter M in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-letter-m-in-the-middle-e055ad.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Van has letter F in the middle.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-has-letter-f-in-the-middle-ee7a88.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does van end with?",
+          "a": [
+            "Van ends with the sound /n/."
+          ],
+          "key": [
+            "/n/"
+          ],
+          "q_cn": "van 的结尾是什么音？",
+          "a_cn": [
+            "van 结尾是 /n/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-end-with-02dc26.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-n-b4743b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Van ends with the sound /m/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-m-c12338.mp3"
+            },
+            {
+              "key": "/a/",
+              "text": "Van ends with the sound /a/.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-a-77a38c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does van end with?",
+          "a": [
+            "Van ends with letter N."
+          ],
+          "key": [
+            "n"
+          ],
+          "q_cn": "van 以哪个字母结尾？",
+          "a_cn": [
+            "van 以字母 N 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-end-with-07ace2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-a/a-van-ends-with-letter-n-2813e1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Van ends with letter A.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-letter-a-64991a.mp3"
+            },
+            {
+              "key": "m",
+              "text": "Van ends with letter M.",
+              "audio": "audio/sentences/k2-cvc-a/a-van-ends-with-letter-m-ed27ad.mp3"
+            }
+          ]
+        }
+      ],
+      "image": "images/cvc-van.webp",
+      "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-van-ca96bf.mp3"
     }
-   ],
-   "image": "images/cvc-man.webp",
-   "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-man-0afdad.mp3"
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "an": "audio/words/an.mp3",
+    "b": "audio/words/b.mp3",
+    "ban": "audio/words/ban.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "c": "audio/words/c.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "f": "audio/words/f.mp3",
+    "fan": "audio/words/fan.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "in": "audio/words/in.mp3",
+    "is": "audio/words/is.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "k": "audio/words/k.mp3",
+    "letter": "audio/words/letter.mp3",
+    "m": "audio/words/m.mp3",
+    "man": "audio/words/man.mp3",
+    "middle": "audio/words/middle.mp3",
+    "n": "audio/words/n.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "v": "audio/words/v.mp3",
+    "van": "audio/words/van.mp3",
+    "what": "audio/words/what.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "fan",
-   "cn": "风扇",
-   "tag": "CVC",
-   "emoji": "🌀",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/fæn/",
-    "parts": [
-     {
-      "text": "f",
-      "sound": "f",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "f",
-     "sound": "f"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-fan.mp3"
-   },
-   "dialog": [
-    {
-     "q": "What word is this?",
-     "a": [
-      "It's fan."
-     ],
-     "key": [
-      "fan"
-     ],
-     "q_cn": "这是什么单词？",
-     "a_cn": [
-      "这是 fan。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-it-s-fan-31e916.mp3"
-     ]
-    },
-    {
-     "q": "How do you read: f — an?",
-     "a": [
-      "/f/ /an/, fan."
-     ],
-     "key": [
-      "fan"
-     ],
-     "q_cn": "f 和 an 连起来怎么读？",
-     "a_cn": [
-      "/f/ /an/，fan。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-f-an-503659.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-f-an-fan-13ba46.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan begin with?",
-     "a": [
-      "Fan begins with the sound /f/."
-     ],
-     "key": [
-      "/f/"
-     ],
-     "q_cn": "fan 的开头是什么音？",
-     "a_cn": [
-      "fan 开头是 /f/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-begin-with-8f7a3c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-begins-with-the-sound-f-fbae31.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan begin with?",
-     "a": [
-      "Fan begins with letter F."
-     ],
-     "key": [
-      "f"
-     ],
-     "q_cn": "fan 以哪个字母开头？",
-     "a_cn": [
-      "fan 以字母 F 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-begin-with-fec9d0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-begins-with-letter-f-33fc5a.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan have in the middle?",
-     "a": [
-      "Fan has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "fan 中间是什么音？",
-     "a_cn": [
-      "fan 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-have-in-the-midd-be6fd0.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-has-the-sound-a-in-the-middle-91dbce.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan have in the middle?",
-     "a": [
-      "Fan has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "fan 中间是哪个字母？",
-     "a_cn": [
-      "fan 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-have-in-the-mi-299361.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
-     ]
-    },
-    {
-     "q": "What sound does fan end with?",
-     "a": [
-      "Fan ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "fan 的结尾是什么音？",
-     "a_cn": [
-      "fan 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-fan-end-with-3f68ba.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-ends-with-the-sound-n-014cef.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does fan end with?",
-     "a": [
-      "Fan ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "fan 以哪个字母结尾？",
-     "a_cn": [
-      "fan 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-fan-end-with-593a60.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-fan-ends-with-letter-n-1f2ff1.mp3"
-     ]
-    }
-   ],
-   "image": "images/cvc-fan.webp",
-   "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-fan-146707.mp3"
-  },
-  {
-   "word": "ban",
-   "cn": "禁止",
-   "tag": "CVC",
-   "emoji": "🚫",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/bæn/",
-    "parts": [
-     {
-      "text": "b",
-      "sound": "b",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "b",
-     "sound": "b"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-ban.mp3"
-   },
-   "dialog": [
-    {
-     "q": "What word is this?",
-     "a": [
-      "It's ban."
-     ],
-     "key": [
-      "ban"
-     ],
-     "q_cn": "这是什么单词？",
-     "a_cn": [
-      "这是 ban。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-it-s-ban-11273d.mp3"
-     ]
-    },
-    {
-     "q": "How do you read: b — an?",
-     "a": [
-      "/b/ /an/, ban."
-     ],
-     "key": [
-      "ban"
-     ],
-     "q_cn": "b 和 an 连起来怎么读？",
-     "a_cn": [
-      "/b/ /an/，ban。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-b-an-1abfe9.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-b-an-ban-cdac8f.mp3"
-     ]
-    },
-    {
-     "q": "What sound does ban begin with?",
-     "a": [
-      "Ban begins with the sound /b/."
-     ],
-     "key": [
-      "/b/"
-     ],
-     "q_cn": "ban 的开头是什么音？",
-     "a_cn": [
-      "ban 开头是 /b/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-begin-with-b6d12b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-begins-with-the-sound-b-55cbb1.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does ban begin with?",
-     "a": [
-      "Ban begins with letter B."
-     ],
-     "key": [
-      "b"
-     ],
-     "q_cn": "ban 以哪个字母开头？",
-     "a_cn": [
-      "ban 以字母 B 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-begin-with-290b87.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-begins-with-letter-b-ca9c21.mp3"
-     ]
-    },
-    {
-     "q": "What sound does ban have in the middle?",
-     "a": [
-      "Ban has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "ban 中间是什么音？",
-     "a_cn": [
-      "ban 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-have-in-the-midd-ad516d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-has-the-sound-a-in-the-middle-86ff30.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does ban have in the middle?",
-     "a": [
-      "Ban has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "ban 中间是哪个字母？",
-     "a_cn": [
-      "ban 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-have-in-the-mi-dc3da9.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-has-letter-a-in-the-middle-41e902.mp3"
-     ]
-    },
-    {
-     "q": "What sound does ban end with?",
-     "a": [
-      "Ban ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "ban 的结尾是什么音？",
-     "a_cn": [
-      "ban 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-ban-end-with-55c9ee.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-ends-with-the-sound-n-d70c1e.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does ban end with?",
-     "a": [
-      "Ban ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "ban 以哪个字母结尾？",
-     "a_cn": [
-      "ban 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-ban-end-with-0db3fc.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-ban-ends-with-letter-n-baadd4.mp3"
-     ]
-    }
-   ],
-   "image": "images/cvc-ban.webp",
-   "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-ban-a77396.mp3"
-  },
-  {
-   "word": "can",
-   "cn": "罐头；能够",
-   "tag": "CVC",
-   "emoji": "🥫",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/kæn/",
-    "parts": [
-     {
-      "text": "c",
-      "sound": "k",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "c",
-     "sound": "k"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-can.mp3"
-   },
-   "dialog": [
-    {
-     "q": "What word is this?",
-     "a": [
-      "It's can."
-     ],
-     "key": [
-      "can"
-     ],
-     "q_cn": "这是什么单词？",
-     "a_cn": [
-      "这是 can。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-it-s-can-e4e0ab.mp3"
-     ]
-    },
-    {
-     "q": "How do you read: c — an?",
-     "a": [
-      "/k/ /an/, can."
-     ],
-     "key": [
-      "can"
-     ],
-     "q_cn": "c 和 an 连起来怎么读？",
-     "a_cn": [
-      "/k/ /an/，can。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-c-an-b51569.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-k-an-can-8d6eed.mp3"
-     ]
-    },
-    {
-     "q": "What sound does can begin with?",
-     "a": [
-      "Can begins with the sound /k/."
-     ],
-     "key": [
-      "/k/"
-     ],
-     "q_cn": "can 的开头是什么音？",
-     "a_cn": [
-      "can 开头是 /k/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-begin-with-d06ad4.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-begins-with-the-sound-k-ae455d.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does can begin with?",
-     "a": [
-      "Can begins with letter C."
-     ],
-     "key": [
-      "c"
-     ],
-     "q_cn": "can 以哪个字母开头？",
-     "a_cn": [
-      "can 以字母 C 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-begin-with-1aed9e.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-begins-with-letter-c-34f0cf.mp3"
-     ]
-    },
-    {
-     "q": "What sound does can have in the middle?",
-     "a": [
-      "Can has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "can 中间是什么音？",
-     "a_cn": [
-      "can 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-have-in-the-midd-a0c2ca.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-has-the-sound-a-in-the-middle-b8063e.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does can have in the middle?",
-     "a": [
-      "Can has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "can 中间是哪个字母？",
-     "a_cn": [
-      "can 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-have-in-the-mi-88cf5d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-has-letter-a-in-the-middle-b3c8e8.mp3"
-     ]
-    },
-    {
-     "q": "What sound does can end with?",
-     "a": [
-      "Can ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "can 的结尾是什么音？",
-     "a_cn": [
-      "can 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-can-end-with-2fd14c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-ends-with-the-sound-n-c8271b.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does can end with?",
-     "a": [
-      "Can ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "can 以哪个字母结尾？",
-     "a_cn": [
-      "can 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-can-end-with-cba573.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-can-ends-with-letter-n-b3743f.mp3"
-     ]
-    }
-   ],
-   "image": "images/cvc-can.webp",
-   "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-can-5722e0.mp3",
-   "quiz": false
-  },
-  {
-   "word": "van",
-   "cn": "厢式货车",
-   "tag": "CVC",
-   "emoji": "🚐",
-   "phonics": {
-    "group": "短音 a /æ/ · -an 词族",
-    "ipa": "/væn/",
-    "parts": [
-     {
-      "text": "v",
-      "sound": "v",
-      "kind": "consonant"
-     },
-     {
-      "text": "a",
-      "sound": "ae",
-      "kind": "vowel"
-     },
-     {
-      "text": "n",
-      "sound": "n",
-      "kind": "consonant"
-     }
-    ],
-    "onset": {
-     "text": "v",
-     "sound": "v"
-    },
-    "rime": {
-     "text": "an",
-     "sound": "an"
-    },
-    "blend_audio": "audio/phonics/blend-van.mp3"
-   },
-   "dialog": [
-    {
-     "q": "What word is this?",
-     "a": [
-      "It's van."
-     ],
-     "key": [
-      "van"
-     ],
-     "q_cn": "这是什么单词？",
-     "a_cn": [
-      "这是 van。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-word-is-this-75651b.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-it-s-van-054c0a.mp3"
-     ]
-    },
-    {
-     "q": "How do you read: v — an?",
-     "a": [
-      "/v/ /an/, van."
-     ],
-     "key": [
-      "van"
-     ],
-     "q_cn": "v 和 an 连起来怎么读？",
-     "a_cn": [
-      "/v/ /an/，van。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-how-do-you-read-v-an-3e033d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-v-an-van-7fb3f5.mp3"
-     ]
-    },
-    {
-     "q": "What sound does van begin with?",
-     "a": [
-      "Van begins with the sound /v/."
-     ],
-     "key": [
-      "/v/"
-     ],
-     "q_cn": "van 的开头是什么音？",
-     "a_cn": [
-      "van 开头是 /v/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-begin-with-33dfd4.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-begins-with-the-sound-v-3ba0c0.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does van begin with?",
-     "a": [
-      "Van begins with letter V."
-     ],
-     "key": [
-      "v"
-     ],
-     "q_cn": "van 以哪个字母开头？",
-     "a_cn": [
-      "van 以字母 V 开头。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-begin-with-f2315d.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-begins-with-letter-v-49fae5.mp3"
-     ]
-    },
-    {
-     "q": "What sound does van have in the middle?",
-     "a": [
-      "Van has the sound /a/ in the middle."
-     ],
-     "key": [
-      "/a/"
-     ],
-     "q_cn": "van 中间是什么音？",
-     "a_cn": [
-      "van 中间是 /æ/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-have-in-the-midd-48dbf1.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-has-the-sound-a-in-the-middle-4c7000.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does van have in the middle?",
-     "a": [
-      "Van has letter A in the middle."
-     ],
-     "key": [
-      "a"
-     ],
-     "q_cn": "van 中间是哪个字母？",
-     "a_cn": [
-      "van 中间是字母 A。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-have-in-the-mi-b6070c.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-has-letter-a-in-the-middle-eadd0c.mp3"
-     ]
-    },
-    {
-     "q": "What sound does van end with?",
-     "a": [
-      "Van ends with the sound /n/."
-     ],
-     "key": [
-      "/n/"
-     ],
-     "q_cn": "van 的结尾是什么音？",
-     "a_cn": [
-      "van 结尾是 /n/ 音。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-what-sound-does-van-end-with-02dc26.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-ends-with-the-sound-n-b4743b.mp3"
-     ]
-    },
-    {
-     "q": "Which letter does van end with?",
-     "a": [
-      "Van ends with letter N."
-     ],
-     "key": [
-      "n"
-     ],
-     "q_cn": "van 以哪个字母结尾？",
-     "a_cn": [
-      "van 以字母 N 结尾。"
-     ],
-     "q_audio": "audio/sentences/k2-cvc-a/q-which-letter-does-van-end-with-07ace2.mp3",
-     "a_audio": [
-      "audio/sentences/k2-cvc-a/a-van-ends-with-letter-n-2813e1.mp3"
-     ]
-    }
-   ],
-   "image": "images/cvc-van.webp",
-   "quiz_audio": "audio/sentences/k2-cvc-a/q-which-one-is-van-ca96bf.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "an": "audio/words/an.mp3",
-  "b": "audio/words/b.mp3",
-  "ban": "audio/words/ban.mp3",
-  "begin": "audio/words/begin.mp3",
-  "begins": "audio/words/begins.mp3",
-  "c": "audio/words/c.mp3",
-  "can": "audio/words/can.mp3",
-  "do": "audio/words/do.mp3",
-  "does": "audio/words/does.mp3",
-  "end": "audio/words/end.mp3",
-  "ends": "audio/words/ends.mp3",
-  "f": "audio/words/f.mp3",
-  "fan": "audio/words/fan.mp3",
-  "has": "audio/words/has.mp3",
-  "have": "audio/words/have.mp3",
-  "how": "audio/words/how.mp3",
-  "in": "audio/words/in.mp3",
-  "is": "audio/words/is.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "k": "audio/words/k.mp3",
-  "letter": "audio/words/letter.mp3",
-  "m": "audio/words/m.mp3",
-  "man": "audio/words/man.mp3",
-  "middle": "audio/words/middle.mp3",
-  "n": "audio/words/n.mp3",
-  "read": "audio/words/read.mp3",
-  "sound": "audio/words/sound.mp3",
-  "the": "audio/words/the.mp3",
-  "this": "audio/words/this.mp3",
-  "v": "audio/words/v.mp3",
-  "van": "audio/words/van.mp3",
-  "what": "audio/words/what.mp3",
-  "which": "audio/words/which.mp3",
-  "with": "audio/words/with.mp3",
-  "word": "audio/words/word.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

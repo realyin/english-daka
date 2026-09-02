@@ -27,6 +27,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-letter-ab944e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-letter-t-f0e81f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "It's letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-letter-b-328ea7.mp3"
+            },
+            {
+              "key": "r",
+              "text": "It's letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-letter-r-804942.mp3"
+            }
           ]
         },
         {
@@ -44,6 +56,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-letter-t-make-964448.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-t-makes-the-sound-t-b6f1f4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "T makes the sound /n/.",
+              "audio": "audio/sentences/k2-letter-t/a-t-makes-the-sound-n-9f484c.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "T makes the sound /eye/.",
+              "audio": "audio/sentences/k2-letter-t/a-t-makes-the-sound-eye-47e4f1.mp3"
+            }
           ]
         }
       ],
@@ -70,6 +94,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-taxi-begin-with-f0f4ad.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-taxi-begins-with-the-sound-t-e78973.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/i/",
+              "text": "Taxi begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-t/a-taxi-begins-with-the-sound-i-53653e.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Taxi begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-t/a-taxi-begins-with-the-sound-b-9d37fd.mp3"
+            }
           ]
         },
         {
@@ -87,6 +123,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-taxi-begin-with-18d9ce.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-taxi-begins-with-letter-t-5ad804.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Taxi begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-taxi-begins-with-letter-b-6ac52b.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Taxi begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-taxi-begins-with-letter-r-34bae5.mp3"
+            }
           ]
         }
       ],
@@ -113,6 +161,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-animal-ac42e5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-turtle-505865.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "It's a square.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-square-1bce58.mp3"
+            },
+            {
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3"
+            }
           ]
         },
         {
@@ -130,6 +190,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-turtle-begin-with-3cf807.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-turtle-begins-with-the-sound-t-d5d1c3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/s/",
+              "text": "Turtle begins with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-t/a-turtle-begins-with-the-sound-s-273a53.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Turtle begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-t/a-turtle-begins-with-the-sound-l-284629.mp3"
+            }
           ]
         },
         {
@@ -147,6 +219,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-turtle-begin-with-c64265.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-turtle-begins-with-letter-t-2b5376.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Turtle begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-turtle-begins-with-letter-b-fa2dac.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Turtle begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-turtle-begins-with-letter-r-7e783f.mp3"
+            }
           ]
         }
       ],
@@ -174,7 +258,19 @@
           "a_audio": [
             "audio/sentences/k2-letter-t/a-the-toast-is-like-a-square-eaefcd.mp3"
           ],
-          "image": "images/k2-t-toast-square.webp"
+          "image": "images/k2-t-toast-square.webp",
+          "opts": [
+            {
+              "key": "triangle",
+              "text": "The toast is like a triangle.",
+              "audio": "audio/sentences/k2-letter-t/a-the-toast-is-like-a-triangle-f52e4a.mp3"
+            },
+            {
+              "key": "rectangle",
+              "text": "The toast is like a rectangle.",
+              "audio": "audio/sentences/k2-letter-t/a-the-toast-is-like-a-rectangle-5869ca.mp3"
+            }
+          ]
         },
         {
           "q": "What sound does toast begin with?",
@@ -191,6 +287,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-toast-begin-with-f6a69a.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-toast-begins-with-the-sound-t-b50a8c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Toast begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-toast-begins-with-the-sound-d-891245.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Toast begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-t/a-toast-begins-with-the-sound-r-04b587.mp3"
+            }
           ]
         },
         {
@@ -208,6 +316,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-toast-begin-with-721405.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-toast-begins-with-letter-t-3fcbac.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Toast begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-toast-begins-with-letter-b-ca6a03.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Toast begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-toast-begins-with-letter-r-d4f50f.mp3"
+            }
           ]
         }
       ],
@@ -234,6 +354,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-can-you-do-with-your-teeth-70042e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-i-can-brush-my-teeth-75ec82.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Thank begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-thank-begins-with-letter-t-8f9b1f.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Turtle begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-turtle-begins-with-letter-t-2b5376.mp3"
+            }
           ]
         },
         {
@@ -251,6 +383,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-brush-begin-with-3c5b97.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-brush-begins-with-letter-b-3100e3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Brush begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-brush-begins-with-letter-t-5513e2.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Brush begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-brush-begins-with-letter-r-3a82a4.mp3"
+            }
           ]
         }
       ],
@@ -277,6 +421,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-how-many-fingers-do-you-have-a3d9a9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-i-have-ten-fingers-1501e2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "twelve",
+              "text": "I have twelve fingers.",
+              "audio": "audio/sentences/k2-letter-t/a-i-have-twelve-fingers-70a306.mp3"
+            },
+            {
+              "key": "fifteen",
+              "text": "I have fifteen fingers.",
+              "audio": "audio/sentences/k2-letter-t/a-i-have-fifteen-fingers-53d252.mp3"
+            }
           ]
         },
         {
@@ -294,6 +450,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-ten-begin-with-c111d1.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-ten-begins-with-the-sound-t-ee533f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Ten begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-ten-begins-with-the-sound-d-89a522.mp3"
+            },
+            {
+              "key": "/r/",
+              "text": "Ten begins with the sound /r/.",
+              "audio": "audio/sentences/k2-letter-t/a-ten-begins-with-the-sound-r-243afe.mp3"
+            }
           ]
         },
         {
@@ -311,6 +479,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-ten-begin-with-092177.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-ten-begins-with-letter-t-dd4afc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Ten begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-ten-begins-with-letter-b-00aa43.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Ten begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-ten-begins-with-letter-r-91f169.mp3"
+            }
           ]
         }
       ],
@@ -340,6 +520,18 @@
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3",
             "audio/sentences/k2-letter-t/a-i-can-play-the-trumpet-with-my-mouth-da6ae3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tooth",
+              "text": "It's a tooth.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-tooth-ce7bdd.mp3"
+            },
+            {
+              "key": "rectangle",
+              "text": "It's a rectangle.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-rectangle-9f01d5.mp3"
+            }
           ]
         },
         {
@@ -357,6 +549,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-trumpet-begin-with-8c4e33.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-trumpet-begins-with-the-sound-t-b28f05.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Trumpet begins with the sound /b/.",
+              "audio": "audio/sentences/k2-letter-t/a-trumpet-begins-with-the-sound-b-47a6e1.mp3"
+            },
+            {
+              "key": "/o/",
+              "text": "Trumpet begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-t/a-trumpet-begins-with-the-sound-o-523da8.mp3"
+            }
           ]
         },
         {
@@ -374,6 +578,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-trumpet-begin-with-e7f4c0.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-trumpet-begins-with-letter-t-3fcafe.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Trumpet begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-trumpet-begins-with-letter-b-3fb0ff.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Trumpet begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-trumpet-begins-with-letter-r-2ede1b.mp3"
+            }
           ]
         }
       ],
@@ -400,6 +616,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-christmas-tree-0edfc3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "thank",
+              "text": "I say thank you.",
+              "audio": "audio/sentences/k2-letter-t/a-i-say-thank-you-9d618c.mp3"
+            },
+            {
+              "key": "tall",
+              "text": "The giraffe is tall.",
+              "audio": "audio/sentences/k2-letter-t/a-the-giraffe-is-tall-df9737.mp3"
+            }
           ]
         },
         {
@@ -417,6 +645,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tree-begin-with-d64103.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tree-begins-with-the-sound-t-d4cafb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/p/",
+              "text": "Tree begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-t/a-tree-begins-with-the-sound-p-cbf153.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Tree begins with the sound /h/.",
+              "audio": "audio/sentences/k2-letter-t/a-tree-begins-with-the-sound-h-11b429.mp3"
+            }
           ]
         },
         {
@@ -434,6 +674,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tree-begin-with-c2bca8.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tree-begins-with-letter-t-0ea563.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Tree begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-tree-begins-with-letter-r-a26671.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Tree begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-tree-begins-with-letter-b-23f3f9.mp3"
+            }
           ]
         }
       ],
@@ -460,6 +712,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-do-you-want-to-be-222838.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-i-want-to-be-a-teacher-23ae80.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "The toast is like a square.",
+              "audio": "audio/sentences/k2-letter-t/a-the-toast-is-like-a-square-eaefcd.mp3"
+            },
+            {
+              "key": "tank",
+              "text": "A turtle lives in the tank.",
+              "audio": "audio/sentences/k2-letter-t/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
+            }
           ]
         },
         {
@@ -477,6 +741,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-teacher-begin-with-3e205a.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-teacher-begins-with-the-sound-t-bfbf22.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Teacher begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-t/a-teacher-begins-with-the-sound-yoo-6b3adf.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Teacher begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-teacher-begins-with-the-sound-d-3ea64b.mp3"
+            }
           ]
         },
         {
@@ -494,6 +770,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-teacher-begin-with-c03491.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-teacher-begins-with-letter-t-e4207e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Teacher begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-teacher-begins-with-letter-r-ed33ac.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Teacher begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-teacher-begins-with-letter-b-dd5004.mp3"
+            }
           ]
         }
       ],
@@ -520,6 +808,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-where-does-a-turtle-live-1d9182.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-a-turtle-lives-in-the-tank-45cc9a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "teacher",
+              "text": "I want to be a teacher.",
+              "audio": "audio/sentences/k2-letter-t/a-i-want-to-be-a-teacher-23ae80.mp3"
+            },
+            {
+              "key": "square",
+              "text": "The toast is like a square.",
+              "audio": "audio/sentences/k2-letter-t/a-the-toast-is-like-a-square-eaefcd.mp3"
+            }
           ]
         },
         {
@@ -537,6 +837,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tank-begin-with-86465d.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tank-begins-with-the-sound-t-5ee03d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/a/",
+              "text": "Tank begins with the sound /a/.",
+              "audio": "audio/sentences/k2-letter-t/a-tank-begins-with-the-sound-a-cc9bd7.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Tank begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-t/a-tank-begins-with-the-sound-g-64054a.mp3"
+            }
           ]
         },
         {
@@ -554,6 +866,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tank-begin-with-ca5834.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tank-begins-with-letter-t-4fa4e9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Tank begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-tank-begins-with-letter-b-8502e4.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Tank begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-tank-begins-with-letter-r-99deda.mp3"
+            }
           ]
         }
       ],
@@ -583,6 +907,18 @@
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-triangle-e6b316.mp3",
             "audio/sentences/k2-letter-t/a-a-triangle-has-three-sides-e0e69f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "It's a square.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-square-1bce58.mp3"
+            },
+            {
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3"
+            }
           ]
         },
         {
@@ -600,6 +936,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-triangle-begin-with-162aa9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-triangle-begins-with-the-sound-t-112d45.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Triangle begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-t/a-triangle-begins-with-the-sound-yoo-33f7ba.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Triangle begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-triangle-begins-with-the-sound-d-577b68.mp3"
+            }
           ]
         },
         {
@@ -617,6 +965,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-triangle-begin-wit-df1e76.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-triangle-begins-with-letter-t-df1088.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Triangle begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-triangle-begins-with-letter-r-d019bc.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Triangle begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-triangle-begins-with-letter-b-8983ea.mp3"
+            }
           ]
         }
       ],
@@ -643,6 +1003,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-can-you-touch-your-face-2c640c.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-i-can-touch-my-face-2583db.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Tomato begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-tomato-begins-with-letter-t-9c9d7b.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Triangle begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-triangle-begins-with-letter-t-df1088.mp3"
+            }
           ]
         },
         {
@@ -660,6 +1032,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-touch-begin-with-c5e0ae.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-touch-begins-with-the-sound-t-959cc2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Touch begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-t/a-touch-begins-with-the-sound-j-43e3fc.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Touch begins with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-t/a-touch-begins-with-the-sound-s-443627.mp3"
+            }
           ]
         },
         {
@@ -677,6 +1061,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-touch-begin-with-1f2001.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-touch-begins-with-letter-t-692e96.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Touch begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-touch-begins-with-letter-r-28fdec.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Touch begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-touch-begins-with-letter-b-e5cedf.mp3"
+            }
           ]
         }
       ],
@@ -703,6 +1099,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-one-is-taller-the-rectangle-or-bf4884.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-the-rectangle-is-taller-78b69a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "The square is taller.",
+              "audio": "audio/sentences/k2-letter-t/a-the-square-is-taller-2bb6f9.mp3"
+            },
+            {
+              "key": "triangle",
+              "text": "The triangle is taller.",
+              "audio": "audio/sentences/k2-letter-t/a-the-triangle-is-taller-032a40.mp3"
+            }
           ]
         },
         {
@@ -720,6 +1128,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-rectangle-begin-wi-5070e7.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-rectangle-begins-with-letter-r-806069.mp3"
+          ],
+          "opts": [
+            {
+              "key": "t",
+              "text": "Rectangle begins with letter T.",
+              "audio": "audio/sentences/k2-letter-t/a-rectangle-begins-with-letter-t-687b1e.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Rectangle begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-rectangle-begins-with-letter-b-e0b5cc.mp3"
+            }
           ]
         }
       ],
@@ -746,6 +1166,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-do-we-say-on-thanksgiving-4711b9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-happy-thanksgiving-d2e8ff.mp3"
+          ],
+          "opts": [
+            {
+              "key": "toys",
+              "text": "They're toys.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-toys-e56c5f.mp3"
+            },
+            {
+              "key": "teeth",
+              "text": "They're teeth.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-teeth-c59239.mp3"
+            }
           ]
         },
         {
@@ -763,6 +1195,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-thanksgiving-begin-65c1fa.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-thanksgiving-begins-with-letter-t-fa19e7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Thanksgiving begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-thanksgiving-begins-with-letter-r-022387.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Thanksgiving begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-thanksgiving-begins-with-letter-b-89b94e.mp3"
+            }
           ]
         }
       ],
@@ -789,6 +1233,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-tomato-f332bb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tooth",
+              "text": "It's a tooth.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-tooth-ce7bdd.mp3"
+            },
+            {
+              "key": "rectangle",
+              "text": "It's a rectangle.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-rectangle-9f01d5.mp3"
+            }
           ]
         },
         {
@@ -806,6 +1262,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tomato-begin-with-f3de15.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tomato-begins-with-the-sound-t-2b8b67.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Tomato begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-t/a-tomato-begins-with-the-sound-j-1b096e.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Tomato begins with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-t/a-tomato-begins-with-the-sound-s-58d493.mp3"
+            }
           ]
         },
         {
@@ -823,6 +1291,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tomato-begin-with-3abfc3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tomato-begins-with-letter-t-9c9d7b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Tomato begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-tomato-begins-with-letter-r-25c882.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Tomato begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-tomato-begins-with-letter-b-f971b0.mp3"
+            }
           ]
         }
       ],
@@ -849,6 +1329,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-are-these-bcb380.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-they-re-teeth-c59239.mp3"
+          ],
+          "opts": [
+            {
+              "key": "toys",
+              "text": "They're toys.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-toys-e56c5f.mp3"
+            },
+            {
+              "key": "mittens",
+              "text": "They're mittens.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-mittens-f9c61b.mp3"
+            }
           ]
         },
         {
@@ -866,6 +1358,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-teeth-begin-with-220fb0.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-teeth-begins-with-the-sound-t-ffb32f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Teeth begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-t/a-teeth-begins-with-the-sound-yoo-a63e12.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Teeth begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-teeth-begins-with-the-sound-d-1c1f1c.mp3"
+            }
           ]
         },
         {
@@ -883,6 +1387,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-teeth-begin-with-7959ac.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-teeth-begins-with-letter-t-0b9629.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Teeth begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-teeth-begins-with-letter-r-8bde1b.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Teeth begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-teeth-begins-with-letter-b-59a534.mp3"
+            }
           ]
         }
       ],
@@ -909,6 +1425,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-tooth-ce7bdd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "It's a square.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-square-1bce58.mp3"
+            },
+            {
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3"
+            }
           ]
         },
         {
@@ -926,6 +1454,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tooth-begin-with-c08f3f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tooth-begins-with-the-sound-t-dfbf1c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Tooth begins with the sound /g/.",
+              "audio": "audio/sentences/k2-letter-t/a-tooth-begins-with-the-sound-g-86173d.mp3"
+            },
+            {
+              "key": "/j/",
+              "text": "Tooth begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-t/a-tooth-begins-with-the-sound-j-033038.mp3"
+            }
           ]
         },
         {
@@ -943,6 +1483,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tooth-begin-with-f39d27.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tooth-begins-with-letter-t-a5e2bc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Tooth begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-tooth-begins-with-letter-b-8f6c32.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Tooth begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-tooth-begins-with-letter-r-45984f.mp3"
+            }
           ]
         }
       ],
@@ -969,6 +1521,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-truck-0b25fd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "triangle",
+              "text": "It's a triangle.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-triangle-e6b316.mp3"
+            },
+            {
+              "key": "television",
+              "text": "It's a television.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-television-e963f5.mp3"
+            }
           ]
         },
         {
@@ -986,6 +1550,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-truck-begin-with-291cfd.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-truck-begins-with-the-sound-t-10ed11.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Truck begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-t/a-truck-begins-with-the-sound-j-b96da7.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Truck begins with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-t/a-truck-begins-with-the-sound-s-d45079.mp3"
+            }
           ]
         },
         {
@@ -1003,6 +1579,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-truck-begin-with-b6dd17.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-truck-begins-with-letter-t-d01e7b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Truck begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-truck-begins-with-letter-b-a46a82.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Truck begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-truck-begins-with-letter-r-9f6235.mp3"
+            }
           ]
         }
       ],
@@ -1029,6 +1617,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-are-these-bcb380.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-they-re-toys-e56c5f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "teeth",
+              "text": "They're teeth.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-teeth-c59239.mp3"
+            },
+            {
+              "key": "feet",
+              "text": "They're feet.",
+              "audio": "audio/sentences/k2-letter-t/a-they-re-feet-009684.mp3"
+            }
           ]
         },
         {
@@ -1046,6 +1646,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-toys-begin-with-c82645.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-toys-begins-with-the-sound-t-1f26d5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/j/",
+              "text": "Toys begins with the sound /j/.",
+              "audio": "audio/sentences/k2-letter-t/a-toys-begins-with-the-sound-j-a6f6c2.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Toys begins with the sound /s/.",
+              "audio": "audio/sentences/k2-letter-t/a-toys-begins-with-the-sound-s-9bd96c.mp3"
+            }
           ]
         },
         {
@@ -1063,6 +1675,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-toys-begin-with-fe77a6.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-toys-begins-with-letter-t-224cb0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Toys begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-toys-begins-with-letter-r-d650f0.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Toys begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-toys-begins-with-letter-b-bc1273.mp3"
+            }
           ]
         }
       ],
@@ -1089,6 +1713,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-s-this-9a86f3.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-it-s-a-television-e963f5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "square",
+              "text": "It's a square.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-square-1bce58.mp3"
+            },
+            {
+              "key": "trumpet",
+              "text": "It's a trumpet.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-trumpet-f848f7.mp3"
+            }
           ]
         },
         {
@@ -1106,6 +1742,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-television-begin-wit-10f900.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-television-begins-with-the-sound-t-7b037e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Television begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-letter-t/a-television-begins-with-the-sound-oh-af3cef.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Television begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-t/a-television-begins-with-the-sound-u-bbeecf.mp3"
+            }
           ]
         },
         {
@@ -1123,6 +1771,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-television-begin-w-2d9620.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-television-begins-with-letter-t-865881.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Television begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-television-begins-with-letter-b-f374bc.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Television begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-television-begins-with-letter-r-80dcf8.mp3"
+            }
           ]
         }
       ],
@@ -1135,20 +1795,32 @@
       "image": "images/t-talk.webp",
       "dialog": [
         {
-          "q": "What are they doing?",
+          "q": "What can they do with their mouths?",
           "a": [
-            "They're talking."
+            "They can talk."
           ],
           "key": [
             "talk"
           ],
-          "q_cn": "他们在做什么？",
+          "q_cn": "他们用嘴能做什么？",
           "a_cn": [
-            "他们在说话。"
+            "他们能说话。"
           ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-are-they-doing-f3c859.mp3",
+          "q_audio": "audio/sentences/k2-letter-t/q-what-can-they-do-with-their-mouths-756597.mp3",
           "a_audio": [
-            "audio/sentences/k2-letter-t/a-they-re-talking-34d684.mp3"
+            "audio/sentences/k2-letter-t/a-they-can-talk-97df44.mp3"
+          ],
+          "opts": [
+            {
+              "key": "turtle",
+              "text": "It's a turtle.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-turtle-505865.mp3"
+            },
+            {
+              "key": "tooth",
+              "text": "It's a tooth.",
+              "audio": "audio/sentences/k2-letter-t/a-it-s-a-tooth-ce7bdd.mp3"
+            }
           ]
         },
         {
@@ -1166,6 +1838,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-talk-begin-with-ec9615.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-talk-begins-with-the-sound-t-ab52d0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Talk begins with the sound /l/.",
+              "audio": "audio/sentences/k2-letter-t/a-talk-begins-with-the-sound-l-3a7a05.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Talk begins with the sound /k/.",
+              "audio": "audio/sentences/k2-letter-t/a-talk-begins-with-the-sound-k-c3e11d.mp3"
+            }
           ]
         },
         {
@@ -1183,6 +1867,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-talk-begin-with-7755bb.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-talk-begins-with-letter-t-78fb19.mp3"
+          ],
+          "opts": [
+            {
+              "key": "r",
+              "text": "Talk begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-talk-begins-with-letter-r-f2d261.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Talk begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-talk-begins-with-letter-b-319343.mp3"
+            }
           ]
         }
       ],
@@ -1209,6 +1905,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-one-is-tall-9370f2.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-the-giraffe-is-tall-df9737.mp3"
+          ],
+          "opts": [
+            {
+              "key": "rectangle",
+              "text": "The rectangle is taller.",
+              "audio": "audio/sentences/k2-letter-t/a-the-rectangle-is-taller-78b69a.mp3"
+            },
+            {
+              "key": "ten",
+              "text": "I have ten fingers.",
+              "audio": "audio/sentences/k2-letter-t/a-i-have-ten-fingers-1501e2.mp3"
+            }
           ]
         },
         {
@@ -1226,6 +1934,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-what-sound-does-tall-begin-with-086bea.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tall-begins-with-the-sound-t-f9448a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Tall begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-t/a-tall-begins-with-the-sound-yoo-87b415.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Tall begins with the sound /d/.",
+              "audio": "audio/sentences/k2-letter-t/a-tall-begins-with-the-sound-d-bfedb8.mp3"
+            }
           ]
         },
         {
@@ -1243,6 +1963,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-tall-begin-with-ba2ef8.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-tall-begins-with-letter-t-aef7eb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Tall begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-tall-begins-with-letter-b-91930c.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Tall begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-tall-begins-with-letter-r-dd97db.mp3"
+            }
           ]
         }
       ],
@@ -1255,20 +1987,32 @@
       "image": "images/t-thank.webp",
       "dialog": [
         {
-          "q": "What do you say to say thank you?",
+          "q": "What do you say when someone helps you?",
           "a": [
             "I say thank you."
           ],
           "key": [
             "thank"
           ],
-          "q_cn": "道谢时说什么？",
+          "q_cn": "别人帮了你，你说什么？",
           "a_cn": [
             "我说谢谢。"
           ],
-          "q_audio": "audio/sentences/k2-letter-t/q-what-do-you-say-to-say-thank-you-0ac717.mp3",
+          "q_audio": "audio/sentences/k2-letter-t/q-what-do-you-say-when-someone-helps-y-a7d082.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-i-say-thank-you-9d618c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tall",
+              "text": "The giraffe is tall.",
+              "audio": "audio/sentences/k2-letter-t/a-the-giraffe-is-tall-df9737.mp3"
+            },
+            {
+              "key": "rectangle",
+              "text": "The rectangle is taller.",
+              "audio": "audio/sentences/k2-letter-t/a-the-rectangle-is-taller-78b69a.mp3"
+            }
           ]
         },
         {
@@ -1286,6 +2030,18 @@
           "q_audio": "audio/sentences/k2-letter-t/q-which-letter-does-thank-begin-with-904d12.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-t/a-thank-begins-with-letter-t-8f9b1f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Thank begins with letter B.",
+              "audio": "audio/sentences/k2-letter-t/a-thank-begins-with-letter-b-ed614d.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Thank begins with letter R.",
+              "audio": "audio/sentences/k2-letter-t/a-thank-begins-with-letter-r-c7ac50.mp3"
+            }
           ]
         }
       ],
@@ -1316,13 +2072,13 @@
     "christmas": "audio/words/christmas.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
-    "doing": "audio/words/doing.mp3",
     "face": "audio/words/face.mp3",
     "fingers": "audio/words/fingers.mp3",
     "giraffe": "audio/words/giraffe.mp3",
     "happy": "audio/words/happy.mp3",
     "has": "audio/words/has.mp3",
     "have": "audio/words/have.mp3",
+    "helps": "audio/words/helps.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
@@ -1338,6 +2094,7 @@
     "makes": "audio/words/makes.mp3",
     "many": "audio/words/many.mp3",
     "mouth": "audio/words/mouth.mp3",
+    "mouths": "audio/words/mouths.mp3",
     "musical": "audio/words/musical.mp3",
     "my": "audio/words/my.mp3",
     "on": "audio/words/on.mp3",
@@ -1349,11 +2106,11 @@
     "say": "audio/words/say.mp3",
     "shape": "audio/words/shape.mp3",
     "sides": "audio/words/sides.mp3",
+    "someone": "audio/words/someone.mp3",
     "sound": "audio/words/sound.mp3",
     "square": "audio/words/square.mp3",
     "t": "audio/words/t.mp3",
     "talk": "audio/words/talk.mp3",
-    "talking": "audio/words/talking.mp3",
     "tall": "audio/words/tall.mp3",
     "taller": "audio/words/taller.mp3",
     "tank": "audio/words/tank.mp3",
@@ -1365,6 +2122,7 @@
     "thank": "audio/words/thank.mp3",
     "thanksgiving": "audio/words/thanksgiving.mp3",
     "the": "audio/words/the.mp3",
+    "their": "audio/words/their.mp3",
     "these": "audio/words/these.mp3",
     "they": "audio/words/they.mp3",
     "they're": "audio/words/they-re.mp3",
@@ -1385,6 +2143,7 @@
     "we": "audio/words/we.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
+    "when": "audio/words/when.mp3",
     "where": "audio/words/where.mp3",
     "which": "audio/words/which.mp3",
     "with": "audio/words/with.mp3",

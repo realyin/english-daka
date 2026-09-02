@@ -1,144 +1,182 @@
 {
- "seq": 602,
- "level": "K1",
- "group": "动作 Actions",
- "badge": "eat",
- "cover": "images/k1-act-eat.webp",
- "title": "Actions · Eat & Drink 吃和喝",
- "cards": [
-  {
-   "word": "eat",
-   "cn": "吃",
-   "tag": "word",
-   "image": "images/k1-act-eat.webp",
-   "dialog": [
+  "seq": 602,
+  "level": "K1",
+  "group": "动作 Actions",
+  "badge": "eat",
+  "cover": "images/k1-act-eat.webp",
+  "title": "Actions · Eat & Drink 吃和喝",
+  "cards": [
     {
-     "q": "What can you do?",
-     "a": [
-      "I can eat."
-     ],
-     "key": [
-      "eat"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会吃。"
-     ],
-     "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-eat/a-i-can-eat-7a58b9.mp3"
-     ]
+      "word": "eat",
+      "cn": "吃",
+      "tag": "word",
+      "image": "images/k1-act-eat.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can eat."
+          ],
+          "key": [
+            "eat"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会吃。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-can-eat-7a58b9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "drink",
+              "text": "I can drink.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-drink-630325.mp3"
+            },
+            {
+              "key": "dance",
+              "text": "I can dance.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-dance-4502da.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you like to eat?",
+          "a": [
+            "I like to eat apples."
+          ],
+          "key": [
+            "apples"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢吃什么？",
+          "a_cn": [
+            "我喜欢吃苹果。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-do-you-like-to-eat-6f3771.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-like-to-eat-apples-5a2009.mp3"
+          ],
+          "image": "images/k1-eat-apples.webp"
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-eat-75d318.mp3"
     },
     {
-     "q": "What do you like to eat?",
-     "a": [
-      "I like to eat apples."
-     ],
-     "key": [
-      "apples"
-     ],
-     "practice": false,
-     "q_cn": "你喜欢吃什么？",
-     "a_cn": [
-      "我喜欢吃苹果。"
-     ],
-     "q_audio": "audio/sentences/k1-action-eat/q-what-do-you-like-to-eat-6f3771.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-eat/a-i-like-to-eat-apples-5a2009.mp3"
-     ],
-     "image": "images/k1-eat-apples.webp"
+      "word": "drink",
+      "cn": "喝",
+      "tag": "word",
+      "image": "images/k1-act-drink.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can drink."
+          ],
+          "key": [
+            "drink"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会喝。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-can-drink-630325.mp3"
+          ],
+          "opts": [
+            {
+              "key": "eat",
+              "text": "I can eat.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-eat-7a58b9.mp3"
+            },
+            {
+              "key": "jump",
+              "text": "I can jump.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-jump-c865d3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you like to drink?",
+          "a": [
+            "I like to drink milk."
+          ],
+          "key": [
+            "milk"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢喝什么？",
+          "a_cn": [
+            "我喜欢喝牛奶。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-do-you-like-to-drink-911400.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-like-to-drink-milk-97e099.mp3"
+          ],
+          "image": "images/k1-drink-milk.webp"
+        },
+        {
+          "q": "What else can you drink?",
+          "a": [
+            "I can drink water."
+          ],
+          "key": [
+            "water"
+          ],
+          "q_cn": "你还能喝什么？",
+          "a_cn": [
+            "我能喝水。"
+          ],
+          "q_audio": "audio/sentences/k1-action-eat/q-what-else-can-you-drink-51eef7.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-eat/a-i-can-drink-water-969d65.mp3"
+          ],
+          "image": "images/k1-drink-water.webp",
+          "opts": [
+            {
+              "key": "eat",
+              "text": "I can eat.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-eat-7a58b9.mp3"
+            },
+            {
+              "key": "drink",
+              "text": "I can drink.",
+              "audio": "audio/sentences/k1-action-eat/a-i-can-drink-630325.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-drink-5bca46.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-eat-75d318.mp3"
+  ],
+  "word_audio": {
+    "apples": "audio/words/apples.mp3",
+    "can": "audio/words/can.mp3",
+    "dance": "audio/words/dance.mp3",
+    "do": "audio/words/do.mp3",
+    "drink": "audio/words/drink.mp3",
+    "eat": "audio/words/eat.mp3",
+    "else": "audio/words/else.mp3",
+    "i": "audio/words/i.mp3",
+    "jump": "audio/words/jump.mp3",
+    "like": "audio/words/like.mp3",
+    "milk": "audio/words/milk.mp3",
+    "to": "audio/words/to.mp3",
+    "water": "audio/words/water.mp3",
+    "what": "audio/words/what.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "drink",
-   "cn": "喝",
-   "tag": "word",
-   "image": "images/k1-act-drink.webp",
-   "dialog": [
-    {
-     "q": "What can you do?",
-     "a": [
-      "I can drink."
-     ],
-     "key": [
-      "drink"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会喝。"
-     ],
-     "q_audio": "audio/sentences/k1-action-eat/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-eat/a-i-can-drink-630325.mp3"
-     ]
-    },
-    {
-     "q": "What do you like to drink?",
-     "a": [
-      "I like to drink milk."
-     ],
-     "key": [
-      "milk"
-     ],
-     "practice": false,
-     "q_cn": "你喜欢喝什么？",
-     "a_cn": [
-      "我喜欢喝牛奶。"
-     ],
-     "q_audio": "audio/sentences/k1-action-eat/q-what-do-you-like-to-drink-911400.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-eat/a-i-like-to-drink-milk-97e099.mp3"
-     ],
-     "image": "images/k1-drink-milk.webp"
-    },
-    {
-     "q": "What else can you drink?",
-     "a": [
-      "I can drink water."
-     ],
-     "key": [
-      "water"
-     ],
-     "q_cn": "你还能喝什么？",
-     "a_cn": [
-      "我能喝水。"
-     ],
-     "q_audio": "audio/sentences/k1-action-eat/q-what-else-can-you-drink-51eef7.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-eat/a-i-can-drink-water-969d65.mp3"
-     ],
-     "image": "images/k1-drink-water.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-eat/q-which-one-is-drink-5bca46.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "apples": "audio/words/apples.mp3",
-  "can": "audio/words/can.mp3",
-  "do": "audio/words/do.mp3",
-  "drink": "audio/words/drink.mp3",
-  "eat": "audio/words/eat.mp3",
-  "else": "audio/words/else.mp3",
-  "i": "audio/words/i.mp3",
-  "like": "audio/words/like.mp3",
-  "milk": "audio/words/milk.mp3",
-  "to": "audio/words/to.mp3",
-  "water": "audio/words/water.mp3",
-  "what": "audio/words/what.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

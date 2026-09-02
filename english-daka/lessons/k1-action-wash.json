@@ -1,143 +1,191 @@
 {
- "seq": 601,
- "level": "K1",
- "group": "动作 Actions",
- "badge": "wash",
- "cover": "images/k1-act-wash-hands.webp",
- "title": "Actions · Wash & Brush 洗和刷",
- "cards": [
-  {
-   "word": "wash my hands",
-   "cn": "洗手",
-   "tag": "word",
-   "image": "images/k1-act-wash-hands.webp",
-   "dialog": [
+  "seq": 601,
+  "level": "K1",
+  "group": "动作 Actions",
+  "badge": "wash",
+  "cover": "images/k1-act-wash-hands.webp",
+  "title": "Actions · Wash & Brush 洗和刷",
+  "cards": [
     {
-     "q": "What can you do?",
-     "a": [
-      "I can wash my hands."
-     ],
-     "key": [
-      "wash"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会洗手。"
-     ],
-     "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
-     ]
+      "word": "wash my hands",
+      "cn": "洗手",
+      "tag": "word",
+      "image": "images/k1-act-wash-hands.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can wash my hands."
+          ],
+          "key": [
+            "wash"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会洗手。"
+          ],
+          "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
+          ],
+          "opts": [
+            {
+              "key": "brush",
+              "text": "I can brush my teeth.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
+            },
+            {
+              "key": "brush",
+              "text": "I can brush my hair.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-wash-my-hands-f39ba4.mp3"
+    },
+    {
+      "word": "wash my face",
+      "cn": "洗脸",
+      "tag": "word",
+      "image": "images/k1-act-wash-face.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can wash my face."
+          ],
+          "key": [
+            "wash"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会洗脸。"
+          ],
+          "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "brush",
+              "text": "I can brush my teeth.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
+            },
+            {
+              "key": "brush",
+              "text": "I can brush my hair.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-wash-my-face-073f22.mp3"
+    },
+    {
+      "word": "brush my teeth",
+      "cn": "刷牙",
+      "tag": "word",
+      "image": "images/k1-act-brush-teeth.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can brush my teeth."
+          ],
+          "key": [
+            "brush"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会刷牙。"
+          ],
+          "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
+          ],
+          "opts": [
+            {
+              "key": "wash",
+              "text": "I can wash my hands.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
+            },
+            {
+              "key": "wash",
+              "text": "I can wash my face.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-brush-my-teeth-7bf7dc.mp3"
+    },
+    {
+      "word": "brush my hair",
+      "cn": "梳头",
+      "tag": "word",
+      "image": "images/k1-act-brush-hair.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can brush my hair."
+          ],
+          "key": [
+            "brush"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会梳头。"
+          ],
+          "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
+          ],
+          "opts": [
+            {
+              "key": "wash",
+              "text": "I can wash my hands.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-hands-39f501.mp3"
+            },
+            {
+              "key": "wash",
+              "text": "I can wash my face.",
+              "audio": "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-brush-my-hair-b0114a.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-wash-my-hands-f39ba4.mp3"
+  ],
+  "word_audio": {
+    "brush": "audio/words/brush.mp3",
+    "brush my hair": "audio/words/brush-my-hair.mp3",
+    "brush my teeth": "audio/words/brush-my-teeth.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "face": "audio/words/face.mp3",
+    "hair": "audio/words/hair.mp3",
+    "hands": "audio/words/hands.mp3",
+    "i": "audio/words/i.mp3",
+    "my": "audio/words/my.mp3",
+    "teeth": "audio/words/teeth.mp3",
+    "wash": "audio/words/wash.mp3",
+    "wash my face": "audio/words/wash-my-face.mp3",
+    "wash my hands": "audio/words/wash-my-hands.mp3",
+    "what": "audio/words/what.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "wash my face",
-   "cn": "洗脸",
-   "tag": "word",
-   "image": "images/k1-act-wash-face.webp",
-   "dialog": [
-    {
-     "q": "What can you do?",
-     "a": [
-      "I can wash my face."
-     ],
-     "key": [
-      "wash"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会洗脸。"
-     ],
-     "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-wash/a-i-can-wash-my-face-29a5ca.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-wash-my-face-073f22.mp3"
-  },
-  {
-   "word": "brush my teeth",
-   "cn": "刷牙",
-   "tag": "word",
-   "image": "images/k1-act-brush-teeth.webp",
-   "dialog": [
-    {
-     "q": "What can you do?",
-     "a": [
-      "I can brush my teeth."
-     ],
-     "key": [
-      "brush"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会刷牙。"
-     ],
-     "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-wash/a-i-can-brush-my-teeth-75ec82.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-brush-my-teeth-7bf7dc.mp3"
-  },
-  {
-   "word": "brush my hair",
-   "cn": "梳头",
-   "tag": "word",
-   "image": "images/k1-act-brush-hair.webp",
-   "dialog": [
-    {
-     "q": "What can you do?",
-     "a": [
-      "I can brush my hair."
-     ],
-     "key": [
-      "brush"
-     ],
-     "q_cn": "你会做什么？",
-     "a_cn": [
-      "我会梳头。"
-     ],
-     "q_audio": "audio/sentences/k1-action-wash/q-what-can-you-do-2d2dcc.mp3",
-     "a_audio": [
-      "audio/sentences/k1-action-wash/a-i-can-brush-my-hair-4bab18.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-action-wash/q-which-one-is-brush-my-hair-b0114a.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "brush": "audio/words/brush.mp3",
-  "brush my hair": "audio/words/brush-my-hair.mp3",
-  "brush my teeth": "audio/words/brush-my-teeth.mp3",
-  "can": "audio/words/can.mp3",
-  "do": "audio/words/do.mp3",
-  "face": "audio/words/face.mp3",
-  "hair": "audio/words/hair.mp3",
-  "hands": "audio/words/hands.mp3",
-  "i": "audio/words/i.mp3",
-  "my": "audio/words/my.mp3",
-  "teeth": "audio/words/teeth.mp3",
-  "wash": "audio/words/wash.mp3",
-  "wash my face": "audio/words/wash-my-face.mp3",
-  "wash my hands": "audio/words/wash-my-hands.mp3",
-  "what": "audio/words/what.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

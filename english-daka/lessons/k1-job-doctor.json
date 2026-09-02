@@ -1,209 +1,283 @@
 {
- "seq": 702,
- "level": "K1",
- "group": "职业 Jobs",
- "badge": "doctor",
- "cover": "images/k1-job-doctor.webp",
- "title": "Jobs · Doctor & Nurse 医生和护士",
- "cards": [
-  {
-   "word": "doctor",
-   "cn": "医生",
-   "tag": "word",
-   "image": "images/k1-job-doctor.webp",
-   "dialog": [
+  "seq": 702,
+  "level": "K1",
+  "group": "职业 Jobs",
+  "badge": "doctor",
+  "cover": "images/k1-job-doctor.webp",
+  "title": "Jobs · Doctor & Nurse 医生和护士",
+  "cards": [
     {
-     "q": "What's this job?",
-     "a": [
-      "This is a doctor."
-     ],
-     "key": [
-      "doctor"
-     ],
-     "q_cn": "这是什么职业？",
-     "a_cn": [
-      "这是医生。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-job-078604.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-this-is-a-doctor-7c8317.mp3"
-     ]
+      "word": "doctor",
+      "cn": "医生",
+      "tag": "word",
+      "image": "images/k1-job-doctor.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a doctor."
+          ],
+          "key": [
+            "doctor"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是医生。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-this-is-a-doctor-7c8317.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nurse",
+              "text": "This is a nurse.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-nurse-939568.mp3"
+            },
+            {
+              "key": "hospital",
+              "text": "This is a hospital.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can doctors do?",
+          "a": [
+            "Doctors can help us to be healthy."
+          ],
+          "key": [
+            "healthy"
+          ],
+          "q_cn": "医生能做什么？",
+          "a_cn": [
+            "医生能帮我们变健康。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-can-doctors-do-984e29.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-doctors-can-help-us-to-be-healthy-8ee18c.mp3"
+          ],
+          "image": "images/k1-doctor-help.webp",
+          "opts": [
+            {
+              "key": "care",
+              "text": "Nurses can care for sick people.",
+              "audio": "audio/sentences/k1-job-doctor/a-nurses-can-care-for-sick-people-526fe4.mp3"
+            },
+            {
+              "key": "hospital",
+              "text": "This is a hospital.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which job do you like?",
+          "a": [
+            "I like a doctor."
+          ],
+          "key": [
+            "doctor"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢哪种职业？",
+          "a_cn": [
+            "我喜欢医生。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-which-job-do-you-like-9874ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-i-like-a-doctor-aa1231.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-doctor-c4b5ef.mp3"
     },
     {
-     "q": "What can doctors do?",
-     "a": [
-      "Doctors can help us to be healthy."
-     ],
-     "key": [
-      "healthy"
-     ],
-     "q_cn": "医生能做什么？",
-     "a_cn": [
-      "医生能帮我们变健康。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-can-doctors-do-984e29.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-doctors-can-help-us-to-be-healthy-8ee18c.mp3"
-     ],
-     "image": "images/k1-doctor-help.webp"
+      "word": "nurse",
+      "cn": "护士",
+      "tag": "word",
+      "image": "images/k1-job-nurse.webp",
+      "dialog": [
+        {
+          "q": "What's this job?",
+          "a": [
+            "This is a nurse."
+          ],
+          "key": [
+            "nurse"
+          ],
+          "q_cn": "这是什么职业？",
+          "a_cn": [
+            "这是护士。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-job-078604.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-this-is-a-nurse-939568.mp3"
+          ],
+          "opts": [
+            {
+              "key": "doctor",
+              "text": "This is a doctor.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-doctor-7c8317.mp3"
+            },
+            {
+              "key": "hospital",
+              "text": "This is a hospital.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can nurses do?",
+          "a": [
+            "Nurses can care for sick people."
+          ],
+          "key": [
+            "care"
+          ],
+          "q_cn": "护士能做什么？",
+          "a_cn": [
+            "护士能照顾生病的人。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-can-nurses-do-868027.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-nurses-can-care-for-sick-people-526fe4.mp3"
+          ],
+          "image": "images/k1-nurse-care.webp",
+          "opts": [
+            {
+              "key": "healthy",
+              "text": "Doctors can help us to be healthy.",
+              "audio": "audio/sentences/k1-job-doctor/a-doctors-can-help-us-to-be-healthy-8ee18c.mp3"
+            },
+            {
+              "key": "hospital",
+              "text": "This is a hospital.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-nurse-3c0d1c.mp3"
     },
     {
-     "q": "Which job do you like?",
-     "a": [
-      "I like a doctor."
-     ],
-     "key": [
-      "doctor"
-     ],
-     "practice": false,
-     "q_cn": "你喜欢哪种职业？",
-     "a_cn": [
-      "我喜欢医生。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-which-job-do-you-like-9874ae.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-i-like-a-doctor-aa1231.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-doctor-c4b5ef.mp3"
-  },
-  {
-   "word": "nurse",
-   "cn": "护士",
-   "tag": "word",
-   "image": "images/k1-job-nurse.webp",
-   "dialog": [
-    {
-     "q": "What's this job?",
-     "a": [
-      "This is a nurse."
-     ],
-     "key": [
-      "nurse"
-     ],
-     "q_cn": "这是什么职业？",
-     "a_cn": [
-      "这是护士。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-job-078604.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-this-is-a-nurse-939568.mp3"
-     ]
+      "word": "hospital",
+      "cn": "医院",
+      "tag": "word",
+      "image": "images/k1-job-hospital.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "This is a hospital."
+          ],
+          "key": [
+            "hospital"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是医院。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nurse",
+              "text": "This is a nurse.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-nurse-939568.mp3"
+            },
+            {
+              "key": "doctor",
+              "text": "This is a doctor.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-a-doctor-7c8317.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-hospital-ddbc60.mp3"
     },
     {
-     "q": "What can nurses do?",
-     "a": [
-      "Nurses can care for sick people."
-     ],
-     "key": [
-      "care"
-     ],
-     "q_cn": "护士能做什么？",
-     "a_cn": [
-      "护士能照顾生病的人。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-can-nurses-do-868027.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-nurses-can-care-for-sick-people-526fe4.mp3"
-     ],
-     "image": "images/k1-nurse-care.webp"
+      "word": "ambulance",
+      "cn": "救护车",
+      "tag": "word",
+      "image": "images/k1-job-ambulance.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "This is an ambulance."
+          ],
+          "key": [
+            "ambulance"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是救护车。"
+          ],
+          "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k1-job-doctor/a-this-is-an-ambulance-8f46da.mp3"
+          ],
+          "opts": [
+            {
+              "key": "artist",
+              "text": "This is an artist.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-an-artist-1c8d45.mp3"
+            },
+            {
+              "key": "airport",
+              "text": "This is an airport.",
+              "audio": "audio/sentences/k1-job-doctor/a-this-is-an-airport-40458d.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-ambulance-8d6cad.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-nurse-3c0d1c.mp3"
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "airport": "audio/words/airport.mp3",
+    "ambulance": "audio/words/ambulance.mp3",
+    "an": "audio/words/an.mp3",
+    "artist": "audio/words/artist.mp3",
+    "be": "audio/words/be.mp3",
+    "can": "audio/words/can.mp3",
+    "care": "audio/words/care.mp3",
+    "do": "audio/words/do.mp3",
+    "doctor": "audio/words/doctor.mp3",
+    "doctors": "audio/words/doctors.mp3",
+    "for": "audio/words/for.mp3",
+    "healthy": "audio/words/healthy.mp3",
+    "help": "audio/words/help.mp3",
+    "hospital": "audio/words/hospital.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "job": "audio/words/job.mp3",
+    "like": "audio/words/like.mp3",
+    "nurse": "audio/words/nurse.mp3",
+    "nurses": "audio/words/nurses.mp3",
+    "people": "audio/words/people.mp3",
+    "sick": "audio/words/sick.mp3",
+    "this": "audio/words/this.mp3",
+    "to": "audio/words/to.mp3",
+    "us": "audio/words/us.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "hospital",
-   "cn": "医院",
-   "tag": "word",
-   "image": "images/k1-job-hospital.webp",
-   "dialog": [
-    {
-     "q": "What's this?",
-     "a": [
-      "This is a hospital."
-     ],
-     "key": [
-      "hospital"
-     ],
-     "q_cn": "这是什么？",
-     "a_cn": [
-      "这是医院。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-9a86f3.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-this-is-a-hospital-82e78f.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-hospital-ddbc60.mp3"
-  },
-  {
-   "word": "ambulance",
-   "cn": "救护车",
-   "tag": "word",
-   "image": "images/k1-job-ambulance.webp",
-   "dialog": [
-    {
-     "q": "What's this?",
-     "a": [
-      "This is an ambulance."
-     ],
-     "key": [
-      "ambulance"
-     ],
-     "q_cn": "这是什么？",
-     "a_cn": [
-      "这是救护车。"
-     ],
-     "q_audio": "audio/sentences/k1-job-doctor/q-what-s-this-9a86f3.mp3",
-     "a_audio": [
-      "audio/sentences/k1-job-doctor/a-this-is-an-ambulance-8f46da.mp3"
-     ]
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-job-doctor/q-which-one-is-ambulance-8d6cad.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "ambulance": "audio/words/ambulance.mp3",
-  "an": "audio/words/an.mp3",
-  "be": "audio/words/be.mp3",
-  "can": "audio/words/can.mp3",
-  "care": "audio/words/care.mp3",
-  "do": "audio/words/do.mp3",
-  "doctor": "audio/words/doctor.mp3",
-  "doctors": "audio/words/doctors.mp3",
-  "for": "audio/words/for.mp3",
-  "healthy": "audio/words/healthy.mp3",
-  "help": "audio/words/help.mp3",
-  "hospital": "audio/words/hospital.mp3",
-  "i": "audio/words/i.mp3",
-  "is": "audio/words/is.mp3",
-  "job": "audio/words/job.mp3",
-  "like": "audio/words/like.mp3",
-  "nurse": "audio/words/nurse.mp3",
-  "nurses": "audio/words/nurses.mp3",
-  "people": "audio/words/people.mp3",
-  "sick": "audio/words/sick.mp3",
-  "this": "audio/words/this.mp3",
-  "to": "audio/words/to.mp3",
-  "us": "audio/words/us.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "which": "audio/words/which.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

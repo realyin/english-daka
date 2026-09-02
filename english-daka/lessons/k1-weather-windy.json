@@ -1,172 +1,245 @@
 {
- "seq": 804,
- "level": "K1",
- "group": "天气 Weather",
- "badge": "风暴",
- "cover": "images/k1-wx-windy.webp",
- "title": "Weather · Windy & Stormy 刮风和雷雨",
- "cards": [
-  {
-   "word": "windy",
-   "cn": "刮风天",
-   "tag": "word",
-   "image": "images/k1-wx-windy.webp",
-   "dialog": [
+  "seq": 804,
+  "level": "K1",
+  "group": "天气 Weather",
+  "badge": "风暴",
+  "cover": "images/k1-wx-windy.webp",
+  "title": "Weather · Windy & Stormy 刮风和雷雨",
+  "cards": [
     {
-     "q": "What's the weather like?",
-     "a": [
-      "It's a windy day."
-     ],
-     "key": [
-      "windy"
-     ],
-     "q_cn": "天气怎么样？",
-     "a_cn": [
-      "是刮风天。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-what-s-the-weather-like-84a760.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
-     ]
+      "word": "windy",
+      "cn": "刮风天",
+      "tag": "word",
+      "image": "images/k1-wx-windy.webp",
+      "dialog": [
+        {
+          "q": "What's the weather like?",
+          "a": [
+            "It's a windy day."
+          ],
+          "key": [
+            "windy"
+          ],
+          "q_cn": "天气怎么样？",
+          "a_cn": [
+            "是刮风天。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-what-s-the-weather-like-84a760.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+          ],
+          "opts": [
+            {
+              "key": "stormy",
+              "text": "It's a stormy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-stormy-day-a54799.mp3"
+            },
+            {
+              "key": "sunny",
+              "text": "It's a sunny day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-sunny-day-03c74a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can you do on windy days?",
+          "a": [
+            "I can fly a kite on windy days."
+          ],
+          "key": [
+            "kite"
+          ],
+          "q_cn": "刮风天可以做什么？",
+          "a_cn": [
+            "刮风天我可以放风筝。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-what-can-you-do-on-windy-days-d1fea6.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
+          ],
+          "image": "images/k1-windy-kite.webp",
+          "opts": [
+            {
+              "key": "house",
+              "text": "I can play in the house on stormy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-can-play-in-the-house-on-stormy-da-915872.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "I feel hot on stormy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you feel on windy days?",
+          "a": [
+            "I feel cool on windy days."
+          ],
+          "key": [
+            "cool"
+          ],
+          "q_cn": "刮风天你觉得怎么样？",
+          "a_cn": [
+            "刮风天我觉得凉爽。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-how-do-you-feel-on-windy-days-598ba4.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
+          ],
+          "image": "images/k1-windy-cool.webp",
+          "opts": [
+            {
+              "key": "hot",
+              "text": "I feel hot on stormy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+            },
+            {
+              "key": "windy",
+              "text": "It's a windy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-windy/q-which-one-is-windy-78f74e.mp3"
     },
     {
-     "q": "What can you do on windy days?",
-     "a": [
-      "I can fly a kite on windy days."
-     ],
-     "key": [
-      "kite"
-     ],
-     "q_cn": "刮风天可以做什么？",
-     "a_cn": [
-      "刮风天我可以放风筝。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-what-can-you-do-on-windy-days-d1fea6.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
-     ],
-     "image": "images/k1-windy-kite.webp"
-    },
-    {
-     "q": "How do you feel on windy days?",
-     "a": [
-      "I feel cool on windy days."
-     ],
-     "key": [
-      "cool"
-     ],
-     "q_cn": "刮风天你觉得怎么样？",
-     "a_cn": [
-      "刮风天我觉得凉爽。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-how-do-you-feel-on-windy-days-598ba4.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
-     ],
-     "image": "images/k1-windy-cool.webp"
+      "word": "stormy",
+      "cn": "雷雨天",
+      "tag": "word",
+      "image": "images/k1-wx-stormy.webp",
+      "dialog": [
+        {
+          "q": "What's the weather like?",
+          "a": [
+            "It's a stormy day."
+          ],
+          "key": [
+            "stormy"
+          ],
+          "q_cn": "天气怎么样？",
+          "a_cn": [
+            "是雷雨天。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-what-s-the-weather-like-84a760.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-it-s-a-stormy-day-a54799.mp3"
+          ],
+          "opts": [
+            {
+              "key": "windy",
+              "text": "It's a windy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+            },
+            {
+              "key": "sunny",
+              "text": "It's a sunny day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-sunny-day-03c74a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can you do on stormy days?",
+          "a": [
+            "I can play in the house on stormy days."
+          ],
+          "key": [
+            "house"
+          ],
+          "q_cn": "雷雨天可以做什么？",
+          "a_cn": [
+            "雷雨天我可以在家里玩。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-what-can-you-do-on-stormy-days-1330eb.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-i-can-play-in-the-house-on-stormy-da-915872.mp3"
+          ],
+          "image": "images/k1-stormy-indoor.webp",
+          "opts": [
+            {
+              "key": "kite",
+              "text": "I can fly a kite on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-can-fly-a-kite-on-windy-days-b506cd.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "I feel hot on stormy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you feel on stormy days?",
+          "a": [
+            "I feel hot on stormy days."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "雷雨天你觉得怎么样？",
+          "a_cn": [
+            "雷雨天我觉得热。"
+          ],
+          "q_audio": "audio/sentences/k1-weather-windy/q-how-do-you-feel-on-stormy-days-864d5e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
+          ],
+          "image": "images/k1-stormy-hot.webp",
+          "opts": [
+            {
+              "key": "cool",
+              "text": "I feel cool on windy days.",
+              "audio": "audio/sentences/k1-weather-windy/a-i-feel-cool-on-windy-days-b90429.mp3"
+            },
+            {
+              "key": "windy",
+              "text": "It's a windy day.",
+              "audio": "audio/sentences/k1-weather-windy/a-it-s-a-windy-day-898546.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-weather-windy/q-which-one-is-stormy-0994dc.mp3"
     }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-windy/q-which-one-is-windy-78f74e.mp3"
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "can": "audio/words/can.mp3",
+    "cool": "audio/words/cool.mp3",
+    "day": "audio/words/day.mp3",
+    "days": "audio/words/days.mp3",
+    "do": "audio/words/do.mp3",
+    "feel": "audio/words/feel.mp3",
+    "fly": "audio/words/fly.mp3",
+    "hot": "audio/words/hot.mp3",
+    "house": "audio/words/house.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "kite": "audio/words/kite.mp3",
+    "like": "audio/words/like.mp3",
+    "on": "audio/words/on.mp3",
+    "play": "audio/words/play.mp3",
+    "stormy": "audio/words/stormy.mp3",
+    "sunny": "audio/words/sunny.mp3",
+    "the": "audio/words/the.mp3",
+    "weather": "audio/words/weather.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "windy": "audio/words/windy.mp3",
+    "you": "audio/words/you.mp3"
   },
-  {
-   "word": "stormy",
-   "cn": "雷雨天",
-   "tag": "word",
-   "image": "images/k1-wx-stormy.webp",
-   "dialog": [
-    {
-     "q": "What's the weather like?",
-     "a": [
-      "It's a stormy day."
-     ],
-     "key": [
-      "stormy"
-     ],
-     "q_cn": "天气怎么样？",
-     "a_cn": [
-      "是雷雨天。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-what-s-the-weather-like-84a760.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-it-s-a-stormy-day-a54799.mp3"
-     ]
-    },
-    {
-     "q": "What can you do on stormy days?",
-     "a": [
-      "I can play in the house on stormy days."
-     ],
-     "key": [
-      "house"
-     ],
-     "q_cn": "雷雨天可以做什么？",
-     "a_cn": [
-      "雷雨天我可以在家里玩。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-what-can-you-do-on-stormy-days-1330eb.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-i-can-play-in-the-house-on-stormy-da-915872.mp3"
-     ],
-     "image": "images/k1-stormy-indoor.webp"
-    },
-    {
-     "q": "How do you feel on stormy days?",
-     "a": [
-      "I feel hot on stormy days."
-     ],
-     "key": [
-      "hot"
-     ],
-     "q_cn": "雷雨天你觉得怎么样？",
-     "a_cn": [
-      "雷雨天我觉得热。"
-     ],
-     "q_audio": "audio/sentences/k1-weather-windy/q-how-do-you-feel-on-stormy-days-864d5e.mp3",
-     "a_audio": [
-      "audio/sentences/k1-weather-windy/a-i-feel-hot-on-stormy-days-d9db21.mp3"
-     ],
-     "image": "images/k1-stormy-hot.webp"
-    }
-   ],
-   "quiz_audio": "audio/sentences/k1-weather-windy/q-which-one-is-stormy-0994dc.mp3"
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   }
- ],
- "word_audio": {
-  "a": "audio/words/a.mp3",
-  "can": "audio/words/can.mp3",
-  "cool": "audio/words/cool.mp3",
-  "day": "audio/words/day.mp3",
-  "days": "audio/words/days.mp3",
-  "do": "audio/words/do.mp3",
-  "feel": "audio/words/feel.mp3",
-  "fly": "audio/words/fly.mp3",
-  "hot": "audio/words/hot.mp3",
-  "house": "audio/words/house.mp3",
-  "how": "audio/words/how.mp3",
-  "i": "audio/words/i.mp3",
-  "in": "audio/words/in.mp3",
-  "it's": "audio/words/it-s.mp3",
-  "kite": "audio/words/kite.mp3",
-  "like": "audio/words/like.mp3",
-  "on": "audio/words/on.mp3",
-  "play": "audio/words/play.mp3",
-  "stormy": "audio/words/stormy.mp3",
-  "the": "audio/words/the.mp3",
-  "weather": "audio/words/weather.mp3",
-  "what": "audio/words/what.mp3",
-  "what's": "audio/words/what-s.mp3",
-  "windy": "audio/words/windy.mp3",
-  "you": "audio/words/you.mp3"
- },
- "praise_audio": {
-  "Great job!": "audio/praise/great-job.mp3",
-  "Well done!": "audio/praise/well-done.mp3",
-  "Awesome!": "audio/praise/awesome.mp3",
-  "Excellent!": "audio/praise/excellent.mp3",
-  "Perfect!": "audio/praise/perfect.mp3",
-  "Try again!": "audio/praise/try-again.mp3",
-  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
- }
 }

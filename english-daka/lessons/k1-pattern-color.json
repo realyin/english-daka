@@ -34,6 +34,18 @@
           "q_audio": "audio/sentences/k1-pattern-color/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-color/a-the-pattern-is-red-yellow-blue-red-y-9f9580.mp3"
+          ],
+          "opts": [
+            {
+              "key": "yellow",
+              "text": "The pattern is yellow green purple, yellow green purple.",
+              "audio": "audio/sentences/k1-pattern-color/a-the-pattern-is-yellow-green-purple-y-6d1374.mp3"
+            },
+            {
+              "key": "yellow",
+              "text": "Yellow comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-yellow-comes-next-06e03a.mp3"
+            }
           ]
         },
         {
@@ -51,6 +63,18 @@
           "q_audio": "audio/sentences/k1-pattern-color/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-color/a-red-comes-next-c68550.mp3"
+          ],
+          "opts": [
+            {
+              "key": "yellow",
+              "text": "Yellow comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-yellow-comes-next-06e03a.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-four-comes-next-7fd9f2.mp3"
+            }
           ]
         }
       ],
@@ -85,6 +109,18 @@
           "q_audio": "audio/sentences/k1-pattern-color/q-what-s-this-pattern-355a28.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-color/a-the-pattern-is-yellow-green-purple-y-6d1374.mp3"
+          ],
+          "opts": [
+            {
+              "key": "red",
+              "text": "The pattern is red yellow blue, red yellow blue.",
+              "audio": "audio/sentences/k1-pattern-color/a-the-pattern-is-red-yellow-blue-red-y-9f9580.mp3"
+            },
+            {
+              "key": "red",
+              "text": "Red comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-red-comes-next-c68550.mp3"
+            }
           ]
         },
         {
@@ -102,6 +138,18 @@
           "q_audio": "audio/sentences/k1-pattern-color/q-what-comes-next-f91e92.mp3",
           "a_audio": [
             "audio/sentences/k1-pattern-color/a-yellow-comes-next-06e03a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "red",
+              "text": "Red comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-red-comes-next-c68550.mp3"
+            },
+            {
+              "key": "four",
+              "text": "Four comes next.",
+              "audio": "audio/sentences/k1-pattern-color/a-four-comes-next-7fd9f2.mp3"
+            }
           ]
         }
       ],
@@ -111,6 +159,7 @@
   "word_audio": {
     "blue": "audio/words/blue.mp3",
     "comes": "audio/words/comes.mp3",
+    "four": "audio/words/four.mp3",
     "green": "audio/words/green.mp3",
     "is": "audio/words/is.mp3",
     "next": "audio/words/next.mp3",
