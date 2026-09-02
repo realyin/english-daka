@@ -190,3 +190,42 @@ Children's picture book illustration, soft watercolor style with clean rounded o
 ```bash
 python3 ingest_images.py generated-images/字母操重出prompt
 ```
+
+---
+
+# 第二批结果 · 4 张全部入库，26 张字母操收工
+
+`c` `d` `f` `p` 都已覆盖入库。**25 个文件（I/L 共用一张）身体全部正常**，
+断肢、糊肢、小臂悬空、拧脖子、少腿少脚——一例不剩。
+
+- **d** ✅ 竖笔落在画面右边、圆肚子在左边，和 `b` 正好镜像，b/d 这一对现在教得对了
+- **c** ✅ 开口朝右，不再是 `Ɔ`
+- **f** ✅ 钩和横都朝右
+- **p** ⚠️ 身体完美（只举一条胳膊、另一条垂着，两次没做到的这条这次做到了），
+  但**那个圈还是没合上**——胳膊从头顶绕过去，手停在半空，成了个拱形而不是 P 的肚子
+
+## 关于 p：我没再要第三轮
+
+原来线上那张是**少一条胳膊**的，新的这张身体挑不出毛病，只是姿势像个拱门。
+先上着——「看着恐怖」这个问题已经解决了，为一个圈再滚一轮不划算。
+
+真要较这个真，下面这条换了思路：不再描述「手绕回来贴锁骨」这种抽象动作，
+改用**叉腰**——这是图像模型最画得出的闭合手臂环，一叉腰胳膊和身体之间必然空出一个洞。
+代价是圈落在腰上（更像小写 p），不在肩膀那么高。要试就试，不试也不影响使用。
+
+### 14.（可选）`k1-pose-p` — 大写 P，改用叉腰做那个圈
+
+**存为**：`k1-pose-p.png`
+
+```
+Children's picture book illustration, soft watercolor style with clean rounded outlines, warm bright cheerful colors, plain soft pale-yellow watercolor wash background, single clear subject centered in frame, vertical 3:4 composition, friendly and cute, suitable for a 5-year-old. Exactly one cheerful young child standing upright and squarely facing the viewer, front view only, face looking straight at the viewer, neck straight and untwisted, shoulders square to the camera, torso upright, standing tall on two feet with the legs straight and together. Normal human anatomy: exactly two arms, two hands, two legs and two feet, both arms present and both clearly visible, every limb growing from the correct shoulder or hip and fully connected, clear natural elbows and knees, normal child limb proportions. The child acts out a letter with one arm only: the arm on the RIGHT-HAND SIDE OF THE PICTURE is placed akimbo with that hand planted firmly on the hip and the elbow pushed far out to the side, so that the upper arm, the forearm and the side of the body enclose a clear empty round hole — this closed loop is the bowl of a capital letter P; the arm on the LEFT-HAND SIDE OF THE PICTURE hangs straight down close to the body with the whole arm from shoulder to hand clearly visible. The tall straight body is the stem of the P and the arm loop is the bowl. Full body visible from head to toe, the empty hole inside the bent arm clearly visible against the background. Playful gymnastics pose, happy expression. IMPORTANT: exactly ONE hand is on the hip, the other arm hangs down; the bent arm must fully close a hole, the hand must actually touch the hip. NOT both hands on hips, NOT both arms raised, NO arms above the head, NO arm reaching over the head, NO open unclosed arm. NO side view, NO profile view, NO twisted neck, NO missing arm, NO hand attached to an elbow, NO floating or detached limbs, NO arm ending without a hand. NO speech bubbles, NO labels, NO borders, NO frames, NO written words, NO letters, NO numbers, not scary, not cluttered.
+```
+
+## 结论：这套 prompt 的规矩，以后画人一律照抄
+
+两批 13 张跑下来，站得住的就三条：
+
+1. **正面站立，不许侧身/扭腰/趴地**——上一批 6 张坏图，6 张全是侧身姿势，无一例外
+2. **闲着的那条胳膊必须明写**「垂在身侧、从肩到手完整可见」——断肢、悬空小臂全出在这
+3. **左右要钉在画面坐标上**（`the RIGHT-HAND SIDE OF THE PICTURE`），
+   说「孩子的左手」模型基本不认——b/d 那次就是栽在这
