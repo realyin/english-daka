@@ -1,0 +1,244 @@
+{
+  "seq": 501,
+  "level": "K1",
+  "group": "身体 Body",
+  "badge": "eyes",
+  "cover": "images/k1-body-eyes.webp",
+  "title": "Body · Eyes & Ears 眼睛和耳朵",
+  "cards": [
+    {
+      "word": "eyes",
+      "cn": "眼睛",
+      "tag": "word",
+      "image": "images/k1-body-eyes.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are eyes."
+          ],
+          "key": [
+            "eyes"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是眼睛。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-these-are-eyes-db3eb0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ears",
+              "text": "These are ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-these-are-ears-344756.mp3"
+            },
+            {
+              "key": "arms",
+              "text": "These are arms.",
+              "audio": "audio/sentences/k1-body-eyes/a-these-are-arms-6580c9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many eyes do you have?",
+          "a": [
+            "I have two eyes."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几只眼睛？",
+          "a_cn": [
+            "我有两只眼睛。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-how-many-eyes-do-you-have-f4da13.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-i-have-two-eyes-39f73b.mp3"
+          ],
+          "image": "images/k1-two-eyes.webp",
+          "opts": [
+            {
+              "key": "eleven",
+              "text": "I have eleven eyes.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-eleven-eyes-d9ae22.mp3"
+            },
+            {
+              "key": "four",
+              "text": "I have four eyes.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-four-eyes-0339ee.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can you do with your eyes?",
+          "a": [
+            "I can see with my eyes."
+          ],
+          "key": [
+            "see"
+          ],
+          "q_cn": "你能用眼睛做什么？",
+          "a_cn": [
+            "我能用眼睛看。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-what-can-you-do-with-your-eyes-b2277a.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-i-can-see-with-my-eyes-9ee7f1.mp3"
+          ],
+          "image": "images/k1-see-with-eyes.webp",
+          "opts": [
+            {
+              "key": "hear",
+              "text": "I can hear with my ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-can-hear-with-my-ears-8215ff.mp3"
+            },
+            {
+              "key": "two",
+              "text": "I have two ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-two-ears-d159fb.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-eyes/q-which-one-is-eyes-20db06.mp3"
+    },
+    {
+      "word": "ears",
+      "cn": "耳朵",
+      "tag": "word",
+      "image": "images/k1-body-ears.webp",
+      "dialog": [
+        {
+          "q": "What are these body parts?",
+          "a": [
+            "These are ears."
+          ],
+          "key": [
+            "ears"
+          ],
+          "q_cn": "这是身体的什么部位？",
+          "a_cn": [
+            "这是耳朵。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-what-are-these-body-parts-5b86ae.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-these-are-ears-344756.mp3"
+          ],
+          "opts": [
+            {
+              "key": "eyes",
+              "text": "These are eyes.",
+              "audio": "audio/sentences/k1-body-eyes/a-these-are-eyes-db3eb0.mp3"
+            },
+            {
+              "key": "arms",
+              "text": "These are arms.",
+              "audio": "audio/sentences/k1-body-eyes/a-these-are-arms-6580c9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How many ears do you have?",
+          "a": [
+            "I have two ears."
+          ],
+          "key": [
+            "two"
+          ],
+          "q_cn": "你有几只耳朵？",
+          "a_cn": [
+            "我有两只耳朵。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-how-many-ears-do-you-have-a0095d.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-i-have-two-ears-d159fb.mp3"
+          ],
+          "image": "images/k1-two-ears.webp",
+          "opts": [
+            {
+              "key": "three",
+              "text": "I have three ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-three-ears-99cd29.mp3"
+            },
+            {
+              "key": "twelve",
+              "text": "I have twelve ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-twelve-ears-3e2d28.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can you do with your ears?",
+          "a": [
+            "I can hear with my ears."
+          ],
+          "key": [
+            "hear"
+          ],
+          "q_cn": "你能做什么？",
+          "a_cn": [
+            "我能用耳朵听。"
+          ],
+          "q_audio": "audio/sentences/k1-body-eyes/q-what-can-you-do-with-your-ears-4eab80.mp3",
+          "a_audio": [
+            "audio/sentences/k1-body-eyes/a-i-can-hear-with-my-ears-8215ff.mp3"
+          ],
+          "image": "images/k1-hear-with-ears.webp",
+          "opts": [
+            {
+              "key": "see",
+              "text": "I can see with my eyes.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-can-see-with-my-eyes-9ee7f1.mp3"
+            },
+            {
+              "key": "two",
+              "text": "I have two ears.",
+              "audio": "audio/sentences/k1-body-eyes/a-i-have-two-ears-d159fb.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-body-eyes/q-which-one-is-ears-e69897.mp3"
+    }
+  ],
+  "word_audio": {
+    "are": "audio/words/are.mp3",
+    "arms": "audio/words/arms.mp3",
+    "body": "audio/words/body.mp3",
+    "can": "audio/words/can.mp3",
+    "do": "audio/words/do.mp3",
+    "ears": "audio/words/ears.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "eyes": "audio/words/eyes.mp3",
+    "four": "audio/words/four.mp3",
+    "have": "audio/words/have.mp3",
+    "hear": "audio/words/hear.mp3",
+    "how": "audio/words/how.mp3",
+    "i": "audio/words/i.mp3",
+    "many": "audio/words/many.mp3",
+    "my": "audio/words/my.mp3",
+    "parts": "audio/words/parts.mp3",
+    "see": "audio/words/see.mp3",
+    "these": "audio/words/these.mp3",
+    "three": "audio/words/three.mp3",
+    "twelve": "audio/words/twelve.mp3",
+    "two": "audio/words/two.mp3",
+    "what": "audio/words/what.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3",
+    "your": "audio/words/your.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

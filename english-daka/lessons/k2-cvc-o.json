@@ -1,7 +1,9 @@
 {
   "seq": 303,
+  "level": "K2",
   "group": "拼读 Phonics",
   "badge": "o",
+  "cover": "images/cvc-top.webp",
   "title": "Short o · 短元音 o 拼读",
   "cards": [
     {
@@ -55,6 +57,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hot",
+              "text": "It's hot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+            },
+            {
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: t — op?",
+          "a": [
+            "/t/ /op/, top."
+          ],
+          "key": [
+            "top"
+          ],
+          "q_cn": "t 和 op 连起来怎么读？",
+          "a_cn": [
+            "/t/ /op/，top。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-t-op-0d41c5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+          ],
+          "opts": [
+            {
+              "key": "job",
+              "text": "/j/ /ob/, job.",
+              "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+            },
+            {
+              "key": "dot",
+              "text": "/d/ /ot/, dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-ot-dot-377816.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does top begin with?",
+          "a": [
+            "Top begins with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "top 的开头是什么音？",
+          "a_cn": [
+            "top 开头是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-top-begin-with-9a60be.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-t-81e556.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/o/",
+              "text": "Top begins with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-o-4830fc.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Top begins with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-the-sound-g-c4c9ec.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does top begin with?",
+          "a": [
+            "Top begins with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "top 以哪个字母开头？",
+          "a_cn": [
+            "top 以字母 T 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-top-begin-with-66ae16.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-begins-with-letter-t-e692f9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "o",
+              "text": "Top begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-o-16dc36.mp3"
+            },
+            {
+              "key": "p",
+              "text": "Top begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-begins-with-letter-p-aeb2a6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does top have in the middle?",
+          "a": [
+            "Top has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "top 中间是什么音？",
+          "a_cn": [
+            "top 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-top-have-in-the-midd-2f9789.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-has-the-sound-o-in-the-middle-2d28b7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Top has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-d-in-the-middle-ded792.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Top has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-the-sound-l-in-the-middle-f76c6e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does top have in the middle?",
+          "a": [
+            "Top has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "top 中间是哪个字母？",
+          "a_cn": [
+            "top 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-top-have-in-the-mi-1b6222.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-has-letter-o-in-the-middle-ff8317.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Top has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-letter-b-in-the-middle-fd40f2.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Top has letter H in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-has-letter-h-in-the-middle-7f6b23.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does top end with?",
+          "a": [
+            "Top ends with the sound /p/."
+          ],
+          "key": [
+            "/p/"
+          ],
+          "q_cn": "top 的结尾是什么音？",
+          "a_cn": [
+            "top 结尾是 /p/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-top-end-with-4e2bd5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-p-0f590b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Top ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-d-672824.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Top ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-the-sound-l-917580.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does top end with?",
+          "a": [
+            "Top ends with letter P."
+          ],
+          "key": [
+            "p"
+          ],
+          "q_cn": "top 以哪个字母结尾？",
+          "a_cn": [
+            "top 以字母 P 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-top-end-with-cce40b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-top-ends-with-letter-p-4f56fd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Top ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-l-51e0fd.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Top ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-top-ends-with-letter-g-0748fb.mp3"
+            }
           ]
         }
       ],
@@ -112,6 +329,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "It's hot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: d — ot?",
+          "a": [
+            "/d/ /ot/, dot."
+          ],
+          "key": [
+            "dot"
+          ],
+          "q_cn": "d 和 ot 连起来怎么读？",
+          "a_cn": [
+            "/d/ /ot/，dot。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-d-ot-ba7a99.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-d-ot-dot-377816.mp3"
+          ],
+          "opts": [
+            {
+              "key": "job",
+              "text": "/j/ /ob/, job.",
+              "audio": "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+            },
+            {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dot begin with?",
+          "a": [
+            "Dot begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dot 的开头是什么音？",
+          "a_cn": [
+            "dot 开头是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dot-begin-with-8b6fd8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-d-e7d023.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Dot begins with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-b-f6d8fe.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Dot begins with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-the-sound-h-d8f6cf.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dot begin with?",
+          "a": [
+            "Dot begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dot 以哪个字母开头？",
+          "a_cn": [
+            "dot 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dot-begin-with-ec8612.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-d-bf887a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "o",
+              "text": "Dot begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-o-a690f3.mp3"
+            },
+            {
+              "key": "p",
+              "text": "Dot begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-begins-with-letter-p-af2570.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dot have in the middle?",
+          "a": [
+            "Dot has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "dot 中间是什么音？",
+          "a_cn": [
+            "dot 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dot-have-in-the-midd-72b80a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-has-the-sound-o-in-the-middle-7169a8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/p/",
+              "text": "Dot has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-the-sound-p-in-the-middle-b0d57a.mp3"
+            },
+            {
+              "key": "/j/",
+              "text": "Dot has the sound /j/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-the-sound-j-in-the-middle-1cf7d2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dot have in the middle?",
+          "a": [
+            "Dot has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "dot 中间是哪个字母？",
+          "a_cn": [
+            "dot 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dot-have-in-the-mi-59ee97.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-has-letter-o-in-the-middle-122f75.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Dot has letter H in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-letter-h-in-the-middle-3c814a.mp3"
+            },
+            {
+              "key": "t",
+              "text": "Dot has letter T in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-has-letter-t-in-the-middle-bd8b8b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dot end with?",
+          "a": [
+            "Dot ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "dot 的结尾是什么音？",
+          "a_cn": [
+            "dot 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dot-end-with-2c3b7f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-t-a3e315.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Dot ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-d-ddab5f.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Dot ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-the-sound-l-d99b0d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dot end with?",
+          "a": [
+            "Dot ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "dot 以哪个字母结尾？",
+          "a_cn": [
+            "dot 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dot-end-with-25b615.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-t-af5523.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Dot ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-l-db5fd4.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Dot ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-dot-ends-with-letter-g-d2d299.mp3"
+            }
           ]
         }
       ],
@@ -169,6 +601,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+          ],
+          "opts": [
+            {
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
+            },
+            {
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: g — ot?",
+          "a": [
+            "/g/ /ot/, got."
+          ],
+          "key": [
+            "got"
+          ],
+          "q_cn": "g 和 ot 连起来怎么读？",
+          "a_cn": [
+            "/g/ /ot/，got。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-g-ot-ca5b72.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-g-ot-got-433187.mp3"
+          ],
+          "opts": [
+            {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            },
+            {
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does got begin with?",
+          "a": [
+            "Got begins with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "got 的开头是什么音？",
+          "a_cn": [
+            "got 开头是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-got-begin-with-dcda31.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-g-5a1869.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Got begins with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-l-eea6f6.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Got begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-the-sound-p-b180bc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does got begin with?",
+          "a": [
+            "Got begins with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "got 以哪个字母开头？",
+          "a_cn": [
+            "got 以字母 G 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-got-begin-with-e8be74.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-begins-with-letter-g-d961ce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "j",
+              "text": "Got begins with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-j-fad7f9.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Got begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-begins-with-letter-o-c9076c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does got have in the middle?",
+          "a": [
+            "Got has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "got 中间是什么音？",
+          "a_cn": [
+            "got 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-got-have-in-the-midd-4f0fcb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-has-the-sound-o-in-the-middle-d79ca6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Got has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-d-in-the-middle-f902c2.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Got has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-the-sound-l-in-the-middle-f1103a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does got have in the middle?",
+          "a": [
+            "Got has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "got 中间是哪个字母？",
+          "a_cn": [
+            "got 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-got-have-in-the-mi-fe55fd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-has-letter-o-in-the-middle-093f83.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "Got has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-p-in-the-middle-ef67a2.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Got has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-has-letter-d-in-the-middle-fd6b90.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does got end with?",
+          "a": [
+            "Got ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "got 的结尾是什么音？",
+          "a_cn": [
+            "got 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-got-end-with-d0e6f5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-t-ee05f6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/o/",
+              "text": "Got ends with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-o-cd9c1c.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Got ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-the-sound-g-6b7b3c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does got end with?",
+          "a": [
+            "Got ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "got 以哪个字母结尾？",
+          "a_cn": [
+            "got 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-got-end-with-1d2ce3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-got-ends-with-letter-t-0117f7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Got ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-l-9fcab6.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Got ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-got-ends-with-letter-g-aaf5ec.mp3"
+            }
           ]
         }
       ],
@@ -226,6 +873,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-hot-1dda03.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dot",
+              "text": "It's dot.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dot-d297cc.mp3"
+            },
+            {
+              "key": "log",
+              "text": "It's log.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: h — ot?",
+          "a": [
+            "/h/ /ot/, hot."
+          ],
+          "key": [
+            "hot"
+          ],
+          "q_cn": "h 和 ot 连起来怎么读？",
+          "a_cn": [
+            "/h/ /ot/，hot。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-h-ot-727ed2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
+          ],
+          "opts": [
+            {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            },
+            {
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hot begin with?",
+          "a": [
+            "Hot begins with the sound /h/."
+          ],
+          "key": [
+            "/h/"
+          ],
+          "q_cn": "hot 的开头是什么音？",
+          "a_cn": [
+            "hot 开头是 /h/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-hot-begin-with-c3a36d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-h-45dded.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Hot begins with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-d-b42884.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Hot begins with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-the-sound-l-403c56.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hot begin with?",
+          "a": [
+            "Hot begins with letter H."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "hot 以哪个字母开头？",
+          "a_cn": [
+            "hot 以字母 H 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-hot-begin-with-7f7dca.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-h-51ab76.mp3"
+          ],
+          "opts": [
+            {
+              "key": "j",
+              "text": "Hot begins with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-j-d541df.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Hot begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-begins-with-letter-o-e90134.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hot have in the middle?",
+          "a": [
+            "Hot has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "hot 中间是什么音？",
+          "a_cn": [
+            "hot 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-hot-have-in-the-midd-7d647e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-has-the-sound-o-in-the-middle-bf6fdc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/g/",
+              "text": "Hot has the sound /g/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-g-in-the-middle-9be178.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Hot has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-the-sound-t-in-the-middle-ec97ad.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hot have in the middle?",
+          "a": [
+            "Hot has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "hot 中间是哪个字母？",
+          "a_cn": [
+            "hot 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-hot-have-in-the-mi-4ccbc8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-has-letter-o-in-the-middle-6273a3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "Hot has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-p-in-the-middle-bcc602.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Hot has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-has-letter-d-in-the-middle-b6b763.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hot end with?",
+          "a": [
+            "Hot ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "hot 的结尾是什么音？",
+          "a_cn": [
+            "hot 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-hot-end-with-9639ec.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-t-f98824.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/o/",
+              "text": "Hot ends with the sound /o/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-o-73cfc4.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "Hot ends with the sound /g/.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-the-sound-g-2a4b62.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hot end with?",
+          "a": [
+            "Hot ends with letter T."
+          ],
+          "key": [
+            "t"
+          ],
+          "q_cn": "hot 以哪个字母结尾？",
+          "a_cn": [
+            "hot 以字母 T 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-hot-end-with-3b6a16.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-t-c98ecc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Hot ends with letter L.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-l-46d13b.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Hot ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-hot-ends-with-letter-g-b48ddd.mp3"
+            }
           ]
         }
       ],
@@ -283,6 +1145,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "got",
+              "text": "It's got.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+            },
+            {
+              "key": "top",
+              "text": "It's top.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-top-adda4f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: l — og?",
+          "a": [
+            "/l/ /og/, log."
+          ],
+          "key": [
+            "log"
+          ],
+          "q_cn": "l 和 og 连起来怎么读？",
+          "a_cn": [
+            "/l/ /og/，log。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-l-og-0fcec8.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-l-og-log-fb19b2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "/h/ /ot/, hot.",
+              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does log begin with?",
+          "a": [
+            "Log begins with the sound /l/."
+          ],
+          "key": [
+            "/l/"
+          ],
+          "q_cn": "log 的开头是什么音？",
+          "a_cn": [
+            "log 开头是 /l/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-log-begin-with-6a6f61.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-l-70fa23.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Log begins with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-d-d06db1.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Log begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-the-sound-p-03dbfc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does log begin with?",
+          "a": [
+            "Log begins with letter L."
+          ],
+          "key": [
+            "l"
+          ],
+          "q_cn": "log 以哪个字母开头？",
+          "a_cn": [
+            "log 以字母 L 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-log-begin-with-bffa9b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-begins-with-letter-l-6bec0b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Log begins with letter B.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-letter-b-09269b.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Log begins with letter H.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-begins-with-letter-h-210edf.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does log have in the middle?",
+          "a": [
+            "Log has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "log 中间是什么音？",
+          "a_cn": [
+            "log 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-log-have-in-the-midd-0a00b2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-has-the-sound-o-in-the-middle-a2452b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Log has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-d-in-the-middle-3a9d65.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Log has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-the-sound-l-in-the-middle-63b7ba.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does log have in the middle?",
+          "a": [
+            "Log has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "log 中间是哪个字母？",
+          "a_cn": [
+            "log 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-log-have-in-the-mi-9e0426.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-has-letter-o-in-the-middle-a733a1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "Log has letter P in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-p-in-the-middle-23c2a0.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Log has letter D in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-has-letter-d-in-the-middle-1ce102.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does log end with?",
+          "a": [
+            "Log ends with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "log 的结尾是什么音？",
+          "a_cn": [
+            "log 结尾是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-log-end-with-8d7b3f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-g-19cf9d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Log ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-l-a05aa6.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Log ends with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-the-sound-p-789061.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does log end with?",
+          "a": [
+            "Log ends with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "log 以哪个字母结尾？",
+          "a_cn": [
+            "log 以字母 G 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-log-end-with-27dead.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-log-ends-with-letter-g-05b14e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "j",
+              "text": "Log ends with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-j-c6a11f.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Log ends with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-log-ends-with-letter-o-d464b7.mp3"
+            }
           ]
         }
       ],
@@ -340,6 +1417,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "log",
+              "text": "It's log.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-log-dcd1b9.mp3"
+            },
+            {
+              "key": "dog",
+              "text": "It's dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-dog-c6655e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: j — ob?",
+          "a": [
+            "/j/ /ob/, job."
+          ],
+          "key": [
+            "job"
+          ],
+          "q_cn": "j 和 ob 连起来怎么读？",
+          "a_cn": [
+            "/j/ /ob/，job。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-j-ob-61c857.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-j-ob-job-561ae9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            },
+            {
+              "key": "dog",
+              "text": "/d/ /og/, dog.",
+              "audio": "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does job begin with?",
+          "a": [
+            "Job begins with the sound /j/."
+          ],
+          "key": [
+            "/j/"
+          ],
+          "q_cn": "job 的开头是什么音？",
+          "a_cn": [
+            "job 开头是 /j/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-job-begin-with-675bd1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-j-94d62d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/l/",
+              "text": "Job begins with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-l-5e09ba.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Job begins with the sound /p/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-the-sound-p-94edbc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does job begin with?",
+          "a": [
+            "Job begins with letter J."
+          ],
+          "key": [
+            "j"
+          ],
+          "q_cn": "job 以哪个字母开头？",
+          "a_cn": [
+            "job 以字母 J 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-job-begin-with-432519.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-begins-with-letter-j-7d9141.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Job begins with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-letter-g-e8b76f.mp3"
+            },
+            {
+              "key": "o",
+              "text": "Job begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-begins-with-letter-o-baae9d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does job have in the middle?",
+          "a": [
+            "Job has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "job 中间是什么音？",
+          "a_cn": [
+            "job 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-job-have-in-the-midd-451571.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-has-the-sound-o-in-the-middle-829f47.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Job has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-the-sound-d-in-the-middle-118e83.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Job has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-the-sound-l-in-the-middle-db5aaf.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does job have in the middle?",
+          "a": [
+            "Job has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "job 中间是哪个字母？",
+          "a_cn": [
+            "job 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-job-have-in-the-mi-f155a2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-has-letter-o-in-the-middle-1db425.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Job has letter B in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-letter-b-in-the-middle-41df99.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Job has letter H in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-has-letter-h-in-the-middle-fe5d2d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does job end with?",
+          "a": [
+            "Job ends with the sound /b/."
+          ],
+          "key": [
+            "/b/"
+          ],
+          "q_cn": "job 的结尾是什么音？",
+          "a_cn": [
+            "job 结尾是 /b/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-job-end-with-82cc39.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-b-f0dcc2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Job ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-d-cb5423.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Job ends with the sound /l/.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-the-sound-l-cd2e5d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does job end with?",
+          "a": [
+            "Job ends with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "job 以哪个字母结尾？",
+          "a_cn": [
+            "job 以字母 B 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-job-end-with-e2d948.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-job-ends-with-letter-b-76643d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "Job ends with letter G.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-letter-g-1509fd.mp3"
+            },
+            {
+              "key": "j",
+              "text": "Job ends with letter J.",
+              "audio": "audio/sentences/k2-cvc-o/a-job-ends-with-letter-j-1fd9b9.mp3"
+            }
           ]
         }
       ],
@@ -397,6 +1689,221 @@
           "q_audio": "audio/sentences/k2-cvc-o/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-o/a-it-s-dog-c6655e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "job",
+              "text": "It's job.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-job-412b3c.mp3"
+            },
+            {
+              "key": "got",
+              "text": "It's got.",
+              "audio": "audio/sentences/k2-cvc-o/a-it-s-got-3f0029.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: d — og?",
+          "a": [
+            "/d/ /og/, dog."
+          ],
+          "key": [
+            "dog"
+          ],
+          "q_cn": "d 和 og 连起来怎么读？",
+          "a_cn": [
+            "/d/ /og/，dog。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-how-do-you-read-d-og-197a9b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-d-og-dog-dc6019.mp3"
+          ],
+          "opts": [
+            {
+              "key": "top",
+              "text": "/t/ /op/, top.",
+              "audio": "audio/sentences/k2-cvc-o/a-t-op-top-c1a462.mp3"
+            },
+            {
+              "key": "hot",
+              "text": "/h/ /ot/, hot.",
+              "audio": "audio/sentences/k2-cvc-o/a-h-ot-hot-605e90.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dog begin with?",
+          "a": [
+            "Dog begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "dog 的开头是什么音？",
+          "a_cn": [
+            "dog 开头是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dog-begin-with-3dea14.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-d-0ffdf4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Dog begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-t-aca288.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Dog begins with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-the-sound-b-3294b1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dog begin with?",
+          "a": [
+            "Dog begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dog 以哪个字母开头？",
+          "a_cn": [
+            "dog 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dog-begin-with-356dba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-d-2295bd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "o",
+              "text": "Dog begins with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-o-72f488.mp3"
+            },
+            {
+              "key": "p",
+              "text": "Dog begins with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-begins-with-letter-p-b4a89d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dog have in the middle?",
+          "a": [
+            "Dog has the sound /o/ in the middle."
+          ],
+          "key": [
+            "/o/"
+          ],
+          "q_cn": "dog 中间是什么音？",
+          "a_cn": [
+            "dog 中间是 /ɑ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dog-have-in-the-midd-8eece4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-has-the-sound-o-in-the-middle-a95a60.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Dog has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-d-in-the-middle-8da9ee.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Dog has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-the-sound-l-in-the-middle-53ea80.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dog have in the middle?",
+          "a": [
+            "Dog has letter O in the middle."
+          ],
+          "key": [
+            "o"
+          ],
+          "q_cn": "dog 中间是哪个字母？",
+          "a_cn": [
+            "dog 中间是字母 O。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dog-have-in-the-mi-914ef4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-has-letter-o-in-the-middle-9d9b0c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "l",
+              "text": "Dog has letter L in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-l-in-the-middle-d60f5f.mp3"
+            },
+            {
+              "key": "g",
+              "text": "Dog has letter G in the middle.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-has-letter-g-in-the-middle-55570e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dog end with?",
+          "a": [
+            "Dog ends with the sound /g/."
+          ],
+          "key": [
+            "/g/"
+          ],
+          "q_cn": "dog 的结尾是什么音？",
+          "a_cn": [
+            "dog 结尾是 /g/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-what-sound-does-dog-end-with-7b7879.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-g-8f6832.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Dog ends with the sound /b/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-b-6d8976.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Dog ends with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-the-sound-h-0ff3d6.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dog end with?",
+          "a": [
+            "Dog ends with letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "dog 以哪个字母结尾？",
+          "a_cn": [
+            "dog 以字母 G 结尾。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-o/q-which-letter-does-dog-end-with-cc3b3c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-g-dcd61c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "o",
+              "text": "Dog ends with letter O.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-o-b424e6.mp3"
+            },
+            {
+              "key": "p",
+              "text": "Dog ends with letter P.",
+              "audio": "audio/sentences/k2-cvc-o/a-dog-ends-with-letter-p-eda814.mp3"
+            }
           ]
         }
       ],
@@ -405,18 +1912,49 @@
     }
   ],
   "word_audio": {
+    "b": "audio/words/b.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "d": "audio/words/d.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
     "dog": "audio/words/dog.mp3",
     "dot": "audio/words/dot.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "g": "audio/words/g.mp3",
     "got": "audio/words/got.mp3",
+    "h": "audio/words/h.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
     "hot": "audio/words/hot.mp3",
+    "how": "audio/words/how.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "j": "audio/words/j.mp3",
     "job": "audio/words/job.mp3",
+    "l": "audio/words/l.mp3",
+    "letter": "audio/words/letter.mp3",
     "log": "audio/words/log.mp3",
+    "middle": "audio/words/middle.mp3",
+    "o": "audio/words/o.mp3",
+    "ob": "audio/words/ob.mp3",
+    "og": "audio/words/og.mp3",
+    "op": "audio/words/op.mp3",
+    "ot": "audio/words/ot.mp3",
+    "p": "audio/words/p.mp3",
+    "read": "audio/words/read.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
     "top": "audio/words/top.mp3",
     "what": "audio/words/what.mp3",
-    "word": "audio/words/word.mp3"
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

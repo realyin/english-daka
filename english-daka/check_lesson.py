@@ -25,7 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 LESSONS = ROOT / "lessons"
-NON_LESSON = {"index.json", "phonics.json", "dictionary.json"}
+NON_LESSON = {"index.json", "phonics.json", "dictionary.json", "classes.json"}
 
 # ⚠️ 与 gen_audio.py / app.html / new_lesson.py 是同一张表，改一处要四处同步
 PHONEME_MAP = {"a": "ae", "e": "eh", "i": "ih", "o": "aa", "u": "ah",
@@ -35,10 +35,26 @@ PHONEME_RE = re.compile(r"/([a-zA-Z]+)/")
 SPELLED_RE = re.compile(r"\b[A-Za-z]-[a-z]{2,3}\b")
 # 词条像教材页标题而不是一个词条 —— 考一考的提问是 "Which one is <word>?"，问不出来
 PAGE_TITLE_RE = re.compile(r"\b(and|more|other|sort|words?|things?|items?)\b", re.I)
-SEQ_BANDS = {"字母 Letters": 100, "词族 Word Family": 200, "拼读 Phonics": 300,
-             "常见词 Sight Words": 400, "主题 Topics": 500, "数学 Math": 600,
-             "科学 Science": 700}
+# 段位表按「组名 → 百位段」。K2 的段位按学习路径排;K1 的段位 = 原始教材的
+# T 号 ×100(T4 动物 → 401-406),这样课程号能直接回溯到课件。
+# K1/K2 段位撞号无害:目录页先按 level 过滤再渲染(shared.js lvOf / renderShelves),
+# 两级同名组还共用一个段位,正合适。
+SEQ_BANDS = {
+    # ── K2 ──
+    "字母 Letters": 100, "词族 Word Family": 200, "拼读 Phonics": 300,
+    "常见词 Sight Words": 400, "主题 Topics": 500, "数学 Math": 600,
+    "科学 Science": 700,
+    # ── K1(T1–T12)──「字母 Letters」两级共用 100 段
+    "数字 Numbers": 200, "颜色 Colors": 300, "动物 Animals": 400,
+    "身体 Body": 500, "动作 Actions": 600, "职业 Jobs": 700,
+    "天气 Weather": 800, "形状 Shapes": 900, "规律 Patterns": 1000,
+    "乐器 Instruments": 1100, "节日 Holidays": 1200,
+}
 TODO = "待填"
+# 规律条能用的颜色/形状 —— 与 app.html 的 PAT_COLOR / PAT_SHAPE 是同一张表
+PAT_COLORS = {"red","yellow","blue","green","purple","orange",
+              "pink","black","white","gray","brown"}
+PAT_SHAPES = {"circle","oval","square","rectangle","triangle","diamond","trapezoid"}
 
 
 def slug(t):
@@ -50,9 +66,17 @@ def chip_pools():
     app = (ROOT / "app.html").read_text(encoding="utf-8")
     pools = {}
     for name in ("PHONEME_CHIPS", "RIME_CHIPS", "COLOR_CHIPS", "NUM_CHIPS",
-                 "LETTER_CHIPS", "SHAPE_CHIPS"):
-        m = re.search(rf"const {name}\s*=\s*\[(.*?)\]", app, re.S)
-        pools[name] = set(re.findall(r'"([^"]+)"', m.group(1))) if m else set()
+                 "LETTER_CHIPS", "SHAPE_CHIPS", "CASE_CHIPS"):
+        m = re.search(rf"const {name}\s*=\s*(.*?);", app, re.S)
+        if not m:
+            pools[name] = set()
+            continue
+        body = m.group(1)
+        # 池子有两种写法:["a","b"] 字面量,和 "abc…".split("") 展开式(26 个字母)。
+        # 只认前者会把 LETTER_CHIPS 读成空集 —— 于是每道字母题都被误报
+        # 「只有 1 个同类干扰项」。两种都要认。
+        sp = re.search(r'"([^"]*)"\s*\.split\(""\)', body)
+        pools[name] = set(sp.group(1)) if sp else set(re.findall(r'"([^"]+)"', body))
     return pools
 
 
@@ -71,8 +95,8 @@ def blendable(word):
 def chip_family(k, pools):
     """复刻 app.html 的 chipFamily()：这个 key 属于哪个闭合词池，不属于就返回 None"""
     if PHONEME_RE.fullmatch(k):
-        return pools["RIME_CHIPS"] if len(k) > 3 else pools["PHONEME_CHIPS"]
-    for name in ("COLOR_CHIPS", "NUM_CHIPS", "LETTER_CHIPS", "SHAPE_CHIPS"):
+        return pools["PHONEME_CHIPS"] if k in pools["PHONEME_CHIPS"] else pools["RIME_CHIPS"]
+    for name in ("COLOR_CHIPS", "NUM_CHIPS", "LETTER_CHIPS", "SHAPE_CHIPS", "CASE_CHIPS"):
         if k in pools[name]:
             return pools[name]
     return None
@@ -108,6 +132,12 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
     cards = d.get("cards") or []
 
     # ---- 顶层
+    lv = d.get("level")
+    if not lv:
+        r.e("顶层", "缺 level(K1/K2/…)—— 目录页按它分级,混合复习按它给新卡排队；"
+                    "老课回填 K2,新课由 new_lesson.py --level 写入")
+    elif lv not in ("K1", "K2", "K3", "S1", "S2", "S3"):
+        r.w("顶层", f"level「{lv}」不在已知级别表里(K1/K2/K3/S1/S2/S3)")
     for k in ("seq", "group", "badge", "title", "cards"):
         if k not in d:
             r.e("顶层", f"缺字段 {k}（目录页靠 seq/group/badge 分组和排序）")
@@ -121,6 +151,14 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
             r.e("顶层", f"seq={d.get('seq')} 不在「{grp}」的 {band}xx 段里")
     elif grp:
         r.w("顶层", f"分组「{grp}」不在已知段位表里，目录页排序会不确定")
+    # 封面:目录页有 cover 才铺图,没有就是一块纯色字形徽章,和满架水彩封面一比
+    # 一眼就是「没做完」。2026-09-02 那批三课就是这么漏的:脚手架当时不写、这里也不查
+    cov = d.get("cover")
+    if not cov:
+        r.e("顶层", "缺 cover(封面图)—— 目录页会退回纯色字形徽章；"
+                    "惯例取第一张卡的 image,new_lesson.py 现在会自动填")
+    elif not (LESSONS / cov).exists():
+        r.e("顶层", f"cover 指向的文件不存在：{cov}")
     if "word_audio" in d and not any(d["word_audio"].values()):
         r.w("顶层", "word_audio 是空的 —— 这个字段由 gen_audio.py 回写，不要手写")
 
@@ -164,10 +202,30 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
             r.e(where, f"added「{c['added']}」不是 YYYY-MM-DD —— "
                        f"课堂日列表按它排序,格式错了整批都找不到")
 
-        # 考一考要的画面
-        if not (c.get("image") or c.get("eq") or c.get("emoji")):
-            r.w(where, "既没有 image 也没有 eq/emoji —— 学一学没画面，"
+        # 考一考要的画面（pattern 和 eq 一样是 CSS 画的画面，不是图片）
+        if not (c.get("image") or c.get("eq") or c.get("emoji") or c.get("pattern")):
+            r.w(where, "既没有 image 也没有 eq/emoji/pattern —— 学一学没画面，"
                        "考一考也用不上这张卡")
+
+        # 规律条的 token 合法性：写错了不会报错，只会画出空格子
+        pat = c.get("pattern")
+        if pat is not None:
+            if not isinstance(pat, list) or not pat:
+                r.e(where, "pattern 必须是非空数组")
+            else:
+                # 单格 pattern 是「字形卡」(K1 字母课的大写 A / 小写 a),不是规律条,
+                # 不需要待填格;两格以上才是规律,必须有且只有一个「?」在末尾
+                if len(pat) > 1 and pat.count("?") != 1:
+                    r.e(where, f"pattern 里的待填格「?」有 {pat.count('?')} 个，"
+                               f"规律条应当正好 1 个（放在末尾）")
+                elif len(pat) > 1 and pat[-1] != "?":
+                    r.w(where, "pattern 的「?」不在末尾 —— 规律题是问「下一个是什么」")
+                for t in pat:
+                    t = str(t)
+                    if t.startswith("#") and t[1:] not in PAT_COLORS:
+                        r.e(where, f"pattern 颜色「{t}」不在颜色表里：{sorted(PAT_COLORS)}")
+                    if t.startswith("@") and t[1:] not in PAT_SHAPES:
+                        r.e(where, f"pattern 形状「{t}」不在形状表里：{sorted(PAT_SHAPES)}")
         img = c.get("image")
         if img and not (LESSONS / img).exists():
             r.e(where, f"图片不存在：{img}")
@@ -261,7 +319,7 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
                                 f"key 是孩子要说出来的那个词")
                     # 干扰项同类：key 属于某个词池就必须在池子里
                     if PHONEME_RE.fullmatch(k):
-                        pool = "RIME_CHIPS" if len(k) > 3 else "PHONEME_CHIPS"
+                        pool = "PHONEME_CHIPS" if k in pools["PHONEME_CHIPS"] else "RIME_CHIPS"
                         if k not in pools[pool]:
                             r.e(qw, f"key「{k}」不在 app.html 的 {pool} 里 —— "
                                     f"闯关会掉进普通名词池，变成「听音选名词」的送分题")
@@ -288,8 +346,11 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
     # 这种跨类选项 —— 孩子不用听懂，看出另外两个明显不是一类就能排除。
     plain = sorted({k for k in ask_key if not chip_family(k, pools)})
     for k, ws in sorted(ask_key.items()):
-        cands = [x for x in (chip_family(k, pools) or plain) if x != k]
-        if len(cands) < 2:
+        fam = chip_family(k, pools)
+        cands = [x for x in (fam or plain) if x != k]
+        # 闭合词池就这么大时(大写/小写只有两个成员),二选一是这道题的正当形态,
+        # app.html 的 askQuestion 也是这个口径:有 family 时只要还剩 1 个候选就不放宽
+        if len(cands) < 1:
             r.w("整课", f"「{k}」（{sorted(ws)}）只有 {len(cands)} 个同类干扰项，"
                         f"闯关会掺进数字凑数，凑出的选项可能本身也说得通 —— "
                         f"要么补同类词，要么给这一问加 \"practice\": false "
@@ -309,6 +370,35 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
                     r.e(f"卡「{c.get('word')}」第{i+1}问", "没有 q_audio，跑 gen_audio.py")
                 if len(t.get("a_audio") or []) != len(t.get("a") or []):
                     r.e(f"卡「{c.get('word')}」第{i+1}问", "a_audio 条数和 a 对不上")
+                # 闯关的整句选项(build_opts.py 预造)。孩子不认字,三条都要能点着念,
+                # 少一条音频这道题就变成"看字选"——对他等于抓阄
+                where = f"卡「{c.get('word')}」第{i+1}问"
+                opts = t.get("opts")
+                if opts is not None:
+                    if t.get("practice") is False:
+                        r.e(where, "标了 practice:false 却还留着 opts —— 它不进闯关，"
+                                   "这两条干扰句白生成音频")
+                    if len(opts) != 2:
+                        r.e(where, f"opts 有 {len(opts)} 条，闯关要正好 2 条干扰句")
+                    ck = " ".join(t["key"])
+                    seen_o = set()
+                    for o in opts:
+                        ot = (o or {}).get("text"); ok_ = (o or {}).get("key")
+                        if not ot or not ok_:
+                            r.e(where, "opts 里有条目缺 text 或 key"); continue
+                        if ok_ == ck:
+                            r.e(where, f"干扰句「{ot}」的答案和正确答案一样（{ck}）—— "
+                                       f"两条都对，孩子点哪个都可能被判错")
+                        if ot == (t.get("a") or [""])[0]:
+                            r.e(where, f"干扰句和正确答句一字不差：{ot}")
+                        if ot in seen_o:
+                            r.e(where, f"两条干扰句重复：{ot}")
+                        seen_o.add(ot)
+                        au = o.get("audio")
+                        if not au:
+                            r.e(where, f"干扰句「{ot}」没有音频，跑 gen_audio.py")
+                        elif not (LESSONS / au).exists():
+                            r.e(where, f"干扰句「{ot}」的音频文件不存在：{au}")
         for k in {kk for c in cards for t in c.get("dialog", []) for kk in t["key"]}:
             m = PHONEME_RE.fullmatch(k)
             f = (LESSONS / "audio" / "phonics" /
@@ -330,9 +420,10 @@ def quiz_pics(cards, audio_ready):
     pics = []
     for c in cards:
         coll = bool(c.get("collage"))
-        if c.get("quiz") is not False and (c.get("image") or c.get("eq") or c.get("emoji")) \
-                and not coll:
-            pics.append(c.get("image") or c.get("eq") or c.get("emoji"))
+        art = (c.get("image") or c.get("eq") or c.get("emoji") or
+               ("pat:" + ",".join(map(str, c["pattern"])) if c.get("pattern") else None))
+        if c.get("quiz") is not False and art and not coll:
+            pics.append(art)
         for t in c.get("dialog") or []:
             img = t.get("image") or (c.get("image")
                                      if len(c.get("dialog") or []) == 1 and not coll else None)
@@ -370,7 +461,24 @@ def build_days(lessons_root: Path):
             rec["cards"] += 1
             if f.stem not in rec["lessons"]:
                 rec["lessons"].append(f.stem)
+    cf = lessons_root / "classes.json"
+    names = json.loads(cf.read_text(encoding="utf-8")) if cf.exists() else {}
+    for k, rec in days.items():
+        if names.get(k):
+            rec["name"] = names[k]
     return [days[k] for k in sorted(days, reverse=True)]
+
+
+def days_lost(old_days, new_days):
+    """课堂日汇总「只增不减」自检:重建后某个日期消失、或某天卡数变少,通常是
+    课程 JSON 被批量重写时把卡片的 added 字段冲掉了(K1 全套导入 11235d6 出过
+    一次:K2 卡的 added 整批丢失,days 被清空,「按课堂复习」失去数据源)。
+    返回丢失明细;合法的减少(删卡、清误盖的戳)用 --allow-days-shrink 显式放行。
+    ⚠️ gen_audio.py 里有一份逐字一致的拷贝,改一处要同步改另一处。"""
+    old = {d["date"]: d["cards"] for d in old_days}
+    new = {d["date"]: d["cards"] for d in new_days}
+    return [f"{k}: {old[k]} 张 → {new.get(k, 0)} 张"
+            for k in sorted(old) if new.get(k, 0) < old[k]]
 
 
 def main():
@@ -407,7 +515,17 @@ def main():
         # 课堂日汇总(days)和卡片的 added 对不上就地重建:gen_audio 每次会重算,
         # 但手改课程文件(删卡/挪卡/补 added)不跑音频时,这里是唯一的重建口
         days = build_days(LESSONS)
-        if (idx_data.get("days") or []) != days:
+        old_days = idx_data.get("days") or []
+        lost = days_lost(old_days, days)
+        if lost and "--allow-days-shrink" not in sys.argv:
+            print("❌ 课堂日汇总(days)重建后变少了 —— 通常是课程 JSON 被重写时"
+                  "把卡片的 added 冲掉了:")
+            for m in lost:
+                print(f"   {m}")
+            print("  先用 git diff 查课程 JSON、把丢失的 added 恢复;确实要减"
+                  "(删卡、清误盖的戳)就加 --allow-days-shrink。")
+            ok = False
+        elif old_days != days:
             idx_data["days"] = days
             if "--fix-index" in sys.argv:
                 idx_file.write_text(

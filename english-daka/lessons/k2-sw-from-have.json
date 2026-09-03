@@ -1,7 +1,9 @@
 {
   "seq": 406,
+  "level": "K2",
   "group": "常见词 Sight Words",
   "badge": "from",
+  "cover": "images/sw-from.webp",
   "title": "Sight Words · from / have",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-sight-word-from-b53695.mp3"
+          ],
+          "opts": [
+            {
+              "key": "have",
+              "text": "It's sight word have.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-sight-word-have-f64bcb.mp3"
+            },
+            {
+              "key": "and",
+              "text": "It's sight word and.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-sight-word-and-9c3d0b.mp3"
+            }
           ]
         }
       ],
@@ -52,6 +66,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-sight-word-have-f64bcb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "from",
+              "text": "It's sight word from.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-sight-word-from-b53695.mp3"
+            },
+            {
+              "key": "here",
+              "text": "It's sight word here.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-sight-word-here-522a28.mp3"
+            }
           ]
         }
       ],
@@ -79,6 +105,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-key-word-egg-240e18.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hatch",
+              "text": "It's key word hatch.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-hatch-c0525b.mp3"
+            },
+            {
+              "key": "plant",
+              "text": "It's key word plant.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-plant-b9ec57.mp3"
+            }
           ]
         }
       ],
@@ -105,6 +143,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-key-word-hatch-c0525b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "plant",
+              "text": "It's key word plant.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-plant-b9ec57.mp3"
+            },
+            {
+              "key": "egg",
+              "text": "It's key word egg.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-egg-240e18.mp3"
+            }
           ]
         }
       ],
@@ -131,6 +181,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-key-word-plant-b9ec57.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hatch",
+              "text": "It's key word hatch.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-hatch-c0525b.mp3"
+            },
+            {
+              "key": "egg",
+              "text": "It's key word egg.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-egg-240e18.mp3"
+            }
           ]
         }
       ],
@@ -157,6 +219,18 @@
           "q_audio": "audio/sentences/k2-sw-from-have/q-what-s-this-key-word-5caa02.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-from-have/a-it-s-key-word-sun-dadbe1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hatch",
+              "text": "It's key word hatch.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-hatch-c0525b.mp3"
+            },
+            {
+              "key": "plant",
+              "text": "It's key word plant.",
+              "audio": "audio/sentences/k2-sw-from-have/a-it-s-key-word-plant-b9ec57.mp3"
+            }
           ]
         }
       ],
@@ -175,10 +249,12 @@
     "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
   },
   "word_audio": {
+    "and": "audio/words/and.mp3",
     "egg": "audio/words/egg.mp3",
     "from": "audio/words/from.mp3",
     "hatch": "audio/words/hatch.mp3",
     "have": "audio/words/have.mp3",
+    "here": "audio/words/here.mp3",
     "it's": "audio/words/it-s.mp3",
     "key": "audio/words/key.mp3",
     "plant": "audio/words/plant.mp3",

@@ -1,0 +1,213 @@
+{
+  "seq": 605,
+  "level": "K1",
+  "group": "动作 Actions",
+  "badge": "read",
+  "cover": "images/k1-act-read.webp",
+  "title": "Actions · Read & Draw & Sing & Dance 读画唱跳",
+  "cards": [
+    {
+      "word": "read a book",
+      "cn": "读书",
+      "tag": "word",
+      "image": "images/k1-act-read.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can read a book."
+          ],
+          "key": [
+            "read"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会读书。"
+          ],
+          "q_audio": "audio/sentences/k1-action-read/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-read/a-i-can-read-a-book-413618.mp3"
+          ],
+          "opts": [
+            {
+              "key": "draw",
+              "text": "I can draw a picture.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-draw-a-picture-6a8f19.mp3"
+            },
+            {
+              "key": "sing",
+              "text": "I can sing a song.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-read/q-which-one-is-read-a-book-b2e250.mp3"
+    },
+    {
+      "word": "draw a picture",
+      "cn": "画画",
+      "tag": "word",
+      "image": "images/k1-act-draw.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can draw a picture."
+          ],
+          "key": [
+            "draw"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会画画。"
+          ],
+          "q_audio": "audio/sentences/k1-action-read/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-read/a-i-can-draw-a-picture-6a8f19.mp3"
+          ],
+          "opts": [
+            {
+              "key": "sing",
+              "text": "I can sing a song.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
+            },
+            {
+              "key": "read",
+              "text": "I can read a book.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-read-a-book-413618.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-read/q-which-one-is-draw-a-picture-b15525.mp3"
+    },
+    {
+      "word": "sing a song",
+      "cn": "唱歌",
+      "tag": "word",
+      "image": "images/k1-act-sing.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can sing a song."
+          ],
+          "key": [
+            "sing"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会唱歌。"
+          ],
+          "q_audio": "audio/sentences/k1-action-read/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-read/a-i-can-sing-a-song-19ee4b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "read",
+              "text": "I can read a book.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-read-a-book-413618.mp3"
+            },
+            {
+              "key": "draw",
+              "text": "I can draw a picture.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-draw-a-picture-6a8f19.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do you like to do?",
+          "a": [
+            "I like to sing a song."
+          ],
+          "key": [
+            "sing"
+          ],
+          "practice": false,
+          "q_cn": "你喜欢做什么？",
+          "a_cn": [
+            "我喜欢唱歌。"
+          ],
+          "q_audio": "audio/sentences/k1-action-read/q-what-do-you-like-to-do-8b4356.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-read/a-i-like-to-sing-a-song-97d81b.mp3"
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-read/q-which-one-is-sing-a-song-bd77b7.mp3"
+    },
+    {
+      "word": "dance",
+      "cn": "跳舞",
+      "tag": "word",
+      "image": "images/k1-act-dance.webp",
+      "dialog": [
+        {
+          "q": "What can you do?",
+          "a": [
+            "I can dance."
+          ],
+          "key": [
+            "dance"
+          ],
+          "q_cn": "你会做什么？",
+          "a_cn": [
+            "我会跳舞。"
+          ],
+          "q_audio": "audio/sentences/k1-action-read/q-what-can-you-do-2d2dcc.mp3",
+          "a_audio": [
+            "audio/sentences/k1-action-read/a-i-can-dance-4502da.mp3"
+          ],
+          "opts": [
+            {
+              "key": "share",
+              "text": "I can share.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-share-53fb04.mp3"
+            },
+            {
+              "key": "play",
+              "text": "I can play.",
+              "audio": "audio/sentences/k1-action-read/a-i-can-play-dffe0e.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-action-read/q-which-one-is-dance-d904dc.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "book": "audio/words/book.mp3",
+    "can": "audio/words/can.mp3",
+    "dance": "audio/words/dance.mp3",
+    "do": "audio/words/do.mp3",
+    "draw": "audio/words/draw.mp3",
+    "draw a picture": "audio/words/draw-a-picture.mp3",
+    "i": "audio/words/i.mp3",
+    "like": "audio/words/like.mp3",
+    "picture": "audio/words/picture.mp3",
+    "play": "audio/words/play.mp3",
+    "read": "audio/words/read.mp3",
+    "read a book": "audio/words/read-a-book.mp3",
+    "share": "audio/words/share.mp3",
+    "sing": "audio/words/sing.mp3",
+    "sing a song": "audio/words/sing-a-song.mp3",
+    "song": "audio/words/song.mp3",
+    "to": "audio/words/to.mp3",
+    "what": "audio/words/what.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

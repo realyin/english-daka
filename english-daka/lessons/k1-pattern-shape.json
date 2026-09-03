@@ -1,0 +1,191 @@
+{
+ "seq": 1004,
+ "level": "K1",
+ "group": "规律 Patterns",
+ "badge": "形状",
+ "cover": "images/k1-pattern-shape.webp",
+ "title": "Shape Pattern · 形状规律",
+ "cards": [
+  {
+   "word": "rectangle oval triangle pattern",
+   "cn": "长方形椭圆三角形规律",
+   "tag": "pattern",
+   "pattern": [
+    "@rectangle",
+    "@oval",
+    "@triangle",
+    "@rectangle",
+    "@oval",
+    "@triangle",
+    "?"
+   ],
+   "dialog": [
+    {
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is rectangle oval triangle, rectangle oval triangle."
+     ],
+     "key": [
+      "rectangle"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 长方形 椭圆 三角形，长方形 椭圆 三角形。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-shape/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-shape/a-the-pattern-is-rectangle-oval-triang-940d0a.mp3"
+     ],
+     "opts": [
+      {
+       "key": "square",
+       "text": "The pattern is square circle trapezoid, square circle trapezoid.",
+       "audio": "audio/sentences/k1-pattern-shape/a-the-pattern-is-square-circle-trapezo-6c1d6c.mp3"
+      },
+      {
+       "key": "square",
+       "text": "Square comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What comes next?",
+     "a": [
+      "Rectangle comes next."
+     ],
+     "key": [
+      "rectangle"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是长方形。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-shape/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+     ],
+     "opts": [
+      {
+       "key": "square",
+       "text": "Square comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+      },
+      {
+       "key": "red",
+       "text": "Red comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-red-comes-next-c68550.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-shape/q-which-one-is-rectangle-oval-triangle-aa17d0.mp3"
+  },
+  {
+   "word": "square circle trapezoid pattern",
+   "cn": "正方形圆形梯形规律",
+   "tag": "pattern",
+   "pattern": [
+    "@square",
+    "@circle",
+    "@trapezoid",
+    "@square",
+    "@circle",
+    "@trapezoid",
+    "?"
+   ],
+   "dialog": [
+    {
+     "q": "What's this pattern?",
+     "a": [
+      "The pattern is square circle trapezoid, square circle trapezoid."
+     ],
+     "key": [
+      "square"
+     ],
+     "q_cn": "这个规律是什么？",
+     "a_cn": [
+      "这个规律是 正方形 圆形 梯形，正方形 圆形 梯形。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-shape/q-what-s-this-pattern-355a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-shape/a-the-pattern-is-square-circle-trapezo-6c1d6c.mp3"
+     ],
+     "opts": [
+      {
+       "key": "rectangle",
+       "text": "The pattern is rectangle oval triangle, rectangle oval triangle.",
+       "audio": "audio/sentences/k1-pattern-shape/a-the-pattern-is-rectangle-oval-triang-940d0a.mp3"
+      },
+      {
+       "key": "rectangle",
+       "text": "Rectangle comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What comes next?",
+     "a": [
+      "Square comes next."
+     ],
+     "key": [
+      "square"
+     ],
+     "q_cn": "下一个是什么？",
+     "a_cn": [
+      "下一个是正方形。"
+     ],
+     "q_audio": "audio/sentences/k1-pattern-shape/q-what-comes-next-f91e92.mp3",
+     "a_audio": [
+      "audio/sentences/k1-pattern-shape/a-square-comes-next-4bad71.mp3"
+     ],
+     "opts": [
+      {
+       "key": "rectangle",
+       "text": "Rectangle comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-rectangle-comes-next-f102a7.mp3"
+      },
+      {
+       "key": "l",
+       "text": "L comes next.",
+       "audio": "audio/sentences/k1-pattern-shape/a-l-comes-next-1fed2b.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-pattern-shape/q-which-one-is-square-circle-trapezoid-514b81.mp3"
+  }
+ ],
+ "word_audio": {
+  "circle": "audio/words/circle.mp3",
+  "comes": "audio/words/comes.mp3",
+  "is": "audio/words/is.mp3",
+  "l": "audio/words/l.mp3",
+  "next": "audio/words/next.mp3",
+  "oval": "audio/words/oval.mp3",
+  "pattern": "audio/words/pattern.mp3",
+  "rectangle": "audio/words/rectangle.mp3",
+  "rectangle oval triangle pattern": "audio/words/rectangle-oval-triangle-pattern.mp3",
+  "red": "audio/words/red.mp3",
+  "square": "audio/words/square.mp3",
+  "square circle trapezoid pattern": "audio/words/square-circle-trapezoid-pattern.mp3",
+  "the": "audio/words/the.mp3",
+  "this": "audio/words/this.mp3",
+  "trapezoid": "audio/words/trapezoid.mp3",
+  "triangle": "audio/words/triangle.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
+}

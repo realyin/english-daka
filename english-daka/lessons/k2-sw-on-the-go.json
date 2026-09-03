@@ -1,7 +1,9 @@
 {
   "seq": 402,
+  "level": "K2",
   "group": "常见词 Sight Words",
   "badge": "go",
+  "cover": "images/sw-go.webp",
   "title": "Sight Words · go / on",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-go-0bdeca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "on",
+              "text": "It's sight word on.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+            },
+            {
+              "key": "all",
+              "text": "It's sight word all.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-all-b38dd2.mp3"
+            }
           ]
         },
         {
@@ -43,7 +57,19 @@
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-i-can-go-swimming-in-summer-3ec8cb.mp3"
           ],
-          "image": "images/sw-go-swimming.webp"
+          "image": "images/sw-go-swimming.webp",
+          "opts": [
+            {
+              "key": "box",
+              "text": "The fox sits on the box.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-fox-sits-on-the-box-8f1041.mp3"
+            },
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            }
+          ]
         },
         {
           "q": "How does your dad go to work every day?",
@@ -61,7 +87,49 @@
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-my-dad-goes-to-work-by-subway-f4d128.mp3"
           ],
-          "image": "images/sw-go-subway.webp"
+          "image": "images/sw-go-subway.webp",
+          "opts": [
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            },
+            {
+              "key": "gifts",
+              "text": "We can give gifts to others.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-can-give-gifts-to-others-96b6c5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What's the season now?",
+          "a": [
+            "It's summer."
+          ],
+          "key": [
+            "summer"
+          ],
+          "q_cn": "现在是什么季节？",
+          "a_cn": [
+            "现在是夏天。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-s-the-season-now-527caa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-it-s-summer-723917.mp3"
+          ],
+          "image": "images/k2-season-summer.webp",
+          "opts": [
+            {
+              "key": "easter",
+              "text": "It's Easter.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-easter-8a859f.mp3"
+            },
+            {
+              "key": "christmas",
+              "text": "It's Christmas.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-christmas-ca5961.mp3"
+            }
+          ]
         }
       ],
       "quiz": false,
@@ -89,11 +157,23 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-s-this-sight-word-51830e.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+          ],
+          "opts": [
+            {
+              "key": "go",
+              "text": "It's sight word go.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-go-0bdeca.mp3"
+            },
+            {
+              "key": "all",
+              "text": "It's sight word all.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-all-b38dd2.mp3"
+            }
           ]
         }
       ],
-      "added": "2026-08-31",
-      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-on-bcec31.mp3"
+      "quiz_audio": "audio/sentences/k2-sw-on-the-go/q-which-one-is-on-bcec31.mp3",
+      "added": "2026-08-31"
     },
     {
       "word": "fox",
@@ -116,6 +196,19 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-where-s-the-fox-df82fb.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-the-fox-sits-on-the-box-8f1041.mp3"
+          ],
+          "image": "images/k2-fox-on-box.webp",
+          "opts": [
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            },
+            {
+              "key": "gifts",
+              "text": "We can give gifts to others.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-can-give-gifts-to-others-96b6c5.mp3"
+            }
           ]
         }
       ],
@@ -142,6 +235,19 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-where-does-the-cow-live-a61ac2.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-the-cow-lives-on-the-farm-8ac512.mp3"
+          ],
+          "image": "images/k2-cow-on-farm.webp",
+          "opts": [
+            {
+              "key": "box",
+              "text": "The fox sits on the box.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-fox-sits-on-the-box-8f1041.mp3"
+            },
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            }
           ]
         }
       ],
@@ -168,6 +274,19 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-where-is-the-book-6a1e80.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+          ],
+          "image": "images/k2-book-on-table.webp",
+          "opts": [
+            {
+              "key": "gifts",
+              "text": "We can give gifts to others.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-can-give-gifts-to-others-96b6c5.mp3"
+            },
+            {
+              "key": "egg",
+              "text": "We can have an egg hunt.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-can-have-an-egg-hunt-3f9356.mp3"
+            }
           ]
         }
       ],
@@ -194,6 +313,18 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-can-you-do-on-snowy-days-71f130.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-i-can-build-a-snowman-on-snowy-days-d89bc1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "subway",
+              "text": "My dad goes to work by subway.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-my-dad-goes-to-work-by-subway-f4d128.mp3"
+            },
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            }
           ]
         }
       ],
@@ -220,6 +351,48 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-do-we-say-on-christmas-dbb299.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-merry-christmas-4757e7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "summer",
+              "text": "It's summer.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-summer-723917.mp3"
+            },
+            {
+              "key": "thanksgiving",
+              "text": "We say Happy Thanksgiving.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-say-happy-thanksgiving-e9e662.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What can we do on Christmas?",
+          "a": [
+            "We can give gifts to others."
+          ],
+          "key": [
+            "gifts"
+          ],
+          "q_cn": "圣诞节我们能做什么？",
+          "a_cn": [
+            "我们可以送礼物给别人。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-can-we-do-on-christmas-e0e515.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-we-can-give-gifts-to-others-96b6c5.mp3"
+          ],
+          "image": "images/k2-give-gifts.webp",
+          "opts": [
+            {
+              "key": "farm",
+              "text": "The cow lives on the farm.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-cow-lives-on-the-farm-8ac512.mp3"
+            },
+            {
+              "key": "swimming",
+              "text": "I can go swimming in summer.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-i-can-go-swimming-in-summer-3ec8cb.mp3"
+            }
           ]
         }
       ],
@@ -246,6 +419,78 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-can-we-do-on-easter-8fb023.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-we-can-have-an-egg-hunt-3f9356.mp3"
+          ],
+          "opts": [
+            {
+              "key": "table",
+              "text": "The book is on the table.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-the-book-is-on-the-table-1f683f.mp3"
+            },
+            {
+              "key": "gifts",
+              "text": "We can give gifts to others.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-can-give-gifts-to-others-96b6c5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Easter?",
+          "a": [
+            "We say Happy Easter."
+          ],
+          "key": [
+            "easter"
+          ],
+          "q_cn": "复活节我们说什么？",
+          "a_cn": [
+            "我们说「复活节快乐」。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-do-we-say-on-easter-303465.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-we-say-happy-easter-9df5e2.mp3"
+          ],
+          "image": "images/k1-say-happy-easter.webp",
+          "opts": [
+            {
+              "key": "on",
+              "text": "It's sight word on.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+            },
+            {
+              "key": "clothes",
+              "text": "We wear pretty clothes.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-wear-pretty-clothes-cddec8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we wear on Easter?",
+          "a": [
+            "We wear pretty clothes."
+          ],
+          "key": [
+            "clothes"
+          ],
+          "q_cn": "复活节我们穿什么？",
+          "a_cn": [
+            "我们穿漂亮的衣服。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-do-we-wear-on-easter-085bed.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-we-wear-pretty-clothes-cddec8.mp3"
+          ],
+          "image": "images/k2-easter-clothes.webp",
+          "opts": [
+            {
+              "key": "easter",
+              "text": "We say Happy Easter.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-say-happy-easter-9df5e2.mp3"
+            },
+            {
+              "key": "on",
+              "text": "It's sight word on.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+            }
           ]
         }
       ],
@@ -272,6 +517,48 @@
           "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-can-we-eat-on-thanksgiving-b47611.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-we-can-eat-turkey-76bc3f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "thanksgiving",
+              "text": "We say Happy Thanksgiving.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-say-happy-thanksgiving-e9e662.mp3"
+            },
+            {
+              "key": "easter",
+              "text": "We say Happy Easter.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-say-happy-easter-9df5e2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What do we say on Thanksgiving?",
+          "a": [
+            "We say Happy Thanksgiving."
+          ],
+          "key": [
+            "thanksgiving"
+          ],
+          "q_cn": "感恩节我们说什么？",
+          "a_cn": [
+            "我们说「感恩节快乐」。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-on-the-go/q-what-do-we-say-on-thanksgiving-4711b9.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-on-the-go/a-we-say-happy-thanksgiving-e9e662.mp3"
+          ],
+          "image": "images/k2-say-thanksgiving.webp",
+          "opts": [
+            {
+              "key": "easter",
+              "text": "We say Happy Easter.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-we-say-happy-easter-9df5e2.mp3"
+            },
+            {
+              "key": "on",
+              "text": "It's sight word on.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-it-s-sight-word-on-846e47.mp3"
+            }
           ]
         }
       ],
@@ -301,7 +588,19 @@
             "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3",
             "audio/sentences/k2-sw-on-the-go/a-the-cat-sat-on-the-mat-eb46e8.mp3"
           ],
-          "image": "images/wf-at-1-sat.webp"
+          "image": "images/wf-at-1-sat.webp",
+          "opts": [
+            {
+              "key": "cat",
+              "text": "C says /k/, A says /a/, T says /t/, cat.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-c-says-k-a-says-a-t-says-t-cat-acb79f.mp3"
+            },
+            {
+              "key": "sam",
+              "text": "S says /s/, A says /a/, M says /m/, Sam.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-m-says-m-sam-6821ef.mp3"
+            }
+          ]
         },
         {
           "q": "How do you sound out s, a, m?",
@@ -321,6 +620,18 @@
           "a_audio": [
             "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-m-says-m-sam-6821ef.mp3",
             "audio/sentences/k2-sw-on-the-go/a-this-is-sam-50f9e1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "cat",
+              "text": "C says /k/, A says /a/, T says /t/, cat.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-c-says-k-a-says-a-t-says-t-cat-acb79f.mp3"
+            },
+            {
+              "key": "sat",
+              "text": "S says /s/, A says /a/, T says /t/, sat.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
+            }
           ]
         },
         {
@@ -342,7 +653,19 @@
             "audio/sentences/k2-sw-on-the-go/a-c-says-k-a-says-a-t-says-t-cat-acb79f.mp3",
             "audio/sentences/k2-sw-on-the-go/a-i-have-a-fat-cat-04495b.mp3"
           ],
-          "image": "images/sw-cvc-pat-cat.webp"
+          "image": "images/sw-cvc-pat-cat.webp",
+          "opts": [
+            {
+              "key": "sat",
+              "text": "S says /s/, A says /a/, T says /t/, sat.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-t-says-t-sat-6aa70f.mp3"
+            },
+            {
+              "key": "sam",
+              "text": "S says /s/, A says /a/, M says /m/, Sam.",
+              "audio": "audio/sentences/k2-sw-on-the-go/a-s-says-s-a-says-a-m-says-m-sam-6821ef.mp3"
+            }
+          ]
         }
       ],
       "emoji": "🔤",
@@ -363,6 +686,7 @@
   },
   "word_audio": {
     "a": "audio/words/a.mp3",
+    "all": "audio/words/all.mp3",
     "an": "audio/words/an.mp3",
     "book": "audio/words/book.mp3",
     "box": "audio/words/box.mp3",
@@ -372,6 +696,7 @@
     "can": "audio/words/can.mp3",
     "cat": "audio/words/cat.mp3",
     "christmas": "audio/words/christmas.mp3",
+    "clothes": "audio/words/clothes.mp3",
     "cow": "audio/words/cow.mp3",
     "dad": "audio/words/dad.mp3",
     "day": "audio/words/day.mp3",
@@ -386,8 +711,11 @@
     "farm": "audio/words/farm.mp3",
     "fat": "audio/words/fat.mp3",
     "fox": "audio/words/fox.mp3",
+    "gifts": "audio/words/gifts.mp3",
+    "give": "audio/words/give.mp3",
     "go": "audio/words/go.mp3",
     "goes": "audio/words/goes.mp3",
+    "happy": "audio/words/happy.mp3",
     "have": "audio/words/have.mp3",
     "how": "audio/words/how.mp3",
     "hunt": "audio/words/hunt.mp3",
@@ -402,13 +730,17 @@
     "mat": "audio/words/mat.mp3",
     "merry": "audio/words/merry.mp3",
     "my": "audio/words/my.mp3",
+    "now": "audio/words/now.mp3",
     "on": "audio/words/on.mp3",
+    "others": "audio/words/others.mp3",
     "out": "audio/words/out.mp3",
+    "pretty": "audio/words/pretty.mp3",
     "s": "audio/words/s.mp3",
     "sam": "audio/words/sam.mp3",
     "sat": "audio/words/sat.mp3",
     "say": "audio/words/say.mp3",
     "says": "audio/words/says.mp3",
+    "season": "audio/words/season.mp3",
     "sight": "audio/words/sight.mp3",
     "sits": "audio/words/sits.mp3",
     "snowman": "audio/words/snowman.mp3",
@@ -426,6 +758,7 @@
     "to": "audio/words/to.mp3",
     "turkey": "audio/words/turkey.mp3",
     "we": "audio/words/we.mp3",
+    "wear": "audio/words/wear.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "where": "audio/words/where.mp3",

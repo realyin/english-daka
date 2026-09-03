@@ -1,7 +1,9 @@
 {
   "seq": 305,
+  "level": "K2",
   "group": "拼读 Phonics",
   "badge": "a_e",
+  "cover": "images/cvc-code.webp",
   "title": "Magic e · 魔法 e 长元音",
   "cards": [
     {
@@ -60,6 +62,192 @@
           "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-magic-e/a-it-s-code-af6826.mp3"
+          ],
+          "opts": [
+            {
+              "key": "kite",
+              "text": "It's kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-kite-393325.mp3"
+            },
+            {
+              "key": "date",
+              "text": "It's date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-date-2ac0eb.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: c — ode?",
+          "a": [
+            "/k/ /ode/, code."
+          ],
+          "key": [
+            "code"
+          ],
+          "q_cn": "c 和 ode 连起来怎么读？",
+          "a_cn": [
+            "/k/ /ode/，code。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-how-do-you-read-c-ode-361a1a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-k-ode-code-2ccf4b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "date",
+              "text": "/d/ /ate/, date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-d-ate-date-657264.mp3"
+            },
+            {
+              "key": "kite",
+              "text": "/k/ /ite/, kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-k-ite-kite-48a8a4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does code begin with?",
+          "a": [
+            "Code begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "code 的开头是什么音？",
+          "a_cn": [
+            "code 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-code-begin-with-5fc4c5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-code-begins-with-the-sound-k-ad1cc6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Code begins with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-begins-with-the-sound-d-b4ad2e.mp3"
+            },
+            {
+              "key": "/ay/",
+              "text": "Code begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-begins-with-the-sound-ay-f706e9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does code begin with?",
+          "a": [
+            "Code begins with letter C."
+          ],
+          "key": [
+            "c"
+          ],
+          "q_cn": "code 以哪个字母开头？",
+          "a_cn": [
+            "code 以字母 C 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-does-code-begin-with-7828be.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-code-begins-with-letter-c-6357ad.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Code begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-begins-with-letter-k-0b25e9.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Code begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-begins-with-letter-e-16efc2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does code have in the middle?",
+          "a": [
+            "Code has the sound /oh/ in the middle."
+          ],
+          "key": [
+            "/oh/"
+          ],
+          "q_cn": "code 中间是什么音？",
+          "a_cn": [
+            "code 中间是 /oʊ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-code-have-in-the-mid-da3857.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-code-has-the-sound-oh-in-the-middle-4b55ac.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/d/",
+              "text": "Code has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-has-the-sound-d-in-the-middle-e43036.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Code has the sound /k/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-has-the-sound-k-in-the-middle-7dc7df.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does code end with?",
+          "a": [
+            "Code ends with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "code 的结尾是什么音？",
+          "a_cn": [
+            "code 结尾是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-code-end-with-7406d7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-code-ends-with-the-sound-d-209439.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Code ends with the sound /oh/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-ends-with-the-sound-oh-d4d5ef.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Code ends with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-code-ends-with-the-sound-k-4e07c3.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter is silent in code?",
+          "a": [
+            "Letter E is silent in code."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "code 里哪个字母不发音？",
+          "a_cn": [
+            "code 里字母 E 不发音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-is-silent-in-code-89c46a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-letter-e-is-silent-in-code-0f81db.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Letter K is silent in code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-k-is-silent-in-code-4c5abe.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Letter D is silent in code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-d-is-silent-in-code-6e6528.mp3"
+            }
           ]
         }
       ],
@@ -122,6 +310,192 @@
           "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-magic-e/a-it-s-cute-f86ac1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "code",
+              "text": "It's code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-code-af6826.mp3"
+            },
+            {
+              "key": "kite",
+              "text": "It's kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-kite-393325.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: c — ute?",
+          "a": [
+            "/k/ /ute/, cute."
+          ],
+          "key": [
+            "cute"
+          ],
+          "q_cn": "c 和 ute 连起来怎么读？",
+          "a_cn": [
+            "/k/ /ute/，cute。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-how-do-you-read-c-ute-2ec6d5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-k-ute-cute-01010d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "date",
+              "text": "/d/ /ate/, date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-d-ate-date-657264.mp3"
+            },
+            {
+              "key": "kite",
+              "text": "/k/ /ite/, kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-k-ite-kite-48a8a4.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cute begin with?",
+          "a": [
+            "Cute begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "cute 的开头是什么音？",
+          "a_cn": [
+            "cute 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-cute-begin-with-e07d4c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-the-sound-k-4cfb9b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Cute begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-the-sound-t-f30d0c.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Cute begins with the sound /eye/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-the-sound-eye-81e43e.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cute begin with?",
+          "a": [
+            "Cute begins with letter C."
+          ],
+          "key": [
+            "c"
+          ],
+          "q_cn": "cute 以哪个字母开头？",
+          "a_cn": [
+            "cute 以字母 C 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-does-cute-begin-with-c59b4e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-letter-c-8fc6b1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Cute begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-letter-k-4393ba.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Cute begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-begins-with-letter-e-cd63a2.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cute have in the middle?",
+          "a": [
+            "Cute has the sound /yoo/ in the middle."
+          ],
+          "key": [
+            "/yoo/"
+          ],
+          "q_cn": "cute 中间是什么音？",
+          "a_cn": [
+            "cute 中间是 /juː/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-cute-have-in-the-mid-d65c7b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-cute-has-the-sound-yoo-in-the-middle-367341.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Cute has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-has-the-sound-t-in-the-middle-374a5e.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Cute has the sound /eye/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-has-the-sound-eye-in-the-middle-329769.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cute end with?",
+          "a": [
+            "Cute ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "cute 的结尾是什么音？",
+          "a_cn": [
+            "cute 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-cute-end-with-45ff58.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-cute-ends-with-the-sound-t-b61880.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Cute ends with the sound /oh/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-ends-with-the-sound-oh-f6cf13.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Cute ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-cute-ends-with-the-sound-d-940523.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter is silent in cute?",
+          "a": [
+            "Letter E is silent in cute."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "cute 里哪个字母不发音？",
+          "a_cn": [
+            "cute 里字母 E 不发音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-is-silent-in-cute-424569.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-letter-e-is-silent-in-cute-85d2c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Letter D is silent in cute.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-d-is-silent-in-cute-294105.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Letter C is silent in cute.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-c-is-silent-in-cute-5b5c40.mp3"
+            }
           ]
         }
       ],
@@ -184,6 +558,192 @@
           "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-magic-e/a-it-s-date-2ac0eb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "cute",
+              "text": "It's cute.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-cute-f86ac1.mp3"
+            },
+            {
+              "key": "code",
+              "text": "It's code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-code-af6826.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: d — ate?",
+          "a": [
+            "/d/ /ate/, date."
+          ],
+          "key": [
+            "date"
+          ],
+          "q_cn": "d 和 ate 连起来怎么读？",
+          "a_cn": [
+            "/d/ /ate/，date。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-how-do-you-read-d-ate-7b01be.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-d-ate-date-657264.mp3"
+          ],
+          "opts": [
+            {
+              "key": "kite",
+              "text": "/k/ /ite/, kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-k-ite-kite-48a8a4.mp3"
+            },
+            {
+              "key": "cute",
+              "text": "/k/ /ute/, cute.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-k-ute-cute-01010d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does date begin with?",
+          "a": [
+            "Date begins with the sound /d/."
+          ],
+          "key": [
+            "/d/"
+          ],
+          "q_cn": "date 的开头是什么音？",
+          "a_cn": [
+            "date 开头是 /d/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-date-begin-with-d9defa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-date-begins-with-the-sound-d-f2326d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Date begins with the sound /oh/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-begins-with-the-sound-oh-6c4f98.mp3"
+            },
+            {
+              "key": "/k/",
+              "text": "Date begins with the sound /k/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-begins-with-the-sound-k-f60974.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does date begin with?",
+          "a": [
+            "Date begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "date 以哪个字母开头？",
+          "a_cn": [
+            "date 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-does-date-begin-with-34b600.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-date-begins-with-letter-d-4c38b5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "c",
+              "text": "Date begins with letter C.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-begins-with-letter-c-ab495c.mp3"
+            },
+            {
+              "key": "k",
+              "text": "Date begins with letter K.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-begins-with-letter-k-a81077.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does date have in the middle?",
+          "a": [
+            "Date has the sound /ay/ in the middle."
+          ],
+          "key": [
+            "/ay/"
+          ],
+          "q_cn": "date 中间是什么音？",
+          "a_cn": [
+            "date 中间是 /eɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-date-have-in-the-mid-a8a7e1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-date-has-the-sound-ay-in-the-middle-0c3476.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Date has the sound /oh/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-has-the-sound-oh-in-the-middle-685570.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Date has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-has-the-sound-d-in-the-middle-9e9321.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does date end with?",
+          "a": [
+            "Date ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "date 的结尾是什么音？",
+          "a_cn": [
+            "date 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-date-end-with-0fc14b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-date-ends-with-the-sound-t-b5e176.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Date ends with the sound /oh/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-ends-with-the-sound-oh-d1d199.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Date ends with the sound /d/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-date-ends-with-the-sound-d-40cfa8.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter is silent in date?",
+          "a": [
+            "Letter E is silent in date."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "date 里哪个字母不发音？",
+          "a_cn": [
+            "date 里字母 E 不发音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-is-silent-in-date-73f9c5.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-letter-e-is-silent-in-date-086744.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Letter D is silent in date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-d-is-silent-in-date-d8ab50.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Letter C is silent in date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-c-is-silent-in-date-43bc70.mp3"
+            }
           ]
         }
       ],
@@ -246,6 +806,192 @@
           "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-magic-e/a-it-s-kite-393325.mp3"
+          ],
+          "opts": [
+            {
+              "key": "cute",
+              "text": "It's cute.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-cute-f86ac1.mp3"
+            },
+            {
+              "key": "code",
+              "text": "It's code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-it-s-code-af6826.mp3"
+            }
+          ]
+        },
+        {
+          "q": "How do you read: k — ite?",
+          "a": [
+            "/k/ /ite/, kite."
+          ],
+          "key": [
+            "kite"
+          ],
+          "q_cn": "k 和 ite 连起来怎么读？",
+          "a_cn": [
+            "/k/ /ite/，kite。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-how-do-you-read-k-ite-f8b1e0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-k-ite-kite-48a8a4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "code",
+              "text": "/k/ /ode/, code.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-k-ode-code-2ccf4b.mp3"
+            },
+            {
+              "key": "date",
+              "text": "/d/ /ate/, date.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-d-ate-date-657264.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kite begin with?",
+          "a": [
+            "Kite begins with the sound /k/."
+          ],
+          "key": [
+            "/k/"
+          ],
+          "q_cn": "kite 的开头是什么音？",
+          "a_cn": [
+            "kite 开头是 /k/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-kite-begin-with-bd8e42.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-the-sound-k-5e2351.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Kite begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-the-sound-t-2e502f.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Kite begins with the sound /eye/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-the-sound-eye-626514.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does kite begin with?",
+          "a": [
+            "Kite begins with letter K."
+          ],
+          "key": [
+            "k"
+          ],
+          "q_cn": "kite 以哪个字母开头？",
+          "a_cn": [
+            "kite 以字母 K 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-does-kite-begin-with-4f0573.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-letter-k-48b83f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "c",
+              "text": "Kite begins with letter C.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-letter-c-cadf4f.mp3"
+            },
+            {
+              "key": "e",
+              "text": "Kite begins with letter E.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-begins-with-letter-e-24af78.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kite have in the middle?",
+          "a": [
+            "Kite has the sound /eye/ in the middle."
+          ],
+          "key": [
+            "/eye/"
+          ],
+          "q_cn": "kite 中间是什么音？",
+          "a_cn": [
+            "kite 中间是 /aɪ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-kite-have-in-the-mid-0eca26.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-kite-has-the-sound-eye-in-the-middle-652a1c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Kite has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-has-the-sound-t-in-the-middle-caf87a.mp3"
+            },
+            {
+              "key": "/oh/",
+              "text": "Kite has the sound /oh/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-has-the-sound-oh-in-the-middle-cc01ae.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does kite end with?",
+          "a": [
+            "Kite ends with the sound /t/."
+          ],
+          "key": [
+            "/t/"
+          ],
+          "q_cn": "kite 的结尾是什么音？",
+          "a_cn": [
+            "kite 结尾是 /t/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-what-sound-does-kite-end-with-53d340.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-kite-ends-with-the-sound-t-e923b7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Kite ends with the sound /yoo/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-ends-with-the-sound-yoo-165130.mp3"
+            },
+            {
+              "key": "/eye/",
+              "text": "Kite ends with the sound /eye/.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-kite-ends-with-the-sound-eye-f34db9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter is silent in kite?",
+          "a": [
+            "Letter E is silent in kite."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "kite 里哪个字母不发音？",
+          "a_cn": [
+            "kite 里字母 E 不发音。"
+          ],
+          "q_audio": "audio/sentences/k2-cvc-magic-e/q-which-letter-is-silent-in-kite-f48bba.mp3",
+          "a_audio": [
+            "audio/sentences/k2-cvc-magic-e/a-letter-e-is-silent-in-kite-4fe69e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Letter D is silent in kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-d-is-silent-in-kite-de1f46.mp3"
+            },
+            {
+              "key": "c",
+              "text": "Letter C is silent in kite.",
+              "audio": "audio/sentences/k2-cvc-magic-e/a-letter-c-is-silent-in-kite-1dde93.mp3"
+            }
           ]
         }
       ],
@@ -254,15 +1000,47 @@
     }
   ],
   "word_audio": {
+    "ate": "audio/words/ate.mp3",
+    "ay": "audio/words/ay.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "c": "audio/words/c.mp3",
     "code": "audio/words/code.mp3",
     "cute": "audio/words/cute.mp3",
+    "d": "audio/words/d.mp3",
     "date": "audio/words/date.mp3",
+    "do": "audio/words/do.mp3",
+    "does": "audio/words/does.mp3",
+    "e": "audio/words/e.mp3",
+    "end": "audio/words/end.mp3",
+    "ends": "audio/words/ends.mp3",
+    "eye": "audio/words/eye.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "how": "audio/words/how.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "ite": "audio/words/ite.mp3",
+    "k": "audio/words/k.mp3",
     "kite": "audio/words/kite.mp3",
+    "letter": "audio/words/letter.mp3",
+    "middle": "audio/words/middle.mp3",
+    "ode": "audio/words/ode.mp3",
+    "oh": "audio/words/oh.mp3",
+    "read": "audio/words/read.mp3",
+    "silent": "audio/words/silent.mp3",
+    "sound": "audio/words/sound.mp3",
+    "t": "audio/words/t.mp3",
+    "the": "audio/words/the.mp3",
     "this": "audio/words/this.mp3",
+    "ute": "audio/words/ute.mp3",
     "what": "audio/words/what.mp3",
-    "word": "audio/words/word.mp3"
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3",
+    "word": "audio/words/word.mp3",
+    "yoo": "audio/words/yoo.mp3",
+    "you": "audio/words/you.mp3"
   },
   "praise_audio": {
     "Great job!": "audio/praise/great-job.mp3",

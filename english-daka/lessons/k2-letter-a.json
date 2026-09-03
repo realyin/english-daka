@@ -1,7 +1,9 @@
 {
   "seq": 104,
+  "level": "K2",
   "group": "字母 Letters",
   "badge": "A",
+  "cover": "images/a-letter.webp",
   "title": "Letter A · /æ/",
   "cards": [
     {
@@ -25,6 +27,18 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-letter-ab944e.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-it-s-letter-a-3ee564.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "It's letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-letter-d-9f52e9.mp3"
+            },
+            {
+              "key": "b",
+              "text": "It's letter B.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-letter-b-328ea7.mp3"
+            }
           ]
         },
         {
@@ -42,6 +56,18 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-letter-a-make-a759d7.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-a-makes-the-sound-a-0b1822.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/o/",
+              "text": "A makes the sound /o/.",
+              "audio": "audio/sentences/k2-letter-a/a-a-makes-the-sound-o-c979da.mp3"
+            },
+            {
+              "key": "/g/",
+              "text": "A makes the sound /g/.",
+              "audio": "audio/sentences/k2-letter-a/a-a-makes-the-sound-g-f3a04b.mp3"
+            }
           ]
         }
       ],
@@ -68,6 +94,18 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-apple-begin-with-1931d9.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-apple-begins-with-the-sound-a-4dba7e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Apple begins with the sound /v/.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-the-sound-v-feafa6.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Apple begins with the sound /t/.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-the-sound-t-8940cc.mp3"
+            }
           ]
         },
         {
@@ -85,6 +123,18 @@
           "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-apple-begin-with-f73e78.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Apple begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-letter-d-3b0cbf.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Apple begins with letter B.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-letter-b-a757c8.mp3"
+            }
           ]
         },
         {
@@ -102,6 +152,19 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-the-apple-b2a099.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-the-apple-is-red-2e8276.mp3"
+          ],
+          "image": "images/k2-a-apple-red.webp",
+          "opts": [
+            {
+              "key": "pink",
+              "text": "The apple is pink.",
+              "audio": "audio/sentences/k2-letter-a/a-the-apple-is-pink-ea4f61.mp3"
+            },
+            {
+              "key": "black",
+              "text": "The apple is black.",
+              "audio": "audio/sentences/k2-letter-a/a-the-apple-is-black-699e22.mp3"
+            }
           ]
         }
       ],
@@ -128,6 +191,47 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-s-your-favorite-animal-5de038.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-my-favorite-animal-is-a-dolphin-96958b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fat",
+              "text": "Yes, I have a fat cat.",
+              "audio": "audio/sentences/k2-letter-a/a-yes-i-have-a-fat-cat-50ed8f.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Dolphin begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-dolphin-begins-with-letter-d-4281e1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dolphin begin with?",
+          "a": [
+            "Dolphin begins with letter D."
+          ],
+          "key": [
+            "d"
+          ],
+          "q_cn": "dolphin 以哪个字母开头？",
+          "a_cn": [
+            "dolphin 以字母 D 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-dolphin-begin-with-b81239.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-dolphin-begins-with-letter-d-4281e1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Dolphin begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-dolphin-begins-with-letter-a-007ae2.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Dolphin begins with letter B.",
+              "audio": "audio/sentences/k2-letter-a/a-dolphin-begins-with-letter-b-682e6e.mp3"
+            }
           ]
         }
       ],
@@ -154,6 +258,76 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-animal-ac42e5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-it-s-an-alligator-700c75.mp3"
+          ],
+          "opts": [
+            {
+              "key": "ant",
+              "text": "It's an ant.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-an-ant-01cb4e.mp3"
+            },
+            {
+              "key": "ocean",
+              "text": "It's an ocean.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-an-ocean-134d1a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does alligator begin with?",
+          "a": [
+            "Alligator begins with the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "alligator 的开头是什么音？",
+          "a_cn": [
+            "alligator 开头是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-alligator-begin-with-5f2cbb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-alligator-begins-with-the-sound-a-46009d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Alligator begins with the sound /u/.",
+              "audio": "audio/sentences/k2-letter-a/a-alligator-begins-with-the-sound-u-502ca8.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Alligator begins with the sound /i/.",
+              "audio": "audio/sentences/k2-letter-a/a-alligator-begins-with-the-sound-i-a0c214.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does alligator begin with?",
+          "a": [
+            "Alligator begins with letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "alligator 以哪个字母开头？",
+          "a_cn": [
+            "alligator 以字母 A 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-alligator-begin-wi-45fdfb.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-alligator-begins-with-letter-a-c0a4e3.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Alligator begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-alligator-begins-with-letter-d-06daa1.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Alligator begins with letter B.",
+              "audio": "audio/sentences/k2-letter-a/a-alligator-begins-with-letter-b-ae7d0b.mp3"
+            }
           ]
         }
       ],
@@ -180,6 +354,76 @@
           "q_audio": "audio/sentences/k2-letter-a/q-who-is-this-3fe6b5.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-this-is-an-astronaut-40f59b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "airport",
+              "text": "This is an airport.",
+              "audio": "audio/sentences/k2-letter-a/a-this-is-an-airport-40458d.mp3"
+            },
+            {
+              "key": "ambulance",
+              "text": "This is an ambulance.",
+              "audio": "audio/sentences/k2-letter-a/a-this-is-an-ambulance-8f46da.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does astronaut begin with?",
+          "a": [
+            "Astronaut begins with the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "astronaut 的开头是什么音？",
+          "a_cn": [
+            "astronaut 开头是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-astronaut-begin-with-c6cc16.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-astronaut-begins-with-the-sound-a-b0adbb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/k/",
+              "text": "Astronaut begins with the sound /k/.",
+              "audio": "audio/sentences/k2-letter-a/a-astronaut-begins-with-the-sound-k-9a8715.mp3"
+            },
+            {
+              "key": "/ay/",
+              "text": "Astronaut begins with the sound /ay/.",
+              "audio": "audio/sentences/k2-letter-a/a-astronaut-begins-with-the-sound-ay-bbab3b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does astronaut begin with?",
+          "a": [
+            "Astronaut begins with letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "astronaut 以哪个字母开头？",
+          "a_cn": [
+            "astronaut 以字母 A 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-astronaut-begin-wi-2e708d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-astronaut-begins-with-letter-a-942199.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Astronaut begins with letter S.",
+              "audio": "audio/sentences/k2-letter-a/a-astronaut-begins-with-letter-s-1d591b.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Astronaut begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-astronaut-begins-with-letter-d-fcbb36.mp3"
+            }
           ]
         }
       ],
@@ -206,6 +450,77 @@
           "q_audio": "audio/sentences/k2-letter-a/q-can-the-bat-fly-21c15f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-yes-the-bat-can-fly-0e131b.mp3"
+          ],
+          "image": "images/k2-a-bat-fly.webp",
+          "opts": [
+            {
+              "key": "a",
+              "text": "Apple begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fast begins with letter F.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-begins-with-letter-f-5b2849.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bat have in the middle?",
+          "a": [
+            "Bat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "bat 中间是什么音？",
+          "a_cn": [
+            "bat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-bat-have-in-the-midd-d0edaa.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-bat-has-the-sound-a-in-the-middle-064f15.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Bat has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bat-has-the-sound-v-in-the-middle-cc2b0a.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Bat has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bat-has-the-sound-t-in-the-middle-c3d121.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bat have in the middle?",
+          "a": [
+            "Bat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "bat 中间是哪个字母？",
+          "a_cn": [
+            "bat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-bat-have-in-the-mi-a0450d.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-bat-has-letter-a-in-the-middle-155140.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Bat has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bat-has-letter-s-in-the-middle-84e262.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bat has letter D in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bat-has-letter-d-in-the-middle-782424.mp3"
+            }
           ]
         }
       ],
@@ -232,6 +547,76 @@
           "q_audio": "audio/sentences/k2-letter-a/q-who-is-the-man-825365.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-the-man-is-my-dad-02d9c6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Apple begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fast begins with letter F.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-begins-with-letter-f-5b2849.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does dad have in the middle?",
+          "a": [
+            "Dad has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "dad 中间是什么音？",
+          "a_cn": [
+            "dad 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-dad-have-in-the-midd-dabcbd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-dad-has-the-sound-a-in-the-middle-c4dfc5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Dad has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-dad-has-the-sound-v-in-the-middle-3f7448.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Dad has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-dad-has-the-sound-t-in-the-middle-6faedc.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does dad have in the middle?",
+          "a": [
+            "Dad has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "dad 中间是哪个字母？",
+          "a_cn": [
+            "dad 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-dad-have-in-the-mi-dddf01.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-dad-has-letter-a-in-the-middle-206c58.mp3"
+          ],
+          "opts": [
+            {
+              "key": "b",
+              "text": "Dad has letter B in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-dad-has-letter-b-in-the-middle-4b91ef.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Dad has letter F in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-dad-has-letter-f-in-the-middle-1d3784.mp3"
+            }
           ]
         }
       ],
@@ -258,6 +643,77 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-your-hat-ce3bd8.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-i-have-a-pink-hat-2a16b5.mp3"
+          ],
+          "image": "images/k2-a-hat-pink.webp",
+          "opts": [
+            {
+              "key": "black",
+              "text": "I have a black hat.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-a-black-hat-d90c52.mp3"
+            },
+            {
+              "key": "red",
+              "text": "I have a red hat.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-a-red-hat-18d62b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hat have in the middle?",
+          "a": [
+            "Hat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "hat 中间是什么音？",
+          "a_cn": [
+            "hat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-hat-have-in-the-midd-be4722.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-hat-has-the-sound-a-in-the-middle-e413fc.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/ay/",
+              "text": "Hat has the sound /ay/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hat-has-the-sound-ay-in-the-middle-a7afcf.mp3"
+            },
+            {
+              "key": "/l/",
+              "text": "Hat has the sound /l/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hat-has-the-sound-l-in-the-middle-b08433.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does hat have in the middle?",
+          "a": [
+            "Hat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "hat 中间是哪个字母？",
+          "a_cn": [
+            "hat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-hat-have-in-the-mi-3a351c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-hat-has-letter-a-in-the-middle-dec4dd.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Hat has letter D in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hat-has-letter-d-in-the-middle-7eb23f.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Hat has letter B in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hat-has-letter-b-in-the-middle-9a43de.mp3"
+            }
           ]
         }
       ],
@@ -284,6 +740,77 @@
           "q_audio": "audio/sentences/k2-letter-a/q-how-many-fans-are-there-74de1f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-there-are-four-fans-f09e2e.mp3"
+          ],
+          "image": "images/k2-four-fans.webp",
+          "opts": [
+            {
+              "key": "two",
+              "text": "There are two fans.",
+              "audio": "audio/sentences/k2-letter-a/a-there-are-two-fans-a0a18a.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "There are eleven fans.",
+              "audio": "audio/sentences/k2-letter-a/a-there-are-eleven-fans-071340.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fan have in the middle?",
+          "a": [
+            "Fan has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "fan 中间是什么音？",
+          "a_cn": [
+            "fan 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-fan-have-in-the-midd-be6fd0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-fan-has-the-sound-a-in-the-middle-91dbce.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Fan has the sound /m/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fan-has-the-sound-m-in-the-middle-c597bf.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Fan has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fan-has-the-sound-p-in-the-middle-8033de.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fan have in the middle?",
+          "a": [
+            "Fan has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "fan 中间是哪个字母？",
+          "a_cn": [
+            "fan 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-fan-have-in-the-mi-299361.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-fan-has-letter-a-in-the-middle-dfe233.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Fan has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fan-has-letter-s-in-the-middle-efd6e6.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Fan has letter D in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fan-has-letter-d-in-the-middle-399294.mp3"
+            }
           ]
         }
       ],
@@ -310,6 +837,48 @@
           "q_audio": "audio/sentences/k2-letter-a/q-how-many-hands-do-you-have-73098c.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-i-have-two-hands-5ccb94.mp3"
+          ],
+          "image": "images/k2-two-hands-plain.webp",
+          "opts": [
+            {
+              "key": "four",
+              "text": "I have four hands.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-four-hands-50fcaf.mp3"
+            },
+            {
+              "key": "eleven",
+              "text": "I have eleven hands.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-eleven-hands-3205f5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does hand have in the middle?",
+          "a": [
+            "Hand has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "hand 中间是什么音？",
+          "a_cn": [
+            "hand 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-hand-have-in-the-mid-03b22b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-hand-has-the-sound-a-in-the-middle-1df01e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Hand has the sound /u/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hand-has-the-sound-u-in-the-middle-d235f1.mp3"
+            },
+            {
+              "key": "/i/",
+              "text": "Hand has the sound /i/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-hand-has-the-sound-i-in-the-middle-e5783a.mp3"
+            }
           ]
         }
       ],
@@ -336,6 +905,19 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-color-is-your-hair-17d8bf.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-i-have-black-hair-509a03.mp3"
+          ],
+          "image": "images/k2-a-black-hair.webp",
+          "opts": [
+            {
+              "key": "pink",
+              "text": "I have pink hair.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-pink-hair-b97825.mp3"
+            },
+            {
+              "key": "red",
+              "text": "I have red hair.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-red-hair-8c7039.mp3"
+            }
           ]
         }
       ],
@@ -362,6 +944,19 @@
           "q_audio": "audio/sentences/k2-letter-a/q-what-can-policemen-do-25f163.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-policemen-can-catch-bad-people-89ef30.mp3"
+          ],
+          "image": "images/k2-a-police-catch.webp",
+          "opts": [
+            {
+              "key": "a",
+              "text": "Animal begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-letter-a-de976d.mp3"
+            },
+            {
+              "key": "pink",
+              "text": "I have a pink hat.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-a-pink-hat-2a16b5.mp3"
+            }
           ]
         }
       ],
@@ -388,10 +983,858 @@
           "q_audio": "audio/sentences/k2-letter-a/q-do-you-have-a-fat-cat-4c979f.mp3",
           "a_audio": [
             "audio/sentences/k2-letter-a/a-yes-i-have-a-fat-cat-50ed8f.mp3"
+          ],
+          "image": "images/k2-a-fat-cat.webp",
+          "opts": [
+            {
+              "key": "dolphin",
+              "text": "My favorite animal is a dolphin.",
+              "audio": "audio/sentences/k2-letter-a/a-my-favorite-animal-is-a-dolphin-96958b.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Ant begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-ant-begins-with-letter-a-af8f9d.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does cat have in the middle?",
+          "a": [
+            "Cat has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "cat 中间是什么音？",
+          "a_cn": [
+            "cat 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-cat-have-in-the-midd-e11f4f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-cat-has-the-sound-a-in-the-middle-a78a4a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Cat has the sound /oh/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-cat-has-the-sound-oh-in-the-middle-8a8af5.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Cat has the sound /u/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-cat-has-the-sound-u-in-the-middle-d75d0a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does cat have in the middle?",
+          "a": [
+            "Cat has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "cat 中间是哪个字母？",
+          "a_cn": [
+            "cat 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-cat-have-in-the-mi-73aaed.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-cat-has-letter-a-in-the-middle-78352f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Cat has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-cat-has-letter-s-in-the-middle-d61089.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Cat has letter D in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-cat-has-letter-d-in-the-middle-722ed9.mp3"
+            }
           ]
         }
       ],
       "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-cat-e4be72.mp3"
+    },
+    {
+      "word": "ant",
+      "cn": "蚂蚁",
+      "tag": "word",
+      "image": "images/a-ant.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's an ant."
+          ],
+          "key": [
+            "ant"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一只蚂蚁。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-it-s-an-ant-01cb4e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "alligator",
+              "text": "It's an alligator.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-an-alligator-700c75.mp3"
+            },
+            {
+              "key": "owl",
+              "text": "It's an owl.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-an-owl-269be9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does ant begin with?",
+          "a": [
+            "Ant begins with the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "ant 的开头是什么音？",
+          "a_cn": [
+            "ant 开头是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-ant-begin-with-3a8050.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-ant-begins-with-the-sound-a-a04ae5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/yoo/",
+              "text": "Ant begins with the sound /yoo/.",
+              "audio": "audio/sentences/k2-letter-a/a-ant-begins-with-the-sound-yoo-20f19b.mp3"
+            },
+            {
+              "key": "/o/",
+              "text": "Ant begins with the sound /o/.",
+              "audio": "audio/sentences/k2-letter-a/a-ant-begins-with-the-sound-o-0e2b4c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does ant begin with?",
+          "a": [
+            "Ant begins with letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "ant 以哪个字母开头？",
+          "a_cn": [
+            "ant 以字母 A 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-ant-begin-with-f73fa3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-ant-begins-with-letter-a-af8f9d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Ant begins with letter S.",
+              "audio": "audio/sentences/k2-letter-a/a-ant-begins-with-letter-s-bf6edf.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Ant begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-ant-begins-with-letter-d-bad786.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-ant-6bc56a.mp3"
+    },
+    {
+      "word": "animal",
+      "cn": "动物",
+      "tag": "word",
+      "image": "images/a-animal.webp",
+      "dialog": [
+        {
+          "q": "What is a dog?",
+          "a": [
+            "A dog is an animal."
+          ],
+          "key": [
+            "animal"
+          ],
+          "q_cn": "狗是什么？",
+          "a_cn": [
+            "狗是一种动物。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-is-a-dog-f99b8c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-a-dog-is-an-animal-6467f1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Apple begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-apple-begins-with-letter-a-d41b1b.mp3"
+            },
+            {
+              "key": "f",
+              "text": "Fast begins with letter F.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-begins-with-letter-f-5b2849.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does animal begin with?",
+          "a": [
+            "Animal begins with the sound /a/."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "animal 的开头是什么音？",
+          "a_cn": [
+            "animal 开头是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-animal-begin-with-c93702.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-animal-begins-with-the-sound-a-28e604.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/m/",
+              "text": "Animal begins with the sound /m/.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-the-sound-m-98785b.mp3"
+            },
+            {
+              "key": "/p/",
+              "text": "Animal begins with the sound /p/.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-the-sound-p-7a8349.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does animal begin with?",
+          "a": [
+            "Animal begins with letter A."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "animal 以哪个字母开头？",
+          "a_cn": [
+            "animal 以字母 A 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-animal-begin-with-c7eb7c.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-animal-begins-with-letter-a-de976d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Animal begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-letter-d-0b8ffa.mp3"
+            },
+            {
+              "key": "b",
+              "text": "Animal begins with letter B.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-letter-b-10c7bd.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-animal-d30481.mp3"
+    },
+    {
+      "word": "clap",
+      "cn": "拍手",
+      "tag": "word",
+      "image": "images/a-clap.webp",
+      "dialog": [
+        {
+          "q": "What can you do with your hands?",
+          "a": [
+            "I can clap my hands."
+          ],
+          "key": [
+            "clap"
+          ],
+          "q_cn": "手能做什么？",
+          "a_cn": [
+            "我能拍手。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-can-you-do-with-your-hands-fbb66a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-can-clap-my-hands-b50ef9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "a",
+              "text": "Animal begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-animal-begins-with-letter-a-de976d.mp3"
+            },
+            {
+              "key": "pink",
+              "text": "I have a pink hat.",
+              "audio": "audio/sentences/k2-letter-a/a-i-have-a-pink-hat-2a16b5.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does clap have in the middle?",
+          "a": [
+            "Clap has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "clap 中间是什么音？",
+          "a_cn": [
+            "clap 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-clap-have-in-the-mid-7ace82.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-clap-has-the-sound-a-in-the-middle-d57240.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Clap has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-clap-has-the-sound-v-in-the-middle-1d8188.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Clap has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-clap-has-the-sound-t-in-the-middle-8b1f63.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-clap-be09c0.mp3"
+    },
+    {
+      "word": "catch",
+      "cn": "抓住",
+      "tag": "word",
+      "image": "images/a-catch.webp",
+      "dialog": [
+        {
+          "q": "What can you do with the ball?",
+          "a": [
+            "I can catch the ball."
+          ],
+          "key": [
+            "catch"
+          ],
+          "q_cn": "球能做什么？",
+          "a_cn": [
+            "我能接住球。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-can-you-do-with-the-ball-760d64.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-can-catch-the-ball-76b24a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "fly",
+              "text": "Yes, the bat can fly.",
+              "audio": "audio/sentences/k2-letter-a/a-yes-the-bat-can-fly-0e131b.mp3"
+            },
+            {
+              "key": "clap",
+              "text": "I can clap my hands.",
+              "audio": "audio/sentences/k2-letter-a/a-i-can-clap-my-hands-b50ef9.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does catch have in the middle?",
+          "a": [
+            "Catch has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "catch 中间是什么音？",
+          "a_cn": [
+            "catch 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-catch-have-in-the-mi-347e70.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-catch-has-the-sound-a-in-the-middle-1782b6.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/e/",
+              "text": "Catch has the sound /e/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-catch-has-the-sound-e-in-the-middle-54754e.mp3"
+            },
+            {
+              "key": "/d/",
+              "text": "Catch has the sound /d/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-catch-has-the-sound-d-in-the-middle-edf988.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-catch-47d47c.mp3"
+    },
+    {
+      "word": "happy",
+      "cn": "开心的",
+      "tag": "word",
+      "image": "images/a-happy.webp",
+      "dialog": [
+        {
+          "q": "How does the boy feel?",
+          "a": [
+            "The boy is happy."
+          ],
+          "key": [
+            "happy"
+          ],
+          "q_cn": "这个男孩心情怎么样？",
+          "a_cn": [
+            "他很开心。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-how-does-the-boy-feel-bf65c6.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-the-boy-is-happy-74a1de.mp3"
+          ],
+          "opts": [
+            {
+              "key": "red",
+              "text": "The apple is red.",
+              "audio": "audio/sentences/k2-letter-a/a-the-apple-is-red-2e8276.mp3"
+            },
+            {
+              "key": "astronaut",
+              "text": "This is an astronaut.",
+              "audio": "audio/sentences/k2-letter-a/a-this-is-an-astronaut-40f59b.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does happy have in the middle?",
+          "a": [
+            "Happy has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "happy 中间是什么音？",
+          "a_cn": [
+            "happy 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-happy-have-in-the-mi-c83781.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-happy-has-the-sound-a-in-the-middle-e6ee77.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/v/",
+              "text": "Happy has the sound /v/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-happy-has-the-sound-v-in-the-middle-81e42f.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Happy has the sound /t/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-happy-has-the-sound-t-in-the-middle-277f52.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-happy-cfb038.mp3"
+    },
+    {
+      "word": "lamp",
+      "cn": "台灯",
+      "tag": "word",
+      "image": "images/a-lamp.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a lamp."
+          ],
+          "key": [
+            "lamp"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是台灯。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-it-s-a-lamp-ae2d8a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dolphin",
+              "text": "It's a dolphin.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-a-dolphin-b88c0d.mp3"
+            },
+            {
+              "key": "bag",
+              "text": "It's a bag.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-a-bag-880a60.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does lamp have in the middle?",
+          "a": [
+            "Lamp has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "lamp 中间是什么音？",
+          "a_cn": [
+            "lamp 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-lamp-have-in-the-mid-9fc7e2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-lamp-has-the-sound-a-in-the-middle-af9d28.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Lamp has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-lamp-has-the-sound-n-in-the-middle-b3e015.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Lamp has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-lamp-has-the-sound-b-in-the-middle-8f5bc3.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-lamp-3f3c9e.mp3"
+    },
+    {
+      "word": "stand",
+      "cn": "站立",
+      "tag": "word",
+      "image": "images/a-stand.webp",
+      "dialog": [
+        {
+          "q": "What can you do with your legs?",
+          "a": [
+            "I can stand."
+          ],
+          "key": [
+            "stand"
+          ],
+          "q_cn": "腿能做什么？",
+          "a_cn": [
+            "我能站着。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-can-you-do-with-your-legs-86caf7.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-i-can-stand-d1d72f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "help",
+              "text": "I can help.",
+              "audio": "audio/sentences/k2-letter-a/a-i-can-help-bdcf7b.mp3"
+            },
+            {
+              "key": "walk",
+              "text": "I can walk.",
+              "audio": "audio/sentences/k2-letter-a/a-i-can-walk-de0003.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does stand begin with?",
+          "a": [
+            "Stand begins with letter S."
+          ],
+          "key": [
+            "s"
+          ],
+          "q_cn": "stand 以哪个字母开头？",
+          "a_cn": [
+            "stand 以字母 S 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-stand-begin-with-883bcd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-stand-begins-with-letter-s-025c71.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Stand begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-stand-begins-with-letter-d-da8138.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Stand begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-stand-begins-with-letter-a-450e17.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does stand have in the middle?",
+          "a": [
+            "Stand has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "stand 中间是什么音？",
+          "a_cn": [
+            "stand 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-stand-have-in-the-mi-0cf5a1.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-stand-has-the-sound-a-in-the-middle-cea3e1.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/f/",
+              "text": "Stand has the sound /f/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-stand-has-the-sound-f-in-the-middle-4ba6f0.mp3"
+            },
+            {
+              "key": "/e/",
+              "text": "Stand has the sound /e/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-stand-has-the-sound-e-in-the-middle-721102.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-stand-afa86f.mp3"
+    },
+    {
+      "word": "fast",
+      "cn": "快的",
+      "tag": "word",
+      "image": "images/a-fast.webp",
+      "dialog": [
+        {
+          "q": "How does the boy run?",
+          "a": [
+            "The boy runs fast."
+          ],
+          "key": [
+            "fast"
+          ],
+          "q_cn": "男孩跑得怎么样？",
+          "a_cn": [
+            "他跑得很快。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-how-does-the-boy-run-5be17a.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-the-boy-runs-fast-cfb401.mp3"
+          ],
+          "opts": [
+            {
+              "key": "happy",
+              "text": "The boy is happy.",
+              "audio": "audio/sentences/k2-letter-a/a-the-boy-is-happy-74a1de.mp3"
+            },
+            {
+              "key": "red",
+              "text": "The apple is red.",
+              "audio": "audio/sentences/k2-letter-a/a-the-apple-is-red-2e8276.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does fast begin with?",
+          "a": [
+            "Fast begins with letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "fast 以哪个字母开头？",
+          "a_cn": [
+            "fast 以字母 F 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-fast-begin-with-1eb26b.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-fast-begins-with-letter-f-5b2849.mp3"
+          ],
+          "opts": [
+            {
+              "key": "d",
+              "text": "Fast begins with letter D.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-begins-with-letter-d-3b7f88.mp3"
+            },
+            {
+              "key": "a",
+              "text": "Fast begins with letter A.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-begins-with-letter-a-f32071.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does fast have in the middle?",
+          "a": [
+            "Fast has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "fast 中间是什么音？",
+          "a_cn": [
+            "fast 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-fast-have-in-the-mid-7af956.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-fast-has-the-sound-a-in-the-middle-382a53.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/oh/",
+              "text": "Fast has the sound /oh/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-has-the-sound-oh-in-the-middle-442b53.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Fast has the sound /u/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-fast-has-the-sound-u-in-the-middle-d42303.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-fast-4f360d.mp3"
+    },
+    {
+      "word": "bag",
+      "cn": "包",
+      "tag": "word",
+      "image": "images/a-bag.webp",
+      "dialog": [
+        {
+          "q": "What's this?",
+          "a": [
+            "It's a bag."
+          ],
+          "key": [
+            "bag"
+          ],
+          "q_cn": "这是什么？",
+          "a_cn": [
+            "这是一个书包。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-s-this-9a86f3.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-it-s-a-bag-880a60.mp3"
+          ],
+          "opts": [
+            {
+              "key": "dolphin",
+              "text": "It's a dolphin.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-a-dolphin-b88c0d.mp3"
+            },
+            {
+              "key": "lamp",
+              "text": "It's a lamp.",
+              "audio": "audio/sentences/k2-letter-a/a-it-s-a-lamp-ae2d8a.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bag begin with?",
+          "a": [
+            "Bag begins with letter B."
+          ],
+          "key": [
+            "b"
+          ],
+          "q_cn": "bag 以哪个字母开头？",
+          "a_cn": [
+            "bag 以字母 B 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-bag-begin-with-caf0e4.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-bag-begins-with-letter-b-1d5908.mp3"
+          ],
+          "opts": [
+            {
+              "key": "f",
+              "text": "Bag begins with letter F.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-begins-with-letter-f-2c835a.mp3"
+            },
+            {
+              "key": "s",
+              "text": "Bag begins with letter S.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-begins-with-letter-s-66b7cd.mp3"
+            }
+          ]
+        },
+        {
+          "q": "What sound does bag have in the middle?",
+          "a": [
+            "Bag has the sound /a/ in the middle."
+          ],
+          "key": [
+            "/a/"
+          ],
+          "q_cn": "bag 中间是什么音？",
+          "a_cn": [
+            "bag 中间是 /æ/ 音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-what-sound-does-bag-have-in-the-midd-cfaffd.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-bag-has-the-sound-a-in-the-middle-4483ca.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/p/",
+              "text": "Bag has the sound /p/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-has-the-sound-p-in-the-middle-b06e85.mp3"
+            },
+            {
+              "key": "/s/",
+              "text": "Bag has the sound /s/ in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-has-the-sound-s-in-the-middle-5e7fd0.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Which letter does bag have in the middle?",
+          "a": [
+            "Bag has letter A in the middle."
+          ],
+          "key": [
+            "a"
+          ],
+          "q_cn": "bag 中间是哪个字母？",
+          "a_cn": [
+            "bag 中间是字母 A。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-a/q-which-letter-does-bag-have-in-the-mi-b34251.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-a/a-bag-has-letter-a-in-the-middle-9fc51b.mp3"
+          ],
+          "opts": [
+            {
+              "key": "s",
+              "text": "Bag has letter S in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-has-letter-s-in-the-middle-af5db3.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Bag has letter D in the middle.",
+              "audio": "audio/sentences/k2-letter-a/a-bag-has-letter-d-in-the-middle-4c18f9.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k2-letter-a/q-which-one-is-bag-27dcdd.mp3"
     }
   ],
   "praise_audio": {
@@ -407,63 +1850,105 @@
   },
   "word_audio": {
     "a": "audio/words/a.mp3",
+    "airport": "audio/words/airport.mp3",
     "alligator": "audio/words/alligator.mp3",
+    "ambulance": "audio/words/ambulance.mp3",
     "an": "audio/words/an.mp3",
     "animal": "audio/words/animal.mp3",
+    "ant": "audio/words/ant.mp3",
     "apple": "audio/words/apple.mp3",
     "are": "audio/words/are.mp3",
     "astronaut": "audio/words/astronaut.mp3",
+    "ay": "audio/words/ay.mp3",
+    "b": "audio/words/b.mp3",
     "bad": "audio/words/bad.mp3",
+    "bag": "audio/words/bag.mp3",
+    "ball": "audio/words/ball.mp3",
     "bat": "audio/words/bat.mp3",
     "begin": "audio/words/begin.mp3",
     "begins": "audio/words/begins.mp3",
     "black": "audio/words/black.mp3",
+    "boy": "audio/words/boy.mp3",
     "can": "audio/words/can.mp3",
     "cat": "audio/words/cat.mp3",
     "catch": "audio/words/catch.mp3",
+    "clap": "audio/words/clap.mp3",
     "color": "audio/words/color.mp3",
+    "d": "audio/words/d.mp3",
     "dad": "audio/words/dad.mp3",
     "do": "audio/words/do.mp3",
     "does": "audio/words/does.mp3",
+    "dog": "audio/words/dog.mp3",
     "dolphin": "audio/words/dolphin.mp3",
+    "e": "audio/words/e.mp3",
+    "eleven": "audio/words/eleven.mp3",
+    "f": "audio/words/f.mp3",
     "fan": "audio/words/fan.mp3",
     "fans": "audio/words/fans.mp3",
+    "fast": "audio/words/fast.mp3",
     "fat": "audio/words/fat.mp3",
     "favorite": "audio/words/favorite.mp3",
+    "feel": "audio/words/feel.mp3",
     "fly": "audio/words/fly.mp3",
     "four": "audio/words/four.mp3",
+    "g": "audio/words/g.mp3",
     "hair": "audio/words/hair.mp3",
     "hand": "audio/words/hand.mp3",
     "hands": "audio/words/hands.mp3",
+    "happy": "audio/words/happy.mp3",
+    "has": "audio/words/has.mp3",
     "hat": "audio/words/hat.mp3",
     "have": "audio/words/have.mp3",
+    "help": "audio/words/help.mp3",
     "how": "audio/words/how.mp3",
     "i": "audio/words/i.mp3",
+    "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
     "it's": "audio/words/it-s.mp3",
+    "k": "audio/words/k.mp3",
+    "l": "audio/words/l.mp3",
+    "lamp": "audio/words/lamp.mp3",
+    "legs": "audio/words/legs.mp3",
     "letter": "audio/words/letter.mp3",
     "letter a": "audio/words/letter-a.mp3",
+    "m": "audio/words/m.mp3",
     "make": "audio/words/make.mp3",
     "makes": "audio/words/makes.mp3",
     "man": "audio/words/man.mp3",
     "many": "audio/words/many.mp3",
+    "middle": "audio/words/middle.mp3",
     "my": "audio/words/my.mp3",
+    "n": "audio/words/n.mp3",
+    "o": "audio/words/o.mp3",
+    "ocean": "audio/words/ocean.mp3",
+    "oh": "audio/words/oh.mp3",
+    "owl": "audio/words/owl.mp3",
+    "p": "audio/words/p.mp3",
     "people": "audio/words/people.mp3",
     "pink": "audio/words/pink.mp3",
     "policeman": "audio/words/policeman.mp3",
     "policemen": "audio/words/policemen.mp3",
     "red": "audio/words/red.mp3",
+    "run": "audio/words/run.mp3",
+    "runs": "audio/words/runs.mp3",
+    "s": "audio/words/s.mp3",
     "sound": "audio/words/sound.mp3",
+    "stand": "audio/words/stand.mp3",
+    "t": "audio/words/t.mp3",
     "the": "audio/words/the.mp3",
     "there": "audio/words/there.mp3",
     "this": "audio/words/this.mp3",
     "two": "audio/words/two.mp3",
+    "u": "audio/words/u.mp3",
+    "v": "audio/words/v.mp3",
+    "walk": "audio/words/walk.mp3",
     "what": "audio/words/what.mp3",
     "what's": "audio/words/what-s.mp3",
     "which": "audio/words/which.mp3",
     "who": "audio/words/who.mp3",
     "with": "audio/words/with.mp3",
     "yes": "audio/words/yes.mp3",
+    "yoo": "audio/words/yoo.mp3",
     "you": "audio/words/you.mp3",
     "your": "audio/words/your.mp3"
   }

@@ -74,12 +74,23 @@ var store = {
    ================================================================ */
 var REV_KEY = "daka.rev.v1";
 var REV_GAP = [0, 1, 2, 4, 7, 14];             // 盒号 → 间隔天数,14 天封顶
+/* 野键:纯数字开头的 "12:bat"。app.html 的 startPractice 曾把复习卡上的
+   _src(来源课程 id)覆盖成数字下标,复习账本就按下标记了一批账(修在 v74)。
+   这些键谁也查不到 —— 两个消费方都是拿真卡去查账本、从不遍历键 —— 纯死重量。
+   ⚠️ 判据只认「冒号前全是数字」:退役的日期命名课 id 是 "2026-08-30",
+   \d+ 吃完 2026 撞上的是 '-' 不是 ':',所以它们的账不会被误扫。 */
+var REV_JUNK = /^\d+:/;
 var revStore = {
   load: function(){
     try{
       var s = localStorage.getItem(REV_KEY);
       var o = s ? JSON.parse(s) : null;
-      return (o && typeof o === "object") ? o : {};
+      if(!o || typeof o !== "object") return {};
+      // 扫一次就写回,下次 load 无键可扫也就不再写 —— 自愈一次即收敛
+      var k, dirty = false;
+      for(k in o) if(o.hasOwnProperty(k) && REV_JUNK.test(k)){ delete o[k]; dirty = true; }
+      if(dirty) revStore.save(o);
+      return o;
     }catch(e){ return {}; }
   },
   save: function(o){
@@ -95,4 +106,20 @@ function revRec(o, k){                         // 取/修某卡的账,字段坏�
   if(!(typeof r.t === "string" && /^\d{4}-\d{2}-\d{2}$/.test(r.t))) r.t = today();
   o[k] = r;
   return r;
+}
+
+/* ── 级别(K1/K2/…):目录页切换器和混合复习的"当前级别"共用 ──────────────
+   学习路径就是这个顺序;没标 level 的老课一律当 K2(回填前的数据)。
+   ⚠️ gen_audio.py 的 LEVEL_ORDER 是同一张表,改了要同步 */
+var LV_ORDER = ["K1", "K2", "K3", "S1", "S2", "S3"];
+function lvOf(l){ return (l && l.level) || "K2"; }
+function lvRank(lv){ var i = LV_ORDER.indexOf(lv); return i < 0 ? 1 : i; }
+/* 一批课里的"当前级别" = 排位最高的那个:导入永远跟着孩子的进度走,
+   手里最高的级别就是正在学的(K1 已学完才会去学 K2) */
+function lvCurrent(lessons){
+  var best = "K2", r = -1;
+  (lessons || []).forEach(function(l){
+    if(lvRank(lvOf(l)) > r){ r = lvRank(lvOf(l)); best = lvOf(l); }
+  });
+  return best;
 }

@@ -1,0 +1,272 @@
+{
+ "seq": 301,
+ "level": "K1",
+ "group": "颜色 Colors",
+ "badge": "红黄蓝",
+ "cover": "images/k1-color-red.webp",
+ "title": "Colors · Red / Yellow / Blue",
+ "cards": [
+  {
+   "word": "red",
+   "cn": "红色",
+   "tag": "color",
+   "pattern": [
+    "#red"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's red."
+     ],
+     "key": [
+      "red"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是红色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+     ],
+     "opts": [
+      {
+       "key": "blue",
+       "text": "It's blue.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+      },
+      {
+       "key": "yellow",
+       "text": "It's yellow.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What is red?",
+     "image": "images/k1-color-red.webp",
+     "a": [
+      "The apple is red."
+     ],
+     "key": [
+      "apple"
+     ],
+     "q_cn": "什么是红色的？",
+     "a_cn": [
+      "苹果是红色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-is-red-ed779d.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+     ],
+     "opts": [
+      {
+       "key": "banana",
+       "text": "The banana is yellow.",
+       "audio": "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+      },
+      {
+       "key": "sky",
+       "text": "The sky is blue.",
+       "audio": "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What color do you like? Why?",
+     "a": [
+      "I like red. Because the apple is red, I like to eat apples."
+     ],
+     "key": [
+      "red"
+     ],
+     "practice": false,
+     "q_cn": "你喜欢什么颜色？为什么？",
+     "a_cn": [
+      "我喜欢红色，因为苹果是红色的，我喜欢吃苹果。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-color-do-you-like-why-e3957c.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-i-like-red-because-the-apple-is-red--daa3d8.mp3"
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-red/q-which-one-is-red-dd6cee.mp3"
+  },
+  {
+   "word": "yellow",
+   "cn": "黄色",
+   "tag": "color",
+   "pattern": [
+    "#yellow"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's yellow."
+     ],
+     "key": [
+      "yellow"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是黄色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+     ],
+     "opts": [
+      {
+       "key": "red",
+       "text": "It's red.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+      },
+      {
+       "key": "blue",
+       "text": "It's blue.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What is yellow?",
+     "image": "images/k1-color-yellow.webp",
+     "a": [
+      "The banana is yellow."
+     ],
+     "key": [
+      "banana"
+     ],
+     "q_cn": "什么是黄色的？",
+     "a_cn": [
+      "香蕉是黄色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-is-yellow-ff0e49.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+     ],
+     "opts": [
+      {
+       "key": "sky",
+       "text": "The sky is blue.",
+       "audio": "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+      },
+      {
+       "key": "apple",
+       "text": "The apple is red.",
+       "audio": "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-red/q-which-one-is-yellow-bd68b3.mp3"
+  },
+  {
+   "word": "blue",
+   "cn": "蓝色",
+   "tag": "color",
+   "pattern": [
+    "#blue"
+   ],
+   "dialog": [
+    {
+     "q": "What color is it?",
+     "a": [
+      "It's blue."
+     ],
+     "key": [
+      "blue"
+     ],
+     "q_cn": "这是什么颜色？",
+     "a_cn": [
+      "这是蓝色。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-color-is-it-33e73a.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-it-s-blue-fd815f.mp3"
+     ],
+     "opts": [
+      {
+       "key": "red",
+       "text": "It's red.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-red-7937c5.mp3"
+      },
+      {
+       "key": "yellow",
+       "text": "It's yellow.",
+       "audio": "audio/sentences/k1-color-red/a-it-s-yellow-490bb1.mp3"
+      }
+     ]
+    },
+    {
+     "q": "What is blue?",
+     "image": "images/k1-color-blue.webp",
+     "a": [
+      "The sky is blue."
+     ],
+     "key": [
+      "sky"
+     ],
+     "q_cn": "什么是蓝色的？",
+     "a_cn": [
+      "天空是蓝色的。"
+     ],
+     "q_audio": "audio/sentences/k1-color-red/q-what-is-blue-c97a28.mp3",
+     "a_audio": [
+      "audio/sentences/k1-color-red/a-the-sky-is-blue-e59912.mp3"
+     ],
+     "opts": [
+      {
+       "key": "banana",
+       "text": "The banana is yellow.",
+       "audio": "audio/sentences/k1-color-red/a-the-banana-is-yellow-2d7895.mp3"
+      },
+      {
+       "key": "apple",
+       "text": "The apple is red.",
+       "audio": "audio/sentences/k1-color-red/a-the-apple-is-red-2e8276.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/k1-color-red/q-which-one-is-blue-32fdc0.mp3"
+  }
+ ],
+ "word_audio": {
+  "apple": "audio/words/apple.mp3",
+  "apples": "audio/words/apples.mp3",
+  "banana": "audio/words/banana.mp3",
+  "because": "audio/words/because.mp3",
+  "blue": "audio/words/blue.mp3",
+  "color": "audio/words/color.mp3",
+  "do": "audio/words/do.mp3",
+  "eat": "audio/words/eat.mp3",
+  "i": "audio/words/i.mp3",
+  "is": "audio/words/is.mp3",
+  "it": "audio/words/it.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "like": "audio/words/like.mp3",
+  "red": "audio/words/red.mp3",
+  "sky": "audio/words/sky.mp3",
+  "the": "audio/words/the.mp3",
+  "to": "audio/words/to.mp3",
+  "what": "audio/words/what.mp3",
+  "why": "audio/words/why.mp3",
+  "yellow": "audio/words/yellow.mp3",
+  "you": "audio/words/you.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
+}

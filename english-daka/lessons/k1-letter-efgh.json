@@ -1,0 +1,532 @@
+{
+  "seq": 102,
+  "level": "K1",
+  "group": "字母 Letters",
+  "badge": "E",
+  "cover": "images/k1-letter-e.webp",
+  "title": "Letters · E/F/G/H 认字母",
+  "cards": [
+    {
+      "word": "letter E",
+      "cn": "字母 E",
+      "tag": "letter",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter E."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 E。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-letter-e-88696a.mp3"
+          ],
+          "opts": [
+            {
+              "key": "g",
+              "text": "It's letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-g-78323f.mp3"
+            },
+            {
+              "key": "h",
+              "text": "It's letter H.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-h-2a680c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you show me letter E?",
+          "a": [
+            "I can show you letter E."
+          ],
+          "key": [
+            "e"
+          ],
+          "q_cn": "你能做出字母 E 吗？",
+          "a_cn": [
+            "我能做出字母 E。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-can-you-show-me-letter-e-939550.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-e-5f283b.mp3"
+          ],
+          "image": "images/k1-pose-e.webp",
+          "opts": [
+            {
+              "key": "g",
+              "text": "I can show you letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-g-9369d1.mp3"
+            },
+            {
+              "key": "h",
+              "text": "I can show you letter H.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-h-1c199c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Is it a big E or a small e?",
+          "a": [
+            "It's a big E."
+          ],
+          "key": [
+            "big"
+          ],
+          "q_cn": "这是大写 E 还是小写 e？",
+          "a_cn": [
+            "这是大写 E。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-is-it-a-big-e-or-a-small-e-62362f.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-a-big-e-5bae74.mp3"
+          ],
+          "opts": [
+            {
+              "key": "small",
+              "text": "It's a small f.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-a-small-f-fe8176.mp3"
+            },
+            {
+              "key": "h",
+              "text": "Letter H comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-h-comes-next-03ec40.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-letter-e-3f3fc0.mp3",
+      "image": "images/k1-letter-e.webp"
+    },
+    {
+      "word": "letter F",
+      "cn": "字母 F",
+      "tag": "letter",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 F。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-letter-f-5461e9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "It's letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-e-88696a.mp3"
+            },
+            {
+              "key": "g",
+              "text": "It's letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-g-78323f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you show me letter F?",
+          "a": [
+            "I can show you letter F."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "你能做出字母 F 吗？",
+          "a_cn": [
+            "我能做出字母 F。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-can-you-show-me-letter-f-c1c0a5.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-f-c46d39.mp3"
+          ],
+          "image": "images/k1-pose-f.webp",
+          "opts": [
+            {
+              "key": "e",
+              "text": "I can show you letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-e-5f283b.mp3"
+            },
+            {
+              "key": "g",
+              "text": "I can show you letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-g-9369d1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Is it a big F or a small f?",
+          "a": [
+            "It's a small f."
+          ],
+          "key": [
+            "small"
+          ],
+          "q_cn": "这是大写 F 还是小写 f？",
+          "a_cn": [
+            "这是小写 f。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-is-it-a-big-f-or-a-small-f-28c75e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-a-small-f-fe8176.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Letter H comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-h-comes-next-03ec40.mp3"
+            },
+            {
+              "key": "big",
+              "text": "It's a big E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-a-big-e-5bae74.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-letter-f-40db12.mp3",
+      "image": "images/k1-letter-f.webp"
+    },
+    {
+      "word": "letter G",
+      "cn": "字母 G",
+      "tag": "letter",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 G。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-letter-g-78323f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "It's letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-e-88696a.mp3"
+            },
+            {
+              "key": "h",
+              "text": "It's letter H.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-h-2a680c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you show me letter G?",
+          "a": [
+            "I can show you letter G."
+          ],
+          "key": [
+            "g"
+          ],
+          "q_cn": "你能做出字母 G 吗？",
+          "a_cn": [
+            "我能做出字母 G。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-can-you-show-me-letter-g-19cf9b.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-g-9369d1.mp3"
+          ],
+          "image": "images/k1-pose-g.webp",
+          "opts": [
+            {
+              "key": "e",
+              "text": "I can show you letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-e-5f283b.mp3"
+            },
+            {
+              "key": "h",
+              "text": "I can show you letter H.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-h-1c199c.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Is it a big G or a small g?",
+          "a": [
+            "It's a big G."
+          ],
+          "key": [
+            "big"
+          ],
+          "q_cn": "这是大写 G 还是小写 g？",
+          "a_cn": [
+            "这是大写 G。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-is-it-a-big-g-or-a-small-g-851116.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-a-big-g-db0212.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Letter H comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-h-comes-next-03ec40.mp3"
+            },
+            {
+              "key": "small",
+              "text": "It's a small h.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-a-small-h-ef55f2.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-letter-g-de53e7.mp3",
+      "image": "images/k1-letter-g.webp"
+    },
+    {
+      "word": "letter H",
+      "cn": "字母 H",
+      "tag": "letter",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter H."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 H。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-letter-h-2a680c.mp3"
+          ],
+          "opts": [
+            {
+              "key": "e",
+              "text": "It's letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-e-88696a.mp3"
+            },
+            {
+              "key": "g",
+              "text": "It's letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-letter-g-78323f.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Can you show me letter H?",
+          "a": [
+            "I can show you letter H."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "你能做出字母 H 吗？",
+          "a_cn": [
+            "我能做出字母 H。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-can-you-show-me-letter-h-bedabe.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-h-1c199c.mp3"
+          ],
+          "image": "images/k1-pose-h.webp",
+          "opts": [
+            {
+              "key": "e",
+              "text": "I can show you letter E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-e-5f283b.mp3"
+            },
+            {
+              "key": "g",
+              "text": "I can show you letter G.",
+              "audio": "audio/sentences/k1-letter-efgh/a-i-can-show-you-letter-g-9369d1.mp3"
+            }
+          ]
+        },
+        {
+          "q": "Is it a big H or a small h?",
+          "a": [
+            "It's a small h."
+          ],
+          "key": [
+            "small"
+          ],
+          "q_cn": "这是大写 H 还是小写 h？",
+          "a_cn": [
+            "这是小写 h。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-is-it-a-big-h-or-a-small-h-b3887e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-it-s-a-small-h-ef55f2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "h",
+              "text": "Letter H comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-h-comes-next-03ec40.mp3"
+            },
+            {
+              "key": "big",
+              "text": "It's a big E.",
+              "audio": "audio/sentences/k1-letter-efgh/a-it-s-a-big-e-5bae74.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-letter-h-3203dd.mp3",
+      "image": "images/k1-letter-h.webp"
+    },
+    {
+      "word": "letter order",
+      "cn": "字母排序",
+      "tag": "letter",
+      "pattern": [
+        "E",
+        "?",
+        "G",
+        "H"
+      ],
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "Which letter is missing?",
+          "a": [
+            "Letter F is missing."
+          ],
+          "key": [
+            "f"
+          ],
+          "q_cn": "哪个字母不见了？",
+          "a_cn": [
+            "字母 F 不见了。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-which-letter-is-missing-9a0a7c.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-letter-f-is-missing-696855.mp3"
+          ],
+          "opts": [
+            {
+              "key": "k",
+              "text": "Letter K is missing.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-k-is-missing-cfc42a.mp3"
+            },
+            {
+              "key": "r",
+              "text": "Letter R is missing.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-r-is-missing-a60940.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-letter-order-05af72.mp3"
+    },
+    {
+      "word": "what comes next",
+      "cn": "下一个字母",
+      "tag": "letter",
+      "pattern": [
+        "E",
+        "F",
+        "G",
+        "?"
+      ],
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "Which letter comes next?",
+          "a": [
+            "Letter H comes next."
+          ],
+          "key": [
+            "h"
+          ],
+          "q_cn": "下一个是哪个字母？",
+          "a_cn": [
+            "下一个是字母 H。"
+          ],
+          "q_audio": "audio/sentences/k1-letter-efgh/q-which-letter-comes-next-8c625e.mp3",
+          "a_audio": [
+            "audio/sentences/k1-letter-efgh/a-letter-h-comes-next-03ec40.mp3"
+          ],
+          "opts": [
+            {
+              "key": "p",
+              "text": "Letter P comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-p-comes-next-506e58.mp3"
+            },
+            {
+              "key": "d",
+              "text": "Letter D comes next.",
+              "audio": "audio/sentences/k1-letter-efgh/a-letter-d-comes-next-bcf738.mp3"
+            }
+          ]
+        }
+      ],
+      "quiz_audio": "audio/sentences/k1-letter-efgh/q-which-one-is-what-comes-next-cd9e23.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "big": "audio/words/big.mp3",
+    "can": "audio/words/can.mp3",
+    "comes": "audio/words/comes.mp3",
+    "d": "audio/words/d.mp3",
+    "e": "audio/words/e.mp3",
+    "f": "audio/words/f.mp3",
+    "g": "audio/words/g.mp3",
+    "h": "audio/words/h.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "k": "audio/words/k.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter e": "audio/words/letter-e.mp3",
+    "letter f": "audio/words/letter-f.mp3",
+    "letter g": "audio/words/letter-g.mp3",
+    "letter h": "audio/words/letter-h.mp3",
+    "letter order": "audio/words/letter-order.mp3",
+    "me": "audio/words/me.mp3",
+    "missing": "audio/words/missing.mp3",
+    "next": "audio/words/next.mp3",
+    "or": "audio/words/or.mp3",
+    "p": "audio/words/p.mp3",
+    "r": "audio/words/r.mp3",
+    "show": "audio/words/show.mp3",
+    "small": "audio/words/small.mp3",
+    "this": "audio/words/this.mp3",
+    "what comes next": "audio/words/what-comes-next.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

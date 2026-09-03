@@ -1,472 +1,666 @@
 {
-  "group": "数学 Math",
-  "seq": 603,
-  "badge": "−1",
-  "badge_sub": "减法",
-  "title": "Subtraction · 比…少一和零",
-  "cards": [
+ "group": "数学 Math",
+ "seq": 603,
+ "level": "K2",
+ "badge": "−1",
+ "cover": "images/20-one-fewer-than-and-zero.webp",
+ "badge_sub": "减法",
+ "title": "Subtraction · 比…少一和零",
+ "cards": [
+  {
+   "word": "zero",
+   "cn": "零",
+   "tag": "number",
+   "dialog": [
     {
-      "word": "zero",
-      "cn": "零",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What's this number?",
-          "a": [
-            "It's number zero."
-          ],
-          "key": [
-            "zero"
-          ],
-          "q_cn": "这是数字几？",
-          "a_cn": [
-            "这是数字零。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-s-this-number-0b7195.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-zero-7859cc.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-zero-49bdaf.mp3",
-      "eq": "0"
-    },
-    {
-      "word": "one fewer than ten",
-      "cn": "比十少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than ten?",
-          "a": [
-            "One fewer than ten is nine."
-          ],
-          "key": [
-            "nine"
-          ],
-          "q_cn": "比十少一是多少？",
-          "a_cn": [
-            "比十少一是九。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-ten-077b65.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-nine-a5b473.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-ten-9bbf5e.mp3",
-      "eq": "10-1"
-    },
-    {
-      "word": "one fewer than nine",
-      "cn": "比九少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than nine?",
-          "a": [
-            "One fewer than nine is eight."
-          ],
-          "key": [
-            "eight"
-          ],
-          "q_cn": "比九少一是多少？",
-          "a_cn": [
-            "比九少一是八。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-nine-22338a.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-eight-6b6f34.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-nine-21bb00.mp3",
-      "eq": "9-1"
-    },
-    {
-      "word": "one fewer than eight",
-      "cn": "比八少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than eight?",
-          "a": [
-            "One fewer than eight is seven."
-          ],
-          "key": [
-            "seven"
-          ],
-          "q_cn": "比八少一是多少？",
-          "a_cn": [
-            "比八少一是七。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-eight-d5b380.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-seven-b496b1.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-eight-522498.mp3",
-      "eq": "8-1"
-    },
-    {
-      "word": "one fewer than seven",
-      "cn": "比七少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than seven?",
-          "a": [
-            "One fewer than seven is six."
-          ],
-          "key": [
-            "six"
-          ],
-          "q_cn": "比七少一是多少？",
-          "a_cn": [
-            "比七少一是六。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-seven-748a50.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-six-21dd4a.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-seven-c993cd.mp3",
-      "eq": "7-1"
-    },
-    {
-      "word": "one fewer than six",
-      "cn": "比六少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than six?",
-          "a": [
-            "One fewer than six is five."
-          ],
-          "key": [
-            "five"
-          ],
-          "q_cn": "比六少一是多少？",
-          "a_cn": [
-            "比六少一是五。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-six-8bfe49.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-five-438986.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-six-aa8981.mp3",
-      "eq": "6-1"
-    },
-    {
-      "word": "one fewer than five",
-      "cn": "比五少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than five?",
-          "a": [
-            "One fewer than five is four."
-          ],
-          "key": [
-            "four"
-          ],
-          "q_cn": "比五少一是多少？",
-          "a_cn": [
-            "比五少一是四。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-five-c6642e.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-four-8c25fb.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-five-6bed9b.mp3",
-      "eq": "5-1"
-    },
-    {
-      "word": "one fewer than four",
-      "cn": "比四少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than four?",
-          "a": [
-            "One fewer than four is three."
-          ],
-          "key": [
-            "three"
-          ],
-          "q_cn": "比四少一是多少？",
-          "a_cn": [
-            "比四少一是三。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-four-c22172.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-three-62caef.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-four-ab26e1.mp3",
-      "eq": "4-1"
-    },
-    {
-      "word": "one fewer than three",
-      "cn": "比三少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than three?",
-          "a": [
-            "One fewer than three is two."
-          ],
-          "key": [
-            "two"
-          ],
-          "q_cn": "比三少一是多少？",
-          "a_cn": [
-            "比三少一是二。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-three-749fba.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-two-e3fe59.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-three-9f0924.mp3",
-      "eq": "3-1"
-    },
-    {
-      "word": "one fewer than two",
-      "cn": "比二少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than two?",
-          "a": [
-            "One fewer than two is one."
-          ],
-          "key": [
-            "one"
-          ],
-          "q_cn": "比二少一是多少？",
-          "a_cn": [
-            "比二少一是一。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-two-8ef348.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-two-is-one-e65ade.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-two-d14522.mp3",
-      "eq": "2-1"
-    },
-    {
-      "word": "one fewer than one",
-      "cn": "比一少一",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is one fewer than one?",
-          "a": [
-            "One fewer than one is zero."
-          ],
-          "key": [
-            "zero"
-          ],
-          "q_cn": "比一少一是多少？",
-          "a_cn": [
-            "比一少一是零。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-one-99d7de.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-zero-e7934b.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-one-e417de.mp3",
-      "eq": "1-1"
-    },
-    {
-      "word": "three fewer than nine",
-      "cn": "比九少三",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is three fewer than nine?",
-          "a": [
-            "Three fewer than nine is six."
-          ],
-          "key": [
-            "six"
-          ],
-          "q_cn": "比九少三是多少？",
-          "a_cn": [
-            "比九少三是六。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-three-fewer-than-nine-9a83c6.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-six-4756c0.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-three-fewer-than-nine-f2bd99.mp3",
-      "eq": "9-3"
-    },
-    {
-      "word": "two fewer than eight",
-      "cn": "比八少二",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is two fewer than eight?",
-          "a": [
-            "Two fewer than eight is six."
-          ],
-          "key": [
-            "six"
-          ],
-          "q_cn": "比八少二是多少？",
-          "a_cn": [
-            "比八少二是六。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-two-fewer-than-eight-dbfd0a.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-six-e0f094.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-two-fewer-than-eight-7e6b91.mp3",
-      "eq": "8-2"
-    },
-    {
-      "word": "five fewer than seven",
-      "cn": "比七少五",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is five fewer than seven?",
-          "a": [
-            "Five fewer than seven is two."
-          ],
-          "key": [
-            "two"
-          ],
-          "q_cn": "比七少五是多少？",
-          "a_cn": [
-            "比七少五是二。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-five-fewer-than-seven-b4c199.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-two-71eebf.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-five-fewer-than-seven-15d1eb.mp3",
-      "eq": "7-5"
-    },
-    {
-      "word": "five fewer than five",
-      "cn": "比五少五",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is five fewer than five?",
-          "a": [
-            "Five fewer than five is zero."
-          ],
-          "key": [
-            "zero"
-          ],
-          "q_cn": "比五少五是多少？",
-          "a_cn": [
-            "比五少五是零。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-five-fewer-than-five-68dde0.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-zero-ffd04c.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-five-fewer-than-five-8361ae.mp3",
-      "eq": "5-5"
-    },
-    {
-      "word": "four fewer than six",
-      "cn": "比六少四",
-      "tag": "number",
-      "dialog": [
-        {
-          "q": "What is four fewer than six?",
-          "a": [
-            "Four fewer than six is two."
-          ],
-          "key": [
-            "two"
-          ],
-          "q_cn": "比六少四是多少？",
-          "a_cn": [
-            "比六少四是二。"
-          ],
-          "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-four-fewer-than-six-9760b3.mp3",
-          "a_audio": [
-            "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-two-b85ca6.mp3"
-          ]
-        }
-      ],
-      "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-four-fewer-than-six-585122.mp3",
-      "eq": "6-4"
+     "q": "What's this number?",
+     "a": [
+      "It's number zero."
+     ],
+     "key": [
+      "zero"
+     ],
+     "q_cn": "这是数字几？",
+     "a_cn": [
+      "这是数字零。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-s-this-number-0b7195.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-zero-7859cc.mp3"
+     ],
+     "opts": [
+      {
+       "key": "two",
+       "text": "It's number two.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-two-e0a444.mp3"
+      },
+      {
+       "key": "four",
+       "text": "It's number four.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-it-s-number-four-e275dc.mp3"
+      }
+     ]
     }
-  ],
-  "word_audio": {
-    "eight": "audio/words/eight.mp3",
-    "fewer": "audio/words/fewer.mp3",
-    "five": "audio/words/five.mp3",
-    "five fewer than five": "audio/words/five-fewer-than-five.mp3",
-    "five fewer than seven": "audio/words/five-fewer-than-seven.mp3",
-    "four": "audio/words/four.mp3",
-    "four fewer than six": "audio/words/four-fewer-than-six.mp3",
-    "is": "audio/words/is.mp3",
-    "it's": "audio/words/it-s.mp3",
-    "nine": "audio/words/nine.mp3",
-    "number": "audio/words/number.mp3",
-    "one": "audio/words/one.mp3",
-    "one fewer than eight": "audio/words/one-fewer-than-eight.mp3",
-    "one fewer than five": "audio/words/one-fewer-than-five.mp3",
-    "one fewer than four": "audio/words/one-fewer-than-four.mp3",
-    "one fewer than nine": "audio/words/one-fewer-than-nine.mp3",
-    "one fewer than one": "audio/words/one-fewer-than-one.mp3",
-    "one fewer than seven": "audio/words/one-fewer-than-seven.mp3",
-    "one fewer than six": "audio/words/one-fewer-than-six.mp3",
-    "one fewer than ten": "audio/words/one-fewer-than-ten.mp3",
-    "one fewer than three": "audio/words/one-fewer-than-three.mp3",
-    "one fewer than two": "audio/words/one-fewer-than-two.mp3",
-    "seven": "audio/words/seven.mp3",
-    "six": "audio/words/six.mp3",
-    "ten": "audio/words/ten.mp3",
-    "than": "audio/words/than.mp3",
-    "this": "audio/words/this.mp3",
-    "three": "audio/words/three.mp3",
-    "three fewer than nine": "audio/words/three-fewer-than-nine.mp3",
-    "two": "audio/words/two.mp3",
-    "two fewer than eight": "audio/words/two-fewer-than-eight.mp3",
-    "what": "audio/words/what.mp3",
-    "what's": "audio/words/what-s.mp3",
-    "zero": "audio/words/zero.mp3"
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-zero-49bdaf.mp3",
+   "eq": "0"
   },
-  "praise_audio": {
-    "Great job!": "audio/praise/great-job.mp3",
-    "Well done!": "audio/praise/well-done.mp3",
-    "Awesome!": "audio/praise/awesome.mp3",
-    "Excellent!": "audio/praise/excellent.mp3",
-    "Perfect!": "audio/praise/perfect.mp3",
-    "Try again!": "audio/praise/try-again.mp3",
-    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
-    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
-    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  {
+   "word": "one fewer than ten",
+   "cn": "比十少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than ten?",
+     "a": [
+      "One fewer than ten is nine."
+     ],
+     "key": [
+      "nine"
+     ],
+     "q_cn": "比十少一是多少？",
+     "a_cn": [
+      "比十少一是九。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-ten-077b65.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-nine-a5b473.mp3"
+     ],
+     "opts": [
+      {
+       "key": "zero",
+       "text": "One fewer than ten is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-zero-c07544.mp3"
+      },
+      {
+       "key": "seven",
+       "text": "One fewer than ten is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-ten-is-seven-a7d0d6.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-ten-9bbf5e.mp3",
+   "eq": "10-1"
+  },
+  {
+   "word": "one fewer than nine",
+   "cn": "比九少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than nine?",
+     "a": [
+      "One fewer than nine is eight."
+     ],
+     "key": [
+      "eight"
+     ],
+     "q_cn": "比九少一是多少？",
+     "a_cn": [
+      "比九少一是八。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-nine-22338a.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-eight-6b6f34.mp3"
+     ],
+     "opts": [
+      {
+       "key": "two",
+       "text": "One fewer than nine is two.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-two-d3fc4b.mp3"
+      },
+      {
+       "key": "four",
+       "text": "One fewer than nine is four.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-nine-is-four-2b39c8.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-nine-21bb00.mp3",
+   "eq": "9-1"
+  },
+  {
+   "word": "one fewer than eight",
+   "cn": "比八少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than eight?",
+     "a": [
+      "One fewer than eight is seven."
+     ],
+     "key": [
+      "seven"
+     ],
+     "q_cn": "比八少一是多少？",
+     "a_cn": [
+      "比八少一是七。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-eight-d5b380.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-seven-b496b1.mp3"
+     ],
+     "opts": [
+      {
+       "key": "five",
+       "text": "One fewer than eight is five.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-five-fa19ad.mp3"
+      },
+      {
+       "key": "six",
+       "text": "One fewer than eight is six.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-eight-is-six-a22b04.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-eight-522498.mp3",
+   "eq": "8-1"
+  },
+  {
+   "word": "one fewer than seven",
+   "cn": "比七少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than seven?",
+     "a": [
+      "One fewer than seven is six."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "比七少一是多少？",
+     "a_cn": [
+      "比七少一是六。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-seven-748a50.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-six-21dd4a.mp3"
+     ],
+     "opts": [
+      {
+       "key": "zero",
+       "text": "One fewer than seven is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-zero-301554.mp3"
+      },
+      {
+       "key": "five",
+       "text": "One fewer than seven is five.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-seven-is-five-bd6664.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-seven-c993cd.mp3",
+   "eq": "7-1"
+  },
+  {
+   "word": "one fewer than six",
+   "cn": "比六少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than six?",
+     "a": [
+      "One fewer than six is five."
+     ],
+     "key": [
+      "five"
+     ],
+     "q_cn": "比六少一是多少？",
+     "a_cn": [
+      "比六少一是五。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-six-8bfe49.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-five-438986.mp3"
+     ],
+     "opts": [
+      {
+       "key": "seven",
+       "text": "One fewer than six is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-seven-312d4b.mp3"
+      },
+      {
+       "key": "eight",
+       "text": "One fewer than six is eight.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-six-is-eight-d7fcdb.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-six-aa8981.mp3",
+   "eq": "6-1"
+  },
+  {
+   "word": "one fewer than five",
+   "cn": "比五少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than five?",
+     "a": [
+      "One fewer than five is four."
+     ],
+     "key": [
+      "four"
+     ],
+     "q_cn": "比五少一是多少？",
+     "a_cn": [
+      "比五少一是四。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-five-c6642e.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-four-8c25fb.mp3"
+     ],
+     "opts": [
+      {
+       "key": "two",
+       "text": "One fewer than five is two.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-two-3bdc82.mp3"
+      },
+      {
+       "key": "zero",
+       "text": "One fewer than five is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-five-is-zero-2710aa.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-five-6bed9b.mp3",
+   "eq": "5-1"
+  },
+  {
+   "word": "one fewer than four",
+   "cn": "比四少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than four?",
+     "a": [
+      "One fewer than four is three."
+     ],
+     "key": [
+      "three"
+     ],
+     "q_cn": "比四少一是多少？",
+     "a_cn": [
+      "比四少一是三。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-four-c22172.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-three-62caef.mp3"
+     ],
+     "opts": [
+      {
+       "key": "seven",
+       "text": "One fewer than four is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-seven-58ae74.mp3"
+      },
+      {
+       "key": "five",
+       "text": "One fewer than four is five.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-five-cd9a46.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-four-ab26e1.mp3",
+   "eq": "4-1"
+  },
+  {
+   "word": "one fewer than three",
+   "cn": "比三少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than three?",
+     "a": [
+      "One fewer than three is two."
+     ],
+     "key": [
+      "two"
+     ],
+     "q_cn": "比三少一是多少？",
+     "a_cn": [
+      "比三少一是二。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-three-749fba.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-two-e3fe59.mp3"
+     ],
+     "opts": [
+      {
+       "key": "zero",
+       "text": "One fewer than three is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-zero-8ed04f.mp3"
+      },
+      {
+       "key": "seven",
+       "text": "One fewer than three is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-three-is-seven-903916.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-three-9f0924.mp3",
+   "eq": "3-1"
+  },
+  {
+   "word": "one fewer than two",
+   "cn": "比二少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than two?",
+     "a": [
+      "One fewer than two is one."
+     ],
+     "key": [
+      "one"
+     ],
+     "q_cn": "比二少一是多少？",
+     "a_cn": [
+      "比二少一是一。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-two-8ef348.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-two-is-one-e65ade.mp3"
+     ],
+     "opts": [
+      {
+       "key": "two",
+       "text": "Five fewer than seven is two.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-two-71eebf.mp3"
+      },
+      {
+       "key": "three",
+       "text": "One fewer than four is three.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-four-is-three-62caef.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-two-d14522.mp3",
+   "eq": "2-1"
+  },
+  {
+   "word": "one fewer than one",
+   "cn": "比一少一",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is one fewer than one?",
+     "a": [
+      "One fewer than one is zero."
+     ],
+     "key": [
+      "zero"
+     ],
+     "q_cn": "比一少一是多少？",
+     "a_cn": [
+      "比一少一是零。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-one-fewer-than-one-99d7de.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-zero-e7934b.mp3"
+     ],
+     "opts": [
+      {
+       "key": "four",
+       "text": "One fewer than one is four.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-four-86a47e.mp3"
+      },
+      {
+       "key": "seven",
+       "text": "One fewer than one is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-one-fewer-than-one-is-seven-237b1a.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-one-fewer-than-one-e417de.mp3",
+   "eq": "1-1"
+  },
+  {
+   "word": "three fewer than nine",
+   "cn": "比九少三",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is three fewer than nine?",
+     "a": [
+      "Three fewer than nine is six."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "比九少三是多少？",
+     "a_cn": [
+      "比九少三是六。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-three-fewer-than-nine-9a83c6.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-six-4756c0.mp3"
+     ],
+     "opts": [
+      {
+       "key": "seven",
+       "text": "Three fewer than nine is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-seven-3fd62e.mp3"
+      },
+      {
+       "key": "five",
+       "text": "Three fewer than nine is five.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-three-fewer-than-nine-is-five-e7edc2.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-three-fewer-than-nine-f2bd99.mp3",
+   "eq": "9-3"
+  },
+  {
+   "word": "two fewer than eight",
+   "cn": "比八少二",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is two fewer than eight?",
+     "a": [
+      "Two fewer than eight is six."
+     ],
+     "key": [
+      "six"
+     ],
+     "q_cn": "比八少二是多少？",
+     "a_cn": [
+      "比八少二是六。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-two-fewer-than-eight-dbfd0a.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-six-e0f094.mp3"
+     ],
+     "opts": [
+      {
+       "key": "four",
+       "text": "Two fewer than eight is four.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-four-4b0cec.mp3"
+      },
+      {
+       "key": "zero",
+       "text": "Two fewer than eight is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-two-fewer-than-eight-is-zero-1feaba.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-two-fewer-than-eight-7e6b91.mp3",
+   "eq": "8-2"
+  },
+  {
+   "word": "five fewer than seven",
+   "cn": "比七少五",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is five fewer than seven?",
+     "a": [
+      "Five fewer than seven is two."
+     ],
+     "key": [
+      "two"
+     ],
+     "q_cn": "比七少五是多少？",
+     "a_cn": [
+      "比七少五是二。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-five-fewer-than-seven-b4c199.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-two-71eebf.mp3"
+     ],
+     "opts": [
+      {
+       "key": "nine",
+       "text": "Five fewer than seven is nine.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-nine-728d5d.mp3"
+      },
+      {
+       "key": "three",
+       "text": "Five fewer than seven is three.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-seven-is-three-d630ab.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-five-fewer-than-seven-15d1eb.mp3",
+   "eq": "7-5"
+  },
+  {
+   "word": "five fewer than five",
+   "cn": "比五少五",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is five fewer than five?",
+     "a": [
+      "Five fewer than five is zero."
+     ],
+     "key": [
+      "zero"
+     ],
+     "q_cn": "比五少五是多少？",
+     "a_cn": [
+      "比五少五是零。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-five-fewer-than-five-68dde0.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-zero-ffd04c.mp3"
+     ],
+     "opts": [
+      {
+       "key": "nine",
+       "text": "Five fewer than five is nine.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-nine-9954aa.mp3"
+      },
+      {
+       "key": "three",
+       "text": "Five fewer than five is three.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-five-fewer-than-five-is-three-519716.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-five-fewer-than-five-8361ae.mp3",
+   "eq": "5-5"
+  },
+  {
+   "word": "four fewer than six",
+   "cn": "比六少四",
+   "tag": "number",
+   "dialog": [
+    {
+     "q": "What is four fewer than six?",
+     "a": [
+      "Four fewer than six is two."
+     ],
+     "key": [
+      "two"
+     ],
+     "q_cn": "比六少四是多少？",
+     "a_cn": [
+      "比六少四是二。"
+     ],
+     "q_audio": "audio/sentences/20-one-fewer-than-and-zero/q-what-is-four-fewer-than-six-9760b3.mp3",
+     "a_audio": [
+      "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-two-b85ca6.mp3"
+     ],
+     "opts": [
+      {
+       "key": "zero",
+       "text": "Four fewer than six is zero.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-zero-dc61b7.mp3"
+      },
+      {
+       "key": "seven",
+       "text": "Four fewer than six is seven.",
+       "audio": "audio/sentences/20-one-fewer-than-and-zero/a-four-fewer-than-six-is-seven-2517fe.mp3"
+      }
+     ]
+    }
+   ],
+   "quiz_audio": "audio/sentences/20-one-fewer-than-and-zero/q-which-one-is-four-fewer-than-six-585122.mp3",
+   "eq": "6-4"
   }
+ ],
+ "word_audio": {
+  "eight": "audio/words/eight.mp3",
+  "fewer": "audio/words/fewer.mp3",
+  "five": "audio/words/five.mp3",
+  "five fewer than five": "audio/words/five-fewer-than-five.mp3",
+  "five fewer than seven": "audio/words/five-fewer-than-seven.mp3",
+  "four": "audio/words/four.mp3",
+  "four fewer than six": "audio/words/four-fewer-than-six.mp3",
+  "is": "audio/words/is.mp3",
+  "it's": "audio/words/it-s.mp3",
+  "nine": "audio/words/nine.mp3",
+  "number": "audio/words/number.mp3",
+  "one": "audio/words/one.mp3",
+  "one fewer than eight": "audio/words/one-fewer-than-eight.mp3",
+  "one fewer than five": "audio/words/one-fewer-than-five.mp3",
+  "one fewer than four": "audio/words/one-fewer-than-four.mp3",
+  "one fewer than nine": "audio/words/one-fewer-than-nine.mp3",
+  "one fewer than one": "audio/words/one-fewer-than-one.mp3",
+  "one fewer than seven": "audio/words/one-fewer-than-seven.mp3",
+  "one fewer than six": "audio/words/one-fewer-than-six.mp3",
+  "one fewer than ten": "audio/words/one-fewer-than-ten.mp3",
+  "one fewer than three": "audio/words/one-fewer-than-three.mp3",
+  "one fewer than two": "audio/words/one-fewer-than-two.mp3",
+  "seven": "audio/words/seven.mp3",
+  "six": "audio/words/six.mp3",
+  "ten": "audio/words/ten.mp3",
+  "than": "audio/words/than.mp3",
+  "this": "audio/words/this.mp3",
+  "three": "audio/words/three.mp3",
+  "three fewer than nine": "audio/words/three-fewer-than-nine.mp3",
+  "two": "audio/words/two.mp3",
+  "two fewer than eight": "audio/words/two-fewer-than-eight.mp3",
+  "what": "audio/words/what.mp3",
+  "what's": "audio/words/what-s.mp3",
+  "zero": "audio/words/zero.mp3"
+ },
+ "praise_audio": {
+  "Great job!": "audio/praise/great-job.mp3",
+  "Well done!": "audio/praise/well-done.mp3",
+  "Awesome!": "audio/praise/awesome.mp3",
+  "Excellent!": "audio/praise/excellent.mp3",
+  "Perfect!": "audio/praise/perfect.mp3",
+  "Try again!": "audio/praise/try-again.mp3",
+  "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+  "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+  "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+ }
 }
