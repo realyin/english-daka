@@ -1019,9 +1019,13 @@ function renderCal(){
   document.getElementById("calMonths").innerHTML = months;
   document.getElementById("calGrid").innerHTML = grid;
 
-  /* 四块统计。总星星按各课记录求和(SAVE.total 里还混着"混合复习"挣的星,
-     而复习不属于任何一课 —— 两个口径都说得通,这里跟课程记录走,
-     和封面右上角那些星数角标加起来对得上) */
+  /* 四块统计。总星星取 SAVE.total —— 全站唯一的星星入账口 addStars 记的那本。
+     ⚠️ 曾经按各课记录求和(理由是"和封面右上角的星数角标加得上"),可复习
+     不属于任何一课、addStars 里明写 `if(CUR_ID !== "review")` 才记进课记录 ——
+     于是天天做混合复习/错题本/按课堂复习的孩子,闯关考一考答一下午,
+     这个数字纹丝不动(家长实测)。会动才是它的第一职责:复习也是学习,
+     也该记星。角标是"这一课自己练得怎么样",本来就不必加起来等于总数。
+     取 max 只为兜住导入的老存档:total 缺了/被清过,也不能让数字往下掉 */
   let starSum = 0;
   for(const id in SAVE.lessons){
     const r = SAVE.lessons[id];
@@ -1029,7 +1033,7 @@ function renderCal(){
   }
   const tiles = [
     [SAVE.days.length,        "天", "总打卡"],
-    [starSum,                 "颗", "总星星"],
+    [Math.max(SAVE.total, starSum), "颗", "总星星"],
     [streakOf(SAVE.days),     "天", "当前连续"],
     [longestStreak(SAVE.days), "天", "最长连续"]
   ];
@@ -1244,19 +1248,19 @@ function doExport(){
   fallback();
 }
 
-/* 存档摘要"打卡 X 天 / Y 星"。星数按各课记录求和,和上面统计块的「总星星」
-   同一个口径(不取 total —— 那里面还混着混合复习挣的星),
-   两个数字家长会当场对照,口径不一样就成了 bug */
+/* 存档摘要"打卡 X 天 / Y 星"。和上面统计块的「总星星」必须同一个口径 ——
+   两个数字家长会当场对照,口径不一样就成了 bug。跟着那边一起改成 total */
 function backupBrief(o){
-  let days = 0, stars = 0;
+  let days = 0, stars = 0, sum = 0;
   if(o && typeof o === "object"){
     if(o.days instanceof Array) days = o.days.length;
     if(o.lessons && typeof o.lessons === "object"){
       for(const id in o.lessons){
         const r = o.lessons[id];
-        if(r && typeof r.stars === "number") stars += r.stars;
+        if(r && typeof r.stars === "number") sum += r.stars;
       }
     }
+    stars = Math.max(typeof o.total === "number" ? o.total : 0, sum);
   }
   return "打卡 " + days + " 天 / " + stars + " 星";
 }
