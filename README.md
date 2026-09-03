@@ -56,7 +56,7 @@ english-daka/
 │   ├── index.json        课程索引，由脚本维护，勿手改
 │   ├── <课程id>.json     一课一个文件
 │   ├── phonics.json      拼读音素公共库（87 个音）
-│   ├── dictionary.json   长按查词用的词典
+│   ├── dictionary.json   长按查词用的词典（check_dictionary.py 查缺）
 │   ├── images/           配图，3:4 720×960 webp
 │   └── audio/            sentences/<课程id>/、words/、praise/、phonics/
 ├── docs/
@@ -79,6 +79,7 @@ python3 gen_phonics.py                   # 重建音素公共库
 python3 add_image.py 原图.png 语义名      # 单张配图归一化（webp ≤150KB）
 python3 ingest_images.py <目录>          # 批量入库
 python3 split_panels.py                  # 聚合拼图按格切成单图
+python3 check_dictionary.py              # 课程里长按查不到中文的词
 ```
 
 音频不是随手合成的，有几条硬约定（细节见 `CLAUDE.md` 和 `docs/`）：
