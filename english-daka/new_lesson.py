@@ -17,6 +17,8 @@
   cvc           拼读课        seq 3xx   全是带拼读面板的 CVC 卡
   sight-word    常见词课      seq 4xx   虚词卡（quiz:false）+ 例句词卡
   topic         通用词汇课    seq 5xx   主题/数学/科学共用，一词一卡
+  passage       短文课        seq 8xx   一篇短文一张卡(往 <级别>-passages.json 里追加),
+                                        没有问答,句子写在 lines 里,一篇一张拼格图
 
 用法：
 
@@ -26,6 +28,7 @@
   python new_lesson.py sight-word  --words my,like --extra dog,ice cream
   python new_lesson.py topic       --group "主题 Topics" --title "At the Farm · 农场" \\
                                    --badge 🐄 --words cow,pig,duck
+  python new_lesson.py passage     --title "About Me · 自我介绍" --badge 👧
 
 ⚠️ 脚本不替你选词。词表永远来自线下课的原始课件，见 CLAUDE.md
    「课程内容跟线下课走」——不要提前造课，也不要替换选词。
@@ -62,6 +65,7 @@ TYPES = OrderedDict([
     ("cvc",         ("拼读 Phonics",       300, "cvc-")),
     ("sight-word",  ("常见词 Sight Words", 400, "sw-")),
     ("topic",       (None,                 500, "")),         # 分组由 --group 指定
+    ("passage",     ("短文 Passages",      800, "passages")),  # 整级一节课,一篇一卡
 ])
 # topic 类课程可以落在这几段
 TOPIC_BANDS = {"主题 Topics": 500, "数学 Math": 600, "科学 Science": 700,
@@ -90,6 +94,15 @@ outlines, warm bright cheerful colors, simple uncluttered background, single
 clear subject centered in frame, vertical 3:4 composition, friendly and cute,
 suitable for a 5-year-old, NO text, NO letters, NO words, NO numbers, NO speech
 bubbles, NO labels, NO borders or frames, NO panel dividers."""
+
+# 短文课的拼格图:一篇一张 3:4 竖图,图内分格,格子的阅读顺序 = 句子顺序。
+# 和 STYLE_PREFIX 唯一的差别是允许分格(白色细缝),其余禁令照旧
+PASSAGE_PREFIX = """Children's picture book illustration, soft watercolor style with clean rounded
+outlines, warm bright cheerful colors, simple uncluttered backgrounds, friendly
+and cute, suitable for a 5-year-old, vertical 3:4 composition. The image is
+divided into clearly separated panels with thin soft white gutters and gently
+rounded corners, each panel a single clear scene. NO text, NO letters, NO words,
+NO numbers, NO speech bubbles, NO labels, NO outer border."""
 
 NEG_PROMPT = """text, letters, words, captions, labels, watermark, speech bubble, comic panels,
 grid lines, borders, frame, collage of photos, realistic photo, scary, cluttered"""
@@ -271,11 +284,51 @@ def build_topic(args, lib):
     return lesson_id, title, args.badge, cards
 
 
-BUILDERS = {"letter": build_letter, "word-family": build_word_family,
+def build_passage(args, lib):
+    """短文:不建新课,往 <级别>-passages.json 追加一张卡。
+       返回的 cards 只有这一张;主流程见到 passage 走追加分支"""
+    title = args.title
+    lesson_id = f"{PREFIX}passages"
+    name = slug(title.split(" · ")[0])
+    c = OrderedDict([("word", title.split(" · ")[0]), ("cn", title.split(" · ")[-1]),
+                     ("tag", "passage"), ("emoji", args.badge),
+                     ("image", f"images/ps-{name}.webp"), ("collage", True),
+                     ("quiz", False),
+                     ("lines", [OrderedDict([("t", TODO), ("cn", TODO)])])])
+    return lesson_id, "Passages · 小短文", "📖", [c]
+
+
+BUILDERS = {"letter": build_letter, "passage": build_passage, "word-family": build_word_family,
             "cvc": build_cvc, "sight-word": build_sight_word, "topic": build_topic}
 
 
 # ---------------------------------------------------------------- 配图 prompt
+
+def write_passage_prompt(lesson_id, c):
+    """短文一篇一张拼格图,prompt 单独一个文件(docs/prompts/<课程id>-<篇>.md)"""
+    PROMPTS.mkdir(parents=True, exist_ok=True)
+    name = Path(c["image"]).stem
+    out = PROMPTS / f"{lesson_id}-{name[3:]}.md"
+    lines = [f"# 配图 Prompt · {c['word']}", "",
+             f"一篇一张 **3:4 竖图**,图内分 2–5 格,**格子的阅读顺序 = 句子顺序**"
+             f"(从左到右、从上到下),图里不要任何文字(句子由 app 渲染)。", "",
+             f"出图后存为 `{name}.png`,然后 `python ingest_images.py <图片目录>`。", "",
+             "## 风格前缀(复制到 prompt 最前面)", "",
+             "```", PASSAGE_PREFIX, "```", "",
+             "## 主角人设(短文有主角,每篇都带,保证是同一个人)", "",
+             "```", TODO + ":主角的发型、发饰、衣服,写死。例:a 5-year-old girl with "
+             "shoulder-length dark brown hair, a pink headband with a small bow, "
+             "pink short-sleeved top with a white collar. Exactly the same character "
+             "in every panel and every image.", "```", "",
+             "## 负面提示", "", "```", NEG_PROMPT, "```", "",
+             "## 画面(格子布局 + 每格一句话)", "",
+             "```",
+             f"{TODO}:Layout: 先说分几格、怎么摆(如 a 2×2 grid on top and one wide "
+             f"panel across the bottom)和 Reading order;然后 Panel 1 / Panel 2 … "
+             f"每格一句画面描述,对应短文的一句或一段。", "```", ""]
+    out.write_text("\n".join(lines), encoding="utf-8")
+    return out
+
 
 def write_prompts(lesson_id, title, cards):
     """每课一个 prompt 文件。文件名就是入库名，也是卡片 image 字段的名字 ——
@@ -368,7 +421,8 @@ def main():
 
     need = {"letter": ["badge", "words"], "word-family": ["rime", "words"],
             "cvc": ["vowel", "words"], "sight-word": ["words"],
-            "topic": ["group", "title", "badge", "words"]}[a.type]
+            "topic": ["group", "title", "badge", "words"],
+            "passage": ["title", "badge"]}[a.type]
     for n in need:
         if not getattr(a, n):
             p.error(f"课型 {a.type} 需要 --{n}")
@@ -385,6 +439,31 @@ def main():
         p.error(f"--group 只能是 {list(TOPIC_BANDS)} 之一")
 
     out = LESSONS / f"{lesson_id}.json"
+    if a.type == "passage":
+        # 短文整级一节课:有就追加一张卡,没有才建文件
+        c = cards[0]
+        if out.exists():
+            lesson = json.loads(out.read_text(encoding="utf-8"), object_pairs_hook=OrderedDict)
+            if any(x.get("word", "").lower() == c["word"].lower() for x in lesson["cards"]):
+                print(f"❌ {out} 里已经有「{c['word']}」这一篇")
+                sys.exit(1)
+            lesson["cards"].append(c)
+        else:
+            lesson = OrderedDict([("seq", band + 1), ("level", LEVEL), ("group", group),
+                                  ("badge", badge), ("title", title), ("cards", [c])])
+        out.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        pf = write_passage_prompt(lesson_id, c)
+        print(f"✓ {out}  追加短文「{c['word']}」(共 {len(lesson['cards'])} 篇)")
+        print(f"✓ {pf}")
+        print("\n接下来:")
+        for i, st in enumerate([
+                f"把 lines 里的「{TODO}」换成短文的句子(一句一条,*…* 包住重点词)和中文",
+                f"python check_lesson.py lessons/{lesson_id}.json",
+                f"补 {pf.name} 的人设和格子描述 → 出图 → python ingest_images.py <图目录>",
+                f"python gen_audio.py lessons/{lesson_id}.json --date <上课日期>",
+                f"python check_dictionary.py {lesson_id}  ← 短文生词多,缺的补进 dictionary.json"], 1):
+            print(f"  {i}. {st}")
+        return
     if out.exists():
         print(f"❌ {out} 已存在，不覆盖")
         sys.exit(1)

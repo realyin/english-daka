@@ -288,12 +288,16 @@ def lint_lesson(lesson: dict, lesson_id: str):
         print(f"⚠ {lesson_id} · {card['word']}:{msg}")
 
     for card in lesson["cards"]:
-        for qa in card["dialog"]:
-            for text in [qa["q"], *qa["a"]]:
-                m = SPELLED_RE.search(text)
-                if m:
-                    warn(card, f"{text!r} 里的 {m.group()!r} 会被 TTS 念成字母名,"
-                               f"拼读要写成音标记号(如 /k/ /at/, cat.)")
+        # 短文卡(lines)的句子和答句一样要过这一关;*…* 是重点词标记,先剥掉
+        texts = [ln["t"].replace("*", "") for ln in card.get("lines") or []]
+        for qa in card.get("dialog") or []:
+            texts += [qa["q"], *qa["a"]]
+        for text in texts:
+            m = SPELLED_RE.search(text)
+            if m:
+                warn(card, f"{text!r} 里的 {m.group()!r} 会被 TTS 念成字母名,"
+                           f"拼读要写成音标记号(如 /k/ /at/, cat.)")
+        for qa in card.get("dialog") or []:
             if PHONICS_Q_RE.search(qa["q"]):
                 loose = LOOSE_LETTER_RE.findall(qa["q"])
                 if loose:
@@ -307,13 +311,26 @@ def plan_lesson(lesson: dict, lesson_id: str, tasks: dict, write_back=True):
     all_words = set()
     for card in lesson["cards"]:
         all_words.add(card["word"].lower())          # 整词条,如 "bus stop"
-        # 考一考的提问音频("Which one is xxx?")
-        quiz_q = f"Which one is {card['word']}?"
-        quiz_rel = clip_rel("q", quiz_q, lesson_id)
-        tasks[quiz_rel] = ("q", quiz_q)
-        if write_back:
-            card["quiz_audio"] = quiz_rel
-        for qa in card["dialog"]:
+        # 短文卡:一句一条音频,角色同答句(a=Jenny)—— 整篇都是孩子要说的话,
+        # 和「回答句 = 孩子要说的 = Jenny」口径一致;句里的 /r/ 也照常走拼接。
+        # *…* 是渲染用的重点词标记,合成前剥掉。短文的 word 是标题,
+        # 不出「Which one is My Morning Routine?」这种考一考提问
+        if card.get("tag") == "passage":
+            for ln in card.get("lines") or []:
+                plain = ln["t"].replace("*", "")
+                rel = clip_rel("a", plain, lesson_id)
+                tasks[rel] = ("a", plain)
+                if write_back:
+                    ln["audio"] = rel
+                all_words.update(words_of(plain))
+        else:
+            # 考一考的提问音频("Which one is xxx?")
+            quiz_q = f"Which one is {card['word']}?"
+            quiz_rel = clip_rel("q", quiz_q, lesson_id)
+            tasks[quiz_rel] = ("q", quiz_q)
+            if write_back:
+                card["quiz_audio"] = quiz_rel
+        for qa in card.get("dialog") or []:
             q_rel = clip_rel("q", qa["q"], lesson_id)
             a_rels = [clip_rel("a", s, lesson_id) for s in qa["a"]]
             tasks[q_rel] = ("q", qa["q"])
@@ -361,6 +378,8 @@ def stamp_added(lesson: dict, class_date: str) -> int:
         if c.get("added"):
             continue
         if any(t.get("q_audio") for t in c.get("dialog", [])):
+            continue
+        if any(ln.get("audio") for ln in c.get("lines", [])):   # 短文卡同理
             continue
         c["added"] = class_date
         n += 1

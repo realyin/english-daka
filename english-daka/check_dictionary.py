@@ -54,7 +54,7 @@ def make_lookup(dic: set):
 
 
 def lesson_texts(data: dict):
-    """课程里所有会被拆成可长按单词的英文:词条、问句、答句、闯关选项"""
+    """课程里所有会被拆成可长按单词的英文:词条、问句、答句、闯关选项、短文句子"""
     for card in data.get("cards", []):
         if card.get("word"):
             yield card["word"]
@@ -63,6 +63,9 @@ def lesson_texts(data: dict):
             yield from dl.get("a", [])
             for o in dl.get("opts", []):
                 yield o.get("text", "")
+        # 短文卡的句子(lines[].t):*…* 是重点词标记,不是词的一部分
+        for ln in card.get("lines", []):
+            yield ln.get("t", "").replace("*", "")
 
 
 def missing_words(only=None):
