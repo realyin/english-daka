@@ -568,6 +568,11 @@
     display:flex;flex-direction:column;gap:var(--sp-1,8px);
     margin-top:var(--sp-2,12px);
   }
+  /* 空态提示:入口常驻,没数据时弹窗里放一句话,不是一片空白 */
+  .day-empty{
+    padding:var(--sp-4,20px) var(--sp-2,12px);text-align:center;
+    font-size:14px;line-height:1.9;color:var(--muted,#5E6E8C);
+  }
   .day-row{
     display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2,12px);
     padding:12px var(--sp-2,12px);border-radius:14px;
@@ -1449,43 +1454,21 @@ document.addEventListener("visibilitychange", () => {
    "那天学的"得挨个课去翻。数据侧给每张卡盖了上课日期(added,gen_audio.py
    自动盖),index.json 里有按日聚合的 days 汇总 —— 这里把汇总画成可选的
    日期列表,点一行就进 app.html?lesson=review&pick=day&d=那天。
-   days 缺失/为空(旧 index,或还没按新流程导过课)按钮不出现:
-   点开是空列表的入口不如没有。
+   ⚠️ 入口**常驻**(家长定的:错题本和按课堂复习都要一直在,方便随手进):
+   days 缺失/为空时按钮照样显示,点开弹窗给一句空态提示 —— 曾经是
+   "没数据就藏按钮",结果入口时有时无,家长以为功能坏了。
    ================================================================ */
 function renderDayPicker(data){
   const days = data.days || [];
   const btn = document.getElementById("dayBtn");
-  if(!btn || !days.length) return;
-
-  // 行尾报"字母、常见词"比课程 id 直白:取每节课组名的中文半截(空格前)
-  const groupOf = {};
-  (data.lessons || []).forEach(l => {
-    groupOf[l.id] = String(l.group || "").split(" ")[0];
-  });
-  // 近三天给相对称呼:孩子家长嘴里都是"昨天上的",不是"8月30日上的"
-  const rel = {};
-  ["今天", "昨天", "前天"].forEach((w, i) => {
-    const d = new Date();
-    d.setDate(d.getDate() - i);
-    rel[ymd(d)] = w;
-  });
-
-  document.getElementById("dayList").innerHTML = days.map(dy => {
-    const p = String(dy.date).split("-");
-    const md = p.length === 3 ? `${+p[1]}月${+p[2]}日` : dy.date;
-    const wd = p.length === 3 ? "周" + WEEK_CN[parseYmd(dy.date).getDay()] : "";
-    const groups = [];
-    (dy.lessons || []).forEach(id => {
-      const g = groupOf[id];
-      if(g && groups.indexOf(g) < 0) groups.push(g);
-    });
-    // 有课名就把课名放在第二行:家长找的是"讲宠物那节",不是"8月30日那节"。
-    // 没起名的日子退回分组名(字母、常见词),至少比只有日期强
-    const sub = dy.name || groups.join("、");
-    return `<a class="day-row" href="app.html?lesson=review&pick=day&d=${encodeURIComponent(dy.date)}">` +
-      `<span><b>${rel[dy.date] || md}</b><i>${rel[dy.date] ? md + " " + wd : wd}</i></span>` +
-      `<span class="r"><b>${dy.cards} 张卡</b><i>${sub}</i></span></a>`;
-  }).join("");
+  if(!btn) return;
+  if(!days.length){
+    // 提示语要短:一句话说清"这里将来是什么",别解释机制(实测点名嫌啰嗦)
+    document.getElementById("dayList").innerHTML =
+      `<p class="day-empty">上过课后，这里会按日期列出当天学的卡片。</p>`;
+  }else{
+    renderDayList(data, days);
+  }
 
   btn.hidden = false;
   // 三个以上入口同排:混合复习的副标题让位(和「继续学」出现时同一开关)
@@ -1519,6 +1502,40 @@ function renderDayPicker(data){
     if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
     else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
   });
+}
+
+/* 有日期数据时的列表渲染(从 renderDayPicker 拆出来,入口常驻后
+   "画列表"和"装弹窗"不再绑在一起) */
+function renderDayList(data, days){
+  // 行尾报"字母、常见词"比课程 id 直白:取每节课组名的中文半截(空格前)
+  const groupOf = {};
+  (data.lessons || []).forEach(l => {
+    groupOf[l.id] = String(l.group || "").split(" ")[0];
+  });
+  // 近三天给相对称呼:孩子家长嘴里都是"昨天上的",不是"8月30日上的"
+  const rel = {};
+  ["今天", "昨天", "前天"].forEach((w, i) => {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    rel[ymd(d)] = w;
+  });
+
+  document.getElementById("dayList").innerHTML = days.map(dy => {
+    const p = String(dy.date).split("-");
+    const md = p.length === 3 ? `${+p[1]}月${+p[2]}日` : dy.date;
+    const wd = p.length === 3 ? "周" + WEEK_CN[parseYmd(dy.date).getDay()] : "";
+    const groups = [];
+    (dy.lessons || []).forEach(id => {
+      const g = groupOf[id];
+      if(g && groups.indexOf(g) < 0) groups.push(g);
+    });
+    // 有课名就把课名放在第二行:家长找的是"讲宠物那节",不是"8月30日那节"。
+    // 没起名的日子退回分组名(字母、常见词),至少比只有日期强(main 侧改进,合并保留)
+    const sub = dy.name || groups.join("、");
+    return `<a class="day-row" href="app.html?lesson=review&pick=day&d=${encodeURIComponent(dy.date)}">` +
+      `<span><b>${rel[dy.date] || md}</b><i>${rel[dy.date] ? md + " " + wd : wd}</i></span>` +
+      `<span class="r"><b>${dy.cards} 张卡</b><i>${sub}</i></span></a>`;
+  }).join("");
 }
 
 /* 封面色 —— 旧写法是五色按**组内序号**循环,于是每个组的第一张永远是同一个粉色、

@@ -43,7 +43,8 @@
           ]
         }
       ],
-      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-all-0bb38f.mp3"
+      "quiz_audio": "audio/sentences/k2-sw-all/q-which-one-is-all-0bb38f.mp3",
+      "added": "2026-08-31"
     },
     {
       "word": "birds",
