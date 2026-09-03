@@ -461,6 +461,18 @@ def build_days(lessons_root: Path):
     return [days[k] for k in sorted(days, reverse=True)]
 
 
+def days_lost(old_days, new_days):
+    """课堂日汇总「只增不减」自检:重建后某个日期消失、或某天卡数变少,通常是
+    课程 JSON 被批量重写时把卡片的 added 字段冲掉了(K1 全套导入 11235d6 出过
+    一次:K2 卡的 added 整批丢失,days 被清空,「按课堂复习」失去数据源)。
+    返回丢失明细;合法的减少(删卡、清误盖的戳)用 --allow-days-shrink 显式放行。
+    ⚠️ gen_audio.py 里有一份逐字一致的拷贝,改一处要同步改另一处。"""
+    old = {d["date"]: d["cards"] for d in old_days}
+    new = {d["date"]: d["cards"] for d in new_days}
+    return [f"{k}: {old[k]} 张 → {new.get(k, 0)} 张"
+            for k in sorted(old) if new.get(k, 0) < old[k]]
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     files = [Path(a) for a in args] if args else \
@@ -495,7 +507,17 @@ def main():
         # 课堂日汇总(days)和卡片的 added 对不上就地重建:gen_audio 每次会重算,
         # 但手改课程文件(删卡/挪卡/补 added)不跑音频时,这里是唯一的重建口
         days = build_days(LESSONS)
-        if (idx_data.get("days") or []) != days:
+        old_days = idx_data.get("days") or []
+        lost = days_lost(old_days, days)
+        if lost and "--allow-days-shrink" not in sys.argv:
+            print("❌ 课堂日汇总(days)重建后变少了 —— 通常是课程 JSON 被重写时"
+                  "把卡片的 added 冲掉了:")
+            for m in lost:
+                print(f"   {m}")
+            print("  先用 git diff 查课程 JSON、把丢失的 added 恢复;确实要减"
+                  "(删卡、清误盖的戳)就加 --allow-days-shrink。")
+            ok = False
+        elif old_days != days:
             idx_data["days"] = days
             if "--fix-index" in sys.argv:
                 idx_file.write_text(
