@@ -2672,8 +2672,15 @@ function renderQuestion(){
   const tot = pTotals();
   const total = tot.total, doneN = tot.doneN;
   const pic = qa.image || c.image;
+  /* 「What's this sight word?」问的就是"这个词念什么"—— 词本身是题面,不是泄题。
+     虚词(what / do / you / see / to / and)根本画不出来,配图只是例句的插图;
+     藏掉词以后整道题就只剩一张图和一句"这是哪个常见词",孩子只能靠猜。
+     实撞:what 卡的图是"手搭凉棚往外看"(画的是例句 What do you see?),
+     词一藏,这题看着就该答 see —— 而同一课里 see 正好也是个选项。
+     (对照:key word / animal / letter 那些问,图才是题面,词一露就是送分) */
+  const wordIsPrompt = /\bsight word\b/i.test(qa.q);
   // 词条出现在答案里就不显示,否则等于把答案写在题面上
-  const leaks = qa.a.some(s => norm(s).includes(norm(c.word)));
+  const leaks = !wordIsPrompt && qa.a.some(s => norm(s).includes(norm(c.word)));
   // 进度条走**已完成数**而不是当前题号:条子该在"翻到下一题"那一下往前长,
   // 用 doneN+1 的话第一题一进来就已经涨了一格,等于把没答的算成答了
   const barPct = tot.pct;
