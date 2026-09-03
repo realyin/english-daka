@@ -15,44 +15,24 @@
       "quiz": false,
       "lines": [
         {
-          "t": "*First*, I get up.",
-          "cn": "首先，我起床。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-first-i-get-up-987bb2.mp3"
+          "t": "*First*, I get up. I get up every morning.",
+          "cn": "首先，我起床。我每天早上都起床。",
+          "audio": "audio/sentences/k2-passage-morning-routine/a-first-i-get-up-i-get-up-every-mornin-919c44.mp3"
         },
         {
-          "t": "I get up every morning.",
-          "cn": "我每天早上都起床。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-i-get-up-every-morning-7925cf.mp3"
+          "t": "*Then*, I wash my face. I wash my face with water. My face is clean.",
+          "cn": "然后，我洗脸。我用水洗脸。我的脸干干净净。",
+          "audio": "audio/sentences/k2-passage-morning-routine/a-then-i-wash-my-face-i-wash-my-face-w-1327f1.mp3"
         },
         {
-          "t": "*Then*, I wash my face.",
-          "cn": "然后，我洗脸。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-then-i-wash-my-face-4301a0.mp3"
+          "t": "*Next*, I brush my teeth. I brush my teeth with a toothbrush. My teeth are white.",
+          "cn": "接着，我刷牙。我用牙刷刷牙。我的牙齿白白的。",
+          "audio": "audio/sentences/k2-passage-morning-routine/a-next-i-brush-my-teeth-i-brush-my-tee-d6c74f.mp3"
         },
         {
-          "t": "I wash my face with water. My face is clean.",
-          "cn": "我用水洗脸。我的脸干干净净。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-i-wash-my-face-with-water-my-face-is-f28526.mp3"
-        },
-        {
-          "t": "*Next*, I brush my teeth.",
-          "cn": "接着，我刷牙。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-next-i-brush-my-teeth-cae3a6.mp3"
-        },
-        {
-          "t": "I brush my teeth with a toothbrush. My teeth are white.",
-          "cn": "我用牙刷刷牙。我的牙齿白白的。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-i-brush-my-teeth-with-a-toothbrush-m-9067fd.mp3"
-        },
-        {
-          "t": "*Last*, I take a shower.",
-          "cn": "最后，我洗澡。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-last-i-take-a-shower-85f196.mp3"
-        },
-        {
-          "t": "I take a shower every day. I am fresh.",
-          "cn": "我每天洗澡。我清清爽爽。",
-          "audio": "audio/sentences/k2-passage-morning-routine/a-i-take-a-shower-every-day-i-am-fresh-ddd868.mp3"
+          "t": "*Last*, I take a shower. I take a shower every day. I am fresh.",
+          "cn": "最后，我洗澡。我每天洗澡。我清清爽爽。",
+          "audio": "audio/sentences/k2-passage-morning-routine/a-last-i-take-a-shower-i-take-a-shower-e191fb.mp3"
         },
         {
           "t": "After my morning routine, I am *ready for school*!",
