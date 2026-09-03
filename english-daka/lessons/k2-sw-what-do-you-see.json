@@ -30,6 +30,18 @@
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3",
             "audio/sentences/k2-sw-what-do-you-see/a-what-do-you-see-fe5ef2.mp3"
+          ],
+          "opts": [
+            {
+              "key": "do",
+              "text": "It's sight word do.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-do-03d897.mp3"
+            },
+            {
+              "key": "you",
+              "text": "It's sight word you.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-you-0550fc.mp3"
+            }
           ]
         }
       ],
@@ -61,6 +73,18 @@
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-do-03d897.mp3",
             "audio/sentences/k2-sw-what-do-you-see/a-i-do-my-homework-144786.mp3"
+          ],
+          "opts": [
+            {
+              "key": "see",
+              "text": "It's sight word see.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3"
+            },
+            {
+              "key": "what",
+              "text": "It's sight word what.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3"
+            }
           ]
         }
       ],
@@ -92,6 +116,18 @@
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-you-0550fc.mp3",
             "audio/sentences/k2-sw-what-do-you-see/a-i-see-you-8bb5d5.mp3"
+          ],
+          "opts": [
+            {
+              "key": "see",
+              "text": "It's sight word see.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3"
+            },
+            {
+              "key": "what",
+              "text": "It's sight word what.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3"
+            }
           ]
         }
       ],
@@ -124,6 +160,18 @@
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3",
             "audio/sentences/k2-sw-what-do-you-see/a-i-see-a-bird-ab5c9f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "what",
+              "text": "It's sight word what.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3"
+            },
+            {
+              "key": "do",
+              "text": "It's sight word do.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-do-03d897.mp3"
+            }
           ]
         },
         {
@@ -142,6 +190,18 @@
           "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-i-see-my-uncle-3de72e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "what",
+              "text": "It's sight word what.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3"
+            },
+            {
+              "key": "see",
+              "text": "It's sight word see.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3"
+            }
           ]
         },
         {
@@ -160,6 +220,18 @@
           "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-i-see-my-uncle-s-umbrella-0b9519.mp3"
+          ],
+          "opts": [
+            {
+              "key": "see",
+              "text": "It's sight word see.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3"
+            },
+            {
+              "key": "do",
+              "text": "It's sight word do.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-do-03d897.mp3"
+            }
           ]
         },
         {
@@ -178,6 +250,18 @@
           "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
           "a_audio": [
             "audio/sentences/k2-sw-what-do-you-see/a-i-see-a-bug-on-my-uncle-s-umbrella-7082a4.mp3"
+          ],
+          "opts": [
+            {
+              "key": "umbrella",
+              "text": "I see my uncle's umbrella.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-i-see-my-uncle-s-umbrella-0b9519.mp3"
+            },
+            {
+              "key": "see",
+              "text": "It's sight word see.",
+              "audio": "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3"
+            }
           ]
         }
       ],
