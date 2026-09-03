@@ -1,0 +1,98 @@
+{
+  "seq": 802,
+  "level": "K2",
+  "group": "短文 Passages",
+  "badge": "🐰",
+  "cover": "images/ps-rabbits.webp",
+  "title": "I Like Rabbits · 我喜欢兔子",
+  "cards": [
+    {
+      "word": "I Like Rabbits",
+      "cn": "我喜欢兔子",
+      "tag": "passage",
+      "image": "images/ps-rabbits.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "Hello, everyone! I am *Mumu*.",
+          "cn": "大家好！我是木木。",
+          "audio": "audio/sentences/k2-passage-rabbits/a-hello-everyone-i-am-mumu-445fd7.mp3"
+        },
+        {
+          "t": "I like *rabbits* because they are *cute*.",
+          "cn": "我喜欢兔子，因为它们很可爱。",
+          "audio": "audio/sentences/k2-passage-rabbits/a-i-like-rabbits-because-they-are-cute-537950.mp3"
+        },
+        {
+          "t": "Rabbits are covered with *soft fur*. They have *long ears* and *short tails*.",
+          "cn": "兔子身上有柔软的毛。它们有长耳朵和短尾巴。",
+          "audio": "audio/sentences/k2-passage-rabbits/a-rabbits-are-covered-with-soft-fur-th-46732c.mp3"
+        },
+        {
+          "t": "Rabbit begins with the sound /r/. /r/, /r/, rabbit!",
+          "cn": "Rabbit 以 /r/ 音开头。/r/、/r/、rabbit！",
+          "audio": "audio/sentences/k2-passage-rabbits/a-rabbit-begins-with-the-sound-r-r-r-r-96d896.mp3"
+        },
+        {
+          "t": "I don't like *dogs* because they are *scary*.",
+          "cn": "我不喜欢狗，因为它们很吓人。",
+          "audio": "audio/sentences/k2-passage-rabbits/a-i-don-t-like-dogs-because-they-are-s-4c7e00.mp3"
+        },
+        {
+          "t": "What *animal* do you like?",
+          "cn": "你喜欢什么动物？",
+          "audio": "audio/sentences/k2-passage-rabbits/a-what-animal-do-you-like-3f6fb0.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    }
+  ],
+  "word_audio": {
+    "am": "audio/words/am.mp3",
+    "and": "audio/words/and.mp3",
+    "animal": "audio/words/animal.mp3",
+    "are": "audio/words/are.mp3",
+    "because": "audio/words/because.mp3",
+    "begins": "audio/words/begins.mp3",
+    "covered": "audio/words/covered.mp3",
+    "cute": "audio/words/cute.mp3",
+    "do": "audio/words/do.mp3",
+    "dogs": "audio/words/dogs.mp3",
+    "don't": "audio/words/don-t.mp3",
+    "ears": "audio/words/ears.mp3",
+    "everyone": "audio/words/everyone.mp3",
+    "fur": "audio/words/fur.mp3",
+    "have": "audio/words/have.mp3",
+    "hello": "audio/words/hello.mp3",
+    "i": "audio/words/i.mp3",
+    "i like rabbits": "audio/words/i-like-rabbits.mp3",
+    "like": "audio/words/like.mp3",
+    "long": "audio/words/long.mp3",
+    "mumu": "audio/words/mumu.mp3",
+    "r": "audio/words/r.mp3",
+    "rabbit": "audio/words/rabbit.mp3",
+    "rabbits": "audio/words/rabbits.mp3",
+    "scary": "audio/words/scary.mp3",
+    "short": "audio/words/short.mp3",
+    "soft": "audio/words/soft.mp3",
+    "sound": "audio/words/sound.mp3",
+    "tails": "audio/words/tails.mp3",
+    "the": "audio/words/the.mp3",
+    "they": "audio/words/they.mp3",
+    "what": "audio/words/what.mp3",
+    "with": "audio/words/with.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

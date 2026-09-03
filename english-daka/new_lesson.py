@@ -17,7 +17,7 @@
   cvc           拼读课        seq 3xx   全是带拼读面板的 CVC 卡
   sight-word    常见词课      seq 4xx   虚词卡（quiz:false）+ 例句词卡
   topic         通用词汇课    seq 5xx   主题/数学/科学共用，一词一卡
-  passage       短文课        seq 8xx   一篇短文一张卡(往 <级别>-passages.json 里追加),
+  passage       短文课        seq 8xx   一篇短文 = 一节课 = 一张卡(目录上一篇一张封面),
                                         没有问答,句子写在 lines 里,一篇一张拼格图
 
 用法：
@@ -65,7 +65,7 @@ TYPES = OrderedDict([
     ("cvc",         ("拼读 Phonics",       300, "cvc-")),
     ("sight-word",  ("常见词 Sight Words", 400, "sw-")),
     ("topic",       (None,                 500, "")),         # 分组由 --group 指定
-    ("passage",     ("短文 Passages",      800, "passages")),  # 整级一节课,一篇一卡
+    ("passage",     ("短文 Passages",      800, "passage-")),  # 一篇一课一卡
 ])
 # topic 类课程可以落在这几段
 TOPIC_BANDS = {"主题 Topics": 500, "数学 Math": 600, "科学 Science": 700,
@@ -285,17 +285,16 @@ def build_topic(args, lib):
 
 
 def build_passage(args, lib):
-    """短文:不建新课,往 <级别>-passages.json 追加一张卡。
-       返回的 cards 只有这一张;主流程见到 passage 走追加分支"""
+    """短文:一篇 = 一节课 = 一张卡(家长口径:目录上一篇一张封面,不合并)。
+       课程 id = <级别>-passage-<篇名>,封面就是这一篇的拼格图"""
     title = args.title
-    lesson_id = f"{PREFIX}passages"
     name = slug(title.split(" · ")[0])
+    lesson_id = f"{PREFIX}passage-{name}"
     c = OrderedDict([("word", title.split(" · ")[0]), ("cn", title.split(" · ")[-1]),
-                     ("tag", "passage"), ("emoji", args.badge),
-                     ("image", f"images/ps-{name}.webp"), ("collage", True),
-                     ("quiz", False),
+                     ("tag", "passage"), ("image", f"images/ps-{name}.webp"),
+                     ("collage", True), ("quiz", False),
                      ("lines", [OrderedDict([("t", TODO), ("cn", TODO)])])])
-    return lesson_id, "Passages · 小短文", "📖", [c]
+    return lesson_id, title, args.badge, [c]
 
 
 BUILDERS = {"letter": build_letter, "passage": build_passage, "word-family": build_word_family,
@@ -308,7 +307,7 @@ def write_passage_prompt(lesson_id, c):
     """短文一篇一张拼格图,prompt 单独一个文件(docs/prompts/<课程id>-<篇>.md)"""
     PROMPTS.mkdir(parents=True, exist_ok=True)
     name = Path(c["image"]).stem
-    out = PROMPTS / f"{lesson_id}-{name[3:]}.md"
+    out = PROMPTS / f"{lesson_id}.md"
     lines = [f"# 配图 Prompt · {c['word']}", "",
              f"一篇一张 **3:4 竖图**,图内分 2–5 格,**格子的阅读顺序 = 句子顺序**"
              f"(从左到右、从上到下),图里不要任何文字(句子由 app 渲染)。", "",
@@ -439,31 +438,6 @@ def main():
         p.error(f"--group 只能是 {list(TOPIC_BANDS)} 之一")
 
     out = LESSONS / f"{lesson_id}.json"
-    if a.type == "passage":
-        # 短文整级一节课:有就追加一张卡,没有才建文件
-        c = cards[0]
-        if out.exists():
-            lesson = json.loads(out.read_text(encoding="utf-8"), object_pairs_hook=OrderedDict)
-            if any(x.get("word", "").lower() == c["word"].lower() for x in lesson["cards"]):
-                print(f"❌ {out} 里已经有「{c['word']}」这一篇")
-                sys.exit(1)
-            lesson["cards"].append(c)
-        else:
-            lesson = OrderedDict([("seq", band + 1), ("level", LEVEL), ("group", group),
-                                  ("badge", badge), ("title", title), ("cards", [c])])
-        out.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        pf = write_passage_prompt(lesson_id, c)
-        print(f"✓ {out}  追加短文「{c['word']}」(共 {len(lesson['cards'])} 篇)")
-        print(f"✓ {pf}")
-        print("\n接下来:")
-        for i, st in enumerate([
-                f"把 lines 里的「{TODO}」换成短文的句子(一句一条,*…* 包住重点词)和中文",
-                f"python check_lesson.py lessons/{lesson_id}.json",
-                f"补 {pf.name} 的人设和格子描述 → 出图 → python ingest_images.py <图目录>",
-                f"python gen_audio.py lessons/{lesson_id}.json --date <上课日期>",
-                f"python check_dictionary.py {lesson_id}  ← 短文生词多,缺的补进 dictionary.json"], 1):
-            print(f"  {i}. {st}")
-        return
     if out.exists():
         print(f"❌ {out} 已存在，不覆盖")
         sys.exit(1)
@@ -476,7 +450,8 @@ def main():
                           ("cover", cards[0]["image"]),
                           ("title", title), ("cards", cards)])
     out.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    pf = write_prompts(lesson_id, title, cards)
+    pf = write_passage_prompt(lesson_id, cards[0]) if a.type == "passage" \
+        else write_prompts(lesson_id, title, cards)
 
     print(f"✓ {out}")
     print(f"    seq={lesson['seq']}  group={group}  badge={badge}  {len(cards)} 张卡")
@@ -488,7 +463,8 @@ def main():
         for t in tips:
             print(f"   · {t}")
 
-    steps = [f"填掉骨架里的「{TODO}」：cn / 例句 / a_cn",
+    steps = [f"把 lines 里的「{TODO}」换成短文的句子(一句一条,*…* 包住重点词)和中文"
+             if a.type == "passage" else f"填掉骨架里的「{TODO}」：cn / 例句 / a_cn",
              f"python check_lesson.py lessons/{lesson_id}.json      ← 必须全绿",
              f"补 docs/prompts/{lesson_id}.md 里的画面描述 → 出图 → "
              f"python ingest_images.py <图目录>",
