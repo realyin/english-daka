@@ -580,7 +580,7 @@
   }
   .day-row:active{transform:translateY(2px);}
   .day-row:focus-visible{outline:4px solid var(--blue);outline-offset:2px;}
-  /* 左右两栏都是"大字 + 小字":左边哪天,右边多少卡/哪些组。
+  /* 左右两栏都是"大字 + 小字":左边哪节课(小字是哪天),右边多少卡/哪些组。
      右栏 flex:none + 右对齐,左栏文字再长也挤不歪它 */
   .day-row b{display:block;font-size:16px;font-weight:900;line-height:1.3;}
   .day-row i{
@@ -1529,12 +1529,15 @@ function renderDayList(data, days){
       const g = groupOf[id];
       if(g && groups.indexOf(g) < 0) groups.push(g);
     });
-    // 有课名就把课名放在第二行:家长找的是"讲宠物那节",不是"8月30日那节"。
-    // 没起名的日子退回分组名(字母、常见词),至少比只有日期强(main 侧改进,合并保留)
-    const sub = dy.name || groups.join("、");
+    // 课名当大字、日期当小字:家长找的是"讲宠物那节",不是"8月30日那节",
+    // 日期大课名小是本末倒置(家长实测点名)。没起名的日子退回分组名
+    // (字母、常见词)当大字;有课名时分组名挪到右栏卡数下面,信息不丢
+    const title = dy.name || groups.join("、") || md;
+    const when = (rel[dy.date] ? rel[dy.date] + " · " : "") + md + " " + wd;
+    const sub = dy.name ? groups.join("、") : "";
     return `<a class="day-row" href="app.html?lesson=review&pick=day&d=${encodeURIComponent(dy.date)}">` +
-      `<span><b>${rel[dy.date] || md}</b><i>${rel[dy.date] ? md + " " + wd : wd}</i></span>` +
-      `<span class="r"><b>${dy.cards} 张卡</b><i>${sub}</i></span></a>`;
+      `<span><b>${title}</b><i>${when}</i></span>` +
+      `<span class="r"><b>${dy.cards} 张卡</b>${sub ? `<i>${sub}</i>` : ""}</span></a>`;
   }).join("");
 }
 
