@@ -2601,7 +2601,14 @@ function startPractice(){
       take.push(t);
     }
     if(!take.length) continue;
-    pOrder.push(Object.assign({}, c, {_qs: take, _src: lesson.cards.indexOf(c)}));
+    /* ⚠️ 本轮下标存 _at,**不许再叫 _src** —— 复习临时课的卡上 _src 已经是
+       "这张卡来自哪一课"的课程 id(buildReviewLesson 盖的),复习账本的键
+       就是它(revKey: _src + ":" + word)。曾经这里写 _src: indexOf(c),
+       把课程 id 覆盖成了数字下标:整个混合复习/错题本里,**闯关答的题
+       一笔都没进账本** —— 下标 0 那张直接被 revMark 的 !card._src 挡掉,
+       其余的记成 "3:bat" 这种野键,调度器永远读不到。
+       (考一考没这毛病:它拿的是 lesson.cards 里的原对象) */
+    pOrder.push(Object.assign({}, c, {_qs: take, _at: lesson.cards.indexOf(c)}));
     n += take.length;
     if(n >= ROUND_MAX) break;
   }
@@ -2833,13 +2840,13 @@ function renderQuestion(){
 function savePracticeRound(){
   if(!roundSnapshotOK()) return;
   /* ⚠️ pOrder 里放的是**卡的浅克隆**(带本轮选中的 _qs),不是 lesson.cards
-     里那个对象 —— indexOf 找不着。用 _src 记原始下标,再把本轮那几问
+     里那个对象 —— indexOf 找不着。用 _at 记原始下标,再把本轮那几问
      在 dialog 里的位置一并存下来;不存 qs 的话恢复回来会变成整卡,
      和存档时那一轮对不上(题数、进度条分母全变) */
   var cards = [], qs = [], i, j, at, c, dlg, idx;
   for(i = 0; i < pOrder.length; i++){
     c = pOrder[i];
-    at = (typeof c._src === "number") ? c._src : lesson.cards.indexOf(c);
+    at = (typeof c._at === "number") ? c._at : lesson.cards.indexOf(c);
     if(at < 0 || !lesson.cards[at]) return;
     cards.push(at);
     dlg = lesson.cards[at].dialog || [];
@@ -2863,7 +2870,7 @@ function restorePOrder(idxs, qsList){
     if(!c || !askable(c).length) return null;
     // 没有 qs 的是改动之前存的老快照 —— 退回整卡,和当时的行为一致
     if(!(qsList instanceof Array) || !(qsList[i] instanceof Array)){
-      out.push(Object.assign({}, c, {_src: idxs[i]}));
+      out.push(Object.assign({}, c, {_at: idxs[i]}));
       continue;
     }
     dlg = c.dialog || []; picked = [];
@@ -2873,7 +2880,7 @@ function restorePOrder(idxs, qsList){
       picked.push(t);
     }
     if(!picked.length) return null;
-    out.push(Object.assign({}, c, {_src: idxs[i], _qs: picked}));
+    out.push(Object.assign({}, c, {_at: idxs[i], _qs: picked}));
   }
   return out;
 }
