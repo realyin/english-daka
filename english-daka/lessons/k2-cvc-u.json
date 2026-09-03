@@ -56,6 +56,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-it-s-hut-093258.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-tub-b848ea.mp3"
+            },
+            {
+              "key": "nut",
+              "text": "It's nut.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-nut-6a5be7.mp3"
+            }
           ]
         },
         {
@@ -76,6 +88,18 @@
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-h-says-h-u-says-u-t-says-t-h-u-t-hut-7f7c6e.mp3",
             "audio/sentences/k2-cvc-u/a-the-hut-is-small-c13498.mp3"
+          ],
+          "opts": [
+            {
+              "key": "bug",
+              "text": "B says /b/, U says /u/, G says /g/, /b/ /u/ /g/, bug.",
+              "audio": "audio/sentences/k2-cvc-u/a-b-says-b-u-says-u-g-says-g-b-u-g-bug-976138.mp3"
+            },
+            {
+              "key": "nut",
+              "text": "N says /n/, U says /u/, T says /t/, /n/ /u/ /t/, nut.",
+              "audio": "audio/sentences/k2-cvc-u/a-n-says-n-u-says-u-t-says-t-n-u-t-nut-d2a34f.mp3"
+            }
           ]
         },
         {
@@ -93,6 +117,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-hut-begin-with-0869b3.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-hut-begins-with-the-sound-h-ef9d5e.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/u/",
+              "text": "Hut begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-u/a-hut-begins-with-the-sound-u-670692.mp3"
+            },
+            {
+              "key": "/t/",
+              "text": "Hut begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-u/a-hut-begins-with-the-sound-t-752739.mp3"
+            }
           ]
         },
         {
@@ -110,6 +146,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-hut-have-in-the-midd-377b72.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-hut-has-the-sound-u-in-the-middle-dbddbb.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Hut has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-hut-has-the-sound-n-in-the-middle-5230e1.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Hut has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-hut-has-the-sound-b-in-the-middle-d269c1.mp3"
+            }
           ]
         }
       ],
@@ -167,6 +215,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-it-s-bug-0ce030.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-tub-b848ea.mp3"
+            },
+            {
+              "key": "nut",
+              "text": "It's nut.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-nut-6a5be7.mp3"
+            }
           ]
         },
         {
@@ -187,6 +247,18 @@
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-b-says-b-u-says-u-g-says-g-b-u-g-bug-976138.mp3",
             "audio/sentences/k2-cvc-u/a-the-bug-is-on-a-leaf-c5ae47.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nut",
+              "text": "N says /n/, U says /u/, T says /t/, /n/ /u/ /t/, nut.",
+              "audio": "audio/sentences/k2-cvc-u/a-n-says-n-u-says-u-t-says-t-n-u-t-nut-d2a34f.mp3"
+            },
+            {
+              "key": "hut",
+              "text": "H says /h/, U says /u/, T says /t/, /h/ /u/ /t/, hut.",
+              "audio": "audio/sentences/k2-cvc-u/a-h-says-h-u-says-u-t-says-t-h-u-t-hut-7f7c6e.mp3"
+            }
           ]
         },
         {
@@ -204,6 +276,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-bug-begin-with-afe263.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-bug-begins-with-the-sound-b-dbc2e0.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/t/",
+              "text": "Bug begins with the sound /t/.",
+              "audio": "audio/sentences/k2-cvc-u/a-bug-begins-with-the-sound-t-7d1903.mp3"
+            },
+            {
+              "key": "/n/",
+              "text": "Bug begins with the sound /n/.",
+              "audio": "audio/sentences/k2-cvc-u/a-bug-begins-with-the-sound-n-3e5a27.mp3"
+            }
           ]
         },
         {
@@ -221,6 +305,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-bug-have-in-the-midd-1931a0.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-bug-has-the-sound-u-in-the-middle-ce535d.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Bug has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-bug-has-the-sound-n-in-the-middle-5e502a.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Bug has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-bug-has-the-sound-b-in-the-middle-7dc833.mp3"
+            }
           ]
         }
       ],
@@ -278,6 +374,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-it-s-tub-b848ea.mp3"
+          ],
+          "opts": [
+            {
+              "key": "nut",
+              "text": "It's nut.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-nut-6a5be7.mp3"
+            },
+            {
+              "key": "hut",
+              "text": "It's hut.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-hut-093258.mp3"
+            }
           ]
         },
         {
@@ -298,6 +406,18 @@
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-t-says-t-u-says-u-b-says-b-t-u-b-tub-943979.mp3",
             "audio/sentences/k2-cvc-u/a-the-tub-is-full-of-bubbles-3539e8.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hut",
+              "text": "H says /h/, U says /u/, T says /t/, /h/ /u/ /t/, hut.",
+              "audio": "audio/sentences/k2-cvc-u/a-h-says-h-u-says-u-t-says-t-h-u-t-hut-7f7c6e.mp3"
+            },
+            {
+              "key": "bug",
+              "text": "B says /b/, U says /u/, G says /g/, /b/ /u/ /g/, bug.",
+              "audio": "audio/sentences/k2-cvc-u/a-b-says-b-u-says-u-g-says-g-b-u-g-bug-976138.mp3"
+            }
           ]
         },
         {
@@ -315,6 +435,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-tub-begin-with-f16647.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-tub-begins-with-the-sound-t-1f606f.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/h/",
+              "text": "Tub begins with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-u/a-tub-begins-with-the-sound-h-0ed19a.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Tub begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-u/a-tub-begins-with-the-sound-u-46637b.mp3"
+            }
           ]
         },
         {
@@ -332,6 +464,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-tub-have-in-the-midd-9b4eaa.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-tub-has-the-sound-u-in-the-middle-dd3017.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/b/",
+              "text": "Tub has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-tub-has-the-sound-b-in-the-middle-e0b448.mp3"
+            },
+            {
+              "key": "/h/",
+              "text": "Tub has the sound /h/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-tub-has-the-sound-h-in-the-middle-8c586d.mp3"
+            }
           ]
         }
       ],
@@ -389,6 +533,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-word-is-this-75651b.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-it-s-nut-6a5be7.mp3"
+          ],
+          "opts": [
+            {
+              "key": "tub",
+              "text": "It's tub.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-tub-b848ea.mp3"
+            },
+            {
+              "key": "hut",
+              "text": "It's hut.",
+              "audio": "audio/sentences/k2-cvc-u/a-it-s-hut-093258.mp3"
+            }
           ]
         },
         {
@@ -409,6 +565,18 @@
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-n-says-n-u-says-u-t-says-t-n-u-t-nut-d2a34f.mp3",
             "audio/sentences/k2-cvc-u/a-the-squirrel-has-a-nut-bcebd9.mp3"
+          ],
+          "opts": [
+            {
+              "key": "hut",
+              "text": "H says /h/, U says /u/, T says /t/, /h/ /u/ /t/, hut.",
+              "audio": "audio/sentences/k2-cvc-u/a-h-says-h-u-says-u-t-says-t-h-u-t-hut-7f7c6e.mp3"
+            },
+            {
+              "key": "tub",
+              "text": "T says /t/, U says /u/, B says /b/, /t/ /u/ /b/, tub.",
+              "audio": "audio/sentences/k2-cvc-u/a-t-says-t-u-says-u-b-says-b-t-u-b-tub-943979.mp3"
+            }
           ]
         },
         {
@@ -426,6 +594,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-nut-begin-with-97191d.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-nut-begins-with-the-sound-n-b988ea.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/h/",
+              "text": "Nut begins with the sound /h/.",
+              "audio": "audio/sentences/k2-cvc-u/a-nut-begins-with-the-sound-h-227749.mp3"
+            },
+            {
+              "key": "/u/",
+              "text": "Nut begins with the sound /u/.",
+              "audio": "audio/sentences/k2-cvc-u/a-nut-begins-with-the-sound-u-3ff4ab.mp3"
+            }
           ]
         },
         {
@@ -443,6 +623,18 @@
           "q_audio": "audio/sentences/k2-cvc-u/q-what-sound-does-nut-have-in-the-midd-f7068f.mp3",
           "a_audio": [
             "audio/sentences/k2-cvc-u/a-nut-has-the-sound-u-in-the-middle-0dba22.mp3"
+          ],
+          "opts": [
+            {
+              "key": "/n/",
+              "text": "Nut has the sound /n/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-nut-has-the-sound-n-in-the-middle-3e61ee.mp3"
+            },
+            {
+              "key": "/b/",
+              "text": "Nut has the sound /b/ in the middle.",
+              "audio": "audio/sentences/k2-cvc-u/a-nut-has-the-sound-b-in-the-middle-a22bd8.mp3"
+            }
           ]
         }
       ],
