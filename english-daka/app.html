@@ -360,25 +360,42 @@
     .passage .pic{flex:0 0 42%;max-width:42%;margin:0;}
     .passage .ptext{flex:1;}
   }
-  .ptools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:8px;}
-  .ptools .btn{padding:8px 14px;font-size:14px;}
-  .ptools .btn.on{background:var(--yellow);}
-  .ppage{background:#fff;border:2px solid var(--line);border-radius:16px;padding:6px 14px;}
-  .para{display:flex;gap:10px;align-items:flex-start;padding:10px 0;}
-  .para + .para{border-top:1px dashed #E3E8F0;}
-  .para .mini{margin-top:3px;}
+  .ptools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:10px;}
+  .ptools .btn{padding:8px 14px;font-size:14px;border-radius:999px;}
+  .ptools .btn.on{background:var(--yellow);border-color:var(--yellow);}
+  /* 拼格图当一张贴在本子上的照片:白边 + 软阴影 */
+  .passage .pic{
+    border:4px solid #fff;border-radius:18px;
+    box-shadow:0 8px 22px rgba(43,58,85,.16);
+  }
+  /* 右边是一页"本子":米白纸面,每段一条粉彩卡片,虚线边和重点词同色 ——
+     和线下课件的排版一个味道(一行一条彩框),孩子认得出 */
+  .ppage{
+    background:#FFFDF7;border:2px solid #F0E6CF;border-radius:18px;padding:8px;
+    box-shadow:inset 0 0 0 4px #fff;
+  }
+  .para{
+    display:flex;gap:10px;align-items:flex-start;padding:10px 12px;margin:6px 2px;
+    background:var(--pbg);border:2px dashed var(--pbd);border-radius:14px;
+    transition:transform var(--dur-fast,.15s), box-shadow var(--dur-fast,.15s);
+  }
+  .para .mini{
+    margin-top:2px;width:30px;height:30px;
+    background:var(--kw);border-color:var(--kw);color:#fff;
+    box-shadow:0 2px 0 rgba(0,0,0,.12);
+  }
+  .para .mini .ic{width:1.5em;height:1.5em;vertical-align:-.35em;}
   .para .ptxt{
     flex:1;font-size:17px;font-weight:650;line-height:1.7;color:var(--ink);
     cursor:pointer;border-radius:8px;
   }
-  .para .ptxt.speaking{background:linear-gradient(transparent 65%, #FFE9A8 65%);}
-  .para .ptrans{font-size:13px;color:#5E6E8C;font-weight:600;margin-top:3px;display:none;}
+  .para.speaking{border-style:solid;box-shadow:0 4px 14px rgba(43,58,85,.12);transform:translateY(-1px);}
+  .para .ptrans{font-size:13px;color:#6B7A94;font-weight:600;margin-top:4px;display:none;}
   .passage.showzh .ptrans{display:block;}
   .w.kw{color:var(--kw, #E85C93);font-weight:800;}   /* *…* 包住的重点词,一段一个色 */
   /* 遮字:藏掉段落文字只留喇叭和图,孩子看图自己说,点一下揭开一段核对。
      用不透明色条而不是模糊 —— 模糊还能猜出轮廓 */
-  .passage.veil .para:not(.reveal) .w{color:transparent;background:#DDE3EE;border-radius:6px;}
-  .passage.veil .para:not(.reveal) .w.kw{background:#CFD8E8;}
+  .passage.veil .para:not(.reveal) .w{color:transparent;background:var(--pbd);border-radius:6px;}
   .passage.veil .para:not(.reveal) .ptrans{visibility:hidden;}
   .pemoji{font-size:64px;text-align:center;line-height:1.2;padding:8px 0;}
 
@@ -2315,12 +2332,18 @@ function buildDialog(c, din){
    两个工具:「整篇连读」先听一遍;「遮字」藏掉文字只留圆号,看图说、点圆号核对。
    听满一篇(每句都点过,或整篇连读放完)= 打卡,见 notePassageDone
    ================================================================ */
-const PARA_COLORS = ["#E85C93", "#EE8420", "#37A85B", "#2F7BEF"];
+/* 一段一套色:重点词/喇叭用主色,卡片底和虚线边是它的粉彩版。
+   不用 color-mix 现算 —— 老 iPad 的 Safari 不认,直接写死四套 */
+const PARA_THEMES = [
+  {kw:"#E85C93", bg:"#FFF1F6", bd:"#F6BBD1"},   /* 粉 */
+  {kw:"#EE8420", bg:"#FFF5EA", bd:"#F8CFA6"},   /* 橙 */
+  {kw:"#37A85B", bg:"#EFF9F2", bd:"#B7E3C5"},   /* 绿 */
+  {kw:"#2F7BEF", bg:"#EEF4FF", bd:"#B9D0F7"}    /* 蓝 */
+];
 /* 一段文字:*…* 包住的重点词着色,其余词照常可点可长按 */
-function paraText(text, color){
+function paraText(text){
   const box = document.createElement("div");
   box.className = "ptxt";
-  box.style.setProperty("--kw", color);
   let inKw = false;
   text.split(" ").forEach((raw, i)=>{
     if(i) box.appendChild(document.createTextNode(" "));
@@ -2373,16 +2396,19 @@ function buildPassage(c, din){
   }
   function reveal(el){ if(box.classList.contains("veil")) el.classList.add("reveal"); }
   c.lines.forEach((ln, i)=>{
-    const color = PARA_COLORS[i % PARA_COLORS.length];
+    const th = PARA_THEMES[i % PARA_THEMES.length];
     const plain = ln.t.replace(/\*/g, "");
     const para = document.createElement("div");
     para.className = "para";
+    para.style.setProperty("--kw", th.kw);
+    para.style.setProperty("--pbg", th.bg);
+    para.style.setProperty("--pbd", th.bd);
     const spk = document.createElement("button");
     spk.className = "mini"; spk.innerHTML = IC_SPEAKER;
     spk.setAttribute("aria-label", "朗读这一段");
     const body = document.createElement("div");
     body.style.flex = "1"; body.style.minWidth = "0";
-    const ptxt = paraText(ln.t, color);
+    const ptxt = paraText(ln.t);
     body.appendChild(ptxt);
     if(ln.cn){
       const tr = document.createElement("div");
@@ -2390,7 +2416,7 @@ function buildPassage(c, din){
       body.appendChild(tr);
     }
     para.appendChild(spk); para.appendChild(body);
-    para._say = { text: plain, role: "a", audio: ln.audio, el: ptxt };
+    para._say = { text: plain, role: "a", audio: ln.audio, el: para };   // 播放时整条卡片亮
     // 点喇叭、点段落空白 = 听这一段(记入"听满一篇");点单词只听词,不算。
     // 遮字状态下先揭开这一段再播
     const play = e=>{
