@@ -395,6 +395,18 @@ def build_days(lessons_root: Path):
     return [days[k] for k in sorted(days, reverse=True)]
 
 
+def days_lost(old_days, new_days):
+    """课堂日汇总「只增不减」自检:重建后某个日期消失、或某天卡数变少,通常是
+    课程 JSON 被批量重写时把卡片的 added 字段冲掉了(K1 全套导入 11235d6 出过
+    一次:K2 卡的 added 整批丢失,days 被清空,「按课堂复习」失去数据源)。
+    返回丢失明细;合法的减少(删卡、清误盖的戳)用 --allow-days-shrink 显式放行。
+    ⚠️ check_lesson.py 里有一份逐字一致的拷贝,改一处要同步改另一处。"""
+    old = {d["date"]: d["cards"] for d in old_days}
+    new = {d["date"]: d["cards"] for d in new_days}
+    return [f"{k}: {old[k]} 张 → {new.get(k, 0)} 张"
+            for k in sorted(old) if new.get(k, 0) < old[k]]
+
+
 def classes_path(lessons_root: Path) -> Path:
     return lessons_root / "classes.json"
 
@@ -413,7 +425,8 @@ def save_class_name(lessons_root: Path, date: str, name: str):
                             ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
+def update_index(lessons_root: Path, lesson_id: str, lesson: dict,
+                 allow_days_shrink: bool = False):
     """把课程登记进目录页 index.json(按日期倒序)"""
     index_file = lessons_root / "index.json"
     index = json.loads(index_file.read_text(encoding="utf-8")) \
@@ -443,12 +456,23 @@ def update_index(lessons_root: Path, lesson_id: str, lesson: dict):
                    key=lambda x: x["id"], reverse=True)
     index["lessons"] = numbered + grouped + dated
     # 顺带重建课堂日汇总:此刻课程文件都已回写到磁盘,扫出来的就是最新状态
-    index["days"] = build_days(lessons_root)
+    new_days = build_days(lessons_root)
+    lost = days_lost(index.get("days") or [], new_days)
+    if lost and not allow_days_shrink:
+        print("❌ 课堂日汇总(days)重建后变少了 —— 通常是课程 JSON 被重写时"
+              "把卡片的 added 冲掉了:")
+        for m in lost:
+            print(f"   {m}")
+        print("index.json 未更新。先用 git diff 查课程 JSON、把丢失的 added 恢复;\n"
+              "确实要减(删卡、清误盖的戳)就重跑并加 --allow-days-shrink。")
+        sys.exit(1)
+    index["days"] = new_days
     index_file.write_text(
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-async def main(lesson_path: str, class_date: str = None, class_name: str = None):
+async def main(lesson_path: str, class_date: str = None, class_name: str = None,
+               allow_days_shrink: bool = False):
     lesson_file = Path(lesson_path)
     lesson = json.loads(lesson_file.read_text(encoding="utf-8"))
     lessons_root = lesson_file.parent
@@ -507,7 +531,7 @@ async def main(lesson_path: str, class_date: str = None, class_name: str = None)
     if class_name:
         save_class_name(lessons_root, class_date, class_name)
         print(f"课名已登记:{class_date} → 「{class_name}」")
-    update_index(lessons_root, lesson_id, lesson)
+    update_index(lessons_root, lesson_id, lesson, allow_days_shrink)
     print(f"\n完成:新生成 {made} 条,复用已有 {skipped} 条")
     if stamped:
         print(f"新卡 {stamped} 张已盖上课日期 {class_date or date.today().isoformat()}"
@@ -520,6 +544,9 @@ async def main(lesson_path: str, class_date: str = None, class_name: str = None)
 
 if __name__ == "__main__":
     argv = sys.argv[1:]
+    allow_days_shrink = "--allow-days-shrink" in argv
+    if allow_days_shrink:
+        argv.remove("--allow-days-shrink")
     class_date = None
     if "--backfill" in argv:
         argv.remove("--backfill")
@@ -546,6 +573,7 @@ if __name__ == "__main__":
             sys.exit(1)
     if len(argv) != 1:
         print("用法: python gen_audio.py lessons/x.json "
-              "[--date 2026-08-30 [--class \"课名\"] | --backfill]")
+              "[--date 2026-08-30 [--class \"课名\"] | --backfill] "
+              "[--allow-days-shrink]")
         sys.exit(1)
-    asyncio.run(main(argv[0], class_date, class_name))
+    asyncio.run(main(argv[0], class_date, class_name, allow_days_shrink))
