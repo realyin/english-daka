@@ -1,0 +1,70 @@
+{
+  "seq": 804,
+  "level": "K2",
+  "group": "短文 Passages",
+  "badge": "🍎",
+  "cover": "images/ps-apple.webp",
+  "title": "This Is an Apple · 苹果",
+  "cards": [
+    {
+      "word": "This Is an Apple",
+      "cn": "这是一个苹果",
+      "tag": "passage",
+      "image": "images/ps-apple.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "This is an *apple*.",
+          "cn": "这是一个苹果。",
+          "audio": "audio/sentences/k2-passage-apple/a-this-is-an-apple-b37820.mp3"
+        },
+        {
+          "t": "It is *red* and *round*.",
+          "cn": "它红红的、圆圆的。",
+          "audio": "audio/sentences/k2-passage-apple/a-it-is-red-and-round-dbb99c.mp3"
+        },
+        {
+          "t": "It is *small* and *yummy*.",
+          "cn": "它小小的、很好吃。",
+          "audio": "audio/sentences/k2-passage-apple/a-it-is-small-and-yummy-979a9e.mp3"
+        },
+        {
+          "t": "I like *apples* very much!",
+          "cn": "我非常喜欢苹果！",
+          "audio": "audio/sentences/k2-passage-apple/a-i-like-apples-very-much-5a291a.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    }
+  ],
+  "word_audio": {
+    "an": "audio/words/an.mp3",
+    "and": "audio/words/and.mp3",
+    "apple": "audio/words/apple.mp3",
+    "apples": "audio/words/apples.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "like": "audio/words/like.mp3",
+    "much": "audio/words/much.mp3",
+    "red": "audio/words/red.mp3",
+    "round": "audio/words/round.mp3",
+    "small": "audio/words/small.mp3",
+    "this": "audio/words/this.mp3",
+    "this is an apple": "audio/words/this-is-an-apple.mp3",
+    "very": "audio/words/very.mp3",
+    "yummy": "audio/words/yummy.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

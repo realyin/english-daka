@@ -902,14 +902,44 @@
       "cover": "images/recycling-bin-paper.webp"
     },
     {
-      "id": "k2-passages",
-      "title": "Passages · 小短文",
-      "words": 4,
+      "id": "k2-passage-morning-routine",
+      "title": "My Morning Routine · 我的早晨",
+      "words": 1,
       "group": "短文 Passages",
-      "badge": "📖",
+      "badge": "🌅",
       "seq": 801,
       "level": "K2",
       "cover": "images/ps-morning-routine.webp"
+    },
+    {
+      "id": "k2-passage-rabbits",
+      "title": "I Like Rabbits · 我喜欢兔子",
+      "words": 1,
+      "group": "短文 Passages",
+      "badge": "🐰",
+      "seq": 802,
+      "level": "K2",
+      "cover": "images/ps-rabbits.webp"
+    },
+    {
+      "id": "k2-passage-about-me",
+      "title": "About Me · 自我介绍",
+      "words": 1,
+      "group": "短文 Passages",
+      "badge": "👧",
+      "seq": 803,
+      "level": "K2",
+      "cover": "images/ps-about-me.webp"
+    },
+    {
+      "id": "k2-passage-apple",
+      "title": "This Is an Apple · 苹果",
+      "words": 1,
+      "group": "短文 Passages",
+      "badge": "🍎",
+      "seq": 804,
+      "level": "K2",
+      "cover": "images/ps-apple.webp"
     }
   ],
   "days": [
@@ -917,7 +947,10 @@
       "date": "2026-09-04",
       "cards": 4,
       "lessons": [
-        "k2-passages"
+        "k2-passage-about-me",
+        "k2-passage-apple",
+        "k2-passage-morning-routine",
+        "k2-passage-rabbits"
       ]
     },
     {

@@ -1,0 +1,88 @@
+{
+  "seq": 803,
+  "level": "K2",
+  "group": "短文 Passages",
+  "badge": "👧",
+  "cover": "images/ps-about-me.webp",
+  "title": "About Me · 自我介绍",
+  "cards": [
+    {
+      "word": "About Me",
+      "cn": "自我介绍",
+      "tag": "passage",
+      "image": "images/ps-about-me.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "Hello everyone! My name is *Mumu*.",
+          "cn": "大家好！我叫木木。",
+          "audio": "audio/sentences/k2-passage-about-me/a-hello-everyone-my-name-is-mumu-595c91.mp3"
+        },
+        {
+          "t": "I am *five* years old.",
+          "cn": "我五岁了。",
+          "audio": "audio/sentences/k2-passage-about-me/a-i-am-five-years-old-e3a28e.mp3"
+        },
+        {
+          "t": "I live with my *mom* and *dad*.",
+          "cn": "我和爸爸妈妈住在一起。",
+          "audio": "audio/sentences/k2-passage-about-me/a-i-live-with-my-mom-and-dad-2821bb.mp3"
+        },
+        {
+          "t": "I like *singing*.",
+          "cn": "我喜欢唱歌。",
+          "audio": "audio/sentences/k2-passage-about-me/a-i-like-singing-89054a.mp3"
+        },
+        {
+          "t": "I love speaking *English*.",
+          "cn": "我爱说英语。",
+          "audio": "audio/sentences/k2-passage-about-me/a-i-love-speaking-english-ec01e1.mp3"
+        },
+        {
+          "t": "Thank you!",
+          "cn": "谢谢大家！",
+          "audio": "audio/sentences/k2-passage-about-me/a-thank-you-498cd8.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    }
+  ],
+  "word_audio": {
+    "about me": "audio/words/about-me.mp3",
+    "am": "audio/words/am.mp3",
+    "and": "audio/words/and.mp3",
+    "dad": "audio/words/dad.mp3",
+    "english": "audio/words/english.mp3",
+    "everyone": "audio/words/everyone.mp3",
+    "five": "audio/words/five.mp3",
+    "hello": "audio/words/hello.mp3",
+    "i": "audio/words/i.mp3",
+    "is": "audio/words/is.mp3",
+    "like": "audio/words/like.mp3",
+    "live": "audio/words/live.mp3",
+    "love": "audio/words/love.mp3",
+    "mom": "audio/words/mom.mp3",
+    "mumu": "audio/words/mumu.mp3",
+    "my": "audio/words/my.mp3",
+    "name": "audio/words/name.mp3",
+    "old": "audio/words/old.mp3",
+    "singing": "audio/words/singing.mp3",
+    "speaking": "audio/words/speaking.mp3",
+    "thank": "audio/words/thank.mp3",
+    "with": "audio/words/with.mp3",
+    "years": "audio/words/years.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}
