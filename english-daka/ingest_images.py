@@ -76,7 +76,7 @@ def main():
         sys.exit(1)
 
     print(f"从文档解析到 {len(mapping)} 条编号映射,待处理 {len(files)} 张图\n")
-    done, skipped, used_by = 0, [], {}
+    done, skipped, used_by, overwrites = 0, [], {}, []
     for f in files:
         stem = f.stem
         if re.fullmatch(r"\d{3}", stem):              # 编号命名 → 查表
@@ -91,7 +91,10 @@ def main():
 
         hits = find_usage(name)
         used_by[name] = hits
-        flag = "覆盖已有" if (IMAGES / f"{name}.webp").exists() else "新增"
+        overwrote = (IMAGES / f"{name}.webp").exists()
+        if overwrote:
+            overwrites.append(name)
+        flag = "覆盖已有" if overwrote else "新增"
         note = f"（{flag}，被 {len(hits)} 节课引用）" if hits else f"（{flag}，⚠ 暂无课程引用）"
         if dry:
             print(f"  [预览] {label} {note}")
@@ -121,6 +124,10 @@ def main():
         orphan = [n for n, h in used_by.items() if not h]
         if orphan:
             print(f"⚠ 这些图暂时没有课程引用,需要手动写进 JSON: {orphan}")
+        if overwrites:
+            print(f"\n⚠ 同名覆盖了 {len(overwrites)} 张已有图片: {overwrites}")
+            print("  必须 bump sw.js 的 CACHE 版本号!媒体是 cache-first,不让号的话")
+            print("  装过 PWA 的设备永远拿旧图 —— 强刷是新图、正常打开还是旧图,实测踩过")
 
 
 if __name__ == "__main__":
