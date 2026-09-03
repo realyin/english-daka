@@ -11,25 +11,23 @@
       "cn": "去；到",
       "tag": "sight word",
       "image": "images/sw-to.webp",
-      "collage": true,
       "quiz": false,
       "dialog": [
         {
           "q": "What's this sight word?",
           "a": [
-            "It's sight word to."
+            "It's sight word to.",
+            "I go to school."
           ],
           "key": [
             "to"
           ],
           "q_cn": "这是什么常见词？",
           "a_cn": [
-            "是常见词 to。"
+            "是常见词 to。",
+            "我去上学。"
           ],
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3"
-          ],
           "opts": [
             {
               "key": "and",
@@ -41,6 +39,10 @@
               "text": "It's sight word too.",
               "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-too-47590f.mp3"
             }
+          ],
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-to-565670.mp3",
+            "audio/sentences/k2-sw-to-and/a-i-go-to-school-e8204c.mp3"
           ]
         }
       ],
@@ -196,25 +198,23 @@
       "cn": "和",
       "tag": "sight word",
       "image": "images/sw-and.webp",
-      "collage": true,
       "quiz": false,
       "dialog": [
         {
           "q": "What's this sight word?",
           "a": [
-            "It's sight word and."
+            "It's sight word and.",
+            "I see a dog and a cat."
           ],
           "key": [
             "and"
           ],
           "q_cn": "这是什么常见词？",
           "a_cn": [
-            "是常见词 and。"
+            "是常见词 and。",
+            "我看到一只狗和一只猫。"
           ],
           "q_audio": "audio/sentences/k2-sw-to-and/q-what-s-this-sight-word-51830e.mp3",
-          "a_audio": [
-            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3"
-          ],
           "opts": [
             {
               "key": "to",
@@ -226,6 +226,10 @@
               "text": "It's sight word sleep.",
               "audio": "audio/sentences/k2-sw-to-and/a-it-s-sight-word-sleep-0313cc.mp3"
             }
+          ],
+          "a_audio": [
+            "audio/sentences/k2-sw-to-and/a-it-s-sight-word-and-9c3d0b.mp3",
+            "audio/sentences/k2-sw-to-and/a-i-see-a-dog-and-a-cat-cbe071.mp3"
           ]
         }
       ],
@@ -319,9 +323,12 @@
     "black": "audio/words/black.mp3",
     "buy": "audio/words/buy.mp3",
     "can": "audio/words/can.mp3",
+    "cat": "audio/words/cat.mp3",
     "color": "audio/words/color.mp3",
     "do": "audio/words/do.mp3",
+    "dog": "audio/words/dog.mp3",
     "drums": "audio/words/drums.mp3",
+    "go": "audio/words/go.mp3",
     "i": "audio/words/i.mp3",
     "in": "audio/words/in.mp3",
     "is": "audio/words/is.mp3",
@@ -332,6 +339,8 @@
     "piano": "audio/words/piano.mp3",
     "play": "audio/words/play.mp3",
     "red": "audio/words/red.mp3",
+    "school": "audio/words/school.mp3",
+    "see": "audio/words/see.mp3",
     "sight": "audio/words/sight.mp3",
     "sing": "audio/words/sing.mp3",
     "sleep": "audio/words/sleep.mp3",
