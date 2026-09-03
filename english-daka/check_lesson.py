@@ -43,7 +43,7 @@ SEQ_BANDS = {
     # ── K2 ──
     "字母 Letters": 100, "词族 Word Family": 200, "拼读 Phonics": 300,
     "常见词 Sight Words": 400, "主题 Topics": 500, "数学 Math": 600,
-    "科学 Science": 700,
+    "科学 Science": 700, "短文 Passages": 800,
     # ── K1(T1–T12)──「字母 Letters」两级共用 100 段
     "数字 Numbers": 200, "颜色 Colors": 300, "动物 Animals": 400,
     "身体 Body": 500, "动作 Actions": 600, "职业 Jobs": 700,
@@ -159,11 +159,18 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
     for c in cards:
         w = c.get("word", "?")
         where = f"卡「{w}」"
-        for k in ("word", "cn", "tag", "dialog"):
+        # 短文卡(tag: passage)没有问答,内容在 lines 里;别的卡必须有 dialog
+        passage = c.get("tag") == "passage"
+        for k in ("word", "cn", "tag", "lines" if passage else "dialog"):
             if not c.get(k):
                 r.e(where, f"缺 {k}")
         if c.get("cn") == TODO or c.get("word") == TODO:
             r.e(where, f"还有没填的「{TODO}」")
+        if passage:
+            check_passage(c, r, where, lib, audio_ready)
+        elif c.get("lines"):
+            r.w(where, "有 lines 却不是 tag: passage —— app 只在短文卡上渲染 lines,"
+                       "这些句子不会显示")
 
         # sight word 徽章只属于「标题宣称的那几个常见词」。
         # 例词卡(box/cow/piano 这类普通名词)标 sight word,学一学的徽章就在
@@ -407,6 +414,38 @@ QUIZ_FORMULA = re.compile(
     r"|\bends with\b|\bmakes the sound\b|belong to|family\.?$", re.I)
 
 
+def check_passage(c, r, where, lib, audio_ready):
+    """短文卡:一句一条 {t, cn, audio}。*…* 包住重点词(渲染成彩字),必须成对;
+    音标记号照答句的规矩走(能映射到音素库、不写 C-at 这种拼法);
+    quiz:false 不强求 —— app 见到 tag: passage 就不进考一考和闯关"""
+    for i, ln in enumerate(c.get("lines") or []):
+        lw = f"{where} 第{i+1}句"
+        t, cn = ln.get("t"), ln.get("cn")
+        if not t or not cn:
+            r.e(lw, "缺 t 或 cn")
+            continue
+        if TODO in (t, cn):
+            r.e(lw, f"还有没填的「{TODO}」")
+        if t.count("*") % 2:
+            r.e(lw, f"重点词标记 * 不成对:{t!r}")
+        plain = t.replace("*", "")
+        for m in PHONEME_RE.finditer(plain):
+            raw = m.group(1).lower()
+            key = PHONEME_MAP.get(raw, raw)
+            if key not in lib:
+                r.e(lw, f"音标 /{raw}/ 映射到「{key}」,但音素库里没有 —— "
+                        f"合成时会退回 TTS 念成字母名")
+        m = SPELLED_RE.search(plain)
+        if m:
+            r.e(lw, f"{plain!r} 里的 {m.group()!r} 会被 TTS 念成字母名,要写成音标记号")
+        if audio_ready:
+            a = ln.get("audio")
+            if not a:
+                r.e(lw, "没有 audio —— 跑 gen_audio.py 回写")
+            elif not (LESSONS / a).exists():
+                r.e(lw, f"音频不存在:{a}")
+
+
 def quiz_pics(cards, audio_ready):
     """复刻 app.html 的 quizPics()：这一课能出多少张不同的图当选项"""
     pics = []
@@ -489,7 +528,9 @@ def main():
         d = json.loads(f.read_text(encoding="utf-8"))
         # 跑没跑过 gen_audio：看有没有回写 q_audio
         audio_ready = any(t.get("q_audio") for c in d.get("cards", [])
-                          for t in c.get("dialog", []))
+                          for t in c.get("dialog", [])) or \
+                      any(ln.get("audio") for c in d.get("cards", [])
+                          for ln in c.get("lines", []))
         ok &= check_lesson(f, pools, lib, audio_ready).show()
 
     if "--fix-index" in sys.argv or not args:

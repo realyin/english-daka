@@ -897,9 +897,26 @@
       "seq": 701,
       "level": "K2",
       "cover": "images/recycling-bin-paper.webp"
+    },
+    {
+      "id": "k2-passages",
+      "title": "Passages · 小短文",
+      "words": 4,
+      "group": "短文 Passages",
+      "badge": "📖",
+      "seq": 801,
+      "level": "K2",
+      "cover": "images/ps-morning-routine.webp"
     }
   ],
   "days": [
+    {
+      "date": "2026-09-04",
+      "cards": 4,
+      "lessons": [
+        "k2-passages"
+      ]
+    },
     {
       "date": "2026-09-02",
       "cards": 12,

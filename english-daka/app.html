@@ -348,6 +348,35 @@
   }
   .sline.showzh .trans{display:block;}
 
+  /* ===== 短文卡(lines):图一边、句子一边 =====
+     一篇短文一张拼格图,句子是图的说明 —— 不拆成一句一图(家长口径:短文本来就短,
+     拆散了有割裂感)。宽屏图在左句子在右;手机竖屏图在上句子在下,仍是图一块、字一块 */
+  .passage{display:flex;flex-direction:column;gap:10px;align-items:stretch;}
+  .passage .pic{max-width:min(320px, 44vh);}     /* 拼格图要看清每一格,比单词图大 */
+  .passage .ptext{min-width:0;}
+  .passage .bubble.p{background:#E6F4EA;max-width:100%;margin:0;border-bottom-left-radius:4px;}
+  @media (min-width:600px){
+    .passage{flex-direction:row;align-items:flex-start;}
+    .passage .pic{flex:0 0 42%;max-width:42%;margin:0;}
+    .passage .ptext{flex:1;}
+  }
+  .ptools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:8px;}
+  .ptools .btn{padding:8px 14px;font-size:14px;}
+  .ptools .btn.on{background:var(--yellow);}
+  /* 句前彩色圆号:和拼格图的阅读顺序对应(左→右、上→下),四色轮换 */
+  .pnum{
+    flex:none;width:24px;height:24px;border-radius:50%;margin-top:2px;
+    color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;
+  }
+  .w.kw{color:var(--kw, #E85C93);font-weight:800;}   /* *…* 包住的重点词 */
+  /* 遮字:藏掉句子文字只留圆号和图,孩子看图自己说,点圆号揭开一句核对。
+     用不透明色条而不是模糊 —— 模糊还能猜出轮廓 */
+  .passage.veil .sline:not(.reveal) .w{color:transparent;background:#DDE3EE;border-radius:6px;}
+  .passage.veil .sline:not(.reveal) .w.kw{background:#CFD8E8;}
+  .passage.veil .sline:not(.reveal) .trans{visibility:hidden;}
+  .passage.veil .sline:not(.reveal) .line .mini{visibility:hidden;}
+  .pemoji{font-size:64px;text-align:center;line-height:1.2;padding:8px 0;}
+
   /* 一次性的手势提示条(第一次展开卡片时浮一下,4 秒自己淡掉)。
      这一条是给家长看的 —— 孩子不认字,长按这个手势没人告诉他就发现不了。
      做得小、占一行、插在问句气泡上方,不挡内容 */
@@ -1154,12 +1183,33 @@ function noteLearnOpen(word){
   var lm = o.learnMark, key = CUR_ID + ":" + word;
   if(lm.cards.indexOf(key) >= 0) return;       // 今天已经数过这张
   lm.cards.push(key);
-  o.dayCards[t] = lm.cards.length;             // 给日历分深浅用的"今天听了几张"
-  if(!lm.done && lm.cards.length >= LEARN_MARK_N){
+  o.dayCards[t] = lm.cards.length + (lm.bonus || 0);   // 给日历分深浅用的"今天听了几张"(短文补足见 notePassageDone)
+  if(!lm.done && lm.cards.length + (lm.bonus || 0) >= LEARN_MARK_N){
     lm.done = true;
     markToday(o);
   }
   store.save(o);
+}
+/* 短文卡的打卡口径(家长定):**听满一篇 = 打卡**。一篇按 LEARN_MARK_N 张卡入账 ——
+   展开时 noteLearnOpen 已记了 1 张,这里补足差额(bonus),日历深浅也照这个折算。
+   同一篇一天只算一次;bonus 和 cards 一起按天重置 */
+function notePassageDone(word){
+  if(!CUR_ID) return;
+  var o = store.load();
+  var t = today();
+  if(!o.learnMark || o.learnMark.d !== t) o.learnMark = {d: t, cards: [], done: false};
+  var lm = o.learnMark, key = CUR_ID + ":" + word + "#done";
+  if(lm.cards.indexOf(key) >= 0) return;
+  lm.cards.push(key);
+  lm.bonus = (lm.bonus || 0) + Math.max(0, LEARN_MARK_N - 2);   // 展开 1 + 这条 1 + 补足
+  var n = lm.cards.length + lm.bonus;
+  o.dayCards[t] = n;
+  if(!lm.done && n >= LEARN_MARK_N){
+    lm.done = true;
+    markToday(o);
+  }
+  store.save(o);
+  showToast("听完一篇啦 ✓ 今天的卡打上了");
 }
 /* 进课/换课时把星罐恢复成这一课的累计数,顺便记下"最近学的课" */
 function loadLessonProgress(){
@@ -1748,7 +1798,9 @@ function makeWordSpan(raw){
   return sp;
 }
 
+/* text 里 *…* 包住的是重点词(短文卡用):渲染成彩字,播放/朗读用剥掉星号的 plain */
 function makeSline(text, cn, role, audio){
+  const plain = text.replace(/\*/g, "");
   const sline = document.createElement("div");
   sline.className = "sline";
   const line = document.createElement("div");
@@ -1759,12 +1811,12 @@ function makeSline(text, cn, role, audio){
   spk.setAttribute("aria-label", "朗读这一句");
   const stext = document.createElement("span");
   stext.className = "stext";
-  spk.onclick = e=>{ e.stopPropagation(); playOne(text, role, audio, null, stext); };
+  spk.onclick = e=>{ e.stopPropagation(); playOne(plain, role, audio, null, stext); };
 
   // 「中」是个汉字,对不认字的孩子和旁边的英文一样是图形;换成眼睛图标,
   // "看一眼" 这个动作他能自己猜出来(aria-label 留给读屏和家长)
   const zh = document.createElement("button");
-  zh.className = "mini"; zh.innerHTML = IC_EYE;
+  zh.className = "mini zh"; zh.innerHTML = IC_EYE;
   zh.setAttribute("aria-label", "显示中文翻译");
   zh.onclick = e=>{
     e.stopPropagation();
@@ -1772,9 +1824,16 @@ function makeSline(text, cn, role, audio){
     zh.classList.toggle("on");
   };
 
+  let inKw = false;
   text.split(" ").forEach((raw,i)=>{
     if(i) stext.appendChild(document.createTextNode(" "));
-    stext.appendChild(makeWordSpan(raw));
+    // *First*, → 开关都在这一个词上;*soft fur*. → 跨两个词
+    let kw = inKw;
+    if(raw.startsWith("*")){ kw = true; inKw = true; }
+    if(/\*[^*a-z]*$/i.test(raw) && raw.length > 1){ inKw = false; }
+    const sp = makeWordSpan(raw.replace(/\*/g, ""));
+    if(kw) sp.classList.add("kw");
+    stext.appendChild(sp);
   });
 
   line.appendChild(spk);
@@ -1782,11 +1841,11 @@ function makeSline(text, cn, role, audio){
   line.appendChild(stext);
   sline.appendChild(line);
   // 点句子行的空白处(非单词、非按钮)也播放整句
-  sline._say = { text, role, audio, el: stext };
+  sline._say = { text: plain, role, audio, el: stext };
   sline.addEventListener("click", e=>{
     if(e.target.closest(".w") || e.target.closest(".mini")) return;
     e.stopPropagation();
-    playOne(text, role, audio, null, stext);
+    playOne(plain, role, audio, null, stext);
   });
   if(cn){
     const tr = document.createElement("div");
@@ -1947,8 +2006,8 @@ function quizItems(){
                   // 用 token 串当身份 —— 同一条规律在一课里只会出现一次
                   pic: c.image || c.eq || c.emoji ||
                        (c.pattern ? "pat:" + c.pattern.join(",") : "")});
-    for(const t of c.dialog){
-      const img = t.image || (c.dialog.length === 1 && !isCollage(c) ? c.image : null);
+    for(const t of (c.dialog || [])){          // 短文卡没有 dialog
+      const img = t.image || ((c.dialog || []).length === 1 && !isCollage(c) ? c.image : null);
       if(!img || !t.a_audio) continue;
       // 一问的答句可能不止一条:["It's sight word my.", "This is my toy."]
       // 第一条常是套话(说的是词不是画面),往后找第一条真正描述画面、且配了音的
@@ -2208,6 +2267,7 @@ function coachPress(d){
    它自己 overflow:hidden + min-height:0"。往 dialog 直接加第二个子元素,
    多出来的那个不受行高约束,收起状态会露在外面 */
 function buildDialog(c, din){
+  if(c.lines){ buildPassage(c, din); return; }
   // 只要有问答带了自己的单格图,就整张卡改成"一问一图"(和闯关的 qa.image||c.image 一致):
   // 图不再顶在最上面滚出屏幕,没有单格图的那几问回落到卡片图,就近显示
   const perQA = c.dialog.some(qa=>qa.image);
@@ -2244,6 +2304,94 @@ function buildDialog(c, din){
     din.appendChild(makeBubble("q", qa));
     din.appendChild(makeBubble("a", qa));
   });
+}
+/* ================================================================
+   短文卡:一篇短文 = 一张卡,一张拼格图 + 一列句子。没有问答,孩子看图自己说。
+   两个工具:「整篇连读」先听一遍;「遮字」藏掉文字只留圆号,看图说、点圆号核对。
+   听满一篇(每句都点过,或整篇连读放完)= 打卡,见 notePassageDone
+   ================================================================ */
+const PNUM_COLORS = ["#E85C93", "#EE8420", "#37A85B", "#2F7BEF"];
+function buildPassage(c, din){
+  const tools = document.createElement("div");
+  tools.className = "ptools";
+  const bAll = document.createElement("button");
+  bAll.className = "btn"; bAll.innerHTML = IC_SPEAKER + " 整篇连读";
+  const bVeil = document.createElement("button");
+  bVeil.className = "btn"; bVeil.innerHTML = IC_EYE + " 遮字看图说";
+  bVeil.setAttribute("aria-pressed", "false");
+  tools.appendChild(bAll); tools.appendChild(bVeil);
+  din.appendChild(tools);
+
+  const box = document.createElement("div");
+  box.className = "passage";
+  if(c.image){
+    const img = document.createElement("img");
+    img.className = "pic"; img.loading = "lazy";
+    img.src = imgSrc(c.image); img.alt = c.word;
+    box.appendChild(img);
+  }else if(c.emoji){
+    const em = document.createElement("div");
+    em.className = "pemoji"; em.textContent = c.emoji;
+    box.appendChild(em);
+  }
+  const txt = document.createElement("div");
+  txt.className = "ptext";
+  const b = document.createElement("div");
+  b.className = "bubble p";
+  const who = document.createElement("span");
+  who.className = "who"; who.innerHTML = IC_SPEECH + " 我来说";
+  b.appendChild(who);
+
+  const heard = {};
+  const slines = [];
+  function markHeard(i){
+    if(heard[i]) return;
+    heard[i] = true;
+    if(Object.keys(heard).length >= c.lines.length) notePassageDone(String(c.word || c.cn || ""));
+  }
+  function reveal(s){ if(box.classList.contains("veil")) s.classList.add("reveal"); }
+  c.lines.forEach((ln, i)=>{
+    const s = makeSline(ln.t, ln.cn, "a", ln.audio);
+    const color = PNUM_COLORS[i % PNUM_COLORS.length];
+    s.style.setProperty("--kw", color);
+    const num = document.createElement("span");
+    num.className = "pnum"; num.textContent = i + 1;
+    num.style.background = color;
+    s.querySelector(".line").insertBefore(num, s.querySelector(".line").firstChild);
+    // 点句子(空白、圆号、喇叭)= 听了这一句;点单词、点翻译不算。
+    // 遮字状态下点一下先揭开这一句(makeSline 自己的处理器会接着播)
+    s.addEventListener("click", e=>{
+      if(e.target.closest(".w") || e.target.closest(".zh")) return;
+      reveal(s); markHeard(i);
+    }, true);
+    slines.push(s);
+    b.appendChild(s);
+  });
+  txt.appendChild(b);
+  box.appendChild(txt);
+  din.appendChild(box);
+
+  bAll.onclick = e=>{
+    e.stopPropagation();
+    // 逐句串起来放:遮字时放到哪句揭开哪句。playSeq 没有逐条回调,所以一句一次、
+    // 在 onDone 里接下一句;中途被别的播放打断时 onDone 不会来,链自然断掉
+    let i = 0;
+    function step(){
+      if(i >= slines.length) return;
+      const s = slines[i], at = i; i++;
+      reveal(s);
+      playSeq([s._say], ()=>{ markHeard(at); step(); });
+    }
+    step();
+  };
+  bVeil.onclick = e=>{
+    e.stopPropagation();
+    const on = box.classList.toggle("veil");
+    slines.forEach(s=>s.classList.remove("reveal"));
+    bVeil.classList.toggle("on", on);
+    bVeil.setAttribute("aria-pressed", on ? "true" : "false");
+    if(on) showToast("看图说一说 · 点圆号看答案");
+  };
 }
 /* 展开前必须先经过这里 —— 空 dialog 的展开高度是 0,动画等于没发生,
    afterExpand/revealCard 量到的也是空盒子。所有"要展开这张卡"的路径
@@ -3263,6 +3411,7 @@ function prefetchAudio(){
   }
   (lesson.cards || []).forEach(function(c){
     (c.dialog || []).forEach(function(qa){ addAll(qa.q_audio); addAll(qa.a_audio); });
+    (c.lines || []).forEach(function(ln){ add(ln.audio); });
   });
   [lesson.word_audio, lesson.praise_audio].forEach(function(m){
     if(!m) return;
@@ -3308,17 +3457,23 @@ function applyLesson(){
   const hint = document.getElementById("learnHint");
   if(hint) hint.innerHTML = lesson.audio_mode === "word"
     ? IC_SPEAKER + " 点词听词 · 按住看意思"
+    : lesson.cards.some(c => c.lines)
+      ? IC_SPEAKER + " 点句听句 · 整篇连读 · " + IC_EYE + " 遮字看图说"
     : lesson.cards.some(c => c.phonics)
       ? IC_SPEAKER + " 点字母听纯音 · 跟读3个音 · 再读整词"
       : IC_SPEAKER + " 点句听句 · 点词听词 · 按住看意思 · " + IC_EYE + " 翻译";
 
   document.getElementById("practiceBox").innerHTML = PRACTICE_HOME;
+  // 一问都没有的课(短文课)没得闯,页签整个藏掉,别让孩子点进一页空着陆
+  const canPractice = lesson.cards.some(c => askable(c).length);
+  document.getElementById("tabPractice").style.display = canPractice ? "" : "none";
   // 可选的图不足两张就没法出选择题,隐藏这一栏而不是出坏题
   const enough = quizPics().length >= 2;
   document.getElementById("tabQuiz").style.display = enough ? "" : "none";
   document.getElementById("quizBox").innerHTML = enough ? QUIZ_HOME :
     `<div class="done"><div class="big">${bigArt("ui-target.webp", "🎯")}</div>` +
-    `这一课的卡片是整版拼图，没法做听音选卡。<br>去「学一学」和「问答闯关」吧！</div>`;
+    (canPractice ? `这一课的卡片是整版拼图，没法做听音选卡。<br>去「学一学」和「问答闯关」吧！`
+                 : `这一课是短文，没有考题。<br>去「学一学」听一听、看图说一说吧！`) + `</div>`;
 
   wireLessonNav();
   renderLearn();

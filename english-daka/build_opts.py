@@ -116,7 +116,7 @@ def scan_frames(files):
     for f in files:
         d = json.loads(f.read_text(encoding="utf-8"))
         for c in d.get("cards", []):
-            for t in c["dialog"]:
+            for t in (c.get("dialog") or []):
                 if t.get("practice") is False or not t.get("a"):
                     continue
                 sl = slot(t["a"][0], " ".join(t["key"]))
@@ -159,7 +159,7 @@ def pick(seen, sent, key, local, want=2):
 def realpool(d):
     """本课所有『key, 答句, 答句音频』—— 第二层从这里取，句子和音频都是现成的"""
     return [(" ".join(t["key"]), t["a"][0], t["a_audio"][0])
-            for c in d["cards"] for t in c["dialog"]
+            for c in d["cards"] for t in (c.get("dialog") or [])
             if t.get("practice") is not False and t.get("a") and t.get("a_audio")]
 
 
@@ -222,7 +222,7 @@ def main():
         pool = realpool(d)
         local = {k for k, _, _ in pool}
         for c in d.get("cards", []):
-            for t in c["dialog"]:
+            for t in (c.get("dialog") or []):
                 if t.get("practice") is False:
                     continue
                 if args.force:

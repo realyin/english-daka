@@ -1,0 +1,280 @@
+{
+  "seq": 801,
+  "level": "K2",
+  "group": "短文 Passages",
+  "badge": "📖",
+  "cover": "images/ps-morning-routine.webp",
+  "title": "Passages · 小短文",
+  "cards": [
+    {
+      "word": "My Morning Routine",
+      "cn": "我的早晨",
+      "tag": "passage",
+      "image": "images/ps-morning-routine.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "*First*, I get up.",
+          "cn": "首先，我起床。",
+          "audio": "audio/sentences/k2-passages/a-first-i-get-up-987bb2.mp3"
+        },
+        {
+          "t": "I get up every morning.",
+          "cn": "我每天早上都起床。",
+          "audio": "audio/sentences/k2-passages/a-i-get-up-every-morning-7925cf.mp3"
+        },
+        {
+          "t": "*Then*, I wash my face.",
+          "cn": "然后，我洗脸。",
+          "audio": "audio/sentences/k2-passages/a-then-i-wash-my-face-4301a0.mp3"
+        },
+        {
+          "t": "I wash my face with water. My face is clean.",
+          "cn": "我用水洗脸。我的脸干干净净。",
+          "audio": "audio/sentences/k2-passages/a-i-wash-my-face-with-water-my-face-is-f28526.mp3"
+        },
+        {
+          "t": "*Next*, I brush my teeth.",
+          "cn": "接着，我刷牙。",
+          "audio": "audio/sentences/k2-passages/a-next-i-brush-my-teeth-cae3a6.mp3"
+        },
+        {
+          "t": "I brush my teeth with a toothbrush. My teeth are white.",
+          "cn": "我用牙刷刷牙。我的牙齿白白的。",
+          "audio": "audio/sentences/k2-passages/a-i-brush-my-teeth-with-a-toothbrush-m-9067fd.mp3"
+        },
+        {
+          "t": "*Last*, I take a shower.",
+          "cn": "最后，我洗澡。",
+          "audio": "audio/sentences/k2-passages/a-last-i-take-a-shower-85f196.mp3"
+        },
+        {
+          "t": "I take a shower every day. I am fresh.",
+          "cn": "我每天洗澡。我清清爽爽。",
+          "audio": "audio/sentences/k2-passages/a-i-take-a-shower-every-day-i-am-fresh-ddd868.mp3"
+        },
+        {
+          "t": "After my morning routine, I am *ready for school*!",
+          "cn": "做完早晨的事，我准备好上学啦！",
+          "audio": "audio/sentences/k2-passages/a-after-my-morning-routine-i-am-ready--d35054.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    },
+    {
+      "word": "I Like Rabbits",
+      "cn": "我喜欢兔子",
+      "tag": "passage",
+      "image": "images/ps-rabbits.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "Hello, everyone! I am *Mumu*.",
+          "cn": "大家好！我是木木。",
+          "audio": "audio/sentences/k2-passages/a-hello-everyone-i-am-mumu-445fd7.mp3"
+        },
+        {
+          "t": "I like *rabbits* because they are *cute*.",
+          "cn": "我喜欢兔子，因为它们很可爱。",
+          "audio": "audio/sentences/k2-passages/a-i-like-rabbits-because-they-are-cute-537950.mp3"
+        },
+        {
+          "t": "Rabbits are covered with *soft fur*. They have *long ears* and *short tails*.",
+          "cn": "兔子身上有柔软的毛。它们有长耳朵和短尾巴。",
+          "audio": "audio/sentences/k2-passages/a-rabbits-are-covered-with-soft-fur-th-46732c.mp3"
+        },
+        {
+          "t": "Rabbit begins with the sound /r/. /r/, /r/, rabbit!",
+          "cn": "Rabbit 以 /r/ 音开头。/r/、/r/、rabbit！",
+          "audio": "audio/sentences/k2-passages/a-rabbit-begins-with-the-sound-r-r-r-r-96d896.mp3"
+        },
+        {
+          "t": "I don't like *dogs* because they are *scary*.",
+          "cn": "我不喜欢狗，因为它们很吓人。",
+          "audio": "audio/sentences/k2-passages/a-i-don-t-like-dogs-because-they-are-s-4c7e00.mp3"
+        },
+        {
+          "t": "What *animal* do you like?",
+          "cn": "你喜欢什么动物？",
+          "audio": "audio/sentences/k2-passages/a-what-animal-do-you-like-3f6fb0.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    },
+    {
+      "word": "About Me",
+      "cn": "自我介绍",
+      "tag": "passage",
+      "image": "images/ps-about-me.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "Hello everyone! My name is *Mumu*.",
+          "cn": "大家好！我叫木木。",
+          "audio": "audio/sentences/k2-passages/a-hello-everyone-my-name-is-mumu-595c91.mp3"
+        },
+        {
+          "t": "I am *five* years old.",
+          "cn": "我五岁了。",
+          "audio": "audio/sentences/k2-passages/a-i-am-five-years-old-e3a28e.mp3"
+        },
+        {
+          "t": "I live with my *mom* and *dad*.",
+          "cn": "我和爸爸妈妈住在一起。",
+          "audio": "audio/sentences/k2-passages/a-i-live-with-my-mom-and-dad-2821bb.mp3"
+        },
+        {
+          "t": "I like *singing*.",
+          "cn": "我喜欢唱歌。",
+          "audio": "audio/sentences/k2-passages/a-i-like-singing-89054a.mp3"
+        },
+        {
+          "t": "I love speaking *English*.",
+          "cn": "我爱说英语。",
+          "audio": "audio/sentences/k2-passages/a-i-love-speaking-english-ec01e1.mp3"
+        },
+        {
+          "t": "Thank you!",
+          "cn": "谢谢大家！",
+          "audio": "audio/sentences/k2-passages/a-thank-you-498cd8.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    },
+    {
+      "word": "This Is an Apple",
+      "cn": "这是一个苹果",
+      "tag": "passage",
+      "image": "images/ps-apple.webp",
+      "collage": true,
+      "quiz": false,
+      "lines": [
+        {
+          "t": "This is an *apple*.",
+          "cn": "这是一个苹果。",
+          "audio": "audio/sentences/k2-passages/a-this-is-an-apple-b37820.mp3"
+        },
+        {
+          "t": "It is *red* and *round*.",
+          "cn": "它红红的、圆圆的。",
+          "audio": "audio/sentences/k2-passages/a-it-is-red-and-round-dbb99c.mp3"
+        },
+        {
+          "t": "It is *small* and *yummy*.",
+          "cn": "它小小的、很好吃。",
+          "audio": "audio/sentences/k2-passages/a-it-is-small-and-yummy-979a9e.mp3"
+        },
+        {
+          "t": "I like *apples* very much!",
+          "cn": "我非常喜欢苹果！",
+          "audio": "audio/sentences/k2-passages/a-i-like-apples-very-much-5a291a.mp3"
+        }
+      ],
+      "added": "2026-09-04"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "about me": "audio/words/about-me.mp3",
+    "after": "audio/words/after.mp3",
+    "am": "audio/words/am.mp3",
+    "an": "audio/words/an.mp3",
+    "and": "audio/words/and.mp3",
+    "animal": "audio/words/animal.mp3",
+    "apple": "audio/words/apple.mp3",
+    "apples": "audio/words/apples.mp3",
+    "are": "audio/words/are.mp3",
+    "because": "audio/words/because.mp3",
+    "begins": "audio/words/begins.mp3",
+    "brush": "audio/words/brush.mp3",
+    "clean": "audio/words/clean.mp3",
+    "covered": "audio/words/covered.mp3",
+    "cute": "audio/words/cute.mp3",
+    "dad": "audio/words/dad.mp3",
+    "day": "audio/words/day.mp3",
+    "do": "audio/words/do.mp3",
+    "dogs": "audio/words/dogs.mp3",
+    "don't": "audio/words/don-t.mp3",
+    "ears": "audio/words/ears.mp3",
+    "english": "audio/words/english.mp3",
+    "every": "audio/words/every.mp3",
+    "everyone": "audio/words/everyone.mp3",
+    "face": "audio/words/face.mp3",
+    "first": "audio/words/first.mp3",
+    "five": "audio/words/five.mp3",
+    "for": "audio/words/for.mp3",
+    "fresh": "audio/words/fresh.mp3",
+    "fur": "audio/words/fur.mp3",
+    "get": "audio/words/get.mp3",
+    "have": "audio/words/have.mp3",
+    "hello": "audio/words/hello.mp3",
+    "i": "audio/words/i.mp3",
+    "i like rabbits": "audio/words/i-like-rabbits.mp3",
+    "is": "audio/words/is.mp3",
+    "it": "audio/words/it.mp3",
+    "last": "audio/words/last.mp3",
+    "like": "audio/words/like.mp3",
+    "live": "audio/words/live.mp3",
+    "long": "audio/words/long.mp3",
+    "love": "audio/words/love.mp3",
+    "mom": "audio/words/mom.mp3",
+    "morning": "audio/words/morning.mp3",
+    "much": "audio/words/much.mp3",
+    "mumu": "audio/words/mumu.mp3",
+    "my": "audio/words/my.mp3",
+    "my morning routine": "audio/words/my-morning-routine.mp3",
+    "name": "audio/words/name.mp3",
+    "next": "audio/words/next.mp3",
+    "old": "audio/words/old.mp3",
+    "r": "audio/words/r.mp3",
+    "rabbit": "audio/words/rabbit.mp3",
+    "rabbits": "audio/words/rabbits.mp3",
+    "ready": "audio/words/ready.mp3",
+    "red": "audio/words/red.mp3",
+    "round": "audio/words/round.mp3",
+    "routine": "audio/words/routine.mp3",
+    "scary": "audio/words/scary.mp3",
+    "school": "audio/words/school.mp3",
+    "short": "audio/words/short.mp3",
+    "shower": "audio/words/shower.mp3",
+    "singing": "audio/words/singing.mp3",
+    "small": "audio/words/small.mp3",
+    "soft": "audio/words/soft.mp3",
+    "sound": "audio/words/sound.mp3",
+    "speaking": "audio/words/speaking.mp3",
+    "tails": "audio/words/tails.mp3",
+    "take": "audio/words/take.mp3",
+    "teeth": "audio/words/teeth.mp3",
+    "thank": "audio/words/thank.mp3",
+    "the": "audio/words/the.mp3",
+    "then": "audio/words/then.mp3",
+    "they": "audio/words/they.mp3",
+    "this": "audio/words/this.mp3",
+    "this is an apple": "audio/words/this-is-an-apple.mp3",
+    "toothbrush": "audio/words/toothbrush.mp3",
+    "up": "audio/words/up.mp3",
+    "very": "audio/words/very.mp3",
+    "wash": "audio/words/wash.mp3",
+    "water": "audio/words/water.mp3",
+    "what": "audio/words/what.mp3",
+    "white": "audio/words/white.mp3",
+    "with": "audio/words/with.mp3",
+    "years": "audio/words/years.mp3",
+    "you": "audio/words/you.mp3",
+    "yummy": "audio/words/yummy.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}
