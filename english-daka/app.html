@@ -526,6 +526,11 @@
   .ans-chip:active{transform:translateY(2px);box-shadow:var(--shadow-sm);}
   /* 正在念到的那个选项高亮 —— 孩子靠"哪个在响"把声音和字对上 */
   .ans-chip.speaking{background:var(--yellow,#FFD34D);transform:scale(1.08);}
+  /* 听完前的锁定态:整排压暗,正在念的那个照常亮起 —— 孩子看得出
+     "还在念、先别点"。锁定用 disabled 挡点击,这里只管样子 */
+  .ans-chips.hush .ans-chip{opacity:.45;box-shadow:none;cursor:default;
+    transition:opacity var(--dur-fast,.15s);}
+  .ans-chips.hush .ans-chip.speaking{opacity:1;}
   /* 两段式选项的中间态:点过一下(听过音了),再点同一个才算选定。
      用 outline 不用 border —— 边框会改变尺寸让整行选项跳一下;
      蓝描边压在黄底 chip 上也够显眼 */
@@ -2473,6 +2478,7 @@ function lockAdvance(){
 }
 
 let pOrder = [], pc = 0, pq = 0;
+let listenGen = 0;   // 每出一题 +1:旧题的"听完解锁"回调不许碰新题的锁
 /* 「这一栏正有一轮没做完」—— 横滑换课要据此收紧阈值,见文件底部的手势 */
 let pActive = false, qActive = false;
 /* 音标类答案的干扰项池:已教的 11 个字母音 + 已教的词族韵脚 */
@@ -2531,14 +2537,17 @@ function chipAudio(k){
 }
 /* 依次朗读三个选项并高亮 —— 孩子还不认字,选项是纯文本等于让他认读,
    必须听得到才谈得上"选"。playSeq 自带 el 高亮和 404 回落 TTS。*/
-function readChips(){
+function chipItems(){
   const btns = [...document.querySelectorAll("#ansChips .ans-chip")];
-  if(!btns.length) return;
   // 整句选项用答句音色(a=Jenny)整条念;单词选项还是走 words/ 的点读音
   const sent = document.getElementById("ansChips").classList.contains("sent");
-  playSeq(btns.map(b=>({text: b.dataset.text || b.dataset.k,
-                        role: sent ? "a" : "w",
-                        audio: b.dataset.audio || chipAudio(b.dataset.k), el: b})));
+  return btns.map(b=>({text: b.dataset.text || b.dataset.k,
+                       role: sent ? "a" : "w",
+                       audio: b.dataset.audio || chipAudio(b.dataset.k), el: b}));
+}
+function readChips(onDone){
+  const items = chipItems();
+  if(items.length) playSeq(items, typeof onDone === "function" ? onDone : null);
 }
 
 /* 闯关只收「能出成三选一」的问。
@@ -2672,7 +2681,7 @@ function renderQuestion(){
     </div>
     <div class="chat" id="pChat"></div>
     <div class="result-emoji" id="pResult"></div>
-    <div class="p-hint">${IC_SPEAKER} 听完题目，大声说出答案，再点一点它</div>
+    <div class="p-hint">${IC_SPEAKER} 听完题目和选项，说出答案再点它</div>
     <div class="ans-chips" id="ansChips"></div>
     <div class="ctrl" id="pCtrl">
       <button class="btn" onclick="readChips()">${IC_SPEAKER} 听选项</button>
@@ -2776,11 +2785,31 @@ function renderQuestion(){
     };
     chipsBox.appendChild(b);
   });
-  // 题目自动播。孩子还不认字,题面对他就是一串图形 —— 不出声就没法答,
-  // 每题都得先按一下按钮纯属多一道手续(考一考也是渲染完直接 ask())。
-  // 选项仍然手动(「听选项」按钮):认得的词他会伸手就点,自动念选项会变成边选边播。
-  // 要重听题目,点问题气泡或气泡里的喇叭钮即可,和以前那个按钮效果一样。
-  playQuestion();
+  /* 家长口径(2026-09-01,推翻旧的"选项手动播"):进题自动连播
+     题目 → 三个选项(逐个高亮),**播完之前选项锁定不可点** —— 淘气的孩子
+     不听选项直接乱点,蒙对了也得分,判分就失真了。播完解锁;
+     解锁后重听(点气泡/「听选项」)不再锁,认得的孩子可以边听边点。 */
+  const myListen = ++listenGen;
+  const setLock = on => {
+    if(myListen !== listenGen) return;         // 已换题,别碰新题的锁
+    chipsBox.classList.toggle("hush", on);
+    if(!answered) chipsBox.querySelectorAll(".ans-chip").forEach(x=>{ x.disabled = on; });
+  };
+  setLock(true);
+  let watch = 0;
+  const unlock = () => { clearInterval(watch); setLock(false); };
+  playSeq(
+    [{text: qa.q, role: "q", audio: qa.q_audio,
+      el: document.querySelector("#pChat .bubble.q .stext")}].concat(chipItems()),
+    unlock);
+  /* 看门狗:连播中途被打断(点气泡重听、点单词、切页签又回来),onDone
+     永远不会来 —— 播放代号一变就解锁。打断本身是一次主动交互,
+     不能把孩子锁死在没有出口的题上 */
+  const seqGen = playGen;
+  watch = setInterval(() => {
+    if(myListen !== listenGen){ clearInterval(watch); return; }
+    if(playGen !== seqGen) unlock();
+  }, 400);
   savePracticeRound();
 }
 
@@ -2834,12 +2863,6 @@ function restorePOrder(idxs, qsList){
   return out;
 }
 
-/* 念题目:自动播和重听走同一条路,高亮的是问题气泡里的句子 */
-function playQuestion(){
-  const qa = curQA();
-  playOne(qa.q, "q", qa.q_audio, null,
-          document.querySelector("#pChat .bubble.q .stext"));
-}
 
 /* 答完这题的出口。「看答案」只在还没翻答案时给,翻过就只剩下一题 */
 function showNext(gotStar){
