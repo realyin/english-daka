@@ -391,7 +391,11 @@ def main():
 
     lesson = OrderedDict([("seq", next_seq(band, group)), ("level", LEVEL),
                           ("group", group),
-                          ("badge", str(badge)), ("title", title), ("cards", cards)])
+                          ("badge", str(badge)),
+                          # 封面默认取第一张卡的图(目录页 v53 起的约定);
+                          # 不写这个字段目录页只会画一个纯色字形徽章
+                          ("cover", cards[0]["image"]),
+                          ("title", title), ("cards", cards)])
     out.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pf = write_prompts(lesson_id, title, cards)
 
