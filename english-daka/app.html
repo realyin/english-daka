@@ -1639,8 +1639,16 @@ function lookup(w){
   if(w.endsWith("s") && DICT[w.slice(0,-1)]) return DICT[w.slice(0,-1)];
   if(w.endsWith("es") && DICT[w.slice(0,-2)]) return DICT[w.slice(0,-2)];      // boxes→box
   if(w.endsWith("ies") && DICT[w.slice(0,-3)+"y"]) return DICT[w.slice(0,-3)+"y"];
-  if(w.endsWith("ing") && DICT[w.slice(0,-3)]) return DICT[w.slice(0,-3)];     // running→run
-  if(w.endsWith("ed") && DICT[w.slice(0,-2)]) return DICT[w.slice(0,-2)];
+  /* -ing / -ed 三种拼法都折回原形:jumping→jump、running→run(双写辅音去一个)、
+     making→make(丢掉的 e 补回来)。三种只会各命中一种词,顺序无所谓 */
+  for(const suf of ["ing", "ed"]){
+    if(!w.endsWith(suf)) continue;
+    const stem = w.slice(0, -suf.length);
+    if(DICT[stem]) return DICT[stem];
+    if(stem.length > 2 && stem[stem.length-1] === stem[stem.length-2] && DICT[stem.slice(0,-1)])
+      return DICT[stem.slice(0,-1)];
+    if(DICT[stem + "e"]) return DICT[stem + "e"];
+  }
   return null;
 }
 
