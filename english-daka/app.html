@@ -348,13 +348,13 @@
   }
   .sline.showzh .trans{display:block;}
 
-  /* ===== 短文卡(lines):图一边、句子一边 =====
-     一篇短文一张拼格图,句子是图的说明 —— 不拆成一句一图(家长口径:短文本来就短,
-     拆散了有割裂感)。宽屏图在左句子在右;手机竖屏图在上句子在下,仍是图一块、字一块 */
-  .passage{display:flex;flex-direction:column;gap:10px;align-items:stretch;}
+  /* ===== 短文卡(lines):图一边、段落一边 =====
+     一篇短文一张拼格图,文字排成一段一段的短文样子(家长口径:不要编号、不要每句一排按钮,
+     那样又乱又丑)。一段 = 一个小喇叭 + 连排的句子;翻译是整篇一个开关。
+     宽屏图在左段落在右;手机竖屏图在上段落在下,仍是图一块、字一块 */
+  .passage{display:flex;flex-direction:column;gap:12px;align-items:stretch;}
   .passage .pic{max-width:min(320px, 44vh);}     /* 拼格图要看清每一格,比单词图大 */
   .passage .ptext{min-width:0;}
-  .passage .bubble.p{background:#E6F4EA;max-width:100%;margin:0;border-bottom-left-radius:4px;}
   @media (min-width:600px){
     .passage{flex-direction:row;align-items:flex-start;}
     .passage .pic{flex:0 0 42%;max-width:42%;margin:0;}
@@ -363,18 +363,23 @@
   .ptools{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:8px;}
   .ptools .btn{padding:8px 14px;font-size:14px;}
   .ptools .btn.on{background:var(--yellow);}
-  /* 句前彩色圆号:和拼格图的阅读顺序对应(左→右、上→下),四色轮换 */
-  .pnum{
-    flex:none;width:24px;height:24px;border-radius:50%;margin-top:2px;
-    color:#fff;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;
+  .ppage{background:#fff;border:2px solid var(--line);border-radius:16px;padding:6px 14px;}
+  .para{display:flex;gap:10px;align-items:flex-start;padding:10px 0;}
+  .para + .para{border-top:1px dashed #E3E8F0;}
+  .para .mini{margin-top:3px;}
+  .para .ptxt{
+    flex:1;font-size:17px;font-weight:650;line-height:1.7;color:var(--ink);
+    cursor:pointer;border-radius:8px;
   }
-  .w.kw{color:var(--kw, #E85C93);font-weight:800;}   /* *…* 包住的重点词 */
-  /* 遮字:藏掉句子文字只留圆号和图,孩子看图自己说,点圆号揭开一句核对。
+  .para .ptxt.speaking{background:linear-gradient(transparent 65%, #FFE9A8 65%);}
+  .para .ptrans{font-size:13px;color:#5E6E8C;font-weight:600;margin-top:3px;display:none;}
+  .passage.showzh .ptrans{display:block;}
+  .w.kw{color:var(--kw, #E85C93);font-weight:800;}   /* *…* 包住的重点词,一段一个色 */
+  /* 遮字:藏掉段落文字只留喇叭和图,孩子看图自己说,点一下揭开一段核对。
      用不透明色条而不是模糊 —— 模糊还能猜出轮廓 */
-  .passage.veil .sline:not(.reveal) .w{color:transparent;background:#DDE3EE;border-radius:6px;}
-  .passage.veil .sline:not(.reveal) .w.kw{background:#CFD8E8;}
-  .passage.veil .sline:not(.reveal) .trans{visibility:hidden;}
-  .passage.veil .sline:not(.reveal) .line .mini{visibility:hidden;}
+  .passage.veil .para:not(.reveal) .w{color:transparent;background:#DDE3EE;border-radius:6px;}
+  .passage.veil .para:not(.reveal) .w.kw{background:#CFD8E8;}
+  .passage.veil .para:not(.reveal) .ptrans{visibility:hidden;}
   .pemoji{font-size:64px;text-align:center;line-height:1.2;padding:8px 0;}
 
   /* 一次性的手势提示条(第一次展开卡片时浮一下,4 秒自己淡掉)。
@@ -2310,7 +2315,24 @@ function buildDialog(c, din){
    两个工具:「整篇连读」先听一遍;「遮字」藏掉文字只留圆号,看图说、点圆号核对。
    听满一篇(每句都点过,或整篇连读放完)= 打卡,见 notePassageDone
    ================================================================ */
-const PNUM_COLORS = ["#E85C93", "#EE8420", "#37A85B", "#2F7BEF"];
+const PARA_COLORS = ["#E85C93", "#EE8420", "#37A85B", "#2F7BEF"];
+/* 一段文字:*…* 包住的重点词着色,其余词照常可点可长按 */
+function paraText(text, color){
+  const box = document.createElement("div");
+  box.className = "ptxt";
+  box.style.setProperty("--kw", color);
+  let inKw = false;
+  text.split(" ").forEach((raw, i)=>{
+    if(i) box.appendChild(document.createTextNode(" "));
+    let kw = inKw;
+    if(raw.startsWith("*")){ kw = true; inKw = true; }
+    if(/\*[^*a-z]*$/i.test(raw) && raw.length > 1){ inKw = false; }
+    const sp = makeWordSpan(raw.replace(/\*/g, ""));
+    if(kw) sp.classList.add("kw");
+    box.appendChild(sp);
+  });
+  return box;
+}
 function buildPassage(c, din){
   const tools = document.createElement("div");
   tools.className = "ptools";
@@ -2319,7 +2341,10 @@ function buildPassage(c, din){
   const bVeil = document.createElement("button");
   bVeil.className = "btn"; bVeil.innerHTML = IC_EYE + " 遮字看图说";
   bVeil.setAttribute("aria-pressed", "false");
-  tools.appendChild(bAll); tools.appendChild(bVeil);
+  const bZh = document.createElement("button");
+  bZh.className = "btn"; bZh.textContent = "中文";
+  bZh.setAttribute("aria-pressed", "false");
+  tools.appendChild(bAll); tools.appendChild(bVeil); tools.appendChild(bZh);
   din.appendChild(tools);
 
   const box = document.createElement("div");
@@ -2336,61 +2361,78 @@ function buildPassage(c, din){
   }
   const txt = document.createElement("div");
   txt.className = "ptext";
-  const b = document.createElement("div");
-  b.className = "bubble p";
-  const who = document.createElement("span");
-  who.className = "who"; who.innerHTML = IC_SPEECH + " 我来说";
-  b.appendChild(who);
+  const page = document.createElement("div");
+  page.className = "ppage";
 
   const heard = {};
-  const slines = [];
+  const paras = [];
   function markHeard(i){
     if(heard[i]) return;
     heard[i] = true;
     if(Object.keys(heard).length >= c.lines.length) notePassageDone(String(c.word || c.cn || ""));
   }
-  function reveal(s){ if(box.classList.contains("veil")) s.classList.add("reveal"); }
+  function reveal(el){ if(box.classList.contains("veil")) el.classList.add("reveal"); }
   c.lines.forEach((ln, i)=>{
-    const s = makeSline(ln.t, ln.cn, "a", ln.audio);
-    const color = PNUM_COLORS[i % PNUM_COLORS.length];
-    s.style.setProperty("--kw", color);
-    const num = document.createElement("span");
-    num.className = "pnum"; num.textContent = i + 1;
-    num.style.background = color;
-    s.querySelector(".line").insertBefore(num, s.querySelector(".line").firstChild);
-    // 点句子(空白、圆号、喇叭)= 听了这一句;点单词、点翻译不算。
-    // 遮字状态下点一下先揭开这一句(makeSline 自己的处理器会接着播)
-    s.addEventListener("click", e=>{
-      if(e.target.closest(".w") || e.target.closest(".zh")) return;
-      reveal(s); markHeard(i);
-    }, true);
-    slines.push(s);
-    b.appendChild(s);
+    const color = PARA_COLORS[i % PARA_COLORS.length];
+    const plain = ln.t.replace(/\*/g, "");
+    const para = document.createElement("div");
+    para.className = "para";
+    const spk = document.createElement("button");
+    spk.className = "mini"; spk.innerHTML = IC_SPEAKER;
+    spk.setAttribute("aria-label", "朗读这一段");
+    const body = document.createElement("div");
+    body.style.flex = "1"; body.style.minWidth = "0";
+    const ptxt = paraText(ln.t, color);
+    body.appendChild(ptxt);
+    if(ln.cn){
+      const tr = document.createElement("div");
+      tr.className = "ptrans"; tr.textContent = ln.cn;
+      body.appendChild(tr);
+    }
+    para.appendChild(spk); para.appendChild(body);
+    para._say = { text: plain, role: "a", audio: ln.audio, el: ptxt };
+    // 点喇叭、点段落空白 = 听这一段(记入"听满一篇");点单词只听词,不算。
+    // 遮字状态下先揭开这一段再播
+    const play = e=>{
+      e.stopPropagation();
+      reveal(para); markHeard(i);
+      playSeq([para._say]);
+    };
+    spk.onclick = play;
+    ptxt.addEventListener("click", e=>{ if(e.target.closest(".w")) return; play(e); });
+    paras.push(para);
+    page.appendChild(para);
   });
-  txt.appendChild(b);
+  txt.appendChild(page);
   box.appendChild(txt);
   din.appendChild(box);
 
   bAll.onclick = e=>{
     e.stopPropagation();
-    // 逐句串起来放:遮字时放到哪句揭开哪句。playSeq 没有逐条回调,所以一句一次、
-    // 在 onDone 里接下一句;中途被别的播放打断时 onDone 不会来,链自然断掉
+    // 逐段串起来放:遮字时放到哪段揭开哪段。playSeq 没有逐条回调,所以一段一次、
+    // 在 onDone 里接下一段;中途被别的播放打断时 onDone 不会来,链自然断掉
     let i = 0;
     function step(){
-      if(i >= slines.length) return;
-      const s = slines[i], at = i; i++;
-      reveal(s);
-      playSeq([s._say], ()=>{ markHeard(at); step(); });
+      if(i >= paras.length) return;
+      const pa = paras[i], at = i; i++;
+      reveal(pa);
+      playSeq([pa._say], ()=>{ markHeard(at); step(); });
     }
     step();
   };
   bVeil.onclick = e=>{
     e.stopPropagation();
     const on = box.classList.toggle("veil");
-    slines.forEach(s=>s.classList.remove("reveal"));
+    paras.forEach(pa=>pa.classList.remove("reveal"));
     bVeil.classList.toggle("on", on);
     bVeil.setAttribute("aria-pressed", on ? "true" : "false");
-    if(on) showToast("看图说一说 · 点圆号看答案");
+    if(on) showToast("看图说一说 · 点一段看答案");
+  };
+  bZh.onclick = e=>{
+    e.stopPropagation();
+    const on = box.classList.toggle("showzh");
+    bZh.classList.toggle("on", on);
+    bZh.setAttribute("aria-pressed", on ? "true" : "false");
   };
 }
 /* 展开前必须先经过这里 —— 空 dialog 的展开高度是 0,动画等于没发生,
