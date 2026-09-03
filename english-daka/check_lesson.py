@@ -151,6 +151,14 @@ def check_lesson(path: Path, pools, lib, audio_ready=None) -> Report:
             r.e("顶层", f"seq={d.get('seq')} 不在「{grp}」的 {band}xx 段里")
     elif grp:
         r.w("顶层", f"分组「{grp}」不在已知段位表里，目录页排序会不确定")
+    # 封面:目录页有 cover 才铺图,没有就是一块纯色字形徽章,和满架水彩封面一比
+    # 一眼就是「没做完」。2026-09-02 那批三课就是这么漏的:脚手架当时不写、这里也不查
+    cov = d.get("cover")
+    if not cov:
+        r.e("顶层", "缺 cover(封面图)—— 目录页会退回纯色字形徽章；"
+                    "惯例取第一张卡的 image,new_lesson.py 现在会自动填")
+    elif not (LESSONS / cov).exists():
+        r.e("顶层", f"cover 指向的文件不存在：{cov}")
     if "word_audio" in d and not any(d["word_audio"].values()):
         r.w("顶层", "word_audio 是空的 —— 这个字段由 gen_audio.py 回写，不要手写")
 

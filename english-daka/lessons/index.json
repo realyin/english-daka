@@ -647,7 +647,8 @@
       "group": "字母 Letters",
       "badge": "U",
       "seq": 112,
-      "level": "K2"
+      "level": "K2",
+      "cover": "images/u-letter.webp"
     },
     {
       "id": "k2-wf-an",
@@ -766,7 +767,8 @@
       "group": "拼读 Phonics",
       "badge": "u",
       "seq": 306,
-      "level": "K2"
+      "level": "K2",
+      "cover": "images/cvc-hut.webp"
     },
     {
       "id": "k2-sw-my-like-i-too",
@@ -835,7 +837,8 @@
       "group": "常见词 Sight Words",
       "badge": "what",
       "seq": 407,
-      "level": "K2"
+      "level": "K2",
+      "cover": "images/sw-what.webp"
     },
     {
       "id": "k2-zoo",
