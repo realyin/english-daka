@@ -1,0 +1,220 @@
+{
+  "seq": 407,
+  "level": "K2",
+  "group": "常见词 Sight Words",
+  "badge": "what",
+  "title": "Sight Words · what / do / you / see",
+  "cards": [
+    {
+      "word": "what",
+      "cn": "什么",
+      "tag": "sight word",
+      "image": "images/sw-what.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word what.",
+            "What do you see?"
+          ],
+          "key": [
+            "what"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 what。",
+            "你看见了什么？"
+          ],
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-what-a79361.mp3",
+            "audio/sentences/k2-sw-what-do-you-see/a-what-do-you-see-fe5ef2.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-sw-what-do-you-see/q-which-one-is-what-95beb7.mp3"
+    },
+    {
+      "word": "do",
+      "cn": "做",
+      "tag": "sight word",
+      "image": "images/sw-do.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word do.",
+            "I do my homework."
+          ],
+          "key": [
+            "do"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 do。",
+            "我做作业。"
+          ],
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-do-03d897.mp3",
+            "audio/sentences/k2-sw-what-do-you-see/a-i-do-my-homework-144786.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-sw-what-do-you-see/q-which-one-is-do-bb7620.mp3"
+    },
+    {
+      "word": "you",
+      "cn": "你",
+      "tag": "sight word",
+      "image": "images/sw-you.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word you.",
+            "I see you!"
+          ],
+          "key": [
+            "you"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 you。",
+            "我看见你啦！"
+          ],
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-you-0550fc.mp3",
+            "audio/sentences/k2-sw-what-do-you-see/a-i-see-you-8bb5d5.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-sw-what-do-you-see/q-which-one-is-you-7e8d92.mp3"
+    },
+    {
+      "word": "see",
+      "cn": "看见",
+      "tag": "sight word",
+      "image": "images/sw-see.webp",
+      "quiz": false,
+      "dialog": [
+        {
+          "q": "What's this sight word?",
+          "a": [
+            "It's sight word see.",
+            "I see a bird."
+          ],
+          "key": [
+            "see"
+          ],
+          "q_cn": "这是什么常见词？",
+          "a_cn": [
+            "是常见词 see。",
+            "我看见一只鸟。"
+          ],
+          "image": "images/sw-see.webp",
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-s-this-sight-word-51830e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-it-s-sight-word-see-583d9a.mp3",
+            "audio/sentences/k2-sw-what-do-you-see/a-i-see-a-bird-ab5c9f.mp3"
+          ]
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see my uncle."
+          ],
+          "key": [
+            "uncle"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见我的叔叔。"
+          ],
+          "image": "images/sw-see-uncle.webp",
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-i-see-my-uncle-3de72e.mp3"
+          ]
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see my uncle's umbrella."
+          ],
+          "key": [
+            "umbrella"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见我叔叔的雨伞。"
+          ],
+          "image": "images/sw-see-umbrella.webp",
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-i-see-my-uncle-s-umbrella-0b9519.mp3"
+          ]
+        },
+        {
+          "q": "What do you see?",
+          "a": [
+            "I see a bug on my uncle's umbrella."
+          ],
+          "key": [
+            "bug"
+          ],
+          "q_cn": "你看见了什么？",
+          "a_cn": [
+            "我看见叔叔的雨伞上有一只小虫子。"
+          ],
+          "image": "images/sw-see-bug.webp",
+          "q_audio": "audio/sentences/k2-sw-what-do-you-see/q-what-do-you-see-fe5ef2.mp3",
+          "a_audio": [
+            "audio/sentences/k2-sw-what-do-you-see/a-i-see-a-bug-on-my-uncle-s-umbrella-7082a4.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-sw-what-do-you-see/q-which-one-is-see-6feb31.mp3"
+    }
+  ],
+  "word_audio": {
+    "a": "audio/words/a.mp3",
+    "bird": "audio/words/bird.mp3",
+    "bug": "audio/words/bug.mp3",
+    "do": "audio/words/do.mp3",
+    "homework": "audio/words/homework.mp3",
+    "i": "audio/words/i.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "my": "audio/words/my.mp3",
+    "on": "audio/words/on.mp3",
+    "see": "audio/words/see.mp3",
+    "sight": "audio/words/sight.mp3",
+    "this": "audio/words/this.mp3",
+    "umbrella": "audio/words/umbrella.mp3",
+    "uncle": "audio/words/uncle.mp3",
+    "uncle's": "audio/words/uncle-s.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "word": "audio/words/word.mp3",
+    "you": "audio/words/you.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

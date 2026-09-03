@@ -1,0 +1,232 @@
+{
+  "seq": 112,
+  "level": "K2",
+  "group": "字母 Letters",
+  "badge": "U",
+  "title": "Letter U · /ʌ/",
+  "cards": [
+    {
+      "word": "letter U",
+      "cn": "字母 U",
+      "tag": "letter",
+      "image": "images/u-letter.webp",
+      "dialog": [
+        {
+          "q": "What's this letter?",
+          "a": [
+            "It's letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "这是什么字母？",
+          "a_cn": [
+            "这是字母 U。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-what-s-this-letter-ab944e.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-it-s-letter-u-0341b9.mp3"
+          ]
+        },
+        {
+          "q": "What sound does letter U make?",
+          "a": [
+            "U makes the sound /u/."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "字母 U 发什么音？",
+          "a_cn": [
+            "U 发 /ʌ/ 的音。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-what-sound-does-letter-u-make-5bd384.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-u-makes-the-sound-u-fede61.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-letter-u/q-which-one-is-letter-u-dc52bc.mp3"
+    },
+    {
+      "word": "uncle",
+      "cn": "叔叔",
+      "tag": "word",
+      "image": "images/u-uncle.webp",
+      "dialog": [
+        {
+          "q": "Which letter does uncle begin with?",
+          "a": [
+            "Uncle begins with letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "uncle 以哪个字母开头？",
+          "a_cn": [
+            "uncle 以字母 U 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-which-letter-does-uncle-begin-with-806522.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-uncle-begins-with-letter-u-b7f084.mp3"
+          ]
+        },
+        {
+          "q": "What sound does uncle begin with?",
+          "a": [
+            "Uncle begins with the sound /u/.",
+            "/u/ /u/ /u/, uncle."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "uncle 以什么音开头？",
+          "a_cn": [
+            "uncle 以 /ʌ/ 音开头。",
+            "/ʌ/ /ʌ/ /ʌ/，uncle。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-what-sound-does-uncle-begin-with-11723f.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-uncle-begins-with-the-sound-u-d9b22f.mp3",
+            "audio/sentences/k2-letter-u/a-u-u-u-uncle-bc9125.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-letter-u/q-which-one-is-uncle-2f9c25.mp3"
+    },
+    {
+      "word": "umbrella",
+      "cn": "雨伞",
+      "tag": "word",
+      "image": "images/u-umbrella.webp",
+      "dialog": [
+        {
+          "q": "Which letter does umbrella begin with?",
+          "a": [
+            "Umbrella begins with letter U."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "umbrella 以哪个字母开头？",
+          "a_cn": [
+            "umbrella 以字母 U 开头。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-which-letter-does-umbrella-begin-wit-1079ae.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-umbrella-begins-with-letter-u-43131a.mp3"
+          ]
+        },
+        {
+          "q": "What sound does umbrella begin with?",
+          "a": [
+            "Umbrella begins with the sound /u/.",
+            "/u/ /u/ /u/, umbrella."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "umbrella 以什么音开头？",
+          "a_cn": [
+            "umbrella 以 /ʌ/ 音开头。",
+            "/ʌ/ /ʌ/ /ʌ/，umbrella。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-what-sound-does-umbrella-begin-with-47e891.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-umbrella-begins-with-the-sound-u-421a7a.mp3",
+            "audio/sentences/k2-letter-u/a-u-u-u-umbrella-58993f.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-letter-u/q-which-one-is-umbrella-c56c1c.mp3"
+    },
+    {
+      "word": "bug",
+      "cn": "小虫子",
+      "tag": "word",
+      "image": "images/cvc-bug.webp",
+      "dialog": [
+        {
+          "q": "What sound does bug have in the middle?",
+          "a": [
+            "Bug has the sound /u/ in the middle.",
+            "/b/ /u/ /g/, bug."
+          ],
+          "key": [
+            "/u/"
+          ],
+          "q_cn": "bug 中间是什么音？",
+          "a_cn": [
+            "bug 中间是 /ʌ/ 音。",
+            "/b/ /ʌ/ /g/，bug。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-what-sound-does-bug-have-in-the-midd-1931a0.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-bug-has-the-sound-u-in-the-middle-ce535d.mp3",
+            "audio/sentences/k2-letter-u/a-b-u-g-bug-8b4b4d.mp3"
+          ]
+        },
+        {
+          "q": "Which letter does bug have in the middle?",
+          "a": [
+            "Bug has letter U in the middle."
+          ],
+          "key": [
+            "u"
+          ],
+          "q_cn": "bug 中间是哪个字母？",
+          "a_cn": [
+            "bug 中间是字母 U。"
+          ],
+          "q_audio": "audio/sentences/k2-letter-u/q-which-letter-does-bug-have-in-the-mi-764274.mp3",
+          "a_audio": [
+            "audio/sentences/k2-letter-u/a-bug-has-letter-u-in-the-middle-f01423.mp3"
+          ]
+        }
+      ],
+      "added": "2026-09-02",
+      "quiz_audio": "audio/sentences/k2-letter-u/q-which-one-is-bug-a88aab.mp3"
+    }
+  ],
+  "word_audio": {
+    "b": "audio/words/b.mp3",
+    "begin": "audio/words/begin.mp3",
+    "begins": "audio/words/begins.mp3",
+    "bug": "audio/words/bug.mp3",
+    "does": "audio/words/does.mp3",
+    "g": "audio/words/g.mp3",
+    "has": "audio/words/has.mp3",
+    "have": "audio/words/have.mp3",
+    "in": "audio/words/in.mp3",
+    "it's": "audio/words/it-s.mp3",
+    "letter": "audio/words/letter.mp3",
+    "letter u": "audio/words/letter-u.mp3",
+    "make": "audio/words/make.mp3",
+    "makes": "audio/words/makes.mp3",
+    "middle": "audio/words/middle.mp3",
+    "sound": "audio/words/sound.mp3",
+    "the": "audio/words/the.mp3",
+    "this": "audio/words/this.mp3",
+    "u": "audio/words/u.mp3",
+    "umbrella": "audio/words/umbrella.mp3",
+    "uncle": "audio/words/uncle.mp3",
+    "what": "audio/words/what.mp3",
+    "what's": "audio/words/what-s.mp3",
+    "which": "audio/words/which.mp3",
+    "with": "audio/words/with.mp3"
+  },
+  "praise_audio": {
+    "Great job!": "audio/praise/great-job.mp3",
+    "Well done!": "audio/praise/well-done.mp3",
+    "Awesome!": "audio/praise/awesome.mp3",
+    "Excellent!": "audio/praise/excellent.mp3",
+    "Perfect!": "audio/praise/perfect.mp3",
+    "Try again!": "audio/praise/try-again.mp3",
+    "Hmm, try again!": "audio/praise/hmm-try-again.mp3",
+    "You did it! Amazing!": "audio/praise/you-did-it-amazing.mp3",
+    "You did it! See you tomorrow!": "audio/praise/you-did-it-see-you-tomorrow.mp3"
+  }
+}

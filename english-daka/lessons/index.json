@@ -641,6 +641,15 @@
       "cover": "images/d-letter.webp"
     },
     {
+      "id": "k2-letter-u",
+      "title": "Letter U · /ʌ/",
+      "words": 4,
+      "group": "字母 Letters",
+      "badge": "U",
+      "seq": 112,
+      "level": "K2"
+    },
+    {
       "id": "k2-wf-an",
       "title": "Word Family · -an 词族",
       "words": 5,
@@ -751,6 +760,15 @@
       "cover": "images/cvc-code.webp"
     },
     {
+      "id": "k2-cvc-u",
+      "title": "Short u · 短元音 u 拼读",
+      "words": 4,
+      "group": "拼读 Phonics",
+      "badge": "u",
+      "seq": 306,
+      "level": "K2"
+    },
+    {
       "id": "k2-sw-my-like-i-too",
       "title": "Sight Words · my / like / I / too",
       "words": 4,
@@ -809,6 +827,15 @@
       "seq": 406,
       "level": "K2",
       "cover": "images/sw-from.webp"
+    },
+    {
+      "id": "k2-sw-what-do-you-see",
+      "title": "Sight Words · what / do / you / see",
+      "words": 4,
+      "group": "常见词 Sight Words",
+      "badge": "what",
+      "seq": 407,
+      "level": "K2"
     },
     {
       "id": "k2-zoo",
@@ -873,6 +900,16 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-09-02",
+      "cards": 12,
+      "lessons": [
+        "k2-cvc-u",
+        "k2-letter-u",
+        "k2-sw-what-do-you-see"
+      ],
+      "name": "I see u"
+    },
     {
       "date": "2026-08-31",
       "cards": 8,
