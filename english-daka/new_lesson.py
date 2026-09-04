@@ -28,7 +28,9 @@
   python new_lesson.py sight-word  --words my,like --extra dog,ice cream
   python new_lesson.py topic       --group "主题 Topics" --title "At the Farm · 农场" \\
                                    --badge 🐄 --words cow,pig,duck
-  python new_lesson.py passage     --title "About Me · 自我介绍" --badge 👧
+  python new_lesson.py passage     --title "About Me · 自我介绍" --badge 👧 --text about-me.txt
+                                   (--text 可省,省了句子留「待填」;文件一行一段:英文 | 中文,
+                                    重点词用 *…* 包住)
 
 ⚠️ 脚本不替你选词。词表永远来自线下课的原始课件，见 CLAUDE.md
    「课程内容跟线下课走」——不要提前造课，也不要替换选词。
@@ -103,6 +105,17 @@ and cute, suitable for a 5-year-old, vertical 3:4 composition. The image is
 divided into clearly separated panels with thin soft white gutters and gently
 rounded corners, each panel a single clear scene. NO text, NO letters, NO words,
 NO numbers, NO speech bubbles, NO labels, NO outer border."""
+
+# 短文的主角人设。四篇短文共用一个小女孩(Mumu),以后的短文也都是她 ——
+# 人设写死在这里,每条 prompt 自动带上,换人就改这一处
+PASSAGE_HERO = """The main character is Mumu: a 5-year-old girl with shoulder-length dark brown
+hair, a pink headband with a small pink bow on the left, big round dark eyes,
+rosy cheeks, wearing a pink short-sleeved top with a white collar. Exactly the
+same character in every panel and every image."""
+
+PASSAGE_NEG = """text, letters, words, numbers, captions, labels, watermark, speech bubble,
+thick black comic borders, realistic photo, scary, cluttered, extra characters,
+different girl, inconsistent hair or clothes"""
 
 NEG_PROMPT = """text, letters, words, captions, labels, watermark, speech bubble, comic panels,
 grid lines, borders, frame, collage of photos, realistic photo, scary, cluttered"""
@@ -290,10 +303,20 @@ def build_passage(args, lib):
     title = args.title
     name = slug(title.split(" · ")[0])
     lesson_id = f"{PREFIX}passage-{name}"
+    lines = [OrderedDict([("t", TODO), ("cn", TODO)])]
+    if args.text:
+        # 一行一段:英文 | 中文。空行跳过。一段可以放两三句(同一格的说明写一起)
+        lines = []
+        for raw in Path(args.text).read_text(encoding="utf-8").splitlines():
+            if not raw.strip():
+                continue
+            en, _, cn = raw.partition("|")
+            lines.append(OrderedDict([("t", en.strip()), ("cn", cn.strip() or TODO)]))
+        if not lines:
+            sys.exit(f"❌ {args.text} 里没有句子")
     c = OrderedDict([("word", title.split(" · ")[0]), ("cn", title.split(" · ")[-1]),
                      ("tag", "passage"), ("image", f"images/ps-{name}.webp"),
-                     ("collage", True), ("quiz", False),
-                     ("lines", [OrderedDict([("t", TODO), ("cn", TODO)])])])
+                     ("collage", True), ("quiz", False), ("lines", lines)])
     return lesson_id, title, args.badge, [c]
 
 
@@ -314,17 +337,17 @@ def write_passage_prompt(lesson_id, c):
              f"出图后存为 `{name}.png`,然后 `python ingest_images.py <图片目录>`。", "",
              "## 风格前缀(复制到 prompt 最前面)", "",
              "```", PASSAGE_PREFIX, "```", "",
-             "## 主角人设(短文有主角,每篇都带,保证是同一个人)", "",
-             "```", TODO + ":主角的发型、发饰、衣服,写死。例:a 5-year-old girl with "
-             "shoulder-length dark brown hair, a pink headband with a small bow, "
-             "pink short-sleeved top with a white collar. Exactly the same character "
-             "in every panel and every image.", "```", "",
-             "## 负面提示", "", "```", NEG_PROMPT, "```", "",
+             "## 主角人设(所有短文共用,`new_lesson.py` 的 PASSAGE_HERO)", "",
+             "```", PASSAGE_HERO, "```", "",
+             "## 负面提示", "", "```", PASSAGE_NEG, "```", "",
              "## 画面(格子布局 + 每格一句话)", "",
-             "```",
-             f"{TODO}:Layout: 先说分几格、怎么摆(如 a 2×2 grid on top and one wide "
-             f"panel across the bottom)和 Reading order;然后 Panel 1 / Panel 2 … "
-             f"每格一句画面描述,对应短文的一句或一段。", "```", ""]
+             "短文的段落:", ""]
+    lines += [f"{i+1}. {ln['t']}" for i, ln in enumerate(c["lines"])]
+    lines += ["", "```",
+              f"{TODO}:Layout: 先说分几格、怎么摆(如 a 2×2 grid on top and one wide "
+              f"panel across the bottom)和 Reading order;然后 Panel 1 / Panel 2 … "
+              f"每格一句画面描述,对应上面的一段。段数 = 格数最好;段多于格时"
+              f"(问句、Thank you)不单独配格。", "```", ""]
     out.write_text("\n".join(lines), encoding="utf-8")
     return out
 
@@ -414,6 +437,7 @@ def main():
     p.add_argument("--group", default="", help="topic: 目录页分组（主题 Topics / 数学 Math / 科学 Science）")
     p.add_argument("--title", default="", help="topic: 课程标题，如 \"At the Farm · 农场\"")
     p.add_argument("--tag", default="word", help="topic: 卡片 tag（word / number / science …）")
+    p.add_argument("--text", default="", help="passage: 短文文本文件，一行一段「英文 | 中文」，重点词用 *…* 包住")
     a = p.parse_args()
     a.words = [w.strip() for w in a.words.split(",") if w.strip()]
     a.extra = [w.strip() for w in a.extra.split(",") if w.strip()]
